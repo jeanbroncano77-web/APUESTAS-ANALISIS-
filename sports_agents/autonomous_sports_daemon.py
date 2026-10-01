@@ -111,7 +111,24 @@ def run_autonomous_cycle(cycle_num: int):
     with open(FEEDBACK_LOG_PATH, "w", encoding="utf-8") as f:
         json.dump(feedback, f, ensure_ascii=False, indent=2)
 
-    log_event("4. Ciclo completado con éxito. Próxima actualización programada.")
+    # 4. Despacho a WhatsApp si está configurado
+    try:
+        from sports_agents.whatsapp_notifier_agent import WhatsAppNotifierAgent
+        notifier = WhatsAppNotifierAgent()
+        if notifier.config.get("enabled"):
+            log_event("4. Despachando alertas a WhatsApp...")
+            msg_cartelera = notifier.build_daily_fixtures_message(updated_matches)
+            msg_feedback = notifier.build_autonomous_feedback_message(feedback)
+            res1 = notifier.send_raw_whatsapp(msg_cartelera)
+            res2 = notifier.send_raw_whatsapp(msg_feedback)
+            log_event(f"-> WhatsApp Cartelera: {res1}")
+            log_event(f"-> WhatsApp Feedback: {res2}")
+        else:
+            log_event("4. WhatsApp no configurado aún (Esperando número y apikey de CallMeBot).")
+    except Exception as ex_wa:
+        log_event(f"4. Error enviando WhatsApp: {ex_wa}")
+
+    log_event("5. Ciclo completado con éxito. Próxima actualización programada.")
 
 
 def main():

@@ -1142,6 +1142,123 @@
             color: #ffffff;
         }
 
+
+
+        /* Estilos del Módulo de Auto-Corrección (Fase 3) */
+        .autocorrect-hero {
+            background: linear-gradient(135deg, rgba(88, 28, 135, 0.4), rgba(30, 27, 75, 0.7));
+            border: 1px solid rgba(139, 92, 246, 0.35);
+            border-radius: 20px;
+            padding: 1.5rem 1.75rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+            backdrop-filter: blur(16px);
+            box-shadow: 0 12px 32px -8px rgba(139, 92, 246, 0.3);
+        }
+
+        .autocorrect-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .case-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: 20px;
+            padding: 1.5rem;
+            backdrop-filter: blur(16px);
+            transition: border-color 0.2s ease;
+        }
+
+        .case-card:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .case-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .case-title {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .case-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+        }
+
+        @media (max-width: 860px) {
+            .case-split {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .case-box-error {
+            background: rgba(244, 63, 94, 0.06);
+            border: 1px solid rgba(244, 63, 94, 0.25);
+            border-radius: 14px;
+            padding: 1.25rem;
+        }
+
+        .case-box-fix {
+            background: rgba(16, 185, 129, 0.06);
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            border-radius: 14px;
+            padding: 1.25rem;
+        }
+
+        .case-box-title {
+            font-size: 0.85rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .title-error { color: #fb7185; }
+        .title-fix { color: #34d399; }
+
+        .case-metric-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.82rem;
+            margin-bottom: 0.4rem;
+            color: var(--text-muted);
+        }
+
+        .case-metric-row strong {
+            color: #ffffff;
+        }
+
+        .case-desc {
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: #cbd5e1;
+            margin-top: 0.6rem;
+        }
+
 </style>
 </head>
 <body>
@@ -1178,8 +1295,12 @@
                 ⚽ Partidos & Pronósticos
             </button>
             <button class="btn-view-mode" id="btn-mode-winrate" onclick="switchMainView('winrate')">
-                📊 Auditoría de Win Rate & Track Record
-                <span class="badge-winrate-pill">89.5% WIN</span>
+                📊 Win Rate & Track Record
+                <span class="badge-winrate-pill">89.5%</span>
+            </button>
+            <button class="btn-view-mode" id="btn-mode-autocorrect" onclick="switchMainView('autocorrect')">
+                🧠 Auto-Corrección & Aprendizaje
+                <span class="badge-winrate-pill" style="background: rgba(139, 92, 246, 0.2); border-color: rgba(139, 92, 246, 0.5); color: #c4b5fd;">4 Agentes</span>
             </button>
         </div>
 
@@ -5125,24 +5246,29 @@
         function switchMainView(mode) {
             const btnMatches = document.getElementById('btn-mode-matches');
             const btnWinrate = document.getElementById('btn-mode-winrate');
+            const btnAutocorrect = document.getElementById('btn-mode-autocorrect');
+
             const viewMatches = document.getElementById('view-container-matches');
             const viewWinrate = document.getElementById('view-container-winrate');
+            const viewAutocorrect = document.getElementById('view-container-autocorrect');
+
+            // Resetear estados activos
+            [btnMatches, btnWinrate, btnAutocorrect].forEach(b => { if (b) b.classList.remove('active'); });
+            [viewMatches, viewWinrate, viewAutocorrect].forEach(v => { if (v) v.style.display = 'none'; });
 
             if (mode === 'matches') {
-                btnMatches.classList.add('active');
-                btnWinrate.classList.remove('active');
-                viewMatches.style.display = 'block';
-                viewWinrate.style.display = 'none';
-            } else {
-                btnMatches.classList.remove('active');
-                btnWinrate.classList.add('active');
-                viewMatches.style.display = 'none';
-                viewWinrate.style.display = 'block';
-
-                // Inicializar gráficos de Win Rate al entrar por primera vez
+                if (btnMatches) btnMatches.classList.add('active');
+                if (viewMatches) viewMatches.style.display = 'block';
+            } else if (mode === 'winrate') {
+                if (btnWinrate) btnWinrate.classList.add('active');
+                if (viewWinrate) viewWinrate.style.display = 'block';
                 initWinrateCharts();
+            } else if (mode === 'autocorrect') {
+                if (btnAutocorrect) btnAutocorrect.classList.add('active');
+                if (viewAutocorrect) viewAutocorrect.style.display = 'block';
             }
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
         }
 
         function initWinrateCharts() {
