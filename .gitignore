@@ -4,3 +4,4 @@ __pycache__/
 *.log
 tunnel_url.txt
 cloudflared.exe
+timesfm/
