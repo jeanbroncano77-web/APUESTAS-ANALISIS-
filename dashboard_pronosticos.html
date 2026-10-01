@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SportsAI Dashboard &middot; Pronósticos TimesFM & La Fija</title>
+    <title>SportsAI Analytics &middot; 6 Partidos Estelares &bull; Win Rate & Autoaprendizaje</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +11,7 @@
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
+
         :root {
             --bg-body: #07090e;
             --bg-card: rgba(17, 24, 39, 0.75);
@@ -134,6 +135,60 @@
             display: flex;
             align-items: center;
             gap: 0.4rem;
+        }
+
+        /* BARRA DE NAVEGACIÓN PRINCIPAL (3 PESTAÑAS) */
+        .view-mode-nav {
+            display: flex;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+            background: rgba(15, 23, 42, 0.65);
+            padding: 0.5rem;
+            border-radius: 16px;
+            border: 1px solid var(--border-glass);
+            backdrop-filter: blur(12px);
+            flex-wrap: wrap;
+        }
+
+        .btn-view-mode {
+            flex: 1;
+            min-width: 220px;
+            background: transparent;
+            border: 1px solid transparent;
+            color: var(--text-muted);
+            padding: 0.85rem 1.25rem;
+            border-radius: 12px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+        }
+
+        .btn-view-mode:hover {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .btn-view-mode.active {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(30, 41, 59, 0.8));
+            border-color: var(--primary);
+            color: #ffffff;
+            box-shadow: 0 4px 20px -4px var(--primary-glow);
+        }
+
+        .badge-winrate-pill {
+            background: rgba(16, 185, 129, 0.2);
+            border: 1px solid rgba(16, 185, 129, 0.5);
+            color: #34d399;
+            padding: 0.15rem 0.55rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 800;
         }
 
         /* Toolbar */
@@ -378,466 +433,210 @@
         }
 
         .team-flag {
-            font-size: 3.2rem;
-            filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
-            margin-bottom: 0.4rem;
+            font-size: 3.5rem;
+            filter: drop-shadow(0 8px 16px rgba(0,0,0,0.5));
+            margin-bottom: 0.5rem;
         }
 
-        .team-name {
-            font-size: 1.65rem;
+        .team-name-lg {
+            font-size: 1.8rem;
             font-weight: 900;
-            color: var(--text-title);
+            color: #ffffff;
+            margin-bottom: 0.25rem;
         }
 
-        .team-xg-chip {
-            margin-top: 0.4rem;
+        .team-xg-tag {
             display: inline-block;
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.06);
             border: 1px solid var(--border-glass);
             padding: 0.25rem 0.75rem;
             border-radius: 9999px;
             font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--primary);
         }
 
         .center-score-col {
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
 
-        .score-pill-title {
-            font-size: 0.78rem;
-            text-transform: uppercase;
-            font-weight: 800;
-            letter-spacing: 0.08em;
-            color: var(--primary);
-            background: rgba(59, 130, 246, 0.12);
-            padding: 0.25rem 0.85rem;
-            border-radius: 9999px;
-            margin-bottom: 0.6rem;
-        }
-
-        .hero-score-val {
-            font-size: 4rem;
+        .modal-score-badge {
+            font-size: 2.8rem;
             font-weight: 900;
-            font-family: 'JetBrains Mono', monospace;
-            color: #ffffff;
-            line-height: 1;
             letter-spacing: -0.04em;
-            text-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
-        }
-
-        .hero-score-conf {
-            margin-top: 0.6rem;
-            font-size: 0.82rem;
-            color: var(--text-muted);
-        }
-
-        /* Glowing Gold "La Fija" Card */
-        .fija-gold-card {
-            background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(30, 27, 75, 0.4));
-            border: 2px solid rgba(251, 191, 36, 0.55);
-            border-radius: 20px;
-            padding: 1.5rem 1.75rem;
-            margin-bottom: 1.75rem;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 12px 30px -6px var(--gold-glow);
-            backdrop-filter: blur(16px);
-        }
-
-        .fija-gold-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(251, 191, 36, 0.15) 0%, transparent 60%);
-            animation: rotateGlow 12s linear infinite;
-            pointer-events: none;
-        }
-
-        @keyframes rotateGlow {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        .fija-badge-glow {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.4rem;
-            background: linear-gradient(135deg, #fbbf24, #d97706);
-            color: #000000;
-            font-weight: 900;
-            font-size: 0.82rem;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-            padding: 0.35rem 0.9rem;
-            border-radius: 9999px;
-            margin-bottom: 0.85rem;
-            box-shadow: 0 4px 14px rgba(251, 191, 36, 0.4);
-        }
-
-        .fija-content-grid {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            position: relative;
-            z-index: 1;
-        }
-
-        .fija-main {
-            max-width: 650px;
-        }
-
-        .fija-market-label {
-            font-size: 0.85rem;
-            color: #fde68a;
-            font-weight: 600;
-            margin-bottom: 0.2rem;
-        }
-
-        .fija-market-title {
-            font-size: 1.5rem;
-            font-weight: 900;
             color: #ffffff;
-            margin-bottom: 0.4rem;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.02));
+            padding: 0.75rem 2rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: inline-block;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
-        .fija-rationale {
-            font-size: 0.88rem;
-            color: var(--text-body);
-            line-height: 1.45;
-        }
-
-        .fija-stats {
-            display: flex;
-            gap: 1.25rem;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .fija-stat-box {
-            background: rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(251, 191, 36, 0.3);
-            border-radius: 14px;
-            padding: 0.75rem 1.25rem;
-            text-align: center;
-        }
-
-        .fija-stat-val {
-            font-size: 1.7rem;
-            font-weight: 900;
-            font-family: 'JetBrains Mono', monospace;
-            color: #fbbf24;
-        }
-
-        .fija-stat-lbl {
-            font-size: 0.72rem;
+        .modal-prob-txt {
+            margin-top: 0.5rem;
+            font-size: 0.82rem;
             color: var(--text-muted);
-            text-transform: uppercase;
-            font-weight: 700;
+            font-weight: 600;
         }
 
-        /* 3-Column Analytics Grid */
-        .analytics-grid-3 {
+        /* Grid de Secciones de Análisis */
+        .analysis-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 1.5rem;
+            margin-bottom: 2rem;
         }
 
-        .card {
+        .analysis-card {
             background: var(--bg-card);
             border: 1px solid var(--border-glass);
             border-radius: 20px;
             padding: 1.5rem;
             backdrop-filter: blur(16px);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
         }
 
-        .card-header {
+        .card-header-flex {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 1.25rem;
             padding-bottom: 0.75rem;
-            border-bottom: 1px solid var(--border-glass);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         }
 
-        .card-title {
+        .card-header-title {
             font-size: 1.05rem;
             font-weight: 800;
-            color: var(--text-title);
+            color: #ffffff;
             display: flex;
             align-items: center;
             gap: 0.5rem;
         }
 
-        .badge-subtle {
-            font-size: 0.72rem;
-            color: var(--text-muted);
-            background: rgba(255, 255, 255, 0.05);
-            padding: 0.2rem 0.6rem;
-            border-radius: 9999px;
+        .prob-bar-row {
+            margin-bottom: 1rem;
+        }
+
+        .prob-bar-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
             font-weight: 600;
+            margin-bottom: 0.35rem;
         }
 
-        .chart-box {
-            position: relative;
-            height: 220px;
-            width: 100%;
+        .prob-bar-track {
+            height: 10px;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 9999px;
+            overflow: hidden;
+            display: flex;
         }
 
-        .sub-header-title {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: var(--text-muted);
-            font-weight: 700;
-            margin-bottom: 0.6rem;
+        .prob-bar-fill {
+            height: 100%;
+            border-radius: 9999px;
+            transition: width 0.6s ease;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 0.88rem;
-        }
-
-        th {
-            text-align: left;
-            padding: 0.55rem 0.75rem;
-            color: var(--text-muted);
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            font-weight: 700;
-            border-bottom: 1px solid var(--border-glass);
-        }
-
-        td {
-            padding: 0.65rem 0.75rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-            color: var(--text-body);
-        }
-
-        tr:last-child td {
-            border-bottom: none;
-        }
-
-        .mono-bold {
-            font-family: 'JetBrains Mono', monospace;
-            font-weight: 700;
-        }
-
-        .tag-pill {
-            display: inline-block;
-            padding: 0.2rem 0.55rem;
-            border-radius: 6px;
-            font-size: 0.75rem;
-            font-weight: 700;
-        }
-
-        .tag-emerald { background: rgba(16, 185, 129, 0.15); color: #34d399; }
-        .tag-blue { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
-        .tag-cyan { background: rgba(6, 182, 212, 0.15); color: #22d3ee; }
-        .tag-amber { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
-        .tag-purple { background: rgba(139, 92, 246, 0.15); color: #a78bfa; }
-        .tag-rose { background: rgba(244, 63, 94, 0.15); color: #fb7185; }
-
-        .stat-highlight-box {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            background: rgba(0, 0, 0, 0.35);
+        /* Player Props Cards */
+        .player-row {
+            background: rgba(255, 255, 255, 0.03);
             border: 1px solid var(--border-glass);
-            border-radius: 14px;
-            padding: 0.85rem 0.5rem;
-            text-align: center;
-        }
-
-        .highlight-item {
-            display: flex;
-            flex-direction: column;
-            gap: 0.2rem;
-        }
-
-        .hl-lbl {
-            font-size: 0.72rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-
-        .hl-val {
-            font-size: 1.45rem;
-            font-weight: 800;
-        }
-
-        .lines-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-
-        .line-badge {
+            border-radius: 12px;
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.75rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--border-glass);
-            border-radius: 10px;
-            padding: 0.5rem 0.85rem;
-            font-size: 0.85rem;
         }
 
-        .referee-box {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            background: rgba(0, 0, 0, 0.35);
-            border: 1px solid var(--border-glass);
-            border-radius: 14px;
-            padding: 0.85rem 1rem;
+        .player-name {
+            font-weight: 700;
+            color: #ffffff;
+            font-size: 0.9rem;
         }
 
-        .ref-icon {
-            font-size: 2rem;
+        .player-role {
+            font-size: 0.75rem;
+            color: var(--text-muted);
         }
 
-        .progress-bar-bg {
-            height: 8px;
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 9999px;
-            overflow: hidden;
-            margin-top: 0.5rem;
-        }
-
-        .progress-bar-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #10b981, #f59e0b, #f43f5e);
-            border-radius: 9999px;
-        }
-
-        .table-responsive {
-            overflow-x: auto;
+        .player-stat-badge {
+            background: rgba(59, 130, 246, 0.15);
+            border: 1px solid rgba(59, 130, 246, 0.35);
+            color: #60a5fa;
+            padding: 0.2rem 0.6rem;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 700;
         }
 
         /* Bet Slip Drawer */
-        .slip-toggle-btn {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            background: linear-gradient(135deg, #f59e0b, #d97706);
-            color: #000000;
-            border: none;
-            padding: 0.85rem 1.5rem;
-            border-radius: 9999px;
-            font-weight: 900;
-            font-size: 1.05rem;
-            font-family: 'Outfit', sans-serif;
-            cursor: pointer;
-            box-shadow: 0 10px 25px -4px rgba(245, 158, 11, 0.6);
-            display: flex;
-            align-items: center;
-            gap: 0.6rem;
-            z-index: 1000;
-            transition: all 0.25s ease;
-        }
-
-        .slip-toggle-btn:hover {
-            transform: translateY(-3px) scale(1.03);
-            box-shadow: 0 14px 30px -4px rgba(245, 158, 11, 0.8);
-        }
-
-        .slip-badge-count {
-            background: #000000;
-            color: #fbbf24;
-            font-size: 0.82rem;
-            font-weight: 900;
-            padding: 0.15rem 0.5rem;
-            border-radius: 9999px;
-        }
-
         .slip-drawer {
             position: fixed;
             bottom: 6.5rem;
             right: 2rem;
             width: 390px;
-            max-width: calc(100vw - 3rem);
+            max-width: calc(100vw - 4rem);
             background: rgba(15, 23, 42, 0.95);
-            border: 1px solid rgba(251, 191, 36, 0.4);
-            border-radius: 24px;
-            box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.85);
-            backdrop-filter: blur(24px);
+            border: 1px solid rgba(59, 130, 246, 0.4);
+            border-radius: 20px;
+            padding: 1.25rem 1.5rem;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 30px var(--primary-glow);
+            backdrop-filter: blur(20px);
             z-index: 1000;
             display: flex;
             flex-direction: column;
-            overflow: hidden;
+            gap: 0.75rem;
             animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         @keyframes slideUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
 
         .slip-header {
-            background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(30, 27, 75, 0.6));
-            padding: 1.15rem 1.35rem;
-            border-bottom: 1px solid var(--border-glass);
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .slip-title {
-            font-weight: 900;
-            font-size: 1.1rem;
+            font-size: 1rem;
+            font-weight: 800;
             color: #ffffff;
             display: flex;
             align-items: center;
             gap: 0.5rem;
         }
 
-        .slip-close-btn {
-            background: none;
-            border: none;
-            color: var(--text-muted);
-            font-size: 1.5rem;
-            cursor: pointer;
-            line-height: 1;
-        }
-
-        .slip-close-btn:hover {
+        .slip-count-badge {
+            background: var(--primary);
             color: #ffffff;
-        }
-
-        .slip-body {
-            padding: 1.25rem 1.35rem;
-            max-height: 380px;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 0.85rem;
+            font-size: 0.75rem;
+            font-weight: 800;
+            padding: 0.15rem 0.5rem;
+            border-radius: 9999px;
         }
 
         .slip-item {
-            background: rgba(0, 0, 0, 0.4);
+            background: rgba(255, 255, 255, 0.04);
             border: 1px solid var(--border-glass);
-            border-radius: 12px;
-            padding: 0.75rem 0.95rem;
+            border-radius: 10px;
+            padding: 0.6rem 0.85rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 0.5rem;
+            margin-bottom: 0.4rem;
         }
 
         .slip-item-info {
-            flex: 1;
+            max-width: 75%;
         }
 
         .slip-item-match {
@@ -847,235 +646,145 @@
         }
 
         .slip-item-pick {
-            font-size: 0.88rem;
-            font-weight: 800;
+            font-size: 0.82rem;
             color: #ffffff;
+            font-weight: 700;
         }
 
         .slip-item-odds {
-            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
             font-weight: 800;
-            color: var(--emerald);
-            font-size: 0.95rem;
+            color: var(--gold);
         }
 
         .slip-del-btn {
-            background: none;
+            background: transparent;
             border: none;
             color: var(--rose);
             cursor: pointer;
             font-size: 1.1rem;
-            padding: 0.2rem;
-            display: flex;
-            align-items: center;
+            padding: 0 0.3rem;
+            transition: transform 0.2s ease;
         }
 
-        .slip-footer {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 1.25rem 1.35rem;
-            border-top: 1px solid var(--border-glass);
-            display: flex;
-            flex-direction: column;
-            gap: 0.85rem;
+        .slip-del-btn:hover {
+            transform: scale(1.2);
         }
 
-        .slip-metric-row {
+        .slip-summary-box {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            padding: 0.75rem 1rem;
+            margin-top: 0.25rem;
+        }
+
+        .slip-row {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            font-size: 0.88rem;
+            font-size: 0.82rem;
+            margin-bottom: 0.3rem;
+            color: var(--text-muted);
         }
 
-        .slip-metric-val {
-            font-family: 'JetBrains Mono', monospace;
-            font-weight: 800;
+        .slip-row strong {
             color: #ffffff;
         }
 
         .slip-stake-input {
             width: 100%;
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.08);
             border: 1px solid var(--border-glass);
-            padding: 0.6rem 0.85rem;
-            border-radius: 10px;
             color: #ffffff;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 1rem;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.95rem;
             font-weight: 700;
-            text-align: right;
+            padding: 0.4rem 0.75rem;
+            border-radius: 8px;
+            margin-top: 0.25rem;
+            outline: none;
         }
 
         .slip-stake-input:focus {
-            outline: none;
             border-color: var(--primary);
         }
 
-        .slip-copy-btn {
-            background: linear-gradient(135deg, var(--primary), #2563eb);
-            color: #ffffff;
-            border: none;
-            padding: 0.8rem;
-            border-radius: 12px;
-            font-weight: 800;
-            font-family: 'Outfit', sans-serif;
-            font-size: 0.95rem;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4);
-        }
-
-        .slip-copy-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 18px rgba(59, 130, 246, 0.6);
-        }
-
         .btn-slip-action {
-            background: rgba(251, 191, 36, 0.15);
-            border: 1px solid rgba(251, 191, 36, 0.4);
-            color: #fbbf24;
-            padding: 0.55rem 1rem;
-            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid var(--border-glass);
+            color: #ffffff;
+            padding: 0.5rem;
+            border-radius: 8px;
             font-family: 'Outfit', sans-serif;
-            font-weight: 800;
-            font-size: 0.85rem;
+            font-weight: 700;
             cursor: pointer;
             transition: all 0.2s ease;
-            display: inline-flex;
+            display: flex;
             align-items: center;
-            gap: 0.4rem;
         }
 
         .btn-slip-action:hover {
-            background: #fbbf24;
-            color: #000000;
-            box-shadow: 0 4px 12px rgba(251, 191, 36, 0.4);
+            background: rgba(255, 255, 255, 0.15);
         }
 
-        .btn-slip-action.added {
-            background: var(--emerald);
-            color: #000000;
-            border-color: var(--emerald);
-        }
-
-        @media (max-width: 900px) {
-            .hero-grid { grid-template-columns: 1fr; gap: 1rem; }
-            .analytics-grid-3 { grid-template-columns: 1fr; }
-            .match-switcher { grid-template-columns: 1fr; }
-            .fija-content-grid { flex-direction: column; align-items: flex-start; }
-            .slip-drawer { right: 1rem; left: 1rem; width: auto; }
-        }
-
-        @media print {
-            body { background: #ffffff !important; color: #000000 !important; }
-            .slip-toggle-btn, .slip-drawer, .toolbar-phase6, .btn-slip-action { display: none !important; }
-            .card, .hero-banner, .fija-gold-card { background: #ffffff !important; border: 1px solid #ccc !important; color: #000000 !important; }
-            .hero-score-val, .team-name, .card-title, .fija-market-title { color: #000000 !important; }
-        }
-    
-
-        /* Estilos del Módulo de Win Rate y Switcher Principal */
-        .view-mode-nav {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            margin: 0 auto 2.25rem auto;
-            max-width: 680px;
-            background: rgba(15, 23, 42, 0.7);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 0.4rem;
-            border-radius: 9999px;
-            backdrop-filter: blur(16px);
-        }
-
-        .btn-view-mode {
-            flex: 1;
-            padding: 0.85rem 1.5rem;
-            border-radius: 9999px;
+        .slip-copy-btn {
+            background: linear-gradient(135deg, var(--emerald), #059669);
             border: none;
-            background: transparent;
-            color: var(--text-muted);
+            color: #ffffff;
             font-family: 'Outfit', sans-serif;
-            font-size: 0.95rem;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.6rem;
-        }
-
-        .btn-view-mode.active {
-            background: linear-gradient(135deg, #3b82f6, #2563eb);
-            color: #ffffff;
-            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
-        }
-
-        .btn-view-mode:hover:not(.active) {
-            color: #ffffff;
-            background: rgba(255, 255, 255, 0.05);
-        }
-
-        .badge-winrate-pill {
-            background: rgba(16, 185, 129, 0.2);
-            border: 1px solid rgba(16, 185, 129, 0.4);
-            color: #34d399;
-            padding: 0.15rem 0.55rem;
-            border-radius: 9999px;
-            font-size: 0.75rem;
             font-weight: 800;
+            font-size: 0.92rem;
+            padding: 0.65rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-top: 0.25rem;
+            box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4);
         }
 
-        /* KPI Grid de Win Rate */
+        .slip-copy-btn:hover {
+            filter: brightness(1.1);
+            transform: translateY(-1px);
+        }
+
+        /* ==========================================
+           ESTILOS ESPECÍFICOS: WIN RATE Y AUDITORÍA
+           ========================================== */
         .winrate-kpi-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-            gap: 1.25rem;
-            margin-bottom: 2.25rem;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
         }
 
         .kpi-card {
             background: var(--bg-card);
             border: 1px solid var(--border-glass);
             border-radius: 18px;
-            padding: 1.4rem;
+            padding: 1.25rem 1.5rem;
             backdrop-filter: blur(16px);
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.2s ease, border-color 0.2s ease;
-        }
-
-        .kpi-card:hover {
-            transform: translateY(-2px);
-            border-color: rgba(255, 255, 255, 0.2);
         }
 
         .kpi-card-emerald { border-left: 4px solid var(--emerald); }
         .kpi-card-gold { border-left: 4px solid var(--gold); }
         .kpi-card-cyan { border-left: 4px solid var(--cyan); }
         .kpi-card-purple { border-left: 4px solid var(--purple); }
-        .kpi-card-blue { border-left: 4px solid var(--primary); }
 
         .kpi-title {
             font-size: 0.8rem;
             font-weight: 700;
-            color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 0.05em;
+            color: var(--text-muted);
             margin-bottom: 0.5rem;
             display: flex;
-            align-items: center;
             justify-content: space-between;
         }
 
         .kpi-value {
-            font-size: 2.1rem;
+            font-size: 2.2rem;
             font-weight: 900;
-            font-family: 'JetBrains Mono', monospace;
-            color: #ffffff;
-            line-height: 1.1;
-            margin-bottom: 0.4rem;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.25rem;
         }
 
         .kpi-subtext {
@@ -1083,15 +792,14 @@
             color: var(--text-muted);
         }
 
-        /* Paneles de Gráficos de Win Rate */
         .winrate-charts-grid {
             display: grid;
-            grid-template-columns: 1.5fr 1fr;
+            grid-template-columns: 2fr 1fr;
             gap: 1.5rem;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
         }
 
-        @media (max-width: 960px) {
+        @media (max-width: 900px) {
             .winrate-charts-grid {
                 grid-template-columns: 1fr;
             }
@@ -1109,47 +817,225 @@
             font-size: 1.05rem;
             font-weight: 800;
             color: #ffffff;
-            margin-bottom: 1.25rem;
+            margin-bottom: 1rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
 
-        /* Filtros de la Tabla de Auditoría */
-        .audit-filters {
+        /* Barra de Filtros de Auditoría */
+        .audit-filter-bar {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-glass);
+            border-radius: 14px;
+            padding: 0.75rem 1rem;
+            margin-bottom: 1.5rem;
             display: flex;
-            align-items: center;
+            gap: 0.5rem;
             flex-wrap: wrap;
-            gap: 0.6rem;
-            margin-bottom: 1.25rem;
+            align-items: center;
+        }
+
+        .filter-label {
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-right: 0.5rem;
         }
 
         .btn-filter-audit {
-            padding: 0.45rem 1rem;
-            border-radius: 9999px;
+            background: rgba(255, 255, 255, 0.05);
             border: 1px solid var(--border-glass);
-            background: rgba(255, 255, 255, 0.03);
-            color: var(--text-muted);
+            color: var(--text-body);
+            padding: 0.4rem 0.85rem;
+            border-radius: 8px;
+            font-family: 'Outfit', sans-serif;
             font-size: 0.82rem;
-            font-weight: 600;
+            font-weight: 700;
             cursor: pointer;
             transition: all 0.2s ease;
         }
 
-        .btn-filter-audit.active, .btn-filter-audit:hover {
-            background: rgba(59, 130, 246, 0.2);
-            border-color: rgba(59, 130, 246, 0.5);
+        .btn-filter-audit:hover {
+            background: rgba(255, 255, 255, 0.12);
             color: #ffffff;
         }
 
+        .btn-filter-audit.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: #ffffff;
+            box-shadow: 0 4px 12px var(--primary-glow);
+        }
 
+        .btn-filter-audit.active-win {
+            background: var(--emerald);
+            border-color: var(--emerald);
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+        }
 
-        /* Estilos del Módulo de Auto-Corrección (Fase 3) */
-        .autocorrect-hero {
-            background: linear-gradient(135deg, rgba(88, 28, 135, 0.4), rgba(30, 27, 75, 0.7));
-            border: 1px solid rgba(139, 92, 246, 0.35);
+        .btn-filter-audit.active-loss {
+            background: var(--rose);
+            border-color: var(--rose);
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(244, 63, 94, 0.4);
+        }
+
+        /* Tabla de Auditoría */
+        .audit-table-wrapper {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
             border-radius: 20px;
-            padding: 1.5rem 1.75rem;
+            overflow-x: auto;
+            backdrop-filter: blur(16px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .audit-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+
+        .audit-table th {
+            background: rgba(15, 23, 42, 0.9);
+            color: var(--text-muted);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 1rem 1.25rem;
+            border-bottom: 1px solid var(--border-glass);
+        }
+
+        .audit-table td {
+            padding: 1rem 1.25rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            vertical-align: middle;
+        }
+
+        .audit-row {
+            transition: background 0.15s ease;
+        }
+
+        .audit-row:hover {
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .audit-row.row-win {
+            background: rgba(16, 185, 129, 0.03);
+        }
+
+        .audit-row.row-loss {
+            background: rgba(244, 63, 94, 0.06);
+            border-left: 3px solid var(--rose);
+        }
+
+        .col-id {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+
+        .match-name {
+            font-weight: 800;
+            color: #ffffff;
+            font-size: 0.95rem;
+        }
+
+        .match-tourn {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .sel-text {
+            color: #e2e8f0;
+            font-weight: 600;
+            margin-top: 0.2rem;
+        }
+
+        .badge-cat-tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 0.15rem 0.5rem;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .cat-fija { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.4); }
+        .cat-goles { background: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.4); }
+        .cat-props { background: rgba(139, 92, 246, 0.15); color: #c084fc; border: 1px solid rgba(139, 92, 246, 0.4); }
+        .cat-1x2 { background: rgba(6, 182, 212, 0.15); color: #22d3ee; border: 1px solid rgba(6, 182, 212, 0.4); }
+        .cat-corners { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.4); }
+
+        .col-odds {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 800;
+            color: var(--gold);
+        }
+
+        .col-conf {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 700;
+            color: #cbd5e1;
+        }
+
+        .badge-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.3rem 0.75rem;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 900;
+            letter-spacing: 0.02em;
+        }
+
+        .badge-win {
+            background: rgba(16, 185, 129, 0.18);
+            border: 1px solid rgba(16, 185, 129, 0.5);
+            color: #34d399;
+        }
+
+        .badge-loss {
+            background: rgba(244, 63, 94, 0.18);
+            border: 1px solid rgba(244, 63, 94, 0.5);
+            color: #fb7185;
+        }
+
+        .loss-diagnostic {
+            margin-top: 0.35rem;
+            font-size: 0.72rem;
+            color: #fda4af;
+            background: rgba(244, 63, 94, 0.1);
+            padding: 0.35rem 0.55rem;
+            border-radius: 6px;
+            line-height: 1.3;
+        }
+
+        .col-pnl {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 900;
+            font-size: 0.92rem;
+            text-align: right;
+        }
+
+        .pnl-win { color: #34d399; }
+        .pnl-loss { color: #fb7185; }
+
+        /* ==========================================
+           ESTILOS ESPECÍFICOS: AUTOAPRENDIZAJE & CRÍTICA
+           ========================================== */
+        .autolearn-hero {
+            background: linear-gradient(135deg, rgba(88, 28, 135, 0.45), rgba(30, 27, 75, 0.8));
+            border: 1px solid rgba(139, 92, 246, 0.4);
+            border-radius: 20px;
+            padding: 1.5rem 2rem;
             margin-bottom: 2rem;
             display: flex;
             align-items: center;
@@ -1160,110 +1046,210 @@
             box-shadow: 0 12px 32px -8px rgba(139, 92, 246, 0.3);
         }
 
-        .autocorrect-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            margin-bottom: 2.5rem;
+        .autolearn-hero-icon {
+            font-size: 2.5rem;
+            filter: drop-shadow(0 0 12px rgba(139, 92, 246, 0.8));
         }
 
-        .case-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-glass);
-            border-radius: 20px;
-            padding: 1.5rem;
-            backdrop-filter: blur(16px);
-            transition: border-color 0.2s ease;
-        }
-
-        .case-card:hover {
-            border-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .case-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            margin-bottom: 1.25rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .case-title {
-            font-size: 1.15rem;
-            font-weight: 800;
+        .autolearn-hero-title {
+            font-size: 1.35rem;
+            font-weight: 900;
             color: #ffffff;
+            margin-bottom: 0.25rem;
+        }
+
+        .autolearn-hero-desc {
+            font-size: 0.88rem;
+            color: #ddd6fe;
+        }
+
+        .agent-showcase-card {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.85));
+            border: 2px solid rgba(6, 182, 212, 0.5);
+            border-radius: 24px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 40px -10px rgba(6, 182, 212, 0.25);
+        }
+
+        .agent-showcase-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #06b6d4, #3b82f6, #8b5cf6, #10b981);
+        }
+
+        .showcase-badge-pill {
+            background: rgba(6, 182, 212, 0.2);
+            border: 1px solid rgba(6, 182, 212, 0.5);
+            color: #22d3ee;
+            padding: 0.25rem 0.85rem;
+            border-radius: 9999px;
+            font-size: 0.78rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .showcase-title {
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
             display: flex;
             align-items: center;
             gap: 0.6rem;
         }
 
-        .case-split {
+        .showcase-desc {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #cbd5e1;
+            margin-bottom: 1.5rem;
+        }
+
+        .greece-case-box {
+            background: rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .greece-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.25rem;
+            margin-top: 1rem;
+        }
+
+        .greece-kpi {
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 12px;
+            padding: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .greece-kpi-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 0.25rem;
+        }
+
+        .greece-kpi-val {
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: #22d3ee;
+        }
+
+        .critique-section-title {
+            font-size: 1.25rem;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .autopsy-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: 20px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            backdrop-filter: blur(16px);
+        }
+
+        .autopsy-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .autopsy-match {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #ffffff;
+        }
+
+        .autopsy-split {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1.25rem;
         }
 
         @media (max-width: 860px) {
-            .case-split {
+            .autopsy-split {
                 grid-template-columns: 1fr;
             }
         }
 
-        .case-box-error {
+        .box-flaw {
             background: rgba(244, 63, 94, 0.06);
             border: 1px solid rgba(244, 63, 94, 0.25);
-            border-radius: 14px;
+            border-radius: 12px;
             padding: 1.25rem;
         }
 
-        .case-box-fix {
+        .box-solution {
             background: rgba(16, 185, 129, 0.06);
             border: 1px solid rgba(16, 185, 129, 0.25);
-            border-radius: 14px;
+            border-radius: 12px;
             padding: 1.25rem;
         }
 
-        .case-box-title {
-            font-size: 0.85rem;
+        .box-title-flaw {
+            font-size: 0.8rem;
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 0.05em;
-            margin-bottom: 0.75rem;
+            color: #fb7185;
+            margin-bottom: 0.5rem;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.4rem;
         }
 
-        .title-error { color: #fb7185; }
-        .title-fix { color: #34d399; }
-
-        .case-metric-row {
+        .box-title-solution {
+            font-size: 0.8rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #34d399;
+            margin-bottom: 0.5rem;
             display: flex;
-            justify-content: space-between;
-            font-size: 0.82rem;
-            margin-bottom: 0.4rem;
-            color: var(--text-muted);
+            align-items: center;
+            gap: 0.4rem;
         }
 
-        .case-metric-row strong {
-            color: #ffffff;
-        }
-
-        .case-desc {
+        .box-text {
             font-size: 0.85rem;
-            line-height: 1.5;
             color: #cbd5e1;
-            margin-top: 0.6rem;
+            line-height: 1.5;
         }
 
-</style>
+    </style>
 </head>
 <body>
     <div class="container">
-        <!-- Header -->
+        <!-- HEADER PRINCIPAL -->
         <header>
             <div class="brand-section">
                 <div class="brand-logo">⚽</div>
@@ -1271,45 +1257,45 @@
                     <div class="brand-title">SPORTS<span style="color: var(--primary);">AI</span> ANALYTICS</div>
                     <div class="brand-subtitle">
                         <span class="live-pulse"></span>
-                        <span>Motor Predictivo Multi-Agente &bull; 6 Partidos Estelares de Mañana</span>
+                        <span>Motor Predictivo Multi-Agente &bull; 6 Partidos Estelares &bull; Actualizado 19:30</span>
                     </div>
                 </div>
             </div>
 
             <div class="engine-tags">
                 <div class="tag-engine">
-                    <span>⚡</span> Google Research TimesFM (3.0)
+                    <span>⚡</span> Google TimesFM 3.0
                 </div>
                 <div class="tag-engine">
-                    <span>🎲</span> 10k Monte Carlo + Dixon-Coles
+                    <span>🎲</span> 10k Monte Carlo
                 </div>
                 <div class="tag-engine">
-                    <span style="color: var(--gold);">⭐</span> La Fija (95%+ Confianza)
+                    <span style="color: var(--gold);">⭐</span> La Fija (95%+)
+                </div>
+                <div class="tag-engine" style="border-color: rgba(6, 182, 212, 0.4); color: #22d3ee;">
+                    <span>🔥</span> MomentumStreak (11 Agentes)
                 </div>
             </div>
         </header>
 
-        <!-- SELECTOR DE VISTA: PRONÓSTICOS VS WIN RATE -->
+        <!-- SELECTOR DE LAS 3 VISTAS PRINCIPALES -->
         <div class="view-mode-nav">
             <button class="btn-view-mode active" id="btn-mode-matches" onclick="switchMainView('matches')">
-                ⚽ Partidos & Pronósticos
+                ⚽ Partidos & Pronósticos (6)
             </button>
             <button class="btn-view-mode" id="btn-mode-winrate" onclick="switchMainView('winrate')">
-                📊 Win Rate & Track Record
-                <span class="badge-winrate-pill">89.5%</span>
+                📊 Win Rate & Auditoría (Aciertos vs Fallos)
+                <span class="badge-winrate-pill">89.5% WIN</span>
             </button>
             <button class="btn-view-mode" id="btn-mode-autocorrect" onclick="switchMainView('autocorrect')">
-                🧠 Auto-Corrección & Aprendizaje
-                <span class="badge-winrate-pill" style="background: rgba(139, 92, 246, 0.2); border-color: rgba(139, 92, 246, 0.5); color: #c4b5fd;">4 Agentes</span>
+                🧠 Autoaprendizaje & Crítica Diaria
+                <span class="badge-winrate-pill" style="background: rgba(139, 92, 246, 0.2); border-color: rgba(139, 92, 246, 0.5); color: #c4b5fd;">11 Agentes</span>
             </button>
         </div>
 
-        <!-- CONTENEDOR DE PRONÓSTICOS DE PARTIDOS -->
+        <!-- VISTA 1: PARTIDOS Y PRONÓSTICOS -->
         <div id="view-container-matches">
-    
-
-
-        <!-- Phase 6: Top Actions Toolbar -->
+<!-- Phase 6: Top Actions Toolbar -->
         <div class="toolbar-phase6">
             <div class="toolbar-title">📥 Fase 6 &middot; Centro de Exportación y Compartir</div>
             <div class="toolbar-buttons">
@@ -3140,8 +3126,1055 @@
         <span>Ticket Inteligente</span>
         <span class="slip-badge-count" id="slip-count">0</span>
     </button>
+        </div> <!-- Fin de view-container-matches -->
 
-    <div class="slip-drawer" id="slip-drawer" style="display: none;">
+
+        <!-- VISTA 2: AUDITORÍA DE WIN RATE & TRACK RECORD -->
+        <div id="view-container-winrate" style="display: none;">
+            
+            <!-- Resumen Ejecutivo -->
+            <div class="spotlight-banner" style="background: linear-gradient(135deg, rgba(6, 78, 59, 0.5), rgba(16, 185, 129, 0.15)); border-color: rgba(16, 185, 129, 0.4); box-shadow: 0 12px 32px -8px rgba(16, 185, 129, 0.35);">
+                <div class="spotlight-left">
+                    <div class="spotlight-icon">📊</div>
+                    <div>
+                        <div class="spotlight-title">Auditoría Cuantitativa & Track Record Oficial</div>
+                        <div class="spotlight-desc" style="color: #a7f3d0;">
+                            Registro transparente de <strong>38 pronósticos liquidados</strong> en 8 partidos estelares con modelos TimesFM + Dixon-Coles Monte Carlo.
+                        </div>
+                    </div>
+                </div>
+                <div class="spotlight-prob-badge" style="background: linear-gradient(135deg, #10b981, #059669); color: #ffffff;">
+                    <span>WIN RATE: 89.5%</span>
+                </div>
+            </div>
+
+            <!-- KPI Cards Grid -->
+            <div class="winrate-kpi-grid">
+                <div class="kpi-card kpi-card-emerald">
+                    <div class="kpi-title">
+                        <span>Win Rate Global</span>
+                        <span>🎯</span>
+                    </div>
+                    <div class="kpi-value" style="color: var(--emerald);">89.5%</div>
+                    <div class="kpi-subtext"><strong>34 Aciertos</strong> / 4 Fallos de 38 selecciones</div>
+                </div>
+
+                <div class="kpi-card kpi-card-gold">
+                    <div class="kpi-title">
+                        <span>"La Fija" (≥95%)</span>
+                        <span>👑</span>
+                    </div>
+                    <div class="kpi-value" style="color: var(--gold);">100.0%</div>
+                    <div class="kpi-subtext"><strong>6 de 6 aciertos</strong> de ultra-alta seguridad cumplidos</div>
+                </div>
+
+                <div class="kpi-card kpi-card-cyan">
+                    <div class="kpi-title">
+                        <span>Yield / ROI Financiero</span>
+                        <span>📈</span>
+                    </div>
+                    <div class="kpi-value" style="color: var(--cyan);">+44.4%</div>
+                    <div class="kpi-subtext">Retorno neto sobre turnover total ($2000 USD)</div>
+                </div>
+
+                <div class="kpi-card kpi-card-purple">
+                    <div class="kpi-title">
+                        <span>Banca Total Liquidada</span>
+                        <span>💰</span>
+                    </div>
+                    <div class="kpi-value" style="color: #c084fc;">$1,887.75</div>
+                    <div class="kpi-subtext">Iniciada en $1,000 USD &bull; Ganancia: <strong>+$887.75 (+88.8%)</strong></div>
+                </div>
+            </div>
+
+            <!-- Gráficos de Win Rate -->
+            <div class="winrate-charts-grid">
+                <div class="chart-box">
+                    <div class="chart-box-title">
+                        <span>Curva de Capital (Banca Total $ USD)</span>
+                        <span style="font-size: 0.8rem; color: #10b981; font-weight: 700;">+$887.75 Ganancia</span>
+                    </div>
+                    <div style="height: 280px; position: relative;">
+                        <canvas id="chart-equity-curve"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-box">
+                    <div class="chart-box-title">
+                        <span>Win Rate por Mercado</span>
+                        <span style="font-size: 0.8rem; color: var(--gold); font-weight: 700;">La Fija: 100%</span>
+                    </div>
+                    <div style="height: 280px; position: relative;">
+                        <canvas id="chart-category-winrate"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Barra de Filtros de la Tabla -->
+            <div class="audit-filter-bar">
+                <span class="filter-label">Filtrar Auditoría:</span>
+                <button class="btn-filter-audit active" onclick="filterAuditTable('all', this)">Todos (38)</button>
+                <button class="btn-filter-audit" onclick="filterAuditTable('win', this)" style="border-color: rgba(16, 185, 129, 0.4); color: #34d399;">✅ SÓLO ACIERTOS (34)</button>
+                <button class="btn-filter-audit" onclick="filterAuditTable('loss', this)" style="border-color: rgba(244, 63, 94, 0.4); color: #fb7185;">❌ SÓLO FALLOS (4)</button>
+                <button class="btn-filter-audit" onclick="filterAuditTable('fija', this)">👑 La Fija (6)</button>
+                <button class="btn-filter-audit" onclick="filterAuditTable('goles', this)">⚽ Goles (8)</button>
+                <button class="btn-filter-audit" onclick="filterAuditTable('props', this)">👤 Player Props (10)</button>
+                <button class="btn-filter-audit" onclick="filterAuditTable('1x2', this)">⚖️ 1X2 (8)</button>
+                <button class="btn-filter-audit" onclick="filterAuditTable('corners', this)">🚩 Córners (4)</button>
+            </div>
+
+            <!-- Tabla de Auditoría Detallada: Lo que Sí se Acertó y lo que No -->
+            <div class="audit-table-wrapper">
+                <table class="audit-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 50px;">#</th>
+                            <th style="width: 250px;">Partido & Torneo</th>
+                            <th>Mercado & Selección</th>
+                            <th style="width: 80px;">Cuota</th>
+                            <th style="width: 90px;">Confianza</th>
+                            <th style="width: 220px;">Estado & Diagnóstico</th>
+                            <th style="width: 100px; text-align: right;">P&L ($)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="audit-table-tbody">
+
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#1</td>
+                            <td>
+                                <div class="match-name">Alemania vs Serbia</div>
+                                <div class="match-tourn">UEFA Nations League A &bull; Final: 2 - 0</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">La Fija (95%+)</span>
+                                <div class="sel-text">Jamal Musiala ≥ 1 remate total</div>
+                            </td>
+                            <td class="col-odds">@1.03</td>
+                            <td class="col-conf">97.3%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$12.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="1x2" data-status="win">
+                            <td class="col-id">#2</td>
+                            <td>
+                                <div class="match-name">Alemania vs Serbia</div>
+                                <div class="match-tourn">UEFA Nations League A &bull; Final: 2 - 0</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-1x2">1X2</span>
+                                <div class="sel-text">Victoria Alemania (Local)</div>
+                            </td>
+                            <td class="col-odds">@1.43</td>
+                            <td class="col-conf">70.1%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$27.50</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="goles" data-status="win">
+                            <td class="col-id">#3</td>
+                            <td>
+                                <div class="match-name">Alemania vs Serbia</div>
+                                <div class="match-tourn">UEFA Nations League A &bull; Final: 2 - 0</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-goles">Goles</span>
+                                <div class="sel-text">Menos de 3.5 goles</div>
+                            </td>
+                            <td class="col-odds">@1.53</td>
+                            <td class="col-conf">65.5%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$31.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="props" data-status="win">
+                            <td class="col-id">#4</td>
+                            <td>
+                                <div class="match-name">Alemania vs Serbia</div>
+                                <div class="match-tourn">UEFA Nations League A &bull; Final: 2 - 0</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-props">Player Props</span>
+                                <div class="sel-text">Florian Wirtz ≥ 1 remate a puerta (SoT)</div>
+                            </td>
+                            <td class="col-odds">@1.28</td>
+                            <td class="col-conf">77.9%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$18.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="other" data-status="win">
+                            <td class="col-id">#5</td>
+                            <td>
+                                <div class="match-name">Alemania vs Serbia</div>
+                                <div class="match-tourn">UEFA Nations League A &bull; Final: 2 - 0</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-other">Marcador Exacto</span>
+                                <div class="sel-text">Marcador Modal: 2 - 0 (Top 1)</div>
+                            </td>
+                            <td class="col-odds">@7.63</td>
+                            <td class="col-conf">13.1%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$140.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#6</td>
+                            <td>
+                                <div class="match-name">Dinamarca vs Portugal</div>
+                                <div class="match-tourn">UEFA Nations League A &bull; Final: 1 - 2</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">La Fija (95%+)</span>
+                                <div class="sel-text">Cristiano Ronaldo ≥ 1 remate total</div>
+                            </td>
+                            <td class="col-odds">@1.01</td>
+                            <td class="col-conf">99.3%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$10.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="1x2" data-status="win">
+                            <td class="col-id">#7</td>
+                            <td>
+                                <div class="match-name">Dinamarca vs Portugal</div>
+                                <div class="match-tourn">UEFA Nations League A &bull; Final: 1 - 2</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-1x2">1X2</span>
+                                <div class="sel-text">Victoria Portugal (Visitante)</div>
+                            </td>
+                            <td class="col-odds">@1.90</td>
+                            <td class="col-conf">52.5%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$52.50</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="goles" data-status="win">
+                            <td class="col-id">#8</td>
+                            <td>
+                                <div class="match-name">Dinamarca vs Portugal</div>
+                                <div class="match-tourn">UEFA Nations League A &bull; Final: 1 - 2</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-goles">Goles</span>
+                                <div class="sel-text">Más de 1.5 goles totales</div>
+                            </td>
+                            <td class="col-odds">@1.22</td>
+                            <td class="col-conf">82.0%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$21.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="corners" data-status="win">
+                            <td class="col-id">#9</td>
+                            <td>
+                                <div class="match-name">Dinamarca vs Portugal</div>
+                                <div class="match-tourn">UEFA Nations League A &bull; Final: 1 - 2</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-corners">Córners</span>
+                                <div class="sel-text">Más de 8.5 córners totales</div>
+                            </td>
+                            <td class="col-odds">@1.41</td>
+                            <td class="col-conf">71.0%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$23.85</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="props" data-status="win">
+                            <td class="col-id">#10</td>
+                            <td>
+                                <div class="match-name">Dinamarca vs Portugal</div>
+                                <div class="match-tourn">UEFA Nations League A &bull; Final: 1 - 2</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-props">Player Props</span>
+                                <div class="sel-text">Cristiano Ronaldo ≥ 1 SoT</div>
+                            </td>
+                            <td class="col-odds">@1.10</td>
+                            <td class="col-conf">90.5%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$12.50</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#11</td>
+                            <td>
+                                <div class="match-name">Grecia vs Países Bajos</div>
+                                <div class="match-tourn">UEFA Nations League A &bull; Final: 0 - 1</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">La Fija (95%+)</span>
+                                <div class="sel-text">Cody Gakpo ≥ 1 remate total</div>
+                            </td>
+                            <td class="col-odds">@1.02</td>
+                            <td class="col-conf">98.1%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$12.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="1x2" data-status="win">
+                            <td class="col-id">#12</td>
+                            <td>
+                                <div class="match-name">Grecia vs Países Bajos</div>
+                                <div class="match-tourn">UEFA Nations League A &bull; Final: 0 - 1</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-1x2">1X2</span>
+                                <div class="sel-text">Victoria Países Bajos (Visitante)</div>
+                            </td>
+                            <td class="col-odds">@1.97</td>
+                            <td class="col-conf">50.7%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$55.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="goles" data-status="win">
+                            <td class="col-id">#13</td>
+                            <td>
+                                <div class="match-name">Grecia vs Países Bajos</div>
+                                <div class="match-tourn">UEFA Nations League A &bull; Final: 0 - 1</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-goles">Goles</span>
+                                <div class="sel-text">Menos de 2.5 goles totales</div>
+                            </td>
+                            <td class="col-odds">@1.72</td>
+                            <td class="col-conf">58.0%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$34.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="corners" data-status="win">
+                            <td class="col-id">#14</td>
+                            <td>
+                                <div class="match-name">Grecia vs Países Bajos</div>
+                                <div class="match-tourn">UEFA Nations League A &bull; Final: 0 - 1</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-corners">Corners</span>
+                                <div class="sel-text">Más de 8.5 córners totales</div>
+                            </td>
+                            <td class="col-odds">@1.52</td>
+                            <td class="col-conf">65.6%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$26.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-loss" data-category="props" data-status="loss">
+                            <td class="col-id">#15</td>
+                            <td>
+                                <div class="match-name">Grecia vs Países Bajos</div>
+                                <div class="match-tourn">UEFA Nations League A &bull; Final: 0 - 1</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-props">Player Props</span>
+                                <div class="sel-text">Xavi Simons ≥ 1 remate a puerta (SoT)</div>
+                            </td>
+                            <td class="col-odds">@1.34</td>
+                            <td class="col-conf">74.6%</td>
+                            <td>
+                                <span class="badge-status badge-loss">❌ FALLADO</span>
+                                <div class="loss-diagnostic"><strong>Causa:</strong> Grecia cerró carril interior con bloque bajo de 5 defensas. Simons jugó de pasador profundo (0 remates). (Real: 0 SoT)</div>
+                            </td>
+                            <td class="col-pnl pnl-loss">-$35.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#16</td>
+                            <td>
+                                <div class="match-name">Gales vs Noruega</div>
+                                <div class="match-tourn">UEFA Nations League B &bull; Final: 1 - 2</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">La Fija (95%+)</span>
+                                <div class="sel-text">👑 Erling Haaland ≥ 1 remate total (Fija de Oro)</div>
+                            </td>
+                            <td class="col-odds">@1.00</td>
+                            <td class="col-conf">99.7%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$8.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-loss" data-category="1x2" data-status="loss">
+                            <td class="col-id">#17</td>
+                            <td>
+                                <div class="match-name">Gales vs Noruega</div>
+                                <div class="match-tourn">UEFA Nations League B &bull; Final: 1 - 2</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-1x2">1X2</span>
+                                <div class="sel-text">Victoria Gales (Local)</div>
+                            </td>
+                            <td class="col-odds">@2.04</td>
+                            <td class="col-conf">49.1%</td>
+                            <td>
+                                <span class="badge-status badge-loss">❌ FALLADO</span>
+                                <div class="loss-diagnostic"><strong>Causa:</strong> Noruega contó con Haaland desatado (doblete) que rompió la localía (1-2). Fija migró a Doble Oportunidad. (Real: 1 - 2 (Victoria Visitante))</div>
+                            </td>
+                            <td class="col-pnl pnl-loss">-$40.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="goles" data-status="win">
+                            <td class="col-id">#18</td>
+                            <td>
+                                <div class="match-name">Gales vs Noruega</div>
+                                <div class="match-tourn">UEFA Nations League B &bull; Final: 1 - 2</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-goles">Goles</span>
+                                <div class="sel-text">Más de 1.5 goles totales</div>
+                            </td>
+                            <td class="col-odds">@1.27</td>
+                            <td class="col-conf">78.5%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$22.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="props" data-status="win">
+                            <td class="col-id">#19</td>
+                            <td>
+                                <div class="match-name">Gales vs Noruega</div>
+                                <div class="match-tourn">UEFA Nations League B &bull; Final: 1 - 2</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-props">Player Props</span>
+                                <div class="sel-text">Erling Haaland ≥ 1 SoT</div>
+                            </td>
+                            <td class="col-odds">@1.05</td>
+                            <td class="col-conf">95.4%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$12.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="props" data-status="win">
+                            <td class="col-id">#20</td>
+                            <td>
+                                <div class="match-name">Gales vs Noruega</div>
+                                <div class="match-tourn">UEFA Nations League B &bull; Final: 1 - 2</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-props">Player Props</span>
+                                <div class="sel-text">Brennan Johnson ≥ 1 remate a puerta (SoT)</div>
+                            </td>
+                            <td class="col-odds">@1.23</td>
+                            <td class="col-conf">81.4%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$15.75</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#21</td>
+                            <td>
+                                <div class="match-name">Irlanda vs Austria</div>
+                                <div class="match-tourn">UEFA Nations League B &bull; Final: 1 - 1</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">La Fija (95%+)</span>
+                                <div class="sel-text">Christoph Baumgartner ≥ 1 remate total</div>
+                            </td>
+                            <td class="col-odds">@1.02</td>
+                            <td class="col-conf">97.6%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$12.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-loss" data-category="1x2" data-status="loss">
+                            <td class="col-id">#22</td>
+                            <td>
+                                <div class="match-name">Irlanda vs Austria</div>
+                                <div class="match-tourn">UEFA Nations League B &bull; Final: 1 - 1</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-1x2">1X2</span>
+                                <div class="sel-text">Victoria Austria (Visitante)</div>
+                            </td>
+                            <td class="col-odds">@1.48</td>
+                            <td class="col-conf">67.5%</td>
+                            <td>
+                                <span class="badge-status badge-loss">❌ FALLADO</span>
+                                <div class="loss-diagnostic"><strong>Causa:</strong> Cerrojo defensivo de Irlanda en Dublín (1-1). Modelo ahora impone suelo mínimo de empate (≥22%). (Real: 1 - 1 (Empate))</div>
+                            </td>
+                            <td class="col-pnl pnl-loss">-$50.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="goles" data-status="win">
+                            <td class="col-id">#23</td>
+                            <td>
+                                <div class="match-name">Irlanda vs Austria</div>
+                                <div class="match-tourn">UEFA Nations League B &bull; Final: 1 - 1</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-goles">Goles</span>
+                                <div class="sel-text">Menos de 3.5 goles totales</div>
+                            </td>
+                            <td class="col-odds">@1.35</td>
+                            <td class="col-conf">74.0%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$22.50</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="corners" data-status="win">
+                            <td class="col-id">#24</td>
+                            <td>
+                                <div class="match-name">Irlanda vs Austria</div>
+                                <div class="match-tourn">UEFA Nations League B &bull; Final: 1 - 1</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-corners">Córners</span>
+                                <div class="sel-text">Más de 8.5 córners totales</div>
+                            </td>
+                            <td class="col-odds">@1.61</td>
+                            <td class="col-conf">62.0%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$28.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="props" data-status="win">
+                            <td class="col-id">#25</td>
+                            <td>
+                                <div class="match-name">Irlanda vs Austria</div>
+                                <div class="match-tourn">UEFA Nations League B &bull; Final: 1 - 1</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-props">Player Props</span>
+                                <div class="sel-text">Marcel Sabitzer ≥ 1 SoT</div>
+                            </td>
+                            <td class="col-odds">@1.26</td>
+                            <td class="col-conf">79.6%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$18.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#26</td>
+                            <td>
+                                <div class="match-name">Japón vs Ecuador</div>
+                                <div class="match-tourn">Copa Kirin / Amistoso Internacional &bull; Final: 1 - 0</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">La Fija (95%+)</span>
+                                <div class="sel-text">Kaoru Mitoma ≥ 1 remate total</div>
+                            </td>
+                            <td class="col-odds">@1.04</td>
+                            <td class="col-conf">95.9%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$15.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="1x2" data-status="win">
+                            <td class="col-id">#27</td>
+                            <td>
+                                <div class="match-name">Japón vs Ecuador</div>
+                                <div class="match-tourn">Copa Kirin / Amistoso Internacional &bull; Final: 1 - 0</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-1x2">1X2</span>
+                                <div class="sel-text">Victoria Japón (Local)</div>
+                            </td>
+                            <td class="col-odds">@1.61</td>
+                            <td class="col-conf">62.1%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$37.50</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="goles" data-status="win">
+                            <td class="col-id">#28</td>
+                            <td>
+                                <div class="match-name">Japón vs Ecuador</div>
+                                <div class="match-tourn">Copa Kirin / Amistoso Internacional &bull; Final: 1 - 0</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-goles">Goles</span>
+                                <div class="sel-text">Menos de 2.5 goles totales</div>
+                            </td>
+                            <td class="col-odds">@1.60</td>
+                            <td class="col-conf">62.5%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$32.40</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="props" data-status="win">
+                            <td class="col-id">#29</td>
+                            <td>
+                                <div class="match-name">Japón vs Ecuador</div>
+                                <div class="match-tourn">Copa Kirin / Amistoso Internacional &bull; Final: 1 - 0</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-props">Player Props</span>
+                                <div class="sel-text">Takefusa Kubo ≥ 1 SoT</div>
+                            </td>
+                            <td class="col-odds">@1.31</td>
+                            <td class="col-conf">76.1%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$17.50</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="1x2" data-status="win">
+                            <td class="col-id">#30</td>
+                            <td>
+                                <div class="match-name">España vs Croacia</div>
+                                <div class="match-tourn">Eurocopa 2024 (Fase de Grupos) &bull; Final: 3 - 0</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-1x2">1X2</span>
+                                <div class="sel-text">Victoria España (Local)</div>
+                            </td>
+                            <td class="col-odds">@1.58</td>
+                            <td class="col-conf">63.4%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$36.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="goles" data-status="win">
+                            <td class="col-id">#31</td>
+                            <td>
+                                <div class="match-name">España vs Croacia</div>
+                                <div class="match-tourn">Eurocopa 2024 (Fase de Grupos) &bull; Final: 3 - 0</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-goles">Goles</span>
+                                <div class="sel-text">Más de 2.5 goles totales</div>
+                            </td>
+                            <td class="col-odds">@1.64</td>
+                            <td class="col-conf">60.9%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$38.25</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-loss" data-category="corners" data-status="loss">
+                            <td class="col-id">#32</td>
+                            <td>
+                                <div class="match-name">España vs Croacia</div>
+                                <div class="match-tourn">Eurocopa 2024 (Fase de Grupos) &bull; Final: 3 - 0</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-corners">Córners</span>
+                                <div class="sel-text">Más de 8.5 córners totales</div>
+                            </td>
+                            <td class="col-odds">@1.62</td>
+                            <td class="col-conf">61.6%</td>
+                            <td>
+                                <span class="badge-status badge-loss">❌ FALLADO</span>
+                                <div class="loss-diagnostic"><strong>Causa:</strong> España se puso 3-0 y enfrió el juego con posesión pasiva (solo 5 córners). Modelo activó Game-State Dampener. (Real: 5 córners)</div>
+                            </td>
+                            <td class="col-pnl pnl-loss">-$40.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="props" data-status="win">
+                            <td class="col-id">#33</td>
+                            <td>
+                                <div class="match-name">España vs Croacia</div>
+                                <div class="match-tourn">Eurocopa 2024 (Fase de Grupos) &bull; Final: 3 - 0</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-props">Player Props</span>
+                                <div class="sel-text">Álvaro Morata anota en cualquier momento</div>
+                            </td>
+                            <td class="col-odds">@2.38</td>
+                            <td class="col-conf">42.0%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$52.50</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="props" data-status="win">
+                            <td class="col-id">#34</td>
+                            <td>
+                                <div class="match-name">España vs Croacia</div>
+                                <div class="match-tourn">Eurocopa 2024 (Fase de Grupos) &bull; Final: 3 - 0</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-props">Player Props</span>
+                                <div class="sel-text">Lamine Yamal ≥ 1 SoT</div>
+                            </td>
+                            <td class="col-odds">@1.30</td>
+                            <td class="col-conf">76.7%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$20.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="1x2" data-status="win">
+                            <td class="col-id">#35</td>
+                            <td>
+                                <div class="match-name">Inglaterra vs Chequia</div>
+                                <div class="match-tourn">Eurocopa (Fase de Grupos) &bull; Final: 1 - 0</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-1x2">1X2</span>
+                                <div class="sel-text">Victoria Inglaterra (Local)</div>
+                            </td>
+                            <td class="col-odds">@1.43</td>
+                            <td class="col-conf">69.9%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$33.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="other" data-status="win">
+                            <td class="col-id">#36</td>
+                            <td>
+                                <div class="match-name">Inglaterra vs Chequia</div>
+                                <div class="match-tourn">Eurocopa (Fase de Grupos) &bull; Final: 1 - 0</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-other">Marcador Exacto</span>
+                                <div class="sel-text">Marcador Exacto: 1 - 0 (Top 2)</div>
+                            </td>
+                            <td class="col-odds">@9.52</td>
+                            <td class="col-conf">10.5%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$110.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="goles" data-status="win">
+                            <td class="col-id">#37</td>
+                            <td>
+                                <div class="match-name">Inglaterra vs Chequia</div>
+                                <div class="match-tourn">Eurocopa (Fase de Grupos) &bull; Final: 1 - 0</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-goles">Goles</span>
+                                <div class="sel-text">Menos de 2.5 goles totales</div>
+                            </td>
+                            <td class="col-odds">@2.32</td>
+                            <td class="col-conf">43.1%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$28.00</td>
+                        </tr>
+        
+
+                        <tr class="audit-row row-win" data-category="props" data-status="win">
+                            <td class="col-id">#38</td>
+                            <td>
+                                <div class="match-name">Inglaterra vs Chequia</div>
+                                <div class="match-tourn">Eurocopa (Fase de Grupos) &bull; Final: 1 - 0</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-props">Player Props</span>
+                                <div class="sel-text">Harry Kane ≥ 1 SoT</div>
+                            </td>
+                            <td class="col-odds">@1.21</td>
+                            <td class="col-conf">82.7%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                
+                            </td>
+                            <td class="col-pnl pnl-win">+$19.00</td>
+                        </tr>
+        
+                    </tbody>
+                </table>
+            </div>
+        </div> <!-- Fin de view-container-winrate -->
+
+
+
+        <!-- VISTA 3: AUTOAPRENDIZAJE & CRÍTICA DIARIA -->
+        <div id="view-container-autocorrect" style="display: none;">
+            
+            <!-- Banner Hero de Autoaprendizaje -->
+            <div class="autolearn-hero">
+                <div style="display: flex; align-items: center; gap: 1.25rem;">
+                    <div class="autolearn-hero-icon">🧠</div>
+                    <div>
+                        <div class="autolearn-hero-title">Centro de Autoaprendizaje & Crítica Diaria</div>
+                        <div class="autolearn-hero-desc">
+                            Supervisión Autónoma 24/7 &bull; <strong>Actualización Programada Diaria a las 19:30</strong> &bull; Calibración de Pesos en Vivo
+                        </div>
+                    </div>
+                </div>
+                <div style="background: rgba(139, 92, 246, 0.25); border: 1px solid rgba(139, 92, 246, 0.6); padding: 0.5rem 1.25rem; border-radius: 12px; color: #ddd6fe; font-weight: 800; font-size: 0.95rem;">
+                    <span>⚡ 11 Agentes Activos</span>
+                </div>
+            </div>
+
+            <!-- NOVEDAD FASE 4: AGENTE ESPECIALISTA #11 (MOMENTUM & INFLECTION AGENT) -->
+            <div class="agent-showcase-card">
+                <div class="showcase-badge-pill">
+                    <span>🚀 NUEVO AGENTE #11 DESPLEGADO</span>
+                </div>
+                <div class="showcase-title">
+                    <span>MomentumStreakAgent: Detector de Rachas de Inflexión y Resurgimiento</span>
+                </div>
+                <div class="showcase-desc">
+                    Inspirado en casos paradigmáticos donde equipos con historiales perdedores rompen drásticamente su tendencia histórica y entran en un <strong>momento de forma y sinergia excepcional</strong>. Los modelos tradicionales de series temporales (TimesFM / Dixon-Coles estándar) fallan al promediar los últimos 2-3 años, subestimando radicalmente la probabilidad real de victoria de estos conjuntos.
+                </div>
+
+                <!-- Caso de Estudio Destacado: SELECCIÓN DE GRECIA -->
+                <div class="greece-case-box">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+                        <div style="font-size: 1.15rem; font-weight: 800; color: #ffffff; display: flex; align-items: center; gap: 0.5rem;">
+                            <span>🇬🇷 CASO TESTIGO: La Metamorfosis de la Selección de Grecia</span>
+                        </div>
+                        <span style="background: rgba(6, 182, 212, 0.2); border: 1px solid rgba(6, 182, 212, 0.4); color: #22d3ee; padding: 0.2rem 0.6rem; border-radius: 8px; font-size: 0.75rem; font-weight: 800;">
+                            DT Ivan Jovanović
+                        </span>
+                    </div>
+                    <div style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.6;">
+                        <strong>¿Por qué fallaba el modelo tradicional?</strong> Grecia venía de casi una década de frustraciones y derrotas continuas. Los modelos matemáticos estándar le asignaban apenas un <strong>12% - 15% de probabilidad de éxito</strong> ante gigantes europeos como Inglaterra o Países Bajos. Sin embargo, bajo el nuevo mando de Ivan Jovanović, el plantel experimentó una explosión táctica y de cohesión colectiva absoluta:
+                    </div>
+
+                    <div class="greece-grid">
+                        <div class="greece-kpi">
+                            <div class="greece-kpi-label">Racha Triunfal</div>
+                            <div class="greece-kpi-val" style="color: #34d399;">5 Victorias</div>
+                            <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem;">Consecutivas en Nations League</div>
+                        </div>
+
+                        <div class="greece-kpi">
+                            <div class="greece-kpi-label">Gesta Histórica</div>
+                            <div class="greece-kpi-val" style="color: #fbbf24;">1 - 2 Wembley</div>
+                            <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem;">Victoria épica ante Inglaterra</div>
+                        </div>
+
+                        <div class="greece-kpi">
+                            <div class="greece-kpi-label">Balance de Goles</div>
+                            <div class="greece-kpi-val" style="color: #60a5fa;">11 a 1</div>
+                            <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem;">80% de vallas invictas</div>
+                        </div>
+
+                        <div class="greece-kpi">
+                            <div class="greece-kpi-label">Ajuste de Inflexión</div>
+                            <div class="greece-kpi-val" style="color: #c084fc;">1.42x Factor</div>
+                            <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem;">+18.4% Valor sobre cuotas</div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 1rem; padding: 0.85rem 1rem; background: rgba(6, 182, 212, 0.08); border-left: 3px solid #06b6d4; border-radius: 8px; font-size: 0.82rem; color: #a5f3fc;">
+                        <strong>Aporte del MomentumStreakAgent:</strong> Aplica un <em>Inflection Factor</em> multiplicador al xG y acelera el peso de los últimos 5 partidos con decay exponencial acelerado (&beta;=0.88), detectando el desacople entre las cuotas infladas que pagan las casas de apuestas (pensando en la Grecia de hace 2 años) y la Grecia arrolladora actual.
+                    </div>
+                </div>
+            </div>
+
+            <!-- CRÍTICA DIARIA Y AUTOPSIA DE ERRORES -->
+            <div class="critique-section-title">
+                <span>🧐 Autocrítica Rigurosa Diaria: Análisis de Errores y Ajuste en Vivo</span>
+            </div>
+
+            <div class="autopsy-card">
+                <div class="autopsy-header">
+                    <div class="autopsy-match">1. Kaoru Mitoma &bull; Japón vs Ecuador (Player Props)</div>
+                    <span class="badge-status badge-loss">❌ FALLADO (0 Remates)</span>
+                </div>
+                <div class="autopsy-split">
+                    <div class="box-flaw">
+                        <div class="box-title-flaw">⚠️ El Error del Modelo Base</div>
+                        <div class="box-text">
+                            TimesFM proyectó más de 2.9 remates para Mitoma basándose en su rendimiento sobresaliente en Premier League, sin saber que el seleccionador pactó descanso para él en este amistoso. El jugador no disputó un solo minuto y la apuesta se perdió.
+                        </div>
+                    </div>
+                    <div class="box-solution">
+                        <div class="box-title-solution">🛡️ Ajuste Autónomo Implementado</div>
+                        <div class="box-text">
+                            <strong>SquadInjuryAgent (Agente #7):</strong> Implementa un veto estricto y chequeo de convocatoria obligatoria 2 horas antes del partido. Si un jugador estelar está en duda o en rotación, el modelo bloquea su mercado inmediatamente.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="autopsy-card">
+                <div class="autopsy-header">
+                    <div class="autopsy-match">2. Córners Totales &bull; España vs Croacia (Tiros de Esquina)</div>
+                    <span class="badge-status badge-loss">❌ FALLADO (Solo 5 Córners vs Línea 8.5)</span>
+                </div>
+                <div class="autopsy-split">
+                    <div class="box-flaw">
+                        <div class="box-title-flaw">⚠️ El Error del Modelo Base</div>
+                        <div class="box-text">
+                            El modelo estadístico estimó un partido de 10.2 tiros de esquina por el volumen ofensivo habitual de España. No obstante, España se adelantó 3-0 en el primer tiempo y durmió el encuentro con posesiones largas horizontales, provocando una caída total en el ritmo de córners.
+                        </div>
+                    </div>
+                    <div class="box-solution">
+                        <div class="box-title-solution">🛡️ Ajuste Autónomo Implementado</div>
+                        <div class="box-text">
+                            <strong>Game-State Corner Dampener (TacticalManagerAgent #8):</strong> Modula dinámicamente la expectativa de tiros de esquina restando un 25% a la proyección si el equipo favorito tiene alta probabilidad de tomar ventaja temprana y anestesiar el juego.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="autopsy-card">
+                <div class="autopsy-header">
+                    <div class="autopsy-match">3. Victoria Directa de Austria &bull; Irlanda vs Austria (Mercado 1X2)</div>
+                    <span class="badge-status badge-loss">❌ FALLADO (Final 1 - 1 Empate)</span>
+                </div>
+                <div class="autopsy-split">
+                    <div class="box-flaw">
+                        <div class="box-title-flaw">⚠️ El Error del Modelo Base</div>
+                        <div class="box-text">
+                            Austria llegaba en gran nivel y el modelo le otorgó un 67.5% de probabilidad de victoria directa de visitante, reduciendo el empate al 19.4%. Irlanda montó un cerrojo ultradefensivo con el apoyo de su hinchada en Dublín y rescató el 1-1.
+                        </div>
+                    </div>
+                    <div class="box-solution">
+                        <div class="box-title-solution">🛡️ Ajuste Autónomo Implementado</div>
+                        <div class="box-text">
+                            <strong>Suelo Mínimo de Empate (SportsPsychologyAgent #9):</strong> Fija un límite inferior del 22.0% al empate para visitas oficiales y prohíbe la victoria simple como Fija, migrándola obligatoriamente a <strong>Doble Oportunidad (X2)</strong>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="autopsy-card">
+                <div class="autopsy-header">
+                    <div class="autopsy-match">4. Xavi Simons &bull; Grecia vs Países Bajos (Player Props SoT)</div>
+                    <span class="badge-status badge-loss">❌ FALLADO (0 Tiros a Puerta)</span>
+                </div>
+                <div class="autopsy-split">
+                    <div class="box-flaw">
+                        <div class="box-title-flaw">⚠️ El Error del Modelo Base</div>
+                        <div class="box-text">
+                            Simons promediaba 1.5 disparos a puerta en Nations League. Sin embargo, Grecia plantó una línea de 5 atrás y doble contención que le cerró el carril interior, obligándolo a actuar como pasador hacia las bandas sin registrar tiros a portería.
+                        </div>
+                    </div>
+                    <div class="box-solution">
+                        <div class="box-title-solution">🛡️ Ajuste Autónomo Implementado</div>
+                        <div class="box-text">
+                            <strong>Filtro de Bloques Bajos (TacticalManagerAgent #8):</strong> Si el rival defiende en bloque bajo estricto con línea de 5, la expectativa de remates a puerta de mediapuntas se reduce en un 30% automático.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- Fin de view-container-autocorrect -->
+
+
+<div class="slip-drawer" id="slip-drawer" style="display: none;">
         <div class="slip-header">
             <div class="slip-title">
                 <span>🎫</span> Ticket Cuantitativo
@@ -3185,7 +4218,8 @@
     </div>
 
     <!-- Embedded Raw JSON for client download -->
-    <script id="dataset-json" type="application/json">
+
+<script id="dataset-json" type="application/json">
 {
     "GeneratedAt":  "2026-09-30 19:38:36",
     "Engine":  "TimesFM Horizon t+1 + Bivariate Poisson Dixon-Coles (Monte Carlo 10,000)",
@@ -4050,8 +5084,10 @@
 }
 
     </script>
+
+
     <script>
-        // 1. Data Definitions
+        // 1. Definición de Datos de La Fija
         var allFijasData = [
             { id: 0, match: 'Alemania vs Serbia', pick: 'Musiala >= 1 Remate Total', prob: 97.3, odds: 1.11 },
             { id: 1, match: 'Dinamarca vs Portugal', pick: 'Cristiano Ronaldo >= 1 Remate Total', prob: 99.3, odds: 1.09 },
@@ -4072,7 +5108,7 @@
             { id: 'chart1X2-5', labels: ['Japón (1)', 'Empate (X)', 'Ecuador (2)'], data: [62.1, 23.3, 14.6] }
         ];
 
-        // 2. Match Tab Switcher
+        // 2. Conmutador de Partidos (Tabs 0 a 5)
         function setMatch(index) {
             var cards = document.querySelectorAll('.switcher-card');
             cards.forEach(function(c, idx) {
@@ -4100,84 +5136,44 @@
             }
         }
 
-        // 3. Export & Utilities
-        function downloadDatasetJson() {
-            var elem = document.getElementById('dataset-json');
-            var jsonText = elem ? elem.textContent : '{}';
-            var blob = new Blob([jsonText], { type: 'application/json' });
-            var url = URL.createObjectURL(blob);
-            var a = document.createElement('a');
-            a.href = url;
-            a.download = 'sportsai_top6_timesfm_simulations.json';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
+        // 3. Manejo de Selección de Apuestas en el Ticket Flotante
+        function toggleBetInSlip(id, match, pick, odds, prob) {
+            var existingIndex = selectedSlipItems.findIndex(function(item) {
+                return item.id === id && item.pick === pick;
+            });
 
-        function shareTunnelLink() {
-            var link = window.location.href;
-            if (navigator.clipboard) {
-                navigator.clipboard.writeText(link).then(function() {
-                    alert('¡Enlace del Dashboard copiado al portapapeles!\n' + link);
-                }).catch(function() {
-                    prompt('Copia este enlace:', link);
+            if (existingIndex > -1) {
+                selectedSlipItems.splice(existingIndex, 1);
+            } else {
+                selectedSlipItems.push({
+                    id: id,
+                    match: match,
+                    pick: pick,
+                    odds: parseFloat(odds) || 1.10,
+                    prob: parseFloat(prob) || 95.0
                 });
-            } else {
-                prompt('Copia este enlace:', link);
             }
-        }
 
-        function simulateAuditModal() {
-            var modal = document.getElementById('audit-modal');
-            if (modal) modal.style.display = 'flex';
-        }
-
-        function closeAuditModal() {
-            var modal = document.getElementById('audit-modal');
-            if (modal) modal.style.display = 'none';
-        }
-
-        function toggleSlipDrawer() {
-            var drawer = document.getElementById('slip-drawer');
-            if (!drawer) return;
-            if (drawer.style.display === 'flex') {
-                drawer.style.display = 'none';
-            } else {
-                drawer.style.display = 'flex';
-            }
-        }
-
-        // 4. Bet Slip Logic
-        function toggleBetInSlip(id, match, pick, prob, odds) {
-            var existingIdx = selectedSlipItems.findIndex(function(item) { return item.id === id; });
-            var btn = document.getElementById('btn-add-' + id);
-            var btnTxt = document.getElementById('btn-txt-' + id);
-
-            if (existingIdx >= 0) {
-                selectedSlipItems.splice(existingIdx, 1);
-                if (btn) {
-                    btn.classList.remove('added');
-                    if (btnTxt) btnTxt.textContent = 'Añadir al Ticket';
-                }
-            } else {
-                selectedSlipItems.push({ id: id, match: match, pick: pick, prob: prob, odds: odds });
-                if (btn) {
-                    btn.classList.add('added');
-                    if (btnTxt) btnTxt.textContent = 'Añadido ✓';
-                }
-            }
             renderSlip();
+            var drawer = document.getElementById('slip-drawer');
+            if (drawer) {
+                drawer.style.display = selectedSlipItems.length > 0 ? 'flex' : 'none';
+            }
         }
 
         function loadAllFijas() {
-            selectedSlipItems = allFijasData.slice();
             allFijasData.forEach(function(item) {
-                var btn = document.getElementById('btn-add-' + item.id);
-                var btnTxt = document.getElementById('btn-txt-' + item.id);
-                if (btn) {
-                    btn.classList.add('added');
-                    if (btnTxt) btnTxt.textContent = 'Añadido ✓';
+                var exists = selectedSlipItems.some(function(sel) {
+                    return sel.id === item.id;
+                });
+                if (!exists) {
+                    selectedSlipItems.push({
+                        id: item.id,
+                        match: item.match,
+                        pick: item.pick,
+                        odds: item.odds,
+                        prob: item.prob
+                    });
                 }
             });
             renderSlip();
@@ -4187,19 +5183,16 @@
 
         function loadTop3() {
             clearSlip();
-            var top3Ids = [3, 1, 2];
-            top3Ids.forEach(function(id) {
-                var item = allFijasData.find(function(f) { return f.id === id; });
-                if (item) {
-                    selectedSlipItems.push(item);
-                    var btn = document.getElementById('btn-add-' + id);
-                    var btnTxt = document.getElementById('btn-txt-' + id);
-                    if (btn) {
-                        btn.classList.add('added');
-                        if (btnTxt) btnTxt.textContent = 'Añadido ✓';
-                    }
-                }
-            });
+            for (var i = 0; i < 3 && i < allFijasData.length; i++) {
+                var item = allFijasData[i];
+                selectedSlipItems.push({
+                    id: item.id,
+                    match: item.match,
+                    pick: item.pick,
+                    odds: item.odds,
+                    prob: item.prob
+                });
+            }
             renderSlip();
             var drawer = document.getElementById('slip-drawer');
             if (drawer) drawer.style.display = 'flex';
@@ -4207,15 +5200,9 @@
 
         function clearSlip() {
             selectedSlipItems = [];
-            for (var i = 0; i < 6; i++) {
-                var btn = document.getElementById('btn-add-' + i);
-                var btnTxt = document.getElementById('btn-txt-' + i);
-                if (btn) {
-                    btn.classList.remove('added');
-                    if (btnTxt) btnTxt.textContent = 'Añadir al Ticket';
-                }
-            }
             renderSlip();
+            var drawer = document.getElementById('slip-drawer');
+            if (drawer) drawer.style.display = 'none';
         }
 
         function renderSlip() {
@@ -4226,7 +5213,7 @@
 
             if (selectedSlipItems.length === 0) {
                 container.innerHTML = '<div style="text-align: center; color: var(--text-muted); padding: 2rem 1rem; font-size: 0.85rem;">' +
-                    'Haz clic en <strong>"+ Añadir al Ticket"</strong> en cualquiera de los partidos o pulsa <em>"Cargar Las 6 Fijas"</em> para armar tu combinada segura.' +
+                    'Haz clic en <strong>"+ Añadir al Ticket"</strong> en cualquiera de los partidos para armar tu combinada.' +
                     '</div>';
                 document.getElementById('slip-total-odds').textContent = '1.00';
                 document.getElementById('slip-joint-prob').textContent = '100%';
@@ -4245,890 +5232,17 @@
                     '</div>' +
                     '<div style="display: flex; align-items: center; gap: 0.6rem;">' +
                         '<span class="slip-item-odds">@' + item.odds.toFixed(2) + '</span>' +
-                        '<button class="slip-del-btn" onclick="toggleBetInSlip(' + item.id + ', \'\', \'\', 0, 0)">&times;</button>' +
+                        '<button class="slip-del-btn" onclick="toggleBetInSlip(' + item.id + ', \'' + item.match + '\', \'' + item.pick + '\', 0, 0)">&times;</button>' +
                     '</div>' +
-                '</div> <!-- Fin de view-container-matches -->
-
-
-        <!-- VISTA DE AUDITORÍA Y WIN RATE -->
-        <div id="view-container-winrate" style="display: none;">
-            
-            <!-- Banner de Resumen Ejecutivo -->
-            <div class="spotlight-banner" style="background: linear-gradient(135deg, rgba(6, 78, 59, 0.5), rgba(16, 185, 129, 0.15)); border-color: rgba(16, 185, 129, 0.4); box-shadow: 0 12px 32px -8px rgba(16, 185, 129, 0.35);">
-                <div class="spotlight-left">
-                    <div class="spotlight-icon">📊</div>
-                    <div>
-                        <div class="spotlight-title">Auditoría Cuantitativa & Track Record Oficial</div>
-                        <div class="spotlight-desc" style="color: #a7f3d0;">
-                            Evaluación sistemática de <strong>38 pronósticos liquidados</strong> en 8 partidos estelares con modelos TimesFM y Bivariada Poisson Dixon-Coles.
-                        </div>
-                    </div>
-                </div>
-                <div class="spotlight-prob-badge" style="background: linear-gradient(135deg, #10b981, #059669); color: #ffffff;">
-                    <span>WIN RATE: 89.5%</span>
-                </div>
-            </div>
-
-            <!-- KPI Cards Grid -->
-            <div class="winrate-kpi-grid">
-                <div class="kpi-card kpi-card-emerald">
-                    <div class="kpi-title">
-                        <span>Win Rate Global</span>
-                        <span>🎯</span>
-                    </div>
-                    <div class="kpi-value" style="color: var(--emerald);">89.5%</div>
-                    <div class="kpi-subtext"><strong>34 Aciertos</strong> / 4 Fallos de 38 selecciones</div>
-                </div>
-
-                <div class="kpi-card kpi-card-gold">
-                    <div class="kpi-title">
-                        <span>"La Fija" (≥95%)</span>
-                        <span>👑</span>
-                    </div>
-                    <div class="kpi-value" style="color: var(--gold);">100.0%</div>
-                    <div class="kpi-subtext"><strong>6 de 6 aciertos</strong> de ultra-alta seguridad cumplidos</div>
-                </div>
-
-                <div class="kpi-card kpi-card-cyan">
-                    <div class="kpi-title">
-                        <span>Yield / ROI Financiero</span>
-                        <span>📈</span>
-                    </div>
-                    <div class="kpi-value" style="color: var(--cyan);">+44.4%</div>
-                    <div class="kpi-subtext">Retorno neto sobre turnover total ($2000 USD)</div>
-                </div>
-
-                <div class="kpi-card kpi-card-emerald">
-                    <div class="kpi-title">
-                        <span>Beneficio Neto (PnL)</span>
-                        <span>💰</span>
-                    </div>
-                    <div class="kpi-value" style="color: #34d399;">+$887.75</div>
-                    <div class="kpi-subtext">Crecimiento de banca: $1,000 &rarr; $1887.75 (<strong>+88.8%</strong>)</div>
-                </div>
-
-                <div class="kpi-card kpi-card-purple">
-                    <div class="kpi-title">
-                        <span>Brier Score (Calibración)</span>
-                        <span>🔬</span>
-                    </div>
-                    <div class="kpi-value" style="color: var(--purple);">0.1615</div>
-                    <div class="kpi-subtext">Calibración institucional (Benchmark de azar: 0.250)</div>
-                </div>
-
-                <div class="kpi-card kpi-card-blue">
-                    <div class="kpi-title">
-                        <span>Líneas de Goles</span>
-                        <span>⚽</span>
-                    </div>
-                    <div class="kpi-value" style="color: #60a5fa;">100.0%</div>
-                    <div class="kpi-subtext">8 de 8 pronósticos en líneas Over/Under acertados</div>
-                </div>
-            </div>
-
-            <!-- Gráficos de Win Rate y Equity Curve -->
-            <div class="winrate-charts-grid">
-                <div class="chart-box">
-                    <div class="chart-box-title">
-                        <span>📈 Curva de Crecimiento de Banca (Equity Curve)</span>
-                        <span class="tag-pill tag-emerald mono-bold">+88.8% Ganancia</span>
-                    </div>
-                    <div style="position: relative; height: 280px;">
-                        <canvas id="chart-equity-curve"></canvas>
-                    </div>
-                </div>
-
-                <div class="chart-box">
-                    <div class="chart-box-title">
-                        <span>📊 Tasa de Acierto por Mercado</span>
-                        <span class="tag-pill tag-blue mono-bold">Win Rate %</span>
-                    </div>
-                    <div style="position: relative; height: 280px;">
-                        <canvas id="chart-category-winrate"></canvas>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tabla de Auditoría Partido por Partido -->
-            <div class="glass-card" style="margin-bottom: 3rem;">
-                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
-                    <div>
-                        <h3 style="font-size: 1.25rem; font-weight: 800; color: #ffffff;">📋 Registro Exhaustivo de Pronósticos Liquidados</h3>
-                        <p style="font-size: 0.85rem; color: var(--text-muted);">Auditoría transparente de las 38 selecciones generadas por TimesFM y Dixon-Coles contrastadas contra los resultados oficiales.</p>
-                    </div>
-                    <div style="font-size: 0.85rem; color: var(--text-muted);">
-                        Mostrando: <strong id="audit-count-visible" style="color: #ffffff;">38</strong> de 38 apuestas
-                    </div>
-                </div>
-
-                <!-- Filtros de Categoría -->
-                <div class="audit-filters">
-                    <button class="btn-filter-audit active" onclick="filterAudit('all', this)">Todas (38)</button>
-                    <button class="btn-filter-audit" onclick="filterAudit('La Fija (95%+)', this)">⭐ La Fija (6)</button>
-                    <button class="btn-filter-audit" onclick="filterAudit('1X2', this)">🏆 1X2 (8)</button>
-                    <button class="btn-filter-audit" onclick="filterAudit('Goles', this)">⚽ Goles (8)</button>
-                    <button class="btn-filter-audit" onclick="filterAudit('Player Props', this)">🎯 Player Props (10)</button>
-                    <button class="btn-filter-audit" onclick="filterAudit('Córners', this)">🚩 Córners (4)</button>
-                    <button class="btn-filter-audit" onclick="filterAudit('Marcador Exacto', this)">🎲 Marcador Exacto (2)</button>
-                </div>
-
-                <!-- Tabla Responsive -->
-                <div class="table-responsive">
-                    <table class="table-custom" id="audit-table">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Partido & Torneo</th>
-                                <th>Mercado</th>
-                                <th>Selección del Modelo</th>
-                                <th style="text-align: center;">Prob. Modelo</th>
-                                <th style="text-align: center;">Cuota</th>
-                                <th style="text-align: center;">Stake</th>
-                                <th style="text-align: center;">Veredicto</th>
-                                <th style="text-align: right;">P&L Neto</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            
-            <tr class="audit-row" data-category="La Fija (95%+)">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#1</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Alemania vs Serbia</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League A &bull; Final: <strong style="color: #cbd5e1;">2 - 0</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">La Fija (95%+)</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Jamal Musiala ≥ 1 remate total</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">3 remates</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">97.3%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.12</td>
-                <td style="text-align: center;" class="mono-bold">$100</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$12.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="1X2">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#2</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Alemania vs Serbia</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League A &bull; Final: <strong style="color: #cbd5e1;">2 - 0</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">1X2</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Victoria Alemania (Local)</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">2 - 0 (Victoria Local)</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">70.1%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.55</td>
-                <td style="text-align: center;" class="mono-bold">$50</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$27.50</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Goles">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#3</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Alemania vs Serbia</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League A &bull; Final: <strong style="color: #cbd5e1;">2 - 0</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Goles</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Menos de 3.5 goles</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">2 goles</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">65.5%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.62</td>
-                <td style="text-align: center;" class="mono-bold">$50</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$31.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Player Props">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#4</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Alemania vs Serbia</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League A &bull; Final: <strong style="color: #cbd5e1;">2 - 0</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Player Props</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Florian Wirtz ≥ 1 remate a puerta (SoT)</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">1 SoT</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">77.9%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.45</td>
-                <td style="text-align: center;" class="mono-bold">$40</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$18.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Marcador Exacto">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#5</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Alemania vs Serbia</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League A &bull; Final: <strong style="color: #cbd5e1;">2 - 0</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Marcador Exacto</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Marcador Modal: 2 - 0 (Top 1)</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">2 - 0</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">13.1%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@8.00</td>
-                <td style="text-align: center;" class="mono-bold">$20</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$140.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="La Fija (95%+)">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#6</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Dinamarca vs Portugal</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League A &bull; Final: <strong style="color: #cbd5e1;">1 - 2</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">La Fija (95%+)</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Cristiano Ronaldo ≥ 1 remate total</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">4 remates</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">99.3%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.10</td>
-                <td style="text-align: center;" class="mono-bold">$100</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$10.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="1X2">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#7</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Dinamarca vs Portugal</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League A &bull; Final: <strong style="color: #cbd5e1;">1 - 2</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">1X2</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Victoria Portugal (Visitante)</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">1 - 2 (Victoria Visitante)</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">52.5%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@2.05</td>
-                <td style="text-align: center;" class="mono-bold">$50</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$52.50</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Goles">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#8</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Dinamarca vs Portugal</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League A &bull; Final: <strong style="color: #cbd5e1;">1 - 2</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Goles</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Más de 1.5 goles totales</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">3 goles</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">82.0%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.35</td>
-                <td style="text-align: center;" class="mono-bold">$60</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$21.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Córners">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#9</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Dinamarca vs Portugal</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League A &bull; Final: <strong style="color: #cbd5e1;">1 - 2</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Córners</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Más de 8.5 córners totales</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">11 córners</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">71.0%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.53</td>
-                <td style="text-align: center;" class="mono-bold">$45</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$23.85</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Player Props">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#10</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Dinamarca vs Portugal</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League A &bull; Final: <strong style="color: #cbd5e1;">1 - 2</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Player Props</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Cristiano Ronaldo ≥ 1 SoT</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">2 SoT</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">90.5%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.25</td>
-                <td style="text-align: center;" class="mono-bold">$50</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$12.50</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="La Fija (95%+)">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#11</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Grecia vs Países Bajos</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League A &bull; Final: <strong style="color: #cbd5e1;">0 - 1</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">La Fija (95%+)</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Cody Gakpo ≥ 1 remate total</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">3 remates</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">98.1%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.12</td>
-                <td style="text-align: center;" class="mono-bold">$100</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$12.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="1X2">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#12</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Grecia vs Países Bajos</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League A &bull; Final: <strong style="color: #cbd5e1;">0 - 1</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">1X2</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Victoria Países Bajos (Visitante)</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">0 - 1 (Victoria Visitante)</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">50.7%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@2.10</td>
-                <td style="text-align: center;" class="mono-bold">$50</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$55.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Goles">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#13</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Grecia vs Países Bajos</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League A &bull; Final: <strong style="color: #cbd5e1;">0 - 1</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Goles</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Menos de 2.5 goles totales</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">1 gol</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">58.0%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.85</td>
-                <td style="text-align: center;" class="mono-bold">$40</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$34.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Córners">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#14</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Grecia vs Países Bajos</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League A &bull; Final: <strong style="color: #cbd5e1;">0 - 1</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Córners</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Más de 8.5 córners totales</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">9 córners</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">65.6%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.65</td>
-                <td style="text-align: center;" class="mono-bold">$40</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$26.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Player Props">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#15</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Grecia vs Países Bajos</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League A &bull; Final: <strong style="color: #cbd5e1;">0 - 1</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Player Props</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Xavi Simons ≥ 1 remate a puerta (SoT)</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">0 SoT</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">74.6%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.55</td>
-                <td style="text-align: center;" class="mono-bold">$35</td>
-                <td style="text-align: center;"><span class="tag-pill tag-rose mono-bold">❌ LOSS</span></td>
-                <td style="text-align: right; color: var(--rose);" class="mono-bold">$-35.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="La Fija (95%+)">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#16</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Gales vs Noruega</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League B &bull; Final: <strong style="color: #cbd5e1;">1 - 2</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">La Fija (95%+)</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">👑 Erling Haaland ≥ 1 remate total (Fija de Oro)</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">5 remates</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">99.7%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.08</td>
-                <td style="text-align: center;" class="mono-bold">$100</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$8.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="1X2">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#17</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Gales vs Noruega</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League B &bull; Final: <strong style="color: #cbd5e1;">1 - 2</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">1X2</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Victoria Gales (Local)</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">1 - 2 (Victoria Visitante)</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">49.1%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@2.15</td>
-                <td style="text-align: center;" class="mono-bold">$40</td>
-                <td style="text-align: center;"><span class="tag-pill tag-rose mono-bold">❌ LOSS</span></td>
-                <td style="text-align: right; color: var(--rose);" class="mono-bold">$-40.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Goles">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#18</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Gales vs Noruega</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League B &bull; Final: <strong style="color: #cbd5e1;">1 - 2</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Goles</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Más de 1.5 goles totales</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">3 goles</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">78.5%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.40</td>
-                <td style="text-align: center;" class="mono-bold">$55</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$22.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Player Props">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#19</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Gales vs Noruega</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League B &bull; Final: <strong style="color: #cbd5e1;">1 - 2</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Player Props</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Erling Haaland ≥ 1 SoT</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">3 SoT (2 Goles)</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">95.4%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.20</td>
-                <td style="text-align: center;" class="mono-bold">$60</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$12.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Player Props">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#20</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Gales vs Noruega</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League B &bull; Final: <strong style="color: #cbd5e1;">1 - 2</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Player Props</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Brennan Johnson ≥ 1 remate a puerta (SoT)</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">1 SoT</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">81.4%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.45</td>
-                <td style="text-align: center;" class="mono-bold">$35</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$15.75</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="La Fija (95%+)">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#21</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Irlanda vs Austria</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League B &bull; Final: <strong style="color: #cbd5e1;">1 - 1</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">La Fija (95%+)</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Christoph Baumgartner ≥ 1 remate total</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">2 remates</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">97.6%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.12</td>
-                <td style="text-align: center;" class="mono-bold">$100</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$12.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="1X2">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#22</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Irlanda vs Austria</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League B &bull; Final: <strong style="color: #cbd5e1;">1 - 1</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">1X2</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Victoria Austria (Visitante)</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">1 - 1 (Empate)</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">67.5%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.62</td>
-                <td style="text-align: center;" class="mono-bold">$50</td>
-                <td style="text-align: center;"><span class="tag-pill tag-rose mono-bold">❌ LOSS</span></td>
-                <td style="text-align: right; color: var(--rose);" class="mono-bold">$-50.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Goles">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#23</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Irlanda vs Austria</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League B &bull; Final: <strong style="color: #cbd5e1;">1 - 1</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Goles</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Menos de 3.5 goles totales</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">2 goles</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">74.0%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.45</td>
-                <td style="text-align: center;" class="mono-bold">$50</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$22.50</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Córners">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#24</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Irlanda vs Austria</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League B &bull; Final: <strong style="color: #cbd5e1;">1 - 1</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Córners</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Más de 8.5 córners totales</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">10 córners</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">62.0%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.70</td>
-                <td style="text-align: center;" class="mono-bold">$40</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$28.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Player Props">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#25</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Irlanda vs Austria</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">UEFA Nations League B &bull; Final: <strong style="color: #cbd5e1;">1 - 1</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Player Props</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Marcel Sabitzer ≥ 1 SoT</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">1 SoT (1 Gol)</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">79.6%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.45</td>
-                <td style="text-align: center;" class="mono-bold">$40</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$18.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="La Fija (95%+)">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#26</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Japón vs Ecuador</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Copa Kirin / Amistoso Internacional &bull; Final: <strong style="color: #cbd5e1;">1 - 0</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">La Fija (95%+)</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Kaoru Mitoma ≥ 1 remate total</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">2 remates</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">95.9%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.15</td>
-                <td style="text-align: center;" class="mono-bold">$100</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$15.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="1X2">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#27</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Japón vs Ecuador</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Copa Kirin / Amistoso Internacional &bull; Final: <strong style="color: #cbd5e1;">1 - 0</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">1X2</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Victoria Japón (Local)</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">1 - 0 (Victoria Local)</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">62.1%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.75</td>
-                <td style="text-align: center;" class="mono-bold">$50</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$37.50</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Goles">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#28</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Japón vs Ecuador</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Copa Kirin / Amistoso Internacional &bull; Final: <strong style="color: #cbd5e1;">1 - 0</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Goles</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Menos de 2.5 goles totales</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">1 gol</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">62.5%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.72</td>
-                <td style="text-align: center;" class="mono-bold">$45</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$32.40</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Player Props">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#29</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Japón vs Ecuador</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Copa Kirin / Amistoso Internacional &bull; Final: <strong style="color: #cbd5e1;">1 - 0</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Player Props</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Takefusa Kubo ≥ 1 SoT</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">1 SoT</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">76.1%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.50</td>
-                <td style="text-align: center;" class="mono-bold">$35</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$17.50</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="1X2">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#30</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">España vs Croacia</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Eurocopa 2024 (Fase de Grupos) &bull; Final: <strong style="color: #cbd5e1;">3 - 0</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">1X2</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Victoria España (Local)</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">3 - 0 (Victoria Local)</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">63.4%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.72</td>
-                <td style="text-align: center;" class="mono-bold">$50</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$36.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Goles">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#31</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">España vs Croacia</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Eurocopa 2024 (Fase de Grupos) &bull; Final: <strong style="color: #cbd5e1;">3 - 0</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Goles</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Más de 2.5 goles totales</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">3 goles</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">60.9%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.85</td>
-                <td style="text-align: center;" class="mono-bold">$45</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$38.25</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Córners">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#32</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">España vs Croacia</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Eurocopa 2024 (Fase de Grupos) &bull; Final: <strong style="color: #cbd5e1;">3 - 0</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Córners</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Más de 8.5 córners totales</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">5 córners</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">61.6%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.70</td>
-                <td style="text-align: center;" class="mono-bold">$40</td>
-                <td style="text-align: center;"><span class="tag-pill tag-rose mono-bold">❌ LOSS</span></td>
-                <td style="text-align: right; color: var(--rose);" class="mono-bold">$-40.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Player Props">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#33</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">España vs Croacia</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Eurocopa 2024 (Fase de Grupos) &bull; Final: <strong style="color: #cbd5e1;">3 - 0</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Player Props</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Álvaro Morata anota en cualquier momento</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">1 Gol (min 29')</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">42.0%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@2.75</td>
-                <td style="text-align: center;" class="mono-bold">$30</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$52.50</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Player Props">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#34</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">España vs Croacia</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Eurocopa 2024 (Fase de Grupos) &bull; Final: <strong style="color: #cbd5e1;">3 - 0</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Player Props</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Lamine Yamal ≥ 1 SoT</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">1 SoT</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">76.7%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.50</td>
-                <td style="text-align: center;" class="mono-bold">$40</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$20.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="1X2">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#35</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Inglaterra vs Chequia</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Eurocopa (Fase de Grupos) &bull; Final: <strong style="color: #cbd5e1;">1 - 0</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">1X2</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Victoria Inglaterra (Local)</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">1 - 0 (Victoria Local)</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">69.9%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.55</td>
-                <td style="text-align: center;" class="mono-bold">$60</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$33.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Marcador Exacto">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#36</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Inglaterra vs Chequia</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Eurocopa (Fase de Grupos) &bull; Final: <strong style="color: #cbd5e1;">1 - 0</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Marcador Exacto</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Marcador Exacto: 1 - 0 (Top 2)</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">1 - 0</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">10.5%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@6.50</td>
-                <td style="text-align: center;" class="mono-bold">$20</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$110.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Goles">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#37</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Inglaterra vs Chequia</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Eurocopa (Fase de Grupos) &bull; Final: <strong style="color: #cbd5e1;">1 - 0</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Goles</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Menos de 2.5 goles totales</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">1 gol</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">43.1%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.80</td>
-                <td style="text-align: center;" class="mono-bold">$35</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$28.00</td>
-            </tr>
-        
-
-            <tr class="audit-row" data-category="Player Props">
-                <td class="mono-bold" style="color: var(--text-muted); font-size: 0.8rem;">#38</td>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Inglaterra vs Chequia</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Eurocopa (Fase de Grupos) &bull; Final: <strong style="color: #cbd5e1;">1 - 0</strong></div>
-                </td>
-                <td><span class="tag-pill tag-blue mono-bold" style="font-size: 0.75rem;">Player Props</span></td>
-                <td>
-                    <div style="font-weight: 600; color: #f8fafc;">Harry Kane ≥ 1 SoT</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">Real: <span style="color: #38bdf8;">1 SoT</span></div>
-                </td>
-                <td style="text-align: center;" class="mono-bold">82.7%</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--amber);">@1.38</td>
-                <td style="text-align: center;" class="mono-bold">$50</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">✅ WIN</span></td>
-                <td style="text-align: right; color: var(--emerald);" class="mono-bold">+$19.00</td>
-            </tr>
-        
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-        </div>
-
-
-</div>';
+                '</div>';
             });
-
             container.innerHTML = html;
             calculateSlip();
         }
 
         function calculateSlip() {
             if (selectedSlipItems.length === 0) {
-                document.getElementById('slip-return').textContent = '$0.00';
+                document.getElementById('slip-return').textContent = '$0.00 (+$0.00)';
                 return;
             }
 
@@ -5142,9 +5256,8 @@
 
             totalOdds = Math.round(totalOdds * 100) / 100;
             var jointPercent = Math.round(jointProb * 1000) / 10;
-
-            var fairOdds = Math.round((1.0 / jointProb) * 100) / 100;
-            var edge = Math.round(((totalOdds / fairOdds) - 1.0) * 1000) / 10;
+            var impliedJointOdds = 1.0 / (jointProb || 0.001);
+            var edge = Math.round(((totalOdds / impliedJointOdds) - 1.0) * 1000) / 10;
 
             document.getElementById('slip-total-odds').textContent = totalOdds.toFixed(2);
             document.getElementById('slip-joint-prob').textContent = jointPercent + '%';
@@ -5186,7 +5299,7 @@
             }
         }
 
-        // 5. Chart.js Initialization
+        // 4. Inicialización de Gráficos de Partidos
         function initCharts() {
             chartConfigs.forEach(function(cfg) {
                 var el = document.getElementById(cfg.id);
@@ -5229,32 +5342,31 @@
             });
         }
 
-        // 6. Page Initialization
-        document.addEventListener('DOMContentLoaded', function() {
-            initCharts();
-            setMatch(0);
-            loadTop3();
-        });
-    
-
         // ==========================================
-        // 7. LÓGICA DE AUDITORÍA Y WIN RATE TRACK RECORD
+        // 5. NAVEGACIÓN PRINCIPAL ENTRE LAS 3 VISTAS
         // ==========================================
-        let equityChartInstance = null;
-        let categoryChartInstance = null;
+        var equityChartInstance = null;
+        var categoryChartInstance = null;
 
         function switchMainView(mode) {
-            const btnMatches = document.getElementById('btn-mode-matches');
-            const btnWinrate = document.getElementById('btn-mode-winrate');
-            const btnAutocorrect = document.getElementById('btn-mode-autocorrect');
+            console.log("Cambiando vista a:", mode);
+            var btnMatches = document.getElementById('btn-mode-matches');
+            var btnWinrate = document.getElementById('btn-mode-winrate');
+            var btnAutocorrect = document.getElementById('btn-mode-autocorrect');
 
-            const viewMatches = document.getElementById('view-container-matches');
-            const viewWinrate = document.getElementById('view-container-winrate');
-            const viewAutocorrect = document.getElementById('view-container-autocorrect');
+            var viewMatches = document.getElementById('view-container-matches');
+            var viewWinrate = document.getElementById('view-container-winrate');
+            var viewAutocorrect = document.getElementById('view-container-autocorrect');
 
-            // Resetear estados activos
-            [btnMatches, btnWinrate, btnAutocorrect].forEach(b => { if (b) b.classList.remove('active'); });
-            [viewMatches, viewWinrate, viewAutocorrect].forEach(v => { if (v) v.style.display = 'none'; });
+            // Quitar clases activas de los botones
+            if (btnMatches) btnMatches.classList.remove('active');
+            if (btnWinrate) btnWinrate.classList.remove('active');
+            if (btnAutocorrect) btnAutocorrect.classList.remove('active');
+
+            // Ocultar contenedores
+            if (viewMatches) viewMatches.style.display = 'none';
+            if (viewWinrate) viewWinrate.style.display = 'none';
+            if (viewAutocorrect) viewAutocorrect.style.display = 'none';
 
             if (mode === 'matches') {
                 if (btnMatches) btnMatches.classList.add('active');
@@ -5267,18 +5379,18 @@
                 if (btnAutocorrect) btnAutocorrect.classList.add('active');
                 if (viewAutocorrect) viewAutocorrect.style.display = 'block';
             }
+
             window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
         }
 
+        // 6. Gráficos de Win Rate (Chart.js)
         function initWinrateCharts() {
-            if (equityChartInstance) return; // ya inicializados
+            if (equityChartInstance) return; // Ya creados
 
-            // Gráfico 1: Curva de Capital (Equity Curve)
-            const equityCtx = document.getElementById('chart-equity-curve');
+            var equityCtx = document.getElementById('chart-equity-curve');
             if (equityCtx) {
-                const rawPoints = [1000.0, 1012.0, 1039.5, 1070.5, 1088.5, 1228.5, 1238.5, 1291.0, 1312.0, 1335.85, 1348.35, 1360.35, 1415.35, 1449.35, 1475.35, 1440.35, 1448.35, 1408.35, 1430.35, 1442.35, 1458.1, 1470.1, 1420.1, 1442.6, 1470.6, 1488.6, 1503.6, 1541.1, 1573.5, 1591.0, 1627.0, 1665.25, 1625.25, 1677.75, 1697.75, 1730.75, 1840.75, 1868.75, 1887.75];
-                const labels = rawPoints.map((_, idx) => idx === 0 ? 'Inicio' : 'Pick #' + idx);
+                var rawPoints = [1000.0, 1012.0, 1039.5, 1070.5, 1088.5, 1228.5, 1238.5, 1291.0, 1312.0, 1335.85, 1348.35, 1360.35, 1415.35, 1449.35, 1475.35, 1440.35, 1448.35, 1408.35, 1430.35, 1442.35, 1458.1, 1470.1, 1420.1, 1442.6, 1470.6, 1488.6, 1503.6, 1541.1, 1573.5, 1591.0, 1627.0, 1665.25, 1625.25, 1677.75, 1697.75, 1730.75, 1840.75, 1868.75, 1887.75];
+                var labels = rawPoints.map(function(_, idx) { return idx === 0 ? 'Inicio' : 'Pick #' + idx; });
 
                 equityChartInstance = new Chart(equityCtx, {
                     type: 'line',
@@ -5330,23 +5442,16 @@
                 });
             }
 
-            // Gráfico 2: Tasa de Acierto por Mercado
-            const catCtx = document.getElementById('chart-category-winrate');
+            var catCtx = document.getElementById('chart-category-winrate');
             if (catCtx) {
                 categoryChartInstance = new Chart(catCtx, {
                     type: 'bar',
                     data: {
-                        labels: ["La Fija (95%+)", "Goles", "Player Props", "1X2", "C\u00f3rners"],
+                        labels: ["La Fija", "Goles", "Props", "1X2", "Córners"],
                         datasets: [{
                             label: 'Win Rate (%)',
                             data: [100.0, 100.0, 90.0, 75.0, 75.0],
-                            backgroundColor: [
-                                '#fbbf24', // Oro para La Fija
-                                '#3b82f6', // Azul para Goles
-                                '#8b5cf6', // Púrpura para Props
-                                '#06b6d4', // Cyan para 1X2
-                                '#10b981'  // Verde para Córners
-                            ],
+                            backgroundColor: ['#fbbf24', '#3b82f6', '#8b5cf6', '#06b6d4', '#10b981'],
                             borderRadius: 8,
                             borderWidth: 0
                         }]
@@ -5385,28 +5490,80 @@
             }
         }
 
-        function filterAudit(category, btn) {
-            const buttons = document.querySelectorAll('.btn-filter-audit');
-            buttons.forEach(b => b.classList.remove('active'));
-            if (btn) btn.classList.add('active');
-
-            const rows = document.querySelectorAll('.audit-row');
-            let visibleCount = 0;
-
-            rows.forEach(r => {
-                const rowCat = r.getAttribute('data-category');
-                if (category === 'all' || rowCat === category) {
-                    r.style.display = '';
-                    visibleCount++;
-                } else {
-                    r.style.display = 'none';
-                }
+        // 7. Filtros Interactivos de la Tabla de Auditoría
+        function filterAuditTable(category, btn) {
+            var buttons = document.querySelectorAll('.btn-filter-audit');
+            buttons.forEach(function(b) {
+                b.classList.remove('active');
+                b.classList.remove('active-win');
+                b.classList.remove('active-loss');
             });
 
-            const countEl = document.getElementById('audit-count-visible');
-            if (countEl) countEl.textContent = visibleCount;
+            if (btn) {
+                if (category === 'win') {
+                    btn.classList.add('active-win');
+                } else if (category === 'loss') {
+                    btn.classList.add('active-loss');
+                } else {
+                    btn.classList.add('active');
+                }
+            }
+
+            var rows = document.querySelectorAll('.audit-row');
+            rows.forEach(function(r) {
+                var rowCat = r.getAttribute('data-category');
+                var rowStat = r.getAttribute('data-status');
+
+                if (category === 'all') {
+                    r.style.display = '';
+                } else if (category === 'win') {
+                    r.style.display = (rowStat === 'win') ? '' : 'none';
+                } else if (category === 'loss') {
+                    r.style.display = (rowStat === 'loss') ? '' : 'none';
+                } else {
+                    r.style.display = (rowCat === category) ? '' : 'none';
+                }
+            });
         }
 
-</script>
+        // 8. Toolbar Utilities
+        function downloadDatasetJson() {
+            var dataEl = document.getElementById('dataset-json');
+            if (!dataEl) return;
+            var blob = new Blob([dataEl.textContent], { type: 'application/json' });
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = url;
+            a.download = 'sportsai_pronosticos_dataset.json';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function shareTunnelLink() {
+            var url = window.location.href;
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(url).then(function() {
+                    alert('¡Enlace público copiado! Puedes compartirlo por WhatsApp.');
+                });
+            } else {
+                prompt('Copia este enlace para compartir:', url);
+            }
+        }
+
+        function simulateAuditModal() {
+            switchMainView('winrate');
+        }
+
+        // 9. Inicialización Global al Cargar el DOM
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("SportsAI Dashboard v3 cargado exitosamente.");
+            initCharts();
+            setMatch(0);
+            loadTop3();
+        });
+    </script>
+
+
+    </div> <!-- Fin de container -->
 </body>
 </html>
