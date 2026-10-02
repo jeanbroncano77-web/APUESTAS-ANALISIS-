@@ -14,7 +14,7 @@ Ejecuta 1 ciclo completo:
 import os
 import sys
 import json
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 base_dir = os.path.abspath(os.path.join(current_dir, ".."))
@@ -31,12 +31,15 @@ def main():
 
     director = SportsDirectorAgent()
 
-    now = datetime.now()
+    # Normalizar a hora oficial de Lima/Bogota (UTC-5) tanto en GitHub Actions (Ubuntu UTC) como en Windows local
+    utc_now = datetime.now(timezone.utc)
+    lima_now = utc_now - timedelta(hours=5)
+
     # Si la ejecución es a partir de las 18:00 (o a las 19:30), se anticipa el día de MAÑANA
-    if now.hour >= 18:
-        target_date_obj = now + timedelta(days=1)
+    if lima_now.hour >= 18:
+        target_date_obj = lima_now + timedelta(days=1)
     else:
-        target_date_obj = now
+        target_date_obj = lima_now
 
     target_weekday = target_date_obj.weekday()
     day_names = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
