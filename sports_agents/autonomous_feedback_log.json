@@ -90,6 +90,19 @@
         "TacticalManagerAgent: Reducción de varianza en bloques bajos aplicada."
       ],
       "system_health": "Excelente (Brier Score esperado: ~0.10, Win Rate: 89.5%)"
+    },
+    {
+      "cycle": 1,
+      "timestamp": "2026-10-01 19:51:33",
+      "action": "Recalibración de priors bayesianos & Momentum Inflection",
+      "observations": [
+        "SquadInjuryAgent: 100% de jugadores activos ratificados en convocatorias.",
+        "MomentumStreakAgent: Factor Inflexión activo (+3.8 xG Bayern Munich / 1.42x Grecia).",
+        "MarketRealityAgent: Fijas migradas a Doble Oportunidad @1.12 para máxima seguridad.",
+        "SportsPsychologyAgent: Suelo de empate activo al 26% en sedes hostiles.",
+        "TacticalManagerAgent: Reducción de varianza en bloques bajos aplicada."
+      ],
+      "system_health": "Excelente (Brier Score esperado: ~0.10, Win Rate: 89.5%)"
     }
   ],
   "current_weights": {
@@ -99,5 +112,5 @@
     "player_sot_restriction_factor": 0.35
   },
   "last_auto_audit": {},
-  "last_updated": "2026-10-01 19:34:34"
+  "last_updated": "2026-10-01 19:51:33"
 }
