@@ -1,0 +1,56 @@
+{
+  "Francia vs Italia": {
+    "tournament": "UEFA Nations League - Liga A (Clásico Mundial de Élite)",
+    "stadium": "Stade de France (Saint-Denis, París)",
+    "spectators_est": "80,000 en estadio (~55M audiencia global)",
+    "referee": "Szymon Marciniak",
+    "referee_avg_yellows": 4.1,
+    "referee_avg_reds": 0.16,
+    "intensity": "Máxima (Batalla estelar de gigantes europeos; Mbappé y Dembélé retando el muro táctico de Bastoni y Donnarumma)"
+  },
+  "Bélgica vs Turquía": {
+    "tournament": "UEFA Nations League - Liga A",
+    "stadium": "King Baudouin Stadium (Bruselas)",
+    "spectators_est": "48,000 en estadio (~28M audiencia global)",
+    "referee": "Felix Zwayer",
+    "referee_avg_yellows": 4.3,
+    "referee_avg_reds": 0.18,
+    "intensity": "Muy Alta (Duelo electrizante entre el talento creativo de De Bruyne y el descaro juvenil de Arda Güler y Kenan Yıldız)"
+  },
+  "Corea del Sur vs Venezuela": {
+    "tournament": "Amistoso Internacional FIFA (Fecha FIFA Élite)",
+    "stadium": "Seoul World Cup Stadium (Seúl)",
+    "spectators_est": "64,000 en estadio (~22M audiencia global)",
+    "referee": "Alireza Faghani",
+    "referee_avg_yellows": 3.2,
+    "referee_avg_reds": 0.08,
+    "intensity": "Alta (Velocidad endiablada y precisión de Son Heung-min y Lee Kang-in frente a la combatividad de la Vinotinto de Rondón)"
+  },
+  "Bosnia y Herzegovina vs Suecia": {
+    "tournament": "UEFA Nations League - Liga B",
+    "stadium": "Bilino Polje (Zenica)",
+    "spectators_est": "14,000 en estadio (~18M audiencia global)",
+    "referee": "Clément Turpin",
+    "referee_avg_yellows": 4.4,
+    "referee_avg_reds": 0.2,
+    "intensity": "Muy Alta (Caldera balcánica caliente; Džeko comandando el orgullo local ante el vendaval goleador de Gyökeres e Isak)"
+  },
+  "Polonia vs Rumanía": {
+    "tournament": "UEFA Nations League - Liga A",
+    "stadium": "PGE Narodowy (Varsovia)",
+    "spectators_est": "56,500 en estadio (~24M audiencia global)",
+    "referee": "Michael Oliver",
+    "referee_avg_yellows": 3.8,
+    "referee_avg_reds": 0.14,
+    "intensity": "Alta (Lewandowski liderando a las Águilas Blancas en Varsovia ante la velocidad al contragolpe de Dennis Man y Rumanía)"
+  },
+  "Hungría vs Georgia": {
+    "tournament": "UEFA Nations League - Liga B",
+    "stadium": "Puskás Aréna (Budapest)",
+    "spectators_est": "62,000 en estadio (~20M audiencia global)",
+    "referee": "Slavko Vinčić",
+    "referee_avg_yellows": 4.0,
+    "referee_avg_reds": 0.15,
+    "intensity": "Muy Alta (El rugido de la Puskás Aréna con Szoboszlai ante la magia desequilibrante de Khvicha Kvaratskhelia)"
+  }
+}

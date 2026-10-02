@@ -14,7 +14,7 @@ Ejecuta 1 ciclo completo:
 import os
 import sys
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 base_dir = os.path.abspath(os.path.join(current_dir, ".."))
@@ -33,20 +33,26 @@ def main():
 
     now = datetime.now()
     # Si la ejecución es a partir de las 18:00 (o a las 19:30), se anticipa el día de MAÑANA
-    target_weekday = (now.weekday() + 1) % 7 if now.hour >= 18 else now.weekday()
+    if now.hour >= 18:
+        target_date_obj = now + timedelta(days=1)
+    else:
+        target_date_obj = now
+
+    target_weekday = target_date_obj.weekday()
     day_names = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
     target_day_name = day_names[target_weekday]
+    target_date_str = target_date_obj.strftime("%d/%m/%Y")
 
-    print(f"Detectando calendario semanal: Proyectando cartelera estelar de {target_day_name.upper()}...")
+    print(f"Detectando calendario semanal: Proyectando cartelera estelar de {target_day_name.upper()} {target_date_str}...")
 
-    if target_weekday == 4:  # VIERNES (Viernes de Ligas Europeas)
+    if target_weekday == 4:  # VIERNES (Fecha FIFA / UEFA Nations League / Partidos Estelares)
         fixtures_tomorrow = [
-            ("Borussia Dortmund", "St. Pauli"),
-            ("Napoli", "Como"),
-            ("Marseille", "Angers"),
-            ("Leganés", "Valencia"),
-            ("Sunderland", "Leeds United"),
-            ("Rio Ave", "Famalicão")
+            ("Francia", "Italia"),
+            ("Bélgica", "Turquía"),
+            ("Corea del Sur", "Venezuela"),
+            ("Bosnia y Herzegovina", "Suecia"),
+            ("Polonia", "Rumanía"),
+            ("Hungría", "Georgia")
         ]
     elif target_weekday == 5:  # SÁBADO (Súper Sábado de Gigantes)
         fixtures_tomorrow = [
@@ -76,7 +82,7 @@ def main():
             ("Japón", "Ecuador")
         ]
 
-    print(f"1. Simulando los 6 partidos estelares de {target_day_name.upper()} con los 11 agentes...")
+    print(f"1. Simulando los 6 partidos estelares de {target_day_name.upper()} ({target_date_str}) con los 11 agentes...")
     results = []
     for home, away in fixtures_tomorrow:
         print(f"   -> Proyectando: {home} vs {away}...")
@@ -88,10 +94,10 @@ def main():
         json.dump({
             "GeneratedAt": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             "TargetDay": target_day_name,
-            "TargetDate": "Tomorrow",
+            "TargetDate": target_date_str,
             "Matches": results
         }, f, ensure_ascii=False, indent=2)
-    print(f"2. simulations_tomorrow_results.json actualizado con éxito para {target_day_name.upper()}.")
+    print(f"2. simulations_tomorrow_results.json actualizado con éxito para {target_day_name.upper()} ({target_date_str}).")
 
     # 3. Regenerar Dashboard HTML
     print("3. Regenerando index.html y dashboard_pronosticos.html...")
@@ -118,7 +124,7 @@ def main():
         }]
     }
 
-    msg1 = notifier.build_daily_fixtures_message(results, is_tomorrow=True)
+    msg1 = notifier.build_daily_fixtures_message(results, is_tomorrow=True, target_day_name=target_day_name, target_date_str=target_date_str)
     msg2 = notifier.build_autonomous_feedback_message(feedback_data)
 
     res1 = notifier.send_telegram(msg1)

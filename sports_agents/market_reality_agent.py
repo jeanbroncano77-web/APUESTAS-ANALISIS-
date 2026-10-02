@@ -40,7 +40,7 @@ class MarketRealityAgent:
         prob_1x = h_win + draw
         prob_x2 = a_win + draw
 
-        if prob_1x >= 88.0:
+        if prob_1x >= 80.0:
             odds_1x = round(1.0 / (prob_1x / 100.0) * 1.06, 2)
             candidates.append({
                 "market": "Doble Oportunidad Blindada",
@@ -51,7 +51,7 @@ class MarketRealityAgent:
                 "rationale": f"Protección total ante el empate con {round(prob_1x, 1)}% de cobertura en casa."
             })
 
-        if prob_x2 >= 88.0:
+        if prob_x2 >= 80.0:
             odds_x2 = round(1.0 / (prob_x2 / 100.0) * 1.06, 2)
             candidates.append({
                 "market": "Doble Oportunidad Blindada",
@@ -100,18 +100,28 @@ class MarketRealityAgent:
             })
 
         # Opción D: Equipo Favorito Anota (Más de 0.5 goles de equipo)
-        if h_win >= 65.0:
+        if h_win >= 52.0:
             candidates.append({
                 "market": "Gol de Equipo de Seguridad",
                 "selection": f"{home_team} anota más de 0.5 goles",
-                "probability": 92.0,
+                "probability": round(min(96.0, 85.0 + (h_win - 50.0) * 0.4), 1),
                 "odds": 1.15,
                 "availability": "Universal en todas las plataformas",
                 "rationale": f"El equipo local promedia suficiente xG para asegurar al menos un tanto."
             })
 
-        # Seleccionar el candidato con mayor fiabilidad y equilibrio de cuota
-        candidates.sort(key=lambda x: (x["probability"], x["odds"]), reverse=True)
+        # Ponderación inteligente para privilegiar mercados de máxima liquidez (Doble Oportunidad y Goles)
+        for c in candidates:
+            boost = 0.0
+            if "Doble Oportunidad" in c["market"]:
+                boost += 8.0  # Preferencia fuerte por 1X / X2
+            elif "Gol de Equipo" in c["market"]:
+                boost += 4.0
+            elif "Línea de Goles" in c["market"]:
+                boost += 2.0
+            c["_rank_score"] = c["probability"] + boost
+
+        candidates.sort(key=lambda x: (x["_rank_score"], x["odds"]), reverse=True)
         best_fija = candidates[0] if candidates else {
             "market": "Línea de Goles de Seguridad",
             "selection": "Más de 1.5 goles totales",

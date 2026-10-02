@@ -31,19 +31,31 @@ with open(sim_path, "r", encoding="utf-8") as f:
 matches = sim_data["Matches"]
 
 flags = {
-    # Partidos de Viernes
+    # Partidos de Selecciones / UEFA Nations League / FIFA
+    "Francia": "🇫🇷", "Italia": "🇮🇹",
+    "Bélgica": "🇧🇪", "Turquía": "🇹🇷",
+    "Corea del Sur": "🇰🇷", "Venezuela": "🇻🇪",
+    "Bosnia y Herzegovina": "🇧🇦", "Suecia": "🇸🇪",
+    "Polonia": "🇵🇱", "Rumanía": "🇷🇴",
+    "Hungría": "🇭🇺", "Georgia": "🇬🇪",
+    "Alemania": "🇩🇪", "Serbia": "🇷🇸",
+    "Dinamarca": "🇩🇰", "Portugal": "🇵🇹",
+    "Grecia": "🇬🇷", "Países Bajos": "🇳🇱",
+    "Gales": "🏴󠁧󠁢󠁷󠁬󠁳󠁿", "Noruega": "🇳🇴",
+    "Irlanda": "🇮🇪", "Austria": "🇦🇹",
+    "Japón": "🇯🇵", "Ecuador": "🇪🇨",
+    # Partidos de Fin de Semana (Clubes)
+    "Real Madrid": "⚪", "Villarreal": "🟡",
+    "Barcelona": "🔵", "Getafe": "🔵",
+    "Arsenal": "🔴", "FC Augsburg": "🔴",
+    "Bayern Munich": "🔴", "Inter Milan": "⚫",
+    "Parma": "🟡", "Werder Bremen": "🟢",
     "Borussia Dortmund": "🟡", "St. Pauli": "⚪",
     "Napoli": "🔵", "Como": "⚪",
     "Marseille": "⚪", "Angers": "⚫",
     "Leganés": "⚪", "Valencia": "🦇",
     "Sunderland": "🔴", "Leeds United": "⚪",
-    "Rio Ave": "🟢", "Famalicão": "🔵",
-    # Partidos de Fin de Semana (Sábado/Domingo)
-    "Real Madrid": "⚪", "Villarreal": "🟡",
-    "Barcelona": "🔵", "Getafe": "🔵",
-    "Arsenal": "🔴", "FC Augsburg": "🔴",
-    "Bayern Munich": "🔴", "Inter Milan": "⚫",
-    "Parma": "🟡", "Werder Bremen": "🟢"
+    "Rio Ave": "🟢", "Famalicão": "🔵"
 }
 
 def get_flag(team):
@@ -398,13 +410,14 @@ backup_m = sorted_by_prob[1] if len(sorted_by_prob) > 1 else best_m
 bm_fija = best_m.get("la_fija_real", {})
 bk_fija = backup_m.get("la_fija_real", {})
 target_day_name = sim_data.get("TargetDay", "Viernes").upper()
+target_date = sim_data.get("TargetDate", "02/10/2026")
 
 new_matches_section = f"""
         <div id="view-container-matches">
             <!-- Phase 6: Top Actions Toolbar -->
             <div class="top-actions-toolbar">
                 <div class="banner-fija-de-oro">
-                    <div class="badge-fija-oro">👑 LA FIJA DE ORO DE MAÑANA {target_day_name} (CONFIANZA {bm_fija.get('probability', 97.5)}%)</div>
+                    <div class="badge-fija-oro">👑 LA FIJA DE ORO &bull; MAÑANA {target_day_name} ({target_date}) (CONFIANZA {bm_fija.get('probability', 97.5)}%)</div>
                     <div class="fija-oro-title">⭐ {best_m.get('home_team')} vs {best_m.get('away_team')} &bull; {bm_fija.get('selection')} (@{bm_fija.get('odds', 1.12)} | {bm_fija.get('probability')}%)</div>
                     <div class="fija-oro-sub">⭐ Respaldo Estelar: {backup_m.get('home_team')} vs {backup_m.get('away_team')} &bull; {bk_fija.get('selection')} (@{bk_fija.get('odds', 1.12)} | {bk_fija.get('probability')}%)</div>
                 </div>

@@ -84,13 +84,19 @@ class WhatsAppNotifierAgent:
 
         return results if results else {"success": False, "error": "Ningún canal habilitado"}
 
-    def build_daily_fixtures_message(self, matches_data: list, web_url: Optional[str] = None, is_tomorrow: bool = True) -> str:
+    def build_daily_fixtures_message(self, matches_data: list, web_url: Optional[str] = None, is_tomorrow: bool = True, target_day_name: Optional[str] = None, target_date_str: Optional[str] = None) -> str:
         """
         Construye el Mensaje 1: Los 6 partidos estelares + La Fija de Oro (anticipada a mañana o del día).
         Utiliza formato ASCII/UTF-8 compatible con CallMeBot para entrega 100% garantizada sin fallos de códec.
         """
         url = web_url or self.config.get("dashboard_url", "https://jeanbroncano77-web.github.io/APUESTAS-ANALISIS-/")
         target_label = "MANANA" if is_tomorrow else "HOY"
+        if target_day_name and target_date_str:
+            target_header = f"{target_label} {target_day_name.upper()} ({target_date_str})"
+        elif target_day_name:
+            target_header = f"{target_label} {target_day_name.upper()}"
+        else:
+            target_header = target_label
 
         # Encontrar La Fija de Oro (partido con mayor probabilidad)
         best_match = None
@@ -112,14 +118,14 @@ class WhatsAppNotifierAgent:
             fija_oro_text += f"  -> Cuota Justa: @{bm_fija.get('odds', 1.12):.2f} | Probabilidad: {bm_fija.get('probability', 98.0)}%"
 
         msg = "========================================\n"
-        msg += f"SPORTSAI: CARTELERA DE {target_label} & FIJAS\n"
+        msg += f"SPORTSAI: CARTELERA DE {target_header} & FIJAS\n"
         msg += "========================================\n"
         if fija_oro_text:
             msg += f"[FIJA DE ORO DE {target_label} - MAXIMA CONFIANZA]\n"
             msg += fija_oro_text + "\n"
             msg += "========================================\n\n"
 
-        msg += f"LOS 6 PARTIDOS ESTELARES DE {target_label}:\n\n"
+        msg += f"LOS 6 PARTIDOS ESTELARES DE {target_header}:\n\n"
 
         for i, m in enumerate(matches_data[:6], start=1):
             h_team = m.get("home_team", m.get("HomeTeam", "Local"))

@@ -5,6 +5,8 @@ series temporales de partidos recientes, métricas de rendimiento y perfiles de 
 Soporta los 6 partidos estelares de máxima audiencia internacional para la jornada de mañana.
 """
 
+import os
+import json
 from typing import Dict, List, Any
 
 
@@ -16,6 +18,17 @@ class DataScoutAgent:
         """
         Retorna las secuencias cronológicas recientes para el equipo especificado.
         """
+        # 1. Comprobar base de datos externa JSON si existe
+        ext_teams_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "teams_database.json")
+        if os.path.exists(ext_teams_file):
+            try:
+                with open(ext_teams_file, "r", encoding="utf-8") as f:
+                    ext_data = json.load(f)
+                    if team_name in ext_data:
+                        return ext_data[team_name]
+            except Exception:
+                pass
+
         histories = {
             # --- PARTIDO 1: ALEMANIA VS SERBIA ---
             "Alemania": {
@@ -577,6 +590,18 @@ class DataScoutAgent:
         """
         Retorna contexto de arbitraje, estadio y estimación de espectadores para los 6 partidos.
         """
+        # 1. Comprobar base de datos externa JSON si existe
+        ext_matches_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "matches_database.json")
+        if os.path.exists(ext_matches_file):
+            try:
+                with open(ext_matches_file, "r", encoding="utf-8") as f:
+                    ext_matches = json.load(f)
+                    for k, v in ext_matches.items():
+                        if f"{home_team} vs {away_team}" in k or (home_team in k and away_team in k):
+                            return v
+            except Exception:
+                pass
+
         matches = {
             ("Alemania", "Serbia"): {
                 "tournament": "UEFA Nations League - Liga A",

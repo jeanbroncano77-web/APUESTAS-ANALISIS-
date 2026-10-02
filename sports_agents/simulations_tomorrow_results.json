@@ -1,48 +1,48 @@
 {
-  "GeneratedAt": "2026-10-01 20:21:31",
+  "GeneratedAt": "2026-10-01 21:15:28",
   "TargetDay": "Viernes",
-  "TargetDate": "Tomorrow",
+  "TargetDate": "02/10/2026",
   "Matches": [
     {
-      "match": "Borussia Dortmund vs St. Pauli",
-      "home_team": "Borussia Dortmund",
-      "away_team": "St. Pauli",
+      "match": "Francia vs Italia",
+      "home_team": "Francia",
+      "away_team": "Italia",
       "context": {
-        "tournament": "Bundesliga - Jornada 7 (Viernes Noche)",
-        "stadium": "Signal Iduna Park (Dortmund)",
-        "spectators_est": "81,365 en estadio (~32M audiencia global)",
-        "referee": "Sascha Stegemann",
+        "tournament": "UEFA Nations League - Liga A (Clásico Mundial de Élite)",
+        "stadium": "Stade de France (Saint-Denis, París)",
+        "spectators_est": "80,000 en estadio (~55M audiencia global)",
+        "referee": "Szymon Marciniak",
         "referee_avg_yellows": 4.1,
         "referee_avg_reds": 0.16,
-        "intensity": "Máxima (Signal Iduna Park encendido; Dortmund de Sahin con Guirassy buscando el asalto al liderato)"
+        "intensity": "Máxima (Batalla estelar de gigantes europeos; Mbappé y Dembélé retando el muro táctico de Bastoni y Donnarumma)"
       },
       "projections": {
         "expected_goals": {
-          "home": 2.6,
-          "away": 1.05,
-          "total": 3.65
+          "home": 2.19,
+          "away": 1.02,
+          "total": 3.21
         },
         "expected_corners": {
-          "home": 5.9,
-          "away": 4.14,
-          "total": 10.03,
+          "home": 6.03,
+          "away": 4.44,
+          "total": 10.46,
           "home_quantiles": {
-            "p10": 4.1,
-            "p90": 8.0
+            "p10": 4.2,
+            "p90": 8.1
           },
           "away_quantiles": {
-            "p10": 2.5,
-            "p90": 6.0
+            "p10": 2.8,
+            "p90": 6.3
           }
         },
         "expected_yellow_cards": {
-          "home": 1.85,
-          "away": 2.06,
-          "total": 3.91
+          "home": 1.23,
+          "away": 2.05,
+          "total": 3.28
         },
         "expected_shots": {
-          "home": 16.33,
-          "away": 10.37
+          "home": 16.72,
+          "away": 11.89
         }
       },
       "tactical_analysis": {
@@ -56,7 +56,7 @@
         },
         "tactical_xg_multiplier_home": 1.0,
         "tactical_xg_multiplier_away": 1.0,
-        "corner_dampener_factor": 0.85,
+        "corner_dampener_factor": 1.0,
         "player_role_restrictions": {},
         "tactical_summary": "Choque de estilos: Estándar vs Estándar"
       },
@@ -76,213 +76,258 @@
         "psychological_notes": "Urgencia: Máxima (Puntos Oficiales) | Caldera: 50.0%"
       },
       "score_prediction": {
-        "most_probable_score": "2 - 1",
-        "most_probable_prob_pct": 9.27,
+        "most_probable_score": "1 - 1",
+        "most_probable_prob_pct": 10.03,
         "top_5_scores": [
+          {
+            "score": "1 - 1",
+            "home_goals": 1,
+            "away_goals": 1,
+            "probability_pct": 10.03
+          },
           {
             "score": "2 - 1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability_pct": 9.27
+            "probability_pct": 9.89
           },
           {
             "score": "2 - 0",
             "home_goals": 2,
             "away_goals": 0,
-            "probability_pct": 8.83
+            "probability_pct": 9.7
+          },
+          {
+            "score": "1 - 0",
+            "home_goals": 1,
+            "away_goals": 0,
+            "probability_pct": 7.86
           },
           {
             "score": "3 - 1",
             "home_goals": 3,
             "away_goals": 1,
-            "probability_pct": 8.04
-          },
-          {
-            "score": "1 - 1",
-            "home_goals": 1,
-            "away_goals": 1,
-            "probability_pct": 7.92
-          },
-          {
-            "score": "3 - 0",
-            "home_goals": 3,
-            "away_goals": 0,
-            "probability_pct": 7.65
+            "probability_pct": 7.22
           }
         ],
         "1x2_probabilities": {
-          "home_win_pct": 65.65,
+          "home_win_pct": 60.68,
           "draw_pct": 26.0,
-          "away_win_pct": 8.35
+          "away_win_pct": 13.32
         },
         "goals_markets": {
-          "over_1_5_pct": 88.63,
-          "under_1_5_pct": 11.37,
-          "over_2_5_pct": 70.44,
-          "under_2_5_pct": 29.56,
-          "over_3_5_pct": 49.26,
-          "under_3_5_pct": 50.74,
-          "btts_yes_pct": 60.94,
-          "btts_no_pct": 39.06
+          "over_1_5_pct": 83.97,
+          "under_1_5_pct": 16.03,
+          "over_2_5_pct": 62.14,
+          "under_2_5_pct": 37.86,
+          "over_3_5_pct": 39.85,
+          "under_3_5_pct": 60.15,
+          "btts_yes_pct": 57.76,
+          "btts_no_pct": 42.24
         },
         "simulated_averages": {
-          "home_goals": 2.61,
-          "away_goals": 1.06,
-          "total_goals": 3.67
+          "home_goals": 2.2,
+          "away_goals": 1.03,
+          "total_goals": 3.23
         }
       },
       "corners_prediction": {
-        "home_corners_expected": 5.0,
-        "away_corners_expected": 3.5,
-        "total_corners_expected": 8.5,
-        "most_likely_range": "7 - 10 córners",
+        "home_corners_expected": 6.0,
+        "away_corners_expected": 4.4,
+        "total_corners_expected": 10.4,
+        "most_likely_range": "9 - 12 córners",
         "lines": {
-          "over_8_5_pct": 47.7,
-          "under_8_5_pct": 52.3,
-          "over_9_5_pct": 34.7,
-          "under_9_5_pct": 65.3,
-          "over_10_5_pct": 23.7,
-          "under_10_5_pct": 76.3,
-          "over_11_5_pct": 15.1,
-          "under_11_5_pct": 84.9
+          "over_8_5_pct": 71.0,
+          "under_8_5_pct": 29.0,
+          "over_9_5_pct": 59.1,
+          "under_9_5_pct": 40.9,
+          "over_10_5_pct": 46.7,
+          "under_10_5_pct": 53.3,
+          "over_11_5_pct": 35.0,
+          "under_11_5_pct": 65.0
         },
         "team_lines": {
-          "home_over_4_5_pct": 56.0,
-          "home_over_5_5_pct": 38.4,
-          "away_over_3_5_pct": 46.3,
-          "away_over_4_5_pct": 27.5
+          "home_over_4_5_pct": 71.5,
+          "home_over_5_5_pct": 55.4,
+          "away_over_3_5_pct": 64.1,
+          "away_over_4_5_pct": 44.9
         }
       },
       "cards_prediction": {
-        "referee": "Sascha Stegemann",
-        "home_yellow_cards": 1.9,
-        "away_yellow_cards": 2.1,
-        "total_yellow_cards": 4.0,
+        "referee": "Szymon Marciniak",
+        "home_yellow_cards": 1.4,
+        "away_yellow_cards": 2.3,
+        "total_yellow_cards": 3.7,
         "red_cards": {
-          "expected_home_reds": 0.07,
-          "expected_away_reds": 0.08,
+          "expected_home_reds": 0.06,
+          "expected_away_reds": 0.1,
           "expected_total_reds": 0.15,
-          "home_red_prob_pct": 7.2,
-          "away_red_prob_prob_pct": 8.0,
+          "home_red_prob_pct": 5.7,
+          "away_red_prob_prob_pct": 9.5,
           "any_red_card_in_match_pct": 14.1
         },
-        "total_cards_expected": 4.2,
+        "total_cards_expected": 3.9,
         "card_lines": {
-          "over_3_5_cards_pct": 56.6,
-          "under_3_5_cards_pct": 43.4,
-          "over_4_5_cards_pct": 37.0,
-          "under_4_5_cards_pct": 63.0,
-          "over_5_5_cards_pct": 21.4,
-          "under_5_5_cards_pct": 78.6
+          "over_3_5_cards_pct": 49.5,
+          "under_3_5_cards_pct": 50.5,
+          "over_4_5_cards_pct": 30.3,
+          "under_4_5_cards_pct": 69.7,
+          "over_5_5_cards_pct": 16.3,
+          "under_5_5_cards_pct": 83.7
         }
       },
       "player_props": {
         "home_key_players": [
           {
-            "name": "Serhou Guirassy",
-            "position": "Delantero Centro Killer",
-            "expected_shots": 4.32,
-            "expected_sot": 2.22,
-            "prob_at_least_1_sot_pct": 89.1,
-            "prob_at_least_2_sot_pct": 64.9,
-            "prob_over_1_5_shots_pct": 92.9,
-            "prob_over_2_5_shots_pct": 80.5,
-            "goal_anytime_prob_pct": 66.0
+            "name": "Kylian Mbappé",
+            "position": "Delantero Centro / Extremo",
+            "expected_shots": 4.9,
+            "expected_sot": 2.51,
+            "prob_at_least_1_sot_pct": 91.9,
+            "prob_at_least_2_sot_pct": 71.4,
+            "prob_over_1_5_shots_pct": 95.6,
+            "prob_over_2_5_shots_pct": 86.6,
+            "goal_anytime_prob_pct": 58.0
           },
           {
-            "name": "Julian Brandt",
-            "position": "Mediapunta Creador",
-            "expected_shots": 2.57,
-            "expected_sot": 1.05,
-            "prob_at_least_1_sot_pct": 65.0,
-            "prob_at_least_2_sot_pct": 28.3,
-            "prob_over_1_5_shots_pct": 72.6,
-            "prob_over_2_5_shots_pct": 47.3,
-            "goal_anytime_prob_pct": 28.0
+            "name": "Ousmane Dembélé",
+            "position": "Extremo Derecho",
+            "expected_shots": 3.46,
+            "expected_sot": 1.55,
+            "prob_at_least_1_sot_pct": 78.8,
+            "prob_at_least_2_sot_pct": 46.0,
+            "prob_over_1_5_shots_pct": 86.0,
+            "prob_over_2_5_shots_pct": 67.2,
+            "goal_anytime_prob_pct": 32.0
           },
           {
-            "name": "Jamie Bynoe-Gittens",
-            "position": "Extremo Desborde",
-            "expected_shots": 3.38,
-            "expected_sot": 1.63,
-            "prob_at_least_1_sot_pct": 80.5,
-            "prob_at_least_2_sot_pct": 48.6,
-            "prob_over_1_5_shots_pct": 85.1,
-            "prob_over_2_5_shots_pct": 65.7,
-            "goal_anytime_prob_pct": 36.0
+            "name": "Bradley Barcola",
+            "position": "Extremo Izquierdo",
+            "expected_shots": 2.87,
+            "expected_sot": 1.31,
+            "prob_at_least_1_sot_pct": 73.1,
+            "prob_at_least_2_sot_pct": 37.8,
+            "prob_over_1_5_shots_pct": 78.0,
+            "prob_over_2_5_shots_pct": 54.6,
+            "goal_anytime_prob_pct": 30.0
           },
           {
-            "name": "Karim Adeyemi",
-            "position": "Extremo Supersónico",
-            "expected_shots": 3.62,
-            "expected_sot": 1.75,
-            "prob_at_least_1_sot_pct": 82.6,
-            "prob_at_least_2_sot_pct": 52.2,
-            "prob_over_1_5_shots_pct": 87.6,
-            "prob_over_2_5_shots_pct": 70.0,
-            "goal_anytime_prob_pct": 44.0
+            "name": "Aurélien Tchouaméni",
+            "position": "Pivote Organizador",
+            "expected_shots": 1.79,
+            "expected_sot": 0.72,
+            "prob_at_least_1_sot_pct": 51.2,
+            "prob_at_least_2_sot_pct": 16.2,
+            "prob_over_1_5_shots_pct": 53.5,
+            "prob_over_2_5_shots_pct": 26.7,
+            "goal_anytime_prob_pct": 12.0
+          },
+          {
+            "name": "Eduardo Camavinga",
+            "position": "Interior Mixto",
+            "expected_shots": 1.55,
+            "expected_sot": 0.48,
+            "prob_at_least_1_sot_pct": 38.0,
+            "prob_at_least_2_sot_pct": 8.4,
+            "prob_over_1_5_shots_pct": 46.0,
+            "prob_over_2_5_shots_pct": 20.4,
+            "goal_anytime_prob_pct": 10.0
           }
         ],
         "away_key_players": [
           {
-            "name": "Johannes Eggestein",
-            "position": "Delantero Móvil",
-            "expected_shots": 1.63,
-            "expected_sot": 0.67,
-            "prob_at_least_1_sot_pct": 48.7,
-            "prob_at_least_2_sot_pct": 14.4,
-            "prob_over_1_5_shots_pct": 48.5,
-            "prob_over_2_5_shots_pct": 22.4,
-            "goal_anytime_prob_pct": 28.0
+            "name": "Mateo Retegui",
+            "position": "Delantero Centro",
+            "expected_shots": 2.55,
+            "expected_sot": 1.19,
+            "prob_at_least_1_sot_pct": 69.5,
+            "prob_at_least_2_sot_pct": 33.3,
+            "prob_over_1_5_shots_pct": 72.2,
+            "prob_over_2_5_shots_pct": 46.8,
+            "goal_anytime_prob_pct": 44.0
           },
           {
-            "name": "Morgan Guilavogui",
-            "position": "Extremo Potente",
+            "name": "Nicolò Barella",
+            "position": "Interior Llegador",
             "expected_shots": 1.78,
-            "expected_sot": 0.74,
-            "prob_at_least_1_sot_pct": 52.3,
-            "prob_at_least_2_sot_pct": 17.0,
-            "prob_over_1_5_shots_pct": 53.0,
-            "prob_over_2_5_shots_pct": 26.3,
-            "goal_anytime_prob_pct": 30.0
+            "expected_sot": 0.68,
+            "prob_at_least_1_sot_pct": 49.3,
+            "prob_at_least_2_sot_pct": 14.9,
+            "prob_over_1_5_shots_pct": 53.2,
+            "prob_over_2_5_shots_pct": 26.5,
+            "goal_anytime_prob_pct": 22.0
           },
           {
-            "name": "Jackson Irvine",
-            "position": "Capitán / Box-to-Box",
+            "name": "Sandro Tonali",
+            "position": "Mediocentro Físico",
             "expected_shots": 1.19,
-            "expected_sot": 0.44,
-            "prob_at_least_1_sot_pct": 35.9,
-            "prob_at_least_2_sot_pct": 7.4,
-            "prob_over_1_5_shots_pct": 33.2,
-            "prob_over_2_5_shots_pct": 11.7,
-            "goal_anytime_prob_pct": 20.0
+            "expected_sot": 0.42,
+            "prob_at_least_1_sot_pct": 34.6,
+            "prob_at_least_2_sot_pct": 6.8,
+            "prob_over_1_5_shots_pct": 33.3,
+            "prob_over_2_5_shots_pct": 11.8,
+            "goal_anytime_prob_pct": 14.0
+          },
+          {
+            "name": "Federico Dimarco",
+            "position": "Carrilero Izquierdo",
+            "expected_shots": 1.53,
+            "expected_sot": 0.59,
+            "prob_at_least_1_sot_pct": 44.8,
+            "prob_at_least_2_sot_pct": 12.0,
+            "prob_over_1_5_shots_pct": 45.2,
+            "prob_over_2_5_shots_pct": 19.8,
+            "goal_anytime_prob_pct": 18.0
+          },
+          {
+            "name": "Giacomo Raspadori",
+            "position": "Segundo Punta",
+            "expected_shots": 1.95,
+            "expected_sot": 0.85,
+            "prob_at_least_1_sot_pct": 57.2,
+            "prob_at_least_2_sot_pct": 20.9,
+            "prob_over_1_5_shots_pct": 58.1,
+            "prob_over_2_5_shots_pct": 31.1,
+            "goal_anytime_prob_pct": 28.0
           }
         ]
       },
       "la_fija_real": {
-        "market": "Gol de Equipo de Seguridad",
-        "selection": "Borussia Dortmund anota más de 0.5 goles",
-        "probability": 92.0,
-        "odds": 1.15,
-        "availability": "Universal en todas las plataformas",
-        "rationale": "El equipo local promedia suficiente xG para asegurar al menos un tanto."
+        "market": "Doble Oportunidad Blindada",
+        "selection": "Francia o Empate (1X)",
+        "probability": 86.7,
+        "odds": 1.22,
+        "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+        "rationale": "Protección total ante el empate con 86.7% de cobertura en casa.",
+        "_rank_score": 94.7
       },
       "all_fija_options": [
         {
-          "market": "Gol de Equipo de Seguridad",
-          "selection": "Borussia Dortmund anota más de 0.5 goles",
-          "probability": 92.0,
-          "odds": 1.15,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "El equipo local promedia suficiente xG para asegurar al menos un tanto."
+          "market": "Doble Oportunidad Blindada",
+          "selection": "Francia o Empate (1X)",
+          "probability": 86.7,
+          "odds": 1.22,
+          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+          "rationale": "Protección total ante el empate con 86.7% de cobertura en casa.",
+          "_rank_score": 94.7
         },
         {
-          "market": "Doble Oportunidad Blindada",
-          "selection": "Borussia Dortmund o Empate (1X)",
-          "probability": 91.6,
-          "odds": 1.16,
-          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "Protección total ante el empate con 91.6% de cobertura en casa."
+          "market": "Córners Base de Seguridad",
+          "selection": "Más de 6.5 córners totales",
+          "probability": 94.0,
+          "odds": 1.2,
+          "availability": "Línea alternativa en Bet365 / Betano",
+          "rationale": "Línea conservadora rebajada en 3 esquinas frente a la línea media del mercado.",
+          "_rank_score": 94.0
+        },
+        {
+          "market": "Gol de Equipo de Seguridad",
+          "selection": "Francia anota más de 0.5 goles",
+          "probability": 89.3,
+          "odds": 1.15,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "El equipo local promedia suficiente xG para asegurar al menos un tanto.",
+          "_rank_score": 93.3
         },
         {
           "market": "Línea de Goles de Seguridad",
@@ -290,50 +335,51 @@
           "probability": 83.5,
           "odds": 1.29,
           "availability": "Universal en todas las plataformas",
-          "rationale": "Ritmo ofensivo conjunto de 2.5 xG garantiza alta probabilidad de al menos 2 goles."
+          "rationale": "Ritmo ofensivo conjunto de 2.5 xG garantiza alta probabilidad de al menos 2 goles.",
+          "_rank_score": 85.5
         }
       ]
     },
     {
-      "match": "Napoli vs Como",
-      "home_team": "Napoli",
-      "away_team": "Como",
+      "match": "Bélgica vs Turquía",
+      "home_team": "Bélgica",
+      "away_team": "Turquía",
       "context": {
-        "tournament": "Serie A - Giornata 7 (Estelar de Viernes)",
-        "stadium": "Stadio Diego Armando Maradona (Nápoles)",
-        "spectators_est": "50,500 en estadio (~28M audiencia global)",
-        "referee": "Ermanno Feliciani",
-        "referee_avg_yellows": 4.2,
-        "referee_avg_reds": 0.15,
-        "intensity": "Muy Alta (Napoli de Antonio Conte liderando la Serie A con Kvaratskhelia, Lukaku y McTominay)"
+        "tournament": "UEFA Nations League - Liga A",
+        "stadium": "King Baudouin Stadium (Bruselas)",
+        "spectators_est": "48,000 en estadio (~28M audiencia global)",
+        "referee": "Felix Zwayer",
+        "referee_avg_yellows": 4.3,
+        "referee_avg_reds": 0.18,
+        "intensity": "Muy Alta (Duelo electrizante entre el talento creativo de De Bruyne y el descaro juvenil de Arda Güler y Kenan Yıldız)"
       },
       "projections": {
         "expected_goals": {
-          "home": 2.87,
-          "away": 0.9,
-          "total": 3.77
+          "home": 2.1,
+          "away": 0.85,
+          "total": 2.95
         },
         "expected_corners": {
-          "home": 6.33,
-          "away": 3.95,
-          "total": 10.28,
+          "home": 6.1,
+          "away": 4.27,
+          "total": 10.37,
           "home_quantiles": {
-            "p10": 4.5,
-            "p90": 8.4
+            "p10": 4.3,
+            "p90": 8.2
           },
           "away_quantiles": {
-            "p10": 2.4,
-            "p90": 5.8
+            "p10": 2.7,
+            "p90": 6.2
           }
         },
         "expected_yellow_cards": {
-          "home": 1.54,
-          "away": 2.72,
-          "total": 4.26
+          "home": 1.45,
+          "away": 2.58,
+          "total": 4.03
         },
         "expected_shots": {
-          "home": 16.0,
-          "away": 12.55
+          "home": 15.12,
+          "away": 12.35
         }
       },
       "tactical_analysis": {
@@ -347,7 +393,7 @@
         },
         "tactical_xg_multiplier_home": 1.0,
         "tactical_xg_multiplier_away": 1.0,
-        "corner_dampener_factor": 0.85,
+        "corner_dampener_factor": 1.0,
         "player_role_restrictions": {},
         "tactical_summary": "Choque de estilos: Estándar vs Estándar"
       },
@@ -368,212 +414,235 @@
       },
       "score_prediction": {
         "most_probable_score": "2 - 0",
-        "most_probable_prob_pct": 9.58,
+        "most_probable_prob_pct": 11.56,
         "top_5_scores": [
           {
             "score": "2 - 0",
             "home_goals": 2,
             "away_goals": 0,
-            "probability_pct": 9.58
-          },
-          {
-            "score": "3 - 0",
-            "home_goals": 3,
-            "away_goals": 0,
-            "probability_pct": 9.17
-          },
-          {
-            "score": "2 - 1",
-            "home_goals": 2,
-            "away_goals": 1,
-            "probability_pct": 8.63
-          },
-          {
-            "score": "3 - 1",
-            "home_goals": 3,
-            "away_goals": 1,
-            "probability_pct": 8.25
+            "probability_pct": 11.56
           },
           {
             "score": "1 - 1",
             "home_goals": 1,
             "away_goals": 1,
-            "probability_pct": 6.67
+            "probability_pct": 10.39
+          },
+          {
+            "score": "1 - 0",
+            "home_goals": 1,
+            "away_goals": 0,
+            "probability_pct": 9.98
+          },
+          {
+            "score": "2 - 1",
+            "home_goals": 2,
+            "away_goals": 1,
+            "probability_pct": 9.82
+          },
+          {
+            "score": "3 - 0",
+            "home_goals": 3,
+            "away_goals": 0,
+            "probability_pct": 8.09
           }
         ],
         "1x2_probabilities": {
-          "home_win_pct": 71.27,
+          "home_win_pct": 63.02,
           "draw_pct": 26.0,
-          "away_win_pct": 2.73
+          "away_win_pct": 10.98
         },
         "goals_markets": {
-          "over_1_5_pct": 89.56,
-          "under_1_5_pct": 10.44,
-          "over_2_5_pct": 72.36,
-          "under_2_5_pct": 27.64,
-          "over_3_5_pct": 51.58,
-          "under_3_5_pct": 48.42,
-          "btts_yes_pct": 56.61,
-          "btts_no_pct": 43.39
+          "over_1_5_pct": 80.32,
+          "under_1_5_pct": 19.68,
+          "over_2_5_pct": 56.49,
+          "under_2_5_pct": 43.51,
+          "over_3_5_pct": 34.06,
+          "under_3_5_pct": 65.94,
+          "btts_yes_pct": 51.27,
+          "btts_no_pct": 48.73
         },
         "simulated_averages": {
-          "home_goals": 2.88,
-          "away_goals": 0.9,
-          "total_goals": 3.78
+          "home_goals": 2.1,
+          "away_goals": 0.86,
+          "total_goals": 2.96
         }
       },
       "corners_prediction": {
-        "home_corners_expected": 5.4,
-        "away_corners_expected": 3.4,
-        "total_corners_expected": 8.8,
-        "most_likely_range": "7 - 10 córners",
+        "home_corners_expected": 6.1,
+        "away_corners_expected": 4.3,
+        "total_corners_expected": 10.4,
+        "most_likely_range": "9 - 12 córners",
         "lines": {
-          "over_8_5_pct": 51.8,
-          "under_8_5_pct": 48.2,
-          "over_9_5_pct": 38.6,
-          "under_9_5_pct": 61.4,
-          "over_10_5_pct": 27.1,
-          "under_10_5_pct": 72.9,
-          "over_11_5_pct": 17.8,
-          "under_11_5_pct": 82.2
+          "over_8_5_pct": 71.0,
+          "under_8_5_pct": 29.0,
+          "over_9_5_pct": 59.1,
+          "under_9_5_pct": 40.9,
+          "over_10_5_pct": 46.7,
+          "under_10_5_pct": 53.3,
+          "over_11_5_pct": 35.0,
+          "under_11_5_pct": 65.0
         },
         "team_lines": {
-          "home_over_4_5_pct": 62.7,
-          "home_over_5_5_pct": 45.4,
-          "away_over_3_5_pct": 44.2,
-          "away_over_4_5_pct": 25.6
+          "home_over_4_5_pct": 72.8,
+          "home_over_5_5_pct": 57.0,
+          "away_over_3_5_pct": 62.3,
+          "away_over_4_5_pct": 43.0
         }
       },
       "cards_prediction": {
-        "referee": "Ermanno Feliciani",
+        "referee": "Felix Zwayer",
         "home_yellow_cards": 1.5,
         "away_yellow_cards": 2.7,
         "total_yellow_cards": 4.2,
         "red_cards": {
-          "expected_home_reds": 0.05,
-          "expected_away_reds": 0.09,
-          "expected_total_reds": 0.14,
-          "home_red_prob_pct": 5.2,
-          "away_red_prob_prob_pct": 9.1,
-          "any_red_card_in_match_pct": 13.3
+          "expected_home_reds": 0.06,
+          "expected_away_reds": 0.11,
+          "expected_total_reds": 0.17,
+          "home_red_prob_pct": 6.2,
+          "away_red_prob_prob_pct": 10.9,
+          "any_red_card_in_match_pct": 15.7
         },
-        "total_cards_expected": 4.3,
+        "total_cards_expected": 4.4,
         "card_lines": {
-          "over_3_5_cards_pct": 61.1,
-          "under_3_5_cards_pct": 38.9,
-          "over_4_5_cards_pct": 41.7,
-          "under_4_5_cards_pct": 58.3,
-          "over_5_5_cards_pct": 25.2,
-          "under_5_5_cards_pct": 74.8
+          "over_3_5_cards_pct": 59.6,
+          "under_3_5_cards_pct": 40.4,
+          "over_4_5_cards_pct": 40.1,
+          "under_4_5_cards_pct": 59.9,
+          "over_5_5_cards_pct": 23.9,
+          "under_5_5_cards_pct": 76.1
         }
       },
       "player_props": {
         "home_key_players": [
           {
-            "name": "Khvicha Kvaratskhelia",
-            "position": "Extremo Gambeteador",
-            "expected_shots": 4.11,
-            "expected_sot": 1.94,
-            "prob_at_least_1_sot_pct": 85.7,
-            "prob_at_least_2_sot_pct": 57.8,
-            "prob_over_1_5_shots_pct": 91.6,
-            "prob_over_2_5_shots_pct": 77.8,
-            "goal_anytime_prob_pct": 55.0
+            "name": "Kevin De Bruyne",
+            "position": "Mediapunta Organizador",
+            "expected_shots": 3.46,
+            "expected_sot": 1.51,
+            "prob_at_least_1_sot_pct": 78.0,
+            "prob_at_least_2_sot_pct": 44.6,
+            "prob_over_1_5_shots_pct": 85.9,
+            "prob_over_2_5_shots_pct": 67.1,
+            "goal_anytime_prob_pct": 42.0
           },
           {
-            "name": "Romelu Lukaku",
-            "position": "Boya / Ariete Físico",
-            "expected_shots": 3.66,
-            "expected_sot": 2.06,
-            "prob_at_least_1_sot_pct": 87.2,
-            "prob_at_least_2_sot_pct": 60.9,
-            "prob_over_1_5_shots_pct": 88.0,
-            "prob_over_2_5_shots_pct": 70.7,
-            "goal_anytime_prob_pct": 62.0
-          },
-          {
-            "name": "Matteo Politano",
-            "position": "Extremo Diestro Incisivo",
-            "expected_shots": 2.74,
-            "expected_sot": 1.14,
-            "prob_at_least_1_sot_pct": 68.1,
-            "prob_at_least_2_sot_pct": 31.7,
-            "prob_over_1_5_shots_pct": 75.9,
-            "prob_over_2_5_shots_pct": 51.7,
+            "name": "Jérémy Doku",
+            "position": "Extremo Regateador",
+            "expected_shots": 2.81,
+            "expected_sot": 1.19,
+            "prob_at_least_1_sot_pct": 69.5,
+            "prob_at_least_2_sot_pct": 33.3,
+            "prob_over_1_5_shots_pct": 77.0,
+            "prob_over_2_5_shots_pct": 53.2,
             "goal_anytime_prob_pct": 28.0
           },
           {
-            "name": "Scott McTominay",
-            "position": "Volante Llegador",
-            "expected_shots": 2.63,
-            "expected_sot": 1.26,
-            "prob_at_least_1_sot_pct": 71.6,
-            "prob_at_least_2_sot_pct": 35.8,
-            "prob_over_1_5_shots_pct": 73.8,
-            "prob_over_2_5_shots_pct": 48.9,
-            "goal_anytime_prob_pct": 34.0
+            "name": "Loïs Openda",
+            "position": "Delantero Vertiginoso",
+            "expected_shots": 3.67,
+            "expected_sot": 1.73,
+            "prob_at_least_1_sot_pct": 82.2,
+            "prob_at_least_2_sot_pct": 51.5,
+            "prob_over_1_5_shots_pct": 88.1,
+            "prob_over_2_5_shots_pct": 71.0,
+            "goal_anytime_prob_pct": 48.0
+          },
+          {
+            "name": "Youri Tielemans",
+            "position": "Mediocentro Llegador",
+            "expected_shots": 2.05,
+            "expected_sot": 0.76,
+            "prob_at_least_1_sot_pct": 53.0,
+            "prob_at_least_2_sot_pct": 17.5,
+            "prob_over_1_5_shots_pct": 60.8,
+            "prob_over_2_5_shots_pct": 33.7,
+            "goal_anytime_prob_pct": 20.0
           }
         ],
         "away_key_players": [
           {
-            "name": "Patrick Cutrone",
-            "position": "Delantero Rematador",
-            "expected_shots": 2.51,
-            "expected_sot": 1.17,
-            "prob_at_least_1_sot_pct": 68.8,
-            "prob_at_least_2_sot_pct": 32.5,
-            "prob_over_1_5_shots_pct": 71.5,
-            "prob_over_2_5_shots_pct": 45.9,
-            "goal_anytime_prob_pct": 40.0
+            "name": "Arda Güler",
+            "position": "Mediapunta Genio",
+            "expected_shots": 2.47,
+            "expected_sot": 1.15,
+            "prob_at_least_1_sot_pct": 68.2,
+            "prob_at_least_2_sot_pct": 31.8,
+            "prob_over_1_5_shots_pct": 70.6,
+            "prob_over_2_5_shots_pct": 44.8,
+            "goal_anytime_prob_pct": 36.0
           },
           {
-            "name": "Gabriel Strefezza",
-            "position": "Extremo / Creador",
-            "expected_shots": 1.97,
-            "expected_sot": 0.81,
-            "prob_at_least_1_sot_pct": 55.4,
-            "prob_at_least_2_sot_pct": 19.4,
-            "prob_over_1_5_shots_pct": 58.6,
-            "prob_over_2_5_shots_pct": 31.6,
+            "name": "Kenan Yıldız",
+            "position": "Extremo / Delantero",
+            "expected_shots": 2.38,
+            "expected_sot": 1.06,
+            "prob_at_least_1_sot_pct": 65.3,
+            "prob_at_least_2_sot_pct": 28.6,
+            "prob_over_1_5_shots_pct": 68.8,
+            "prob_over_2_5_shots_pct": 42.6,
+            "goal_anytime_prob_pct": 34.0
+          },
+          {
+            "name": "Hakan Çalhanoğlu",
+            "position": "Pivote Director / Balón Parado",
+            "expected_shots": 1.94,
+            "expected_sot": 0.79,
+            "prob_at_least_1_sot_pct": 54.8,
+            "prob_at_least_2_sot_pct": 18.9,
+            "prob_over_1_5_shots_pct": 57.8,
+            "prob_over_2_5_shots_pct": 30.7,
             "goal_anytime_prob_pct": 26.0
           },
           {
-            "name": "Nico Paz",
-            "position": "Joya Mediapunta",
-            "expected_shots": 2.33,
-            "expected_sot": 1.08,
-            "prob_at_least_1_sot_pct": 65.9,
-            "prob_at_least_2_sot_pct": 29.2,
-            "prob_over_1_5_shots_pct": 67.6,
-            "prob_over_2_5_shots_pct": 41.2,
+            "name": "Kerem Aktürkoğlu",
+            "position": "Extremo Eléctrico",
+            "expected_shots": 2.21,
+            "expected_sot": 0.97,
+            "prob_at_least_1_sot_pct": 62.1,
+            "prob_at_least_2_sot_pct": 25.3,
+            "prob_over_1_5_shots_pct": 64.7,
+            "prob_over_2_5_shots_pct": 37.9,
             "goal_anytime_prob_pct": 32.0
           }
         ]
       },
       "la_fija_real": {
         "market": "Doble Oportunidad Blindada",
-        "selection": "Napoli o Empate (1X)",
-        "probability": 97.3,
-        "odds": 1.12,
+        "selection": "Bélgica o Empate (1X)",
+        "probability": 89.0,
+        "odds": 1.19,
         "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-        "rationale": "Protección total ante el empate con 97.3% de cobertura en casa."
+        "rationale": "Protección total ante el empate con 89.0% de cobertura en casa.",
+        "_rank_score": 97.0
       },
       "all_fija_options": [
         {
           "market": "Doble Oportunidad Blindada",
-          "selection": "Napoli o Empate (1X)",
-          "probability": 97.3,
-          "odds": 1.12,
+          "selection": "Bélgica o Empate (1X)",
+          "probability": 89.0,
+          "odds": 1.19,
           "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "Protección total ante el empate con 97.3% de cobertura en casa."
+          "rationale": "Protección total ante el empate con 89.0% de cobertura en casa.",
+          "_rank_score": 97.0
         },
         {
           "market": "Gol de Equipo de Seguridad",
-          "selection": "Napoli anota más de 0.5 goles",
-          "probability": 92.0,
+          "selection": "Bélgica anota más de 0.5 goles",
+          "probability": 90.2,
           "odds": 1.15,
           "availability": "Universal en todas las plataformas",
-          "rationale": "El equipo local promedia suficiente xG para asegurar al menos un tanto."
+          "rationale": "El equipo local promedia suficiente xG para asegurar al menos un tanto.",
+          "_rank_score": 94.2
+        },
+        {
+          "market": "Córners Base de Seguridad",
+          "selection": "Más de 6.5 córners totales",
+          "probability": 94.0,
+          "odds": 1.2,
+          "availability": "Línea alternativa en Bet365 / Betano",
+          "rationale": "Línea conservadora rebajada en 3 esquinas frente a la línea media del mercado.",
+          "_rank_score": 94.0
         },
         {
           "market": "Línea de Goles de Seguridad",
@@ -581,50 +650,366 @@
           "probability": 83.5,
           "odds": 1.29,
           "availability": "Universal en todas las plataformas",
-          "rationale": "Ritmo ofensivo conjunto de 2.5 xG garantiza alta probabilidad de al menos 2 goles."
+          "rationale": "Ritmo ofensivo conjunto de 2.5 xG garantiza alta probabilidad de al menos 2 goles.",
+          "_rank_score": 85.5
         }
       ]
     },
     {
-      "match": "Marseille vs Angers",
-      "home_team": "Marseille",
-      "away_team": "Angers",
+      "match": "Corea del Sur vs Venezuela",
+      "home_team": "Corea del Sur",
+      "away_team": "Venezuela",
       "context": {
-        "tournament": "Ligue 1 McDonald's - Jornada 7 (Viernes)",
-        "stadium": "Orange Vélodrome (Marsella)",
+        "tournament": "Amistoso Internacional FIFA (Fecha FIFA Élite)",
+        "stadium": "Seoul World Cup Stadium (Seúl)",
         "spectators_est": "64,000 en estadio (~22M audiencia global)",
-        "referee": "Romain Lissorgue",
-        "referee_avg_yellows": 3.9,
-        "referee_avg_reds": 0.2,
-        "intensity": "Alta (El Vélodrome rugiendo con De Zerbi y Greenwood en busca de puntos clave de Champions)"
+        "referee": "Alireza Faghani",
+        "referee_avg_yellows": 3.2,
+        "referee_avg_reds": 0.08,
+        "intensity": "Alta (Velocidad endiablada y precisión de Son Heung-min y Lee Kang-in frente a la combatividad de la Vinotinto de Rondón)"
       },
       "projections": {
         "expected_goals": {
-          "home": 2.55,
-          "away": 0.78,
-          "total": 3.33
+          "home": 1.97,
+          "away": 0.74,
+          "total": 2.72
         },
         "expected_corners": {
-          "home": 6.02,
-          "away": 3.87,
+          "home": 6.31,
+          "away": 3.57,
           "total": 9.89,
           "home_quantiles": {
-            "p10": 4.2,
-            "p90": 8.1
+            "p10": 4.5,
+            "p90": 8.4
           },
           "away_quantiles": {
-            "p10": 2.3,
-            "p90": 5.8
+            "p10": 2.0,
+            "p90": 5.5
           }
         },
         "expected_yellow_cards": {
-          "home": 1.94,
-          "away": 2.67,
-          "total": 4.61
+          "home": 0.9,
+          "away": 2.74,
+          "total": 3.64
         },
         "expected_shots": {
-          "home": 15.89,
-          "away": 8.94
+          "home": 15.55,
+          "away": 9.98
+        }
+      },
+      "tactical_analysis": {
+        "home_manager": {
+          "style": "Estándar",
+          "pace": "Medio"
+        },
+        "away_manager": {
+          "style": "Estándar",
+          "pace": "Medio"
+        },
+        "tactical_xg_multiplier_home": 1.0,
+        "tactical_xg_multiplier_away": 1.0,
+        "corner_dampener_factor": 1.0,
+        "player_role_restrictions": {},
+        "tactical_summary": "Choque de estilos: Estándar vs Estándar"
+      },
+      "squad_health": {
+        "home_vetoed": [],
+        "away_vetoed": [],
+        "status": "Convocatorias y Titulares Ratificados"
+      },
+      "psychological_context": {
+        "tournament_urgency": 0.4,
+        "is_friendly": true,
+        "stadium_name": "Estadio Neutral",
+        "intimidation_factor": 0.5,
+        "intimidation_impact": "Neutro",
+        "minimum_draw_floor_pct": 24.0,
+        "complacency_risk": "Medio",
+        "psychological_notes": "Urgencia: Baja (Amistoso) | Caldera: 50.0%"
+      },
+      "score_prediction": {
+        "most_probable_score": "2 - 0",
+        "most_probable_prob_pct": 12.92,
+        "top_5_scores": [
+          {
+            "score": "2 - 0",
+            "home_goals": 2,
+            "away_goals": 0,
+            "probability_pct": 12.92
+          },
+          {
+            "score": "1 - 0",
+            "home_goals": 1,
+            "away_goals": 0,
+            "probability_pct": 12.05
+          },
+          {
+            "score": "1 - 1",
+            "home_goals": 1,
+            "away_goals": 1,
+            "probability_pct": 10.78
+          },
+          {
+            "score": "2 - 1",
+            "home_goals": 2,
+            "away_goals": 1,
+            "probability_pct": 9.56
+          },
+          {
+            "score": "3 - 0",
+            "home_goals": 3,
+            "away_goals": 0,
+            "probability_pct": 8.49
+          }
+        ],
+        "1x2_probabilities": {
+          "home_win_pct": 65.23,
+          "draw_pct": 22.67,
+          "away_win_pct": 12.1
+        },
+        "goals_markets": {
+          "over_1_5_pct": 76.36,
+          "under_1_5_pct": 23.64,
+          "over_2_5_pct": 50.83,
+          "under_2_5_pct": 49.17,
+          "over_3_5_pct": 28.74,
+          "under_3_5_pct": 71.26,
+          "btts_yes_pct": 46.06,
+          "btts_no_pct": 53.94
+        },
+        "simulated_averages": {
+          "home_goals": 1.97,
+          "away_goals": 0.75,
+          "total_goals": 2.72
+        }
+      },
+      "corners_prediction": {
+        "home_corners_expected": 6.3,
+        "away_corners_expected": 3.6,
+        "total_corners_expected": 9.9,
+        "most_likely_range": "8 - 11 córners",
+        "lines": {
+          "over_8_5_pct": 65.6,
+          "under_8_5_pct": 34.4,
+          "over_9_5_pct": 52.9,
+          "under_9_5_pct": 47.1,
+          "over_10_5_pct": 40.4,
+          "under_10_5_pct": 59.6,
+          "over_11_5_pct": 29.2,
+          "under_11_5_pct": 70.8
+        },
+        "team_lines": {
+          "home_over_4_5_pct": 75.3,
+          "home_over_5_5_pct": 60.1,
+          "away_over_3_5_pct": 48.5,
+          "away_over_4_5_pct": 29.4
+        }
+      },
+      "cards_prediction": {
+        "referee": "Alireza Faghani",
+        "home_yellow_cards": 0.9,
+        "away_yellow_cards": 2.6,
+        "total_yellow_cards": 3.5,
+        "red_cards": {
+          "expected_home_reds": 0.02,
+          "expected_away_reds": 0.06,
+          "expected_total_reds": 0.08,
+          "home_red_prob_pct": 1.9,
+          "away_red_prob_prob_pct": 5.7,
+          "any_red_card_in_match_pct": 7.3
+        },
+        "total_cards_expected": 3.6,
+        "card_lines": {
+          "over_3_5_cards_pct": 45.1,
+          "under_3_5_cards_pct": 54.9,
+          "over_4_5_cards_pct": 26.4,
+          "under_4_5_cards_pct": 73.6,
+          "over_5_5_cards_pct": 13.5,
+          "under_5_5_cards_pct": 86.5
+        }
+      },
+      "player_props": {
+        "home_key_players": [
+          {
+            "name": "Son Heung-min",
+            "position": "Extremo / Delantero Estrella",
+            "expected_shots": 4.0,
+            "expected_sot": 2.0,
+            "prob_at_least_1_sot_pct": 86.5,
+            "prob_at_least_2_sot_pct": 59.4,
+            "prob_over_1_5_shots_pct": 90.8,
+            "prob_over_2_5_shots_pct": 76.2,
+            "goal_anytime_prob_pct": 52.0
+          },
+          {
+            "name": "Lee Kang-in",
+            "position": "Mediapunta Creativo",
+            "expected_shots": 2.78,
+            "expected_sot": 1.22,
+            "prob_at_least_1_sot_pct": 70.5,
+            "prob_at_least_2_sot_pct": 34.5,
+            "prob_over_1_5_shots_pct": 76.5,
+            "prob_over_2_5_shots_pct": 52.5,
+            "goal_anytime_prob_pct": 32.0
+          },
+          {
+            "name": "Hwang Hee-chan",
+            "position": "Delantero Físico",
+            "expected_shots": 2.89,
+            "expected_sot": 1.33,
+            "prob_at_least_1_sot_pct": 73.6,
+            "prob_at_least_2_sot_pct": 38.5,
+            "prob_over_1_5_shots_pct": 78.3,
+            "prob_over_2_5_shots_pct": 55.1,
+            "goal_anytime_prob_pct": 36.0
+          },
+          {
+            "name": "Kim Min-jae",
+            "position": "Defensa Central Muralla",
+            "expected_shots": 0.89,
+            "expected_sot": 0.33,
+            "prob_at_least_1_sot_pct": 28.3,
+            "prob_at_least_2_sot_pct": 4.5,
+            "prob_over_1_5_shots_pct": 22.3,
+            "prob_over_2_5_shots_pct": 6.1,
+            "goal_anytime_prob_pct": 8.0
+          }
+        ],
+        "away_key_players": [
+          {
+            "name": "Salomón Rondón",
+            "position": "Delantero Referente",
+            "expected_shots": 1.92,
+            "expected_sot": 0.86,
+            "prob_at_least_1_sot_pct": 57.5,
+            "prob_at_least_2_sot_pct": 21.1,
+            "prob_over_1_5_shots_pct": 57.3,
+            "prob_over_2_5_shots_pct": 30.3,
+            "goal_anytime_prob_pct": 38.0
+          },
+          {
+            "name": "Yeferson Soteldo",
+            "position": "Extremo Elusivo",
+            "expected_shots": 1.5,
+            "expected_sot": 0.64,
+            "prob_at_least_1_sot_pct": 47.4,
+            "prob_at_least_2_sot_pct": 13.6,
+            "prob_over_1_5_shots_pct": 44.1,
+            "prob_over_2_5_shots_pct": 19.0,
+            "goal_anytime_prob_pct": 24.0
+          },
+          {
+            "name": "Yangel Herrera",
+            "position": "Pivote Mixto / Llegador",
+            "expected_shots": 1.14,
+            "expected_sot": 0.43,
+            "prob_at_least_1_sot_pct": 34.8,
+            "prob_at_least_2_sot_pct": 6.9,
+            "prob_over_1_5_shots_pct": 31.6,
+            "prob_over_2_5_shots_pct": 10.8,
+            "goal_anytime_prob_pct": 16.0
+          },
+          {
+            "name": "Jefferson Savarino",
+            "position": "Extremo / Conector",
+            "expected_shots": 1.35,
+            "expected_sot": 0.57,
+            "prob_at_least_1_sot_pct": 43.5,
+            "prob_at_least_2_sot_pct": 11.2,
+            "prob_over_1_5_shots_pct": 39.2,
+            "prob_over_2_5_shots_pct": 15.6,
+            "goal_anytime_prob_pct": 22.0
+          }
+        ]
+      },
+      "la_fija_real": {
+        "market": "Doble Oportunidad Blindada",
+        "selection": "Corea del Sur o Empate (1X)",
+        "probability": 87.9,
+        "odds": 1.21,
+        "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+        "rationale": "Protección total ante el empate con 87.9% de cobertura en casa.",
+        "_rank_score": 95.9
+      },
+      "all_fija_options": [
+        {
+          "market": "Doble Oportunidad Blindada",
+          "selection": "Corea del Sur o Empate (1X)",
+          "probability": 87.9,
+          "odds": 1.21,
+          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+          "rationale": "Protección total ante el empate con 87.9% de cobertura en casa.",
+          "_rank_score": 95.9
+        },
+        {
+          "market": "Gol de Equipo de Seguridad",
+          "selection": "Corea del Sur anota más de 0.5 goles",
+          "probability": 91.1,
+          "odds": 1.15,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "El equipo local promedia suficiente xG para asegurar al menos un tanto.",
+          "_rank_score": 95.1
+        },
+        {
+          "market": "Córners Base de Seguridad",
+          "selection": "Más de 6.5 córners totales",
+          "probability": 94.0,
+          "odds": 1.2,
+          "availability": "Línea alternativa en Bet365 / Betano",
+          "rationale": "Línea conservadora rebajada en 3 esquinas frente a la línea media del mercado.",
+          "_rank_score": 94.0
+        },
+        {
+          "market": "Línea de Goles de Seguridad",
+          "selection": "Más de 1.5 goles totales",
+          "probability": 83.5,
+          "odds": 1.29,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Ritmo ofensivo conjunto de 2.5 xG garantiza alta probabilidad de al menos 2 goles.",
+          "_rank_score": 85.5
+        }
+      ]
+    },
+    {
+      "match": "Bosnia y Herzegovina vs Suecia",
+      "home_team": "Bosnia y Herzegovina",
+      "away_team": "Suecia",
+      "context": {
+        "tournament": "UEFA Nations League - Liga B",
+        "stadium": "Bilino Polje (Zenica)",
+        "spectators_est": "14,000 en estadio (~18M audiencia global)",
+        "referee": "Clément Turpin",
+        "referee_avg_yellows": 4.4,
+        "referee_avg_reds": 0.2,
+        "intensity": "Muy Alta (Caldera balcánica caliente; Džeko comandando el orgullo local ante el vendaval goleador de Gyökeres e Isak)"
+      },
+      "projections": {
+        "expected_goals": {
+          "home": 0.73,
+          "away": 2.39,
+          "total": 3.11
+        },
+        "expected_corners": {
+          "home": 4.0,
+          "away": 5.9,
+          "total": 9.89,
+          "home_quantiles": {
+            "p10": 2.2,
+            "p90": 6.1
+          },
+          "away_quantiles": {
+            "p10": 4.3,
+            "p90": 7.8
+          }
+        },
+        "expected_yellow_cards": {
+          "home": 2.75,
+          "away": 1.78,
+          "total": 4.53
+        },
+        "expected_shots": {
+          "home": 8.92,
+          "away": 14.79
         }
       },
       "tactical_analysis": {
@@ -658,64 +1043,64 @@
         "psychological_notes": "Urgencia: Máxima (Puntos Oficiales) | Caldera: 50.0%"
       },
       "score_prediction": {
-        "most_probable_score": "2 - 0",
-        "most_probable_prob_pct": 11.69,
+        "most_probable_score": "0 - 2",
+        "most_probable_prob_pct": 12.65,
         "top_5_scores": [
           {
-            "score": "2 - 0",
-            "home_goals": 2,
-            "away_goals": 0,
-            "probability_pct": 11.69
+            "score": "0 - 2",
+            "home_goals": 0,
+            "away_goals": 2,
+            "probability_pct": 12.65
           },
           {
-            "score": "3 - 0",
-            "home_goals": 3,
-            "away_goals": 0,
-            "probability_pct": 9.94
+            "score": "0 - 3",
+            "home_goals": 0,
+            "away_goals": 3,
+            "probability_pct": 10.08
           },
           {
-            "score": "2 - 1",
-            "home_goals": 2,
+            "score": "0 - 1",
+            "home_goals": 0,
             "away_goals": 1,
-            "probability_pct": 9.12
+            "probability_pct": 9.74
           },
           {
-            "score": "1 - 0",
+            "score": "1 - 2",
             "home_goals": 1,
-            "away_goals": 0,
-            "probability_pct": 8.38
+            "away_goals": 2,
+            "probability_pct": 9.24
           },
           {
             "score": "1 - 1",
             "home_goals": 1,
             "away_goals": 1,
-            "probability_pct": 7.94
+            "probability_pct": 8.58
           }
         ],
         "1x2_probabilities": {
-          "home_win_pct": 70.14,
+          "home_win_pct": 4.69,
           "draw_pct": 26.0,
-          "away_win_pct": 3.86
+          "away_win_pct": 69.31
         },
         "goals_markets": {
-          "over_1_5_pct": 85.21,
-          "under_1_5_pct": 14.79,
-          "over_2_5_pct": 64.49,
-          "under_2_5_pct": 35.51,
-          "over_3_5_pct": 42.35,
-          "under_3_5_pct": 57.65,
-          "btts_yes_pct": 50.7,
-          "btts_no_pct": 49.3
+          "over_1_5_pct": 82.6,
+          "under_1_5_pct": 17.4,
+          "over_2_5_pct": 60.19,
+          "under_2_5_pct": 39.81,
+          "over_3_5_pct": 37.76,
+          "under_3_5_pct": 62.24,
+          "btts_yes_pct": 47.9,
+          "btts_no_pct": 52.1
         },
         "simulated_averages": {
-          "home_goals": 2.54,
-          "away_goals": 0.79,
-          "total_goals": 3.33
+          "home_goals": 0.74,
+          "away_goals": 2.4,
+          "total_goals": 3.14
         }
       },
       "corners_prediction": {
-        "home_corners_expected": 5.1,
-        "away_corners_expected": 3.3,
+        "home_corners_expected": 3.4,
+        "away_corners_expected": 5.0,
         "total_corners_expected": 8.4,
         "most_likely_range": "7 - 10 córners",
         "lines": {
@@ -729,716 +1114,147 @@
           "under_11_5_pct": 85.7
         },
         "team_lines": {
-          "home_over_4_5_pct": 57.7,
-          "home_over_5_5_pct": 40.2,
-          "away_over_3_5_pct": 42.0,
-          "away_over_4_5_pct": 23.7
-        }
-      },
-      "cards_prediction": {
-        "referee": "Romain Lissorgue",
-        "home_yellow_cards": 1.8,
-        "away_yellow_cards": 2.5,
-        "total_yellow_cards": 4.3,
-        "red_cards": {
-          "expected_home_reds": 0.08,
-          "expected_away_reds": 0.11,
-          "expected_total_reds": 0.19,
-          "home_red_prob_pct": 8.0,
-          "away_red_prob_prob_pct": 11.0,
-          "any_red_card_in_match_pct": 17.3
-        },
-        "total_cards_expected": 4.5,
-        "card_lines": {
-          "over_3_5_cards_pct": 62.1,
-          "under_3_5_cards_pct": 37.9,
-          "over_4_5_cards_pct": 42.8,
-          "under_4_5_cards_pct": 57.2,
-          "over_5_5_cards_pct": 26.2,
-          "under_5_5_cards_pct": 73.8
-        }
-      },
-      "player_props": {
-        "home_key_players": [
-          {
-            "name": "Mason Greenwood",
-            "position": "Extremo Goleador",
-            "expected_shots": 4.31,
-            "expected_sot": 2.16,
-            "prob_at_least_1_sot_pct": 88.4,
-            "prob_at_least_2_sot_pct": 63.5,
-            "prob_over_1_5_shots_pct": 92.9,
-            "prob_over_2_5_shots_pct": 80.4,
-            "goal_anytime_prob_pct": 60.0
-          },
-          {
-            "name": "Elye Wahi",
-            "position": "Delantero Centro Rápido",
-            "expected_shots": 3.06,
-            "expected_sot": 1.48,
-            "prob_at_least_1_sot_pct": 77.1,
-            "prob_at_least_2_sot_pct": 43.4,
-            "prob_over_1_5_shots_pct": 81.0,
-            "prob_over_2_5_shots_pct": 59.1,
-            "goal_anytime_prob_pct": 42.0
-          },
-          {
-            "name": "Amine Harit",
-            "position": "Organizador Creativo",
-            "expected_shots": 2.16,
-            "expected_sot": 0.91,
-            "prob_at_least_1_sot_pct": 59.7,
-            "prob_at_least_2_sot_pct": 23.0,
-            "prob_over_1_5_shots_pct": 63.5,
-            "prob_over_2_5_shots_pct": 36.6,
-            "goal_anytime_prob_pct": 24.0
-          },
-          {
-            "name": "Luis Henrique",
-            "position": "Extremo Desborde",
-            "expected_shots": 2.5,
-            "expected_sot": 1.25,
-            "prob_at_least_1_sot_pct": 71.3,
-            "prob_at_least_2_sot_pct": 35.5,
-            "prob_over_1_5_shots_pct": 71.2,
-            "prob_over_2_5_shots_pct": 45.5,
-            "goal_anytime_prob_pct": 32.0
-          }
-        ],
-        "away_key_players": [
-          {
-            "name": "Himad Abdelli",
-            "position": "Enganche / Creativo",
-            "expected_shots": 1.34,
-            "expected_sot": 0.51,
-            "prob_at_least_1_sot_pct": 40.0,
-            "prob_at_least_2_sot_pct": 9.4,
-            "prob_over_1_5_shots_pct": 38.8,
-            "prob_over_2_5_shots_pct": 15.2,
-            "goal_anytime_prob_pct": 25.0
-          },
-          {
-            "name": "Farid El Melali",
-            "position": "Extremo Rápido",
-            "expected_shots": 1.28,
-            "expected_sot": 0.45,
-            "prob_at_least_1_sot_pct": 36.0,
-            "prob_at_least_2_sot_pct": 7.5,
-            "prob_over_1_5_shots_pct": 36.5,
-            "prob_over_2_5_shots_pct": 13.8,
-            "goal_anytime_prob_pct": 22.0
-          },
-          {
-            "name": "Lois Diony",
-            "position": "Delantero Centro",
-            "expected_shots": 1.21,
-            "expected_sot": 0.51,
-            "prob_at_least_1_sot_pct": 40.0,
-            "prob_at_least_2_sot_pct": 9.4,
-            "prob_over_1_5_shots_pct": 34.2,
-            "prob_over_2_5_shots_pct": 12.3,
-            "goal_anytime_prob_pct": 24.0
-          }
-        ]
-      },
-      "la_fija_real": {
-        "market": "Doble Oportunidad Blindada",
-        "selection": "Marseille o Empate (1X)",
-        "probability": 96.1,
-        "odds": 1.12,
-        "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-        "rationale": "Protección total ante el empate con 96.1% de cobertura en casa."
-      },
-      "all_fija_options": [
-        {
-          "market": "Doble Oportunidad Blindada",
-          "selection": "Marseille o Empate (1X)",
-          "probability": 96.1,
-          "odds": 1.12,
-          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "Protección total ante el empate con 96.1% de cobertura en casa."
-        },
-        {
-          "market": "Gol de Equipo de Seguridad",
-          "selection": "Marseille anota más de 0.5 goles",
-          "probability": 92.0,
-          "odds": 1.15,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "El equipo local promedia suficiente xG para asegurar al menos un tanto."
-        },
-        {
-          "market": "Línea de Goles de Seguridad",
-          "selection": "Más de 1.5 goles totales",
-          "probability": 83.5,
-          "odds": 1.29,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Ritmo ofensivo conjunto de 2.5 xG garantiza alta probabilidad de al menos 2 goles."
-        }
-      ]
-    },
-    {
-      "match": "Leganés vs Valencia",
-      "home_team": "Leganés",
-      "away_team": "Valencia",
-      "context": {
-        "tournament": "LaLiga EA Sports - Jornada 9 (Viernes)",
-        "stadium": "Estadio Municipal Butarque (Leganés, Madrid)",
-        "spectators_est": "12,450 en estadio (~18M audiencia global)",
-        "referee": "Jorge Figueroa Vázquez",
-        "referee_avg_yellows": 4.7,
-        "referee_avg_reds": 0.24,
-        "intensity": "Tensión Extrema (Duelo directo por la permanencia con defensas cerradas y alto roce físico)"
-      },
-      "projections": {
-        "expected_goals": {
-          "home": 0.52,
-          "away": 1.67,
-          "total": 2.19
-        },
-        "expected_corners": {
-          "home": 3.98,
-          "away": 5.03,
-          "total": 9.01,
-          "home_quantiles": {
-            "p10": 2.2,
-            "p90": 6.1
-          },
-          "away_quantiles": {
-            "p10": 3.4,
-            "p90": 6.9
-          }
-        },
-        "expected_yellow_cards": {
-          "home": 3.06,
-          "away": 2.28,
-          "total": 5.34
-        },
-        "expected_shots": {
-          "home": 7.95,
-          "away": 11.32
-        }
-      },
-      "tactical_analysis": {
-        "home_manager": {
-          "style": "Estándar",
-          "pace": "Medio"
-        },
-        "away_manager": {
-          "style": "Estándar",
-          "pace": "Medio"
-        },
-        "tactical_xg_multiplier_home": 1.0,
-        "tactical_xg_multiplier_away": 1.0,
-        "corner_dampener_factor": 1.0,
-        "player_role_restrictions": {},
-        "tactical_summary": "Choque de estilos: Estándar vs Estándar"
-      },
-      "squad_health": {
-        "home_vetoed": [],
-        "away_vetoed": [],
-        "status": "Convocatorias y Titulares Ratificados"
-      },
-      "psychological_context": {
-        "tournament_urgency": 0.9,
-        "is_friendly": false,
-        "stadium_name": "Estadio Neutral",
-        "intimidation_factor": 0.5,
-        "intimidation_impact": "Neutro",
-        "minimum_draw_floor_pct": 26.0,
-        "complacency_risk": "Medio",
-        "psychological_notes": "Urgencia: Máxima (Puntos Oficiales) | Caldera: 50.0%"
-      },
-      "score_prediction": {
-        "most_probable_score": "0 - 1",
-        "most_probable_prob_pct": 17.63,
-        "top_5_scores": [
-          {
-            "score": "0 - 1",
-            "home_goals": 0,
-            "away_goals": 1,
-            "probability_pct": 17.63
-          },
-          {
-            "score": "0 - 2",
-            "home_goals": 0,
-            "away_goals": 2,
-            "probability_pct": 15.61
-          },
-          {
-            "score": "0 - 0",
-            "home_goals": 0,
-            "away_goals": 0,
-            "probability_pct": 12.26
-          },
-          {
-            "score": "1 - 1",
-            "home_goals": 1,
-            "away_goals": 1,
-            "probability_pct": 10.79
-          },
-          {
-            "score": "0 - 3",
-            "home_goals": 0,
-            "away_goals": 3,
-            "probability_pct": 8.69
-          }
-        ],
-        "1x2_probabilities": {
-          "home_win_pct": 9.74,
-          "draw_pct": 26.0,
-          "away_win_pct": 64.26
-        },
-        "goals_markets": {
-          "over_1_5_pct": 65.36,
-          "under_1_5_pct": 34.64,
-          "over_2_5_pct": 37.44,
-          "under_2_5_pct": 62.56,
-          "over_3_5_pct": 17.84,
-          "under_3_5_pct": 82.16,
-          "btts_yes_pct": 33.98,
-          "btts_no_pct": 66.02
-        },
-        "simulated_averages": {
-          "home_goals": 0.52,
-          "away_goals": 1.68,
-          "total_goals": 2.2
-        }
-      },
-      "corners_prediction": {
-        "home_corners_expected": 4.0,
-        "away_corners_expected": 5.0,
-        "total_corners_expected": 9.0,
-        "most_likely_range": "8 - 10 córners",
-        "lines": {
-          "over_8_5_pct": 54.4,
-          "under_8_5_pct": 45.6,
-          "over_9_5_pct": 41.3,
-          "under_9_5_pct": 58.7,
-          "over_10_5_pct": 29.4,
-          "under_10_5_pct": 70.6,
-          "over_11_5_pct": 19.7,
-          "under_11_5_pct": 80.3
-        },
-        "team_lines": {
-          "home_over_4_5_pct": 37.1,
-          "home_over_5_5_pct": 21.5,
+          "home_over_4_5_pct": 25.6,
+          "home_over_5_5_pct": 12.9,
           "away_over_3_5_pct": 73.5,
           "away_over_4_5_pct": 56.0
         }
       },
       "cards_prediction": {
-        "referee": "Jorge Figueroa Vázquez",
-        "home_yellow_cards": 2.9,
-        "away_yellow_cards": 2.2,
-        "total_yellow_cards": 5.1,
+        "referee": "Clément Turpin",
+        "home_yellow_cards": 2.7,
+        "away_yellow_cards": 1.8,
+        "total_yellow_cards": 4.5,
         "red_cards": {
-          "expected_home_reds": 0.13,
-          "expected_away_reds": 0.1,
-          "expected_total_reds": 0.23,
-          "home_red_prob_pct": 13.1,
-          "away_red_prob_prob_pct": 9.7,
-          "any_red_card_in_match_pct": 20.4
+          "expected_home_reds": 0.12,
+          "expected_away_reds": 0.07,
+          "expected_total_reds": 0.19,
+          "home_red_prob_pct": 11.5,
+          "away_red_prob_prob_pct": 7.5,
+          "any_red_card_in_match_pct": 17.3
         },
-        "total_cards_expected": 5.3,
+        "total_cards_expected": 4.7,
         "card_lines": {
-          "over_3_5_cards_pct": 74.2,
-          "under_3_5_cards_pct": 25.8,
-          "over_4_5_cards_pct": 56.9,
-          "under_4_5_cards_pct": 43.1,
-          "over_5_5_cards_pct": 39.3,
-          "under_5_5_cards_pct": 60.7
+          "over_3_5_cards_pct": 65.3,
+          "under_3_5_cards_pct": 34.7,
+          "over_4_5_cards_pct": 46.2,
+          "under_4_5_cards_pct": 53.8,
+          "over_5_5_cards_pct": 29.2,
+          "under_5_5_cards_pct": 70.8
         }
       },
       "player_props": {
         "home_key_players": [
           {
-            "name": "Juan Cruz",
-            "position": "Extremo Desequilibrante",
-            "expected_shots": 1.36,
-            "expected_sot": 0.57,
-            "prob_at_least_1_sot_pct": 43.3,
-            "prob_at_least_2_sot_pct": 11.1,
-            "prob_over_1_5_shots_pct": 39.5,
-            "prob_over_2_5_shots_pct": 15.8,
-            "goal_anytime_prob_pct": 30.0
-          },
-          {
-            "name": "Dani Raba",
-            "position": "Mediapunta Zurdo",
-            "expected_shots": 1.19,
-            "expected_sot": 0.45,
-            "prob_at_least_1_sot_pct": 36.5,
-            "prob_at_least_2_sot_pct": 7.7,
-            "prob_over_1_5_shots_pct": 33.5,
-            "prob_over_2_5_shots_pct": 11.9,
-            "goal_anytime_prob_pct": 24.0
-          },
-          {
-            "name": "Miguel de la Fuente",
-            "position": "Delantero de Choque",
-            "expected_shots": 1.25,
-            "expected_sot": 0.51,
-            "prob_at_least_1_sot_pct": 40.0,
-            "prob_at_least_2_sot_pct": 9.4,
-            "prob_over_1_5_shots_pct": 35.5,
-            "prob_over_2_5_shots_pct": 13.1,
-            "goal_anytime_prob_pct": 28.0
-          }
-        ],
-        "away_key_players": [
-          {
-            "name": "Hugo Duro",
-            "position": "Ariete Luchador",
-            "expected_shots": 2.02,
-            "expected_sot": 0.97,
-            "prob_at_least_1_sot_pct": 62.1,
-            "prob_at_least_2_sot_pct": 25.3,
-            "prob_over_1_5_shots_pct": 60.0,
-            "prob_over_2_5_shots_pct": 32.9,
+            "name": "Edin Džeko",
+            "position": "Delantero Leyenda / Capitán",
+            "expected_shots": 1.78,
+            "expected_sot": 0.83,
+            "prob_at_least_1_sot_pct": 56.3,
+            "prob_at_least_2_sot_pct": 20.1,
+            "prob_over_1_5_shots_pct": 53.2,
+            "prob_over_2_5_shots_pct": 26.5,
             "goal_anytime_prob_pct": 38.0
           },
           {
-            "name": "Diego López",
-            "position": "Extremo / Segundo Punta",
-            "expected_shots": 1.78,
-            "expected_sot": 0.73,
-            "prob_at_least_1_sot_pct": 51.7,
-            "prob_at_least_2_sot_pct": 16.5,
-            "prob_over_1_5_shots_pct": 53.1,
-            "prob_over_2_5_shots_pct": 26.4,
-            "goal_anytime_prob_pct": 28.0
-          },
-          {
-            "name": "Pepelu",
-            "position": "Metrónomo & Balón Parado",
-            "expected_shots": 1.13,
-            "expected_sot": 0.4,
-            "prob_at_least_1_sot_pct": 33.3,
-            "prob_at_least_2_sot_pct": 6.3,
-            "prob_over_1_5_shots_pct": 31.3,
-            "prob_over_2_5_shots_pct": 10.6,
-            "goal_anytime_prob_pct": 18.0
-          },
-          {
-            "name": "Javi Guerra",
-            "position": "Interior Box-to-Box",
-            "expected_shots": 1.46,
-            "expected_sot": 0.57,
-            "prob_at_least_1_sot_pct": 43.2,
-            "prob_at_least_2_sot_pct": 11.1,
-            "prob_over_1_5_shots_pct": 42.7,
-            "prob_over_2_5_shots_pct": 18.0,
-            "goal_anytime_prob_pct": 22.0
-          }
-        ]
-      },
-      "la_fija_real": {
-        "market": "Córners Base de Seguridad",
-        "selection": "Más de 6.5 córners totales",
-        "probability": 94.0,
-        "odds": 1.2,
-        "availability": "Línea alternativa en Bet365 / Betano",
-        "rationale": "Línea conservadora rebajada en 3 esquinas frente a la línea media del mercado."
-      },
-      "all_fija_options": [
-        {
-          "market": "Córners Base de Seguridad",
-          "selection": "Más de 6.5 córners totales",
-          "probability": 94.0,
-          "odds": 1.2,
-          "availability": "Línea alternativa en Bet365 / Betano",
-          "rationale": "Línea conservadora rebajada en 3 esquinas frente a la línea media del mercado."
-        },
-        {
-          "market": "Doble Oportunidad Blindada",
-          "selection": "Empate o Valencia (X2)",
-          "probability": 90.3,
-          "odds": 1.17,
-          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "El favorito visitante Valencia puntúa en el 90.3% de las simulaciones."
-        },
-        {
-          "market": "Línea de Goles de Seguridad",
-          "selection": "Más de 1.5 goles totales",
-          "probability": 83.5,
-          "odds": 1.29,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Ritmo ofensivo conjunto de 2.5 xG garantiza alta probabilidad de al menos 2 goles."
-        }
-      ]
-    },
-    {
-      "match": "Sunderland vs Leeds United",
-      "home_team": "Sunderland",
-      "away_team": "Leeds United",
-      "context": {
-        "tournament": "EFL Championship - Matchday 9 (Viernes Estelar)",
-        "stadium": "Stadium of Light (Sunderland)",
-        "spectators_est": "41,500 en estadio (~14M audiencia global)",
-        "referee": "Tim Robinson",
-        "referee_avg_yellows": 3.8,
-        "referee_avg_reds": 0.12,
-        "intensity": "Máxima (Batalla por el ascenso directo a Premier League en un Stadium of Light a reventar)"
-      },
-      "projections": {
-        "expected_goals": {
-          "home": 1.26,
-          "away": 1.05,
-          "total": 2.31
-        },
-        "expected_corners": {
-          "home": 5.52,
-          "away": 4.51,
-          "total": 10.03,
-          "home_quantiles": {
-            "p10": 3.7,
-            "p90": 7.6
-          },
-          "away_quantiles": {
-            "p10": 2.9,
-            "p90": 6.4
-          }
-        },
-        "expected_yellow_cards": {
-          "home": 1.94,
-          "away": 2.39,
-          "total": 4.33
-        },
-        "expected_shots": {
-          "home": 12.62,
-          "away": 11.78
-        }
-      },
-      "tactical_analysis": {
-        "home_manager": {
-          "style": "Estándar",
-          "pace": "Medio"
-        },
-        "away_manager": {
-          "style": "Estándar",
-          "pace": "Medio"
-        },
-        "tactical_xg_multiplier_home": 1.0,
-        "tactical_xg_multiplier_away": 1.0,
-        "corner_dampener_factor": 1.0,
-        "player_role_restrictions": {},
-        "tactical_summary": "Choque de estilos: Estándar vs Estándar"
-      },
-      "squad_health": {
-        "home_vetoed": [],
-        "away_vetoed": [],
-        "status": "Convocatorias y Titulares Ratificados"
-      },
-      "psychological_context": {
-        "tournament_urgency": 0.9,
-        "is_friendly": false,
-        "stadium_name": "Estadio Neutral",
-        "intimidation_factor": 0.5,
-        "intimidation_impact": "Neutro",
-        "minimum_draw_floor_pct": 26.0,
-        "complacency_risk": "Medio",
-        "psychological_notes": "Urgencia: Máxima (Puntos Oficiales) | Caldera: 50.0%"
-      },
-      "score_prediction": {
-        "most_probable_score": "1 - 1",
-        "most_probable_prob_pct": 14.58,
-        "top_5_scores": [
-          {
-            "score": "1 - 1",
-            "home_goals": 1,
-            "away_goals": 1,
-            "probability_pct": 14.58
-          },
-          {
-            "score": "0 - 0",
-            "home_goals": 0,
-            "away_goals": 0,
-            "probability_pct": 11.37
-          },
-          {
-            "score": "1 - 0",
-            "home_goals": 1,
-            "away_goals": 0,
-            "probability_pct": 11.06
-          },
-          {
-            "score": "0 - 1",
-            "home_goals": 0,
-            "away_goals": 1,
-            "probability_pct": 8.98
-          },
-          {
-            "score": "2 - 1",
-            "home_goals": 2,
-            "away_goals": 1,
-            "probability_pct": 8.27
-          }
-        ],
-        "1x2_probabilities": {
-          "home_win_pct": 39.67,
-          "draw_pct": 30.99,
-          "away_win_pct": 29.34
-        },
-        "goals_markets": {
-          "over_1_5_pct": 68.59,
-          "under_1_5_pct": 31.41,
-          "over_2_5_pct": 40.66,
-          "under_2_5_pct": 59.34,
-          "over_3_5_pct": 20.26,
-          "under_3_5_pct": 79.74,
-          "btts_yes_pct": 48.01,
-          "btts_no_pct": 51.99
-        },
-        "simulated_averages": {
-          "home_goals": 1.26,
-          "away_goals": 1.06,
-          "total_goals": 2.32
-        }
-      },
-      "corners_prediction": {
-        "home_corners_expected": 5.5,
-        "away_corners_expected": 4.5,
-        "total_corners_expected": 10.0,
-        "most_likely_range": "9 - 11 córners",
-        "lines": {
-          "over_8_5_pct": 66.7,
-          "under_8_5_pct": 33.3,
-          "over_9_5_pct": 54.2,
-          "under_9_5_pct": 45.8,
-          "over_10_5_pct": 41.7,
-          "under_10_5_pct": 58.3,
-          "over_11_5_pct": 30.3,
-          "under_11_5_pct": 69.7
-        },
-        "team_lines": {
-          "home_over_4_5_pct": 64.2,
-          "home_over_5_5_pct": 47.1,
-          "away_over_3_5_pct": 65.8,
-          "away_over_4_5_pct": 46.8
-        }
-      },
-      "cards_prediction": {
-        "referee": "Tim Robinson",
-        "home_yellow_cards": 1.8,
-        "away_yellow_cards": 2.3,
-        "total_yellow_cards": 4.1,
-        "red_cards": {
-          "expected_home_reds": 0.05,
-          "expected_away_reds": 0.06,
-          "expected_total_reds": 0.11,
-          "home_red_prob_pct": 5.1,
-          "away_red_prob_prob_pct": 6.3,
-          "any_red_card_in_match_pct": 10.8
-        },
-        "total_cards_expected": 4.2,
-        "card_lines": {
-          "over_3_5_cards_pct": 58.4,
-          "under_3_5_cards_pct": 41.6,
-          "over_4_5_cards_pct": 38.9,
-          "under_4_5_cards_pct": 61.1,
-          "over_5_5_cards_pct": 22.9,
-          "under_5_5_cards_pct": 77.1
-        }
-      },
-      "player_props": {
-        "home_key_players": [
-          {
-            "name": "Jobe Bellingham",
-            "position": "Volante Llegador",
-            "expected_shots": 2.16,
-            "expected_sot": 0.9,
-            "prob_at_least_1_sot_pct": 59.4,
-            "prob_at_least_2_sot_pct": 22.8,
-            "prob_over_1_5_shots_pct": 63.6,
-            "prob_over_2_5_shots_pct": 36.7,
+            "name": "Ermedin Demirović",
+            "position": "Delantero Bundesliga",
+            "expected_shots": 1.53,
+            "expected_sot": 0.7,
+            "prob_at_least_1_sot_pct": 50.4,
+            "prob_at_least_2_sot_pct": 15.6,
+            "prob_over_1_5_shots_pct": 45.2,
+            "prob_over_2_5_shots_pct": 19.9,
             "goal_anytime_prob_pct": 32.0
           },
           {
-            "name": "Wilson Isidor",
-            "position": "Delantero Rápido",
-            "expected_shots": 2.34,
-            "expected_sot": 1.17,
-            "prob_at_least_1_sot_pct": 69.0,
-            "prob_at_least_2_sot_pct": 32.7,
-            "prob_over_1_5_shots_pct": 67.9,
-            "prob_over_2_5_shots_pct": 41.6,
-            "goal_anytime_prob_pct": 40.0
+            "name": "Amar Dedić",
+            "position": "Carrilero Ofensivo",
+            "expected_shots": 0.89,
+            "expected_sot": 0.32,
+            "prob_at_least_1_sot_pct": 27.3,
+            "prob_at_least_2_sot_pct": 4.1,
+            "prob_over_1_5_shots_pct": 22.5,
+            "prob_over_2_5_shots_pct": 6.2,
+            "goal_anytime_prob_pct": 14.0
           },
           {
-            "name": "Romaine Mundle",
-            "position": "Extremo Eléctrico",
-            "expected_shots": 2.43,
-            "expected_sot": 1.08,
-            "prob_at_least_1_sot_pct": 66.1,
-            "prob_at_least_2_sot_pct": 29.4,
-            "prob_over_1_5_shots_pct": 69.9,
-            "prob_over_2_5_shots_pct": 43.9,
-            "goal_anytime_prob_pct": 36.0
-          },
-          {
-            "name": "Chris Rigg",
-            "position": "Talento Creativo",
-            "expected_shots": 1.53,
-            "expected_sot": 0.63,
-            "prob_at_least_1_sot_pct": 46.8,
-            "prob_at_least_2_sot_pct": 13.2,
-            "prob_over_1_5_shots_pct": 45.3,
-            "prob_over_2_5_shots_pct": 19.9,
-            "goal_anytime_prob_pct": 22.0
+            "name": "Benjamin Tahirović",
+            "position": "Mediocentro Recuperador",
+            "expected_shots": 0.64,
+            "expected_sot": 0.2,
+            "prob_at_least_1_sot_pct": 18.1,
+            "prob_at_least_2_sot_pct": 1.8,
+            "prob_over_1_5_shots_pct": 13.4,
+            "prob_over_2_5_shots_pct": 2.7,
+            "goal_anytime_prob_pct": 8.0
           }
         ],
         "away_key_players": [
           {
-            "name": "Joël Piroe",
-            "position": "Delantero Centro",
-            "expected_shots": 2.19,
-            "expected_sot": 1.01,
-            "prob_at_least_1_sot_pct": 63.6,
-            "prob_at_least_2_sot_pct": 26.8,
-            "prob_over_1_5_shots_pct": 64.2,
-            "prob_over_2_5_shots_pct": 37.4,
-            "goal_anytime_prob_pct": 36.0
+            "name": "Viktor Gyökeres",
+            "position": "Delantero Letal / Goleador Europa",
+            "expected_shots": 4.12,
+            "expected_sot": 2.11,
+            "prob_at_least_1_sot_pct": 87.9,
+            "prob_at_least_2_sot_pct": 62.4,
+            "prob_over_1_5_shots_pct": 91.7,
+            "prob_over_2_5_shots_pct": 77.9,
+            "goal_anytime_prob_pct": 56.0
           },
           {
-            "name": "Wilfried Gnonto",
-            "position": "Extremo Desequilibrio",
-            "expected_shots": 1.94,
-            "expected_sot": 0.84,
-            "prob_at_least_1_sot_pct": 56.9,
-            "prob_at_least_2_sot_pct": 20.6,
-            "prob_over_1_5_shots_pct": 57.6,
-            "prob_over_2_5_shots_pct": 30.6,
+            "name": "Alexander Isak",
+            "position": "Delantero Premier League",
+            "expected_shots": 3.38,
+            "expected_sot": 1.58,
+            "prob_at_least_1_sot_pct": 79.5,
+            "prob_at_least_2_sot_pct": 47.0,
+            "prob_over_1_5_shots_pct": 85.1,
+            "prob_over_2_5_shots_pct": 65.6,
+            "goal_anytime_prob_pct": 46.0
+          },
+          {
+            "name": "Dejan Kulusevski",
+            "position": "Extremo / Creador Spurs",
+            "expected_shots": 2.54,
+            "expected_sot": 1.06,
+            "prob_at_least_1_sot_pct": 65.2,
+            "prob_at_least_2_sot_pct": 28.5,
+            "prob_over_1_5_shots_pct": 72.0,
+            "prob_over_2_5_shots_pct": 46.5,
             "goal_anytime_prob_pct": 28.0
           },
           {
-            "name": "Brenden Aaronson",
-            "position": "Mediapunta Presión",
-            "expected_shots": 1.51,
-            "expected_sot": 0.59,
-            "prob_at_least_1_sot_pct": 44.5,
-            "prob_at_least_2_sot_pct": 11.8,
-            "prob_over_1_5_shots_pct": 44.7,
-            "prob_over_2_5_shots_pct": 19.5,
-            "goal_anytime_prob_pct": 20.0
+            "name": "Anthony Elanga",
+            "position": "Extremo Rápido",
+            "expected_shots": 2.22,
+            "expected_sot": 0.95,
+            "prob_at_least_1_sot_pct": 61.4,
+            "prob_at_least_2_sot_pct": 24.6,
+            "prob_over_1_5_shots_pct": 65.0,
+            "prob_over_2_5_shots_pct": 38.2,
+            "goal_anytime_prob_pct": 22.0
           }
         ]
       },
       "la_fija_real": {
-        "market": "Córners Base de Seguridad",
-        "selection": "Más de 6.5 córners totales",
-        "probability": 94.0,
-        "odds": 1.2,
-        "availability": "Línea alternativa en Bet365 / Betano",
-        "rationale": "Línea conservadora rebajada en 3 esquinas frente a la línea media del mercado."
+        "market": "Doble Oportunidad Blindada",
+        "selection": "Empate o Suecia (X2)",
+        "probability": 95.3,
+        "odds": 1.12,
+        "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+        "rationale": "El favorito visitante Suecia puntúa en el 95.3% de las simulaciones.",
+        "_rank_score": 103.3
       },
       "all_fija_options": [
         {
-          "market": "Córners Base de Seguridad",
-          "selection": "Más de 6.5 córners totales",
-          "probability": 94.0,
-          "odds": 1.2,
-          "availability": "Línea alternativa en Bet365 / Betano",
-          "rationale": "Línea conservadora rebajada en 3 esquinas frente a la línea media del mercado."
+          "market": "Doble Oportunidad Blindada",
+          "selection": "Empate o Suecia (X2)",
+          "probability": 95.3,
+          "odds": 1.12,
+          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+          "rationale": "El favorito visitante Suecia puntúa en el 95.3% de las simulaciones.",
+          "_rank_score": 103.3
         },
         {
           "market": "Línea de Goles de Seguridad",
@@ -1446,50 +1262,51 @@
           "probability": 83.5,
           "odds": 1.29,
           "availability": "Universal en todas las plataformas",
-          "rationale": "Ritmo ofensivo conjunto de 2.5 xG garantiza alta probabilidad de al menos 2 goles."
+          "rationale": "Ritmo ofensivo conjunto de 2.5 xG garantiza alta probabilidad de al menos 2 goles.",
+          "_rank_score": 85.5
         }
       ]
     },
     {
-      "match": "Rio Ave vs Famalicão",
-      "home_team": "Rio Ave",
-      "away_team": "Famalicão",
+      "match": "Polonia vs Rumanía",
+      "home_team": "Polonia",
+      "away_team": "Rumanía",
       "context": {
-        "tournament": "Liga Portugal Betclic - Jornada 8 (Viernes)",
-        "stadium": "Estádio dos Arcos (Vila do Conde)",
-        "spectators_est": "5,300 en estadio (~4M audiencia global)",
-        "referee": "Gustavo Correia",
-        "referee_avg_yellows": 5.4,
-        "referee_avg_reds": 0.28,
-        "intensity": "Alta (Duelo táctico portugués con alta fricción y arbitraje severo)"
+        "tournament": "UEFA Nations League - Liga A",
+        "stadium": "PGE Narodowy (Varsovia)",
+        "spectators_est": "56,500 en estadio (~24M audiencia global)",
+        "referee": "Michael Oliver",
+        "referee_avg_yellows": 3.8,
+        "referee_avg_reds": 0.14,
+        "intensity": "Alta (Lewandowski liderando a las Águilas Blancas en Varsovia ante la velocidad al contragolpe de Dennis Man y Rumanía)"
       },
       "projections": {
         "expected_goals": {
-          "home": 0.95,
-          "away": 1.44,
-          "total": 2.39
+          "home": 1.58,
+          "away": 0.94,
+          "total": 2.52
         },
         "expected_corners": {
           "home": 4.94,
-          "away": 4.67,
-          "total": 9.61,
+          "away": 4.45,
+          "total": 9.39,
           "home_quantiles": {
             "p10": 3.1,
             "p90": 7.0
           },
           "away_quantiles": {
-            "p10": 3.1,
-            "p90": 6.6
+            "p10": 2.8,
+            "p90": 6.3
           }
         },
         "expected_yellow_cards": {
-          "home": 2.28,
-          "away": 2.94,
-          "total": 5.22
+          "home": 1.94,
+          "away": 2.06,
+          "total": 4.0
         },
         "expected_shots": {
-          "home": 10.21,
-          "away": 9.72
+          "home": 11.82,
+          "away": 11.14
         }
       },
       "tactical_analysis": {
@@ -1524,174 +1341,196 @@
       },
       "score_prediction": {
         "most_probable_score": "1 - 1",
-        "most_probable_prob_pct": 13.92,
+        "most_probable_prob_pct": 13.27,
         "top_5_scores": [
           {
             "score": "1 - 1",
             "home_goals": 1,
             "away_goals": 1,
-            "probability_pct": 13.92
+            "probability_pct": 13.27
           },
           {
-            "score": "0 - 1",
-            "home_goals": 0,
+            "score": "1 - 0",
+            "home_goals": 1,
+            "away_goals": 0,
+            "probability_pct": 11.4
+          },
+          {
+            "score": "2 - 0",
+            "home_goals": 2,
+            "away_goals": 0,
+            "probability_pct": 10.05
+          },
+          {
+            "score": "2 - 1",
+            "home_goals": 2,
             "away_goals": 1,
-            "probability_pct": 11.82
+            "probability_pct": 9.44
           },
           {
             "score": "0 - 0",
             "home_goals": 0,
             "away_goals": 0,
-            "probability_pct": 10.54
-          },
-          {
-            "score": "0 - 2",
-            "home_goals": 0,
-            "away_goals": 2,
-            "probability_pct": 9.5
-          },
-          {
-            "score": "1 - 2",
-            "home_goals": 1,
-            "away_goals": 2,
-            "probability_pct": 9.03
+            "probability_pct": 9.36
           }
         ],
         "1x2_probabilities": {
-          "home_win_pct": 23.5,
-          "draw_pct": 29.46,
-          "away_win_pct": 47.05
+          "home_win_pct": 50.99,
+          "draw_pct": 27.87,
+          "away_win_pct": 21.14
         },
         "goals_markets": {
-          "over_1_5_pct": 70.31,
-          "under_1_5_pct": 29.69,
-          "over_2_5_pct": 42.76,
-          "under_2_5_pct": 57.24,
-          "over_3_5_pct": 21.91,
-          "under_3_5_pct": 78.09,
-          "btts_yes_pct": 48.17,
-          "btts_no_pct": 51.83
+          "over_1_5_pct": 72.99,
+          "under_1_5_pct": 27.01,
+          "over_2_5_pct": 46.12,
+          "under_2_5_pct": 53.88,
+          "over_3_5_pct": 24.65,
+          "under_3_5_pct": 75.35,
+          "btts_yes_pct": 49.7,
+          "btts_no_pct": 50.3
         },
         "simulated_averages": {
-          "home_goals": 0.95,
-          "away_goals": 1.44,
-          "total_goals": 2.39
+          "home_goals": 1.58,
+          "away_goals": 0.96,
+          "total_goals": 2.53
         }
       },
       "corners_prediction": {
         "home_corners_expected": 4.9,
-        "away_corners_expected": 4.7,
-        "total_corners_expected": 9.6,
+        "away_corners_expected": 4.5,
+        "total_corners_expected": 9.4,
         "most_likely_range": "8 - 11 córners",
         "lines": {
-          "over_8_5_pct": 62.0,
-          "under_8_5_pct": 38.0,
-          "over_9_5_pct": 49.1,
-          "under_9_5_pct": 50.9,
-          "over_10_5_pct": 36.7,
-          "under_10_5_pct": 63.3,
-          "over_11_5_pct": 25.9,
-          "under_11_5_pct": 74.1
+          "over_8_5_pct": 59.6,
+          "under_8_5_pct": 40.4,
+          "over_9_5_pct": 46.5,
+          "under_9_5_pct": 53.5,
+          "over_10_5_pct": 34.2,
+          "under_10_5_pct": 65.8,
+          "over_11_5_pct": 23.7,
+          "under_11_5_pct": 76.3
         },
         "team_lines": {
           "home_over_4_5_pct": 54.2,
           "home_over_5_5_pct": 36.6,
-          "away_over_3_5_pct": 69.0,
-          "away_over_4_5_pct": 50.5
+          "away_over_3_5_pct": 65.8,
+          "away_over_4_5_pct": 46.8
         }
       },
       "cards_prediction": {
-        "referee": "Gustavo Correia",
-        "home_yellow_cards": 2.3,
-        "away_yellow_cards": 3.0,
-        "total_yellow_cards": 5.3,
+        "referee": "Michael Oliver",
+        "home_yellow_cards": 1.9,
+        "away_yellow_cards": 2.0,
+        "total_yellow_cards": 3.9,
         "red_cards": {
-          "expected_home_reds": 0.12,
-          "expected_away_reds": 0.15,
-          "expected_total_reds": 0.27,
-          "home_red_prob_pct": 11.6,
-          "away_red_prob_prob_pct": 15.0,
-          "any_red_card_in_match_pct": 23.4
+          "expected_home_reds": 0.06,
+          "expected_away_reds": 0.07,
+          "expected_total_reds": 0.13,
+          "home_red_prob_pct": 6.5,
+          "away_red_prob_prob_pct": 6.8,
+          "any_red_card_in_match_pct": 12.5
         },
-        "total_cards_expected": 5.6,
+        "total_cards_expected": 4.0,
         "card_lines": {
-          "over_3_5_cards_pct": 77.5,
-          "under_3_5_cards_pct": 22.5,
-          "over_4_5_cards_pct": 61.1,
-          "under_4_5_cards_pct": 38.9,
-          "over_5_5_cards_pct": 43.7,
-          "under_5_5_cards_pct": 56.3
+          "over_3_5_cards_pct": 54.9,
+          "under_3_5_cards_pct": 45.1,
+          "over_4_5_cards_pct": 35.4,
+          "under_4_5_cards_pct": 64.6,
+          "over_5_5_cards_pct": 20.1,
+          "under_5_5_cards_pct": 79.9
         }
       },
       "player_props": {
         "home_key_players": [
           {
-            "name": "Clayton",
-            "position": "Delantero Centro",
-            "expected_shots": 1.82,
-            "expected_sot": 0.8,
-            "prob_at_least_1_sot_pct": 55.2,
-            "prob_at_least_2_sot_pct": 19.2,
-            "prob_over_1_5_shots_pct": 54.4,
-            "prob_over_2_5_shots_pct": 27.6,
-            "goal_anytime_prob_pct": 36.0
+            "name": "Robert Lewandowski",
+            "position": "Delantero Histórico / Capitán",
+            "expected_shots": 3.12,
+            "expected_sot": 1.52,
+            "prob_at_least_1_sot_pct": 78.1,
+            "prob_at_least_2_sot_pct": 44.9,
+            "prob_over_1_5_shots_pct": 81.9,
+            "prob_over_2_5_shots_pct": 60.4,
+            "goal_anytime_prob_pct": 54.0
           },
           {
-            "name": "Kiko Bondoso",
-            "position": "Extremo Rápido",
-            "expected_shots": 1.53,
-            "expected_sot": 0.66,
-            "prob_at_least_1_sot_pct": 48.1,
-            "prob_at_least_2_sot_pct": 14.1,
-            "prob_over_1_5_shots_pct": 45.3,
-            "prob_over_2_5_shots_pct": 19.9,
+            "name": "Piotr Zieliński",
+            "position": "Mediapunta Maestro",
+            "expected_shots": 1.77,
+            "expected_sot": 0.76,
+            "prob_at_least_1_sot_pct": 53.2,
+            "prob_at_least_2_sot_pct": 17.7,
+            "prob_over_1_5_shots_pct": 52.9,
+            "prob_over_2_5_shots_pct": 26.2,
             "goal_anytime_prob_pct": 26.0
           },
           {
-            "name": "Tiago Morais",
-            "position": "Extremo Incisivo",
-            "expected_shots": 1.68,
-            "expected_sot": 0.73,
-            "prob_at_least_1_sot_pct": 51.8,
-            "prob_at_least_2_sot_pct": 16.6,
-            "prob_over_1_5_shots_pct": 50.0,
-            "prob_over_2_5_shots_pct": 23.7,
-            "goal_anytime_prob_pct": 28.0
+            "name": "Nicola Zalewski",
+            "position": "Carrilero Desequilibrante",
+            "expected_shots": 1.52,
+            "expected_sot": 0.59,
+            "prob_at_least_1_sot_pct": 44.6,
+            "prob_at_least_2_sot_pct": 11.9,
+            "prob_over_1_5_shots_pct": 44.9,
+            "prob_over_2_5_shots_pct": 19.6,
+            "goal_anytime_prob_pct": 18.0
+          },
+          {
+            "name": "Sebastian Szymański",
+            "position": "Mediapunta Fenerbahçe",
+            "expected_shots": 1.94,
+            "expected_sot": 0.84,
+            "prob_at_least_1_sot_pct": 57.0,
+            "prob_at_least_2_sot_pct": 20.7,
+            "prob_over_1_5_shots_pct": 57.8,
+            "prob_over_2_5_shots_pct": 30.8,
+            "goal_anytime_prob_pct": 26.0
           }
         ],
         "away_key_players": [
           {
-            "name": "Mario González",
-            "position": "Ariete Español",
-            "expected_shots": 1.67,
-            "expected_sot": 0.76,
-            "prob_at_least_1_sot_pct": 53.4,
-            "prob_at_least_2_sot_pct": 17.8,
-            "prob_over_1_5_shots_pct": 49.6,
-            "prob_over_2_5_shots_pct": 23.4,
+            "name": "Dennis Man",
+            "position": "Extremo Serie A",
+            "expected_shots": 2.15,
+            "expected_sot": 0.95,
+            "prob_at_least_1_sot_pct": 61.5,
+            "prob_at_least_2_sot_pct": 24.8,
+            "prob_over_1_5_shots_pct": 63.3,
+            "prob_over_2_5_shots_pct": 36.3,
             "goal_anytime_prob_pct": 35.0
           },
           {
-            "name": "Zaydou Youssouf",
-            "position": "Pivote Físico",
-            "expected_shots": 1.04,
-            "expected_sot": 0.35,
-            "prob_at_least_1_sot_pct": 29.3,
-            "prob_at_least_2_sot_pct": 4.8,
-            "prob_over_1_5_shots_pct": 27.9,
-            "prob_over_2_5_shots_pct": 8.8,
-            "goal_anytime_prob_pct": 16.0
+            "name": "Răzvan Marin",
+            "position": "Mediocentro / Especialista Penaltis",
+            "expected_shots": 1.51,
+            "expected_sot": 0.64,
+            "prob_at_least_1_sot_pct": 47.1,
+            "prob_at_least_2_sot_pct": 13.4,
+            "prob_over_1_5_shots_pct": 44.6,
+            "prob_over_2_5_shots_pct": 19.4,
+            "goal_anytime_prob_pct": 24.0
           },
           {
-            "name": "Gil Dias",
-            "position": "Extremo Zurdo",
-            "expected_shots": 1.39,
-            "expected_sot": 0.56,
-            "prob_at_least_1_sot_pct": 42.6,
-            "prob_at_least_2_sot_pct": 10.7,
-            "prob_over_1_5_shots_pct": 40.4,
-            "prob_over_2_5_shots_pct": 16.4,
-            "goal_anytime_prob_pct": 24.0
+            "name": "Valentin Mihăilă",
+            "position": "Extremo Rápido",
+            "expected_shots": 1.75,
+            "expected_sot": 0.72,
+            "prob_at_least_1_sot_pct": 51.1,
+            "prob_at_least_2_sot_pct": 16.1,
+            "prob_over_1_5_shots_pct": 52.2,
+            "prob_over_2_5_shots_pct": 25.6,
+            "goal_anytime_prob_pct": 26.0
+          },
+          {
+            "name": "Radu Drăgușin",
+            "position": "Central Muralla Spurs",
+            "expected_shots": 0.56,
+            "expected_sot": 0.2,
+            "prob_at_least_1_sot_pct": 18.1,
+            "prob_at_least_2_sot_pct": 1.8,
+            "prob_over_1_5_shots_pct": 10.8,
+            "prob_over_2_5_shots_pct": 1.9,
+            "goal_anytime_prob_pct": 8.0
           }
         ]
       },
@@ -1701,7 +1540,8 @@
         "probability": 94.0,
         "odds": 1.2,
         "availability": "Línea alternativa en Bet365 / Betano",
-        "rationale": "Línea conservadora rebajada en 3 esquinas frente a la línea media del mercado."
+        "rationale": "Línea conservadora rebajada en 3 esquinas frente a la línea media del mercado.",
+        "_rank_score": 94.0
       },
       "all_fija_options": [
         {
@@ -1710,7 +1550,8 @@
           "probability": 94.0,
           "odds": 1.2,
           "availability": "Línea alternativa en Bet365 / Betano",
-          "rationale": "Línea conservadora rebajada en 3 esquinas frente a la línea media del mercado."
+          "rationale": "Línea conservadora rebajada en 3 esquinas frente a la línea media del mercado.",
+          "_rank_score": 94.0
         },
         {
           "market": "Línea de Goles de Seguridad",
@@ -1718,7 +1559,323 @@
           "probability": 83.5,
           "odds": 1.29,
           "availability": "Universal en todas las plataformas",
-          "rationale": "Ritmo ofensivo conjunto de 2.5 xG garantiza alta probabilidad de al menos 2 goles."
+          "rationale": "Ritmo ofensivo conjunto de 2.5 xG garantiza alta probabilidad de al menos 2 goles.",
+          "_rank_score": 85.5
+        }
+      ]
+    },
+    {
+      "match": "Hungría vs Georgia",
+      "home_team": "Hungría",
+      "away_team": "Georgia",
+      "context": {
+        "tournament": "UEFA Nations League - Liga B",
+        "stadium": "Puskás Aréna (Budapest)",
+        "spectators_est": "62,000 en estadio (~20M audiencia global)",
+        "referee": "Slavko Vinčić",
+        "referee_avg_yellows": 4.0,
+        "referee_avg_reds": 0.15,
+        "intensity": "Muy Alta (El rugido de la Puskás Aréna con Szoboszlai ante la magia desequilibrante de Khvicha Kvaratskhelia)"
+      },
+      "projections": {
+        "expected_goals": {
+          "home": 1.68,
+          "away": 0.87,
+          "total": 2.55
+        },
+        "expected_corners": {
+          "home": 4.92,
+          "away": 4.56,
+          "total": 9.48,
+          "home_quantiles": {
+            "p10": 3.1,
+            "p90": 7.0
+          },
+          "away_quantiles": {
+            "p10": 3.0,
+            "p90": 6.5
+          }
+        },
+        "expected_yellow_cards": {
+          "home": 1.97,
+          "away": 2.29,
+          "total": 4.26
+        },
+        "expected_shots": {
+          "home": 11.55,
+          "away": 11.9
+        }
+      },
+      "tactical_analysis": {
+        "home_manager": {
+          "style": "Estándar",
+          "pace": "Medio"
+        },
+        "away_manager": {
+          "style": "Estándar",
+          "pace": "Medio"
+        },
+        "tactical_xg_multiplier_home": 1.0,
+        "tactical_xg_multiplier_away": 1.0,
+        "corner_dampener_factor": 1.0,
+        "player_role_restrictions": {},
+        "tactical_summary": "Choque de estilos: Estándar vs Estándar"
+      },
+      "squad_health": {
+        "home_vetoed": [],
+        "away_vetoed": [],
+        "status": "Convocatorias y Titulares Ratificados"
+      },
+      "psychological_context": {
+        "tournament_urgency": 0.9,
+        "is_friendly": false,
+        "stadium_name": "Estadio Neutral",
+        "intimidation_factor": 0.5,
+        "intimidation_impact": "Neutro",
+        "minimum_draw_floor_pct": 26.0,
+        "complacency_risk": "Medio",
+        "psychological_notes": "Urgencia: Máxima (Puntos Oficiales) | Caldera: 50.0%"
+      },
+      "score_prediction": {
+        "most_probable_score": "1 - 1",
+        "most_probable_prob_pct": 12.67,
+        "top_5_scores": [
+          {
+            "score": "1 - 1",
+            "home_goals": 1,
+            "away_goals": 1,
+            "probability_pct": 12.67
+          },
+          {
+            "score": "1 - 0",
+            "home_goals": 1,
+            "away_goals": 0,
+            "probability_pct": 11.87
+          },
+          {
+            "score": "2 - 0",
+            "home_goals": 2,
+            "away_goals": 0,
+            "probability_pct": 11.02
+          },
+          {
+            "score": "2 - 1",
+            "home_goals": 2,
+            "away_goals": 1,
+            "probability_pct": 9.59
+          },
+          {
+            "score": "0 - 0",
+            "home_goals": 0,
+            "away_goals": 0,
+            "probability_pct": 9.07
+          }
+        ],
+        "1x2_probabilities": {
+          "home_win_pct": 55.27,
+          "draw_pct": 26.65,
+          "away_win_pct": 18.08
+        },
+        "goals_markets": {
+          "over_1_5_pct": 73.53,
+          "under_1_5_pct": 26.47,
+          "over_2_5_pct": 46.88,
+          "under_2_5_pct": 53.12,
+          "over_3_5_pct": 25.29,
+          "under_3_5_pct": 74.71,
+          "btts_yes_pct": 48.53,
+          "btts_no_pct": 51.47
+        },
+        "simulated_averages": {
+          "home_goals": 1.67,
+          "away_goals": 0.88,
+          "total_goals": 2.56
+        }
+      },
+      "corners_prediction": {
+        "home_corners_expected": 4.9,
+        "away_corners_expected": 4.6,
+        "total_corners_expected": 9.5,
+        "most_likely_range": "8 - 11 córners",
+        "lines": {
+          "over_8_5_pct": 60.8,
+          "under_8_5_pct": 39.2,
+          "over_9_5_pct": 47.8,
+          "under_9_5_pct": 52.2,
+          "over_10_5_pct": 35.5,
+          "under_10_5_pct": 64.5,
+          "over_11_5_pct": 24.8,
+          "under_11_5_pct": 75.2
+        },
+        "team_lines": {
+          "home_over_4_5_pct": 54.2,
+          "home_over_5_5_pct": 36.6,
+          "away_over_3_5_pct": 67.4,
+          "away_over_4_5_pct": 48.7
+        }
+      },
+      "cards_prediction": {
+        "referee": "Slavko Vinčić",
+        "home_yellow_cards": 1.9,
+        "away_yellow_cards": 2.2,
+        "total_yellow_cards": 4.1,
+        "red_cards": {
+          "expected_home_reds": 0.07,
+          "expected_away_reds": 0.08,
+          "expected_total_reds": 0.14,
+          "home_red_prob_pct": 6.6,
+          "away_red_prob_prob_pct": 7.7,
+          "any_red_card_in_match_pct": 13.3
+        },
+        "total_cards_expected": 4.2,
+        "card_lines": {
+          "over_3_5_cards_pct": 59.4,
+          "under_3_5_cards_pct": 40.6,
+          "over_4_5_cards_pct": 39.9,
+          "under_4_5_cards_pct": 60.1,
+          "over_5_5_cards_pct": 23.8,
+          "under_5_5_cards_pct": 76.2
+        }
+      },
+      "player_props": {
+        "home_key_players": [
+          {
+            "name": "Dominik Szoboszlai",
+            "position": "Mediapunta Liverpool / Capitán",
+            "expected_shots": 2.81,
+            "expected_sot": 1.32,
+            "prob_at_least_1_sot_pct": 73.3,
+            "prob_at_least_2_sot_pct": 38.0,
+            "prob_over_1_5_shots_pct": 77.0,
+            "prob_over_2_5_shots_pct": 53.2,
+            "goal_anytime_prob_pct": 44.0
+          },
+          {
+            "name": "Roland Sallai",
+            "position": "Extremo Ofensivo",
+            "expected_shots": 2.06,
+            "expected_sot": 0.91,
+            "prob_at_least_1_sot_pct": 59.6,
+            "prob_at_least_2_sot_pct": 23.0,
+            "prob_over_1_5_shots_pct": 61.1,
+            "prob_over_2_5_shots_pct": 34.0,
+            "goal_anytime_prob_pct": 30.0
+          },
+          {
+            "name": "Barnabás Varga",
+            "position": "Delantero Centro Aéreo",
+            "expected_shots": 2.15,
+            "expected_sot": 0.99,
+            "prob_at_least_1_sot_pct": 62.8,
+            "prob_at_least_2_sot_pct": 26.1,
+            "prob_over_1_5_shots_pct": 63.2,
+            "prob_over_2_5_shots_pct": 36.3,
+            "goal_anytime_prob_pct": 36.0
+          },
+          {
+            "name": "Willi Orbán",
+            "position": "Defensa Central Leipzig",
+            "expected_shots": 0.74,
+            "expected_sot": 0.33,
+            "prob_at_least_1_sot_pct": 28.1,
+            "prob_at_least_2_sot_pct": 4.4,
+            "prob_over_1_5_shots_pct": 17.1,
+            "prob_over_2_5_shots_pct": 4.0,
+            "goal_anytime_prob_pct": 10.0
+          }
+        ],
+        "away_key_players": [
+          {
+            "name": "Khvicha Kvaratskhelia",
+            "position": "Extremo Genio / Napoli",
+            "expected_shots": 3.23,
+            "expected_sot": 1.53,
+            "prob_at_least_1_sot_pct": 78.3,
+            "prob_at_least_2_sot_pct": 45.2,
+            "prob_over_1_5_shots_pct": 83.3,
+            "prob_over_2_5_shots_pct": 62.6,
+            "goal_anytime_prob_pct": 48.0
+          },
+          {
+            "name": "Georges Mikautadze",
+            "position": "Delantero Revelación Lyon",
+            "expected_shots": 2.63,
+            "expected_sot": 1.27,
+            "prob_at_least_1_sot_pct": 72.1,
+            "prob_at_least_2_sot_pct": 36.4,
+            "prob_over_1_5_shots_pct": 73.9,
+            "prob_over_2_5_shots_pct": 49.0,
+            "goal_anytime_prob_pct": 42.0
+          },
+          {
+            "name": "Giorgi Kochorashvili",
+            "position": "Mediocentro Físico",
+            "expected_shots": 1.36,
+            "expected_sot": 0.51,
+            "prob_at_least_1_sot_pct": 40.0,
+            "prob_at_least_2_sot_pct": 9.3,
+            "prob_over_1_5_shots_pct": 39.4,
+            "prob_over_2_5_shots_pct": 15.7,
+            "goal_anytime_prob_pct": 16.0
+          },
+          {
+            "name": "Otar Kiteishvili",
+            "position": "Mediapunta Dinámico",
+            "expected_shots": 1.53,
+            "expected_sot": 0.59,
+            "prob_at_least_1_sot_pct": 44.8,
+            "prob_at_least_2_sot_pct": 12.0,
+            "prob_over_1_5_shots_pct": 45.2,
+            "prob_over_2_5_shots_pct": 19.9,
+            "goal_anytime_prob_pct": 18.0
+          }
+        ]
+      },
+      "la_fija_real": {
+        "market": "Córners Base de Seguridad",
+        "selection": "Más de 6.5 córners totales",
+        "probability": 94.0,
+        "odds": 1.2,
+        "availability": "Línea alternativa en Bet365 / Betano",
+        "rationale": "Línea conservadora rebajada en 3 esquinas frente a la línea media del mercado.",
+        "_rank_score": 94.0
+      },
+      "all_fija_options": [
+        {
+          "market": "Córners Base de Seguridad",
+          "selection": "Más de 6.5 córners totales",
+          "probability": 94.0,
+          "odds": 1.2,
+          "availability": "Línea alternativa en Bet365 / Betano",
+          "rationale": "Línea conservadora rebajada en 3 esquinas frente a la línea media del mercado.",
+          "_rank_score": 94.0
+        },
+        {
+          "market": "Gol de Equipo de Seguridad",
+          "selection": "Hungría anota más de 0.5 goles",
+          "probability": 87.1,
+          "odds": 1.15,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "El equipo local promedia suficiente xG para asegurar al menos un tanto.",
+          "_rank_score": 91.1
+        },
+        {
+          "market": "Doble Oportunidad Blindada",
+          "selection": "Hungría o Empate (1X)",
+          "probability": 81.9,
+          "odds": 1.29,
+          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+          "rationale": "Protección total ante el empate con 81.9% de cobertura en casa.",
+          "_rank_score": 89.9
+        },
+        {
+          "market": "Línea de Goles de Seguridad",
+          "selection": "Más de 1.5 goles totales",
+          "probability": 83.5,
+          "odds": 1.29,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Ritmo ofensivo conjunto de 2.5 xG garantiza alta probabilidad de al menos 2 goles.",
+          "_rank_score": 85.5
         }
       ]
     }
