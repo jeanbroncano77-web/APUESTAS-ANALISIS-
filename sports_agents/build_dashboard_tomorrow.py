@@ -438,4 +438,12 @@ dash_path = os.path.join(base_dir, "dashboard_pronosticos.html")
 with open(dash_path, "w", encoding="utf-8") as f:
     f.write(new_full_html)
 
+# Sincronizar también con el root index.html servido por tunnel
+root_index = os.path.abspath(os.path.join(base_dir, "..", "index.html"))
+try:
+    with open(root_index, "w", encoding="utf-8") as f_root:
+        f_root.write(new_full_html)
+except Exception:
+    pass
+
 print("¡index.html y dashboard_pronosticos.html actualizados con éxito con los 6 partidos de MAÑANA!")
