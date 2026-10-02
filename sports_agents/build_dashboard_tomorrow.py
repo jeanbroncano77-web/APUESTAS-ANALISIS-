@@ -31,12 +31,19 @@ with open(sim_path, "r", encoding="utf-8") as f:
 matches = sim_data["Matches"]
 
 flags = {
+    # Partidos de Viernes
+    "Borussia Dortmund": "🟡", "St. Pauli": "⚪",
+    "Napoli": "🔵", "Como": "⚪",
+    "Marseille": "⚪", "Angers": "⚫",
+    "Leganés": "⚪", "Valencia": "🦇",
+    "Sunderland": "🔴", "Leeds United": "⚪",
+    "Rio Ave": "🟢", "Famalicão": "🔵",
+    # Partidos de Fin de Semana (Sábado/Domingo)
     "Real Madrid": "⚪", "Villarreal": "🟡",
     "Barcelona": "🔵", "Getafe": "🔵",
-    "Arsenal": "🔴", "Leeds United": "⚪",
-    "FC Augsburg": "🔴", "Bayern Munich": "🔴",
-    "Inter Milan": "⚫", "Parma": "🟡",
-    "Borussia Dortmund": "🟡", "Werder Bremen": "🟢"
+    "Arsenal": "🔴", "FC Augsburg": "🔴",
+    "Bayern Munich": "🔴", "Inter Milan": "⚫",
+    "Parma": "🟡", "Werder Bremen": "🟢"
 }
 
 def get_flag(team):
@@ -384,14 +391,22 @@ for i, m in enumerate(matches):
     """
 
 # 3. CONSTRUIR SECCIÓN COMPLETA DE VISTA 1
+sorted_by_prob = sorted(matches, key=lambda x: float(x.get("la_fija_real", {}).get("probability", 0)), reverse=True)
+best_m = sorted_by_prob[0] if sorted_by_prob else {}
+backup_m = sorted_by_prob[1] if len(sorted_by_prob) > 1 else best_m
+
+bm_fija = best_m.get("la_fija_real", {})
+bk_fija = backup_m.get("la_fija_real", {})
+target_day_name = sim_data.get("TargetDay", "Viernes").upper()
+
 new_matches_section = f"""
         <div id="view-container-matches">
             <!-- Phase 6: Top Actions Toolbar -->
             <div class="top-actions-toolbar">
                 <div class="banner-fija-de-oro">
-                    <div class="badge-fija-oro">👑 LA FIJA DE ORO DE MAÑANA (CONFIANZA 98.8%)</div>
-                    <div class="fija-oro-title">⭐ FC Augsburg vs Bayern Munich &bull; Empate o Bayern Munich (X2) (@1.12 | 98.8%)</div>
-                    <div class="fija-oro-sub">⭐ Respaldo Estelar: Barcelona o Empate (1X) (@1.12 | 98.5% Confianza en Montjuïc)</div>
+                    <div class="badge-fija-oro">👑 LA FIJA DE ORO DE MAÑANA {target_day_name} (CONFIANZA {bm_fija.get('probability', 97.5)}%)</div>
+                    <div class="fija-oro-title">⭐ {best_m.get('home_team')} vs {best_m.get('away_team')} &bull; {bm_fija.get('selection')} (@{bm_fija.get('odds', 1.12)} | {bm_fija.get('probability')}%)</div>
+                    <div class="fija-oro-sub">⭐ Respaldo Estelar: {backup_m.get('home_team')} vs {backup_m.get('away_team')} &bull; {bk_fija.get('selection')} (@{bk_fija.get('odds', 1.12)} | {bk_fija.get('probability')}%)</div>
                 </div>
 
                 <div class="toolbar-btn-group">

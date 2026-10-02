@@ -82,19 +82,40 @@ def run_autonomous_cycle(cycle_num: int, is_daily_730_run: bool = False):
     # 1. Monitoreo de alineaciones, convocatorias y rachas de inflexión
     log_event("1. Verificando estado de convocatorias, bajas médicas y MomentumStreakAgent (Agente #11)...")
     
+    target_weekday = (now_dt.weekday() + 1) % 7 if is_tomorrow else now_dt.weekday()
+    day_names = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
+    target_day_name = day_names[target_weekday]
+
     # 2. Simulación y actualización de proyecciones
-    if is_tomorrow:
-        log_event("2. Modo Anticipación Activo (>=18:00 / 19:30): Proyectando los 6 partidos estelares de MAÑANA...")
+    log_event(f"2. Modo Anticipación Activo: Proyectando los 6 partidos estelares de {target_day_name.upper()}...")
+    if target_weekday == 4:  # VIERNES (Viernes de Ligas Europeas)
+        fixtures = [
+            ("Borussia Dortmund", "St. Pauli"),
+            ("Napoli", "Como"),
+            ("Marseille", "Angers"),
+            ("Leganés", "Valencia"),
+            ("Sunderland", "Leeds United"),
+            ("Rio Ave", "Famalicão")
+        ]
+    elif target_weekday == 5:  # SÁBADO (Súper Sábado de Gigantes)
+        fixtures = [
+            ("Real Madrid", "Villarreal"),
+            ("FC Augsburg", "Bayern Munich"),
+            ("Barcelona", "Getafe"),
+            ("Arsenal", "Leeds United"),
+            ("Inter Milan", "Parma"),
+            ("Borussia Dortmund", "Werder Bremen")
+        ]
+    elif target_weekday == 6:  # DOMINGO (Cierre de Jornada de Élite)
         fixtures = [
             ("Real Madrid", "Villarreal"),
             ("Barcelona", "Getafe"),
             ("Arsenal", "Leeds United"),
             ("FC Augsburg", "Bayern Munich"),
-            ("Inter Milan", "Parma"),
-            ("Borussia Dortmund", "Werder Bremen")
+            ("Dinamarca", "Portugal"),
+            ("Alemania", "Serbia")
         ]
-    else:
-        log_event("2. Modo Diurno: Proyectando cartelera de HOY...")
+    else:  # LUNES A JUEVES (Intersemanal / Champions / FIFA)
         fixtures = [
             ("Alemania", "Serbia"),
             ("Dinamarca", "Portugal"),
@@ -118,6 +139,7 @@ def run_autonomous_cycle(cycle_num: int, is_daily_730_run: bool = False):
             with open(tomorrow_json_path, "w", encoding="utf-8") as f_tom:
                 json.dump({
                     "GeneratedAt": now_str,
+                    "TargetDay": target_day_name,
                     "TargetDate": "Tomorrow",
                     "Matches": updated_matches
                 }, f_tom, ensure_ascii=False, indent=2)

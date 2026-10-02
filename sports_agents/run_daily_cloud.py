@@ -31,16 +31,52 @@ def main():
 
     director = SportsDirectorAgent()
 
-    fixtures_tomorrow = [
-        ("Real Madrid", "Villarreal"),
-        ("Barcelona", "Getafe"),
-        ("Arsenal", "Leeds United"),
-        ("FC Augsburg", "Bayern Munich"),
-        ("Inter Milan", "Parma"),
-        ("Borussia Dortmund", "Werder Bremen")
-    ]
+    now = datetime.now()
+    # Si la ejecución es a partir de las 18:00 (o a las 19:30), se anticipa el día de MAÑANA
+    target_weekday = (now.weekday() + 1) % 7 if now.hour >= 18 else now.weekday()
+    day_names = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
+    target_day_name = day_names[target_weekday]
 
-    print(f"1. Simulando los 6 partidos estelares de MAÑANA con los 11 agentes...")
+    print(f"Detectando calendario semanal: Proyectando cartelera estelar de {target_day_name.upper()}...")
+
+    if target_weekday == 4:  # VIERNES (Viernes de Ligas Europeas)
+        fixtures_tomorrow = [
+            ("Borussia Dortmund", "St. Pauli"),
+            ("Napoli", "Como"),
+            ("Marseille", "Angers"),
+            ("Leganés", "Valencia"),
+            ("Sunderland", "Leeds United"),
+            ("Rio Ave", "Famalicão")
+        ]
+    elif target_weekday == 5:  # SÁBADO (Súper Sábado de Gigantes)
+        fixtures_tomorrow = [
+            ("Real Madrid", "Villarreal"),
+            ("FC Augsburg", "Bayern Munich"),
+            ("Barcelona", "Getafe"),
+            ("Arsenal", "Leeds United"),
+            ("Inter Milan", "Parma"),
+            ("Borussia Dortmund", "Werder Bremen")
+        ]
+    elif target_weekday == 6:  # DOMINGO (Cierre de Jornada de Élite)
+        fixtures_tomorrow = [
+            ("Real Madrid", "Villarreal"),
+            ("Barcelona", "Getafe"),
+            ("Arsenal", "Leeds United"),
+            ("FC Augsburg", "Bayern Munich"),
+            ("Dinamarca", "Portugal"),
+            ("Alemania", "Serbia")
+        ]
+    else:  # LUNES A JUEVES (Intersemanal / Champions / FIFA)
+        fixtures_tomorrow = [
+            ("Alemania", "Serbia"),
+            ("Dinamarca", "Portugal"),
+            ("Grecia", "Países Bajos"),
+            ("Gales", "Noruega"),
+            ("Irlanda", "Austria"),
+            ("Japón", "Ecuador")
+        ]
+
+    print(f"1. Simulando los 6 partidos estelares de {target_day_name.upper()} con los 11 agentes...")
     results = []
     for home, away in fixtures_tomorrow:
         print(f"   -> Proyectando: {home} vs {away}...")
@@ -51,10 +87,11 @@ def main():
     with open(tomorrow_json_path, "w", encoding="utf-8") as f:
         json.dump({
             "GeneratedAt": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "TargetDay": target_day_name,
             "TargetDate": "Tomorrow",
             "Matches": results
         }, f, ensure_ascii=False, indent=2)
-    print("2. simulations_tomorrow_results.json actualizado con éxito.")
+    print(f"2. simulations_tomorrow_results.json actualizado con éxito para {target_day_name.upper()}.")
 
     # 3. Regenerar Dashboard HTML
     print("3. Regenerando index.html y dashboard_pronosticos.html...")
