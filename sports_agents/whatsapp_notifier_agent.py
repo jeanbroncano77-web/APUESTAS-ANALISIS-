@@ -31,57 +31,64 @@ class WhatsAppNotifierAgent:
             except Exception:
                 pass
         return {
-            "phone_number": "",  # Formato internacional con + (ej. +593999999999 o +51999999999)
-            "api_key": "",       # API Key gratuita obtenida de CallMeBot
-            "enabled": False,
-            "dashboard_url": "https://hdtv-considering-ohio-challenges.trycloudflare.com"
+            "phone_number": "",  # Formato internacional con +
+            "api_key": "",       # API Key opcional de CallMeBot WhatsApp
+            "telegram_user": "@Jean_Broncano",
+            "telegram_enabled": True,
+            "whatsapp_enabled": False,
+            "enabled": True,
+            "dashboard_url": "https://jeanbroncano77-web.github.io/APUESTAS-ANALISIS-/"
         }
 
-    def save_config(self, phone: str, api_key: str, dashboard_url: Optional[str] = None):
-        self.config["phone_number"] = phone.strip().replace(" ", "").replace("-", "")
-        self.config["api_key"] = api_key.strip()
-        self.config["enabled"] = True
-        if dashboard_url:
-            self.config["dashboard_url"] = dashboard_url
-
-        with open(self.config_path, "w", encoding="utf-8") as f:
-            json.dump(self.config, f, ensure_ascii=False, indent=2)
-
-    def send_raw_whatsapp(self, text: str) -> Dict[str, Any]:
+    def send_telegram(self, text: str) -> Dict[str, Any]:
         """
-        Envía un mensaje de texto con emojis y formato a WhatsApp mediante la API de CallMeBot.
+        Envía un mensaje formateado a Telegram mediante la API autorizada de CallMeBot.
         """
-        if not self.config.get("enabled") or not self.config.get("phone_number") or not self.config.get("api_key"):
-            return {
-                "success": False,
-                "error": "WhatsApp no configurado. Se requiere número de teléfono y apikey."
-            }
-
-        phone = self.config["phone_number"]
-        apikey = self.config["api_key"]
+        user = self.config.get("telegram_user", "@Jean_Broncano")
+        if not user:
+            return {"success": False, "error": "Usuario de Telegram no configurado."}
+        
         encoded_text = urllib.parse.quote(text)
-
-        url = f"https://api.callmebot.com/whatsapp.php?phone={phone}&text={encoded_text}&apikey={apikey}"
-
+        url = f"https://api.callmebot.com/text.php?user={user}&text={encoded_text}"
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "SportsAI-Agent/1.0"})
             with urllib.request.urlopen(req, timeout=15) as response:
-                resp_text = response.read().decode("utf-8")
-                return {
-                    "success": True,
-                    "response": resp_text
-                }
+                resp_text = response.read().decode("utf-8", errors="ignore")
+                return {"success": True, "response": resp_text}
         except Exception as e:
-            return {
-                "success": False,
-                "error": str(e)
-            }
+            return {"success": False, "error": str(e)}
+
+    def send_raw_whatsapp(self, text: str) -> Dict[str, Any]:
+        """
+        Envía un mensaje de texto. Si WhatsApp está configurado lo envía allí;
+        y si Telegram está habilitado, también lo despacha a Telegram.
+        """
+        results = {}
+        # 1. Despacho a Telegram si está activo
+        if self.config.get("telegram_enabled", True) and self.config.get("telegram_user"):
+            results["telegram"] = self.send_telegram(text)
+
+        # 2. Despacho a WhatsApp si está activo
+        if self.config.get("whatsapp_enabled") and self.config.get("phone_number") and self.config.get("api_key"):
+            phone = self.config["phone_number"]
+            apikey = self.config["api_key"]
+            encoded_text = urllib.parse.quote(text)
+            url = f"https://api.callmebot.com/whatsapp.php?phone={phone}&text={encoded_text}&apikey={apikey}"
+            try:
+                req = urllib.request.Request(url, headers={"User-Agent": "SportsAI-Agent/1.0"})
+                with urllib.request.urlopen(req, timeout=15) as response:
+                    resp_text = response.read().decode("utf-8")
+                    results["whatsapp"] = {"success": True, "response": resp_text}
+            except Exception as e:
+                results["whatsapp"] = {"success": False, "error": str(e)}
+
+        return results if results else {"success": False, "error": "Ningún canal habilitado"}
 
     def build_daily_fixtures_message(self, matches_data: list, web_url: Optional[str] = None) -> str:
         """
         Construye el Mensaje 1: Los 6 partidos estelares + La Fija del Día.
         """
-        url = web_url or self.config.get("dashboard_url", "https://hdtv-considering-ohio-challenges.trycloudflare.com")
+        url = web_url or self.config.get("dashboard_url", "https://jeanbroncano77-web.github.io/APUESTAS-ANALISIS-/")
 
         msg = "⚽ *SPORTSAI: CARTELERA DE HOY & LAS FIJAS* ⚽\n"
         msg += "------------------------------------------\n"

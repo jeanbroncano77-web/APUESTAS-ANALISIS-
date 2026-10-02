@@ -1,7 +1,10 @@
 {
+  "telegram_user": "@Jean_Broncano",
+  "telegram_enabled": true,
   "phone_number": "",
   "api_key": "",
-  "enabled": false,
-  "dashboard_url": "https://hdtv-considering-ohio-challenges.trycloudflare.com",
+  "whatsapp_enabled": false,
+  "enabled": true,
+  "dashboard_url": "https://jeanbroncano77-web.github.io/APUESTAS-ANALISIS-/",
   "daily_send_time": "19:30"
 }
