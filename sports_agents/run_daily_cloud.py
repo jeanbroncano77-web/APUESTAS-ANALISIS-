@@ -58,68 +58,68 @@ def main():
     if is_fifa_window:
         if target_weekday == 5:  # SÁBADO 03/10/2026 (UEFA Nations League & Clásico CONCACAF)
             fixtures_tomorrow = [
-                ("España", "Chequia", "VICTORIA_DIRECTA"),
+                ("España", "Chequia", "DOBLE_OPORTUNIDAD"),
                 ("Croacia", "Inglaterra", "TOTAL_CORNERS"),
                 ("Suiza", "Eslovenia", "GOLES_OVER"),
-                ("Macedonia del Norte", "Escocia", "VICTORIA_SIN_EMPATE"),
+                ("Macedonia del Norte", "Escocia", "HANDICAP_BLINDADO"),
                 ("Finlandia", "Albania", "GOLES_UNDER"),
-                ("Estados Unidos", "México", "AMBOS_ANOTAN")
+                ("Estados Unidos", "México", "HANDICAP_BLINDADO")
             ]
         elif target_weekday == 6:  # DOMINGO 04/10/2026 (UEFA Nations League Jornada 2)
             fixtures_tomorrow = [
-                ("Alemania", "Serbia", "VICTORIA_DIRECTA"),
+                ("Alemania", "Serbia", "DOBLE_OPORTUNIDAD"),
                 ("Dinamarca", "Portugal", "TOTAL_CORNERS"),
-                ("Grecia", "Países Bajos", "GOLES_OVER"),
-                ("Gales", "Noruega", "AMBOS_ANOTAN"),
-                ("Irlanda", "Austria", "GOLES_UNDER"),
-                ("Japón", "Ecuador", "VICTORIA_SIN_EMPATE")
+                ("Grecia", "Países Bajos", "GOLES_UNDER"),
+                ("Gales", "Noruega", "HANDICAP_BLINDADO"),
+                ("Irlanda", "Austria", "GOLES_OVER"),
+                ("Japón", "Ecuador", "GOL_EQUIPO")
             ]
         elif target_weekday == 4:  # VIERNES 02/10/2026
             fixtures_tomorrow = [
-                ("Francia", "Italia", "AMBOS_ANOTAN"),
+                ("Francia", "Italia", "DOBLE_OPORTUNIDAD"),
                 ("Bélgica", "Turquía", "GOLES_OVER"),
-                ("Corea del Sur", "Venezuela", "VICTORIA_DIRECTA"),
+                ("Corea del Sur", "Venezuela", "GOL_EQUIPO"),
                 ("Bosnia y Herzegovina", "Suecia", "TOTAL_CORNERS"),
-                ("Polonia", "Rumanía", "VICTORIA_SIN_EMPATE"),
+                ("Polonia", "Rumanía", "HANDICAP_BLINDADO"),
                 ("Hungría", "Georgia", "GOLES_UNDER")
             ]
         else:  # LUNES A JUEVES (Intersemanal FIFA)
             fixtures_tomorrow = [
-                ("Alemania", "Serbia", "VICTORIA_DIRECTA"),
+                ("Alemania", "Serbia", "DOBLE_OPORTUNIDAD"),
                 ("Dinamarca", "Portugal", "TOTAL_CORNERS"),
-                ("Grecia", "Países Bajos", "GOLES_OVER"),
-                ("Gales", "Noruega", "AMBOS_ANOTAN"),
-                ("Irlanda", "Austria", "GOLES_UNDER"),
-                ("Japón", "Ecuador", "VICTORIA_SIN_EMPATE")
+                ("Grecia", "Países Bajos", "GOLES_UNDER"),
+                ("Gales", "Noruega", "HANDICAP_BLINDADO"),
+                ("Irlanda", "Austria", "GOLES_OVER"),
+                ("Japón", "Ecuador", "GOL_EQUIPO")
             ]
     else:
         # Calendario de Clubes Europeos (Fuera de ventana FIFA)
         if target_weekday == 5:  # SÁBADO (Clubes)
             fixtures_tomorrow = [
-                ("Real Madrid", "Villarreal", "VICTORIA_DIRECTA"),
+                ("Real Madrid", "Villarreal", "GOL_EQUIPO"),
                 ("FC Augsburg", "Bayern Munich", "GOLES_OVER"),
-                ("Barcelona", "Getafe", "GOL_EQUIPO"),
+                ("Barcelona", "Getafe", "DOBLE_OPORTUNIDAD"),
                 ("Arsenal", "Leeds United", "TOTAL_CORNERS"),
-                ("Inter Milan", "Parma", "VICTORIA_SIN_EMPATE"),
-                ("Borussia Dortmund", "Werder Bremen", "AMBOS_ANOTAN")
+                ("Inter Milan", "Parma", "HANDICAP_BLINDADO"),
+                ("Borussia Dortmund", "Werder Bremen", "GOLES_UNDER")
             ]
         elif target_weekday == 6:  # DOMINGO (Clubes)
             fixtures_tomorrow = [
-                ("Real Madrid", "Villarreal", "VICTORIA_DIRECTA"),
-                ("Barcelona", "Getafe", "GOL_EQUIPO"),
+                ("Real Madrid", "Villarreal", "GOL_EQUIPO"),
+                ("Barcelona", "Getafe", "DOBLE_OPORTUNIDAD"),
                 ("Arsenal", "Leeds United", "TOTAL_CORNERS"),
                 ("FC Augsburg", "Bayern Munich", "GOLES_OVER"),
-                ("Inter Milan", "Parma", "VICTORIA_SIN_EMPATE"),
-                ("Borussia Dortmund", "Werder Bremen", "AMBOS_ANOTAN")
+                ("Inter Milan", "Parma", "HANDICAP_BLINDADO"),
+                ("Borussia Dortmund", "Werder Bremen", "GOLES_UNDER")
             ]
         else:  # LUNES A JUEVES (Intersemanal Clubes)
             fixtures_tomorrow = [
-                ("Real Madrid", "Villarreal", "VICTORIA_DIRECTA"),
+                ("Real Madrid", "Villarreal", "GOL_EQUIPO"),
                 ("FC Augsburg", "Bayern Munich", "GOLES_OVER"),
-                ("Barcelona", "Getafe", "GOL_EQUIPO"),
+                ("Barcelona", "Getafe", "DOBLE_OPORTUNIDAD"),
                 ("Arsenal", "Leeds United", "TOTAL_CORNERS"),
-                ("Inter Milan", "Parma", "VICTORIA_SIN_EMPATE"),
-                ("Borussia Dortmund", "Werder Bremen", "AMBOS_ANOTAN")
+                ("Inter Milan", "Parma", "HANDICAP_BLINDADO"),
+                ("Borussia Dortmund", "Werder Bremen", "GOLES_UNDER")
             ]
 
     print(f"1. Simulando los 6 partidos estelares de {target_day_name.upper()} ({target_date_str}) con los 11 agentes...")

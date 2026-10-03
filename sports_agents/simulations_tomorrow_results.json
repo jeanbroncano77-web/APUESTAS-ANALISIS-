@@ -1,5 +1,5 @@
 {
-  "GeneratedAt": "2026-10-03 09:10:31",
+  "GeneratedAt": "2026-10-03 09:22:04",
   "TargetDay": "Sábado",
   "TargetDate": "03/10/2026",
   "TemporalLabel": "HOY",
@@ -331,26 +331,16 @@
         ]
       },
       "la_fija_real": {
-        "market": "Victoria Directa (1X2)",
-        "category_code": "VICTORIA_DIRECTA",
-        "selection": "España Gana el Partido (1)",
-        "probability": 71.9,
-        "odds": 1.46,
-        "availability": "Universal en todas las casas (Bet365, Betano, etc.)",
-        "rationale": "Triunfo directo de España respaldado por una probabilidad de victoria del 71.9% en 90 minutos.",
-        "_rank_score": 95.66
+        "market": "Doble Oportunidad Blindada",
+        "category_code": "DOBLE_OPORTUNIDAD",
+        "selection": "España o Empate (1X)",
+        "probability": 97.9,
+        "odds": 1.1,
+        "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+        "rationale": "Protección total ante el empate con 97.9% de cobertura en condición de local.",
+        "_rank_score": 166.94
       },
       "all_fija_options": [
-        {
-          "market": "Victoria Directa (1X2)",
-          "category_code": "VICTORIA_DIRECTA",
-          "selection": "España Gana el Partido (1)",
-          "probability": 71.9,
-          "odds": 1.46,
-          "availability": "Universal en todas las casas (Bet365, Betano, etc.)",
-          "rationale": "Triunfo directo de España respaldado por una probabilidad de victoria del 71.9% en 90 minutos.",
-          "_rank_score": 95.66
-        },
         {
           "market": "Doble Oportunidad Blindada",
           "category_code": "DOBLE_OPORTUNIDAD",
@@ -359,7 +349,17 @@
           "odds": 1.1,
           "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
           "rationale": "Protección total ante el empate con 97.9% de cobertura en condición de local.",
-          "_rank_score": 71.94
+          "_rank_score": 166.94
+        },
+        {
+          "market": "Total de Goles Fijo",
+          "category_code": "GOLES_UNDER",
+          "selection": "Menos de 4.5 goles totales",
+          "probability": 97.3,
+          "odds": 1.12,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Freno táctico de selecciones: el volumen de 2.5 xG descarta completamente un partido de 5 goles.",
+          "_rank_score": 116.82
         },
         {
           "market": "Gol de Equipo de Seguridad",
@@ -369,7 +369,27 @@
           "odds": 1.12,
           "availability": "Universal en todas las plataformas",
           "rationale": "Volumen ofensivo de España (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 71.52
+          "_rank_score": 116.52
+        },
+        {
+          "market": "Total de Goles Fijo",
+          "category_code": "GOLES_OVER",
+          "selection": "Más de 0.5 goles totales",
+          "probability": 97.4,
+          "odds": 1.08,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Intensidad ofensiva global de 2.5 xG garantiza al menos una anotación en 90 minutos.",
+          "_rank_score": 116.4
+        },
+        {
+          "market": "Hándicap Blindado",
+          "category_code": "HANDICAP_BLINDADO",
+          "selection": "Chequia (+1.5)",
+          "probability": 96.2,
+          "odds": 1.14,
+          "availability": "Todas las casas de apuestas (Hándicap Asiático)",
+          "rationale": "Cubre victoria de Chequia, empate o derrota por solo 1 gol de diferencia.",
+          "_rank_score": 116.4
         },
         {
           "market": "Victoria Sin Empate (DNB)",
@@ -379,17 +399,17 @@
           "odds": 1.18,
           "availability": "100% Casas de Apuestas (Mercado 'Draw No Bet')",
           "rationale": "Triunfo de España con devolución íntegra del 100% del dinero apostado si el juego finaliza igualado.",
-          "_rank_score": 71.16
+          "_rank_score": 116.16
         },
         {
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
           "selection": "Más de 6.5 córners totales",
-          "probability": 91.5,
-          "odds": 1.16,
+          "probability": 92.5,
+          "odds": 1.15,
           "availability": "Línea de máxima cobertura en Bet365 / Betano",
-          "rationale": "Línea de seguridad rebajada en 3 tiros de esquina frente al promedio (7.5).",
-          "_rank_score": 68.82
+          "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (7.5).",
+          "_rank_score": 69.3
         },
         {
           "market": "Total de Goles Fijo",
@@ -420,6 +440,16 @@
           "availability": "Universal en todas las plataformas",
           "rationale": "Eficacia ofensiva cruzada: ambos cuadros promedian ocasiones claras de gol (1.4 vs 1.1 xG).",
           "_rank_score": 65.1
+        },
+        {
+          "market": "Victoria Directa (1X2)",
+          "category_code": "VICTORIA_DIRECTA",
+          "selection": "España Gana el Partido (1)",
+          "probability": 71.9,
+          "odds": 1.46,
+          "availability": "Universal en todas las casas (Bet365, Betano, etc.)",
+          "rationale": "Triunfo directo de España respaldado por una probabilidad de victoria del 71.9% en 90 minutos.",
+          "_rank_score": 60.66
         }
       ]
     },
@@ -723,14 +753,24 @@
       "la_fija_real": {
         "market": "Total de Córners Fijo",
         "category_code": "TOTAL_CORNERS",
-        "selection": "Más de 7.5 córners totales",
-        "probability": 89.6,
-        "odds": 1.25,
-        "availability": "Línea alternativa en Bet365 / Betano",
-        "rationale": "Constante flujo de ataque por bandas que proyecta 9.0 saques de esquina acumulados.",
-        "_rank_score": 111.76
+        "selection": "Más de 6.5 córners totales",
+        "probability": 96.2,
+        "odds": 1.15,
+        "availability": "Línea de máxima cobertura en Bet365 / Betano",
+        "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (9.0).",
+        "_rank_score": 186.52
       },
       "all_fija_options": [
+        {
+          "market": "Total de Córners Fijo",
+          "category_code": "TOTAL_CORNERS",
+          "selection": "Más de 6.5 córners totales",
+          "probability": 96.2,
+          "odds": 1.15,
+          "availability": "Línea de máxima cobertura en Bet365 / Betano",
+          "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (9.0).",
+          "_rank_score": 186.52
+        },
         {
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
@@ -739,17 +779,37 @@
           "odds": 1.25,
           "availability": "Línea alternativa en Bet365 / Betano",
           "rationale": "Constante flujo de ataque por bandas que proyecta 9.0 saques de esquina acumulados.",
-          "_rank_score": 111.76
+          "_rank_score": 118.76
         },
         {
-          "market": "Total de Córners Fijo",
-          "category_code": "TOTAL_CORNERS",
-          "selection": "Más de 6.5 córners totales",
-          "probability": 96.0,
-          "odds": 1.15,
-          "availability": "Línea de máxima cobertura en Bet365 / Betano",
-          "rationale": "Línea de seguridad rebajada en 3 tiros de esquina frente al promedio (9.0).",
-          "_rank_score": 106.4
+          "market": "Total de Goles Fijo",
+          "category_code": "GOLES_UNDER",
+          "selection": "Menos de 4.5 goles totales",
+          "probability": 97.3,
+          "odds": 1.12,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Freno táctico de selecciones: el volumen de 2.5 xG descarta completamente un partido de 5 goles.",
+          "_rank_score": 116.82
+        },
+        {
+          "market": "Total de Goles Fijo",
+          "category_code": "GOLES_OVER",
+          "selection": "Más de 0.5 goles totales",
+          "probability": 97.4,
+          "odds": 1.08,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Intensidad ofensiva global de 2.5 xG garantiza al menos una anotación en 90 minutos.",
+          "_rank_score": 116.4
+        },
+        {
+          "market": "Hándicap Blindado",
+          "category_code": "HANDICAP_BLINDADO",
+          "selection": "Croacia (+1.5)",
+          "probability": 96.2,
+          "odds": 1.14,
+          "availability": "Todas las casas de apuestas (Hándicap Asiático)",
+          "rationale": "Cubre victoria de Croacia, empate o derrota por solo 1 gol de diferencia.",
+          "_rank_score": 116.4
         },
         {
           "market": "Total de Goles Fijo",
@@ -770,6 +830,16 @@
           "availability": "Universal en todas las plataformas",
           "rationale": "Bloques tácticos cerrados (2.5 xG esperados) impiden un partido de 4 o más goles.",
           "_rank_score": 67.44
+        },
+        {
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "Inglaterra anota más de 0.5 goles",
+          "probability": 86.0,
+          "odds": 1.22,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Eficacia ofensiva de Inglaterra (1.1 xG) garantiza presencia en el marcador.",
+          "_rank_score": 66.24
         },
         {
           "market": "Doble Oportunidad Blindada",
@@ -795,11 +865,11 @@
           "market": "Gol de Equipo de Seguridad",
           "category_code": "GOL_EQUIPO",
           "selection": "Croacia anota más de 0.5 goles",
-          "probability": 78.8,
-          "odds": 1.33,
+          "probability": 79.8,
+          "odds": 1.32,
           "availability": "Universal en todas las plataformas",
           "rationale": "Volumen ofensivo de Croacia (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 63.24
+          "_rank_score": 63.72
         },
         {
           "market": "Victoria Sin Empate (DNB)",
@@ -1089,14 +1159,24 @@
       "la_fija_real": {
         "market": "Total de Goles Fijo",
         "category_code": "GOLES_OVER",
-        "selection": "Más de 1.5 goles totales",
-        "probability": 88.9,
-        "odds": 1.21,
+        "selection": "Más de 0.5 goles totales",
+        "probability": 97.4,
+        "odds": 1.08,
         "availability": "Universal en todas las plataformas",
-        "rationale": "Ritmo ofensivo conjunto de 2.5 xG garantiza alta probabilidad de al menos 2 goles en el marcador.",
-        "_rank_score": 110.86
+        "rationale": "Intensidad ofensiva global de 2.5 xG garantiza al menos una anotación en 90 minutos.",
+        "_rank_score": 186.4
       },
       "all_fija_options": [
+        {
+          "market": "Total de Goles Fijo",
+          "category_code": "GOLES_OVER",
+          "selection": "Más de 0.5 goles totales",
+          "probability": 97.4,
+          "odds": 1.08,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Intensidad ofensiva global de 2.5 xG garantiza al menos una anotación en 90 minutos.",
+          "_rank_score": 186.4
+        },
         {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_OVER",
@@ -1105,17 +1185,37 @@
           "odds": 1.21,
           "availability": "Universal en todas las plataformas",
           "rationale": "Ritmo ofensivo conjunto de 2.5 xG garantiza alta probabilidad de al menos 2 goles en el marcador.",
-          "_rank_score": 110.86
+          "_rank_score": 117.86
+        },
+        {
+          "market": "Total de Goles Fijo",
+          "category_code": "GOLES_UNDER",
+          "selection": "Menos de 4.5 goles totales",
+          "probability": 97.3,
+          "odds": 1.12,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Freno táctico de selecciones: el volumen de 2.5 xG descarta completamente un partido de 5 goles.",
+          "_rank_score": 116.82
+        },
+        {
+          "market": "Hándicap Blindado",
+          "category_code": "HANDICAP_BLINDADO",
+          "selection": "Eslovenia (+1.5)",
+          "probability": 96.8,
+          "odds": 1.14,
+          "availability": "Todas las casas de apuestas (Hándicap Asiático)",
+          "rationale": "Cubre victoria de Eslovenia, empate o derrota por solo 1 gol de diferencia.",
+          "_rank_score": 116.76
         },
         {
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
           "selection": "Más de 6.5 córners totales",
-          "probability": 93.6,
+          "probability": 94.2,
           "odds": 1.15,
           "availability": "Línea de máxima cobertura en Bet365 / Betano",
-          "rationale": "Línea de seguridad rebajada en 3 tiros de esquina frente al promedio (8.2).",
-          "_rank_score": 69.96
+          "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (8.2).",
+          "_rank_score": 70.32
         },
         {
           "market": "Total de Goles Fijo",
@@ -1128,6 +1228,16 @@
           "_rank_score": 67.44
         },
         {
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "Suiza anota más de 0.5 goles",
+          "probability": 87.0,
+          "odds": 1.21,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Volumen ofensivo de Suiza (1.4 xG) asegura al menos un gol a favor.",
+          "_rank_score": 66.72
+        },
+        {
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
           "selection": "Más de 7.5 córners totales",
@@ -1136,16 +1246,6 @@
           "availability": "Línea alternativa en Bet365 / Betano",
           "rationale": "Constante flujo de ataque por bandas que proyecta 8.2 saques de esquina acumulados.",
           "_rank_score": 66.72
-        },
-        {
-          "market": "Gol de Equipo de Seguridad",
-          "category_code": "GOL_EQUIPO",
-          "selection": "Suiza anota más de 0.5 goles",
-          "probability": 86.0,
-          "odds": 1.22,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Volumen ofensivo de Suiza (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 66.24
         },
         {
           "market": "Ambos Equipos Anotan",
@@ -1420,35 +1520,55 @@
         ]
       },
       "la_fija_real": {
-        "market": "Victoria Sin Empate (DNB)",
-        "category_code": "VICTORIA_SIN_EMPATE",
-        "selection": "Escocia Gana (Empate No Válido / DNB)",
-        "probability": 57.1,
-        "odds": 1.86,
-        "availability": "100% Casas de Apuestas (Mercado 'Draw No Bet')",
-        "rationale": "Victoria de Escocia con devolución del importe en caso de igualdad.",
-        "_rank_score": 91.58
+        "market": "Hándicap Blindado",
+        "category_code": "HANDICAP_BLINDADO",
+        "selection": "Macedonia del Norte (+1.5)",
+        "probability": 96.5,
+        "odds": 1.14,
+        "availability": "Todas las casas de apuestas (Hándicap Asiático)",
+        "rationale": "Cubre victoria de Macedonia del Norte, empate o derrota por solo 1 gol de diferencia.",
+        "_rank_score": 166.58
       },
       "all_fija_options": [
         {
-          "market": "Victoria Sin Empate (DNB)",
-          "category_code": "VICTORIA_SIN_EMPATE",
-          "selection": "Escocia Gana (Empate No Válido / DNB)",
-          "probability": 57.1,
-          "odds": 1.86,
-          "availability": "100% Casas de Apuestas (Mercado 'Draw No Bet')",
-          "rationale": "Victoria de Escocia con devolución del importe en caso de igualdad.",
-          "_rank_score": 91.58
+          "market": "Hándicap Blindado",
+          "category_code": "HANDICAP_BLINDADO",
+          "selection": "Macedonia del Norte (+1.5)",
+          "probability": 96.5,
+          "odds": 1.14,
+          "availability": "Todas las casas de apuestas (Hándicap Asiático)",
+          "rationale": "Cubre victoria de Macedonia del Norte, empate o derrota por solo 1 gol de diferencia.",
+          "_rank_score": 166.58
+        },
+        {
+          "market": "Total de Goles Fijo",
+          "category_code": "GOLES_UNDER",
+          "selection": "Menos de 4.5 goles totales",
+          "probability": 97.3,
+          "odds": 1.12,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Freno táctico de selecciones: el volumen de 2.5 xG descarta completamente un partido de 5 goles.",
+          "_rank_score": 116.82
+        },
+        {
+          "market": "Total de Goles Fijo",
+          "category_code": "GOLES_OVER",
+          "selection": "Más de 0.5 goles totales",
+          "probability": 97.4,
+          "odds": 1.08,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Intensidad ofensiva global de 2.5 xG garantiza al menos una anotación en 90 minutos.",
+          "_rank_score": 116.4
         },
         {
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
           "selection": "Más de 6.5 córners totales",
-          "probability": 93.9,
+          "probability": 94.5,
           "odds": 1.15,
           "availability": "Línea de máxima cobertura en Bet365 / Betano",
-          "rationale": "Línea de seguridad rebajada en 3 tiros de esquina frente al promedio (8.3).",
-          "_rank_score": 70.14
+          "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (8.3).",
+          "_rank_score": 70.5
         },
         {
           "market": "Total de Goles Fijo",
@@ -1484,11 +1604,11 @@
           "market": "Gol de Equipo de Seguridad",
           "category_code": "GOL_EQUIPO",
           "selection": "Macedonia del Norte anota más de 0.5 goles",
-          "probability": 83.9,
-          "odds": 1.25,
+          "probability": 84.9,
+          "odds": 1.24,
           "availability": "Universal en todas las plataformas",
           "rationale": "Volumen ofensivo de Macedonia del Norte (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 65.34
+          "_rank_score": 65.82
         },
         {
           "market": "Ambos Equipos Anotan",
@@ -1509,6 +1629,16 @@
           "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
           "rationale": "El favorito visitante Escocia puntúa en el 68.9% de las simulaciones.",
           "_rank_score": 59.58
+        },
+        {
+          "market": "Victoria Sin Empate (DNB)",
+          "category_code": "VICTORIA_SIN_EMPATE",
+          "selection": "Escocia Gana (Empate No Válido / DNB)",
+          "probability": 57.1,
+          "odds": 1.86,
+          "availability": "100% Casas de Apuestas (Mercado 'Draw No Bet')",
+          "rationale": "Victoria de Escocia con devolución del importe en caso de igualdad.",
+          "_rank_score": 56.58
         }
       ]
     },
@@ -1752,14 +1882,24 @@
       "la_fija_real": {
         "market": "Total de Goles Fijo",
         "category_code": "GOLES_UNDER",
-        "selection": "Menos de 3.5 goles totales",
-        "probability": 88.0,
-        "odds": 1.22,
+        "selection": "Menos de 4.5 goles totales",
+        "probability": 97.3,
+        "odds": 1.12,
         "availability": "Universal en todas las plataformas",
-        "rationale": "Bloques tácticos cerrados (2.5 xG esperados) impiden un partido de 4 o más goles.",
-        "_rank_score": 102.44
+        "rationale": "Freno táctico de selecciones: el volumen de 2.5 xG descarta completamente un partido de 5 goles.",
+        "_rank_score": 186.82
       },
       "all_fija_options": [
+        {
+          "market": "Total de Goles Fijo",
+          "category_code": "GOLES_UNDER",
+          "selection": "Menos de 4.5 goles totales",
+          "probability": 97.3,
+          "odds": 1.12,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Freno táctico de selecciones: el volumen de 2.5 xG descarta completamente un partido de 5 goles.",
+          "_rank_score": 186.82
+        },
         {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_UNDER",
@@ -1768,17 +1908,37 @@
           "odds": 1.22,
           "availability": "Universal en todas las plataformas",
           "rationale": "Bloques tácticos cerrados (2.5 xG esperados) impiden un partido de 4 o más goles.",
-          "_rank_score": 102.44
+          "_rank_score": 117.44
+        },
+        {
+          "market": "Hándicap Blindado",
+          "category_code": "HANDICAP_BLINDADO",
+          "selection": "Finlandia (+1.5)",
+          "probability": 96.5,
+          "odds": 1.14,
+          "availability": "Todas las casas de apuestas (Hándicap Asiático)",
+          "rationale": "Cubre victoria de Finlandia, empate o derrota por solo 1 gol de diferencia.",
+          "_rank_score": 116.58
+        },
+        {
+          "market": "Total de Goles Fijo",
+          "category_code": "GOLES_OVER",
+          "selection": "Más de 0.5 goles totales",
+          "probability": 97.4,
+          "odds": 1.08,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Intensidad ofensiva global de 2.5 xG garantiza al menos una anotación en 90 minutos.",
+          "_rank_score": 116.4
         },
         {
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
           "selection": "Más de 6.5 córners totales",
-          "probability": 92.4,
+          "probability": 93.2,
           "odds": 1.15,
           "availability": "Línea de máxima cobertura en Bet365 / Betano",
-          "rationale": "Línea de seguridad rebajada en 3 tiros de esquina frente al promedio (7.8).",
-          "_rank_score": 69.24
+          "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (7.8).",
+          "_rank_score": 69.72
         },
         {
           "market": "Total de Goles Fijo",
@@ -1789,6 +1949,16 @@
           "availability": "Universal en todas las plataformas",
           "rationale": "Ritmo ofensivo conjunto de 2.5 xG garantiza alta probabilidad de al menos 2 goles en el marcador.",
           "_rank_score": 67.86
+        },
+        {
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "Albania anota más de 0.5 goles",
+          "probability": 86.0,
+          "odds": 1.22,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Eficacia ofensiva de Albania (1.1 xG) garantiza presencia en el marcador.",
+          "_rank_score": 66.24
         },
         {
           "market": "Ambos Equipos Anotan",
@@ -1814,11 +1984,11 @@
           "market": "Gol de Equipo de Seguridad",
           "category_code": "GOL_EQUIPO",
           "selection": "Finlandia anota más de 0.5 goles",
-          "probability": 79.7,
-          "odds": 1.32,
+          "probability": 80.7,
+          "odds": 1.3,
           "availability": "Universal en todas las plataformas",
           "rationale": "Volumen ofensivo de Finlandia (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 63.66
+          "_rank_score": 64.02
         },
         {
           "market": "Victoria Sin Empate (DNB)",
@@ -2112,35 +2282,55 @@
         ]
       },
       "la_fija_real": {
-        "market": "Ambos Equipos Anotan",
-        "category_code": "AMBOS_ANOTAN",
-        "selection": "Ambos Equipos Anotan (Sí)",
-        "probability": 80.1,
-        "odds": 1.42,
-        "availability": "Universal en todas las plataformas",
-        "rationale": "Eficacia ofensiva cruzada: ambos cuadros promedian ocasiones claras de gol (1.4 vs 1.1 xG).",
-        "_rank_score": 100.1
+        "market": "Hándicap Blindado",
+        "category_code": "HANDICAP_BLINDADO",
+        "selection": "Estados Unidos (+1.5)",
+        "probability": 96.8,
+        "odds": 1.14,
+        "availability": "Todas las casas de apuestas (Hándicap Asiático)",
+        "rationale": "Cubre victoria de Estados Unidos, empate o derrota por solo 1 gol de diferencia.",
+        "_rank_score": 166.76
       },
       "all_fija_options": [
         {
-          "market": "Ambos Equipos Anotan",
-          "category_code": "AMBOS_ANOTAN",
-          "selection": "Ambos Equipos Anotan (Sí)",
-          "probability": 80.1,
-          "odds": 1.42,
+          "market": "Hándicap Blindado",
+          "category_code": "HANDICAP_BLINDADO",
+          "selection": "Estados Unidos (+1.5)",
+          "probability": 96.8,
+          "odds": 1.14,
+          "availability": "Todas las casas de apuestas (Hándicap Asiático)",
+          "rationale": "Cubre victoria de Estados Unidos, empate o derrota por solo 1 gol de diferencia.",
+          "_rank_score": 166.76
+        },
+        {
+          "market": "Total de Goles Fijo",
+          "category_code": "GOLES_UNDER",
+          "selection": "Menos de 4.5 goles totales",
+          "probability": 97.3,
+          "odds": 1.12,
           "availability": "Universal en todas las plataformas",
-          "rationale": "Eficacia ofensiva cruzada: ambos cuadros promedian ocasiones claras de gol (1.4 vs 1.1 xG).",
-          "_rank_score": 100.1
+          "rationale": "Freno táctico de selecciones: el volumen de 2.5 xG descarta completamente un partido de 5 goles.",
+          "_rank_score": 116.82
+        },
+        {
+          "market": "Total de Goles Fijo",
+          "category_code": "GOLES_OVER",
+          "selection": "Más de 0.5 goles totales",
+          "probability": 97.4,
+          "odds": 1.08,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Intensidad ofensiva global de 2.5 xG garantiza al menos una anotación en 90 minutos.",
+          "_rank_score": 116.4
         },
         {
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
           "selection": "Más de 6.5 córners totales",
-          "probability": 94.2,
+          "probability": 94.8,
           "odds": 1.15,
           "availability": "Línea de máxima cobertura en Bet365 / Betano",
-          "rationale": "Línea de seguridad rebajada en 3 tiros de esquina frente al promedio (8.4).",
-          "_rank_score": 70.32
+          "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (8.4).",
+          "_rank_score": 115.68
         },
         {
           "market": "Total de Goles Fijo",
@@ -2173,6 +2363,36 @@
           "_rank_score": 67.14
         },
         {
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "México anota más de 0.5 goles",
+          "probability": 86.0,
+          "odds": 1.22,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Eficacia ofensiva de México (1.1 xG) garantiza presencia en el marcador.",
+          "_rank_score": 66.24
+        },
+        {
+          "market": "Ambos Equipos Anotan",
+          "category_code": "AMBOS_ANOTAN",
+          "selection": "Ambos Equipos Anotan (Sí)",
+          "probability": 80.1,
+          "odds": 1.42,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Eficacia ofensiva cruzada: ambos cuadros promedian ocasiones claras de gol (1.4 vs 1.1 xG).",
+          "_rank_score": 65.1
+        },
+        {
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "Estados Unidos anota más de 0.5 goles",
+          "probability": 80.8,
+          "odds": 1.3,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Volumen ofensivo de Estados Unidos (1.4 xG) asegura al menos un gol a favor.",
+          "_rank_score": 64.08
+        },
+        {
           "market": "Doble Oportunidad Blindada",
           "category_code": "DOBLE_OPORTUNIDAD",
           "selection": "Empate o México (X2)",
@@ -2181,16 +2401,6 @@
           "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
           "rationale": "El favorito visitante México puntúa en el 80.5% de las simulaciones.",
           "_rank_score": 63.9
-        },
-        {
-          "market": "Gol de Equipo de Seguridad",
-          "category_code": "GOL_EQUIPO",
-          "selection": "Estados Unidos anota más de 0.5 goles",
-          "probability": 79.8,
-          "odds": 1.32,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Volumen ofensivo de Estados Unidos (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 63.72
         },
         {
           "market": "Victoria Sin Empate (DNB)",

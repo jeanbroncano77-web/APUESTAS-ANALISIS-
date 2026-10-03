@@ -1,6 +1,6 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 7,
+  "cycles_completed": 10,
   "calibrations": [
     {
       "cycle": 1,
@@ -198,6 +198,42 @@
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Sábado."
       ],
       "system_health": "Excelente (Win Rate Auditado: 89.5%, Brier Score: 0.102, Ciclo #7)"
+    },
+    {
+      "cycle": 8,
+      "timestamp": "2026-10-03 09:20:08",
+      "action": "Auto-Calibración Autónoma Diaria (Sábado 03/10/2026)",
+      "observations": [
+        "SquadInjuryAgent: 8 bajas médicas vetadas (Rodri, Dani Olmo, Dani Carvajal).",
+        "MarketRealityAgent: 6 Fijas optimizadas con confianza media del 96.9%.",
+        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
+        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Sábado."
+      ],
+      "system_health": "Excelente (Win Rate Auditado: 89.5%, Brier Score: 0.102, Ciclo #8)"
+    },
+    {
+      "cycle": 9,
+      "timestamp": "2026-10-03 09:20:54",
+      "action": "Auto-Calibración Autónoma Diaria (Sábado 03/10/2026)",
+      "observations": [
+        "SquadInjuryAgent: 8 bajas médicas vetadas (Rodri, Dani Olmo, Dani Carvajal).",
+        "MarketRealityAgent: 6 Fijas optimizadas con confianza media del 97.1%.",
+        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
+        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Sábado."
+      ],
+      "system_health": "Excelente (Win Rate Auditado: 89.5%, Brier Score: 0.102, Ciclo #9)"
+    },
+    {
+      "cycle": 10,
+      "timestamp": "2026-10-03 09:22:04",
+      "action": "Auto-Calibración Autónoma Diaria (Sábado 03/10/2026)",
+      "observations": [
+        "SquadInjuryAgent: 8 bajas médicas vetadas (Rodri, Dani Olmo, Dani Carvajal).",
+        "MarketRealityAgent: 6 Fijas optimizadas con confianza media del 97.0%.",
+        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
+        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Sábado."
+      ],
+      "system_health": "Excelente (Win Rate Auditado: 89.5%, Brier Score: 0.102, Ciclo #10)"
     }
   ],
   "current_weights": {
@@ -216,5 +252,5 @@
       "squad_offense_penalty: 0.82 -> 0.8"
     ]
   },
-  "last_updated": "2026-10-03 09:10:31"
+  "last_updated": "2026-10-03 09:22:04"
 }
