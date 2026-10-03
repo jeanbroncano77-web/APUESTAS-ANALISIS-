@@ -21,9 +21,10 @@ if hasattr(sys.stdout, "reconfigure"):
     except Exception:
         pass
 
-base_dir = r"c:\Users\jeanb\Documents\Antigravity Proyectos\Analisis deportivo"
+current_dir = os.path.dirname(os.path.abspath(__file__))
+base_dir = os.path.abspath(os.path.join(current_dir, ".."))
 index_path = os.path.join(base_dir, "index.html")
-sim_path = os.path.join(base_dir, "sports_agents", "simulations_tomorrow_results.json")
+sim_path = os.path.join(current_dir, "simulations_tomorrow_results.json")
 
 with open(sim_path, "r", encoding="utf-8") as f:
     sim_data = json.load(f)
