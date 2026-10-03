@@ -143,6 +143,22 @@ class WhatsAppNotifierAgent:
             msg += f"   * Marcador Modal: {modal}\n"
             msg += f"   * La Fija: {pick} (@{odds:.2f} | {prob}%)\n\n"
 
+        # Alertas sanitarias y vetos detectados
+        medical_alerts = []
+        for m in matches_data[:6]:
+            squad_h = m.get("squad_health", {})
+            for v in squad_h.get("home_vetoed", []) + squad_h.get("away_vetoed", []):
+                v_name = v.get("name", "")
+                v_inj = v.get("injury", "Baja médica")
+                medical_alerts.append(f"* {v_name}: {v_inj} [Veto Activo]")
+
+        if medical_alerts:
+            msg += "========================================\n"
+            msg += "PARTE MEDICO & AUDITORIA DE SANIDAD:\n"
+            for alert in medical_alerts[:4]:
+                msg += f"{alert}\n"
+            msg += "-> Props recalculados y transferidos a titulares sanos.\n\n"
+
         msg += "========================================\n"
         msg += f"DASHBOARD INTERACTIVO EN VIVO:\n{url}\n"
         msg += "========================================\n"

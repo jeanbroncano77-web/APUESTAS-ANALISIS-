@@ -256,9 +256,10 @@ class DataScoutAgent:
                     {"goals_scored": 3, "goals_conceded": 2, "xg_for": 2.5, "xg_against": 1.4, "corners_for": 6, "corners_against": 4, "shots_total": 17, "shots_on_target": 7, "yellow_cards": 2, "red_cards": 0, "fouls": 9,  "possession": 61},
                 ],
                 "key_players": [
-                    {"name": "Kylian Mbappé", "position": "Delantero Centro Élite", "avg_shots_p90": 4.3, "avg_sot_p90": 2.1, "shot_creation_actions": 4.5, "goal_prob": 0.68},
-                    {"name": "Jude Bellingham", "position": "Mediapunta Llegada", "avg_shots_p90": 2.8, "avg_sot_p90": 1.4, "shot_creation_actions": 5.2, "goal_prob": 0.42},
-                    {"name": "Vinícius Jr.", "position": "Extremo Desborde", "avg_shots_p90": 3.4, "avg_sot_p90": 1.6, "shot_creation_actions": 6.1, "goal_prob": 0.52},
+                    {"name": "Kylian Mbappé", "position": "Delantero Centro (PARTE MÉDICO)", "avg_shots_p90": 4.3, "avg_sot_p90": 2.1, "shot_creation_actions": 4.5, "goal_prob": 0.68},
+                    {"name": "Vinícius Jr.", "position": "Extremo Desborde / Líder Ofensivo", "avg_shots_p90": 3.6, "avg_sot_p90": 1.7, "shot_creation_actions": 6.3, "goal_prob": 0.54},
+                    {"name": "Jude Bellingham", "position": "Mediapunta Llegada", "avg_shots_p90": 2.9, "avg_sot_p90": 1.4, "shot_creation_actions": 5.2, "goal_prob": 0.44},
+                    {"name": "Rodrygo Goes", "position": "Extremo / Delantero Referencia", "avg_shots_p90": 3.1, "avg_sot_p90": 1.5, "shot_creation_actions": 5.4, "goal_prob": 0.46},
                     {"name": "Federico Valverde", "position": "Interior / Potencia", "avg_shots_p90": 2.1, "avg_sot_p90": 0.8, "shot_creation_actions": 3.8, "goal_prob": 0.22}
                 ]
             },

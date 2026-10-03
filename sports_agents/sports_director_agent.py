@@ -132,9 +132,15 @@ class SportsDirectorAgent:
             "projections": projections,
             "tactical_analysis": tactics,
             "squad_health": {
+                "home_team": home_team,
+                "away_team": away_team,
                 "home_vetoed": home_squad["vetoed_players"],
                 "away_vetoed": away_squad["vetoed_players"],
-                "status": "Convocatorias y Titulares Ratificados"
+                "home_reallocation": home_squad.get("reallocation_summary", ""),
+                "away_reallocation": away_squad.get("reallocation_summary", ""),
+                "home_health_status": home_squad.get("squad_health_status", "Ratificado"),
+                "away_health_status": away_squad.get("squad_health_status", "Ratificado"),
+                "status": "Auditoría Médica y Convocatorias Oficiales Verificadas"
             },
             "psychological_context": psychology,
             "score_prediction": score_analysis,

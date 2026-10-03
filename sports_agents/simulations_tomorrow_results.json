@@ -1,5 +1,5 @@
 {
-  "GeneratedAt": "2026-10-03 03:08:27",
+  "GeneratedAt": "2026-10-02 22:37:19",
   "TargetDay": "Sábado",
   "TargetDate": "03/10/2026",
   "Matches": [
@@ -61,9 +61,66 @@
         "tactical_summary": "Choque de estilos: Estándar vs Estándar"
       },
       "squad_health": {
-        "home_vetoed": [],
-        "away_vetoed": [],
-        "status": "Convocatorias y Titulares Ratificados"
+        "home_team": "Real Madrid",
+        "away_team": "Villarreal",
+        "home_vetoed": [
+          {
+            "name": "Kylian Mbappé",
+            "injury": "Lesión en el bíceps femoral de la pierna izquierda",
+            "severity": "BAJA MÉDICA CONFIRMADA",
+            "action": "VETO TOTAL DE PROPS (Excluido de Remates/Goles)",
+            "medical_detail": "Molestia muscular sufrida en el tramo final vs Alavés. Veto estricto de cuotas y remates individuales."
+          },
+          {
+            "name": "Thibaut Courtois",
+            "injury": "Lesión en el abductor de la pierna izquierda",
+            "severity": "BAJA CONFIRMADA",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "Baja en portería; Andriy Lunin ratificado como titular bajo palos."
+          },
+          {
+            "name": "David Alaba",
+            "injury": "Rotura del ligamento cruzado anterior",
+            "severity": "BAJA DE LARGA DURACIÓN",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "Baja médica en fase de reacondicionamiento."
+          },
+          {
+            "name": "Brahim Díaz",
+            "injury": "Lesión en el abductor largo de la pierna derecha",
+            "severity": "BAJA CONFIRMADA",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "En tratamiento fisioterapéutico."
+          }
+        ],
+        "away_vetoed": [
+          {
+            "name": "Gerard Moreno",
+            "injury": "Lesión muscular en los isquiotibiales",
+            "severity": "BAJA CONFIRMADA",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "Goleador histórico descartado para la visita al Bernabéu. Ayoze Pérez asume la referencia ofensiva."
+          },
+          {
+            "name": "Juan Foyth",
+            "injury": "Esguince de rodilla",
+            "severity": "BAJA CONFIRMADA",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "Baja en defensa."
+          },
+          {
+            "name": "Alfonso Pedraza",
+            "injury": "Lesión de tobillo",
+            "severity": "BAJA CONFIRMADA",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "Baja en el carril zurdo."
+          }
+        ],
+        "home_reallocation": "Ausencia de Kylian Mbappé: Volumen de tiros transferido hacia Vinícius Jr., Rodrygo Goes, Jude Bellingham.",
+        "away_reallocation": "Ausencia de Gerard Moreno: Volumen de tiros transferido hacia Ayoze Pérez, Thierno Barry, Álex Baena.",
+        "home_health_status": "VETO ACTIVO: Bajas Detectadas",
+        "away_health_status": "VETO ACTIVO: Bajas Detectadas",
+        "status": "Auditoría Médica y Convocatorias Oficiales Verificadas"
       },
       "psychological_context": {
         "tournament_urgency": 0.9,
@@ -76,59 +133,59 @@
         "psychological_notes": "Urgencia: Máxima (Puntos Oficiales) | Caldera: 50.0%"
       },
       "score_prediction": {
-        "most_probable_score": "2 - 1",
-        "most_probable_prob_pct": 8.32,
+        "most_probable_score": "2 - 0",
+        "most_probable_prob_pct": 9.61,
         "top_5_scores": [
-          {
-            "score": "2 - 1",
-            "home_goals": 2,
-            "away_goals": 1,
-            "probability_pct": 8.32
-          },
-          {
-            "score": "3 - 1",
-            "home_goals": 3,
-            "away_goals": 1,
-            "probability_pct": 8.32
-          },
           {
             "score": "2 - 0",
             "home_goals": 2,
             "away_goals": 0,
-            "probability_pct": 7.7
+            "probability_pct": 9.61
+          },
+          {
+            "score": "2 - 1",
+            "home_goals": 2,
+            "away_goals": 1,
+            "probability_pct": 9.32
           },
           {
             "score": "3 - 0",
             "home_goals": 3,
             "away_goals": 0,
-            "probability_pct": 7.7
+            "probability_pct": 8.26
           },
           {
-            "score": "4 - 1",
-            "home_goals": 4,
+            "score": "1 - 1",
+            "home_goals": 1,
             "away_goals": 1,
-            "probability_pct": 6.24
+            "probability_pct": 8.02
+          },
+          {
+            "score": "3 - 1",
+            "home_goals": 3,
+            "away_goals": 1,
+            "probability_pct": 8.02
           }
         ],
         "1x2_probabilities": {
-          "home_win_pct": 69.56,
+          "home_win_pct": 66.92,
           "draw_pct": 26.0,
-          "away_win_pct": 4.45
+          "away_win_pct": 7.08
         },
         "goals_markets": {
-          "over_1_5_pct": 91.92,
-          "under_1_5_pct": 8.08,
-          "over_2_5_pct": 77.07,
-          "under_2_5_pct": 22.93,
-          "over_3_5_pct": 57.7,
-          "under_3_5_pct": 42.3,
-          "btts_yes_pct": 63.32,
-          "btts_no_pct": 36.68
+          "over_1_5_pct": 87.66,
+          "under_1_5_pct": 12.34,
+          "over_2_5_pct": 68.67,
+          "under_2_5_pct": 31.33,
+          "over_3_5_pct": 47.14,
+          "under_3_5_pct": 52.86,
+          "btts_yes_pct": 58.16,
+          "btts_no_pct": 41.84
         },
         "simulated_averages": {
-          "home_goals": 3.01,
-          "away_goals": 1.09,
-          "total_goals": 4.1
+          "home_goals": 2.58,
+          "away_goals": 0.98,
+          "total_goals": 3.57
         }
       },
       "corners_prediction": {
@@ -179,113 +236,127 @@
       "player_props": {
         "home_key_players": [
           {
-            "name": "Kylian Mbappé",
-            "position": "Delantero Centro Élite",
-            "expected_shots": 5.38,
-            "expected_sot": 2.63,
-            "prob_at_least_1_sot_pct": 92.8,
-            "prob_at_least_2_sot_pct": 73.8,
-            "prob_over_1_5_shots_pct": 97.1,
-            "prob_over_2_5_shots_pct": 90.4,
-            "goal_anytime_prob_pct": 68.0
+            "name": "Vinícius Jr.",
+            "position": "Extremo Desborde / Líder Ofensivo",
+            "health_status": "Disponible",
+            "expected_shots": 4.46,
+            "expected_sot": 2.09,
+            "prob_at_least_1_sot_pct": 87.6,
+            "prob_at_least_2_sot_pct": 61.8,
+            "prob_over_1_5_shots_pct": 93.7,
+            "prob_over_2_5_shots_pct": 82.2,
+            "goal_anytime_prob_pct": 54.0,
+            "reallocated_from": "Kylian Mbappé"
           },
           {
             "name": "Jude Bellingham",
             "position": "Mediapunta Llegada",
-            "expected_shots": 3.51,
-            "expected_sot": 1.75,
-            "prob_at_least_1_sot_pct": 82.7,
-            "prob_at_least_2_sot_pct": 52.3,
-            "prob_over_1_5_shots_pct": 86.5,
-            "prob_over_2_5_shots_pct": 68.0,
-            "goal_anytime_prob_pct": 42.0
+            "health_status": "Disponible",
+            "expected_shots": 3.59,
+            "expected_sot": 1.72,
+            "prob_at_least_1_sot_pct": 82.1,
+            "prob_at_least_2_sot_pct": 51.4,
+            "prob_over_1_5_shots_pct": 87.3,
+            "prob_over_2_5_shots_pct": 69.5,
+            "goal_anytime_prob_pct": 44.0,
+            "reallocated_from": "Kylian Mbappé"
           },
           {
-            "name": "Vinícius Jr.",
-            "position": "Extremo Desborde",
-            "expected_shots": 4.26,
-            "expected_sot": 2.0,
-            "prob_at_least_1_sot_pct": 86.5,
-            "prob_at_least_2_sot_pct": 59.5,
-            "prob_over_1_5_shots_pct": 92.6,
-            "prob_over_2_5_shots_pct": 79.7,
-            "goal_anytime_prob_pct": 52.0
+            "name": "Rodrygo Goes",
+            "position": "Extremo / Delantero Referencia",
+            "health_status": "Disponible",
+            "expected_shots": 3.83,
+            "expected_sot": 1.84,
+            "prob_at_least_1_sot_pct": 84.1,
+            "prob_at_least_2_sot_pct": 54.9,
+            "prob_over_1_5_shots_pct": 89.5,
+            "prob_over_2_5_shots_pct": 73.6,
+            "goal_anytime_prob_pct": 46.0,
+            "reallocated_from": "Kylian Mbappé"
           },
           {
             "name": "Federico Valverde",
             "position": "Interior / Potencia",
-            "expected_shots": 2.63,
-            "expected_sot": 1.0,
-            "prob_at_least_1_sot_pct": 63.3,
-            "prob_at_least_2_sot_pct": 26.5,
-            "prob_over_1_5_shots_pct": 73.8,
-            "prob_over_2_5_shots_pct": 48.9,
-            "goal_anytime_prob_pct": 22.0
+            "health_status": "Disponible",
+            "expected_shots": 2.26,
+            "expected_sot": 0.86,
+            "prob_at_least_1_sot_pct": 57.7,
+            "prob_at_least_2_sot_pct": 21.3,
+            "prob_over_1_5_shots_pct": 66.0,
+            "prob_over_2_5_shots_pct": 39.4,
+            "goal_anytime_prob_pct": 22.0,
+            "reallocated_from": null
           }
         ],
         "away_key_players": [
           {
             "name": "Ayoze Pérez",
             "position": "Segundo Delantero",
-            "expected_shots": 2.54,
-            "expected_sot": 1.22,
-            "prob_at_least_1_sot_pct": 70.6,
-            "prob_at_least_2_sot_pct": 34.6,
-            "prob_over_1_5_shots_pct": 72.1,
-            "prob_over_2_5_shots_pct": 46.6,
-            "goal_anytime_prob_pct": 40.0
+            "health_status": "Disponible",
+            "expected_shots": 2.62,
+            "expected_sot": 1.25,
+            "prob_at_least_1_sot_pct": 71.4,
+            "prob_at_least_2_sot_pct": 35.6,
+            "prob_over_1_5_shots_pct": 73.7,
+            "prob_over_2_5_shots_pct": 48.8,
+            "goal_anytime_prob_pct": 40.0,
+            "reallocated_from": "Gerard Moreno"
           },
           {
             "name": "Álex Baena",
             "position": "Mediapunta Creador",
-            "expected_shots": 2.07,
-            "expected_sot": 0.85,
-            "prob_at_least_1_sot_pct": 57.1,
-            "prob_at_least_2_sot_pct": 20.8,
-            "prob_over_1_5_shots_pct": 61.2,
-            "prob_over_2_5_shots_pct": 34.2,
-            "goal_anytime_prob_pct": 24.0
+            "health_status": "Disponible",
+            "expected_shots": 2.14,
+            "expected_sot": 0.87,
+            "prob_at_least_1_sot_pct": 58.2,
+            "prob_at_least_2_sot_pct": 21.7,
+            "prob_over_1_5_shots_pct": 63.1,
+            "prob_over_2_5_shots_pct": 36.2,
+            "goal_anytime_prob_pct": 24.0,
+            "reallocated_from": "Gerard Moreno"
           },
           {
             "name": "Thierno Barry",
             "position": "Delantero Centro Físico",
-            "expected_shots": 2.26,
-            "expected_sot": 1.03,
-            "prob_at_least_1_sot_pct": 64.5,
-            "prob_at_least_2_sot_pct": 27.7,
-            "prob_over_1_5_shots_pct": 65.9,
-            "prob_over_2_5_shots_pct": 39.3,
-            "goal_anytime_prob_pct": 35.0
+            "health_status": "Disponible",
+            "expected_shots": 2.34,
+            "expected_sot": 1.06,
+            "prob_at_least_1_sot_pct": 65.3,
+            "prob_at_least_2_sot_pct": 28.6,
+            "prob_over_1_5_shots_pct": 67.8,
+            "prob_over_2_5_shots_pct": 41.4,
+            "goal_anytime_prob_pct": 35.0,
+            "reallocated_from": "Gerard Moreno"
           }
         ]
       },
       "la_fija_real": {
         "market": "Doble Oportunidad Blindada",
         "selection": "Real Madrid o Empate (1X)",
-        "probability": 95.6,
-        "odds": 1.12,
+        "probability": 92.9,
+        "odds": 1.14,
         "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-        "rationale": "Protección total ante el empate con 95.6% de cobertura en casa.",
-        "_rank_score": 103.6
+        "rationale": "Protección total ante el empate con 92.9% de cobertura en casa.",
+        "_rank_score": 100.9
       },
       "all_fija_options": [
         {
           "market": "Doble Oportunidad Blindada",
           "selection": "Real Madrid o Empate (1X)",
-          "probability": 95.6,
-          "odds": 1.12,
+          "probability": 92.9,
+          "odds": 1.14,
           "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "Protección total ante el empate con 95.6% de cobertura en casa.",
-          "_rank_score": 103.6
+          "rationale": "Protección total ante el empate con 92.9% de cobertura en casa.",
+          "_rank_score": 100.9
         },
         {
           "market": "Gol de Equipo de Seguridad",
           "selection": "Real Madrid anota más de 0.5 goles",
-          "probability": 92.8,
+          "probability": 91.8,
           "odds": 1.15,
           "availability": "Universal en todas las plataformas",
           "rationale": "El equipo local promedia suficiente xG para asegurar al menos un tanto.",
-          "_rank_score": 96.8
+          "_rank_score": 95.8
         },
         {
           "market": "Córners Base de Seguridad",
@@ -365,9 +436,37 @@
         "tactical_summary": "Choque de estilos: Estándar vs Estándar"
       },
       "squad_health": {
+        "home_team": "FC Augsburg",
+        "away_team": "Bayern Munich",
         "home_vetoed": [],
-        "away_vetoed": [],
-        "status": "Convocatorias y Titulares Ratificados"
+        "away_vetoed": [
+          {
+            "name": "Hiroki Ito",
+            "injury": "Fractura metatarsiana",
+            "severity": "BAJA DE LARGA DURACIÓN",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "En fase de rehabilitación postquirúrgica."
+          },
+          {
+            "name": "Josip Stanisic",
+            "injury": "Rotura de ligamento colateral de rodilla",
+            "severity": "BAJA CONFIRMADA",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "Baja defensiva confirmada."
+          },
+          {
+            "name": "Sacha Boey",
+            "injury": "Rotura de menisco",
+            "severity": "BAJA CONFIRMADA",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "Operado de la rodilla."
+          }
+        ],
+        "home_reallocation": "Plantel al 100% sin reasignación necesaria.",
+        "away_reallocation": "Plantel al 100% sin reasignación necesaria.",
+        "home_health_status": "Plantel Ratificado al 100%",
+        "away_health_status": "VETO ACTIVO: Bajas Detectadas",
+        "status": "Auditoría Médica y Convocatorias Oficiales Verificadas"
       },
       "psychological_context": {
         "tournament_urgency": 0.9,
@@ -485,70 +584,82 @@
           {
             "name": "Phillip Tietz",
             "position": "Delantero Referencia",
+            "health_status": "Disponible",
             "expected_shots": 1.94,
             "expected_sot": 0.84,
             "prob_at_least_1_sot_pct": 57.0,
             "prob_at_least_2_sot_pct": 20.7,
             "prob_over_1_5_shots_pct": 57.8,
             "prob_over_2_5_shots_pct": 30.8,
-            "goal_anytime_prob_pct": 30.0
+            "goal_anytime_prob_pct": 30.0,
+            "reallocated_from": null
           },
           {
             "name": "Alexis Claude-Maurice",
             "position": "Mediapunta",
+            "health_status": "Disponible",
             "expected_shots": 1.77,
             "expected_sot": 0.76,
             "prob_at_least_1_sot_pct": 53.3,
             "prob_at_least_2_sot_pct": 17.7,
             "prob_over_1_5_shots_pct": 53.0,
             "prob_over_2_5_shots_pct": 26.3,
-            "goal_anytime_prob_pct": 24.0
+            "goal_anytime_prob_pct": 24.0,
+            "reallocated_from": null
           }
         ],
         "away_key_players": [
           {
             "name": "Harry Kane",
             "position": "Delantero Centro Total",
+            "health_status": "MONITOREO / DUDA ACTIVA",
             "expected_shots": 6.95,
             "expected_sot": 3.8,
-            "prob_at_least_1_sot_pct": 97.8,
+            "prob_at_least_1_sot_pct": 96.0,
             "prob_at_least_2_sot_pct": 89.3,
-            "prob_over_1_5_shots_pct": 99.2,
-            "prob_over_2_5_shots_pct": 96.9,
-            "goal_anytime_prob_pct": 75.0
+            "prob_over_1_5_shots_pct": 96.0,
+            "prob_over_2_5_shots_pct": 88.0,
+            "goal_anytime_prob_pct": 75.0,
+            "reallocated_from": null
           },
           {
             "name": "Michael Olise",
             "position": "Extremo Generador",
+            "health_status": "Disponible",
             "expected_shots": 5.13,
             "expected_sot": 2.48,
             "prob_at_least_1_sot_pct": 91.6,
             "prob_at_least_2_sot_pct": 70.9,
-            "prob_over_1_5_shots_pct": 96.4,
-            "prob_over_2_5_shots_pct": 88.6,
-            "goal_anytime_prob_pct": 44.0
+            "prob_over_1_5_shots_pct": 96.0,
+            "prob_over_2_5_shots_pct": 88.0,
+            "goal_anytime_prob_pct": 44.0,
+            "reallocated_from": null
           },
           {
             "name": "Jamal Musiala",
             "position": "Mediapunta Desborde",
+            "health_status": "Disponible",
             "expected_shots": 5.46,
             "expected_sot": 2.65,
             "prob_at_least_1_sot_pct": 92.9,
             "prob_at_least_2_sot_pct": 74.1,
-            "prob_over_1_5_shots_pct": 97.2,
-            "prob_over_2_5_shots_pct": 90.9,
-            "goal_anytime_prob_pct": 45.0
+            "prob_over_1_5_shots_pct": 96.0,
+            "prob_over_2_5_shots_pct": 88.0,
+            "goal_anytime_prob_pct": 45.0,
+            "reallocated_from": null
           },
           {
             "name": "Serge Gnabry",
             "position": "Extremo Llegada",
+            "health_status": "Disponible",
             "expected_shots": 4.3,
             "expected_sot": 1.98,
             "prob_at_least_1_sot_pct": 86.3,
             "prob_at_least_2_sot_pct": 59.0,
             "prob_over_1_5_shots_pct": 92.8,
             "prob_over_2_5_shots_pct": 80.3,
-            "goal_anytime_prob_pct": 38.0
+            "goal_anytime_prob_pct": 38.0,
+            "reallocated_from": null
           }
         ]
       },
@@ -649,9 +760,66 @@
         "tactical_summary": "Choque de estilos: Estándar vs Estándar"
       },
       "squad_health": {
-        "home_vetoed": [],
-        "away_vetoed": [],
-        "status": "Convocatorias y Titulares Ratificados"
+        "home_team": "Barcelona",
+        "away_team": "Getafe",
+        "home_vetoed": [
+          {
+            "name": "Dani Olmo",
+            "injury": "Lesión en el bíceps femoral del muslo derecho",
+            "severity": "BAJA CONFIRMADA",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "Lesión muscular sufrida en Montilivi; veto total de remates."
+          },
+          {
+            "name": "Marc-André ter Stegen",
+            "injury": "Rotura completa del tendón rotuliano de la rodilla derecha",
+            "severity": "BAJA DE TEMPORADA",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "Intervenido quirúrgicamente; Iñaki Peña titular bajo palos."
+          },
+          {
+            "name": "Gavi",
+            "injury": "Fase de readaptación post-rotura de ligamento cruzado",
+            "severity": "MINUTOS RESTRINGIDOS / SIN RITMO COMPETITIVO",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "Retorno gradual; no apto para proyecciones de volumen ofensivo."
+          },
+          {
+            "name": "Ronald Araújo",
+            "injury": "Lesión en el tendón del isquiotibial derecho",
+            "severity": "BAJA CONFIRMADA",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "Baja en el eje defensivo."
+          },
+          {
+            "name": "Andreas Christensen",
+            "injury": "Tendinopatía en el tendón de Aquiles izquierdo",
+            "severity": "BAJA CONFIRMADA",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "Baja en la zaga."
+          },
+          {
+            "name": "Fermín López",
+            "injury": "Lesión en el recto anterior del muslo derecho",
+            "severity": "BAJA CONFIRMADA",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "Recaída muscular en readaptación."
+          }
+        ],
+        "away_vetoed": [
+          {
+            "name": "Álvaro Rodríguez",
+            "injury": "Esguince de tobillo",
+            "severity": "BAJA CONFIRMADA",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "Baja médica confirmada."
+          }
+        ],
+        "home_reallocation": "Ausencia de Dani Olmo: Volumen de tiros transferido hacia Raphinha, Pedri, Lamine Yamal.",
+        "away_reallocation": "Ausencia de Álvaro Rodríguez: Volumen de tiros transferido hacia Borja Mayoral, Bertuğ Yıldırım.",
+        "home_health_status": "VETO ACTIVO: Bajas Detectadas",
+        "away_health_status": "VETO ACTIVO: Bajas Detectadas",
+        "status": "Auditoría Médica y Convocatorias Oficiales Verificadas"
       },
       "psychological_context": {
         "tournament_urgency": 0.9,
@@ -665,58 +833,58 @@
       },
       "score_prediction": {
         "most_probable_score": "2 - 0",
-        "most_probable_prob_pct": 11.97,
+        "most_probable_prob_pct": 13.32,
         "top_5_scores": [
           {
             "score": "2 - 0",
             "home_goals": 2,
             "away_goals": 0,
-            "probability_pct": 11.97
+            "probability_pct": 13.32
           },
           {
             "score": "3 - 0",
             "home_goals": 3,
             "away_goals": 0,
-            "probability_pct": 11.69
+            "probability_pct": 11.72
           },
           {
-            "score": "4 - 0",
-            "home_goals": 4,
+            "score": "1 - 0",
+            "home_goals": 1,
             "away_goals": 0,
-            "probability_pct": 8.56
+            "probability_pct": 9.39
           },
           {
             "score": "2 - 1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability_pct": 7.9
+            "probability_pct": 8.39
           },
           {
-            "score": "3 - 1",
-            "home_goals": 3,
-            "away_goals": 1,
-            "probability_pct": 7.72
+            "score": "4 - 0",
+            "home_goals": 4,
+            "away_goals": 0,
+            "probability_pct": 7.74
           }
         ],
         "1x2_probabilities": {
-          "home_win_pct": 75.63,
+          "home_win_pct": 73.72,
           "draw_pct": 26.0,
-          "away_win_pct": -1.64
+          "away_win_pct": 0.29
         },
         "goals_markets": {
-          "over_1_5_pct": 87.79,
-          "under_1_5_pct": 12.21,
-          "over_2_5_pct": 69.23,
-          "under_2_5_pct": 30.77,
-          "over_3_5_pct": 47.72,
-          "under_3_5_pct": 52.28,
-          "btts_yes_pct": 46.3,
-          "btts_no_pct": 53.7
+          "over_1_5_pct": 84.38,
+          "under_1_5_pct": 15.62,
+          "over_2_5_pct": 63.24,
+          "under_2_5_pct": 36.76,
+          "over_3_5_pct": 40.96,
+          "under_3_5_pct": 59.04,
+          "btts_yes_pct": 44.09,
+          "btts_no_pct": 55.91
         },
         "simulated_averages": {
-          "home_goals": 2.94,
-          "away_goals": 0.66,
-          "total_goals": 3.6
+          "home_goals": 2.65,
+          "away_goals": 0.64,
+          "total_goals": 3.29
         }
       },
       "corners_prediction": {
@@ -769,81 +937,95 @@
           {
             "name": "Robert Lewandowski",
             "position": "Delantero Centro Killer",
-            "expected_shots": 5.35,
-            "expected_sot": 2.74,
-            "prob_at_least_1_sot_pct": 93.6,
-            "prob_at_least_2_sot_pct": 75.9,
-            "prob_over_1_5_shots_pct": 97.0,
-            "prob_over_2_5_shots_pct": 90.2,
-            "goal_anytime_prob_pct": 72.0
+            "health_status": "Disponible",
+            "expected_shots": 4.81,
+            "expected_sot": 2.47,
+            "prob_at_least_1_sot_pct": 91.5,
+            "prob_at_least_2_sot_pct": 70.6,
+            "prob_over_1_5_shots_pct": 95.3,
+            "prob_over_2_5_shots_pct": 85.9,
+            "goal_anytime_prob_pct": 72.0,
+            "reallocated_from": null
           },
           {
             "name": "Lamine Yamal",
             "position": "Extremo Generacional",
-            "expected_shots": 4.39,
-            "expected_sot": 2.06,
-            "prob_at_least_1_sot_pct": 87.2,
-            "prob_at_least_2_sot_pct": 60.9,
-            "prob_over_1_5_shots_pct": 93.3,
-            "prob_over_2_5_shots_pct": 81.3,
-            "goal_anytime_prob_pct": 46.0
+            "health_status": "Disponible",
+            "expected_shots": 4.54,
+            "expected_sot": 2.11,
+            "prob_at_least_1_sot_pct": 87.9,
+            "prob_at_least_2_sot_pct": 62.3,
+            "prob_over_1_5_shots_pct": 94.1,
+            "prob_over_2_5_shots_pct": 83.1,
+            "goal_anytime_prob_pct": 46.0,
+            "reallocated_from": "Dani Olmo"
           },
           {
             "name": "Raphinha",
             "position": "Extremo / Conductor",
-            "expected_shots": 4.8,
-            "expected_sot": 2.33,
-            "prob_at_least_1_sot_pct": 90.3,
-            "prob_at_least_2_sot_pct": 67.6,
-            "prob_over_1_5_shots_pct": 95.2,
-            "prob_over_2_5_shots_pct": 85.7,
-            "goal_anytime_prob_pct": 50.0
+            "health_status": "Disponible",
+            "expected_shots": 4.96,
+            "expected_sot": 2.39,
+            "prob_at_least_1_sot_pct": 90.9,
+            "prob_at_least_2_sot_pct": 69.0,
+            "prob_over_1_5_shots_pct": 95.8,
+            "prob_over_2_5_shots_pct": 87.2,
+            "goal_anytime_prob_pct": 50.0,
+            "reallocated_from": "Dani Olmo"
           },
           {
             "name": "Pedri",
             "position": "Mediocentro Creativo",
-            "expected_shots": 1.92,
-            "expected_sot": 0.69,
-            "prob_at_least_1_sot_pct": 49.6,
-            "prob_at_least_2_sot_pct": 15.1,
-            "prob_over_1_5_shots_pct": 57.2,
-            "prob_over_2_5_shots_pct": 30.1,
-            "goal_anytime_prob_pct": 18.0
+            "health_status": "Disponible",
+            "expected_shots": 1.99,
+            "expected_sot": 0.7,
+            "prob_at_least_1_sot_pct": 50.5,
+            "prob_at_least_2_sot_pct": 15.7,
+            "prob_over_1_5_shots_pct": 59.0,
+            "prob_over_2_5_shots_pct": 32.0,
+            "goal_anytime_prob_pct": 18.0,
+            "reallocated_from": "Dani Olmo"
           }
         ],
         "away_key_players": [
           {
             "name": "Borja Mayoral",
             "position": "Delantero Centro",
-            "expected_shots": 1.45,
-            "expected_sot": 0.59,
-            "prob_at_least_1_sot_pct": 44.7,
-            "prob_at_least_2_sot_pct": 12.0,
-            "prob_over_1_5_shots_pct": 42.5,
-            "prob_over_2_5_shots_pct": 17.8,
-            "goal_anytime_prob_pct": 28.0
+            "health_status": "Disponible",
+            "expected_shots": 1.58,
+            "expected_sot": 0.64,
+            "prob_at_least_1_sot_pct": 47.5,
+            "prob_at_least_2_sot_pct": 13.7,
+            "prob_over_1_5_shots_pct": 47.0,
+            "prob_over_2_5_shots_pct": 21.2,
+            "goal_anytime_prob_pct": 28.0,
+            "reallocated_from": "Álvaro Rodríguez"
           },
           {
             "name": "Luis Milla",
             "position": "Pivote Organizador",
-            "expected_shots": 0.72,
+            "health_status": "Disponible",
+            "expected_shots": 0.69,
             "expected_sot": 0.2,
             "prob_at_least_1_sot_pct": 18.1,
             "prob_at_least_2_sot_pct": 1.8,
-            "prob_over_1_5_shots_pct": 16.4,
-            "prob_over_2_5_shots_pct": 3.7,
-            "goal_anytime_prob_pct": 8.0
+            "prob_over_1_5_shots_pct": 15.2,
+            "prob_over_2_5_shots_pct": 3.3,
+            "goal_anytime_prob_pct": 8.0,
+            "reallocated_from": null
           },
           {
             "name": "Mauro Arambarri",
             "position": "Mediocentro Físico",
-            "expected_shots": 1.05,
-            "expected_sot": 0.4,
-            "prob_at_least_1_sot_pct": 32.6,
-            "prob_at_least_2_sot_pct": 6.0,
-            "prob_over_1_5_shots_pct": 28.4,
-            "prob_over_2_5_shots_pct": 9.0,
-            "goal_anytime_prob_pct": 15.0
+            "health_status": "Disponible",
+            "expected_shots": 1.0,
+            "expected_sot": 0.38,
+            "prob_at_least_1_sot_pct": 31.3,
+            "prob_at_least_2_sot_pct": 5.5,
+            "prob_over_1_5_shots_pct": 26.5,
+            "prob_over_2_5_shots_pct": 8.0,
+            "goal_anytime_prob_pct": 15.0,
+            "reallocated_from": null
           }
         ]
       },
@@ -869,11 +1051,11 @@
         {
           "market": "Gol de Equipo de Seguridad",
           "selection": "Barcelona anota más de 0.5 goles",
-          "probability": 95.3,
+          "probability": 94.5,
           "odds": 1.15,
           "availability": "Universal en todas las plataformas",
           "rationale": "El equipo local promedia suficiente xG para asegurar al menos un tanto.",
-          "_rank_score": 99.3
+          "_rank_score": 98.5
         },
         {
           "market": "Línea de Goles de Seguridad",
@@ -939,14 +1121,42 @@
         },
         "tactical_xg_multiplier_home": 1.0,
         "tactical_xg_multiplier_away": 1.0,
-        "corner_dampener_factor": 0.85,
+        "corner_dampener_factor": 1.0,
         "player_role_restrictions": {},
         "tactical_summary": "Choque de estilos: Estándar vs Estándar"
       },
       "squad_health": {
-        "home_vetoed": [],
+        "home_team": "Arsenal",
+        "away_team": "Leeds United",
+        "home_vetoed": [
+          {
+            "name": "Martin Ødegaard",
+            "injury": "Lesión significativa de ligamentos de tobillo",
+            "severity": "BAJA CONFIRMADA",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "Capitán y motor creativo descartado. Bukayo Saka y Kai Havertz asumen el peso ofensivo."
+          },
+          {
+            "name": "Oleksandr Zinchenko",
+            "injury": "Lesión en la pantorrilla",
+            "severity": "BAJA CONFIRMADA",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "Baja en lateral izquierdo."
+          },
+          {
+            "name": "Takehiro Tomiyasu",
+            "injury": "Lesión de rodilla",
+            "severity": "BAJA",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "No disponible para la convocatoria."
+          }
+        ],
         "away_vetoed": [],
-        "status": "Convocatorias y Titulares Ratificados"
+        "home_reallocation": "Ausencia de Martin Ødegaard: Volumen de tiros transferido hacia Bukayo Saka, Kai Havertz, Declan Rice.",
+        "away_reallocation": "Plantel al 100% sin reasignación necesaria.",
+        "home_health_status": "VETO ACTIVO: Bajas Detectadas",
+        "away_health_status": "Plantel Ratificado al 100%",
+        "status": "Auditoría Médica y Convocatorias Oficiales Verificadas"
       },
       "psychological_context": {
         "tournament_urgency": 0.9,
@@ -960,80 +1170,80 @@
       },
       "score_prediction": {
         "most_probable_score": "2 - 0",
-        "most_probable_prob_pct": 11.12,
+        "most_probable_prob_pct": 11.35,
         "top_5_scores": [
           {
             "score": "2 - 0",
             "home_goals": 2,
             "away_goals": 0,
-            "probability_pct": 11.12
-          },
-          {
-            "score": "2 - 1",
-            "home_goals": 2,
-            "away_goals": 1,
-            "probability_pct": 9.68
+            "probability_pct": 11.35
           },
           {
             "score": "1 - 1",
             "home_goals": 1,
             "away_goals": 1,
-            "probability_pct": 9.3
+            "probability_pct": 10.8
           },
           {
             "score": "1 - 0",
             "home_goals": 1,
             "away_goals": 0,
-            "probability_pct": 8.71
+            "probability_pct": 10.11
+          },
+          {
+            "score": "2 - 1",
+            "home_goals": 2,
+            "away_goals": 1,
+            "probability_pct": 9.88
           },
           {
             "score": "3 - 0",
             "home_goals": 3,
             "away_goals": 0,
-            "probability_pct": 8.57
+            "probability_pct": 7.68
           }
         ],
         "1x2_probabilities": {
-          "home_win_pct": 65.52,
+          "home_win_pct": 61.53,
           "draw_pct": 26.0,
-          "away_win_pct": 8.49
+          "away_win_pct": 12.47
         },
         "goals_markets": {
-          "over_1_5_pct": 83.49,
-          "under_1_5_pct": 16.51,
-          "over_2_5_pct": 61.49,
-          "under_2_5_pct": 38.51,
-          "over_3_5_pct": 39.14,
-          "under_3_5_pct": 60.86,
-          "btts_yes_pct": 53.24,
-          "btts_no_pct": 46.76
+          "over_1_5_pct": 79.59,
+          "under_1_5_pct": 20.41,
+          "over_2_5_pct": 55.35,
+          "under_2_5_pct": 44.65,
+          "over_3_5_pct": 32.96,
+          "under_3_5_pct": 67.04,
+          "btts_yes_pct": 51.53,
+          "btts_no_pct": 48.47
         },
         "simulated_averages": {
-          "home_goals": 2.32,
+          "home_goals": 2.03,
           "away_goals": 0.88,
-          "total_goals": 3.19
+          "total_goals": 2.91
         }
       },
       "corners_prediction": {
-        "home_corners_expected": 5.3,
-        "away_corners_expected": 3.6,
-        "total_corners_expected": 8.9,
-        "most_likely_range": "7 - 10 córners",
+        "home_corners_expected": 6.2,
+        "away_corners_expected": 4.3,
+        "total_corners_expected": 10.5,
+        "most_likely_range": "9 - 12 córners",
         "lines": {
-          "over_8_5_pct": 53.1,
-          "under_8_5_pct": 46.9,
-          "over_9_5_pct": 39.9,
-          "under_9_5_pct": 60.1,
-          "over_10_5_pct": 28.2,
-          "under_10_5_pct": 71.8,
-          "over_11_5_pct": 18.7,
-          "under_11_5_pct": 81.3
+          "over_8_5_pct": 72.1,
+          "under_8_5_pct": 27.9,
+          "over_9_5_pct": 60.3,
+          "under_9_5_pct": 39.7,
+          "over_10_5_pct": 47.9,
+          "under_10_5_pct": 52.1,
+          "over_11_5_pct": 36.1,
+          "under_11_5_pct": 63.9
         },
         "team_lines": {
-          "home_over_4_5_pct": 61.0,
-          "home_over_5_5_pct": 43.7,
-          "away_over_3_5_pct": 48.5,
-          "away_over_4_5_pct": 29.4
+          "home_over_4_5_pct": 74.1,
+          "home_over_5_5_pct": 58.6,
+          "away_over_3_5_pct": 62.3,
+          "away_over_4_5_pct": 43.0
         }
       },
       "cards_prediction": {
@@ -1064,111 +1274,134 @@
           {
             "name": "Bukayo Saka",
             "position": "Extremo Derecho Élite",
-            "expected_shots": 3.93,
+            "health_status": "Disponible",
+            "expected_shots": 3.97,
             "expected_sot": 1.91,
             "prob_at_least_1_sot_pct": 85.1,
             "prob_at_least_2_sot_pct": 56.8,
-            "prob_over_1_5_shots_pct": 90.3,
-            "prob_over_2_5_shots_pct": 75.1,
-            "goal_anytime_prob_pct": 48.0
+            "prob_over_1_5_shots_pct": 90.6,
+            "prob_over_2_5_shots_pct": 75.8,
+            "goal_anytime_prob_pct": 48.0,
+            "reallocated_from": "Martin Ødegaard"
           },
           {
             "name": "Kai Havertz",
             "position": "Delantero Boya",
-            "expected_shots": 3.57,
-            "expected_sot": 1.67,
-            "prob_at_least_1_sot_pct": 81.1,
-            "prob_at_least_2_sot_pct": 49.6,
-            "prob_over_1_5_shots_pct": 87.2,
-            "prob_over_2_5_shots_pct": 69.2,
-            "goal_anytime_prob_pct": 45.0
+            "health_status": "Disponible",
+            "expected_shots": 3.62,
+            "expected_sot": 1.68,
+            "prob_at_least_1_sot_pct": 81.3,
+            "prob_at_least_2_sot_pct": 49.9,
+            "prob_over_1_5_shots_pct": 87.6,
+            "prob_over_2_5_shots_pct": 70.0,
+            "goal_anytime_prob_pct": 45.0,
+            "reallocated_from": "Martin Ødegaard"
           },
           {
             "name": "Gabriel Martinelli",
             "position": "Extremo Eléctrico",
-            "expected_shots": 3.33,
-            "expected_sot": 1.43,
-            "prob_at_least_1_sot_pct": 76.0,
-            "prob_at_least_2_sot_pct": 41.8,
-            "prob_over_1_5_shots_pct": 84.5,
-            "prob_over_2_5_shots_pct": 64.7,
-            "goal_anytime_prob_pct": 38.0
+            "health_status": "Disponible",
+            "expected_shots": 2.93,
+            "expected_sot": 1.26,
+            "prob_at_least_1_sot_pct": 71.6,
+            "prob_at_least_2_sot_pct": 35.8,
+            "prob_over_1_5_shots_pct": 79.1,
+            "prob_over_2_5_shots_pct": 56.2,
+            "goal_anytime_prob_pct": 38.0,
+            "reallocated_from": null
           },
           {
             "name": "Declan Rice",
             "position": "Pivote / Balón Parado",
-            "expected_shots": 1.91,
+            "health_status": "Disponible",
+            "expected_shots": 1.93,
             "expected_sot": 0.71,
-            "prob_at_least_1_sot_pct": 51.1,
-            "prob_at_least_2_sot_pct": 16.1,
-            "prob_over_1_5_shots_pct": 56.8,
-            "prob_over_2_5_shots_pct": 29.8,
-            "goal_anytime_prob_pct": 16.0
+            "prob_at_least_1_sot_pct": 51.0,
+            "prob_at_least_2_sot_pct": 16.0,
+            "prob_over_1_5_shots_pct": 57.4,
+            "prob_over_2_5_shots_pct": 30.4,
+            "goal_anytime_prob_pct": 16.0,
+            "reallocated_from": "Martin Ødegaard"
           }
         ],
         "away_key_players": [
           {
             "name": "Joël Piroe",
             "position": "Delantero Centro",
+            "health_status": "Disponible",
             "expected_shots": 2.19,
             "expected_sot": 1.01,
             "prob_at_least_1_sot_pct": 63.6,
             "prob_at_least_2_sot_pct": 26.8,
             "prob_over_1_5_shots_pct": 64.2,
             "prob_over_2_5_shots_pct": 37.4,
-            "goal_anytime_prob_pct": 36.0
+            "goal_anytime_prob_pct": 36.0,
+            "reallocated_from": null
           },
           {
             "name": "Wilfried Gnonto",
             "position": "Extremo Desequilibrio",
+            "health_status": "Disponible",
             "expected_shots": 1.94,
             "expected_sot": 0.84,
             "prob_at_least_1_sot_pct": 56.9,
             "prob_at_least_2_sot_pct": 20.6,
             "prob_over_1_5_shots_pct": 57.6,
             "prob_over_2_5_shots_pct": 30.6,
-            "goal_anytime_prob_pct": 28.0
+            "goal_anytime_prob_pct": 28.0,
+            "reallocated_from": null
           },
           {
             "name": "Brenden Aaronson",
             "position": "Mediapunta Presión",
+            "health_status": "Disponible",
             "expected_shots": 1.51,
             "expected_sot": 0.59,
             "prob_at_least_1_sot_pct": 44.5,
             "prob_at_least_2_sot_pct": 11.8,
             "prob_over_1_5_shots_pct": 44.7,
             "prob_over_2_5_shots_pct": 19.5,
-            "goal_anytime_prob_pct": 20.0
+            "goal_anytime_prob_pct": 20.0,
+            "reallocated_from": null
           }
         ]
       },
       "la_fija_real": {
         "market": "Doble Oportunidad Blindada",
         "selection": "Arsenal o Empate (1X)",
-        "probability": 91.5,
-        "odds": 1.16,
+        "probability": 87.5,
+        "odds": 1.21,
         "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-        "rationale": "Protección total ante el empate con 91.5% de cobertura en casa.",
-        "_rank_score": 99.5
+        "rationale": "Protección total ante el empate con 87.5% de cobertura en casa.",
+        "_rank_score": 95.5
       },
       "all_fija_options": [
         {
           "market": "Doble Oportunidad Blindada",
           "selection": "Arsenal o Empate (1X)",
-          "probability": 91.5,
-          "odds": 1.16,
+          "probability": 87.5,
+          "odds": 1.21,
           "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "Protección total ante el empate con 91.5% de cobertura en casa.",
-          "_rank_score": 99.5
+          "rationale": "Protección total ante el empate con 87.5% de cobertura en casa.",
+          "_rank_score": 95.5
+        },
+        {
+          "market": "Córners Base de Seguridad",
+          "selection": "Más de 6.5 córners totales",
+          "probability": 94.0,
+          "odds": 1.2,
+          "availability": "Línea alternativa en Bet365 / Betano",
+          "rationale": "Línea conservadora rebajada en 3 esquinas frente a la línea media del mercado.",
+          "_rank_score": 94.0
         },
         {
           "market": "Gol de Equipo de Seguridad",
           "selection": "Arsenal anota más de 0.5 goles",
-          "probability": 91.2,
+          "probability": 89.6,
           "odds": 1.15,
           "availability": "Universal en todas las plataformas",
           "rationale": "El equipo local promedia suficiente xG para asegurar al menos un tanto.",
-          "_rank_score": 95.2
+          "_rank_score": 93.6
         },
         {
           "market": "Línea de Goles de Seguridad",
@@ -1239,9 +1472,30 @@
         "tactical_summary": "Choque de estilos: Estándar vs Estándar"
       },
       "squad_health": {
-        "home_vetoed": [],
+        "home_team": "Inter Milan",
+        "away_team": "Parma",
+        "home_vetoed": [
+          {
+            "name": "Nicolò Barella",
+            "injury": "Distracción muscular en el recto femoral del muslo derecho",
+            "severity": "BAJA CONFIRMADA",
+            "action": "VETO TOTAL DE PROPS (Excluido de Remates/Goles)",
+            "medical_detail": "El pulmón del mediocampo nerazzurro se pierde el partido por lesión muscular."
+          },
+          {
+            "name": "Tajon Buchanan",
+            "injury": "Fractura de tibia",
+            "severity": "BAJA",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "En proceso de consolidación ósea."
+          }
+        ],
         "away_vetoed": [],
-        "status": "Convocatorias y Titulares Ratificados"
+        "home_reallocation": "Ausencia de Nicolò Barella: Volumen de tiros transferido hacia Hakan Çalhanoğlu, Henrikh Mkhitaryan, Lautaro Martínez.",
+        "away_reallocation": "Plantel al 100% sin reasignación necesaria.",
+        "home_health_status": "VETO ACTIVO: Bajas Detectadas",
+        "away_health_status": "Plantel Ratificado al 100%",
+        "status": "Auditoría Médica y Convocatorias Oficiales Verificadas"
       },
       "psychological_context": {
         "tournament_urgency": 0.9,
@@ -1255,58 +1509,58 @@
       },
       "score_prediction": {
         "most_probable_score": "2 - 0",
-        "most_probable_prob_pct": 9.62,
+        "most_probable_prob_pct": 10.23,
         "top_5_scores": [
           {
             "score": "2 - 0",
             "home_goals": 2,
             "away_goals": 0,
-            "probability_pct": 9.62
-          },
-          {
-            "score": "3 - 0",
-            "home_goals": 3,
-            "away_goals": 0,
-            "probability_pct": 9.04
+            "probability_pct": 10.23
           },
           {
             "score": "2 - 1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability_pct": 8.76
+            "probability_pct": 9.3
           },
           {
-            "score": "3 - 1",
+            "score": "3 - 0",
             "home_goals": 3,
-            "away_goals": 1,
-            "probability_pct": 8.23
+            "away_goals": 0,
+            "probability_pct": 8.76
           },
           {
             "score": "1 - 1",
             "home_goals": 1,
             "away_goals": 1,
-            "probability_pct": 6.89
+            "probability_pct": 8.04
+          },
+          {
+            "score": "3 - 1",
+            "home_goals": 3,
+            "away_goals": 1,
+            "probability_pct": 7.97
           }
         ],
         "1x2_probabilities": {
-          "home_win_pct": 70.62,
+          "home_win_pct": 67.93,
           "draw_pct": 26.0,
-          "away_win_pct": 3.39
+          "away_win_pct": 6.07
         },
         "goals_markets": {
-          "over_1_5_pct": 89.24,
-          "under_1_5_pct": 10.76,
-          "over_2_5_pct": 71.72,
-          "under_2_5_pct": 28.28,
-          "over_3_5_pct": 50.79,
-          "under_3_5_pct": 49.21,
-          "btts_yes_pct": 56.84,
-          "btts_no_pct": 43.16
+          "over_1_5_pct": 86.93,
+          "under_1_5_pct": 13.07,
+          "over_2_5_pct": 67.38,
+          "under_2_5_pct": 32.62,
+          "over_3_5_pct": 45.63,
+          "under_3_5_pct": 54.37,
+          "btts_yes_pct": 55.95,
+          "btts_no_pct": 44.05
         },
         "simulated_averages": {
-          "home_goals": 2.83,
-          "away_goals": 0.91,
-          "total_goals": 3.74
+          "home_goals": 2.57,
+          "away_goals": 0.92,
+          "total_goals": 3.49
         }
       },
       "corners_prediction": {
@@ -1359,111 +1613,112 @@
           {
             "name": "Lautaro Martínez",
             "position": "Delantero Capitán",
-            "expected_shots": 4.44,
-            "expected_sot": 2.22,
-            "prob_at_least_1_sot_pct": 89.1,
-            "prob_at_least_2_sot_pct": 65.0,
-            "prob_over_1_5_shots_pct": 93.6,
-            "prob_over_2_5_shots_pct": 81.9,
-            "goal_anytime_prob_pct": 65.0
+            "health_status": "Disponible",
+            "expected_shots": 4.64,
+            "expected_sot": 2.3,
+            "prob_at_least_1_sot_pct": 90.0,
+            "prob_at_least_2_sot_pct": 67.0,
+            "prob_over_1_5_shots_pct": 94.6,
+            "prob_over_2_5_shots_pct": 84.2,
+            "goal_anytime_prob_pct": 65.0,
+            "reallocated_from": "Nicolò Barella"
           },
           {
             "name": "Marcus Thuram",
             "position": "Delantero Potencia",
-            "expected_shots": 3.73,
-            "expected_sot": 1.75,
-            "prob_at_least_1_sot_pct": 82.6,
-            "prob_at_least_2_sot_pct": 52.2,
-            "prob_over_1_5_shots_pct": 88.7,
-            "prob_over_2_5_shots_pct": 72.0,
-            "goal_anytime_prob_pct": 48.0
+            "health_status": "Disponible",
+            "expected_shots": 3.4,
+            "expected_sot": 1.59,
+            "prob_at_least_1_sot_pct": 79.7,
+            "prob_at_least_2_sot_pct": 47.3,
+            "prob_over_1_5_shots_pct": 85.3,
+            "prob_over_2_5_shots_pct": 66.0,
+            "goal_anytime_prob_pct": 48.0,
+            "reallocated_from": null
           },
           {
             "name": "Hakan Çalhanoğlu",
             "position": "Pivote / Francotirador",
-            "expected_shots": 2.57,
-            "expected_sot": 1.05,
-            "prob_at_least_1_sot_pct": 65.0,
-            "prob_at_least_2_sot_pct": 28.3,
-            "prob_over_1_5_shots_pct": 72.6,
-            "prob_over_2_5_shots_pct": 47.3,
-            "goal_anytime_prob_pct": 28.0
-          },
-          {
-            "name": "Nicolò Barella",
-            "position": "Interior Box-to-Box",
-            "expected_shots": 2.1,
-            "expected_sot": 0.82,
-            "prob_at_least_1_sot_pct": 55.8,
-            "prob_at_least_2_sot_pct": 19.7,
-            "prob_over_1_5_shots_pct": 62.1,
-            "prob_over_2_5_shots_pct": 35.1,
-            "goal_anytime_prob_pct": 20.0
+            "health_status": "Disponible",
+            "expected_shots": 2.69,
+            "expected_sot": 1.09,
+            "prob_at_least_1_sot_pct": 66.5,
+            "prob_at_least_2_sot_pct": 29.9,
+            "prob_over_1_5_shots_pct": 74.9,
+            "prob_over_2_5_shots_pct": 50.3,
+            "goal_anytime_prob_pct": 28.0,
+            "reallocated_from": "Nicolò Barella"
           }
         ],
         "away_key_players": [
           {
             "name": "Ange-Yoan Bonny",
             "position": "Delantero Dinámico",
+            "health_status": "Disponible",
             "expected_shots": 2.08,
             "expected_sot": 0.95,
             "prob_at_least_1_sot_pct": 61.4,
             "prob_at_least_2_sot_pct": 24.6,
             "prob_over_1_5_shots_pct": 61.4,
             "prob_over_2_5_shots_pct": 34.4,
-            "goal_anytime_prob_pct": 32.0
+            "goal_anytime_prob_pct": 32.0,
+            "reallocated_from": null
           },
           {
             "name": "Dennis Man",
             "position": "Extremo Zurdo",
+            "health_status": "Disponible",
             "expected_shots": 2.16,
             "expected_sot": 1.04,
             "prob_at_least_1_sot_pct": 64.6,
             "prob_at_least_2_sot_pct": 27.8,
             "prob_over_1_5_shots_pct": 63.6,
             "prob_over_2_5_shots_pct": 36.7,
-            "goal_anytime_prob_pct": 34.0
+            "goal_anytime_prob_pct": 34.0,
+            "reallocated_from": null
           },
           {
             "name": "Valentin Mihăilă",
             "position": "Extremo Diestro",
+            "health_status": "Disponible",
             "expected_shots": 1.82,
             "expected_sot": 0.69,
             "prob_at_least_1_sot_pct": 49.9,
             "prob_at_least_2_sot_pct": 15.3,
             "prob_over_1_5_shots_pct": 54.2,
             "prob_over_2_5_shots_pct": 27.4,
-            "goal_anytime_prob_pct": 22.0
+            "goal_anytime_prob_pct": 22.0,
+            "reallocated_from": null
           }
         ]
       },
       "la_fija_real": {
         "market": "Doble Oportunidad Blindada",
         "selection": "Inter Milan o Empate (1X)",
-        "probability": 96.6,
-        "odds": 1.12,
+        "probability": 93.9,
+        "odds": 1.13,
         "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-        "rationale": "Protección total ante el empate con 96.6% de cobertura en casa.",
-        "_rank_score": 104.6
+        "rationale": "Protección total ante el empate con 93.9% de cobertura en casa.",
+        "_rank_score": 101.9
       },
       "all_fija_options": [
         {
           "market": "Doble Oportunidad Blindada",
           "selection": "Inter Milan o Empate (1X)",
-          "probability": 96.6,
-          "odds": 1.12,
+          "probability": 93.9,
+          "odds": 1.13,
           "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "Protección total ante el empate con 96.6% de cobertura en casa.",
-          "_rank_score": 104.6
+          "rationale": "Protección total ante el empate con 93.9% de cobertura en casa.",
+          "_rank_score": 101.9
         },
         {
           "market": "Gol de Equipo de Seguridad",
           "selection": "Inter Milan anota más de 0.5 goles",
-          "probability": 93.2,
+          "probability": 92.2,
           "odds": 1.15,
           "availability": "Universal en todas las plataformas",
           "rationale": "El equipo local promedia suficiente xG para asegurar al menos un tanto.",
-          "_rank_score": 97.2
+          "_rank_score": 96.2
         },
         {
           "market": "Línea de Goles de Seguridad",
@@ -1534,9 +1789,30 @@
         "tactical_summary": "Choque de estilos: Estándar vs Estándar"
       },
       "squad_health": {
-        "home_vetoed": [],
+        "home_team": "Borussia Dortmund",
+        "away_team": "Werder Bremen",
+        "home_vetoed": [
+          {
+            "name": "Giovanni Reyna",
+            "injury": "Lesión en la ingle",
+            "severity": "BAJA CONFIRMADA",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "Baja en la mediapunta."
+          },
+          {
+            "name": "Julien Duranville",
+            "injury": "Lesión muscular en el muslo",
+            "severity": "BAJA",
+            "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+            "medical_detail": "Baja en los extremos."
+          }
+        ],
         "away_vetoed": [],
-        "status": "Convocatorias y Titulares Ratificados"
+        "home_reallocation": "Ausencia de Giovanni Reyna: Volumen de tiros transferido hacia Julian Brandt, Serhou Guirassy.",
+        "away_reallocation": "Plantel al 100% sin reasignación necesaria.",
+        "home_health_status": "VETO ACTIVO: Bajas Detectadas",
+        "away_health_status": "Plantel Ratificado al 100%",
+        "status": "Auditoría Médica y Convocatorias Oficiales Verificadas"
       },
       "psychological_context": {
         "tournament_urgency": 0.9,
@@ -1550,58 +1826,58 @@
       },
       "score_prediction": {
         "most_probable_score": "3 - 1",
-        "most_probable_prob_pct": 8.1,
+        "most_probable_prob_pct": 8.23,
         "top_5_scores": [
           {
             "score": "3 - 1",
             "home_goals": 3,
             "away_goals": 1,
-            "probability_pct": 8.1
+            "probability_pct": 8.23
           },
           {
             "score": "3 - 0",
             "home_goals": 3,
             "away_goals": 0,
-            "probability_pct": 7.43
-          },
-          {
-            "score": "4 - 1",
-            "home_goals": 4,
-            "away_goals": 1,
-            "probability_pct": 7.15
+            "probability_pct": 7.55
           },
           {
             "score": "2 - 1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability_pct": 6.88
+            "probability_pct": 7.37
           },
           {
-            "score": "4 - 0",
+            "score": "4 - 1",
             "home_goals": 4,
+            "away_goals": 1,
+            "probability_pct": 6.89
+          },
+          {
+            "score": "2 - 0",
+            "home_goals": 2,
             "away_goals": 0,
-            "probability_pct": 6.56
+            "probability_pct": 6.76
           }
         ],
         "1x2_probabilities": {
-          "home_win_pct": 73.98,
+          "home_win_pct": 72.57,
           "draw_pct": 26.0,
-          "away_win_pct": 0.03
+          "away_win_pct": 1.43
         },
         "goals_markets": {
-          "over_1_5_pct": 94.73,
-          "under_1_5_pct": 5.27,
-          "over_2_5_pct": 83.49,
-          "under_2_5_pct": 16.51,
-          "over_3_5_pct": 66.83,
-          "under_3_5_pct": 33.17,
-          "btts_yes_pct": 64.81,
-          "btts_no_pct": 35.19
+          "over_1_5_pct": 93.93,
+          "under_1_5_pct": 6.07,
+          "over_2_5_pct": 81.56,
+          "under_2_5_pct": 18.44,
+          "over_3_5_pct": 63.98,
+          "under_3_5_pct": 36.02,
+          "btts_yes_pct": 64.48,
+          "btts_no_pct": 35.52
         },
         "simulated_averages": {
-          "home_goals": 3.54,
-          "away_goals": 1.1,
-          "total_goals": 4.64
+          "home_goals": 3.35,
+          "away_goals": 1.09,
+          "total_goals": 4.44
         }
       },
       "corners_prediction": {
@@ -1654,81 +1930,95 @@
           {
             "name": "Serhou Guirassy",
             "position": "Delantero Centro Killer",
-            "expected_shots": 4.32,
-            "expected_sot": 2.22,
-            "prob_at_least_1_sot_pct": 89.1,
-            "prob_at_least_2_sot_pct": 64.9,
-            "prob_over_1_5_shots_pct": 92.9,
-            "prob_over_2_5_shots_pct": 80.5,
-            "goal_anytime_prob_pct": 66.0
+            "health_status": "Disponible",
+            "expected_shots": 4.71,
+            "expected_sot": 2.4,
+            "prob_at_least_1_sot_pct": 91.0,
+            "prob_at_least_2_sot_pct": 69.3,
+            "prob_over_1_5_shots_pct": 94.9,
+            "prob_over_2_5_shots_pct": 84.9,
+            "goal_anytime_prob_pct": 66.0,
+            "reallocated_from": "Giovanni Reyna"
           },
           {
             "name": "Julian Brandt",
             "position": "Mediapunta Creador",
-            "expected_shots": 2.57,
-            "expected_sot": 1.05,
-            "prob_at_least_1_sot_pct": 65.0,
-            "prob_at_least_2_sot_pct": 28.3,
-            "prob_over_1_5_shots_pct": 72.6,
-            "prob_over_2_5_shots_pct": 47.3,
-            "goal_anytime_prob_pct": 28.0
+            "health_status": "Disponible",
+            "expected_shots": 2.8,
+            "expected_sot": 1.14,
+            "prob_at_least_1_sot_pct": 68.1,
+            "prob_at_least_2_sot_pct": 31.6,
+            "prob_over_1_5_shots_pct": 77.0,
+            "prob_over_2_5_shots_pct": 53.1,
+            "goal_anytime_prob_pct": 28.0,
+            "reallocated_from": "Giovanni Reyna"
           },
           {
             "name": "Jamie Bynoe-Gittens",
             "position": "Extremo Desborde",
-            "expected_shots": 3.38,
-            "expected_sot": 1.63,
-            "prob_at_least_1_sot_pct": 80.5,
-            "prob_at_least_2_sot_pct": 48.6,
-            "prob_over_1_5_shots_pct": 85.1,
-            "prob_over_2_5_shots_pct": 65.7,
-            "goal_anytime_prob_pct": 36.0
+            "health_status": "Disponible",
+            "expected_shots": 3.21,
+            "expected_sot": 1.55,
+            "prob_at_least_1_sot_pct": 78.8,
+            "prob_at_least_2_sot_pct": 45.9,
+            "prob_over_1_5_shots_pct": 83.1,
+            "prob_over_2_5_shots_pct": 62.3,
+            "goal_anytime_prob_pct": 36.0,
+            "reallocated_from": null
           },
           {
             "name": "Karim Adeyemi",
             "position": "Extremo Supersónico",
-            "expected_shots": 3.62,
-            "expected_sot": 1.75,
-            "prob_at_least_1_sot_pct": 82.6,
-            "prob_at_least_2_sot_pct": 52.2,
-            "prob_over_1_5_shots_pct": 87.6,
-            "prob_over_2_5_shots_pct": 70.0,
-            "goal_anytime_prob_pct": 44.0
+            "health_status": "Disponible",
+            "expected_shots": 3.44,
+            "expected_sot": 1.66,
+            "prob_at_least_1_sot_pct": 81.0,
+            "prob_at_least_2_sot_pct": 49.5,
+            "prob_over_1_5_shots_pct": 85.7,
+            "prob_over_2_5_shots_pct": 66.7,
+            "goal_anytime_prob_pct": 44.0,
+            "reallocated_from": null
           }
         ],
         "away_key_players": [
           {
             "name": "Marvin Ducksch",
             "position": "Delantero / Balón Parado",
+            "health_status": "Disponible",
             "expected_shots": 1.99,
             "expected_sot": 0.85,
             "prob_at_least_1_sot_pct": 57.5,
             "prob_at_least_2_sot_pct": 21.1,
             "prob_over_1_5_shots_pct": 59.2,
             "prob_over_2_5_shots_pct": 32.2,
-            "goal_anytime_prob_pct": 38.0
+            "goal_anytime_prob_pct": 38.0,
+            "reallocated_from": null
           },
           {
             "name": "Jens Stage",
             "position": "Mediocentro Llegada",
+            "health_status": "Disponible",
             "expected_shots": 1.42,
             "expected_sot": 0.57,
             "prob_at_least_1_sot_pct": 43.4,
             "prob_at_least_2_sot_pct": 11.2,
             "prob_over_1_5_shots_pct": 41.7,
             "prob_over_2_5_shots_pct": 17.2,
-            "goal_anytime_prob_pct": 26.0
+            "goal_anytime_prob_pct": 26.0,
+            "reallocated_from": null
           },
           {
             "name": "Mitchell Weiser",
             "position": "Carrilero Ofensivo",
+            "health_status": "Disponible",
             "expected_shots": 1.07,
             "expected_sot": 0.43,
             "prob_at_least_1_sot_pct": 34.8,
             "prob_at_least_2_sot_pct": 6.9,
             "prob_over_1_5_shots_pct": 28.9,
             "prob_over_2_5_shots_pct": 9.3,
-            "goal_anytime_prob_pct": 16.0
+            "goal_anytime_prob_pct": 16.0,
+            "reallocated_from": null
           }
         ]
       },
@@ -1754,11 +2044,11 @@
         {
           "market": "Gol de Equipo de Seguridad",
           "selection": "Borussia Dortmund anota más de 0.5 goles",
-          "probability": 94.6,
+          "probability": 94.0,
           "odds": 1.15,
           "availability": "Universal en todas las plataformas",
           "rationale": "El equipo local promedia suficiente xG para asegurar al menos un tanto.",
-          "_rank_score": 98.6
+          "_rank_score": 98.0
         },
         {
           "market": "Línea de Goles de Seguridad",

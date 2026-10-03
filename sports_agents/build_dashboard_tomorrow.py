@@ -131,7 +131,7 @@ for i, m in enumerate(matches):
     home_pl = player_props.get("home_key_players", [])
     away_pl = player_props.get("away_key_players", [])
     player_rows = ""
-    for p in (home_pl[:3] + away_pl[:3]):
+    for p in (home_pl[:4] + away_pl[:3]):
         p_name = p.get("name", "Jugador")
         p_pos = p.get("position", "Delantero")
         p_team = h_team if p in home_pl else a_team
@@ -144,10 +144,13 @@ for i, m in enumerate(matches):
 
         sot_pill = "tag-emerald" if prob_sot >= 75 else "tag-cyan"
         shot_pill = "tag-amber" if prob_shot >= 85 else "tag-blue"
+        p_realloc = p.get("reallocated_from")
+        realloc_badge = f'<span class="tag-pill tag-cyan" style="font-size: 0.65rem; margin-left: 0.35rem;">+Volumen por baja de {p_realloc}</span>' if p_realloc else ''
+
         player_rows += f"""
             <tr>
                 <td>
-                    <div style="font-weight: 700; color: #ffffff;">{p_name}</div>
+                    <div style="font-weight: 700; color: #ffffff;">{p_name} {realloc_badge}</div>
                     <div style="font-size: 0.75rem; color: var(--text-muted);">{p_flag} {p_team} &bull; {p_pos}</div>
                 </td>
                 <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">{exp_shots}</td>
@@ -156,6 +159,56 @@ for i, m in enumerate(matches):
                 <td style="text-align: center;"><span class="tag-pill {shot_pill} mono-bold">{prob_shot}%</span></td>
                 <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">{prob_goal}%</span></td>
             </tr>
+        """
+
+    # Medical Bulletin & Squad Health Card
+    squad_h = m.get("squad_health", {})
+    all_vetoed = squad_h.get("home_vetoed", []) + squad_h.get("away_vetoed", [])
+    home_realloc = squad_h.get("home_reallocation", "")
+    away_realloc = squad_h.get("away_reallocation", "")
+    combined_realloc = " | ".join(filter(None, [home_realloc, away_realloc]))
+
+    if all_vetoed:
+        veto_cards = ""
+        for v in all_vetoed:
+            veto_cards += f"""
+                <div style="background: rgba(239, 68, 68, 0.12); border: 1px solid rgba(239, 68, 68, 0.35); border-radius: 10px; padding: 0.85rem 1rem; margin-top: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                        <span style="font-weight: 700; color: #f87171; font-size: 0.9rem;">🚫 {v['name']} &bull; {v.get('severity', 'BAJA MÉDICA')}</span>
+                        <span class="tag-pill tag-rose" style="font-size: 0.7rem;">PROPS VETADOS</span>
+                    </div>
+                    <div style="font-size: 0.8rem; color: #fca5a5;">
+                        <strong>Parte Médico:</strong> {v.get('injury', 'Lesión muscular')}. {v.get('medical_detail', '')}
+                    </div>
+                </div>
+            """
+        realloc_banner = ""
+        if combined_realloc and "sin reasignación" not in combined_realloc:
+            realloc_banner = f"""
+                <div style="margin-top: 0.6rem; font-size: 0.78rem; color: #94a3b8; background: rgba(0,0,0,0.3); padding: 0.45rem 0.75rem; border-radius: 8px;">
+                    🔄 <strong>Redistribución Táctica:</strong> {combined_realloc}
+                </div>
+            """
+        medical_html = f"""
+            <div class="card" style="margin-top: 1.5rem; border-color: rgba(239, 68, 68, 0.35);">
+                <div class="card-header">
+                    <div class="card-title" style="color: #f87171;">🏥 Auditoría Sanitaria & Boletín Médico Oficial (SquadInjuryAgent)</div>
+                    <span class="tag-pill tag-rose">Veto Sanitario Activo</span>
+                </div>
+                {veto_cards}
+                {realloc_banner}
+            </div>
+        """
+    else:
+        medical_html = f"""
+            <div class="card" style="margin-top: 1.5rem; border-color: rgba(16, 185, 129, 0.3);">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem; color: #10b981; font-size: 0.85rem; font-weight: 600;">
+                        <span>✅</span> <strong>Auditoría Médica:</strong> 100% de futbolistas estelares con aptitud física ratificada para el once titular.
+                    </div>
+                    <span class="tag-pill tag-emerald">Sanidad Ratificada</span>
+                </div>
+            </div>
         """
 
     # La Fija Card HTML
@@ -376,11 +429,14 @@ for i, m in enumerate(matches):
                 </div>
             </div>
 
+            <!-- Medical Bulletin & Sanity Audit Section -->
+            {medical_html}
+
             <!-- Player Props Section -->
             <div class="card" style="margin-top: 1.5rem;">
                 <div class="card-header">
                     <div class="card-title">⭐ Remates & Disparos a Puerta de Figuras Clave</div>
-                    <span class="badge-subtle">Regresión Poisson Individual (p90)</span>
+                    <span class="badge-subtle">Regresión Poisson Individual (p90) &bull; Cerrojo Sanitario Activo</span>
                 </div>
                 <div class="table-container">
                     <table>
