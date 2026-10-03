@@ -6,8 +6,22 @@ exacto aproximado más probable, el top 5 de marcadores alternativos y las proba
 """
 
 from typing import Dict, List, Any, Tuple
+import math
 import numpy as np
-from scipy.stats import poisson
+
+
+class PoissonDist:
+    @staticmethod
+    def pmf(k: int, mu: float) -> float:
+        if mu <= 0:
+            return 1.0 if k == 0 else 0.0
+        try:
+            return math.exp(-mu) * (mu ** k) / math.factorial(int(k))
+        except (OverflowError, ValueError):
+            return 0.0
+
+
+poisson = PoissonDist()
 
 
 class ScoreSimulatorAgent:

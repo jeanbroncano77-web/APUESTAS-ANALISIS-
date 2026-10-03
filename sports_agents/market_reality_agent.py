@@ -41,25 +41,27 @@ class MarketRealityAgent:
         prob_x2 = a_win + draw
 
         if prob_1x >= 80.0:
-            odds_1x = round(1.0 / (prob_1x / 100.0) * 1.06, 2)
+            capped_p1x = round(min(98.5, prob_1x), 1)
+            odds_1x = round(1.0 / (capped_p1x / 100.0) * 1.06, 2)
             candidates.append({
                 "market": "Doble Oportunidad Blindada",
                 "selection": f"{home_team} o Empate (1X)",
-                "probability": round(prob_1x, 1),
+                "probability": capped_p1x,
                 "odds": max(1.12, odds_1x),
                 "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-                "rationale": f"Protección total ante el empate con {round(prob_1x, 1)}% de cobertura en casa."
+                "rationale": f"Protección total ante el empate con {capped_p1x}% de cobertura en casa."
             })
 
         if prob_x2 >= 80.0:
-            odds_x2 = round(1.0 / (prob_x2 / 100.0) * 1.06, 2)
+            capped_px2 = round(min(98.5, prob_x2), 1)
+            odds_x2 = round(1.0 / (capped_px2 / 100.0) * 1.06, 2)
             candidates.append({
                 "market": "Doble Oportunidad Blindada",
                 "selection": f"Empate o {away_team} (X2)",
-                "probability": round(prob_x2, 1),
+                "probability": capped_px2,
                 "odds": max(1.12, odds_x2),
                 "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-                "rationale": f"El favorito visitante {away_team} puntúa en el {round(prob_x2, 1)}% de las simulaciones."
+                "rationale": f"El favorito visitante {away_team} puntúa en el {capped_px2}% de las simulaciones."
             })
 
         # Opción B: Goles Protegidos (Más de 1.5 goles o Menos de 4.5 goles)

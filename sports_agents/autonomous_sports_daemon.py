@@ -88,14 +88,14 @@ def run_autonomous_cycle(cycle_num: int, is_daily_730_run: bool = False):
 
     # 2. Simulación y actualización de proyecciones
     log_event(f"2. Modo Anticipación Activo: Proyectando los 6 partidos estelares de {target_day_name.upper()}...")
-    if target_weekday == 4:  # VIERNES (Viernes de Ligas Europeas)
+    if target_weekday == 4:  # VIERNES (Fecha FIFA / UEFA Nations League / Partidos Estelares)
         fixtures = [
-            ("Borussia Dortmund", "St. Pauli"),
-            ("Napoli", "Como"),
-            ("Marseille", "Angers"),
-            ("Leganés", "Valencia"),
-            ("Sunderland", "Leeds United"),
-            ("Rio Ave", "Famalicão")
+            ("Francia", "Italia"),
+            ("Bélgica", "Turquía"),
+            ("Corea del Sur", "Venezuela"),
+            ("Bosnia y Herzegovina", "Suecia"),
+            ("Polonia", "Rumanía"),
+            ("Hungría", "Georgia")
         ]
     elif target_weekday == 5:  # SÁBADO (Súper Sábado de Gigantes)
         fixtures = [
