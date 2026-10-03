@@ -288,10 +288,12 @@ class DataScoutAgent:
                     {"goals_scored": 5, "goals_conceded": 0, "xg_for": 3.8, "xg_against": 0.4, "corners_for": 9, "corners_against": 2, "shots_total": 22, "shots_on_target": 11, "yellow_cards": 0, "red_cards": 0, "fouls": 7,  "possession": 71},
                 ],
                 "key_players": [
-                    {"name": "Robert Lewandowski", "position": "Delantero Centro Killer", "avg_shots_p90": 3.9, "avg_sot_p90": 2.0, "shot_creation_actions": 3.2, "goal_prob": 0.72},
-                    {"name": "Lamine Yamal", "position": "Extremo Generacional", "avg_shots_p90": 3.2, "avg_sot_p90": 1.5, "shot_creation_actions": 6.8, "goal_prob": 0.46},
-                    {"name": "Raphinha", "position": "Extremo / Conductor", "avg_shots_p90": 3.5, "avg_sot_p90": 1.7, "shot_creation_actions": 5.9, "goal_prob": 0.50},
-                    {"name": "Pedri", "position": "Mediocentro Creativo", "avg_shots_p90": 1.4, "avg_sot_p90": 0.5, "shot_creation_actions": 5.4, "goal_prob": 0.18}
+                    {"name": "Lamine Yamal", "position": "Extremo Generacional / Balón de Oro Contender", "avg_shots_p90": 3.8, "avg_sot_p90": 1.9, "shot_creation_actions": 7.5, "goal_prob": 0.54},
+                    {"name": "Raphinha", "position": "Extremo & Mediapunta / Capitán Líder", "avg_shots_p90": 3.9, "avg_sot_p90": 1.9, "shot_creation_actions": 6.8, "goal_prob": 0.56},
+                    {"name": "Ferran Torres", "position": "Delantero Centro / El Tiburón", "avg_shots_p90": 2.8, "avg_sot_p90": 1.4, "shot_creation_actions": 3.2, "goal_prob": 0.44},
+                    {"name": "Dani Olmo", "position": "Mediapunta Llegador / Falso 9", "avg_shots_p90": 3.2, "avg_sot_p90": 1.6, "shot_creation_actions": 5.8, "goal_prob": 0.48},
+                    {"name": "Pau Víctor", "position": "Delantero Centro / Rematador", "avg_shots_p90": 2.4, "avg_sot_p90": 1.2, "shot_creation_actions": 2.6, "goal_prob": 0.38},
+                    {"name": "Pedri", "position": "Mediocentro Creativo / Llegada", "avg_shots_p90": 1.6, "avg_sot_p90": 0.7, "shot_creation_actions": 6.1, "goal_prob": 0.22}
                 ]
             },
             "Getafe": {

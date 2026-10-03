@@ -141,7 +141,7 @@ class WhatsAppNotifierAgent:
 
             msg += f"{i}. {h_team} vs {a_team}{is_gold_tag}\n"
             msg += f"   * Marcador Modal: {modal}\n"
-            msg += f"   * La Fija: {pick} (@{odds:.2f} | {prob}%)\n\n"
+            msg += f"   * La Fija ({fija.get('market', 'Mercado')}): {pick} (@{odds:.2f} | {prob}%)\n\n"
 
         # Alertas sanitarias y vetos detectados
         medical_alerts = []

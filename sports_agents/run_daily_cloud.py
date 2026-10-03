@@ -58,75 +58,80 @@ def main():
     if is_fifa_window:
         if target_weekday == 5:  # SÁBADO 03/10/2026 (UEFA Nations League & Clásico CONCACAF)
             fixtures_tomorrow = [
-                ("España", "Chequia"),
-                ("Croacia", "Inglaterra"),
-                ("Suiza", "Eslovenia"),
-                ("Macedonia del Norte", "Escocia"),
-                ("Finlandia", "Albania"),
-                ("Estados Unidos", "México")
+                ("España", "Chequia", "VICTORIA_DIRECTA"),
+                ("Croacia", "Inglaterra", "TOTAL_CORNERS"),
+                ("Suiza", "Eslovenia", "GOLES_OVER"),
+                ("Macedonia del Norte", "Escocia", "VICTORIA_SIN_EMPATE"),
+                ("Finlandia", "Albania", "GOLES_UNDER"),
+                ("Estados Unidos", "México", "AMBOS_ANOTAN")
             ]
         elif target_weekday == 6:  # DOMINGO 04/10/2026 (UEFA Nations League Jornada 2)
             fixtures_tomorrow = [
-                ("Alemania", "Serbia"),
-                ("Dinamarca", "Portugal"),
-                ("Grecia", "Países Bajos"),
-                ("Gales", "Noruega"),
-                ("Irlanda", "Austria"),
-                ("Japón", "Ecuador")
+                ("Alemania", "Serbia", "VICTORIA_DIRECTA"),
+                ("Dinamarca", "Portugal", "TOTAL_CORNERS"),
+                ("Grecia", "Países Bajos", "GOLES_OVER"),
+                ("Gales", "Noruega", "AMBOS_ANOTAN"),
+                ("Irlanda", "Austria", "GOLES_UNDER"),
+                ("Japón", "Ecuador", "VICTORIA_SIN_EMPATE")
             ]
         elif target_weekday == 4:  # VIERNES 02/10/2026
             fixtures_tomorrow = [
-                ("Francia", "Italia"),
-                ("Bélgica", "Turquía"),
-                ("Corea del Sur", "Venezuela"),
-                ("Bosnia y Herzegovina", "Suecia"),
-                ("Polonia", "Rumanía"),
-                ("Hungría", "Georgia")
+                ("Francia", "Italia", "AMBOS_ANOTAN"),
+                ("Bélgica", "Turquía", "GOLES_OVER"),
+                ("Corea del Sur", "Venezuela", "VICTORIA_DIRECTA"),
+                ("Bosnia y Herzegovina", "Suecia", "TOTAL_CORNERS"),
+                ("Polonia", "Rumanía", "VICTORIA_SIN_EMPATE"),
+                ("Hungría", "Georgia", "GOLES_UNDER")
             ]
         else:  # LUNES A JUEVES (Intersemanal FIFA)
             fixtures_tomorrow = [
-                ("Alemania", "Serbia"),
-                ("Dinamarca", "Portugal"),
-                ("Grecia", "Países Bajos"),
-                ("Gales", "Noruega"),
-                ("Irlanda", "Austria"),
-                ("Japón", "Ecuador")
+                ("Alemania", "Serbia", "VICTORIA_DIRECTA"),
+                ("Dinamarca", "Portugal", "TOTAL_CORNERS"),
+                ("Grecia", "Países Bajos", "GOLES_OVER"),
+                ("Gales", "Noruega", "AMBOS_ANOTAN"),
+                ("Irlanda", "Austria", "GOLES_UNDER"),
+                ("Japón", "Ecuador", "VICTORIA_SIN_EMPATE")
             ]
     else:
         # Calendario de Clubes Europeos (Fuera de ventana FIFA)
         if target_weekday == 5:  # SÁBADO (Clubes)
             fixtures_tomorrow = [
-                ("Real Madrid", "Villarreal"),
-                ("FC Augsburg", "Bayern Munich"),
-                ("Barcelona", "Getafe"),
-                ("Arsenal", "Leeds United"),
-                ("Inter Milan", "Parma"),
-                ("Borussia Dortmund", "Werder Bremen")
+                ("Real Madrid", "Villarreal", "VICTORIA_DIRECTA"),
+                ("FC Augsburg", "Bayern Munich", "GOLES_OVER"),
+                ("Barcelona", "Getafe", "GOL_EQUIPO"),
+                ("Arsenal", "Leeds United", "TOTAL_CORNERS"),
+                ("Inter Milan", "Parma", "VICTORIA_SIN_EMPATE"),
+                ("Borussia Dortmund", "Werder Bremen", "AMBOS_ANOTAN")
             ]
         elif target_weekday == 6:  # DOMINGO (Clubes)
             fixtures_tomorrow = [
-                ("Real Madrid", "Villarreal"),
-                ("Barcelona", "Getafe"),
-                ("Arsenal", "Leeds United"),
-                ("FC Augsburg", "Bayern Munich"),
-                ("Inter Milan", "Parma"),
-                ("Borussia Dortmund", "Werder Bremen")
+                ("Real Madrid", "Villarreal", "VICTORIA_DIRECTA"),
+                ("Barcelona", "Getafe", "GOL_EQUIPO"),
+                ("Arsenal", "Leeds United", "TOTAL_CORNERS"),
+                ("FC Augsburg", "Bayern Munich", "GOLES_OVER"),
+                ("Inter Milan", "Parma", "VICTORIA_SIN_EMPATE"),
+                ("Borussia Dortmund", "Werder Bremen", "AMBOS_ANOTAN")
             ]
         else:  # LUNES A JUEVES (Intersemanal Clubes)
             fixtures_tomorrow = [
-                ("Real Madrid", "Villarreal"),
-                ("FC Augsburg", "Bayern Munich"),
-                ("Barcelona", "Getafe"),
-                ("Arsenal", "Leeds United"),
-                ("Inter Milan", "Parma"),
-                ("Borussia Dortmund", "Werder Bremen")
+                ("Real Madrid", "Villarreal", "VICTORIA_DIRECTA"),
+                ("FC Augsburg", "Bayern Munich", "GOLES_OVER"),
+                ("Barcelona", "Getafe", "GOL_EQUIPO"),
+                ("Arsenal", "Leeds United", "TOTAL_CORNERS"),
+                ("Inter Milan", "Parma", "VICTORIA_SIN_EMPATE"),
+                ("Borussia Dortmund", "Werder Bremen", "AMBOS_ANOTAN")
             ]
 
     print(f"1. Simulando los 6 partidos estelares de {target_day_name.upper()} ({target_date_str}) con los 11 agentes...")
     results = []
-    for home, away in fixtures_tomorrow:
-        print(f"   -> Proyectando: {home} vs {away}...")
-        pred = director.predict_fixture(home, away)
+    for item in fixtures_tomorrow:
+        if len(item) == 3:
+            home, away, pref_cat = item
+        else:
+            home, away = item
+            pref_cat = None
+        print(f"   -> Proyectando: {home} vs {away} [Mercado: {pref_cat or 'Automático'}]...")
+        pred = director.predict_fixture(home, away, preferred_market_category=pref_cat)
         results.append(pred)
 
     tomorrow_json_path = os.path.join(current_dir, "simulations_tomorrow_results.json")

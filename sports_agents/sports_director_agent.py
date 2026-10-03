@@ -39,7 +39,7 @@ class SportsDirectorAgent:
         self.psycho_agent = SportsPsychologyAgent()
         self.market_agent = MarketRealityAgent()
 
-    def predict_fixture(self, home_team: str, away_team: str) -> Dict[str, Any]:
+    def predict_fixture(self, home_team: str, away_team: str, preferred_market_category: str = None) -> Dict[str, Any]:
         """
         Ejecuta el pipeline completo de predicción para un partido
         con los 10 agentes coordinados de inteligencia deportiva.
@@ -121,7 +121,8 @@ class SportsDirectorAgent:
             goals_data=score_analysis["goals_markets"],
             corners_data=adj_corners,
             cleared_players=home_squad["cleared_players"] + away_squad["cleared_players"],
-            psychology=psychology
+            psychology=psychology,
+            preferred_category=preferred_market_category
         )
 
         return {

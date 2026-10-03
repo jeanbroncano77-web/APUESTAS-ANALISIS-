@@ -1,6 +1,6 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 4,
+  "cycles_completed": 5,
   "calibrations": [
     {
       "cycle": 1,
@@ -165,6 +165,18 @@
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Sábado."
       ],
       "system_health": "Excelente (Win Rate Auditado: 89.5%, Brier Score: 0.102, Ciclo #4)"
+    },
+    {
+      "cycle": 5,
+      "timestamp": "2026-10-03 08:51:29",
+      "action": "Auto-Calibración Autónoma Diaria (Sábado 03/10/2026)",
+      "observations": [
+        "SquadInjuryAgent: 8 bajas médicas vetadas (Rodri, Dani Olmo, Dani Carvajal).",
+        "MarketRealityAgent: 6 Fijas optimizadas con confianza media del 80.1%.",
+        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
+        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Sábado."
+      ],
+      "system_health": "Excelente (Win Rate Auditado: 89.5%, Brier Score: 0.102, Ciclo #5)"
     }
   ],
   "current_weights": {
@@ -174,5 +186,5 @@
     "player_sot_restriction_factor": 0.35
   },
   "last_auto_audit": {},
-  "last_updated": "2026-10-03 08:39:12"
+  "last_updated": "2026-10-03 08:51:29"
 }

@@ -453,10 +453,12 @@ class SquadInjuryAgent:
                 {"name": "Federico Valverde", "position": "Interior / Potencia Media Distancia", "avg_shots_p90": 2.2, "avg_sot_p90": 0.9, "shot_creation_actions": 3.8, "goal_prob": 0.24}
             ],
             "Barcelona": [
-                {"name": "Robert Lewandowski", "position": "Delantero Centro Killer", "avg_shots_p90": 4.1, "avg_sot_p90": 2.2, "shot_creation_actions": 3.4, "goal_prob": 0.74},
-                {"name": "Raphinha", "position": "Extremo / Conductor Ofensivo", "avg_shots_p90": 3.6, "avg_sot_p90": 1.8, "shot_creation_actions": 6.2, "goal_prob": 0.52},
-                {"name": "Lamine Yamal", "position": "Extremo Generacional", "avg_shots_p90": 3.3, "avg_sot_p90": 1.6, "shot_creation_actions": 7.0, "goal_prob": 0.48},
-                {"name": "Pedri", "position": "Mediocentro Creativo", "avg_shots_p90": 1.5, "avg_sot_p90": 0.6, "shot_creation_actions": 5.6, "goal_prob": 0.20}
+                {"name": "Lamine Yamal", "position": "Extremo Generacional / Balón de Oro Contender", "avg_shots_p90": 3.8, "avg_sot_p90": 1.9, "shot_creation_actions": 7.5, "goal_prob": 0.54},
+                {"name": "Raphinha", "position": "Extremo & Mediapunta / Capitán Líder", "avg_shots_p90": 3.9, "avg_sot_p90": 1.9, "shot_creation_actions": 6.8, "goal_prob": 0.56},
+                {"name": "Ferran Torres", "position": "Delantero Centro / El Tiburón", "avg_shots_p90": 2.8, "avg_sot_p90": 1.4, "shot_creation_actions": 3.2, "goal_prob": 0.44},
+                {"name": "Dani Olmo", "position": "Mediapunta Llegador / Falso 9", "avg_shots_p90": 3.2, "avg_sot_p90": 1.6, "shot_creation_actions": 5.8, "goal_prob": 0.48},
+                {"name": "Pau Víctor", "position": "Delantero Centro / Rematador", "avg_shots_p90": 2.4, "avg_sot_p90": 1.2, "shot_creation_actions": 2.6, "goal_prob": 0.38},
+                {"name": "Pedri", "position": "Mediocentro Creativo / Llegada", "avg_shots_p90": 1.6, "avg_sot_p90": 0.7, "shot_creation_actions": 6.1, "goal_prob": 0.22}
             ],
             "Arsenal": [
                 {"name": "Bukayo Saka", "position": "Extremo Derecho Élite", "avg_shots_p90": 3.6, "avg_sot_p90": 1.8, "shot_creation_actions": 6.8, "goal_prob": 0.50},

@@ -78,9 +78,9 @@ for i, m in enumerate(matches):
     a_flag = get_flag(a_team)
     tournament = m["context"].get("tournament", "Competición")
     modal_score = m["score_prediction"]["most_probable_score"]
-    corners_total = round(m["corners_prediction"].get("total_corners_expected", 9.0), 1)
     fija = m["la_fija_real"]
-    fija_badge = f"<span class='badge-fija-pill'>⭐ Fija {fija['probability']}%</span>" if fija else ""
+    fija_market_name = fija.get("market", "Fija")
+    fija_badge = f"<span class='badge-fija-pill'>⭐ {fija_market_name} {fija['probability']}%</span>" if fija else ""
 
     tabs_html += f"""
         <div class="switcher-card {active_cls}" onclick="setMatch({i})" id="tab-{i}">
@@ -94,8 +94,8 @@ for i, m in enumerate(matches):
                 <span>{a_team} {a_flag}</span>
             </div>
             <div class="switcher-meta">
-                <span>Marcador: <strong style="color: #ffffff;">{modal_score}</strong></span>
-                <span class="mono-bold" style="color: var(--cyan);">{corners_total} Córners</span>
+                <span>Fija: <strong style="color: var(--emerald);">{fija.get('selection')}</strong></span>
+                <span class="mono-bold" style="color: var(--cyan);">@{fija.get('odds')} ({fija.get('probability')}%)</span>
             </div>
         </div>
     """
@@ -217,18 +217,44 @@ for i, m in enumerate(matches):
             </div>
         """
 
-    # La Fija Card HTML
+    # La Fija Card HTML con Mercados Diversificados y Opciones Alternativas
     market_odds = round(fija.get("odds", 1.12) * 1.08, 2)
     if market_odds < 1.05:
         market_odds = 1.05
+
+    # Generar chips de mercados alternativos evaluados
+    all_options = m.get("all_fija_options", [])
+    alt_chips = ""
+    for opt in all_options:
+        if opt.get("selection") != fija.get("selection"):
+            opt_sel = opt.get("selection")
+            opt_prob = opt.get("probability")
+            opt_odds = opt.get("odds")
+            opt_mkt = opt.get("market")
+            alt_chips += f"""
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="{opt_mkt}: {opt.get('rationale', '')}">
+                    🎯 <strong>{opt_mkt}:</strong> {opt_sel} <span style="color: #ffffff;">({opt_prob}% | @{opt_odds})</span>
+                </span>
+            """
+    alt_markets_html = f"""
+        <div style="margin-top: 0.85rem; padding-top: 0.65rem; border-top: 1px dashed rgba(255,255,255,0.15);">
+            <div style="font-size: 0.74rem; color: var(--text-muted); margin-bottom: 0.4rem; font-weight: 700; letter-spacing: 0.5px;">
+                📊 OTROS MERCADOS DE SEGURIDAD ANALIZADOS EN ESTE PARTIDO:
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                {alt_chips}
+            </div>
+        </div>
+    """ if alt_chips else ""
+
     fija_card_html = f"""
         <div class="fija-gold-card">
             <div class="fija-badge-glow">
-                <span class="fija-star">⭐</span> LA FIJA DEL PARTIDO &bull; CONFIANZA 95%+
+                <span class="fija-star">⭐</span> LA FIJA DEL PARTIDO &bull; {fija.get('market', 'Mercado Especial')}
             </div>
             <div class="fija-content-grid">
                 <div class="fija-main">
-                    <div class="fija-market-label">Selección Cuantitativa de Máxima Seguridad</div>
+                    <div class="fija-market-label">Selección Cuantitativa Diversificada ({fija.get('market', 'Mercado Especial')})</div>
                     <div class="fija-market-title">{fija.get('selection', '1X')}</div>
                     <div class="fija-rationale">🔬 <em>Fundamento TimesFM & Monte Carlo:</em> {fija.get('rationale', '')}</div>
                 </div>
@@ -252,6 +278,7 @@ for i, m in enumerate(matches):
                     </div>
                 </div>
             </div>
+            {alt_markets_html}
         </div>
     """
 
@@ -481,9 +508,9 @@ new_matches_section = f"""
             <!-- Phase 6: Top Actions Toolbar -->
             <div class="top-actions-toolbar">
                 <div class="banner-fija-de-oro">
-                    <div class="badge-fija-oro">👑 LA FIJA DE ORO &bull; {temporal_label} {target_day_name} ({target_date}) (CONFIANZA {bm_fija.get('probability', 97.5)}%)</div>
-                    <div class="fija-oro-title">⭐ {best_m.get('home_team')} vs {best_m.get('away_team')} &bull; {bm_fija.get('selection')} (@{bm_fija.get('odds', 1.12)} | {bm_fija.get('probability')}%)</div>
-                    <div class="fija-oro-sub">⭐ Respaldo Estelar: {backup_m.get('home_team')} vs {backup_m.get('away_team')} &bull; {bk_fija.get('selection')} (@{bk_fija.get('odds', 1.12)} | {bk_fija.get('probability')}%)</div>
+                    <div class="badge-fija-oro">👑 LA FIJA DE ORO &bull; {temporal_label} {target_day_name} ({target_date}) (CONFIANZA {bm_fija.get('probability', 95.0)}%)</div>
+                    <div class="fija-oro-title">⭐ {best_m.get('home_team')} vs {best_m.get('away_team')} &bull; {bm_fija.get('market')}: {bm_fija.get('selection')} (@{bm_fija.get('odds', 1.25)} | {bm_fija.get('probability')}%)</div>
+                    <div class="fija-oro-sub">⭐ Respaldo Estelar: {backup_m.get('home_team')} vs {backup_m.get('away_team')} &bull; {bk_fija.get('market')}: {bk_fija.get('selection')} (@{bk_fija.get('odds', 1.20)} | {bk_fija.get('probability')}%)</div>
                 </div>
 
                 <div class="toolbar-btn-group">
