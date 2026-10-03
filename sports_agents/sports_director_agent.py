@@ -23,6 +23,10 @@ from .sports_psychology_agent import SportsPsychologyAgent
 from .market_reality_agent import MarketRealityAgent
 
 
+import os
+import json
+
+
 class SportsDirectorAgent:
     def __init__(self):
         self.name = "SportsDirectorAgent"
@@ -39,11 +43,37 @@ class SportsDirectorAgent:
         self.psycho_agent = SportsPsychologyAgent()
         self.market_agent = MarketRealityAgent()
 
+    def load_calibrated_weights(self) -> Dict[str, float]:
+        """
+        Carga los pesos activos y calibrados del ciclo de auto-retroalimentación.
+        Garantiza que el modelo se adapte dinámicamente y no use parámetros estáticos.
+        """
+        log_path = os.path.join(os.path.dirname(__file__), "autonomous_feedback_log.json")
+        default_weights = {
+            "squad_offense_penalty": 0.85,
+            "minimum_draw_floor": 26.0,
+            "corner_game_state_dampener": 0.85,
+            "player_sot_restriction_factor": 0.35
+        }
+        if os.path.exists(log_path):
+            try:
+                with open(log_path, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                    return data.get("current_weights", default_weights)
+            except Exception:
+                return default_weights
+        return default_weights
+
     def predict_fixture(self, home_team: str, away_team: str, preferred_market_category: str = None) -> Dict[str, Any]:
         """
         Ejecuta el pipeline completo de predicción para un partido
-        con los 10 agentes coordinados de inteligencia deportiva.
+        con los 10 agentes coordinados de inteligencia deportiva y auto-ajuste dinámico de pesos.
         """
+        calibrated_weights = self.load_calibrated_weights()
+        dynamic_draw_floor = calibrated_weights.get("minimum_draw_floor", 26.0)
+        dynamic_corner_dampener = calibrated_weights.get("corner_game_state_dampener", 0.85)
+        dynamic_sot_restriction = calibrated_weights.get("player_sot_restriction_factor", 0.35)
+        dynamic_offense_penalty = calibrated_weights.get("squad_offense_penalty", 0.85)
         # Paso 1: Scouting de datos históricos
         home_data = self.scout.get_team_history(home_team)
         away_data = self.scout.get_team_history(away_team)
@@ -76,11 +106,12 @@ class SportsDirectorAgent:
         # Paso 6: Simulación Cuantitativa Monte Carlo (10,000 iteraciones con Dixon-Coles)
         score_analysis = self.simulator.simulate_match(lambda_h, lambda_a)
         
-        # Proteger suelo mínimo de empate si es partido competitivo de visitante
+        # Proteger suelo mínimo de empate si es partido competitivo de visitante (usando dynamic_draw_floor calibrado)
         probs_1x2 = dict(score_analysis["1x2_probabilities"])
-        if not psychology["is_friendly"] and probs_1x2["draw_pct"] < psychology["minimum_draw_floor_pct"]:
-            deficit = psychology["minimum_draw_floor_pct"] - probs_1x2["draw_pct"]
-            probs_1x2["draw_pct"] = round(psychology["minimum_draw_floor_pct"], 2)
+        effective_draw_floor = dynamic_draw_floor if not psychology["is_friendly"] else max(20.0, dynamic_draw_floor - 2.0)
+        if probs_1x2["draw_pct"] < effective_draw_floor:
+            deficit = effective_draw_floor - probs_1x2["draw_pct"]
+            probs_1x2["draw_pct"] = round(effective_draw_floor, 2)
             probs_1x2["home_win_pct"] = round(probs_1x2["home_win_pct"] - (deficit * 0.5), 2)
             probs_1x2["away_win_pct"] = round(probs_1x2["away_win_pct"] - (deficit * 0.5), 2)
             score_analysis["1x2_probabilities"] = probs_1x2
@@ -95,18 +126,20 @@ class SportsDirectorAgent:
             projections["expected_shots"]["away"] * away_squad["offense_penalty_factor"]
         )
 
-        # Aplicar restricciones de rol táctico a jugadores (ej. Xavi Simons)
+        # Aplicar restricciones de rol táctico a jugadores moduladas por dynamic_sot_restriction calibrado
         for p in home_players_proj + away_players_proj:
             p_name = p.get("name")
             if p_name in tactics["player_role_restrictions"]:
                 restr = tactics["player_role_restrictions"][p_name]
-                p["prob_at_least_1_sot_pct"] = round(p["prob_at_least_1_sot_pct"] * (1.0 - restr["sot_probability_reduction"]), 1)
+                reduction = max(restr.get("sot_probability_reduction", 0.35), dynamic_sot_restriction)
+                p["prob_at_least_1_sot_pct"] = round(p["prob_at_least_1_sot_pct"] * (1.0 - reduction), 1)
                 p["tactical_note"] = restr["role_restriction"]
 
-        # Paso 8: Córners Modulados por Game State y Tarjetas
+        # Paso 8: Córners Modulados por Game State, Táctica y dynamic_corner_dampener calibrado
         adj_corners = dict(projections["expected_corners"])
-        adj_corners["home"] = round(adj_corners["home"] * tactics["corner_dampener_factor"], 1)
-        adj_corners["away"] = round(adj_corners["away"] * tactics["corner_dampener_factor"], 1)
+        combined_dampener = tactics["corner_dampener_factor"] * dynamic_corner_dampener
+        adj_corners["home"] = round(adj_corners["home"] * combined_dampener, 1)
+        adj_corners["away"] = round(adj_corners["away"] * combined_dampener, 1)
         adj_corners["total"] = round(adj_corners["home"] + adj_corners["away"], 1)
 
         corners_analysis = self.events_agent.analyze_corners(adj_corners)

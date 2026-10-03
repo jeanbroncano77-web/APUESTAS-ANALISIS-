@@ -9,6 +9,7 @@ from .tactical_manager_agent import TacticalManagerAgent
 from .sports_psychology_agent import SportsPsychologyAgent
 from .market_reality_agent import MarketRealityAgent
 from .sports_director_agent import SportsDirectorAgent
+from .feedback_engine import FeedbackEngine
 
 __all__ = [
     "DataScoutAgent",
@@ -21,5 +22,6 @@ __all__ = [
     "TacticalManagerAgent",
     "SportsPsychologyAgent",
     "MarketRealityAgent",
-    "SportsDirectorAgent"
+    "SportsDirectorAgent",
+    "FeedbackEngine"
 ]

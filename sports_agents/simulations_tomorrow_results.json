@@ -1,5 +1,5 @@
 {
-  "GeneratedAt": "2026-10-03 08:51:29",
+  "GeneratedAt": "2026-10-03 09:10:31",
   "TargetDay": "Sábado",
   "TargetDate": "03/10/2026",
   "TemporalLabel": "HOY",
@@ -176,25 +176,25 @@
         }
       },
       "corners_prediction": {
-        "home_corners_expected": 5.7,
-        "away_corners_expected": 3.0,
-        "total_corners_expected": 8.7,
-        "most_likely_range": "7 - 10 córners",
+        "home_corners_expected": 4.9,
+        "away_corners_expected": 2.6,
+        "total_corners_expected": 7.5,
+        "most_likely_range": "6 - 9 córners",
         "lines": {
-          "over_8_5_pct": 50.4,
-          "under_8_5_pct": 49.6,
-          "over_9_5_pct": 37.3,
-          "under_9_5_pct": 62.7,
-          "over_10_5_pct": 25.9,
-          "under_10_5_pct": 74.1,
-          "over_11_5_pct": 16.9,
-          "under_11_5_pct": 83.1
+          "over_8_5_pct": 33.8,
+          "under_8_5_pct": 66.2,
+          "over_9_5_pct": 22.4,
+          "under_9_5_pct": 77.6,
+          "over_10_5_pct": 13.8,
+          "under_10_5_pct": 86.2,
+          "over_11_5_pct": 7.9,
+          "under_11_5_pct": 92.1
         },
         "team_lines": {
-          "home_over_4_5_pct": 67.3,
-          "home_over_5_5_pct": 50.5,
-          "away_over_3_5_pct": 35.3,
-          "away_over_4_5_pct": 18.5
+          "home_over_4_5_pct": 54.2,
+          "home_over_5_5_pct": 36.6,
+          "away_over_3_5_pct": 26.4,
+          "away_over_4_5_pct": 12.3
         }
       },
       "cards_prediction": {
@@ -385,21 +385,11 @@
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
           "selection": "Más de 6.5 córners totales",
-          "probability": 95.1,
-          "odds": 1.15,
+          "probability": 91.5,
+          "odds": 1.16,
           "availability": "Línea de máxima cobertura en Bet365 / Betano",
-          "rationale": "Línea de seguridad rebajada en 3 tiros de esquina frente al promedio (8.7).",
-          "_rank_score": 70.86
-        },
-        {
-          "market": "Total de Córners Fijo",
-          "category_code": "TOTAL_CORNERS",
-          "selection": "Más de 7.5 córners totales",
-          "probability": 88.2,
-          "odds": 1.25,
-          "availability": "Línea alternativa en Bet365 / Betano",
-          "rationale": "Constante flujo de ataque por bandas que proyecta 8.7 saques de esquina acumulados.",
-          "_rank_score": 67.92
+          "rationale": "Línea de seguridad rebajada en 3 tiros de esquina frente al promedio (7.5).",
+          "_rank_score": 68.82
         },
         {
           "market": "Total de Goles Fijo",
@@ -576,25 +566,25 @@
         }
       },
       "corners_prediction": {
-        "home_corners_expected": 4.8,
-        "away_corners_expected": 5.8,
-        "total_corners_expected": 10.6,
-        "most_likely_range": "9 - 12 córners",
+        "home_corners_expected": 4.1,
+        "away_corners_expected": 4.9,
+        "total_corners_expected": 9.0,
+        "most_likely_range": "8 - 10 córners",
         "lines": {
-          "over_8_5_pct": 73.1,
-          "under_8_5_pct": 26.9,
-          "over_9_5_pct": 61.5,
-          "under_9_5_pct": 38.5,
-          "over_10_5_pct": 49.2,
-          "under_10_5_pct": 50.8,
-          "over_11_5_pct": 37.3,
-          "under_11_5_pct": 62.7
+          "over_8_5_pct": 54.4,
+          "under_8_5_pct": 45.6,
+          "over_9_5_pct": 41.3,
+          "under_9_5_pct": 58.7,
+          "over_10_5_pct": 29.4,
+          "under_10_5_pct": 70.6,
+          "over_11_5_pct": 19.7,
+          "under_11_5_pct": 80.3
         },
         "team_lines": {
-          "home_over_4_5_pct": 52.4,
-          "home_over_5_5_pct": 34.9,
-          "away_over_3_5_pct": 83.0,
-          "away_over_4_5_pct": 68.7
+          "home_over_4_5_pct": 39.1,
+          "home_over_5_5_pct": 23.1,
+          "away_over_3_5_pct": 72.1,
+          "away_over_4_5_pct": 54.2
         }
       },
       "cards_prediction": {
@@ -734,42 +724,32 @@
         "market": "Total de Córners Fijo",
         "category_code": "TOTAL_CORNERS",
         "selection": "Más de 7.5 córners totales",
-        "probability": 94.5,
+        "probability": 89.6,
         "odds": 1.25,
         "availability": "Línea alternativa en Bet365 / Betano",
-        "rationale": "Constante flujo de ataque por bandas que proyecta 10.6 saques de esquina acumulados.",
-        "_rank_score": 114.7
+        "rationale": "Constante flujo de ataque por bandas que proyecta 9.0 saques de esquina acumulados.",
+        "_rank_score": 111.76
       },
       "all_fija_options": [
         {
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
           "selection": "Más de 7.5 córners totales",
-          "probability": 94.5,
+          "probability": 89.6,
           "odds": 1.25,
           "availability": "Línea alternativa en Bet365 / Betano",
-          "rationale": "Constante flujo de ataque por bandas que proyecta 10.6 saques de esquina acumulados.",
-          "_rank_score": 114.7
+          "rationale": "Constante flujo de ataque por bandas que proyecta 9.0 saques de esquina acumulados.",
+          "_rank_score": 111.76
         },
         {
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
           "selection": "Más de 6.5 córners totales",
-          "probability": 97.2,
+          "probability": 96.0,
           "odds": 1.15,
           "availability": "Línea de máxima cobertura en Bet365 / Betano",
-          "rationale": "Línea de seguridad rebajada en 3 tiros de esquina frente al promedio (10.6).",
-          "_rank_score": 107.12
-        },
-        {
-          "market": "Total de Córners Fijo",
-          "category_code": "TOTAL_CORNERS",
-          "selection": "Más de 8.5 córners totales",
-          "probability": 85.0,
-          "odds": 1.38,
-          "availability": "Línea principal en todas las casas",
-          "rationale": "Partida abierta de ida y vuelta con 10.6 córners proyectados por el modelo de Poisson.",
-          "_rank_score": 102.56
+          "rationale": "Línea de seguridad rebajada en 3 tiros de esquina frente al promedio (9.0).",
+          "_rank_score": 106.4
         },
         {
           "market": "Total de Goles Fijo",
@@ -978,25 +958,25 @@
         }
       },
       "corners_prediction": {
-        "home_corners_expected": 5.4,
-        "away_corners_expected": 4.3,
-        "total_corners_expected": 9.7,
-        "most_likely_range": "8 - 11 córners",
+        "home_corners_expected": 4.6,
+        "away_corners_expected": 3.6,
+        "total_corners_expected": 8.2,
+        "most_likely_range": "7 - 10 córners",
         "lines": {
-          "over_8_5_pct": 63.2,
-          "under_8_5_pct": 36.8,
-          "over_9_5_pct": 50.4,
-          "under_9_5_pct": 49.6,
-          "over_10_5_pct": 37.9,
-          "under_10_5_pct": 62.1,
-          "over_11_5_pct": 27.0,
-          "under_11_5_pct": 73.0
+          "over_8_5_pct": 43.5,
+          "under_8_5_pct": 56.5,
+          "over_9_5_pct": 30.8,
+          "under_9_5_pct": 69.2,
+          "over_10_5_pct": 20.4,
+          "under_10_5_pct": 79.6,
+          "over_11_5_pct": 12.7,
+          "under_11_5_pct": 87.3
         },
         "team_lines": {
-          "home_over_4_5_pct": 62.7,
-          "home_over_5_5_pct": 45.4,
-          "away_over_3_5_pct": 62.3,
-          "away_over_4_5_pct": 43.0
+          "home_over_4_5_pct": 48.7,
+          "home_over_5_5_pct": 31.4,
+          "away_over_3_5_pct": 48.5,
+          "away_over_4_5_pct": 29.4
         }
       },
       "cards_prediction": {
@@ -1131,21 +1111,11 @@
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
           "selection": "Más de 6.5 córners totales",
-          "probability": 97.2,
+          "probability": 93.6,
           "odds": 1.15,
           "availability": "Línea de máxima cobertura en Bet365 / Betano",
-          "rationale": "Línea de seguridad rebajada en 3 tiros de esquina frente al promedio (9.7).",
-          "_rank_score": 72.12
-        },
-        {
-          "market": "Total de Córners Fijo",
-          "category_code": "TOTAL_CORNERS",
-          "selection": "Más de 7.5 córners totales",
-          "probability": 92.8,
-          "odds": 1.25,
-          "availability": "Línea alternativa en Bet365 / Betano",
-          "rationale": "Constante flujo de ataque por bandas que proyecta 9.7 saques de esquina acumulados.",
-          "_rank_score": 70.68
+          "rationale": "Línea de seguridad rebajada en 3 tiros de esquina frente al promedio (8.2).",
+          "_rank_score": 69.96
         },
         {
           "market": "Total de Goles Fijo",
@@ -1156,6 +1126,16 @@
           "availability": "Universal en todas las plataformas",
           "rationale": "Bloques tácticos cerrados (2.5 xG esperados) impiden un partido de 4 o más goles.",
           "_rank_score": 67.44
+        },
+        {
+          "market": "Total de Córners Fijo",
+          "category_code": "TOTAL_CORNERS",
+          "selection": "Más de 7.5 córners totales",
+          "probability": 86.0,
+          "odds": 1.26,
+          "availability": "Línea alternativa en Bet365 / Betano",
+          "rationale": "Constante flujo de ataque por bandas que proyecta 8.2 saques de esquina acumulados.",
+          "_rank_score": 66.72
         },
         {
           "market": "Gol de Equipo de Seguridad",
@@ -1176,16 +1156,6 @@
           "availability": "Universal en todas las plataformas",
           "rationale": "Eficacia ofensiva cruzada: ambos cuadros promedian ocasiones claras de gol (1.4 vs 1.1 xG).",
           "_rank_score": 65.1
-        },
-        {
-          "market": "Total de Córners Fijo",
-          "category_code": "TOTAL_CORNERS",
-          "selection": "Más de 8.5 córners totales",
-          "probability": 80.5,
-          "odds": 1.38,
-          "availability": "Línea principal en todas las casas",
-          "rationale": "Partida abierta de ida y vuelta con 9.7 córners proyectados por el modelo de Poisson.",
-          "_rank_score": 64.86
         },
         {
           "market": "Doble Oportunidad Blindada",
@@ -1334,25 +1304,25 @@
         }
       },
       "corners_prediction": {
-        "home_corners_expected": 5.1,
-        "away_corners_expected": 4.6,
-        "total_corners_expected": 9.7,
-        "most_likely_range": "8 - 11 córners",
+        "home_corners_expected": 4.4,
+        "away_corners_expected": 3.9,
+        "total_corners_expected": 8.3,
+        "most_likely_range": "7 - 10 córners",
         "lines": {
-          "over_8_5_pct": 63.2,
-          "under_8_5_pct": 36.8,
-          "over_9_5_pct": 50.4,
-          "under_9_5_pct": 49.6,
-          "over_10_5_pct": 37.9,
-          "under_10_5_pct": 62.1,
-          "over_11_5_pct": 27.0,
-          "under_11_5_pct": 73.0
+          "over_8_5_pct": 44.9,
+          "under_8_5_pct": 55.1,
+          "over_9_5_pct": 32.1,
+          "under_9_5_pct": 67.9,
+          "over_10_5_pct": 21.5,
+          "under_10_5_pct": 78.5,
+          "over_11_5_pct": 13.5,
+          "under_11_5_pct": 86.5
         },
         "team_lines": {
-          "home_over_4_5_pct": 57.7,
-          "home_over_5_5_pct": 40.2,
-          "away_over_3_5_pct": 67.4,
-          "away_over_4_5_pct": 48.7
+          "home_over_4_5_pct": 44.9,
+          "home_over_5_5_pct": 28.0,
+          "away_over_3_5_pct": 54.7,
+          "away_over_4_5_pct": 35.2
         }
       },
       "cards_prediction": {
@@ -1474,21 +1444,11 @@
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
           "selection": "Más de 6.5 córners totales",
-          "probability": 97.2,
+          "probability": 93.9,
           "odds": 1.15,
           "availability": "Línea de máxima cobertura en Bet365 / Betano",
-          "rationale": "Línea de seguridad rebajada en 3 tiros de esquina frente al promedio (9.7).",
-          "_rank_score": 72.12
-        },
-        {
-          "market": "Total de Córners Fijo",
-          "category_code": "TOTAL_CORNERS",
-          "selection": "Más de 7.5 córners totales",
-          "probability": 92.8,
-          "odds": 1.25,
-          "availability": "Línea alternativa en Bet365 / Betano",
-          "rationale": "Constante flujo de ataque por bandas que proyecta 9.7 saques de esquina acumulados.",
-          "_rank_score": 70.68
+          "rationale": "Línea de seguridad rebajada en 3 tiros de esquina frente al promedio (8.3).",
+          "_rank_score": 70.14
         },
         {
           "market": "Total de Goles Fijo",
@@ -1511,6 +1471,16 @@
           "_rank_score": 67.44
         },
         {
+          "market": "Total de Córners Fijo",
+          "category_code": "TOTAL_CORNERS",
+          "selection": "Más de 7.5 córners totales",
+          "probability": 86.5,
+          "odds": 1.25,
+          "availability": "Línea alternativa en Bet365 / Betano",
+          "rationale": "Constante flujo de ataque por bandas que proyecta 8.3 saques de esquina acumulados.",
+          "_rank_score": 66.9
+        },
+        {
           "market": "Gol de Equipo de Seguridad",
           "category_code": "GOL_EQUIPO",
           "selection": "Macedonia del Norte anota más de 0.5 goles",
@@ -1529,16 +1499,6 @@
           "availability": "Universal en todas las plataformas",
           "rationale": "Eficacia ofensiva cruzada: ambos cuadros promedian ocasiones claras de gol (1.4 vs 1.1 xG).",
           "_rank_score": 65.1
-        },
-        {
-          "market": "Total de Córners Fijo",
-          "category_code": "TOTAL_CORNERS",
-          "selection": "Más de 8.5 córners totales",
-          "probability": 80.5,
-          "odds": 1.38,
-          "availability": "Línea principal en todas las casas",
-          "rationale": "Partida abierta de ida y vuelta con 9.7 córners proyectados por el modelo de Poisson.",
-          "_rank_score": 64.86
         },
         {
           "market": "Doble Oportunidad Blindada",
@@ -1687,25 +1647,25 @@
         }
       },
       "corners_prediction": {
-        "home_corners_expected": 3.9,
-        "away_corners_expected": 5.3,
-        "total_corners_expected": 9.2,
-        "most_likely_range": "8 - 11 córners",
+        "home_corners_expected": 3.3,
+        "away_corners_expected": 4.5,
+        "total_corners_expected": 7.8,
+        "most_likely_range": "6 - 9 córners",
         "lines": {
-          "over_8_5_pct": 57.0,
-          "under_8_5_pct": 43.0,
-          "over_9_5_pct": 43.9,
-          "under_9_5_pct": 56.1,
-          "over_10_5_pct": 31.8,
-          "under_10_5_pct": 68.2,
-          "over_11_5_pct": 21.7,
-          "under_11_5_pct": 78.3
+          "over_8_5_pct": 38.0,
+          "under_8_5_pct": 62.0,
+          "over_9_5_pct": 25.9,
+          "under_9_5_pct": 74.1,
+          "over_10_5_pct": 16.5,
+          "under_10_5_pct": 83.5,
+          "over_11_5_pct": 9.8,
+          "under_11_5_pct": 90.2
         },
         "team_lines": {
-          "home_over_4_5_pct": 35.2,
-          "home_over_5_5_pct": 19.9,
-          "away_over_3_5_pct": 77.5,
-          "away_over_4_5_pct": 61.0
+          "home_over_4_5_pct": 23.7,
+          "home_over_5_5_pct": 11.7,
+          "away_over_3_5_pct": 65.8,
+          "away_over_4_5_pct": 46.8
         }
       },
       "cards_prediction": {
@@ -1814,21 +1774,11 @@
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
           "selection": "Más de 6.5 córners totales",
-          "probability": 96.6,
+          "probability": 92.4,
           "odds": 1.15,
           "availability": "Línea de máxima cobertura en Bet365 / Betano",
-          "rationale": "Línea de seguridad rebajada en 3 tiros de esquina frente al promedio (9.2).",
-          "_rank_score": 71.76
-        },
-        {
-          "market": "Total de Córners Fijo",
-          "category_code": "TOTAL_CORNERS",
-          "selection": "Más de 7.5 córners totales",
-          "probability": 90.5,
-          "odds": 1.25,
-          "availability": "Línea alternativa en Bet365 / Betano",
-          "rationale": "Constante flujo de ataque por bandas que proyecta 9.2 saques de esquina acumulados.",
-          "_rank_score": 69.3
+          "rationale": "Línea de seguridad rebajada en 3 tiros de esquina frente al promedio (7.8).",
+          "_rank_score": 69.24
         },
         {
           "market": "Total de Goles Fijo",
@@ -2033,25 +1983,25 @@
         }
       },
       "corners_prediction": {
-        "home_corners_expected": 4.7,
-        "away_corners_expected": 5.2,
-        "total_corners_expected": 9.9,
-        "most_likely_range": "8 - 11 córners",
+        "home_corners_expected": 4.0,
+        "away_corners_expected": 4.4,
+        "total_corners_expected": 8.4,
+        "most_likely_range": "7 - 10 córners",
         "lines": {
-          "over_8_5_pct": 65.6,
-          "under_8_5_pct": 34.4,
-          "over_9_5_pct": 52.9,
-          "under_9_5_pct": 47.1,
-          "over_10_5_pct": 40.4,
-          "under_10_5_pct": 59.6,
-          "over_11_5_pct": 29.2,
-          "under_11_5_pct": 70.8
+          "over_8_5_pct": 46.3,
+          "under_8_5_pct": 53.7,
+          "over_9_5_pct": 33.4,
+          "under_9_5_pct": 66.6,
+          "over_10_5_pct": 22.6,
+          "under_10_5_pct": 77.4,
+          "over_11_5_pct": 14.3,
+          "under_11_5_pct": 85.7
         },
         "team_lines": {
-          "home_over_4_5_pct": 50.5,
-          "home_over_5_5_pct": 33.2,
-          "away_over_3_5_pct": 76.2,
-          "away_over_4_5_pct": 59.4
+          "home_over_4_5_pct": 37.1,
+          "home_over_5_5_pct": 21.5,
+          "away_over_3_5_pct": 64.1,
+          "away_over_4_5_pct": 44.9
         }
       },
       "cards_prediction": {
@@ -2186,21 +2136,11 @@
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
           "selection": "Más de 6.5 córners totales",
-          "probability": 97.2,
+          "probability": 94.2,
           "odds": 1.15,
           "availability": "Línea de máxima cobertura en Bet365 / Betano",
-          "rationale": "Línea de seguridad rebajada en 3 tiros de esquina frente al promedio (9.9).",
-          "_rank_score": 72.12
-        },
-        {
-          "market": "Total de Córners Fijo",
-          "category_code": "TOTAL_CORNERS",
-          "selection": "Más de 7.5 córners totales",
-          "probability": 93.7,
-          "odds": 1.25,
-          "availability": "Línea alternativa en Bet365 / Betano",
-          "rationale": "Constante flujo de ataque por bandas que proyecta 9.9 saques de esquina acumulados.",
-          "_rank_score": 71.22
+          "rationale": "Línea de seguridad rebajada en 3 tiros de esquina frente al promedio (8.4).",
+          "_rank_score": 70.32
         },
         {
           "market": "Total de Goles Fijo",
@@ -2225,12 +2165,12 @@
         {
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
-          "selection": "Más de 8.5 córners totales",
-          "probability": 81.5,
-          "odds": 1.38,
-          "availability": "Línea principal en todas las casas",
-          "rationale": "Partida abierta de ida y vuelta con 9.9 córners proyectados por el modelo de Poisson.",
-          "_rank_score": 65.46
+          "selection": "Más de 7.5 córners totales",
+          "probability": 86.9,
+          "odds": 1.25,
+          "availability": "Línea alternativa en Bet365 / Betano",
+          "rationale": "Constante flujo de ataque por bandas que proyecta 8.4 saques de esquina acumulados.",
+          "_rank_score": 67.14
         },
         {
           "market": "Doble Oportunidad Blindada",
