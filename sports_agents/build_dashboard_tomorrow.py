@@ -33,6 +33,12 @@ matches = sim_data["Matches"]
 
 flags = {
     # Partidos de Selecciones / UEFA Nations League / FIFA
+    "España": "🇪🇸", "Chequia": "🇨🇿",
+    "Croacia": "🇭🇷", "Inglaterra": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "Suiza": "🇨🇭", "Eslovenia": "🇸🇮",
+    "Macedonia del Norte": "🇲🇰", "Escocia": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+    "Finlandia": "🇫🇮", "Albania": "🇦🇱",
+    "Estados Unidos": "🇺🇸", "México": "🇲🇽",
     "Francia": "🇫🇷", "Italia": "🇮🇹",
     "Bélgica": "🇧🇪", "Turquía": "🇹🇷",
     "Corea del Sur": "🇰🇷", "Venezuela": "🇻🇪",
@@ -468,13 +474,14 @@ bm_fija = best_m.get("la_fija_real", {})
 bk_fija = backup_m.get("la_fija_real", {})
 target_day_name = sim_data.get("TargetDay", "Viernes").upper()
 target_date = sim_data.get("TargetDate", "02/10/2026")
+temporal_label = sim_data.get("TemporalLabel", "HOY").upper()
 
 new_matches_section = f"""
         <div id="view-container-matches">
             <!-- Phase 6: Top Actions Toolbar -->
             <div class="top-actions-toolbar">
                 <div class="banner-fija-de-oro">
-                    <div class="badge-fija-oro">👑 LA FIJA DE ORO &bull; MAÑANA {target_day_name} ({target_date}) (CONFIANZA {bm_fija.get('probability', 97.5)}%)</div>
+                    <div class="badge-fija-oro">👑 LA FIJA DE ORO &bull; {temporal_label} {target_day_name} ({target_date}) (CONFIANZA {bm_fija.get('probability', 97.5)}%)</div>
                     <div class="fija-oro-title">⭐ {best_m.get('home_team')} vs {best_m.get('away_team')} &bull; {bm_fija.get('selection')} (@{bm_fija.get('odds', 1.12)} | {bm_fija.get('probability')}%)</div>
                     <div class="fija-oro-sub">⭐ Respaldo Estelar: {backup_m.get('home_team')} vs {backup_m.get('away_team')} &bull; {bk_fija.get('selection')} (@{bk_fija.get('odds', 1.12)} | {bk_fija.get('probability')}%)</div>
                 </div>

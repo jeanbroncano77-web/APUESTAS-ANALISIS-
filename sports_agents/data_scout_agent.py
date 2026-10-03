@@ -767,6 +767,62 @@ class DataScoutAgent:
                 "referee_avg_yellows": 5.4,
                 "referee_avg_reds": 0.28,
                 "intensity": "Alta (Duelo táctico portugués con alta fricción y arbitraje severo)"
+            },
+
+            # --- UEFA NATIONS LEAGUE & FECHA FIFA DE HOY SÁBADO 03/10/2026 ---
+            ("España", "Chequia"): {
+                "tournament": "UEFA Nations League - Liga A Grupo 3 (Estelar)",
+                "stadium": "Estadio Carlos Tartiere (Oviedo, España)",
+                "spectators_est": "30,500 en estadio (~35M audiencia internacional)",
+                "referee": "Clément Turpin",
+                "referee_avg_yellows": 3.8,
+                "referee_avg_reds": 0.14,
+                "intensity": "Máxima (La campeona de Europa buscando afianzar el liderato con Lamine Yamal y Nico Williams)"
+            },
+            ("Croacia", "Inglaterra"): {
+                "tournament": "UEFA Nations League - Liga A Grupo 3",
+                "stadium": "Stadion Rujevica (Rijeka, Croacia)",
+                "spectators_est": "8,279 en estadio (~40M audiencia global)",
+                "referee": "Felix Zwayer",
+                "referee_avg_yellows": 4.1,
+                "referee_avg_reds": 0.16,
+                "intensity": "Batalla Titánica (Choque de gigantes europeos: Modric y Kovacic ante Bellingham y Kane)"
+            },
+            ("Suiza", "Eslovenia"): {
+                "tournament": "UEFA Nations League - Liga B Grupo 1",
+                "stadium": "St. Jakob-Park (Basilea, Suiza)",
+                "spectators_est": "34,000 en estadio (~12M audiencia global)",
+                "referee": "Maurizio Mariani",
+                "referee_avg_yellows": 4.2,
+                "referee_avg_reds": 0.15,
+                "intensity": "Alta (Xhaka y Embolo buscando imponer su jerarquía ante la amenaza de Benjamin Sesko)"
+            },
+            ("Macedonia del Norte", "Escocia"): {
+                "tournament": "UEFA Nations League - Liga B Grupo 1",
+                "stadium": "Toše Proeski Arena (Skopie, Macedonia)",
+                "spectators_est": "25,000 en estadio (~10M audiencia)",
+                "referee": "Espen Eskås",
+                "referee_avg_yellows": 4.5,
+                "referee_avg_reds": 0.20,
+                "intensity": "Muy Alta (Duelo físico y directo con McTominay liderando el poderío aéreo escocés)"
+            },
+            ("Finlandia", "Albania"): {
+                "tournament": "UEFA Nations League - Liga C Grupo 1",
+                "stadium": "Helsinki Olympic Stadium (Helsinki)",
+                "spectators_est": "28,000 en estadio (~8M audiencia)",
+                "referee": "Donatas Rumšas",
+                "referee_avg_yellows": 3.9,
+                "referee_avg_reds": 0.14,
+                "intensity": "Alta (Duelo táctico de orden defensivo y transiciones rápidas)"
+            },
+            ("Estados Unidos", "México"): {
+                "tournament": "Amistoso Internacional FIFA - Clásico de CONCACAF",
+                "stadium": "MetLife Stadium (East Rutherford, NJ)",
+                "spectators_est": "82,500 en estadio (~50M audiencia global)",
+                "referee": "Iván Barton",
+                "referee_avg_yellows": 5.1,
+                "referee_avg_reds": 0.28,
+                "intensity": "Máxima Pasión (El gran Clásico de Norteamérica con Pulisic frente a Santiago Giménez)"
             }
         }
         return matches.get((home_team, away_team), {

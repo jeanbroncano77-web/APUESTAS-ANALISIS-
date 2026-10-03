@@ -321,6 +321,126 @@ class SquadInjuryAgent:
                     "reallocation_targets": ["Takefusa Kubo", "Takumi Minamino"],
                     "medical_detail": "Acuerdo club-selección para preservación física de la figura de desborde."
                 }
+            ],
+            "España": [
+                {
+                    "name": "Rodri",
+                    "aliases": ["rodri", "rodrigo hernandez", "rodri hernandez"],
+                    "injury": "Rotura de ligamento cruzado anterior de rodilla derecha",
+                    "severity": "BAJA DE TEMPORADA",
+                    "veto_player_props": True,
+                    "offense_penalty": 0.94,
+                    "defense_penalty": 1.15,
+                    "reallocation_targets": ["Martín Zubimendi", "Pedri", "Fabián Ruiz"],
+                    "medical_detail": "Intervenido quirúrgicamente; baja sensible en el eje medular de La Roja. Zubimendi asume la contención."
+                },
+                {
+                    "name": "Dani Olmo",
+                    "aliases": ["olmo", "dani olmo"],
+                    "injury": "Lesión en el bíceps femoral derecho",
+                    "severity": "BAJA MÉDICA CONFIRMADA",
+                    "veto_player_props": True,
+                    "offense_penalty": 0.92,
+                    "reallocation_targets": ["Pedri", "Lamine Yamal", "Nico Williams"],
+                    "medical_detail": "Desconvocado por rotura fibrilar en el muslo derecho."
+                },
+                {
+                    "name": "Dani Carvajal",
+                    "aliases": ["carvajal", "dani carvajal"],
+                    "injury": "Rotura del ligamento cruzado anterior y colateral externo",
+                    "severity": "BAJA DE TEMPORADA",
+                    "veto_player_props": True,
+                    "offense_penalty": 0.97,
+                    "defense_penalty": 1.12,
+                    "reallocation_targets": ["Pedro Porro", "Óscar Mingueza"],
+                    "medical_detail": "Grave lesión ligamentosa; Pedro Porro toma el carril derecho."
+                },
+                {
+                    "name": "Robin Le Normand",
+                    "aliases": ["le normand", "robin le normand"],
+                    "injury": "Traumatismo craneoencefálico con hematoma subdural",
+                    "severity": "BAJA MÉDICA OBLIGADA",
+                    "veto_player_props": True,
+                    "offense_penalty": 1.0,
+                    "defense_penalty": 1.10,
+                    "reallocation_targets": ["Aymeric Laporte", "Dani Vivian", "Pau Cubarsí"],
+                    "medical_detail": "Protocolo neurológico estricto tras golpe en derbi madrileño."
+                }
+            ],
+            "Inglaterra": [
+                {
+                    "name": "Harry Kane",
+                    "aliases": ["kane", "harry kane"],
+                    "injury": "Molestia residual en el tobillo",
+                    "severity": "MONITOREO / DUDA ACTIVA",
+                    "veto_player_props": False,
+                    "offense_penalty": 0.95,
+                    "reallocation_targets": ["Cole Palmer", "Bukayo Saka", "Jude Bellingham", "Ollie Watkins"],
+                    "medical_detail": "Trabaja diferenciado; Lee Carsley evalúa darle descanso o iniciar con Watkins."
+                }
+            ],
+            "Croacia": [
+                {
+                    "name": "Josip Stanisic",
+                    "aliases": ["stanisic", "josip stanisic"],
+                    "injury": "Rotura del ligamento colateral de rodilla",
+                    "severity": "BAJA CONFIRMADA",
+                    "veto_player_props": True,
+                    "offense_penalty": 1.0,
+                    "defense_penalty": 1.12,
+                    "reallocation_targets": ["Joško Gvardiol", "Borna Sosa"],
+                    "medical_detail": "Baja en el lateral derecho de la zaga croata."
+                }
+            ],
+            "Chequia": [
+                {
+                    "name": "Jindřich Staněk",
+                    "aliases": ["stanek", "jindrich stanek"],
+                    "injury": "Luxación de hombro",
+                    "severity": "BAJA MÉDICA",
+                    "veto_player_props": True,
+                    "offense_penalty": 1.0,
+                    "defense_penalty": 1.18,
+                    "reallocation_targets": ["Matej Kovar"],
+                    "medical_detail": "Guardameta titular checo ausente; Kovar asume la portería en el Carlos Tartiere."
+                }
+            ],
+            "Suiza": [
+                {
+                    "name": "Denis Zakaria",
+                    "aliases": ["zakaria", "denis zakaria"],
+                    "injury": "Sobrecarga en los aductores",
+                    "severity": "MONITOREO MÉDICO",
+                    "veto_player_props": False,
+                    "offense_penalty": 0.98,
+                    "defense_penalty": 1.05,
+                    "reallocation_targets": ["Granit Xhaka", "Remo Freuler"],
+                    "medical_detail": "Duda en la medular helvética."
+                }
+            ],
+            "Estados Unidos": [
+                {
+                    "name": "Timothy Weah",
+                    "aliases": ["weah", "timothy weah"],
+                    "injury": "Molestia muscular en los isquiotibiales",
+                    "severity": "BAJA CONFIRMADA",
+                    "veto_player_props": True,
+                    "offense_penalty": 0.93,
+                    "reallocation_targets": ["Christian Pulisic", "Folarin Balogun", "Brenden Aaronson"],
+                    "medical_detail": "Extremo no disponible para el Clásico ante México."
+                }
+            ],
+            "México": [
+                {
+                    "name": "Hirving Lozano",
+                    "aliases": ["lozano", "hirving lozano", "chucky lozano"],
+                    "injury": "Lesión muscular en pierna derecha",
+                    "severity": "BAJA CONFIRMADA",
+                    "veto_player_props": True,
+                    "offense_penalty": 0.92,
+                    "reallocation_targets": ["Santiago Giménez", "César Huerta", "Orbelín Pineda"],
+                    "medical_detail": "Desconvocado del Tri por rotura fibrilar."
+                }
             ]
         }
 

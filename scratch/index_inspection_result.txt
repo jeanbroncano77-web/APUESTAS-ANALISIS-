@@ -1,0 +1,9 @@
+Badge: ['<div class="badge-fija-oro">👑 LA FIJA DE ORO &bull; MAÑANA SÁBADO (03/10/2026) (CONFIANZA 98.5%)</div>']
+Fija title: ['<div class="fija-oro-title">⭐ FC Augsburg vs Bayern Munich &bull; Empate o Bayern Munich (X2) (@1.12 | 98.5%)</div>']
+Match: <div class="switcher-teams"> <span>⚪ Real Madrid</span> <span class="vs-text">vs</span> <span>Villarreal 🟡</span> </div>
+Match: <div class="switcher-teams"> <span>🔴 FC Augsburg</span> <span class="vs-text">vs</span> <span>Bayern Munich 🔴</span> </div>
+Match: <div class="switcher-teams"> <span>🔵 Barcelona</span> <span class="vs-text">vs</span> <span>Getafe 🔵</span> </div>
+Match: <div class="switcher-teams"> <span>🔴 Arsenal</span> <span class="vs-text">vs</span> <span>Leeds United ⚪</span> </div>
+Match: <div class="switcher-teams"> <span>⚫ Inter Milan</span> <span class="vs-text">vs</span> <span>Parma 🟡</span> </div>
+Match: <div class="switcher-teams"> <span>🟡 Borussia Dortmund</span> <span class="vs-text">vs</span> <span>Werder Bremen 🟢</span> </div>
+Hero teams: ['Real Madrid', 'Villarreal', 'FC Augsburg', 'Bayern Munich', 'Barcelona', 'Getafe', 'Arsenal', 'Leeds United', 'Inter Milan', 'Parma', 'Borussia Dortmund', 'Werder Bremen']

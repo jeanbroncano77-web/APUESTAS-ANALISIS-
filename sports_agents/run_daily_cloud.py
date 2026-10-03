@@ -38,52 +38,89 @@ def main():
     # Si la ejecución es a partir de las 18:00 (o a las 19:30), se anticipa el día de MAÑANA
     if lima_now.hour >= 18:
         target_date_obj = lima_now + timedelta(days=1)
+        temporal_label = "MAÑANA"
+        is_tomorrow_flag = True
     else:
         target_date_obj = lima_now
+        temporal_label = "HOY"
+        is_tomorrow_flag = False
 
     target_weekday = target_date_obj.weekday()
     day_names = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"]
     target_day_name = day_names[target_weekday]
     target_date_str = target_date_obj.strftime("%d/%m/%Y")
 
-    print(f"Detectando calendario semanal: Proyectando cartelera estelar de {target_day_name.upper()} {target_date_str}...")
+    print(f"Detectando calendario semanal: Proyectando cartelera estelar ({temporal_label}) de {target_day_name.upper()} {target_date_str}...")
 
-    if target_weekday == 4:  # VIERNES (Fecha FIFA / UEFA Nations League / Partidos Estelares)
-        fixtures_tomorrow = [
-            ("Francia", "Italia"),
-            ("Bélgica", "Turquía"),
-            ("Corea del Sur", "Venezuela"),
-            ("Bosnia y Herzegovina", "Suecia"),
-            ("Polonia", "Rumanía"),
-            ("Hungría", "Georgia")
-        ]
-    elif target_weekday == 5:  # SÁBADO (Súper Sábado de Gigantes)
-        fixtures_tomorrow = [
-            ("Real Madrid", "Villarreal"),
-            ("FC Augsburg", "Bayern Munich"),
-            ("Barcelona", "Getafe"),
-            ("Arsenal", "Leeds United"),
-            ("Inter Milan", "Parma"),
-            ("Borussia Dortmund", "Werder Bremen")
-        ]
-    elif target_weekday == 6:  # DOMINGO (Cierre de Jornada de Élite)
-        fixtures_tomorrow = [
-            ("Real Madrid", "Villarreal"),
-            ("Barcelona", "Getafe"),
-            ("Arsenal", "Leeds United"),
-            ("FC Augsburg", "Bayern Munich"),
-            ("Dinamarca", "Portugal"),
-            ("Alemania", "Serbia")
-        ]
-    else:  # LUNES A JUEVES (Intersemanal / Champions / FIFA)
-        fixtures_tomorrow = [
-            ("Alemania", "Serbia"),
-            ("Dinamarca", "Portugal"),
-            ("Grecia", "Países Bajos"),
-            ("Gales", "Noruega"),
-            ("Irlanda", "Austria"),
-            ("Japón", "Ecuador")
-        ]
+    # Ventana Oficial de Fecha FIFA y Competiciones Internacionales (Octubre 2026)
+    is_fifa_window = (target_date_obj.year == 2026 and target_date_obj.month == 10 and target_date_obj.day in range(1, 15))
+
+    if is_fifa_window:
+        if target_weekday == 5:  # SÁBADO 03/10/2026 (UEFA Nations League & Clásico CONCACAF)
+            fixtures_tomorrow = [
+                ("España", "Chequia"),
+                ("Croacia", "Inglaterra"),
+                ("Suiza", "Eslovenia"),
+                ("Macedonia del Norte", "Escocia"),
+                ("Finlandia", "Albania"),
+                ("Estados Unidos", "México")
+            ]
+        elif target_weekday == 6:  # DOMINGO 04/10/2026 (UEFA Nations League Jornada 2)
+            fixtures_tomorrow = [
+                ("Alemania", "Serbia"),
+                ("Dinamarca", "Portugal"),
+                ("Grecia", "Países Bajos"),
+                ("Gales", "Noruega"),
+                ("Irlanda", "Austria"),
+                ("Japón", "Ecuador")
+            ]
+        elif target_weekday == 4:  # VIERNES 02/10/2026
+            fixtures_tomorrow = [
+                ("Francia", "Italia"),
+                ("Bélgica", "Turquía"),
+                ("Corea del Sur", "Venezuela"),
+                ("Bosnia y Herzegovina", "Suecia"),
+                ("Polonia", "Rumanía"),
+                ("Hungría", "Georgia")
+            ]
+        else:  # LUNES A JUEVES (Intersemanal FIFA)
+            fixtures_tomorrow = [
+                ("Alemania", "Serbia"),
+                ("Dinamarca", "Portugal"),
+                ("Grecia", "Países Bajos"),
+                ("Gales", "Noruega"),
+                ("Irlanda", "Austria"),
+                ("Japón", "Ecuador")
+            ]
+    else:
+        # Calendario de Clubes Europeos (Fuera de ventana FIFA)
+        if target_weekday == 5:  # SÁBADO (Clubes)
+            fixtures_tomorrow = [
+                ("Real Madrid", "Villarreal"),
+                ("FC Augsburg", "Bayern Munich"),
+                ("Barcelona", "Getafe"),
+                ("Arsenal", "Leeds United"),
+                ("Inter Milan", "Parma"),
+                ("Borussia Dortmund", "Werder Bremen")
+            ]
+        elif target_weekday == 6:  # DOMINGO (Clubes)
+            fixtures_tomorrow = [
+                ("Real Madrid", "Villarreal"),
+                ("Barcelona", "Getafe"),
+                ("Arsenal", "Leeds United"),
+                ("FC Augsburg", "Bayern Munich"),
+                ("Inter Milan", "Parma"),
+                ("Borussia Dortmund", "Werder Bremen")
+            ]
+        else:  # LUNES A JUEVES (Intersemanal Clubes)
+            fixtures_tomorrow = [
+                ("Real Madrid", "Villarreal"),
+                ("FC Augsburg", "Bayern Munich"),
+                ("Barcelona", "Getafe"),
+                ("Arsenal", "Leeds United"),
+                ("Inter Milan", "Parma"),
+                ("Borussia Dortmund", "Werder Bremen")
+            ]
 
     print(f"1. Simulando los 6 partidos estelares de {target_day_name.upper()} ({target_date_str}) con los 11 agentes...")
     results = []
@@ -98,6 +135,7 @@ def main():
             "GeneratedAt": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
             "TargetDay": target_day_name,
             "TargetDate": target_date_str,
+            "TemporalLabel": temporal_label,
             "Matches": results
         }, f, ensure_ascii=False, indent=2)
     print(f"2. simulations_tomorrow_results.json actualizado con éxito para {target_day_name.upper()} ({target_date_str}).")
@@ -176,7 +214,7 @@ def main():
     print("5. Despachando notificaciones a Telegram (@Jean_Broncano)...")
     notifier = WhatsAppNotifierAgent()
 
-    msg1 = notifier.build_daily_fixtures_message(results, is_tomorrow=True, target_day_name=target_day_name, target_date_str=target_date_str)
+    msg1 = notifier.build_daily_fixtures_message(results, is_tomorrow=is_tomorrow_flag, target_day_name=target_day_name, target_date_str=target_date_str)
     msg2 = notifier.build_autonomous_feedback_message(feedback_data)
 
     res1 = notifier.send_telegram(msg1)

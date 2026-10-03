@@ -144,11 +144,11 @@
     },
     {
       "cycle": 3,
-      "timestamp": "2026-10-03 05:31:33",
+      "timestamp": "2026-10-03 08:35:52",
       "action": "Auto-Calibración Autónoma Diaria (Sábado 03/10/2026)",
       "observations": [
-        "SquadInjuryAgent: 24 bajas médicas vetadas (Kylian Mbappé, Thibaut Courtois, David Alaba).",
-        "MarketRealityAgent: 6 Fijas optimizadas con confianza media del 95.0%.",
+        "SquadInjuryAgent: 8 bajas médicas vetadas (Rodri, Dani Olmo, Dani Carvajal).",
+        "MarketRealityAgent: 6 Fijas optimizadas con confianza media del 94.6%.",
         "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Sábado."
       ],
@@ -162,5 +162,5 @@
     "player_sot_restriction_factor": 0.35
   },
   "last_auto_audit": {},
-  "last_updated": "2026-10-03 05:31:33"
+  "last_updated": "2026-10-03 08:35:52"
 }
