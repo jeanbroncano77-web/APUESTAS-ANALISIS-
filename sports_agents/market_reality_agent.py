@@ -178,9 +178,9 @@ class MarketRealityAgent:
         # -------------------------------------------------------------
         # 5. MERCADO: TOTAL DE CÓRNERS FIJO (Saques de Esquina)
         # -------------------------------------------------------------
-        # Córners de piso Ultra-Fija (96.5% - 97.5%)
-        prob_corn65 = round(min(97.2, 92.5 + min(4.7, max(0.0, (exp_corners - 7.5) * 2.5))), 1)
-        odds_corn65 = round(max(1.15, (1.0 / (prob_corn65 / 100.0)) * 1.06), 2)
+        # Córners de piso Ultra-Fija (95.2% - 97.2%)
+        prob_corn65 = round(min(97.2, 95.2 + min(2.0, max(0.0, (exp_corners - 7.0) * 1.5))), 1)
+        odds_corn65 = round(max(1.12, (1.0 / (prob_corn65 / 100.0)) * 1.06), 2)
         candidates.append({
             "market": "Total de Córners Fijo",
             "category_code": "TOTAL_CORNERS",
