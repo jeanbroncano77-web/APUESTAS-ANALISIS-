@@ -67,12 +67,12 @@ def main():
             ]
         elif target_weekday == 6:  # DOMINGO 04/10/2026 (UEFA Nations League Jornada 2)
             fixtures_tomorrow = [
-                ("Alemania", "Serbia", "DOBLE_OPORTUNIDAD"),
-                ("Dinamarca", "Portugal", "TOTAL_CORNERS"),
+                ("Alemania", "Serbia", "GOL_EQUIPO"),
+                ("Dinamarca", "Portugal", "DOBLE_OPORTUNIDAD"),
                 ("Grecia", "Países Bajos", "GOLES_UNDER"),
-                ("Gales", "Noruega", "HANDICAP_BLINDADO"),
+                ("Gales", "Noruega", "TOTAL_CORNERS"),
                 ("Irlanda", "Austria", "GOLES_OVER"),
-                ("Japón", "Ecuador", "GOL_EQUIPO")
+                ("Japón", "Ecuador", "HANDICAP_BLINDADO")
             ]
         elif target_weekday == 4:  # VIERNES 02/10/2026
             fixtures_tomorrow = [
