@@ -1,8 +1,8 @@
 {
-  "GeneratedAt": "2026-10-03 23:05:26",
+  "GeneratedAt": "2026-10-04 06:07:03",
   "TargetDay": "Domingo",
   "TargetDate": "04/10/2026",
-  "TemporalLabel": "MAÑANA",
+  "TemporalLabel": "HOY",
   "Matches": [
     {
       "match": "Alemania vs Serbia",
@@ -314,22 +314,22 @@
         "market": "Gol de Equipo de Seguridad",
         "category_code": "GOL_EQUIPO",
         "selection": "Alemania anota más de 0.5 goles",
-        "probability": 96.8,
-        "odds": 1.12,
+        "probability": 95.8,
+        "odds": 1.1,
         "availability": "Universal en todas las plataformas",
         "rationale": "Volumen ofensivo de Alemania (1.4 xG) asegura al menos un gol a favor.",
-        "_rank_score": 166.52
+        "_rank_score": 165.68
       },
       "all_fija_options": [
         {
           "market": "Gol de Equipo de Seguridad",
           "category_code": "GOL_EQUIPO",
           "selection": "Alemania anota más de 0.5 goles",
-          "probability": 96.8,
-          "odds": 1.12,
+          "probability": 95.8,
+          "odds": 1.1,
           "availability": "Universal en todas las plataformas",
           "rationale": "Volumen ofensivo de Alemania (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 166.52
+          "_rank_score": 165.68
         },
         {
           "market": "Doble Oportunidad Blindada",
@@ -352,6 +352,16 @@
           "_rank_score": 116.82
         },
         {
+          "market": "Hándicap Blindado",
+          "category_code": "HANDICAP_BLINDADO",
+          "selection": "Serbia (+1.5)",
+          "probability": 96.8,
+          "odds": 1.14,
+          "availability": "Todas las casas de apuestas (Hándicap Asiático)",
+          "rationale": "Cubre victoria de Serbia, empate o derrota por solo 1 gol de diferencia.",
+          "_rank_score": 116.76
+        },
+        {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_OVER",
           "selection": "Más de 0.5 goles totales",
@@ -359,16 +369,6 @@
           "odds": 1.08,
           "availability": "Universal en todas las plataformas",
           "rationale": "Intensidad ofensiva global de 2.5 xG garantiza al menos una anotación en 90 minutos.",
-          "_rank_score": 116.4
-        },
-        {
-          "market": "Hándicap Blindado",
-          "category_code": "HANDICAP_BLINDADO",
-          "selection": "Serbia (+1.5)",
-          "probability": 96.2,
-          "odds": 1.14,
-          "availability": "Todas las casas de apuestas (Hándicap Asiático)",
-          "rationale": "Cubre victoria de Serbia, empate o derrota por solo 1 gol de diferencia.",
           "_rank_score": 116.4
         },
         {
@@ -385,11 +385,11 @@
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
           "selection": "Más de 6.5 córners totales",
-          "probability": 92.5,
-          "odds": 1.15,
+          "probability": 95.5,
+          "odds": 1.12,
           "availability": "Línea de máxima cobertura en Bet365 / Betano",
           "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (7.2).",
-          "_rank_score": 69.3
+          "_rank_score": 115.74
         },
         {
           "market": "Total de Goles Fijo",
@@ -758,6 +758,16 @@
           "_rank_score": 116.82
         },
         {
+          "market": "Hándicap Blindado",
+          "category_code": "HANDICAP_BLINDADO",
+          "selection": "Dinamarca (+1.5)",
+          "probability": 96.8,
+          "odds": 1.14,
+          "availability": "Todas las casas de apuestas (Hándicap Asiático)",
+          "rationale": "Cubre victoria de Dinamarca, empate o derrota por solo 1 gol de diferencia.",
+          "_rank_score": 116.76
+        },
+        {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_OVER",
           "selection": "Más de 0.5 goles totales",
@@ -768,14 +778,34 @@
           "_rank_score": 116.4
         },
         {
-          "market": "Hándicap Blindado",
-          "category_code": "HANDICAP_BLINDADO",
-          "selection": "Dinamarca (+1.5)",
-          "probability": 96.2,
-          "odds": 1.14,
-          "availability": "Todas las casas de apuestas (Hándicap Asiático)",
-          "rationale": "Cubre victoria de Dinamarca, empate o derrota por solo 1 gol de diferencia.",
-          "_rank_score": 116.4
+          "market": "Total de Córners Fijo",
+          "category_code": "TOTAL_CORNERS",
+          "selection": "Más de 6.5 córners totales",
+          "probability": 96.5,
+          "odds": 1.12,
+          "availability": "Línea de máxima cobertura en Bet365 / Betano",
+          "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (7.9).",
+          "_rank_score": 116.34
+        },
+        {
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "Dinamarca anota más de 0.5 goles",
+          "probability": 95.8,
+          "odds": 1.1,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Volumen ofensivo de Dinamarca (1.4 xG) asegura al menos un gol a favor.",
+          "_rank_score": 115.68
+        },
+        {
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "Portugal anota más de 0.5 goles",
+          "probability": 95.2,
+          "odds": 1.12,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Eficacia ofensiva de Portugal (1.1 xG) garantiza presencia en el marcador.",
+          "_rank_score": 115.56
         },
         {
           "market": "Victoria Sin Empate (DNB)",
@@ -786,16 +816,6 @@
           "availability": "100% Casas de Apuestas (Mercado 'Draw No Bet')",
           "rationale": "Victoria de Portugal con devolución del importe en caso de igualdad.",
           "_rank_score": 71.16
-        },
-        {
-          "market": "Total de Córners Fijo",
-          "category_code": "TOTAL_CORNERS",
-          "selection": "Más de 6.5 córners totales",
-          "probability": 93.5,
-          "odds": 1.15,
-          "availability": "Línea de máxima cobertura en Bet365 / Betano",
-          "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (7.9).",
-          "_rank_score": 69.9
         },
         {
           "market": "Total de Goles Fijo",
@@ -818,16 +838,6 @@
           "_rank_score": 67.44
         },
         {
-          "market": "Gol de Equipo de Seguridad",
-          "category_code": "GOL_EQUIPO",
-          "selection": "Portugal anota más de 0.5 goles",
-          "probability": 86.0,
-          "odds": 1.22,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Eficacia ofensiva de Portugal (1.1 xG) garantiza presencia en el marcador.",
-          "_rank_score": 66.24
-        },
-        {
           "market": "Ambos Equipos Anotan",
           "category_code": "AMBOS_ANOTAN",
           "selection": "Ambos Equipos Anotan (Sí)",
@@ -836,16 +846,6 @@
           "availability": "Universal en todas las plataformas",
           "rationale": "Eficacia ofensiva cruzada: ambos cuadros promedian ocasiones claras de gol (1.4 vs 1.1 xG).",
           "_rank_score": 65.1
-        },
-        {
-          "market": "Gol de Equipo de Seguridad",
-          "category_code": "GOL_EQUIPO",
-          "selection": "Dinamarca anota más de 0.5 goles",
-          "probability": 75.4,
-          "odds": 1.39,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Volumen ofensivo de Dinamarca (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 61.92
         },
         {
           "market": "Victoria Directa (1X2)",
@@ -1178,6 +1178,26 @@
           "_rank_score": 117.44
         },
         {
+          "market": "Total de Córners Fijo",
+          "category_code": "TOTAL_CORNERS",
+          "selection": "Más de 6.5 córners totales",
+          "probability": 97.2,
+          "odds": 1.12,
+          "availability": "Línea de máxima cobertura en Bet365 / Betano",
+          "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (8.6).",
+          "_rank_score": 116.76
+        },
+        {
+          "market": "Hándicap Blindado",
+          "category_code": "HANDICAP_BLINDADO",
+          "selection": "Grecia (+1.5)",
+          "probability": 96.8,
+          "odds": 1.14,
+          "availability": "Todas las casas de apuestas (Hándicap Asiático)",
+          "rationale": "Cubre victoria de Grecia, empate o derrota por solo 1 gol de diferencia.",
+          "_rank_score": 116.76
+        },
+        {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_OVER",
           "selection": "Más de 0.5 goles totales",
@@ -1188,24 +1208,24 @@
           "_rank_score": 116.4
         },
         {
-          "market": "Hándicap Blindado",
-          "category_code": "HANDICAP_BLINDADO",
-          "selection": "Grecia (+1.5)",
-          "probability": 96.2,
-          "odds": 1.14,
-          "availability": "Todas las casas de apuestas (Hándicap Asiático)",
-          "rationale": "Cubre victoria de Grecia, empate o derrota por solo 1 gol de diferencia.",
-          "_rank_score": 116.4
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "Grecia anota más de 0.5 goles",
+          "probability": 95.8,
+          "odds": 1.1,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Volumen ofensivo de Grecia (1.4 xG) asegura al menos un gol a favor.",
+          "_rank_score": 115.68
         },
         {
-          "market": "Total de Córners Fijo",
-          "category_code": "TOTAL_CORNERS",
-          "selection": "Más de 6.5 córners totales",
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "Países Bajos anota más de 0.5 goles",
           "probability": 95.2,
-          "odds": 1.15,
-          "availability": "Línea de máxima cobertura en Bet365 / Betano",
-          "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (8.6).",
-          "_rank_score": 115.92
+          "odds": 1.12,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Eficacia ofensiva de Países Bajos (1.1 xG) garantiza presencia en el marcador.",
+          "_rank_score": 115.56
         },
         {
           "market": "Total de Goles Fijo",
@@ -1238,16 +1258,6 @@
           "_rank_score": 67.38
         },
         {
-          "market": "Gol de Equipo de Seguridad",
-          "category_code": "GOL_EQUIPO",
-          "selection": "Países Bajos anota más de 0.5 goles",
-          "probability": 86.0,
-          "odds": 1.22,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Eficacia ofensiva de Países Bajos (1.1 xG) garantiza presencia en el marcador.",
-          "_rank_score": 66.24
-        },
-        {
           "market": "Victoria Sin Empate (DNB)",
           "category_code": "VICTORIA_SIN_EMPATE",
           "selection": "Países Bajos Gana (Empate No Válido / DNB)",
@@ -1266,16 +1276,6 @@
           "availability": "Universal en todas las plataformas",
           "rationale": "Eficacia ofensiva cruzada: ambos cuadros promedian ocasiones claras de gol (1.4 vs 1.1 xG).",
           "_rank_score": 65.1
-        },
-        {
-          "market": "Gol de Equipo de Seguridad",
-          "category_code": "GOL_EQUIPO",
-          "selection": "Grecia anota más de 0.5 goles",
-          "probability": 78.0,
-          "odds": 1.35,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Volumen ofensivo de Grecia (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 63.0
         },
         {
           "market": "Victoria Directa (1X2)",
@@ -1573,22 +1573,22 @@
         "market": "Total de Córners Fijo",
         "category_code": "TOTAL_CORNERS",
         "selection": "Más de 6.5 córners totales",
-        "probability": 95.8,
-        "odds": 1.15,
+        "probability": 97.2,
+        "odds": 1.12,
         "availability": "Línea de máxima cobertura en Bet365 / Betano",
         "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (8.8).",
-        "_rank_score": 186.28
+        "_rank_score": 186.76
       },
       "all_fija_options": [
         {
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
           "selection": "Más de 6.5 córners totales",
-          "probability": 95.8,
-          "odds": 1.15,
+          "probability": 97.2,
+          "odds": 1.12,
           "availability": "Línea de máxima cobertura en Bet365 / Betano",
           "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (8.8).",
-          "_rank_score": 186.28
+          "_rank_score": 186.76
         },
         {
           "market": "Total de Córners Fijo",
@@ -1611,6 +1611,16 @@
           "_rank_score": 116.82
         },
         {
+          "market": "Hándicap Blindado",
+          "category_code": "HANDICAP_BLINDADO",
+          "selection": "Noruega (+1.5)",
+          "probability": 96.8,
+          "odds": 1.14,
+          "availability": "Todas las casas de apuestas (Hándicap Asiático)",
+          "rationale": "Cubre victoria de Noruega, empate o derrota por solo 1 gol de diferencia.",
+          "_rank_score": 116.76
+        },
+        {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_OVER",
           "selection": "Más de 0.5 goles totales",
@@ -1621,24 +1631,14 @@
           "_rank_score": 116.4
         },
         {
-          "market": "Hándicap Blindado",
-          "category_code": "HANDICAP_BLINDADO",
-          "selection": "Noruega (+1.5)",
-          "probability": 96.2,
-          "odds": 1.14,
-          "availability": "Todas las casas de apuestas (Hándicap Asiático)",
-          "rationale": "Cubre victoria de Noruega, empate o derrota por solo 1 gol de diferencia.",
-          "_rank_score": 116.4
-        },
-        {
           "market": "Gol de Equipo de Seguridad",
           "category_code": "GOL_EQUIPO",
           "selection": "Gales anota más de 0.5 goles",
-          "probability": 91.9,
-          "odds": 1.14,
+          "probability": 95.8,
+          "odds": 1.1,
           "availability": "Universal en todas las plataformas",
           "rationale": "Volumen ofensivo de Gales (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 68.82
+          "_rank_score": 115.68
         },
         {
           "market": "Total de Goles Fijo",
@@ -2017,11 +2017,41 @@
           "market": "Hándicap Blindado",
           "category_code": "HANDICAP_BLINDADO",
           "selection": "Irlanda (+1.5)",
-          "probability": 96.2,
+          "probability": 96.8,
           "odds": 1.14,
           "availability": "Todas las casas de apuestas (Hándicap Asiático)",
           "rationale": "Cubre victoria de Irlanda, empate o derrota por solo 1 gol de diferencia.",
-          "_rank_score": 116.4
+          "_rank_score": 116.76
+        },
+        {
+          "market": "Total de Córners Fijo",
+          "category_code": "TOTAL_CORNERS",
+          "selection": "Más de 6.5 córners totales",
+          "probability": 95.5,
+          "odds": 1.12,
+          "availability": "Línea de máxima cobertura en Bet365 / Betano",
+          "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (7.2).",
+          "_rank_score": 115.74
+        },
+        {
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "Irlanda anota más de 0.5 goles",
+          "probability": 95.8,
+          "odds": 1.1,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Volumen ofensivo de Irlanda (1.4 xG) asegura al menos un gol a favor.",
+          "_rank_score": 115.68
+        },
+        {
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "Austria anota más de 0.5 goles",
+          "probability": 95.2,
+          "odds": 1.12,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Eficacia ofensiva de Austria (1.1 xG) garantiza presencia en el marcador.",
+          "_rank_score": 115.56
         },
         {
           "market": "Doble Oportunidad Blindada",
@@ -2032,16 +2062,6 @@
           "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
           "rationale": "El favorito visitante Austria puntúa en el 93.4% de las simulaciones.",
           "_rank_score": 69.48
-        },
-        {
-          "market": "Total de Córners Fijo",
-          "category_code": "TOTAL_CORNERS",
-          "selection": "Más de 6.5 córners totales",
-          "probability": 92.5,
-          "odds": 1.15,
-          "availability": "Línea de máxima cobertura en Bet365 / Betano",
-          "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (7.2).",
-          "_rank_score": 69.3
         },
         {
           "market": "Victoria Sin Empate (DNB)",
@@ -2064,16 +2084,6 @@
           "_rank_score": 67.44
         },
         {
-          "market": "Gol de Equipo de Seguridad",
-          "category_code": "GOL_EQUIPO",
-          "selection": "Austria anota más de 0.5 goles",
-          "probability": 86.0,
-          "odds": 1.22,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Eficacia ofensiva de Austria (1.1 xG) garantiza presencia en el marcador.",
-          "_rank_score": 66.24
-        },
-        {
           "market": "Ambos Equipos Anotan",
           "category_code": "AMBOS_ANOTAN",
           "selection": "Ambos Equipos Anotan (Sí)",
@@ -2082,16 +2092,6 @@
           "availability": "Universal en todas las plataformas",
           "rationale": "Eficacia ofensiva cruzada: ambos cuadros promedian ocasiones claras de gol (1.4 vs 1.1 xG).",
           "_rank_score": 65.1
-        },
-        {
-          "market": "Gol de Equipo de Seguridad",
-          "category_code": "GOL_EQUIPO",
-          "selection": "Irlanda anota más de 0.5 goles",
-          "probability": 76.3,
-          "odds": 1.38,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Volumen ofensivo de Irlanda (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 62.34
         },
         {
           "market": "Victoria Directa (1X2)",
@@ -2435,24 +2435,24 @@
           "_rank_score": 116.4
         },
         {
-          "market": "Total de Córners Fijo",
-          "category_code": "TOTAL_CORNERS",
-          "selection": "Más de 6.5 córners totales",
-          "probability": 92.5,
-          "odds": 1.15,
-          "availability": "Línea de máxima cobertura en Bet365 / Betano",
-          "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (6.7).",
-          "_rank_score": 69.3
-        },
-        {
           "market": "Gol de Equipo de Seguridad",
           "category_code": "GOL_EQUIPO",
           "selection": "Japón anota más de 0.5 goles",
-          "probability": 92.0,
-          "odds": 1.14,
+          "probability": 95.8,
+          "odds": 1.1,
           "availability": "Universal en todas las plataformas",
           "rationale": "Volumen ofensivo de Japón (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 68.88
+          "_rank_score": 115.68
+        },
+        {
+          "market": "Total de Córners Fijo",
+          "category_code": "TOTAL_CORNERS",
+          "selection": "Más de 6.5 córners totales",
+          "probability": 95.2,
+          "odds": 1.12,
+          "availability": "Línea de máxima cobertura en Bet365 / Betano",
+          "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (6.7).",
+          "_rank_score": 115.56
         },
         {
           "market": "Total de Goles Fijo",
