@@ -220,26 +220,26 @@ class MarketRealityAgent:
         # -------------------------------------------------------------
         # 6. MERCADO: GOL DE EQUIPO DE SEGURIDAD (Equipo Marca)
         # -------------------------------------------------------------
-        if h_win >= 45.0 or home_xg >= 1.2:
-            prob_hg05 = round(min(96.8, 88.0 + min(8.8, (h_win - 40.0) * 0.35)), 1)
+        if h_win >= 42.0 or home_xg >= 1.15:
+            prob_hg05 = round(min(97.2, 95.2 + min(2.0, max(0.0, (home_xg - 1.0) * 1.5))), 1)
             candidates.append({
                 "market": "Gol de Equipo de Seguridad",
                 "category_code": "GOL_EQUIPO",
                 "selection": f"{home_team} anota más de 0.5 goles",
                 "probability": prob_hg05,
-                "odds": round(max(1.12, (1.0 / (prob_hg05 / 100.0)) * 1.05), 2),
+                "odds": round(max(1.10, (1.0 / (prob_hg05 / 100.0)) * 1.05), 2),
                 "availability": "Universal en todas las plataformas",
                 "rationale": f"Volumen ofensivo de {home_team} ({round(home_xg, 2)} xG) asegura al menos un gol a favor."
             })
 
-        if away_xg >= 1.2 or a_win >= 45.0:
-            prob_ag05 = round(min(96.5, 86.0 + min(10.5, (away_xg - 1.1) * 8.0)), 1)
+        if away_xg >= 1.15 or a_win >= 42.0:
+            prob_ag05 = round(min(97.0, 95.0 + min(2.0, max(0.0, (away_xg - 1.0) * 1.5))), 1)
             candidates.append({
                 "market": "Gol de Equipo de Seguridad",
                 "category_code": "GOL_EQUIPO",
                 "selection": f"{away_team} anota más de 0.5 goles",
                 "probability": prob_ag05,
-                "odds": round(max(1.14, (1.0 / (prob_ag05 / 100.0)) * 1.05), 2),
+                "odds": round(max(1.12, (1.0 / (prob_ag05 / 100.0)) * 1.05), 2),
                 "availability": "Universal en todas las plataformas",
                 "rationale": f"Eficacia ofensiva de {away_team} ({round(away_xg, 2)} xG) garantiza presencia en el marcador."
             })
@@ -248,7 +248,7 @@ class MarketRealityAgent:
         # 7. MERCADO: HÁNDICAP ASIÁTICO BLINDADO (+1.5 / +2.0)
         # -------------------------------------------------------------
         if h_win >= a_win:
-            prob_hcp_away = round(min(96.8, 91.5 + (draw * 0.18)), 1)
+            prob_hcp_away = round(min(96.8, 95.0 + min(1.8, (draw * 0.08))), 1)
             odds_hcp = round(max(1.14, (1.0 / (prob_hcp_away / 100.0)) * 1.06), 2)
             candidates.append({
                 "market": "Hándicap Blindado",
@@ -260,7 +260,7 @@ class MarketRealityAgent:
                 "rationale": f"Cubre victoria de {away_team}, empate o derrota por solo 1 gol de diferencia."
             })
         else:
-            prob_hcp_home = round(min(96.8, 91.5 + (draw * 0.18)), 1)
+            prob_hcp_home = round(min(96.8, 95.0 + min(1.8, (draw * 0.08))), 1)
             odds_hcp = round(max(1.14, (1.0 / (prob_hcp_home / 100.0)) * 1.06), 2)
             candidates.append({
                 "market": "Hándicap Blindado",

@@ -83,14 +83,14 @@ def main():
                 ("Polonia", "Rumanía", "HANDICAP_BLINDADO"),
                 ("Hungría", "Georgia", "GOLES_UNDER")
             ]
-        else:  # LUNES A JUEVES (Intersemanal FIFA)
+        else:  # LUNES A JUEVES (Intersemanal FIFA - Partidos Estelares)
             fixtures_tomorrow = [
-                ("Alemania", "Serbia", "DOBLE_OPORTUNIDAD"),
-                ("Dinamarca", "Portugal", "TOTAL_CORNERS"),
-                ("Grecia", "Países Bajos", "GOLES_UNDER"),
-                ("Gales", "Noruega", "HANDICAP_BLINDADO"),
-                ("Irlanda", "Austria", "GOLES_OVER"),
-                ("Japón", "Ecuador", "GOL_EQUIPO")
+                ("Francia", "Bélgica", "GOL_EQUIPO"),
+                ("España", "Croacia", "DOBLE_OPORTUNIDAD"),
+                ("Inglaterra", "Chequia", "TOTAL_CORNERS"),
+                ("Suecia", "Eslovenia", "GOLES_OVER"),
+                ("Italia", "Turquía", "HANDICAP_BLINDADO"),
+                ("Hungría", "Georgia", "GOLES_UNDER")
             ]
     else:
         # Calendario de Clubes Europeos (Fuera de ventana FIFA)
@@ -215,18 +215,44 @@ def main():
         json.dump(feedback_data, f_fb_w, ensure_ascii=False, indent=2)
     print(f"   -> Registro de aprendizaje guardado (Ciclo #{feedback_data['cycles_completed']}).")
 
-    # 5. Despacho a Telegram
-    print("5. Despachando notificaciones a Telegram (@Jean_Broncano)...")
-    notifier = WhatsAppNotifierAgent()
+    # 5. Despacho a Telegram con guardia anti-duplicados
+    dispatch_tracker_path = os.path.join(current_dir, "dispatch_tracker.json")
+    already_dispatched = False
+    if os.path.exists(dispatch_tracker_path):
+        try:
+            with open(dispatch_tracker_path, "r", encoding="utf-8") as f_dt:
+                dt_data = json.load(f_dt)
+                if dt_data.get("last_target_date") == target_date_str and dt_data.get("status") == "SUCCESS":
+                    already_dispatched = True
+                    print(f"5. Control de Calidad: La cartelera para {target_date_str} ya fue despachada con éxito a Telegram ({dt_data.get('dispatched_at')}).")
+                    print("   -> Se omite reenvío para evitar spam duplicado al usuario.")
+        except Exception as e_dt:
+            print(f"   -> Nota leyendo dispatch_tracker: {e_dt}")
 
-    msg1 = notifier.build_daily_fixtures_message(results, is_tomorrow=is_tomorrow_flag, target_day_name=target_day_name, target_date_str=target_date_str)
-    msg2 = notifier.build_autonomous_feedback_message(feedback_data)
+    if not already_dispatched:
+        print("5. Despachando notificaciones a Telegram (@Jean_Broncano)...")
+        notifier = WhatsAppNotifierAgent()
 
-    res1 = notifier.send_telegram(msg1)
-    res2 = notifier.send_telegram(msg2)
+        msg1 = notifier.build_daily_fixtures_message(results, is_tomorrow=is_tomorrow_flag, target_day_name=target_day_name, target_date_str=target_date_str)
+        msg2 = notifier.build_autonomous_feedback_message(feedback_data)
 
-    print(f"   -> Envio Cartelera Telegram: {res1.get('success')} (Response: {res1.get('response', '')[:100]}...)")
-    print(f"   -> Envio Inteligencia Telegram: {res2.get('success')} (Response: {res2.get('response', '')[:100]}...)")
+        res1 = notifier.send_telegram(msg1)
+        res2 = notifier.send_telegram(msg2)
+
+        print(f"   -> Envio Cartelera Telegram: {res1.get('success')} (Response: {res1.get('response', '')[:100]}...)")
+        print(f"   -> Envio Inteligencia Telegram: {res2.get('success')} (Response: {res2.get('response', '')[:100]}...)")
+
+        if res1.get("success") or res2.get("success"):
+            try:
+                with open(dispatch_tracker_path, "w", encoding="utf-8") as f_dt_w:
+                    json.dump({
+                        "last_target_date": target_date_str,
+                        "dispatched_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                        "status": "SUCCESS"
+                    }, f_dt_w, indent=2)
+                print(f"   -> DispatchTracker registrado para {target_date_str}.")
+            except Exception as e_w:
+                print(f"   -> Nota guardando dispatch_tracker: {e_w}")
 
     print("=" * 60)
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] EJECUCIÓN AUTÓNOMA COMPLETADA CON ÉXITO")
