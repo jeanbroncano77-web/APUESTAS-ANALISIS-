@@ -1,0 +1,150 @@
+{
+  "2026-10-04": {
+    "date_str": "04/10/2026",
+    "day_name": "Domingo",
+    "competition": "UEFA Nations League - Jornada 4",
+    "fixtures": [
+      [
+        "Portugal",
+        "Noruega",
+        "GOL_EQUIPO"
+      ],
+      [
+        "Grecia",
+        "Alemania",
+        "HANDICAP_BLINDADO"
+      ],
+      [
+        "Países Bajos",
+        "Serbia",
+        "GOLES_OVER"
+      ],
+      [
+        "Gales",
+        "Dinamarca",
+        "TOTAL_CORNERS"
+      ],
+      [
+        "Irlanda",
+        "Israel",
+        "GOLES_UNDER"
+      ],
+      [
+        "Kosovo",
+        "Austria",
+        "DOBLE_OPORTUNIDAD"
+      ]
+    ]
+  },
+  "2026-10-05": {
+    "date_str": "05/10/2026",
+    "day_name": "Lunes",
+    "competition": "UEFA Nations League - Jornada 4",
+    "fixtures": [
+      [
+        "Francia",
+        "Bélgica",
+        "GOL_EQUIPO"
+      ],
+      [
+        "Italia",
+        "Turquía",
+        "HANDICAP_BLINDADO"
+      ],
+      [
+        "Suecia",
+        "Eslovenia",
+        "GOLES_OVER"
+      ],
+      [
+        "Bosnia y Herzegovina",
+        "Rumanía",
+        "TOTAL_CORNERS"
+      ],
+      [
+        "Hungría",
+        "Georgia",
+        "GOLES_UNDER"
+      ],
+      [
+        "Macedonia del Norte",
+        "Finlandia",
+        "DOBLE_OPORTUNIDAD"
+      ]
+    ]
+  },
+  "2026-10-06": {
+    "date_str": "06/10/2026",
+    "day_name": "Martes",
+    "competition": "UEFA Nations League & Eliminatorias",
+    "fixtures": [
+      [
+        "España",
+        "Croacia",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Escocia",
+        "Portugal",
+        "GOLES_UNDER"
+      ],
+      [
+        "Polonia",
+        "Croacia",
+        "TOTAL_CORNERS"
+      ],
+      [
+        "Suiza",
+        "Dinamarca",
+        "HANDICAP_BLINDADO"
+      ],
+      [
+        "Alemania",
+        "Países Bajos",
+        "GOLES_OVER"
+      ],
+      [
+        "Corea del Sur",
+        "Venezuela",
+        "GOL_EQUIPO"
+      ]
+    ]
+  },
+  "2026-10-17": {
+    "date_str": "17/10/2026",
+    "day_name": "Sábado",
+    "competition": "Ligas Europeas de Élite (Retorno Post-FIFA)",
+    "fixtures": [
+      [
+        "Real Madrid",
+        "Villarreal",
+        "GOL_EQUIPO"
+      ],
+      [
+        "FC Augsburg",
+        "Bayern Munich",
+        "GOLES_OVER"
+      ],
+      [
+        "Arsenal",
+        "Leeds United",
+        "TOTAL_CORNERS"
+      ],
+      [
+        "Barcelona",
+        "Getafe",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Inter Milan",
+        "Parma",
+        "HANDICAP_BLINDADO"
+      ],
+      [
+        "Borussia Dortmund",
+        "Werder Bremen",
+        "GOLES_UNDER"
+      ]
+    ]
+  }
+}
