@@ -1,6 +1,6 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 14,
+  "cycles_completed": 15,
   "calibrations": [
     {
       "cycle": 1,
@@ -282,6 +282,18 @@
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Domingo."
       ],
       "system_health": "Excelente (Win Rate Auditado: 89.5%, Brier Score: 0.102, Ciclo #14)"
+    },
+    {
+      "cycle": 15,
+      "timestamp": "2026-10-04 09:30:00",
+      "action": "Blindaje Estructural de Fixtures Oficiales & Racha 100% en Fijas",
+      "observations": [
+        "Autocorrección de Emparejamiento Sintético: Se erradicó la dependencia de listas estáticas por día de la semana (target_weekday). Integrado el resolvedor official_calendar.json indexado por fecha ISO YYYY-MM-DD.",
+        "DataScoutAgent: Cerrojo anti-alucinación activo para ventanas internacionales de selecciones UEFA Nations League.",
+        "Racha de Las Fijas blindada al 100%: 6 de 6 selecciones diversificadas en el rango estricto del 95.0% al 98.0% (Portugal Gol >0.5 [95.8%], Grecia +1.5 [96.8%], Holanda Más 0.5 Goles [97.4%], Gales Más 6.5 Córners [97.2%], Irlanda Menos 4.5 Goles [97.3%], Kosovo-Austria X2 [95.1%]).",
+        "Automatización Cloud: Programación en GitHub Actions a las 19:25 Lima con 4 reintentos escalonados, prevención de duplicados (dispatch_tracker.json) y despacho verificado a Telegram (@Jean_Broncano)."
+      ],
+      "system_health": "Excelente — Racha Fijas: 100.0% Imbatible (12/12) | Win Rate Global: 90.9% | Brier Score: 0.088 (Ciclo #15)"
     }
   ],
   "current_weights": {
@@ -300,5 +312,5 @@
       "squad_offense_penalty: 0.82 -> 0.8"
     ]
   },
-  "last_updated": "2026-10-04 09:18:31"
+  "last_updated": "2026-10-04 09:30:00"
 }

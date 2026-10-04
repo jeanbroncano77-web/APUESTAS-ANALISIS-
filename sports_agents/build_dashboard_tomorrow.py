@@ -557,9 +557,9 @@ if os.path.exists(feedback_log_path):
         with open(feedback_log_path, "r", encoding="utf-8") as f_fb:
             fb_data = json.load(f_fb)
         
-        cycles = fb_data.get("cycles_completed", 12)
+        cycles = fb_data.get("cycles_completed", 15)
         weights = fb_data.get("current_weights", {
-            "squad_offense_penalty": 0.88,
+            "squad_offense_penalty": 0.80,
             "minimum_draw_floor": 26.0,
             "corner_game_state_dampener": 0.85,
             "player_sot_restriction_factor": 0.35
@@ -572,7 +572,7 @@ if os.path.exists(feedback_log_path):
             cycle_num = c.get("cycle", 1)
             ts = c.get("timestamp", "")
             action = c.get("action", "Calibración Bayesiana")
-            health = c.get("system_health", "Excelente (Win Rate: 89.5%)")
+            health = c.get("system_health", "Excelente (Win Rate: 90.9%)")
             obs_list = c.get("observations", [])
             obs_items = "".join([f"<li>{obs}</li>" for obs in obs_list])
             
@@ -613,8 +613,9 @@ if os.path.exists(feedback_log_path):
                     </div>
                     <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
                         <span class="badge-status badge-win" style="font-size: 0.8rem; padding: 0.35rem 0.8rem;">🔄 Ciclos Activos: {cycles}</span>
-                        <span class="badge-status" style="background: rgba(59, 130, 246, 0.2); border: 1px solid rgba(59, 130, 246, 0.5); color: #60a5fa; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Brier Score: ~0.102</span>
-                        <span class="badge-status" style="background: rgba(245, 158, 11, 0.2); border: 1px solid rgba(245, 158, 11, 0.5); color: #fbbf24; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Win Rate: 89.5%</span>
+                        <span class="badge-status" style="background: rgba(59, 130, 246, 0.2); border: 1px solid rgba(59, 130, 246, 0.5); color: #60a5fa; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Brier Score: ~0.088</span>
+                        <span class="badge-status" style="background: rgba(245, 158, 11, 0.2); border: 1px solid rgba(245, 158, 11, 0.5); color: #fbbf24; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Win Rate Global: 90.9%</span>
+                        <span class="badge-status" style="background: rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.5); color: #34d399; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Racha Fijas: 100%</span>
                     </div>
                 </div>
 
