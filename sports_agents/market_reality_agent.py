@@ -247,30 +247,55 @@ class MarketRealityAgent:
         # -------------------------------------------------------------
         # 7. MERCADO: HÁNDICAP ASIÁTICO BLINDADO (+1.5 / +2.0)
         # -------------------------------------------------------------
+        tier1_giants = {
+            "Alemania", "Francia", "España", "Inglaterra", "Portugal", "Países Bajos",
+            "Argentina", "Brasil", "Real Madrid", "Bayern Munich", "Manchester City", "Barcelona"
+        }
+
+        # REGLA DE ORO DE SEGURIDAD (LECCIÓN GRECIA VS ALEMANIA):
+        # Queda TERMINANTEMENTE PROHIBIDO ofrecer un Hándicap Positivo (+1.5) al no-favorito
+        # si el rival es un coloso Tier-1 (Alemania, Francia, etc.) o tiene xG > 1.60.
+        # En esos partidos, la probabilidad de goleada por 2+ goles es de 30% a 48%,
+        # por lo que el Hándicap (+1.5) NUNCA puede superar el 70%-75% y JAMÁS califica como Fija (95%-98%).
         if h_win >= a_win:
-            prob_hcp_away = round(min(96.8, 95.0 + min(1.8, (draw * 0.08))), 1)
-            odds_hcp = round(max(1.14, (1.0 / (prob_hcp_away / 100.0)) * 1.06), 2)
-            candidates.append({
-                "market": "Hándicap Blindado",
-                "category_code": "HANDICAP_BLINDADO",
-                "selection": f"{away_team} (+1.5)",
-                "probability": prob_hcp_away,
-                "odds": odds_hcp,
-                "availability": "Todas las casas de apuestas (Hándicap Asiático)",
-                "rationale": f"Cubre victoria de {away_team}, empate o derrota por solo 1 gol de diferencia."
-            })
+            is_tier1_fav = home_team in tier1_giants or home_xg >= 1.65 or h_win >= 55.0
+            if is_tier1_fav:
+                prob_hcp_away = round(min(72.0, 58.0 + draw * 0.3), 1) # Descalificado de Fijas
+            else:
+                prob_hcp_away = round(min(88.5, 78.0 + draw * 0.35), 1)
+
+            odds_hcp = round(max(1.14, (1.0 / (max(0.01, prob_hcp_away) / 100.0)) * 1.06), 2)
+            
+            # Solo añadir como candidato si NO enfrenta a un coloso Tier-1
+            if not is_tier1_fav:
+                candidates.append({
+                    "market": "Hándicap Blindado",
+                    "category_code": "HANDICAP_BLINDADO",
+                    "selection": f"{away_team} (+1.5)",
+                    "probability": prob_hcp_away,
+                    "odds": odds_hcp,
+                    "availability": "Casas de apuestas con hándicap asiático",
+                    "rationale": f"Cubre victoria de {away_team}, empate o derrota por solo 1 gol de diferencia ante rival no demoledor."
+                })
         else:
-            prob_hcp_home = round(min(96.8, 95.0 + min(1.8, (draw * 0.08))), 1)
-            odds_hcp = round(max(1.14, (1.0 / (prob_hcp_home / 100.0)) * 1.06), 2)
-            candidates.append({
-                "market": "Hándicap Blindado",
-                "category_code": "HANDICAP_BLINDADO",
-                "selection": f"{home_team} (+1.5)",
-                "probability": prob_hcp_home,
-                "odds": odds_hcp,
-                "availability": "Todas las casas de apuestas (Hándicap Asiático)",
-                "rationale": f"Cubre victoria de {home_team}, empate o derrota por solo 1 gol de diferencia."
-            })
+            is_tier1_fav = away_team in tier1_giants or away_xg >= 1.65 or a_win >= 55.0
+            if is_tier1_fav:
+                prob_hcp_home = round(min(70.0, 56.0 + draw * 0.3), 1) # Descalificado de Fijas
+            else:
+                prob_hcp_home = round(min(88.5, 78.0 + draw * 0.35), 1)
+
+            odds_hcp = round(max(1.14, (1.0 / (max(0.01, prob_hcp_home) / 100.0)) * 1.06), 2)
+            
+            if not is_tier1_fav:
+                candidates.append({
+                    "market": "Hándicap Blindado",
+                    "category_code": "HANDICAP_BLINDADO",
+                    "selection": f"{home_team} (+1.5)",
+                    "probability": prob_hcp_home,
+                    "odds": odds_hcp,
+                    "availability": "Casas de apuestas con hándicap asiático",
+                    "rationale": f"Cubre victoria de {home_team}, empate o derrota por solo 1 gol de diferencia ante rival no demoledor."
+                })
 
         # -------------------------------------------------------------
         # 8. MERCADO: AMBOS EQUIPOS ANOTAN (BTTS)

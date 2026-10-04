@@ -8,6 +8,8 @@ from .squad_injury_agent import SquadInjuryAgent
 from .tactical_manager_agent import TacticalManagerAgent
 from .sports_psychology_agent import SportsPsychologyAgent
 from .market_reality_agent import MarketRealityAgent
+from .momentum_streak_agent import MomentumStreakAgent
+from .sports_media_scout_agent import SportsMediaScoutAgent
 from .sports_director_agent import SportsDirectorAgent
 from .feedback_engine import FeedbackEngine
 
@@ -22,6 +24,8 @@ __all__ = [
     "TacticalManagerAgent",
     "SportsPsychologyAgent",
     "MarketRealityAgent",
+    "MomentumStreakAgent",
+    "SportsMediaScoutAgent",
     "SportsDirectorAgent",
     "FeedbackEngine"
 ]

@@ -70,17 +70,37 @@ class MomentumStreakAgent:
                 "market_inefficiency_edge": "+9.5% en córners a favor de Austria."
             }
         }
+        
+        self.tier1_giants = {
+            "Alemania", "Francia", "España", "Inglaterra", "Portugal", "Países Bajos",
+            "Argentina", "Brasil", "Real Madrid", "Bayern Munich", "Manchester City", "Barcelona"
+        }
 
     def analyze_match_momentum(self, home_team: str, away_team: str) -> Dict[str, Any]:
         """
         Calcula el impacto de momentum, rachas y puntos de inflexión para un enfrentamiento.
         Ajusta expectativas de goles y factores de ventaja de racha.
+        Aplica un freno de realismo (Tier-1 Dampener) si el rival es un coloso europeo.
         """
         home_info = self.inflection_database.get(home_team, None)
         away_info = self.inflection_database.get(away_team, None)
 
         home_factor = home_info["inflection_factor"] if home_info else 1.0
         away_factor = away_info["inflection_factor"] if away_info else 1.0
+
+        # FRENO TIER-1 (Lección de Grecia vs Alemania):
+        # Si un equipo en racha enfrenta a una superpotencia mundial, su impulso anímico se neutraliza en un 75%
+        # ante la asfixia táctica y jerarquía individual del gigante.
+        dampener_applied = []
+        if home_info and away_team in self.tier1_giants:
+            old_h = home_factor
+            home_factor = round(1.0 + (home_factor - 1.0) * 0.25, 2)
+            dampener_applied.append(f"Freno Tier-1 en {home_team}: {old_h}x -> {home_factor}x ante coloso {away_team}")
+
+        if away_info and home_team in self.tier1_giants:
+            old_a = away_factor
+            away_factor = round(1.0 + (away_factor - 1.0) * 0.25, 2)
+            dampener_applied.append(f"Freno Tier-1 en {away_team}: {old_a}x -> {away_factor}x ante coloso {home_team}")
 
         # Análisis diferencial
         momentum_differential = home_factor - away_factor
@@ -96,6 +116,9 @@ class MomentumStreakAgent:
             has_breakthrough_team = True
             breakthrough_details.append(f"🟢 {away_team}: {away_info['key_driver']} (Factor Inflexión: {away_factor}x)")
 
+        if dampener_applied:
+            breakthrough_details.extend([f"🛡️ {d}" for d in dampener_applied])
+
         # Ajuste probabilístico para compensar el retraso de modelos estacionarios (TimesFM baseline)
         return {
             "agent": self.name,
@@ -109,6 +132,7 @@ class MomentumStreakAgent:
             "breakthrough_summary": " | ".join(breakthrough_details) if breakthrough_details else "Ambos equipos en rangos estándar de volatilidad.",
             "home_details": home_info,
             "away_details": away_info,
+            "tier1_dampener_active": bool(dampener_applied),
             "recommendation_bias": (
                 f"IMPULSAR_POSITIVAMENTE a {home_team if home_factor > away_factor else away_team}"
                 if abs(momentum_differential) >= 0.15 else "MANTENER_EQUILIBRIO"

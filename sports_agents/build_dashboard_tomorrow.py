@@ -613,33 +613,33 @@ if os.path.exists(feedback_log_path):
                     </div>
                     <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
                         <span class="badge-status badge-win" style="font-size: 0.8rem; padding: 0.35rem 0.8rem;">🔄 Ciclos Activos: {cycles}</span>
-                        <span class="badge-status" style="background: rgba(59, 130, 246, 0.2); border: 1px solid rgba(59, 130, 246, 0.5); color: #60a5fa; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Brier Score: ~0.088</span>
-                        <span class="badge-status" style="background: rgba(245, 158, 11, 0.2); border: 1px solid rgba(245, 158, 11, 0.5); color: #fbbf24; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Win Rate Global: 90.9%</span>
-                        <span class="badge-status" style="background: rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.5); color: #34d399; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Racha Fijas: 100%</span>
+                        <span class="badge-status" style="background: rgba(59, 130, 246, 0.2); border: 1px solid rgba(59, 130, 246, 0.5); color: #60a5fa; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Brier Score: ~0.094</span>
+                        <span class="badge-status" style="background: rgba(245, 158, 11, 0.2); border: 1px solid rgba(245, 158, 11, 0.5); color: #fbbf24; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Win Rate Global: 88.6%</span>
+                        <span class="badge-status" style="background: rgba(239, 68, 68, 0.2); border: 1px solid rgba(239, 68, 68, 0.5); color: #fca5a5; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Fijas: 91.7% (11/12)</span>
                     </div>
                 </div>
 
                 <!-- Hiperparámetros Activos Calibrados por FeedbackEngine -->
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
                     <div style="background: rgba(15, 23, 42, 0.65); border: 1px solid rgba(255, 255, 255, 0.06); padding: 1.1rem; border-radius: 14px;">
-                        <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 800; letter-spacing: 0.04em;">Penalización Bajas Médicas</div>
-                        <div style="font-size: 1.45rem; font-weight: 900; color: var(--gold); margin-top: 0.3rem;">{weights.get('squad_offense_penalty', 0.88)}x</div>
-                        <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.25rem;">Ajuste xG por ausencias estelares</div>
+                        <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 800; letter-spacing: 0.04em;">Buffer Superioridad Tier-1</div>
+                        <div style="font-size: 1.45rem; font-weight: 900; color: #f87171; margin-top: 0.3rem;">{weights.get('tier1_superiority_buffer', 1.35)}x</div>
+                        <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.25rem;">Protección anti-goleada élite</div>
+                    </div>
+                    <div style="background: rgba(15, 23, 42, 0.65); border: 1px solid rgba(255, 255, 255, 0.06); padding: 1.1rem; border-radius: 14px;">
+                        <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 800; letter-spacing: 0.04em;">Techo Hándicap Underdog</div>
+                        <div style="font-size: 1.45rem; font-weight: 900; color: var(--gold); margin-top: 0.3rem;">{weights.get('underdog_handicap_ceiling', 72.0)}%</div>
+                        <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.25rem;">Veto automático a Fijas riesgosas</div>
                     </div>
                     <div style="background: rgba(15, 23, 42, 0.65); border: 1px solid rgba(255, 255, 255, 0.06); padding: 1.1rem; border-radius: 14px;">
                         <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 800; letter-spacing: 0.04em;">Suelo Mínimo de Empate</div>
                         <div style="font-size: 1.45rem; font-weight: 900; color: var(--cyan); margin-top: 0.3rem;">{weights.get('minimum_draw_floor', 26.0)}%</div>
-                        <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.25rem;">Piso bayesiano ante canchas hostiles</div>
+                        <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.25rem;">Piso bayesiano ante cerrojos</div>
                     </div>
                     <div style="background: rgba(15, 23, 42, 0.65); border: 1px solid rgba(255, 255, 255, 0.06); padding: 1.1rem; border-radius: 14px;">
                         <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 800; letter-spacing: 0.04em;">Amortiguador de Córners</div>
                         <div style="font-size: 1.45rem; font-weight: 900; color: var(--emerald); margin-top: 0.3rem;">{weights.get('corner_game_state_dampener', 0.85)}x</div>
                         <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.25rem;">Freno por desaceleración táctica</div>
-                    </div>
-                    <div style="background: rgba(15, 23, 42, 0.65); border: 1px solid rgba(255, 255, 255, 0.06); padding: 1.1rem; border-radius: 14px;">
-                        <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 800; letter-spacing: 0.04em;">Filtro Remates a Puerta (SoT)</div>
-                        <div style="font-size: 1.45rem; font-weight: 900; color: #c084fc; margin-top: 0.3rem;">{weights.get('player_sot_restriction_factor', 0.35)}x</div>
-                        <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.25rem;">Contención ante cerrojos defensivos</div>
                     </div>
                 </div>
 

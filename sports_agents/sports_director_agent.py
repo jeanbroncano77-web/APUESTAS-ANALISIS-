@@ -21,6 +21,8 @@ from .squad_injury_agent import SquadInjuryAgent
 from .tactical_manager_agent import TacticalManagerAgent
 from .sports_psychology_agent import SportsPsychologyAgent
 from .market_reality_agent import MarketRealityAgent
+from .momentum_streak_agent import MomentumStreakAgent
+from .sports_media_scout_agent import SportsMediaScoutAgent
 
 
 import os
@@ -37,11 +39,13 @@ class SportsDirectorAgent:
         self.player_agent = PlayerPropsAgent()
         self.events_agent = MatchEventsAgent()
         
-        # 4 Nuevos Agentes Especializados
+        # Agentes Especializados de Soporte y Realidad
         self.squad_agent = SquadInjuryAgent()
         self.tactical_agent = TacticalManagerAgent()
         self.psycho_agent = SportsPsychologyAgent()
         self.market_agent = MarketRealityAgent()
+        self.momentum_agent = MomentumStreakAgent()
+        self.media_agent = SportsMediaScoutAgent()
 
     def load_calibrated_weights(self) -> Dict[str, float]:
         """
@@ -145,7 +149,17 @@ class SportsDirectorAgent:
         corners_analysis = self.events_agent.analyze_corners(adj_corners)
         cards_analysis = self.events_agent.analyze_cards(projections["expected_yellow_cards"], context)
 
-        # Paso 9: Selección de "La Fija" Realista y Operable en Casas (MarketRealityAgent)
+        # Paso 9: Análisis de Momentum y Resurgimiento (MomentumStreakAgent)
+        momentum_analysis = self.momentum_agent.analyze_match_momentum(home_team, away_team)
+
+        # Paso 10: Ingesta de Señales Periodísticas y Consenso Editorial (SportsMediaScoutAgent)
+        media_analysis = self.media_agent.analyze_fixture_media(
+            home_team=home_team,
+            away_team=away_team,
+            competition=context.get("tournament", "UEFA Nations League")
+        )
+
+        # Paso 11: Selección de "La Fija" Realista y Operable en Casas (MarketRealityAgent)
         la_fija_real = self.market_agent.select_realistic_la_fija(
             match=f"{home_team} vs {away_team}",
             home_team=home_team,
@@ -177,6 +191,8 @@ class SportsDirectorAgent:
                 "status": "Auditoría Médica y Convocatorias Oficiales Verificadas"
             },
             "psychological_context": psychology,
+            "momentum_analysis": momentum_analysis,
+            "media_intelligence": media_analysis,
             "score_prediction": score_analysis,
             "corners_prediction": corners_analysis,
             "cards_prediction": cards_analysis,
