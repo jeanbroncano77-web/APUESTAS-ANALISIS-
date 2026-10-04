@@ -50,6 +50,7 @@ flags = {
     "Grecia": "🇬🇷", "Países Bajos": "🇳🇱",
     "Gales": "🏴󠁧󠁢󠁷󠁬󠁳󠁿", "Noruega": "🇳🇴",
     "Irlanda": "🇮🇪", "Austria": "🇦🇹",
+    "Israel": "🇮🇱", "Kosovo": "🇽🇰",
     "Japón": "🇯🇵", "Ecuador": "🇪🇨",
     # Partidos de Fin de Semana (Clubes)
     "Real Madrid": "⚪", "Villarreal": "🟡",

@@ -65,14 +65,14 @@ def main():
                 ("Finlandia", "Albania", "GOLES_UNDER"),
                 ("Estados Unidos", "México", "HANDICAP_BLINDADO")
             ]
-        elif target_weekday == 6:  # DOMINGO 04/10/2026 (UEFA Nations League Jornada 2)
+        elif target_weekday == 6:  # DOMINGO 04/10/2026 (UEFA Nations League Oficial - Jornada 4)
             fixtures_tomorrow = [
-                ("Alemania", "Serbia", "GOL_EQUIPO"),
-                ("Dinamarca", "Portugal", "DOBLE_OPORTUNIDAD"),
-                ("Grecia", "Países Bajos", "GOLES_UNDER"),
-                ("Gales", "Noruega", "TOTAL_CORNERS"),
-                ("Irlanda", "Austria", "GOLES_OVER"),
-                ("Japón", "Ecuador", "HANDICAP_BLINDADO")
+                ("Portugal", "Noruega", "GOL_EQUIPO"),
+                ("Grecia", "Alemania", "HANDICAP_BLINDADO"),
+                ("Países Bajos", "Serbia", "GOLES_OVER"),
+                ("Gales", "Dinamarca", "TOTAL_CORNERS"),
+                ("Irlanda", "Israel", "GOLES_UNDER"),
+                ("Kosovo", "Austria", "DOBLE_OPORTUNIDAD")
             ]
         elif target_weekday == 4:  # VIERNES 02/10/2026
             fixtures_tomorrow = [

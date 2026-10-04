@@ -825,6 +825,60 @@ class DataScoutAgent:
                 "referee_avg_yellows": 5.1,
                 "referee_avg_reds": 0.28,
                 "intensity": "Máxima Pasión (El gran Clásico de Norteamérica con Pulisic frente a Santiago Giménez)"
+            },
+            ("Portugal", "Noruega"): {
+                "tournament": "UEFA Nations League - Liga A Grupo 1",
+                "stadium": "Estádio José Alvalade (Lisboa, Portugal)",
+                "spectators_est": "50,000 en estadio (~65M audiencia global)",
+                "referee": "Szymon Marciniak",
+                "referee_avg_yellows": 4.0,
+                "referee_avg_reds": 0.15,
+                "intensity": "Choque Mundial de Titanes (Cristiano Ronaldo, Bruno Fernandes y Bernardo Silva retando al androide Erling Haaland y Martin Ødegaard)"
+            },
+            ("Grecia", "Alemania"): {
+                "tournament": "UEFA Nations League - Liga A Grupo 3",
+                "stadium": "Agia Sophia Stadium (Atenas, Grecia)",
+                "spectators_est": "32,500 en caldera griega (~45M audiencia)",
+                "referee": "Clément Turpin",
+                "referee_avg_yellows": 4.2,
+                "referee_avg_reds": 0.18,
+                "intensity": "Batalla Épica (La Grecia en racha histórica de Ivan Jovanović desafiando el poderío germano de Wirtz, Musiala y Nagelsmann)"
+            },
+            ("Países Bajos", "Serbia"): {
+                "tournament": "UEFA Nations League - Liga A Grupo 3",
+                "stadium": "Johan Cruyff Arena (Ámsterdam, Países Bajos)",
+                "spectators_est": "54,000 en estadio (~38M audiencia)",
+                "referee": "Michael Oliver",
+                "referee_avg_yellows": 3.7,
+                "referee_avg_reds": 0.12,
+                "intensity": "Muy Alta (Fútbol total de Koeman con Gakpo, Simons y Van Dijk frente al poder físico balcánico de Vlahović y Mitrović)"
+            },
+            ("Gales", "Dinamarca"): {
+                "tournament": "UEFA Nations League - Liga A Grupo 4",
+                "stadium": "Cardiff City Stadium (Cardiff, Gales)",
+                "spectators_est": "33,000 en estadio (~25M audiencia)",
+                "referee": "Felix Zwayer",
+                "referee_avg_yellows": 4.3,
+                "referee_avg_reds": 0.16,
+                "intensity": "Alta (La velocidad y corazón de Brennan Johnson y Harry Wilson frente a la jerarquía colectiva danesa de Eriksen y Højlund)"
+            },
+            ("Irlanda", "Israel"): {
+                "tournament": "UEFA Nations League - Liga B Grupo 2",
+                "stadium": "Aviva Stadium (Dublín, Irlanda)",
+                "spectators_est": "51,500 en estadio (~18M audiencia)",
+                "referee": "Slavko Vinčić",
+                "referee_avg_yellows": 3.9,
+                "referee_avg_reds": 0.14,
+                "intensity": "Alta (Evan Ferguson y Sammie Szmodics buscando imponer el ritmo físico británico ante la magia de Manor Solomon y Oscar Gloukh)"
+            },
+            ("Kosovo", "Austria"): {
+                "tournament": "UEFA Nations League - Liga B Grupo 3",
+                "stadium": "Fadil Vokrri Stadium (Pristina, Kosovo)",
+                "spectators_est": "13,500 en estadio (~15M audiencia)",
+                "referee": "Donatas Rumšas",
+                "referee_avg_yellows": 4.4,
+                "referee_avg_reds": 0.20,
+                "intensity": "Muy Alta (La caldera balcánica con Vedat Muriqi y Edon Zhegrova ante el Gegenpressing asfixiante de la Austria de Ralf Rangnick)"
             }
         }
         return matches.get((home_team, away_team), {

@@ -2362,5 +2362,211 @@
         "goal_prob": 0.12
       }
     ]
+  },
+  "Israel": {
+    "fifa_rank": 75,
+    "recent_form": [
+      "L",
+      "L",
+      "W",
+      "L",
+      "D",
+      "L"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 1,
+        "goals_conceded": 2,
+        "xg_for": 1.1,
+        "xg_against": 2.1,
+        "corners_for": 4,
+        "corners_against": 7,
+        "shots_total": 10,
+        "shots_on_target": 4,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 13,
+        "possession": 41
+      },
+      {
+        "goals_scored": 0,
+        "goals_conceded": 2,
+        "xg_for": 0.8,
+        "xg_against": 2.3,
+        "corners_for": 3,
+        "corners_against": 8,
+        "shots_total": 8,
+        "shots_on_target": 2,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 14,
+        "possession": 38
+      },
+      {
+        "goals_scored": 2,
+        "goals_conceded": 1,
+        "xg_for": 1.6,
+        "xg_against": 1.4,
+        "corners_for": 5,
+        "corners_against": 5,
+        "shots_total": 12,
+        "shots_on_target": 5,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 48
+      },
+      {
+        "goals_scored": 1,
+        "goals_conceded": 3,
+        "xg_for": 1.0,
+        "xg_against": 2.4,
+        "corners_for": 4,
+        "corners_against": 6,
+        "shots_total": 9,
+        "shots_on_target": 3,
+        "yellow_cards": 4,
+        "red_cards": 0,
+        "fouls": 15,
+        "possession": 43
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Manor Solomon",
+        "position": "Extremo Desequilibrante",
+        "avg_shots_p90": 2.5,
+        "avg_sot_p90": 1.1,
+        "shot_creation_actions": 4.2,
+        "goal_prob": 0.28
+      },
+      {
+        "name": "Oscar Gloukh",
+        "position": "Mediapunta Creador",
+        "avg_shots_p90": 2.2,
+        "avg_sot_p90": 0.9,
+        "shot_creation_actions": 4.8,
+        "goal_prob": 0.25
+      },
+      {
+        "name": "Anan Khalaili",
+        "position": "Extremo Veloz",
+        "avg_shots_p90": 2.0,
+        "avg_sot_p90": 0.8,
+        "shot_creation_actions": 2.8,
+        "goal_prob": 0.22
+      },
+      {
+        "name": "Tai Baribo",
+        "position": "Delantero Centro",
+        "avg_shots_p90": 2.3,
+        "avg_sot_p90": 1.0,
+        "shot_creation_actions": 1.8,
+        "goal_prob": 0.3
+      }
+    ]
+  },
+  "Kosovo": {
+    "fifa_rank": 104,
+    "recent_form": [
+      "L",
+      "W",
+      "L",
+      "W",
+      "D",
+      "L"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 0,
+        "goals_conceded": 3,
+        "xg_for": 0.7,
+        "xg_against": 2.5,
+        "corners_for": 3,
+        "corners_against": 7,
+        "shots_total": 8,
+        "shots_on_target": 2,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 16,
+        "possession": 39
+      },
+      {
+        "goals_scored": 4,
+        "goals_conceded": 0,
+        "xg_for": 2.6,
+        "xg_against": 0.6,
+        "corners_for": 6,
+        "corners_against": 3,
+        "shots_total": 16,
+        "shots_on_target": 8,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 12,
+        "possession": 58
+      },
+      {
+        "goals_scored": 1,
+        "goals_conceded": 2,
+        "xg_for": 1.2,
+        "xg_against": 1.8,
+        "corners_for": 4,
+        "corners_against": 5,
+        "shots_total": 11,
+        "shots_on_target": 4,
+        "yellow_cards": 4,
+        "red_cards": 0,
+        "fouls": 15,
+        "possession": 45
+      },
+      {
+        "goals_scored": 2,
+        "goals_conceded": 1,
+        "xg_for": 1.5,
+        "xg_against": 1.3,
+        "corners_for": 5,
+        "corners_against": 4,
+        "shots_total": 13,
+        "shots_on_target": 5,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 13,
+        "possession": 49
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Vedat Muriqi",
+        "position": "Delantero Centro Tanque",
+        "avg_shots_p90": 3.2,
+        "avg_sot_p90": 1.4,
+        "shot_creation_actions": 3.2,
+        "goal_prob": 0.4
+      },
+      {
+        "name": "Edon Zhegrova",
+        "position": "Extremo Zurdo Habilidoso",
+        "avg_shots_p90": 2.8,
+        "avg_sot_p90": 1.2,
+        "shot_creation_actions": 5.1,
+        "goal_prob": 0.32
+      },
+      {
+        "name": "Milot Rashica",
+        "position": "Extremo / Segundo Punta",
+        "avg_shots_p90": 2.4,
+        "avg_sot_p90": 1.0,
+        "shot_creation_actions": 4.0,
+        "goal_prob": 0.28
+      },
+      {
+        "name": "Amir Rrahmani",
+        "position": "Defensa Central Capitán",
+        "avg_shots_p90": 0.9,
+        "avg_sot_p90": 0.4,
+        "shot_creation_actions": 1.5,
+        "goal_prob": 0.12
+      }
+    ]
   }
 }
