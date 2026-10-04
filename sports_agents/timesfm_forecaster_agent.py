@@ -78,13 +78,26 @@ class TimesFMForecasterAgent:
         away_def_weakness = self.forecast_series(away["conceded_series"])
 
         # Factor de ajuste cruzado (Ataque Local vs Concesión Visitante)
-        home_lambda = (home_attack["mean"] * 0.65 + away_def_weakness["mean"] * 0.35)
-        away_lambda = (away_attack["mean"] * 0.65 + home_def_weakness["mean"] * 0.35)
+        # SOS (Strength of Schedule Adjustment): Si el rival defensivo es modesto (ranking > 25)
+        # y enfrenta a un ataque potente (xG > 1.8), no permitir que su baja concesión frente
+        # a rivales débiles distorsione a la baja el poder de fuego del favorito.
+        home_att_m = home_attack["mean"]
+        away_def_m = away_def_weakness["mean"]
+        if home_att_m >= 1.8 and processed_features.get("away", {}).get("rank", 20) > 25:
+            away_def_m = max(away_def_m, 1.45)
 
-        # Ajuste por ventaja de campo / ranking
-        rank_factor = np.clip(rank_diff * 0.02, -0.3, 0.3)
-        home_lambda = max(0.4, home_lambda * (1.0 + rank_factor))
-        away_lambda = max(0.3, away_lambda * (1.0 - rank_factor))
+        away_att_m = away_attack["mean"]
+        home_def_m = home_def_weakness["mean"]
+        if away_att_m >= 1.8 and processed_features.get("home", {}).get("rank", 20) > 25:
+            home_def_m = max(home_def_m, 1.45)
+
+        home_lambda = (home_att_m * 0.68 + away_def_m * 0.32)
+        away_lambda = (away_att_m * 0.68 + home_def_m * 0.32)
+
+        # Ajuste jerárquico por ranking FIFA / Elo relativo (escala ampliada a 0.45 para abismos técnicos)
+        rank_factor = np.clip(rank_diff * 0.015, -0.45, 0.45)
+        home_lambda = max(0.35, home_lambda * (1.0 + rank_factor))
+        away_lambda = max(0.30, away_lambda * (1.0 - rank_factor))
 
         # 2. Córners proyectados
         home_corners_att = self.forecast_series(home["corners_for_series"])
@@ -103,11 +116,20 @@ class TimesFMForecasterAgent:
         home_shots = self.forecast_series(home["shots_series"])
         away_shots = self.forecast_series(away["shots_series"])
 
+        # Índice de Incertidumbre y Varianza de Poisson
+        total_exp_goals = float(home_lambda + away_lambda)
+        variance_index = round(float(home_attack["std"] + away_attack["std"]), 2)
+
         return {
             "expected_goals": {
                 "home": round(float(home_lambda), 2),
                 "away": round(float(away_lambda), 2),
-                "total": round(float(home_lambda + away_lambda), 2)
+                "total": round(total_exp_goals, 2)
+            },
+            "variance_and_uncertainty": {
+                "variance_index": variance_index,
+                "is_high_volatility": variance_index > 1.25,
+                "rank_factor_applied": round(float(rank_factor), 3)
             },
             "expected_corners": {
                 "home": round(float(home_corners_exp), 2),

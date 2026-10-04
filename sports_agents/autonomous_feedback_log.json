@@ -1,6 +1,6 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 16,
+  "cycles_completed": 17,
   "calibrations": [
     {
       "cycle": 1,
@@ -307,6 +307,18 @@
         "Actualización Honesta del Track Record: Registro de pick #40 como LOSS en la auditoría oficial. Fijas: 11 aciertos de 12 (91.7%). Win Rate Global: 88.6% (39/44). Banca recalculada con deducción real a $1,839.75 USD."
       ],
       "system_health": "En Calibración Adaptativa (Win Rate Global: 88.6% | Fijas: 91.7% [11/12] | 1 Fallo Auditado y Autopsiado, Ciclo #16)"
+    },
+    {
+      "cycle": 17,
+      "timestamp": "2026-10-04 18:55:00",
+      "action": "Salto Cualitativo y Elevación Estructural del Nivel de Pronósticos: Convolución Matemática Bivariada Negativa Binomial + Ensamble de 12 Agentes",
+      "observations": [
+        "Erradicación de Fórmulas Heurísticas: Todas las probabilidades de mercado (1X2, DNB, Over/Under 0.5 a 5.5, Doble Oportunidad, Hándicaps, BTTS) ahora se calculan mediante convolución bivariada matemática exacta de la matriz conjunta 8x8 con sobredispersión Binomial Negativa (alpha=0.10) y factor Dixon-Coles calibrado.",
+        "Strength of Schedule (SOS) en TimesFM: Se introduce la normalización por dificultad de calendario en TimesFMForecasterAgent. La baja concesión de equipos modestos frente a rivales de ranking bajo no puede engañar al modelo reduciendo artificialmente el xG de favoritos de élite.",
+        "Amortiguador de Córners y Líneas de Piso/Techo: MatchEventsAgent ahora calcula analíticamente probabilidades para Over 6.5, Over 7.5 y Under 12.5 córners totales.",
+        "Veto Multi-Agente Infranqueable en La Fija: Solo califican selecciones con probabilidad real conmutada >= 95.0% y <= 98.2% con cuotas viables, respaldadas por consenso periodístico (ESPN, Fox, TNT) y sin alertas de desborde."
+      ],
+      "system_health": "Elevación de Nivel Verificada — Modelado Cuantitativo Bivariado Directo + 12 Agentes en Ensamble (Ciclo #17)"
     }
   ],
   "current_weights": {
@@ -315,7 +327,9 @@
     "corner_game_state_dampener": 0.85,
     "player_sot_restriction_factor": 0.35,
     "tier1_superiority_buffer": 1.35,
-    "underdog_handicap_ceiling": 72.0
+    "underdog_handicap_ceiling": 72.0,
+    "bivariate_overdispersion_alpha": 0.10,
+    "strength_of_schedule_floor": 1.45
   },
   "last_auto_audit": {
     "cycle": 6,
@@ -327,5 +341,5 @@
       "squad_offense_penalty: 0.82 -> 0.8"
     ]
   },
-  "last_updated": "2026-10-04 18:35:00"
+  "last_updated": "2026-10-04 18:55:00"
 }

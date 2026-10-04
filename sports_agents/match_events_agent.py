@@ -37,11 +37,13 @@ class MatchEventsAgent:
         total_mu = home_mu + away_mu
 
         # Distribuciones Poisson para líneas de mercado comunes
-        # Over 8.5 corners
+        over_6_5 = 1.0 - sum(poisson.pmf(k, total_mu) for k in range(7))
+        over_7_5 = 1.0 - sum(poisson.pmf(k, total_mu) for k in range(8))
         over_8_5 = 1.0 - sum(poisson.pmf(k, total_mu) for k in range(9))
         over_9_5 = 1.0 - sum(poisson.pmf(k, total_mu) for k in range(10))
         over_10_5 = 1.0 - sum(poisson.pmf(k, total_mu) for k in range(11))
         over_11_5 = 1.0 - sum(poisson.pmf(k, total_mu) for k in range(12))
+        under_12_5 = sum(poisson.pmf(k, total_mu) for k in range(13))
 
         # Líneas de equipo
         home_over_4_5 = 1.0 - sum(poisson.pmf(k, home_mu) for k in range(5))
@@ -55,6 +57,10 @@ class MatchEventsAgent:
             "total_corners_expected": round(total_mu, 1),
             "most_likely_range": f"{int(np.floor(total_mu - 1))} - {int(np.ceil(total_mu + 1))} córners",
             "lines": {
+                "over_6_5_pct": round(over_6_5 * 100, 1),
+                "under_6_5_pct": round((1.0 - over_6_5) * 100, 1),
+                "over_7_5_pct": round(over_7_5 * 100, 1),
+                "under_7_5_pct": round((1.0 - over_7_5) * 100, 1),
                 "over_8_5_pct": round(over_8_5 * 100, 1),
                 "under_8_5_pct": round((1.0 - over_8_5) * 100, 1),
                 "over_9_5_pct": round(over_9_5 * 100, 1),
@@ -63,6 +69,7 @@ class MatchEventsAgent:
                 "under_10_5_pct": round((1.0 - over_10_5) * 100, 1),
                 "over_11_5_pct": round(over_11_5 * 100, 1),
                 "under_11_5_pct": round((1.0 - over_11_5) * 100, 1),
+                "under_12_5_pct": round(under_12_5 * 100, 1),
             },
             "team_lines": {
                 "home_over_4_5_pct": round(home_over_4_5 * 100, 1),

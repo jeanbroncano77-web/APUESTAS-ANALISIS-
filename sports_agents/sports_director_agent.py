@@ -159,17 +159,20 @@ class SportsDirectorAgent:
             competition=context.get("tournament", "UEFA Nations League")
         )
 
-        # Paso 11: Selección de "La Fija" Realista y Operable en Casas (MarketRealityAgent)
+        # Paso 11: Selección de "La Fija" Realista y Operable en Casas (MarketRealityAgent 4.0)
         la_fija_real = self.market_agent.select_realistic_la_fija(
             match=f"{home_team} vs {away_team}",
             home_team=home_team,
             away_team=away_team,
             prob_1x2=probs_1x2,
             goals_data=score_analysis["goals_markets"],
-            corners_data=adj_corners,
+            corners_data=corners_analysis,
             cleared_players=home_squad["cleared_players"] + away_squad["cleared_players"],
             psychology=psychology,
-            preferred_category=preferred_market_category
+            preferred_category=preferred_market_category,
+            exact_market_probs=score_analysis.get("exact_market_probabilities"),
+            media_analysis=media_analysis,
+            momentum_analysis=momentum_analysis
         )
 
         return {
