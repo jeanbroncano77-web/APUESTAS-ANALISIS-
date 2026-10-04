@@ -4,9 +4,13 @@ on:
   schedule:
     # 00:30 UTC = 19:30 (7:30 PM) hora de Lima/Bogota (UTC-5)
     - cron: '30 0 * * *'
-    # Respaldo 00:35 UTC por si GitHub Actions tiene cola de espera
-    - cron: '35 0 * * *'
-  workflow_dispatch: # Permite ejecutar manualmente con un clic en GitHub Actions
+    # Reintentos escalonados por si la cola gratuita de GitHub Actions se satura a la hora en punto
+    - cron: '40 0 * * *'
+    - cron: '50 0 * * *'
+    - cron: '10 1 * * *'
+  workflow_dispatch: # Permite disparar manualmente con 1 clic desde GitHub
+  repository_dispatch: # Permite disparar vía webhook externo gratuito (cron-job.org) a las 19:30 exactas
+    types: [daily-trigger]
 
 permissions:
   contents: write
