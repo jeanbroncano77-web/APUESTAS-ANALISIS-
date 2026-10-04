@@ -90,7 +90,7 @@
       ],
       [
         "Polonia",
-        "Croacia",
+        "Chequia",
         "TOTAL_CORNERS"
       ],
       [
@@ -107,6 +107,191 @@
         "Corea del Sur",
         "Venezuela",
         "GOL_EQUIPO"
+      ]
+    ]
+  },
+  "2026-10-07": {
+    "date_str": "07/10/2026",
+    "day_name": "Miércoles",
+    "competition": "Amistosos Internacionales FIFA & UEFA Nations League",
+    "fixtures": [
+      [
+        "Japón",
+        "Ecuador",
+        "GOLES_UNDER"
+      ],
+      [
+        "Estados Unidos",
+        "México",
+        "HANDICAP_BLINDADO"
+      ],
+      [
+        "Inglaterra",
+        "Finlandia",
+        "GOL_EQUIPO"
+      ],
+      [
+        "Albania",
+        "Chequia",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Austria",
+        "Noruega",
+        "GOLES_OVER"
+      ],
+      [
+        "Grecia",
+        "Irlanda",
+        "TOTAL_CORNERS"
+      ]
+    ]
+  },
+  "2026-10-08": {
+    "date_str": "08/10/2026",
+    "day_name": "Jueves",
+    "competition": "UEFA Nations League - Jornada 5",
+    "fixtures": [
+      [
+        "Italia",
+        "Bélgica",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Francia",
+        "Israel",
+        "GOL_EQUIPO"
+      ],
+      [
+        "Inglaterra",
+        "Grecia",
+        "TOTAL_CORNERS"
+      ],
+      [
+        "Alemania",
+        "Bosnia y Herzegovina",
+        "GOLES_OVER"
+      ],
+      [
+        "Turquía",
+        "Hungría",
+        "HANDICAP_BLINDADO"
+      ],
+      [
+        "Serbia",
+        "Suiza",
+        "GOLES_UNDER"
+      ]
+    ]
+  },
+  "2026-10-09": {
+    "date_str": "09/10/2026",
+    "day_name": "Viernes",
+    "competition": "UEFA Nations League - Jornada 5",
+    "fixtures": [
+      [
+        "España",
+        "Dinamarca",
+        "GOL_EQUIPO"
+      ],
+      [
+        "Croacia",
+        "Escocia",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Portugal",
+        "Polonia",
+        "GOLES_OVER"
+      ],
+      [
+        "Países Bajos",
+        "Hungría",
+        "HANDICAP_BLINDADO"
+      ],
+      [
+        "Suecia",
+        "Eslovenia",
+        "TOTAL_CORNERS"
+      ],
+      [
+        "Georgia",
+        "Albania",
+        "GOLES_UNDER"
+      ]
+    ]
+  },
+  "2026-10-10": {
+    "date_str": "10/10/2026",
+    "day_name": "Sábado",
+    "competition": "UEFA Nations League - Jornada 5",
+    "fixtures": [
+      [
+        "Alemania",
+        "Países Bajos",
+        "GOLES_OVER"
+      ],
+      [
+        "Bélgica",
+        "Francia",
+        "TOTAL_CORNERS"
+      ],
+      [
+        "Finlandia",
+        "Inglaterra",
+        "HANDICAP_BLINDADO"
+      ],
+      [
+        "Austria",
+        "Noruega",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Grecia",
+        "Irlanda",
+        "GOLES_UNDER"
+      ],
+      [
+        "Israel",
+        "Francia",
+        "GOL_EQUIPO"
+      ]
+    ]
+  },
+  "2026-10-11": {
+    "date_str": "11/10/2026",
+    "day_name": "Domingo",
+    "competition": "UEFA Nations League - Jornada 5",
+    "fixtures": [
+      [
+        "Polonia",
+        "Croacia",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Escocia",
+        "Portugal",
+        "GOL_EQUIPO"
+      ],
+      [
+        "España",
+        "Serbia",
+        "GOLES_OVER"
+      ],
+      [
+        "Suiza",
+        "Dinamarca",
+        "HANDICAP_BLINDADO"
+      ],
+      [
+        "Kosovo",
+        "Rumanía",
+        "GOLES_UNDER"
+      ],
+      [
+        "Bosnia y Herzegovina",
+        "Hungría",
+        "TOTAL_CORNERS"
       ]
     ]
   },
@@ -134,6 +319,43 @@
         "Barcelona",
         "Getafe",
         "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Inter Milan",
+        "Parma",
+        "HANDICAP_BLINDADO"
+      ],
+      [
+        "Borussia Dortmund",
+        "Werder Bremen",
+        "GOLES_UNDER"
+      ]
+    ]
+  },
+  "2026-10-18": {
+    "date_str": "18/10/2026",
+    "day_name": "Domingo",
+    "competition": "Ligas Europeas de Élite (Domingo de Clubes)",
+    "fixtures": [
+      [
+        "Real Madrid",
+        "Villarreal",
+        "GOL_EQUIPO"
+      ],
+      [
+        "Barcelona",
+        "Getafe",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Arsenal",
+        "Leeds United",
+        "TOTAL_CORNERS"
+      ],
+      [
+        "FC Augsburg",
+        "Bayern Munich",
+        "GOLES_OVER"
       ],
       [
         "Inter Milan",
