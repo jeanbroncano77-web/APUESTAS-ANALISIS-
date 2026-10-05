@@ -233,17 +233,34 @@ def main():
         subprocess.run([sys.executable, builder_script], check=True)
         print("   -> Dashboard HTML actualizado con los partidos de mañana y autoaprendizaje en vivo.")
 
-    # 5. Despacho a Telegram con guardia anti-duplicados
+    # 5. Despacho a Telegram con guardia inteligente (la ventana oficial de las 19:30 SIEMPRE se despacha)
     dispatch_tracker_path = os.path.join(current_dir, "dispatch_tracker.json")
+    force_dispatch = ("--force" in sys.argv) or ("--force-dispatch" in sys.argv)
+    
+    # Detección de la ventana oficial de la noche (19:25 - 20:00 hora de Lima / Ecuador)
+    is_official_evening_slot = (lima_now.hour == 19 and lima_now.minute >= 25) or (lima_now.hour == 20 and lima_now.minute <= 5)
+
     already_dispatched = False
-    if os.path.exists(dispatch_tracker_path):
+    if os.path.exists(dispatch_tracker_path) and not force_dispatch:
         try:
             with open(dispatch_tracker_path, "r", encoding="utf-8") as f_dt:
                 dt_data = json.load(f_dt)
-                if dt_data.get("last_target_date") == target_date_str and dt_data.get("status") == "SUCCESS":
-                    already_dispatched = True
-                    print(f"5. Control de Calidad: La cartelera para {target_date_str} ya fue despachada con éxito a Telegram ({dt_data.get('dispatched_at')}).")
-                    print("   -> Se omite reenvío para evitar spam duplicado al usuario.")
+                last_time_str = dt_data.get("dispatched_at", "")
+                if last_time_str:
+                    last_time = datetime.strptime(last_time_str, "%Y-%m-%d %H:%M:%S")
+                    minutes_since = (datetime.now() - last_time).total_seconds() / 60.0
+                    
+                    # Si ya se envió hace menos de 10 minutos exactos, omitir para no hacer spam inmediato
+                    if minutes_since < 10.0:
+                        already_dispatched = True
+                        print(f"5. Control de Calidad: Despachado recientemente ({round(minutes_since, 1)} min atrás). Omitido para evitar spam repetitivo.")
+                    # Si es la ventana oficial de las 19:30 y el último envío fue previo (ej. pruebas en la tarde), PERMITIR el envío oficial
+                    elif is_official_evening_slot and dt_data.get("official_730_sent_date") != target_date_str:
+                        already_dispatched = False
+                        print("5. Control de Calidad: Ventana oficial de las 19:30 activa. Autorizando despacho formal de la cartelera estelar.")
+                    elif dt_data.get("last_target_date") == target_date_str and dt_data.get("official_730_sent_date") == target_date_str:
+                        already_dispatched = True
+                        print(f"5. Control de Calidad: La cartelera oficial 19:30 para {target_date_str} ya fue despachada ({last_time_str}).")
         except Exception as e_dt:
             print(f"   -> Nota leyendo dispatch_tracker: {e_dt}")
 
@@ -262,13 +279,17 @@ def main():
 
         if res1.get("success") or res2.get("success"):
             try:
+                tracker_payload = {
+                    "last_target_date": target_date_str,
+                    "dispatched_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                    "status": "SUCCESS"
+                }
+                if is_official_evening_slot:
+                    tracker_payload["official_730_sent_date"] = target_date_str
+
                 with open(dispatch_tracker_path, "w", encoding="utf-8") as f_dt_w:
-                    json.dump({
-                        "last_target_date": target_date_str,
-                        "dispatched_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                        "status": "SUCCESS"
-                    }, f_dt_w, indent=2)
-                print(f"   -> DispatchTracker registrado para {target_date_str}.")
+                    json.dump(tracker_payload, f_dt_w, indent=2)
+                print(f"   -> DispatchTracker registrado para {target_date_str} (Oficial 19:30: {is_official_evening_slot}).")
             except Exception as e_w:
                 print(f"   -> Nota guardando dispatch_tracker: {e_w}")
 
