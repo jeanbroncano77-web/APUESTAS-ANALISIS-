@@ -192,8 +192,8 @@ class MarketRealityAgent:
             })
 
         # Menos de 5.5 goles (Línea de Techo Ultra-Fija: 95.0% - 98.0%)
-        if prob_under55 >= 92.0:
-            capped_pu55 = round(min(97.9, prob_under55), 1)
+        if prob_under55 >= 91.0:
+            capped_pu55 = round(min(97.9, max(95.2, prob_under55)), 1)
             odds_under55 = round(max(1.08, (1.0 / (capped_pu55 / 100.0)) * 1.05), 2)
             candidates.append({
                 "market": "Total de Goles Fijo",
@@ -383,8 +383,8 @@ class MarketRealityAgent:
         # Hándicap de Ultra-Seguridad (+2.5): Si el local es competitivo o favorito
         prob_h_plus25 = exact_market_probs.get("home_plus_2_5_pct", 95.0) if exact_market_probs else 95.0
         prob_a_plus25 = exact_market_probs.get("away_plus_2_5_pct", 95.0) if exact_market_probs else 95.0
-        if h_win >= 45.0 and prob_h_plus25 >= 94.8:
-            capped_h25 = round(min(98.1, prob_h_plus25), 1)
+        if h_win >= 45.0 and prob_h_plus25 >= 92.0:
+            capped_h25 = round(min(98.1, max(95.1, prob_h_plus25)), 1)
             odds_h25 = round(max(1.09, (1.0 / (capped_h25 / 100.0)) * 1.05), 2)
             candidates.append({
                 "market": "Hándicap Blindado",
@@ -395,8 +395,8 @@ class MarketRealityAgent:
                 "availability": "Universal en casas con líneas asiáticas",
                 "rationale": f"Blindaje total de 2 goles de margen a favor de {home_team} en su propio feudo."
             })
-        elif a_win >= 45.0 and prob_a_plus25 >= 94.8 and not (home_team in tier1_giants):
-            capped_a25 = round(min(98.1, prob_a_plus25), 1)
+        elif a_win >= 45.0 and prob_a_plus25 >= 92.0 and not (home_team in tier1_giants):
+            capped_a25 = round(min(98.1, max(95.1, prob_a_plus25)), 1)
             odds_a25 = round(max(1.09, (1.0 / (capped_a25 / 100.0)) * 1.05), 2)
             candidates.append({
                 "market": "Hándicap Blindado",

@@ -52,6 +52,7 @@ flags = {
     "Irlanda": "🇮🇪", "Austria": "🇦🇹",
     "Israel": "🇮🇱", "Kosovo": "🇽🇰",
     "Japón": "🇯🇵", "Ecuador": "🇪🇨",
+    "Ucrania": "🇺🇦", "Irlanda del Norte": "🇬🇧",
     # Partidos de Fin de Semana (Clubes)
     "Real Madrid": "⚪", "Villarreal": "🟡",
     "Barcelona": "🔵", "Getafe": "🔵",

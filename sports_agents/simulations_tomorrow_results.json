@@ -1,5 +1,5 @@
 {
-  "GeneratedAt": "2026-10-04 22:09:51",
+  "GeneratedAt": "2026-10-04 22:27:47",
   "TargetDay": "Lunes",
   "TargetDate": "05/10/2026",
   "TemporalLabel": "MAÑANA",
@@ -866,11 +866,11 @@
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_UNDER",
           "selection": "Menos de 5.5 goles totales",
-          "probability": 92.8,
-          "odds": 1.13,
+          "probability": 95.2,
+          "odds": 1.1,
           "availability": "Universal en todas las plataformas",
           "rationale": "Línea de máxima protección: ritmo conjunto de 2.5 xG descarta completamente un festival de 6 goles.",
-          "_rank_score": 57.7
+          "_rank_score": 180.7
         },
         {
           "market": "Gol de Equipo de Seguridad",
@@ -905,9 +905,9 @@
       ]
     },
     {
-      "match": "Suecia vs Eslovenia",
-      "home_team": "Suecia",
-      "away_team": "Eslovenia",
+      "match": "Rumanía vs Suecia",
+      "home_team": "Rumanía",
+      "away_team": "Suecia",
       "context": {
         "tournament": "Competición Internacional FIFA",
         "stadium": "Estadio Principal",
@@ -919,36 +919,36 @@
       },
       "projections": {
         "expected_goals": {
-          "home": 2.48,
-          "away": 0.77,
-          "total": 3.25
+          "home": 0.97,
+          "away": 2.29,
+          "total": 3.26
         },
         "variance_and_uncertainty": {
-          "variance_index": 1.09,
+          "variance_index": 0.97,
           "is_high_volatility": false,
-          "rank_factor_applied": 0.36
+          "rank_factor_applied": -0.255
         },
         "expected_corners": {
-          "home": 6.04,
-          "away": 4.09,
-          "total": 10.13,
+          "home": 4.4,
+          "away": 5.54,
+          "total": 9.94,
           "home_quantiles": {
-            "p10": 4.2,
-            "p90": 8.1
+            "p10": 2.6,
+            "p90": 6.5
           },
           "away_quantiles": {
-            "p10": 2.5,
-            "p90": 6.0
+            "p10": 3.9,
+            "p90": 7.4
           }
         },
         "expected_yellow_cards": {
-          "home": 1.78,
-          "away": 2.33,
-          "total": 4.11
+          "home": 2.06,
+          "away": 1.78,
+          "total": 3.84
         },
         "expected_shots": {
-          "home": 14.79,
-          "away": 9.35
+          "home": 11.14,
+          "away": 14.79
         }
       },
       "tactical_analysis": {
@@ -962,13 +962,13 @@
         },
         "tactical_xg_multiplier_home": 1.0,
         "tactical_xg_multiplier_away": 1.0,
-        "corner_dampener_factor": 0.85,
+        "corner_dampener_factor": 1.0,
         "player_role_restrictions": {},
         "tactical_summary": "Choque de estilos: Estándar vs Estándar"
       },
       "squad_health": {
-        "home_team": "Suecia",
-        "away_team": "Eslovenia",
+        "home_team": "Rumanía",
+        "away_team": "Suecia",
         "home_vetoed": [],
         "away_vetoed": [],
         "home_reallocation": "Plantel al 100% sin reasignación necesaria.",
@@ -990,8 +990,8 @@
       "momentum_analysis": {
         "agent": "MomentumStreakAgent",
         "version": "1.0.0",
-        "home_team": "Suecia",
-        "away_team": "Eslovenia",
+        "home_team": "Rumanía",
+        "away_team": "Suecia",
         "home_momentum_factor": 1.0,
         "away_momentum_factor": 1.0,
         "momentum_differential": 0.0,
@@ -1016,161 +1016,215 @@
         "blowout_risk_level": "MODERADO",
         "editorial_restrictions": [],
         "editorial_insights": [
-          "COBERTURA ESPN ECUADOR / FOX SPORTS: Enfrentamiento parejo (Suecia vs Eslovenia). Partida de ritmo medio con preponderancia de mercados de goles moderados y dobles oportunidades respaldadas por localía."
+          "COBERTURA ESPN ECUADOR / FOX SPORTS: Enfrentamiento parejo (Rumanía vs Suecia). Partida de ritmo medio con preponderancia de mercados de goles moderados y dobles oportunidades respaldadas por localía."
         ],
         "press_quotes": [],
         "summary_tag": "Señal Editorial Activa (MODERADO Riesgo Desborde)"
       },
       "score_prediction": {
-        "most_probable_score": "2 - 0",
-        "most_probable_prob_pct": 11.41,
+        "most_probable_score": "0 - 2",
+        "most_probable_prob_pct": 9.69,
         "top_5_scores": [
           {
-            "score": "2 - 0",
-            "home_goals": 2,
-            "away_goals": 0,
-            "probability_pct": 11.41
+            "score": "0 - 2",
+            "home_goals": 0,
+            "away_goals": 2,
+            "probability_pct": 9.69
           },
           {
-            "score": "1 - 0",
-            "home_goals": 1,
-            "away_goals": 0,
-            "probability_pct": 10.17
-          },
-          {
-            "score": "3 - 0",
-            "home_goals": 3,
-            "away_goals": 0,
-            "probability_pct": 9.07
-          },
-          {
-            "score": "2 - 1",
-            "home_goals": 2,
+            "score": "0 - 1",
+            "home_goals": 0,
             "away_goals": 1,
-            "probability_pct": 8.15
+            "probability_pct": 9.16
           },
           {
             "score": "1 - 1",
             "home_goals": 1,
             "away_goals": 1,
-            "probability_pct": 7.71
+            "probability_pct": 8.63
+          },
+          {
+            "score": "1 - 2",
+            "home_goals": 1,
+            "away_goals": 2,
+            "probability_pct": 8.57
+          },
+          {
+            "score": "0 - 3",
+            "home_goals": 0,
+            "away_goals": 3,
+            "probability_pct": 7.22
           }
         ],
         "1x2_probabilities": {
-          "home_win_pct": 67.42,
+          "home_win_pct": 12.74,
           "draw_pct": 26.0,
-          "away_win_pct": 6.58
+          "away_win_pct": 61.26
         },
         "goals_markets": {
-          "over_0_5_pct": 94.42,
-          "under_0_5_pct": 5.58,
-          "over_1_5_pct": 80.8,
-          "under_1_5_pct": 19.2,
-          "over_2_5_pct": 60.21,
-          "under_2_5_pct": 39.79,
-          "over_3_5_pct": 39.64,
-          "under_3_5_pct": 60.36,
-          "over_4_5_pct": 23.16,
-          "under_4_5_pct": 76.84,
-          "under_5_5_pct": 87.97,
-          "btts_yes_pct": 46.84,
-          "btts_no_pct": 53.16
+          "over_0_5_pct": 94.56,
+          "under_0_5_pct": 5.44,
+          "over_1_5_pct": 81.24,
+          "under_1_5_pct": 18.76,
+          "over_2_5_pct": 60.74,
+          "under_2_5_pct": 39.26,
+          "over_3_5_pct": 40.1,
+          "under_3_5_pct": 59.9,
+          "over_4_5_pct": 23.51,
+          "under_4_5_pct": 76.49,
+          "under_5_5_pct": 87.69,
+          "btts_yes_pct": 52.91,
+          "btts_no_pct": 47.09
         },
         "exact_market_probabilities": {
-          "home_win_pct": 71.75,
-          "draw_pct": 17.35,
-          "away_win_pct": 10.9,
-          "double_chance_1x_pct": 89.1,
-          "double_chance_x2_pct": 28.25,
-          "double_chance_12_pct": 82.65,
-          "dnb_home_pct": 86.81,
-          "dnb_away_pct": 13.19,
-          "over_0_5_pct": 94.42,
-          "under_0_5_pct": 5.58,
-          "over_1_5_pct": 80.8,
-          "under_1_5_pct": 19.2,
-          "over_2_5_pct": 60.21,
-          "under_2_5_pct": 39.79,
-          "over_3_5_pct": 39.64,
-          "under_3_5_pct": 60.36,
-          "over_4_5_pct": 23.16,
-          "under_4_5_pct": 76.84,
-          "under_5_5_pct": 87.97,
-          "btts_yes_pct": 46.84,
-          "btts_no_pct": 53.16,
-          "home_over_0_5_pct": 88.95,
-          "home_under_2_5_pct": 56.89,
-          "away_over_0_5_pct": 52.31,
-          "away_under_2_5_pct": 95.07,
-          "home_plus_1_5_pct": 96.59,
-          "away_plus_1_5_pct": 49.66,
-          "home_plus_2_5_pct": 99.15,
-          "away_plus_2_5_pct": 69.49,
-          "home_minus_1_5_pct": 50.34,
-          "away_minus_1_5_pct": 3.41,
-          "home_clean_sheet_pct": 47.69,
-          "away_clean_sheet_pct": 11.05,
-          "home_win_by_1_pct": 21.41,
-          "away_win_by_1_pct": 7.49
+          "home_win_pct": 15.96,
+          "draw_pct": 19.56,
+          "away_win_pct": 64.48,
+          "double_chance_1x_pct": 35.52,
+          "double_chance_x2_pct": 84.04,
+          "double_chance_12_pct": 80.44,
+          "dnb_home_pct": 19.84,
+          "dnb_away_pct": 80.16,
+          "over_0_5_pct": 94.56,
+          "under_0_5_pct": 5.44,
+          "over_1_5_pct": 81.24,
+          "under_1_5_pct": 18.76,
+          "over_2_5_pct": 60.74,
+          "under_2_5_pct": 39.26,
+          "over_3_5_pct": 40.1,
+          "under_3_5_pct": 59.9,
+          "over_4_5_pct": 23.51,
+          "under_4_5_pct": 76.49,
+          "under_5_5_pct": 87.69,
+          "btts_yes_pct": 52.91,
+          "btts_no_pct": 47.09,
+          "home_over_0_5_pct": 60.31,
+          "home_under_2_5_pct": 91.7,
+          "away_over_0_5_pct": 87.16,
+          "away_under_2_5_pct": 61.14,
+          "home_plus_1_5_pct": 57.13,
+          "away_plus_1_5_pct": 94.1,
+          "home_plus_2_5_pct": 75.49,
+          "away_plus_2_5_pct": 98.24,
+          "home_minus_1_5_pct": 5.9,
+          "away_minus_1_5_pct": 42.87,
+          "home_clean_sheet_pct": 12.84,
+          "away_clean_sheet_pct": 39.69,
+          "home_win_by_1_pct": 10.07,
+          "away_win_by_1_pct": 21.62
         },
         "simulated_averages": {
-          "home_goals": 2.48,
-          "away_goals": 0.78,
-          "total_goals": 3.26
+          "home_goals": 0.97,
+          "away_goals": 2.3,
+          "total_goals": 3.27
         }
       },
       "corners_prediction": {
-        "home_corners_expected": 4.4,
-        "away_corners_expected": 3.0,
-        "total_corners_expected": 7.4,
-        "most_likely_range": "6 - 9 córners",
+        "home_corners_expected": 3.7,
+        "away_corners_expected": 4.7,
+        "total_corners_expected": 8.4,
+        "most_likely_range": "7 - 10 córners",
         "lines": {
-          "over_6_5_pct": 60.8,
-          "under_6_5_pct": 39.2,
-          "over_7_5_pct": 46.1,
-          "under_7_5_pct": 53.9,
-          "over_8_5_pct": 32.4,
-          "under_8_5_pct": 67.6,
-          "over_9_5_pct": 21.2,
-          "under_9_5_pct": 78.8,
-          "over_10_5_pct": 12.9,
-          "under_10_5_pct": 87.1,
-          "over_11_5_pct": 7.4,
-          "under_11_5_pct": 92.6,
-          "under_12_5_pct": 96.1
+          "over_6_5_pct": 73.3,
+          "under_6_5_pct": 26.7,
+          "over_7_5_pct": 60.1,
+          "under_7_5_pct": 39.9,
+          "over_8_5_pct": 46.3,
+          "under_8_5_pct": 53.7,
+          "over_9_5_pct": 33.4,
+          "under_9_5_pct": 66.6,
+          "over_10_5_pct": 22.6,
+          "under_10_5_pct": 77.4,
+          "over_11_5_pct": 14.3,
+          "under_11_5_pct": 85.7,
+          "under_12_5_pct": 91.5
         },
         "team_lines": {
-          "home_over_4_5_pct": 44.9,
-          "home_over_5_5_pct": 28.0,
-          "away_over_3_5_pct": 35.3,
-          "away_over_4_5_pct": 18.5
+          "home_over_4_5_pct": 31.3,
+          "home_over_5_5_pct": 17.0,
+          "away_over_3_5_pct": 69.0,
+          "away_over_4_5_pct": 50.5
         }
       },
       "cards_prediction": {
         "referee": "Árbitro FIFA Internacional",
-        "home_yellow_cards": 1.8,
-        "away_yellow_cards": 2.3,
-        "total_yellow_cards": 4.1,
+        "home_yellow_cards": 2.1,
+        "away_yellow_cards": 1.8,
+        "total_yellow_cards": 3.9,
         "red_cards": {
-          "expected_home_reds": 0.07,
-          "expected_away_reds": 0.1,
+          "expected_home_reds": 0.09,
+          "expected_away_reds": 0.08,
           "expected_total_reds": 0.17,
-          "home_red_prob_pct": 7.4,
-          "away_red_prob_prob_pct": 9.7,
+          "home_red_prob_pct": 9.2,
+          "away_red_prob_prob_pct": 7.9,
           "any_red_card_in_match_pct": 15.7
         },
-        "total_cards_expected": 4.3,
+        "total_cards_expected": 4.1,
         "card_lines": {
-          "over_3_5_cards_pct": 57.8,
-          "under_3_5_cards_pct": 42.2,
-          "over_4_5_cards_pct": 38.3,
-          "under_4_5_cards_pct": 61.7,
-          "over_5_5_cards_pct": 22.4,
-          "under_5_5_cards_pct": 77.6
+          "over_3_5_cards_pct": 54.9,
+          "under_3_5_cards_pct": 45.1,
+          "over_4_5_cards_pct": 35.4,
+          "under_4_5_cards_pct": 64.6,
+          "over_5_5_cards_pct": 20.1,
+          "under_5_5_cards_pct": 79.9
         }
       },
       "player_props": {
         "home_key_players": [
+          {
+            "name": "Dennis Man",
+            "position": "Extremo Serie A",
+            "health_status": "Disponible",
+            "expected_shots": 2.15,
+            "expected_sot": 0.95,
+            "prob_at_least_1_sot_pct": 61.5,
+            "prob_at_least_2_sot_pct": 24.8,
+            "prob_over_1_5_shots_pct": 63.3,
+            "prob_over_2_5_shots_pct": 36.3,
+            "goal_anytime_prob_pct": 35.0,
+            "reallocated_from": null
+          },
+          {
+            "name": "Răzvan Marin",
+            "position": "Mediocentro / Especialista Penaltis",
+            "health_status": "Disponible",
+            "expected_shots": 1.51,
+            "expected_sot": 0.64,
+            "prob_at_least_1_sot_pct": 47.1,
+            "prob_at_least_2_sot_pct": 13.4,
+            "prob_over_1_5_shots_pct": 44.6,
+            "prob_over_2_5_shots_pct": 19.4,
+            "goal_anytime_prob_pct": 24.0,
+            "reallocated_from": null
+          },
+          {
+            "name": "Valentin Mihăilă",
+            "position": "Extremo Rápido",
+            "health_status": "Disponible",
+            "expected_shots": 1.75,
+            "expected_sot": 0.72,
+            "prob_at_least_1_sot_pct": 51.1,
+            "prob_at_least_2_sot_pct": 16.1,
+            "prob_over_1_5_shots_pct": 52.2,
+            "prob_over_2_5_shots_pct": 25.6,
+            "goal_anytime_prob_pct": 26.0,
+            "reallocated_from": null
+          },
+          {
+            "name": "Radu Drăgușin",
+            "position": "Central Muralla Spurs",
+            "health_status": "Disponible",
+            "expected_shots": 0.56,
+            "expected_sot": 0.2,
+            "prob_at_least_1_sot_pct": 18.1,
+            "prob_at_least_2_sot_pct": 1.8,
+            "prob_over_1_5_shots_pct": 10.8,
+            "prob_over_2_5_shots_pct": 1.9,
+            "goal_anytime_prob_pct": 8.0,
+            "reallocated_from": null
+          }
+        ],
+        "away_key_players": [
           {
             "name": "Viktor Gyökeres",
             "position": "Delantero Letal / Goleador Europa",
@@ -1223,47 +1277,6 @@
             "goal_anytime_prob_pct": 22.0,
             "reallocated_from": null
           }
-        ],
-        "away_key_players": [
-          {
-            "name": "Benjamin Sesko",
-            "position": "Delantero Centro Estrella",
-            "health_status": "Disponible",
-            "expected_shots": 2.14,
-            "expected_sot": 1.07,
-            "prob_at_least_1_sot_pct": 65.7,
-            "prob_at_least_2_sot_pct": 28.9,
-            "prob_over_1_5_shots_pct": 63.0,
-            "prob_over_2_5_shots_pct": 36.0,
-            "goal_anytime_prob_pct": 48.0,
-            "reallocated_from": null
-          },
-          {
-            "name": "Petar Stojanovic",
-            "position": "Carrilero Derecho",
-            "health_status": "Disponible",
-            "expected_shots": 0.8,
-            "expected_sot": 0.27,
-            "prob_at_least_1_sot_pct": 23.4,
-            "prob_at_least_2_sot_pct": 3.0,
-            "prob_over_1_5_shots_pct": 19.2,
-            "prob_over_2_5_shots_pct": 4.8,
-            "goal_anytime_prob_pct": 12.0,
-            "reallocated_from": null
-          },
-          {
-            "name": "Andraz Sporar",
-            "position": "Segundo Delantero",
-            "health_status": "Disponible",
-            "expected_shots": 1.27,
-            "expected_sot": 0.53,
-            "prob_at_least_1_sot_pct": 41.4,
-            "prob_at_least_2_sot_pct": 10.1,
-            "prob_over_1_5_shots_pct": 36.2,
-            "prob_over_2_5_shots_pct": 13.6,
-            "goal_anytime_prob_pct": 26.0,
-            "reallocated_from": null
-          }
         ]
       },
       "la_fija_real": {
@@ -1273,7 +1286,7 @@
         "probability": 98.1,
         "odds": 1.09,
         "availability": "Universal en casas con líneas asiáticas",
-        "rationale": "Blindaje total de 2 goles de margen a favor de Suecia en su propio feudo.",
+        "rationale": "Blindaje total de 2 goles de margen a favor del visitante competitivo Suecia.",
         "_rank_score": 203.65
       },
       "all_fija_options": [
@@ -1284,85 +1297,85 @@
           "probability": 98.1,
           "odds": 1.09,
           "availability": "Universal en casas con líneas asiáticas",
-          "rationale": "Blindaje total de 2 goles de margen a favor de Suecia en su propio feudo.",
+          "rationale": "Blindaje total de 2 goles de margen a favor del visitante competitivo Suecia.",
           "_rank_score": 203.65
-        },
-        {
-          "market": "Total de Córners Fijo",
-          "category_code": "TOTAL_CORNERS",
-          "selection": "Menos de 12.5 córners totales",
-          "probability": 96.1,
-          "odds": 1.1,
-          "availability": "Universal en casas principales (Bet365, Betano)",
-          "rationale": "Línea de contención alta: el promedio proyectado de 7.4 esquinas hace casi imposible alcanzar 13 córners.",
-          "_rank_score": 187.9
         },
         {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_OVER",
           "selection": "Más de 0.5 goles totales",
-          "probability": 94.4,
+          "probability": 94.6,
           "odds": 1.11,
           "availability": "Universal en todas las plataformas",
           "rationale": "Intensidad ofensiva global de 2.5 xG descarta matemáticamente un 0-0.",
-          "_rank_score": 58.3
-        },
-        {
-          "market": "Doble Oportunidad Blindada",
-          "category_code": "DOBLE_OPORTUNIDAD",
-          "selection": "Suecia o Empate (1X)",
-          "probability": 89.1,
-          "odds": 1.18,
-          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "Protección total ante el empate con 89.1% de cobertura matemática.",
-          "_rank_score": 56.35
+          "_rank_score": 58.4
         },
         {
           "market": "Gol de Equipo de Seguridad",
           "category_code": "GOL_EQUIPO",
           "selection": "Suecia anota más de 0.5 goles",
-          "probability": 89.0,
-          "odds": 1.18,
+          "probability": 87.2,
+          "odds": 1.2,
           "availability": "Universal en todas las plataformas",
-          "rationale": "Volumen ofensivo de Suecia (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 56.3
+          "rationale": "Eficacia ofensiva de Suecia (1.1 xG) garantiza presencia en el marcador.",
+          "_rank_score": 55.6
         },
         {
-          "market": "Victoria Sin Empate (DNB)",
-          "category_code": "VICTORIA_SIN_EMPATE",
-          "selection": "Suecia Gana (Empate No Válido / DNB)",
-          "probability": 86.81,
-          "odds": 1.22,
-          "availability": "100% Casas de Apuestas (Mercado 'Draw No Bet')",
-          "rationale": "Triunfo de Suecia con devolución íntegra del 100% del dinero apostado si el juego finaliza igualado.",
-          "_rank_score": 55.61
+          "market": "Doble Oportunidad Blindada",
+          "category_code": "DOBLE_OPORTUNIDAD",
+          "selection": "Empate o Suecia (X2)",
+          "probability": 84.0,
+          "odds": 1.25,
+          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+          "rationale": "El favorito visitante Suecia puntúa en el 84.0% de las simulaciones.",
+          "_rank_score": 54.5
         },
         {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_OVER",
           "selection": "Más de 1.5 goles totales",
-          "probability": 80.8,
+          "probability": 81.2,
           "odds": 1.32,
           "availability": "Universal en todas las plataformas",
-          "rationale": "Ritmo conjunto proyectado de 2.5 xG con 80.8% de probabilidad exacta de al menos 2 goles.",
-          "_rank_score": 53.6
+          "rationale": "Ritmo conjunto proyectado de 2.5 xG con 81.2% de probabilidad exacta de al menos 2 goles.",
+          "_rank_score": 53.8
+        },
+        {
+          "market": "Victoria Sin Empate (DNB)",
+          "category_code": "VICTORIA_SIN_EMPATE",
+          "selection": "Suecia Gana (Empate No Válido / DNB)",
+          "probability": 80.16,
+          "odds": 1.32,
+          "availability": "100% Casas de Apuestas (Mercado 'Draw No Bet')",
+          "rationale": "Victoria de Suecia con devolución del importe en caso de igualdad.",
+          "_rank_score": 53.28
         },
         {
           "market": "Victoria Directa (1X2)",
           "category_code": "VICTORIA_DIRECTA",
-          "selection": "Suecia Gana el Partido (1)",
-          "probability": 71.8,
-          "odds": 1.46,
-          "availability": "Universal en todas las casas (Bet365, Betano, etc.)",
-          "rationale": "Triunfo directo de Suecia respaldado por una probabilidad de victoria del 71.8% en 90 minutos.",
-          "_rank_score": 50.5
+          "selection": "Suecia Gana el Partido (2)",
+          "probability": 64.5,
+          "odds": 1.63,
+          "availability": "Universal en todas las casas",
+          "rationale": "Triunfo directo del favorito visitante Suecia con 64.5% de probabilidad proyectada.",
+          "_rank_score": 48.55
+        },
+        {
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "Rumanía anota más de 0.5 goles",
+          "probability": 60.3,
+          "odds": 1.74,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Volumen ofensivo de Rumanía (1.4 xG) asegura al menos un gol a favor.",
+          "_rank_score": 47.55
         }
       ]
     },
     {
-      "match": "Bosnia y Herzegovina vs Rumanía",
+      "match": "Bosnia y Herzegovina vs Polonia",
       "home_team": "Bosnia y Herzegovina",
-      "away_team": "Rumanía",
+      "away_team": "Polonia",
       "context": {
         "tournament": "Competición Internacional FIFA",
         "stadium": "Estadio Principal",
@@ -1374,9 +1387,9 @@
       },
       "projections": {
         "expected_goals": {
-          "home": 0.51,
-          "away": 2.11,
-          "total": 2.62
+          "home": 0.6,
+          "away": 2.16,
+          "total": 2.76
         },
         "variance_and_uncertainty": {
           "variance_index": 0.85,
@@ -1384,26 +1397,26 @@
           "rank_factor_applied": -0.45
         },
         "expected_corners": {
-          "home": 4.08,
-          "away": 4.83,
-          "total": 8.91,
+          "home": 4.04,
+          "away": 5.3,
+          "total": 9.34,
           "home_quantiles": {
-            "p10": 2.3,
-            "p90": 6.2
+            "p10": 2.2,
+            "p90": 6.1
           },
           "away_quantiles": {
-            "p10": 3.2,
-            "p90": 6.7
+            "p10": 3.7,
+            "p90": 7.2
           }
         },
         "expected_yellow_cards": {
           "home": 2.75,
-          "away": 2.06,
-          "total": 4.81
+          "away": 1.94,
+          "total": 4.69
         },
         "expected_shots": {
           "home": 8.92,
-          "away": 11.14
+          "away": 11.82
         }
       },
       "tactical_analysis": {
@@ -1423,7 +1436,7 @@
       },
       "squad_health": {
         "home_team": "Bosnia y Herzegovina",
-        "away_team": "Rumanía",
+        "away_team": "Polonia",
         "home_vetoed": [],
         "away_vetoed": [],
         "home_reallocation": "Plantel al 100% sin reasignación necesaria.",
@@ -1446,7 +1459,7 @@
         "agent": "MomentumStreakAgent",
         "version": "1.0.0",
         "home_team": "Bosnia y Herzegovina",
-        "away_team": "Rumanía",
+        "away_team": "Polonia",
         "home_momentum_factor": 1.0,
         "away_momentum_factor": 1.0,
         "momentum_differential": 0.0,
@@ -1471,157 +1484,157 @@
         "blowout_risk_level": "MODERADO",
         "editorial_restrictions": [],
         "editorial_insights": [
-          "COBERTURA ESPN ECUADOR / FOX SPORTS: Enfrentamiento parejo (Bosnia y Herzegovina vs Rumanía). Partida de ritmo medio con preponderancia de mercados de goles moderados y dobles oportunidades respaldadas por localía."
+          "COBERTURA ESPN ECUADOR / FOX SPORTS: Enfrentamiento parejo (Bosnia y Herzegovina vs Polonia). Partida de ritmo medio con preponderancia de mercados de goles moderados y dobles oportunidades respaldadas por localía."
         ],
         "press_quotes": [],
         "summary_tag": "Señal Editorial Activa (MODERADO Riesgo Desborde)"
       },
       "score_prediction": {
-        "most_probable_score": "0 - 1",
-        "most_probable_prob_pct": 15.06,
+        "most_probable_score": "0 - 2",
+        "most_probable_prob_pct": 13.78,
         "top_5_scores": [
-          {
-            "score": "0 - 1",
-            "home_goals": 0,
-            "away_goals": 1,
-            "probability_pct": 15.06
-          },
           {
             "score": "0 - 2",
             "home_goals": 0,
             "away_goals": 2,
-            "probability_pct": 15.04
+            "probability_pct": 13.78
+          },
+          {
+            "score": "0 - 1",
+            "home_goals": 0,
+            "away_goals": 1,
+            "probability_pct": 13.52
           },
           {
             "score": "0 - 3",
             "home_goals": 0,
             "away_goals": 3,
-            "probability_pct": 10.48
+            "probability_pct": 9.79
           },
           {
             "score": "0 - 0",
             "home_goals": 0,
             "away_goals": 0,
-            "probability_pct": 9.77
+            "probability_pct": 8.65
           },
           {
             "score": "1 - 1",
             "home_goals": 1,
             "away_goals": 1,
-            "probability_pct": 8.22
+            "probability_pct": 8.53
           }
         ],
         "1x2_probabilities": {
-          "home_win_pct": 5.19,
+          "home_win_pct": 6.56,
           "draw_pct": 26.0,
-          "away_win_pct": 68.81
+          "away_win_pct": 67.44
         },
         "goals_markets": {
-          "over_0_5_pct": 90.23,
-          "under_0_5_pct": 9.77,
-          "over_1_5_pct": 71.53,
-          "under_1_5_pct": 28.47,
-          "over_2_5_pct": 47.11,
-          "under_2_5_pct": 52.89,
-          "over_3_5_pct": 27.08,
-          "under_3_5_pct": 72.92,
-          "over_4_5_pct": 13.68,
-          "under_4_5_pct": 86.32,
-          "under_5_5_pct": 93.9,
-          "btts_yes_pct": 33.99,
-          "btts_no_pct": 66.01
+          "over_0_5_pct": 91.35,
+          "under_0_5_pct": 8.65,
+          "over_1_5_pct": 74.0,
+          "under_1_5_pct": 26.0,
+          "over_2_5_pct": 50.29,
+          "under_2_5_pct": 49.71,
+          "over_3_5_pct": 29.9,
+          "under_3_5_pct": 70.1,
+          "over_4_5_pct": 15.65,
+          "under_4_5_pct": 84.35,
+          "under_5_5_pct": 92.75,
+          "btts_yes_pct": 38.43,
+          "btts_no_pct": 61.57
         },
         "exact_market_probabilities": {
-          "home_win_pct": 8.07,
-          "draw_pct": 20.23,
-          "away_win_pct": 71.7,
-          "double_chance_1x_pct": 28.3,
-          "double_chance_x2_pct": 91.93,
-          "double_chance_12_pct": 79.77,
-          "dnb_home_pct": 10.12,
-          "dnb_away_pct": 89.88,
-          "over_0_5_pct": 90.23,
-          "under_0_5_pct": 9.77,
-          "over_1_5_pct": 71.53,
-          "under_1_5_pct": 28.47,
-          "over_2_5_pct": 47.11,
-          "under_2_5_pct": 52.89,
-          "over_3_5_pct": 27.08,
-          "under_3_5_pct": 72.92,
-          "over_4_5_pct": 13.68,
-          "under_4_5_pct": 86.32,
-          "under_5_5_pct": 93.9,
-          "btts_yes_pct": 33.99,
-          "btts_no_pct": 66.01,
-          "home_over_0_5_pct": 39.06,
-          "home_under_2_5_pct": 98.19,
-          "away_over_0_5_pct": 85.15,
-          "away_under_2_5_pct": 65.35,
-          "home_plus_1_5_pct": 52.17,
-          "away_plus_1_5_pct": 98.02,
-          "home_plus_2_5_pct": 73.14,
-          "away_plus_2_5_pct": 99.65,
-          "home_minus_1_5_pct": 1.98,
-          "away_minus_1_5_pct": 47.83,
-          "home_clean_sheet_pct": 14.85,
-          "away_clean_sheet_pct": 60.94,
-          "home_win_by_1_pct": 6.09,
-          "away_win_by_1_pct": 23.87
+          "home_win_pct": 9.54,
+          "draw_pct": 20.05,
+          "away_win_pct": 70.41,
+          "double_chance_1x_pct": 29.59,
+          "double_chance_x2_pct": 90.46,
+          "double_chance_12_pct": 79.95,
+          "dnb_home_pct": 11.94,
+          "dnb_away_pct": 88.06,
+          "over_0_5_pct": 91.35,
+          "under_0_5_pct": 8.65,
+          "over_1_5_pct": 74.0,
+          "under_1_5_pct": 26.0,
+          "over_2_5_pct": 50.29,
+          "under_2_5_pct": 49.71,
+          "over_3_5_pct": 29.9,
+          "under_3_5_pct": 70.1,
+          "over_4_5_pct": 15.65,
+          "under_4_5_pct": 84.35,
+          "under_5_5_pct": 92.75,
+          "btts_yes_pct": 38.43,
+          "btts_no_pct": 61.57,
+          "home_over_0_5_pct": 44.04,
+          "home_under_2_5_pct": 97.29,
+          "away_over_0_5_pct": 85.74,
+          "away_under_2_5_pct": 64.16,
+          "home_plus_1_5_pct": 52.89,
+          "away_plus_1_5_pct": 97.4,
+          "home_plus_2_5_pct": 73.33,
+          "away_plus_2_5_pct": 99.47,
+          "home_minus_1_5_pct": 2.6,
+          "away_minus_1_5_pct": 47.11,
+          "home_clean_sheet_pct": 14.26,
+          "away_clean_sheet_pct": 55.96,
+          "home_win_by_1_pct": 6.94,
+          "away_win_by_1_pct": 23.29
         },
         "simulated_averages": {
-          "home_goals": 0.51,
-          "away_goals": 2.13,
-          "total_goals": 2.64
+          "home_goals": 0.6,
+          "away_goals": 2.18,
+          "total_goals": 2.78
         }
       },
       "corners_prediction": {
         "home_corners_expected": 2.9,
-        "away_corners_expected": 3.5,
-        "total_corners_expected": 6.4,
+        "away_corners_expected": 3.8,
+        "total_corners_expected": 6.7,
         "most_likely_range": "5 - 8 córners",
         "lines": {
-          "over_6_5_pct": 45.8,
-          "under_6_5_pct": 54.2,
-          "over_7_5_pct": 31.3,
-          "under_7_5_pct": 68.7,
-          "over_8_5_pct": 19.7,
-          "under_8_5_pct": 80.3,
-          "over_9_5_pct": 11.4,
-          "under_9_5_pct": 88.6,
-          "over_10_5_pct": 6.1,
-          "under_10_5_pct": 93.9,
-          "over_11_5_pct": 3.1,
-          "under_11_5_pct": 96.9,
-          "under_12_5_pct": 98.6
+          "over_6_5_pct": 50.5,
+          "under_6_5_pct": 49.5,
+          "over_7_5_pct": 35.7,
+          "under_7_5_pct": 64.3,
+          "over_8_5_pct": 23.3,
+          "under_8_5_pct": 76.7,
+          "over_9_5_pct": 14.0,
+          "under_9_5_pct": 86.0,
+          "over_10_5_pct": 7.9,
+          "under_10_5_pct": 92.1,
+          "over_11_5_pct": 4.1,
+          "under_11_5_pct": 95.9,
+          "under_12_5_pct": 98.0
         },
         "team_lines": {
           "home_over_4_5_pct": 16.8,
           "home_over_5_5_pct": 7.4,
-          "away_over_3_5_pct": 46.3,
-          "away_over_4_5_pct": 27.5
+          "away_over_3_5_pct": 52.7,
+          "away_over_4_5_pct": 33.2
         }
       },
       "cards_prediction": {
         "referee": "Árbitro FIFA Internacional",
-        "home_yellow_cards": 2.5,
-        "away_yellow_cards": 1.9,
+        "home_yellow_cards": 2.6,
+        "away_yellow_cards": 1.8,
         "total_yellow_cards": 4.4,
         "red_cards": {
           "expected_home_reds": 0.1,
           "expected_away_reds": 0.07,
           "expected_total_reds": 0.17,
-          "home_red_prob_pct": 9.8,
-          "away_red_prob_prob_pct": 7.3,
+          "home_red_prob_pct": 10.0,
+          "away_red_prob_prob_pct": 7.1,
           "any_red_card_in_match_pct": 15.7
         },
         "total_cards_expected": 4.6,
         "card_lines": {
-          "over_3_5_cards_pct": 64.8,
-          "under_3_5_cards_pct": 35.2,
-          "over_4_5_cards_pct": 45.8,
-          "under_4_5_cards_pct": 54.2,
-          "over_5_5_cards_pct": 28.8,
-          "under_5_5_cards_pct": 71.2
+          "over_3_5_cards_pct": 63.7,
+          "under_3_5_cards_pct": 36.3,
+          "over_4_5_cards_pct": 44.5,
+          "under_4_5_cards_pct": 55.5,
+          "over_5_5_cards_pct": 27.7,
+          "under_5_5_cards_pct": 72.3
         }
       },
       "player_props": {
@@ -1681,55 +1694,55 @@
         ],
         "away_key_players": [
           {
-            "name": "Dennis Man",
-            "position": "Extremo Serie A",
+            "name": "Robert Lewandowski",
+            "position": "Delantero Histórico / Capitán",
             "health_status": "Disponible",
-            "expected_shots": 2.15,
-            "expected_sot": 0.95,
-            "prob_at_least_1_sot_pct": 61.5,
-            "prob_at_least_2_sot_pct": 24.8,
-            "prob_over_1_5_shots_pct": 63.3,
-            "prob_over_2_5_shots_pct": 36.3,
-            "goal_anytime_prob_pct": 35.0,
+            "expected_shots": 3.12,
+            "expected_sot": 1.52,
+            "prob_at_least_1_sot_pct": 78.1,
+            "prob_at_least_2_sot_pct": 44.9,
+            "prob_over_1_5_shots_pct": 81.9,
+            "prob_over_2_5_shots_pct": 60.4,
+            "goal_anytime_prob_pct": 54.0,
             "reallocated_from": null
           },
           {
-            "name": "Răzvan Marin",
-            "position": "Mediocentro / Especialista Penaltis",
+            "name": "Piotr Zieliński",
+            "position": "Mediapunta Maestro",
             "health_status": "Disponible",
-            "expected_shots": 1.51,
-            "expected_sot": 0.64,
-            "prob_at_least_1_sot_pct": 47.1,
-            "prob_at_least_2_sot_pct": 13.4,
-            "prob_over_1_5_shots_pct": 44.6,
-            "prob_over_2_5_shots_pct": 19.4,
-            "goal_anytime_prob_pct": 24.0,
-            "reallocated_from": null
-          },
-          {
-            "name": "Valentin Mihăilă",
-            "position": "Extremo Rápido",
-            "health_status": "Disponible",
-            "expected_shots": 1.75,
-            "expected_sot": 0.72,
-            "prob_at_least_1_sot_pct": 51.1,
-            "prob_at_least_2_sot_pct": 16.1,
-            "prob_over_1_5_shots_pct": 52.2,
-            "prob_over_2_5_shots_pct": 25.6,
+            "expected_shots": 1.77,
+            "expected_sot": 0.76,
+            "prob_at_least_1_sot_pct": 53.2,
+            "prob_at_least_2_sot_pct": 17.7,
+            "prob_over_1_5_shots_pct": 52.9,
+            "prob_over_2_5_shots_pct": 26.2,
             "goal_anytime_prob_pct": 26.0,
             "reallocated_from": null
           },
           {
-            "name": "Radu Drăgușin",
-            "position": "Central Muralla Spurs",
+            "name": "Nicola Zalewski",
+            "position": "Carrilero Desequilibrante",
             "health_status": "Disponible",
-            "expected_shots": 0.56,
-            "expected_sot": 0.2,
-            "prob_at_least_1_sot_pct": 18.1,
-            "prob_at_least_2_sot_pct": 1.8,
-            "prob_over_1_5_shots_pct": 10.8,
-            "prob_over_2_5_shots_pct": 1.9,
-            "goal_anytime_prob_pct": 8.0,
+            "expected_shots": 1.52,
+            "expected_sot": 0.59,
+            "prob_at_least_1_sot_pct": 44.6,
+            "prob_at_least_2_sot_pct": 11.9,
+            "prob_over_1_5_shots_pct": 44.9,
+            "prob_over_2_5_shots_pct": 19.6,
+            "goal_anytime_prob_pct": 18.0,
+            "reallocated_from": null
+          },
+          {
+            "name": "Sebastian Szymański",
+            "position": "Mediapunta Fenerbahçe",
+            "health_status": "Disponible",
+            "expected_shots": 1.94,
+            "expected_sot": 0.84,
+            "prob_at_least_1_sot_pct": 57.0,
+            "prob_at_least_2_sot_pct": 20.7,
+            "prob_over_1_5_shots_pct": 57.8,
+            "prob_over_2_5_shots_pct": 30.8,
+            "goal_anytime_prob_pct": 26.0,
             "reallocated_from": null
           }
         ]
@@ -1741,7 +1754,7 @@
         "probability": 97.2,
         "odds": 1.1,
         "availability": "Universal en casas principales (Bet365, Betano)",
-        "rationale": "Línea de contención alta: el promedio proyectado de 6.4 esquinas hace casi imposible alcanzar 13 córners.",
+        "rationale": "Línea de contención alta: el promedio proyectado de 6.7 esquinas hace casi imposible alcanzar 13 córners.",
         "_rank_score": 231.7
       },
       "all_fija_options": [
@@ -1752,126 +1765,126 @@
           "probability": 97.2,
           "odds": 1.1,
           "availability": "Universal en casas principales (Bet365, Betano)",
-          "rationale": "Línea de contención alta: el promedio proyectado de 6.4 esquinas hace casi imposible alcanzar 13 córners.",
+          "rationale": "Línea de contención alta: el promedio proyectado de 6.7 esquinas hace casi imposible alcanzar 13 córners.",
           "_rank_score": 231.7
         },
         {
           "market": "Hándicap Blindado",
           "category_code": "HANDICAP_BLINDADO",
-          "selection": "Rumanía (+2.5)",
+          "selection": "Polonia (+2.5)",
           "probability": 98.1,
           "odds": 1.09,
           "availability": "Universal en casas con líneas asiáticas",
-          "rationale": "Blindaje total de 2 goles de margen a favor del visitante competitivo Rumanía.",
+          "rationale": "Blindaje total de 2 goles de margen a favor del visitante competitivo Polonia.",
           "_rank_score": 203.65
         },
         {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_UNDER",
           "selection": "Menos de 5.5 goles totales",
-          "probability": 93.9,
-          "odds": 1.12,
+          "probability": 95.2,
+          "odds": 1.1,
           "availability": "Universal en todas las plataformas",
           "rationale": "Línea de máxima protección: ritmo conjunto de 2.5 xG descarta completamente un festival de 6 goles.",
-          "_rank_score": 58.15
+          "_rank_score": 180.7
         },
         {
           "market": "Doble Oportunidad Blindada",
           "category_code": "DOBLE_OPORTUNIDAD",
-          "selection": "Empate o Rumanía (X2)",
-          "probability": 91.9,
-          "odds": 1.14,
+          "selection": "Empate o Polonia (X2)",
+          "probability": 90.5,
+          "odds": 1.16,
           "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "El favorito visitante Rumanía puntúa en el 91.9% de las simulaciones.",
-          "_rank_score": 57.35
+          "rationale": "El favorito visitante Polonia puntúa en el 90.5% de las simulaciones.",
+          "_rank_score": 56.85
         },
         {
           "market": "Victoria Sin Empate (DNB)",
           "category_code": "VICTORIA_SIN_EMPATE",
-          "selection": "Rumanía Gana (Empate No Válido / DNB)",
-          "probability": 89.88,
+          "selection": "Polonia Gana (Empate No Válido / DNB)",
+          "probability": 88.06,
           "odds": 1.2,
           "availability": "100% Casas de Apuestas (Mercado 'Draw No Bet')",
-          "rationale": "Victoria de Rumanía con devolución del importe en caso de igualdad.",
-          "_rank_score": 56.94
+          "rationale": "Victoria de Polonia con devolución del importe en caso de igualdad.",
+          "_rank_score": 56.03
         },
         {
           "market": "Gol de Equipo de Seguridad",
           "category_code": "GOL_EQUIPO",
-          "selection": "Rumanía anota más de 0.5 goles",
-          "probability": 85.2,
+          "selection": "Polonia anota más de 0.5 goles",
+          "probability": 85.7,
           "odds": 1.23,
           "availability": "Universal en todas las plataformas",
-          "rationale": "Eficacia ofensiva de Rumanía (1.1 xG) garantiza presencia en el marcador.",
-          "_rank_score": 54.9
+          "rationale": "Eficacia ofensiva de Polonia (1.1 xG) garantiza presencia en el marcador.",
+          "_rank_score": 55.15
         },
         {
           "market": "Victoria Directa (1X2)",
           "category_code": "VICTORIA_DIRECTA",
-          "selection": "Rumanía Gana el Partido (2)",
-          "probability": 71.7,
-          "odds": 1.46,
+          "selection": "Polonia Gana el Partido (2)",
+          "probability": 70.4,
+          "odds": 1.49,
           "availability": "Universal en todas las casas",
-          "rationale": "Triunfo directo del favorito visitante Rumanía con 71.7% de probabilidad proyectada.",
-          "_rank_score": 50.45
+          "rationale": "Triunfo directo del favorito visitante Polonia con 70.4% de probabilidad proyectada.",
+          "_rank_score": 50.1
         },
         {
           "market": "Gol de Equipo de Seguridad",
           "category_code": "GOL_EQUIPO",
           "selection": "Bosnia y Herzegovina anota más de 0.5 goles",
-          "probability": 39.1,
-          "odds": 2.69,
+          "probability": 44.0,
+          "odds": 2.39,
           "availability": "Universal en todas las plataformas",
           "rationale": "Volumen ofensivo de Bosnia y Herzegovina (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 46.45
+          "_rank_score": 45.9
         }
       ]
     },
     {
-      "match": "Hungría vs Georgia",
-      "home_team": "Hungría",
-      "away_team": "Georgia",
+      "match": "Ucrania vs Hungría",
+      "home_team": "Ucrania",
+      "away_team": "Hungría",
       "context": {
-        "tournament": "UEFA Nations League - Liga B",
-        "stadium": "Puskás Aréna (Budapest)",
-        "spectators_est": "62,000 en estadio (~20M audiencia global)",
-        "referee": "Slavko Vinčić",
+        "tournament": "Competición Internacional FIFA",
+        "stadium": "Estadio Principal",
+        "spectators_est": "45,000 espectadores",
+        "referee": "Árbitro FIFA Internacional",
         "referee_avg_yellows": 4.0,
-        "referee_avg_reds": 0.15,
-        "intensity": "Muy Alta (El rugido de la Puskás Aréna con Szoboszlai ante la magia desequilibrante de Khvicha Kvaratskhelia)"
+        "referee_avg_reds": 0.18,
+        "intensity": "Alta"
       },
       "projections": {
         "expected_goals": {
-          "home": 1.89,
-          "away": 0.7,
-          "total": 2.59
+          "home": 1.33,
+          "away": 1.17,
+          "total": 2.5
         },
         "variance_and_uncertainty": {
-          "variance_index": 0.8,
+          "variance_index": 0.81,
           "is_high_volatility": false,
-          "rank_factor_applied": 0.45
+          "rank_factor_applied": 0.105
         },
         "expected_corners": {
-          "home": 4.92,
-          "away": 4.56,
-          "total": 9.48,
+          "home": 4.71,
+          "away": 4.71,
+          "total": 9.42,
           "home_quantiles": {
-            "p10": 3.1,
-            "p90": 7.0
+            "p10": 2.9,
+            "p90": 6.8
           },
           "away_quantiles": {
-            "p10": 3.0,
-            "p90": 6.5
+            "p10": 3.1,
+            "p90": 6.6
           }
         },
         "expected_yellow_cards": {
-          "home": 1.97,
-          "away": 2.29,
-          "total": 4.26
+          "home": 1.57,
+          "away": 1.97,
+          "total": 3.54
         },
         "expected_shots": {
-          "home": 11.55,
-          "away": 11.9
+          "home": 11.81,
+          "away": 11.55
         }
       },
       "tactical_analysis": {
@@ -1890,8 +1903,8 @@
         "tactical_summary": "Choque de estilos: Estándar vs Estándar"
       },
       "squad_health": {
-        "home_team": "Hungría",
-        "away_team": "Georgia",
+        "home_team": "Ucrania",
+        "away_team": "Hungría",
         "home_vetoed": [],
         "away_vetoed": [],
         "home_reallocation": "Plantel al 100% sin reasignación necesaria.",
@@ -1913,8 +1926,8 @@
       "momentum_analysis": {
         "agent": "MomentumStreakAgent",
         "version": "1.0.0",
-        "home_team": "Hungría",
-        "away_team": "Georgia",
+        "home_team": "Ucrania",
+        "away_team": "Hungría",
         "home_momentum_factor": 1.0,
         "away_momentum_factor": 1.0,
         "momentum_differential": 0.0,
@@ -1939,161 +1952,215 @@
         "blowout_risk_level": "MODERADO",
         "editorial_restrictions": [],
         "editorial_insights": [
-          "COBERTURA ESPN ECUADOR / FOX SPORTS: Enfrentamiento parejo (Hungría vs Georgia). Partida de ritmo medio con preponderancia de mercados de goles moderados y dobles oportunidades respaldadas por localía."
+          "COBERTURA ESPN ECUADOR / FOX SPORTS: Enfrentamiento parejo (Ucrania vs Hungría). Partida de ritmo medio con preponderancia de mercados de goles moderados y dobles oportunidades respaldadas por localía."
         ],
         "press_quotes": [],
         "summary_tag": "Señal Editorial Activa (MODERADO Riesgo Desborde)"
       },
       "score_prediction": {
-        "most_probable_score": "1 - 0",
-        "most_probable_prob_pct": 13.53,
+        "most_probable_score": "1 - 1",
+        "most_probable_prob_pct": 12.7,
         "top_5_scores": [
-          {
-            "score": "1 - 0",
-            "home_goals": 1,
-            "away_goals": 0,
-            "probability_pct": 13.53
-          },
-          {
-            "score": "2 - 0",
-            "home_goals": 2,
-            "away_goals": 0,
-            "probability_pct": 12.54
-          },
           {
             "score": "1 - 1",
             "home_goals": 1,
             "away_goals": 1,
-            "probability_pct": 10.15
+            "probability_pct": 12.7
           },
           {
             "score": "0 - 0",
             "home_goals": 0,
             "away_goals": 0,
-            "probability_pct": 10.0
+            "probability_pct": 10.79
+          },
+          {
+            "score": "1 - 0",
+            "home_goals": 1,
+            "away_goals": 0,
+            "probability_pct": 9.99
+          },
+          {
+            "score": "0 - 1",
+            "home_goals": 0,
+            "away_goals": 1,
+            "probability_pct": 8.78
           },
           {
             "score": "2 - 1",
             "home_goals": 2,
             "away_goals": 1,
-            "probability_pct": 8.2
+            "probability_pct": 7.53
           }
         ],
         "1x2_probabilities": {
-          "home_win_pct": 61.75,
-          "draw_pct": 26.0,
-          "away_win_pct": 12.24
+          "home_win_pct": 39.16,
+          "draw_pct": 28.8,
+          "away_win_pct": 32.04
         },
         "goals_markets": {
-          "over_0_5_pct": 90.0,
-          "under_0_5_pct": 10.0,
-          "over_1_5_pct": 71.48,
-          "under_1_5_pct": 28.52,
-          "over_2_5_pct": 46.67,
-          "under_2_5_pct": 53.33,
-          "over_3_5_pct": 26.56,
-          "under_3_5_pct": 73.44,
-          "over_4_5_pct": 13.27,
-          "under_4_5_pct": 86.73,
-          "under_5_5_pct": 94.12,
-          "btts_yes_pct": 41.2,
-          "btts_no_pct": 58.8
+          "over_0_5_pct": 89.21,
+          "under_0_5_pct": 10.79,
+          "over_1_5_pct": 70.44,
+          "under_1_5_pct": 29.56,
+          "over_2_5_pct": 44.82,
+          "under_2_5_pct": 55.18,
+          "over_3_5_pct": 24.79,
+          "under_3_5_pct": 75.21,
+          "over_4_5_pct": 11.99,
+          "under_4_5_pct": 88.01,
+          "under_5_5_pct": 94.84,
+          "btts_yes_pct": 48.74,
+          "btts_no_pct": 51.26
         },
         "exact_market_probabilities": {
-          "home_win_pct": 62.93,
-          "draw_pct": 23.65,
-          "away_win_pct": 13.42,
-          "double_chance_1x_pct": 86.58,
-          "double_chance_x2_pct": 37.07,
-          "double_chance_12_pct": 76.35,
-          "dnb_home_pct": 82.42,
-          "dnb_away_pct": 17.58,
-          "over_0_5_pct": 90.0,
-          "under_0_5_pct": 10.0,
-          "over_1_5_pct": 71.48,
-          "under_1_5_pct": 28.52,
-          "over_2_5_pct": 46.67,
-          "under_2_5_pct": 53.33,
-          "over_3_5_pct": 26.56,
-          "under_3_5_pct": 73.44,
-          "over_4_5_pct": 13.27,
-          "under_4_5_pct": 86.73,
-          "under_5_5_pct": 94.12,
-          "btts_yes_pct": 41.2,
-          "btts_no_pct": 58.8,
-          "home_over_0_5_pct": 82.18,
-          "home_under_2_5_pct": 70.65,
-          "away_over_0_5_pct": 49.02,
-          "away_under_2_5_pct": 96.06,
-          "home_plus_1_5_pct": 95.84,
-          "away_plus_1_5_pct": 60.96,
-          "home_plus_2_5_pct": 99.03,
-          "away_plus_2_5_pct": 79.81,
-          "home_minus_1_5_pct": 39.04,
-          "away_minus_1_5_pct": 4.16,
-          "home_clean_sheet_pct": 50.98,
-          "away_clean_sheet_pct": 17.82,
-          "home_win_by_1_pct": 23.89,
-          "away_win_by_1_pct": 9.26
+          "home_win_pct": 39.16,
+          "draw_pct": 28.8,
+          "away_win_pct": 32.04,
+          "double_chance_1x_pct": 67.96,
+          "double_chance_x2_pct": 60.84,
+          "double_chance_12_pct": 71.2,
+          "dnb_home_pct": 55.0,
+          "dnb_away_pct": 45.0,
+          "over_0_5_pct": 89.21,
+          "under_0_5_pct": 10.79,
+          "over_1_5_pct": 70.44,
+          "under_1_5_pct": 29.56,
+          "over_2_5_pct": 44.82,
+          "under_2_5_pct": 55.18,
+          "over_3_5_pct": 24.79,
+          "under_3_5_pct": 75.21,
+          "over_4_5_pct": 11.99,
+          "under_4_5_pct": 88.01,
+          "under_5_5_pct": 94.84,
+          "btts_yes_pct": 48.74,
+          "btts_no_pct": 51.26,
+          "home_over_0_5_pct": 71.17,
+          "home_under_2_5_pct": 84.14,
+          "away_over_0_5_pct": 66.78,
+          "away_under_2_5_pct": 87.69,
+          "home_plus_1_5_pct": 85.61,
+          "away_plus_1_5_pct": 80.77,
+          "home_plus_2_5_pct": 94.86,
+          "away_plus_2_5_pct": 92.4,
+          "home_minus_1_5_pct": 19.23,
+          "away_minus_1_5_pct": 14.39,
+          "home_clean_sheet_pct": 33.22,
+          "away_clean_sheet_pct": 28.83,
+          "home_win_by_1_pct": 19.93,
+          "away_win_by_1_pct": 17.65
         },
         "simulated_averages": {
-          "home_goals": 1.88,
-          "away_goals": 0.71,
-          "total_goals": 2.59
+          "home_goals": 1.34,
+          "away_goals": 1.17,
+          "total_goals": 2.51
         }
       },
       "corners_prediction": {
-        "home_corners_expected": 4.2,
-        "away_corners_expected": 3.9,
-        "total_corners_expected": 8.1,
-        "most_likely_range": "7 - 10 córners",
+        "home_corners_expected": 4.0,
+        "away_corners_expected": 4.0,
+        "total_corners_expected": 8.0,
+        "most_likely_range": "7 - 9 córners",
         "lines": {
-          "over_6_5_pct": 69.9,
-          "under_6_5_pct": 30.1,
-          "over_7_5_pct": 56.1,
-          "under_7_5_pct": 43.9,
-          "over_8_5_pct": 42.1,
-          "under_8_5_pct": 57.9,
-          "over_9_5_pct": 29.6,
-          "under_9_5_pct": 70.4,
-          "over_10_5_pct": 19.4,
-          "under_10_5_pct": 80.6,
-          "over_11_5_pct": 11.9,
-          "under_11_5_pct": 88.1,
-          "under_12_5_pct": 93.1
+          "over_6_5_pct": 68.7,
+          "under_6_5_pct": 31.3,
+          "over_7_5_pct": 54.7,
+          "under_7_5_pct": 45.3,
+          "over_8_5_pct": 40.7,
+          "under_8_5_pct": 59.3,
+          "over_9_5_pct": 28.3,
+          "under_9_5_pct": 71.7,
+          "over_10_5_pct": 18.4,
+          "under_10_5_pct": 81.6,
+          "over_11_5_pct": 11.2,
+          "under_11_5_pct": 88.8,
+          "under_12_5_pct": 93.6
         },
         "team_lines": {
-          "home_over_4_5_pct": 41.0,
-          "home_over_5_5_pct": 24.7,
-          "away_over_3_5_pct": 54.7,
-          "away_over_4_5_pct": 35.2
+          "home_over_4_5_pct": 37.1,
+          "home_over_5_5_pct": 21.5,
+          "away_over_3_5_pct": 56.7,
+          "away_over_4_5_pct": 37.1
         }
       },
       "cards_prediction": {
-        "referee": "Slavko Vinčić",
-        "home_yellow_cards": 1.9,
-        "away_yellow_cards": 2.2,
-        "total_yellow_cards": 4.1,
+        "referee": "Árbitro FIFA Internacional",
+        "home_yellow_cards": 1.7,
+        "away_yellow_cards": 2.1,
+        "total_yellow_cards": 3.8,
         "red_cards": {
-          "expected_home_reds": 0.07,
-          "expected_away_reds": 0.08,
-          "expected_total_reds": 0.14,
-          "home_red_prob_pct": 6.6,
-          "away_red_prob_prob_pct": 7.7,
-          "any_red_card_in_match_pct": 13.3
+          "expected_home_reds": 0.08,
+          "expected_away_reds": 0.1,
+          "expected_total_reds": 0.17,
+          "home_red_prob_pct": 7.6,
+          "away_red_prob_prob_pct": 9.5,
+          "any_red_card_in_match_pct": 15.7
         },
-        "total_cards_expected": 4.2,
+        "total_cards_expected": 4.0,
         "card_lines": {
-          "over_3_5_cards_pct": 59.4,
-          "under_3_5_cards_pct": 40.6,
-          "over_4_5_cards_pct": 39.9,
-          "under_4_5_cards_pct": 60.1,
-          "over_5_5_cards_pct": 23.8,
-          "under_5_5_cards_pct": 76.2
+          "over_3_5_cards_pct": 51.6,
+          "under_3_5_cards_pct": 48.4,
+          "over_4_5_cards_pct": 32.2,
+          "under_4_5_cards_pct": 67.8,
+          "over_5_5_cards_pct": 17.7,
+          "under_5_5_cards_pct": 82.3
         }
       },
       "player_props": {
         "home_key_players": [
+          {
+            "name": "Artem Dovbyk",
+            "position": "Delantero Centro AS Roma / Pichichi",
+            "health_status": "Disponible",
+            "expected_shots": 2.62,
+            "expected_sot": 1.27,
+            "prob_at_least_1_sot_pct": 71.8,
+            "prob_at_least_2_sot_pct": 36.1,
+            "prob_over_1_5_shots_pct": 73.6,
+            "prob_over_2_5_shots_pct": 48.5,
+            "goal_anytime_prob_pct": 42.0,
+            "reallocated_from": null
+          },
+          {
+            "name": "Mykhailo Mudryk",
+            "position": "Extremo Eléctrico Chelsea",
+            "health_status": "Disponible",
+            "expected_shots": 2.02,
+            "expected_sot": 0.93,
+            "prob_at_least_1_sot_pct": 60.5,
+            "prob_at_least_2_sot_pct": 23.8,
+            "prob_over_1_5_shots_pct": 60.1,
+            "prob_over_2_5_shots_pct": 33.0,
+            "goal_anytime_prob_pct": 28.0,
+            "reallocated_from": null
+          },
+          {
+            "name": "Viktor Tsygankov",
+            "position": "Extremo / Creador Girona",
+            "health_status": "Disponible",
+            "expected_shots": 1.86,
+            "expected_sot": 0.76,
+            "prob_at_least_1_sot_pct": 53.2,
+            "prob_at_least_2_sot_pct": 17.7,
+            "prob_over_1_5_shots_pct": 55.4,
+            "prob_over_2_5_shots_pct": 28.4,
+            "goal_anytime_prob_pct": 26.0,
+            "reallocated_from": null
+          },
+          {
+            "name": "Georgiy Sudakov",
+            "position": "Volante Ofensivo Shakhtar",
+            "health_status": "Disponible",
+            "expected_shots": 1.52,
+            "expected_sot": 0.67,
+            "prob_at_least_1_sot_pct": 49.1,
+            "prob_at_least_2_sot_pct": 14.7,
+            "prob_over_1_5_shots_pct": 44.8,
+            "prob_over_2_5_shots_pct": 19.6,
+            "goal_anytime_prob_pct": 20.0,
+            "reallocated_from": null
+          }
+        ],
+        "away_key_players": [
           {
             "name": "Dominik Szoboszlai",
             "position": "Mediapunta Liverpool / Capitán",
@@ -2144,6 +2211,380 @@
             "prob_over_1_5_shots_pct": 17.1,
             "prob_over_2_5_shots_pct": 4.0,
             "goal_anytime_prob_pct": 10.0,
+            "reallocated_from": null
+          }
+        ]
+      },
+      "la_fija_real": {
+        "market": "Total de Goles Fijo",
+        "category_code": "GOLES_UNDER",
+        "selection": "Menos de 5.5 goles totales",
+        "probability": 95.2,
+        "odds": 1.1,
+        "availability": "Universal en todas las plataformas",
+        "rationale": "Línea de máxima protección: ritmo conjunto de 2.5 xG descarta completamente un festival de 6 goles.",
+        "_rank_score": 215.7
+      },
+      "all_fija_options": [
+        {
+          "market": "Total de Goles Fijo",
+          "category_code": "GOLES_UNDER",
+          "selection": "Menos de 5.5 goles totales",
+          "probability": 95.2,
+          "odds": 1.1,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Línea de máxima protección: ritmo conjunto de 2.5 xG descarta completamente un festival de 6 goles.",
+          "_rank_score": 215.7
+        },
+        {
+          "market": "Total de Córners Fijo",
+          "category_code": "TOTAL_CORNERS",
+          "selection": "Menos de 12.5 córners totales",
+          "probability": 93.6,
+          "odds": 1.12,
+          "availability": "Universal en casas principales (Bet365, Betano)",
+          "rationale": "Línea de contención alta: el promedio proyectado de 8.0 esquinas hace casi imposible alcanzar 13 córners.",
+          "_rank_score": 58.0
+        },
+        {
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "Ucrania anota más de 0.5 goles",
+          "probability": 71.2,
+          "odds": 1.47,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Volumen ofensivo de Ucrania (1.4 xG) asegura al menos un gol a favor.",
+          "_rank_score": 50.3
+        },
+        {
+          "market": "Doble Oportunidad Blindada",
+          "category_code": "DOBLE_OPORTUNIDAD",
+          "selection": "Ucrania o Empate (1X)",
+          "probability": 68.0,
+          "odds": 1.54,
+          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+          "rationale": "Protección total ante el empate con 68.0% de cobertura matemática.",
+          "_rank_score": 49.4
+        }
+      ]
+    },
+    {
+      "match": "Irlanda del Norte vs Georgia",
+      "home_team": "Irlanda del Norte",
+      "away_team": "Georgia",
+      "context": {
+        "tournament": "Competición Internacional FIFA",
+        "stadium": "Estadio Principal",
+        "spectators_est": "45,000 espectadores",
+        "referee": "Árbitro FIFA Internacional",
+        "referee_avg_yellows": 4.0,
+        "referee_avg_reds": 0.18,
+        "intensity": "Alta"
+      },
+      "projections": {
+        "expected_goals": {
+          "home": 0.92,
+          "away": 1.48,
+          "total": 2.4
+        },
+        "variance_and_uncertainty": {
+          "variance_index": 0.8,
+          "is_high_volatility": false,
+          "rank_factor_applied": -0.075
+        },
+        "expected_corners": {
+          "home": 4.15,
+          "away": 4.77,
+          "total": 8.92,
+          "home_quantiles": {
+            "p10": 2.3,
+            "p90": 6.2
+          },
+          "away_quantiles": {
+            "p10": 3.2,
+            "p90": 6.7
+          }
+        },
+        "expected_yellow_cards": {
+          "home": 2.29,
+          "away": 2.29,
+          "total": 4.58
+        },
+        "expected_shots": {
+          "home": 7.92,
+          "away": 11.9
+        }
+      },
+      "tactical_analysis": {
+        "home_manager": {
+          "style": "Estándar",
+          "pace": "Medio"
+        },
+        "away_manager": {
+          "style": "Estándar",
+          "pace": "Medio"
+        },
+        "tactical_xg_multiplier_home": 1.0,
+        "tactical_xg_multiplier_away": 1.0,
+        "corner_dampener_factor": 1.0,
+        "player_role_restrictions": {},
+        "tactical_summary": "Choque de estilos: Estándar vs Estándar"
+      },
+      "squad_health": {
+        "home_team": "Irlanda del Norte",
+        "away_team": "Georgia",
+        "home_vetoed": [],
+        "away_vetoed": [],
+        "home_reallocation": "Plantel al 100% sin reasignación necesaria.",
+        "away_reallocation": "Plantel al 100% sin reasignación necesaria.",
+        "home_health_status": "Plantel Ratificado al 100%",
+        "away_health_status": "Plantel Ratificado al 100%",
+        "status": "Auditoría Médica y Convocatorias Oficiales Verificadas"
+      },
+      "psychological_context": {
+        "tournament_urgency": 0.9,
+        "is_friendly": false,
+        "stadium_name": "Estadio Neutral",
+        "intimidation_factor": 0.5,
+        "intimidation_impact": "Neutro",
+        "minimum_draw_floor_pct": 26.0,
+        "complacency_risk": "Medio",
+        "psychological_notes": "Urgencia: Máxima (Puntos Oficiales) | Caldera: 50.0%"
+      },
+      "momentum_analysis": {
+        "agent": "MomentumStreakAgent",
+        "version": "1.0.0",
+        "home_team": "Irlanda del Norte",
+        "away_team": "Georgia",
+        "home_momentum_factor": 1.0,
+        "away_momentum_factor": 1.0,
+        "momentum_differential": 0.0,
+        "has_breakthrough": false,
+        "breakthrough_summary": "Ambos equipos en rangos estándar de volatilidad.",
+        "home_details": null,
+        "away_details": null,
+        "tier1_dampener_active": false,
+        "recommendation_bias": "MANTENER_EQUILIBRIO"
+      },
+      "media_intelligence": {
+        "agent": "SportsMediaScoutAgent",
+        "version": "1.0.0",
+        "sources_consulted": [
+          "ESPN Deportes",
+          "ESPN Ecuador (https://www.espn.com.ec/)",
+          "Fox Sports",
+          "TNT Sports"
+        ],
+        "has_tier1_powerhouse": false,
+        "tier1_team": null,
+        "blowout_risk_level": "MODERADO",
+        "editorial_restrictions": [],
+        "editorial_insights": [
+          "COBERTURA ESPN ECUADOR / FOX SPORTS: Enfrentamiento parejo (Irlanda del Norte vs Georgia). Partida de ritmo medio con preponderancia de mercados de goles moderados y dobles oportunidades respaldadas por localía."
+        ],
+        "press_quotes": [],
+        "summary_tag": "Señal Editorial Activa (MODERADO Riesgo Desborde)"
+      },
+      "score_prediction": {
+        "most_probable_score": "1 - 1",
+        "most_probable_prob_pct": 12.42,
+        "top_5_scores": [
+          {
+            "score": "1 - 1",
+            "home_goals": 1,
+            "away_goals": 1,
+            "probability_pct": 12.42
+          },
+          {
+            "score": "0 - 1",
+            "home_goals": 0,
+            "away_goals": 1,
+            "probability_pct": 12.28
+          },
+          {
+            "score": "0 - 0",
+            "home_goals": 0,
+            "away_goals": 0,
+            "probability_pct": 11.79
+          },
+          {
+            "score": "0 - 2",
+            "home_goals": 0,
+            "away_goals": 2,
+            "probability_pct": 9.54
+          },
+          {
+            "score": "1 - 2",
+            "home_goals": 1,
+            "away_goals": 2,
+            "probability_pct": 8.04
+          }
+        ],
+        "1x2_probabilities": {
+          "home_win_pct": 23.09,
+          "draw_pct": 28.66,
+          "away_win_pct": 48.25
+        },
+        "goals_markets": {
+          "over_0_5_pct": 88.21,
+          "under_0_5_pct": 11.79,
+          "over_1_5_pct": 68.38,
+          "under_1_5_pct": 31.62,
+          "over_2_5_pct": 42.35,
+          "under_2_5_pct": 57.65,
+          "over_3_5_pct": 22.77,
+          "under_3_5_pct": 77.23,
+          "over_4_5_pct": 10.69,
+          "under_4_5_pct": 89.31,
+          "under_5_5_pct": 95.54,
+          "btts_yes_pct": 44.87,
+          "btts_no_pct": 55.13
+        },
+        "exact_market_probabilities": {
+          "home_win_pct": 23.09,
+          "draw_pct": 28.66,
+          "away_win_pct": 48.25,
+          "double_chance_1x_pct": 51.75,
+          "double_chance_x2_pct": 76.91,
+          "double_chance_12_pct": 71.34,
+          "dnb_home_pct": 32.37,
+          "dnb_away_pct": 67.63,
+          "over_0_5_pct": 88.21,
+          "under_0_5_pct": 11.79,
+          "over_1_5_pct": 68.38,
+          "under_1_5_pct": 31.62,
+          "over_2_5_pct": 42.35,
+          "under_2_5_pct": 57.65,
+          "over_3_5_pct": 22.77,
+          "under_3_5_pct": 77.23,
+          "over_4_5_pct": 10.69,
+          "under_4_5_pct": 89.31,
+          "under_5_5_pct": 95.54,
+          "btts_yes_pct": 44.87,
+          "btts_no_pct": 55.13,
+          "home_over_0_5_pct": 58.36,
+          "home_under_2_5_pct": 92.61,
+          "away_over_0_5_pct": 74.72,
+          "away_under_2_5_pct": 80.62,
+          "home_plus_1_5_pct": 74.29,
+          "away_plus_1_5_pct": 91.17,
+          "home_plus_2_5_pct": 88.88,
+          "away_plus_2_5_pct": 97.4,
+          "home_minus_1_5_pct": 8.83,
+          "away_minus_1_5_pct": 25.71,
+          "home_clean_sheet_pct": 25.28,
+          "away_clean_sheet_pct": 41.64,
+          "home_win_by_1_pct": 14.26,
+          "away_win_by_1_pct": 22.53
+        },
+        "simulated_averages": {
+          "home_goals": 0.92,
+          "away_goals": 1.48,
+          "total_goals": 2.4
+        }
+      },
+      "corners_prediction": {
+        "home_corners_expected": 3.5,
+        "away_corners_expected": 4.1,
+        "total_corners_expected": 7.6,
+        "most_likely_range": "6 - 9 córners",
+        "lines": {
+          "over_6_5_pct": 63.5,
+          "under_6_5_pct": 36.5,
+          "over_7_5_pct": 49.0,
+          "under_7_5_pct": 51.0,
+          "over_8_5_pct": 35.2,
+          "under_8_5_pct": 64.8,
+          "over_9_5_pct": 23.5,
+          "under_9_5_pct": 76.5,
+          "over_10_5_pct": 14.6,
+          "under_10_5_pct": 85.4,
+          "over_11_5_pct": 8.5,
+          "under_11_5_pct": 91.5,
+          "under_12_5_pct": 95.4
+        },
+        "team_lines": {
+          "home_over_4_5_pct": 27.5,
+          "home_over_5_5_pct": 14.2,
+          "away_over_3_5_pct": 58.6,
+          "away_over_4_5_pct": 39.1
+        }
+      },
+      "cards_prediction": {
+        "referee": "Árbitro FIFA Internacional",
+        "home_yellow_cards": 2.2,
+        "away_yellow_cards": 2.2,
+        "total_yellow_cards": 4.4,
+        "red_cards": {
+          "expected_home_reds": 0.09,
+          "expected_away_reds": 0.09,
+          "expected_total_reds": 0.17,
+          "home_red_prob_pct": 8.5,
+          "away_red_prob_prob_pct": 8.5,
+          "any_red_card_in_match_pct": 15.7
+        },
+        "total_cards_expected": 4.6,
+        "card_lines": {
+          "over_3_5_cards_pct": 62.6,
+          "under_3_5_cards_pct": 37.4,
+          "over_4_5_cards_pct": 43.3,
+          "under_4_5_cards_pct": 56.7,
+          "over_5_5_cards_pct": 26.7,
+          "under_5_5_cards_pct": 73.3
+        }
+      },
+      "player_props": {
+        "home_key_players": [
+          {
+            "name": "Isaac Price",
+            "position": "Volante de Llegada Standard Liege",
+            "health_status": "Disponible",
+            "expected_shots": 1.07,
+            "expected_sot": 0.45,
+            "prob_at_least_1_sot_pct": 36.4,
+            "prob_at_least_2_sot_pct": 7.6,
+            "prob_over_1_5_shots_pct": 29.2,
+            "prob_over_2_5_shots_pct": 9.5,
+            "goal_anytime_prob_pct": 22.0,
+            "reallocated_from": null
+          },
+          {
+            "name": "Dion Charles",
+            "position": "Delantero Centro Bolton",
+            "health_status": "Disponible",
+            "expected_shots": 1.19,
+            "expected_sot": 0.51,
+            "prob_at_least_1_sot_pct": 39.9,
+            "prob_at_least_2_sot_pct": 9.3,
+            "prob_over_1_5_shots_pct": 33.3,
+            "prob_over_2_5_shots_pct": 11.8,
+            "goal_anytime_prob_pct": 26.0,
+            "reallocated_from": null
+          },
+          {
+            "name": "Conor Bradley",
+            "position": "Lateral Derecho Liverpool",
+            "health_status": "Disponible",
+            "expected_shots": 0.74,
+            "expected_sot": 0.28,
+            "prob_at_least_1_sot_pct": 24.6,
+            "prob_at_least_2_sot_pct": 3.3,
+            "prob_over_1_5_shots_pct": 16.8,
+            "prob_over_2_5_shots_pct": 3.9,
+            "goal_anytime_prob_pct": 14.0,
+            "reallocated_from": null
+          },
+          {
+            "name": "Shea Charles",
+            "position": "Pivote Southampton",
+            "health_status": "Disponible",
+            "expected_shots": 0.45,
+            "expected_sot": 0.2,
+            "prob_at_least_1_sot_pct": 18.1,
+            "prob_at_least_2_sot_pct": 1.8,
+            "prob_over_1_5_shots_pct": 7.6,
+            "prob_over_2_5_shots_pct": 1.1,
+            "goal_anytime_prob_pct": 8.0,
             "reallocated_from": null
           }
         ],
@@ -2205,479 +2646,73 @@
       "la_fija_real": {
         "market": "Hándicap Blindado",
         "category_code": "HANDICAP_BLINDADO",
-        "selection": "Hungría (+2.5)",
-        "probability": 98.1,
+        "selection": "Georgia (+2.5)",
+        "probability": 97.4,
         "odds": 1.09,
         "availability": "Universal en casas con líneas asiáticas",
-        "rationale": "Blindaje total de 2 goles de margen a favor de Hungría en su propio feudo.",
-        "_rank_score": 203.65
+        "rationale": "Blindaje total de 2 goles de margen a favor del visitante competitivo Georgia.",
+        "_rank_score": 198.05
       },
       "all_fija_options": [
         {
           "market": "Hándicap Blindado",
           "category_code": "HANDICAP_BLINDADO",
-          "selection": "Hungría (+2.5)",
-          "probability": 98.1,
+          "selection": "Georgia (+2.5)",
+          "probability": 97.4,
           "odds": 1.09,
           "availability": "Universal en casas con líneas asiáticas",
-          "rationale": "Blindaje total de 2 goles de margen a favor de Hungría en su propio feudo.",
-          "_rank_score": 203.65
+          "rationale": "Blindaje total de 2 goles de margen a favor del visitante competitivo Georgia.",
+          "_rank_score": 198.05
         },
         {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_UNDER",
           "selection": "Menos de 5.5 goles totales",
-          "probability": 94.1,
-          "odds": 1.12,
+          "probability": 95.5,
+          "odds": 1.1,
           "availability": "Universal en todas las plataformas",
           "rationale": "Línea de máxima protección: ritmo conjunto de 2.5 xG descarta completamente un festival de 6 goles.",
-          "_rank_score": 58.25
+          "_rank_score": 183.1
         },
         {
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
           "selection": "Menos de 12.5 córners totales",
-          "probability": 93.1,
-          "odds": 1.13,
+          "probability": 95.4,
+          "odds": 1.1,
           "availability": "Universal en casas principales (Bet365, Betano)",
-          "rationale": "Línea de contención alta: el promedio proyectado de 8.1 esquinas hace casi imposible alcanzar 13 córners.",
-          "_rank_score": 57.85
+          "rationale": "Línea de contención alta: el promedio proyectado de 7.6 esquinas hace casi imposible alcanzar 13 córners.",
+          "_rank_score": 182.3
         },
         {
           "market": "Doble Oportunidad Blindada",
           "category_code": "DOBLE_OPORTUNIDAD",
-          "selection": "Hungría o Empate (1X)",
-          "probability": 86.6,
-          "odds": 1.21,
-          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "Protección total ante el empate con 86.6% de cobertura matemática.",
-          "_rank_score": 55.4
-        },
-        {
-          "market": "Victoria Sin Empate (DNB)",
-          "category_code": "VICTORIA_SIN_EMPATE",
-          "selection": "Hungría Gana (Empate No Válido / DNB)",
-          "probability": 82.42,
-          "odds": 1.29,
-          "availability": "100% Casas de Apuestas (Mercado 'Draw No Bet')",
-          "rationale": "Triunfo de Hungría con devolución íntegra del 100% del dinero apostado si el juego finaliza igualado.",
-          "_rank_score": 54.11
-        },
-        {
-          "market": "Gol de Equipo de Seguridad",
-          "category_code": "GOL_EQUIPO",
-          "selection": "Hungría anota más de 0.5 goles",
-          "probability": 82.2,
-          "odds": 1.28,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Volumen ofensivo de Hungría (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 53.9
-        },
-        {
-          "market": "Victoria Directa (1X2)",
-          "category_code": "VICTORIA_DIRECTA",
-          "selection": "Hungría Gana el Partido (1)",
-          "probability": 62.9,
-          "odds": 1.67,
-          "availability": "Universal en todas las casas (Bet365, Betano, etc.)",
-          "rationale": "Triunfo directo de Hungría respaldado por una probabilidad de victoria del 62.9% en 90 minutos.",
-          "_rank_score": 48.15
-        }
-      ]
-    },
-    {
-      "match": "Macedonia del Norte vs Finlandia",
-      "home_team": "Macedonia del Norte",
-      "away_team": "Finlandia",
-      "context": {
-        "tournament": "Competición Internacional FIFA",
-        "stadium": "Estadio Principal",
-        "spectators_est": "45,000 espectadores",
-        "referee": "Árbitro FIFA Internacional",
-        "referee_avg_yellows": 4.0,
-        "referee_avg_reds": 0.18,
-        "intensity": "Alta"
-      },
-      "projections": {
-        "expected_goals": {
-          "home": 1.57,
-          "away": 0.74,
-          "total": 2.32
-        },
-        "variance_and_uncertainty": {
-          "variance_index": 0.8,
-          "is_high_volatility": false,
-          "rank_factor_applied": -0.135
-        },
-        "expected_corners": {
-          "home": 5.54,
-          "away": 3.76,
-          "total": 9.29,
-          "home_quantiles": {
-            "p10": 3.7,
-            "p90": 7.6
-          },
-          "away_quantiles": {
-            "p10": 2.2,
-            "p90": 5.7
-          }
-        },
-        "expected_yellow_cards": {
-          "home": 2.54,
-          "away": 2.54,
-          "total": 5.08
-        },
-        "expected_shots": {
-          "home": 11.38,
-          "away": 7.54
-        }
-      },
-      "tactical_analysis": {
-        "home_manager": {
-          "style": "Estándar",
-          "pace": "Medio"
-        },
-        "away_manager": {
-          "style": "Estándar",
-          "pace": "Medio"
-        },
-        "tactical_xg_multiplier_home": 1.0,
-        "tactical_xg_multiplier_away": 1.0,
-        "corner_dampener_factor": 1.0,
-        "player_role_restrictions": {},
-        "tactical_summary": "Choque de estilos: Estándar vs Estándar"
-      },
-      "squad_health": {
-        "home_team": "Macedonia del Norte",
-        "away_team": "Finlandia",
-        "home_vetoed": [],
-        "away_vetoed": [],
-        "home_reallocation": "Plantel al 100% sin reasignación necesaria.",
-        "away_reallocation": "Plantel al 100% sin reasignación necesaria.",
-        "home_health_status": "Plantel Ratificado al 100%",
-        "away_health_status": "Plantel Ratificado al 100%",
-        "status": "Auditoría Médica y Convocatorias Oficiales Verificadas"
-      },
-      "psychological_context": {
-        "tournament_urgency": 0.9,
-        "is_friendly": false,
-        "stadium_name": "Estadio Neutral",
-        "intimidation_factor": 0.5,
-        "intimidation_impact": "Neutro",
-        "minimum_draw_floor_pct": 26.0,
-        "complacency_risk": "Medio",
-        "psychological_notes": "Urgencia: Máxima (Puntos Oficiales) | Caldera: 50.0%"
-      },
-      "momentum_analysis": {
-        "agent": "MomentumStreakAgent",
-        "version": "1.0.0",
-        "home_team": "Macedonia del Norte",
-        "away_team": "Finlandia",
-        "home_momentum_factor": 1.0,
-        "away_momentum_factor": 1.0,
-        "momentum_differential": 0.0,
-        "has_breakthrough": false,
-        "breakthrough_summary": "Ambos equipos en rangos estándar de volatilidad.",
-        "home_details": null,
-        "away_details": null,
-        "tier1_dampener_active": false,
-        "recommendation_bias": "MANTENER_EQUILIBRIO"
-      },
-      "media_intelligence": {
-        "agent": "SportsMediaScoutAgent",
-        "version": "1.0.0",
-        "sources_consulted": [
-          "ESPN Deportes",
-          "ESPN Ecuador (https://www.espn.com.ec/)",
-          "Fox Sports",
-          "TNT Sports"
-        ],
-        "has_tier1_powerhouse": false,
-        "tier1_team": null,
-        "blowout_risk_level": "MODERADO",
-        "editorial_restrictions": [],
-        "editorial_insights": [
-          "COBERTURA ESPN ECUADOR / FOX SPORTS: Enfrentamiento parejo (Macedonia del Norte vs Finlandia). Partida de ritmo medio con preponderancia de mercados de goles moderados y dobles oportunidades respaldadas por localía."
-        ],
-        "press_quotes": [],
-        "summary_tag": "Señal Editorial Activa (MODERADO Riesgo Desborde)"
-      },
-      "score_prediction": {
-        "most_probable_score": "1 - 0",
-        "most_probable_prob_pct": 14.3,
-        "top_5_scores": [
-          {
-            "score": "1 - 0",
-            "home_goals": 1,
-            "away_goals": 0,
-            "probability_pct": 14.3
-          },
-          {
-            "score": "0 - 0",
-            "home_goals": 0,
-            "away_goals": 0,
-            "probability_pct": 12.75
-          },
-          {
-            "score": "1 - 1",
-            "home_goals": 1,
-            "away_goals": 1,
-            "probability_pct": 11.75
-          },
-          {
-            "score": "2 - 0",
-            "home_goals": 2,
-            "away_goals": 0,
-            "probability_pct": 11.55
-          },
-          {
-            "score": "2 - 1",
-            "home_goals": 2,
-            "away_goals": 1,
-            "probability_pct": 7.96
-          }
-        ],
-        "1x2_probabilities": {
-          "home_win_pct": 54.71,
-          "draw_pct": 28.01,
-          "away_win_pct": 17.28
-        },
-        "goals_markets": {
-          "over_0_5_pct": 87.25,
-          "under_0_5_pct": 12.75,
-          "over_1_5_pct": 66.35,
-          "under_1_5_pct": 33.65,
-          "over_2_5_pct": 40.08,
-          "under_2_5_pct": 59.92,
-          "over_3_5_pct": 20.99,
-          "under_3_5_pct": 79.01,
-          "over_4_5_pct": 9.6,
-          "under_4_5_pct": 90.4,
-          "under_5_5_pct": 96.11,
-          "btts_yes_pct": 40.23,
-          "btts_no_pct": 59.77
-        },
-        "exact_market_probabilities": {
-          "home_win_pct": 54.71,
-          "draw_pct": 28.01,
-          "away_win_pct": 17.28,
-          "double_chance_1x_pct": 82.72,
-          "double_chance_x2_pct": 45.29,
-          "double_chance_12_pct": 71.99,
-          "dnb_home_pct": 76.0,
-          "dnb_away_pct": 24.0,
-          "over_0_5_pct": 87.25,
-          "under_0_5_pct": 12.75,
-          "over_1_5_pct": 66.35,
-          "under_1_5_pct": 33.65,
-          "over_2_5_pct": 40.08,
-          "under_2_5_pct": 59.92,
-          "over_3_5_pct": 20.99,
-          "under_3_5_pct": 79.01,
-          "over_4_5_pct": 9.6,
-          "under_4_5_pct": 90.4,
-          "under_5_5_pct": 96.11,
-          "btts_yes_pct": 40.23,
-          "btts_no_pct": 59.77,
-          "home_over_0_5_pct": 76.63,
-          "home_under_2_5_pct": 78.46,
-          "away_over_0_5_pct": 50.85,
-          "away_under_2_5_pct": 95.5,
-          "home_plus_1_5_pct": 94.3,
-          "away_plus_1_5_pct": 69.4,
-          "home_plus_2_5_pct": 98.6,
-          "away_plus_2_5_pct": 86.07,
-          "home_minus_1_5_pct": 30.6,
-          "away_minus_1_5_pct": 5.7,
-          "home_clean_sheet_pct": 49.15,
-          "away_clean_sheet_pct": 23.37,
-          "home_win_by_1_pct": 24.11,
-          "away_win_by_1_pct": 11.58
-        },
-        "simulated_averages": {
-          "home_goals": 1.57,
-          "away_goals": 0.76,
-          "total_goals": 2.32
-        }
-      },
-      "corners_prediction": {
-        "home_corners_expected": 4.7,
-        "away_corners_expected": 3.2,
-        "total_corners_expected": 7.9,
-        "most_likely_range": "6 - 9 córners",
-        "lines": {
-          "over_6_5_pct": 67.4,
-          "under_6_5_pct": 32.6,
-          "over_7_5_pct": 53.3,
-          "under_7_5_pct": 46.7,
-          "over_8_5_pct": 39.3,
-          "under_8_5_pct": 60.7,
-          "over_9_5_pct": 27.1,
-          "under_9_5_pct": 72.9,
-          "over_10_5_pct": 17.4,
-          "under_10_5_pct": 82.6,
-          "over_11_5_pct": 10.5,
-          "under_11_5_pct": 89.5,
-          "under_12_5_pct": 94.1
-        },
-        "team_lines": {
-          "home_over_4_5_pct": 50.5,
-          "home_over_5_5_pct": 33.2,
-          "away_over_3_5_pct": 39.7,
-          "away_over_4_5_pct": 21.9
-        }
-      },
-      "cards_prediction": {
-        "referee": "Árbitro FIFA Internacional",
-        "home_yellow_cards": 2.3,
-        "away_yellow_cards": 2.3,
-        "total_yellow_cards": 4.6,
-        "red_cards": {
-          "expected_home_reds": 0.09,
-          "expected_away_reds": 0.09,
-          "expected_total_reds": 0.17,
-          "home_red_prob_pct": 8.5,
-          "away_red_prob_prob_pct": 8.5,
-          "any_red_card_in_match_pct": 15.7
-        },
-        "total_cards_expected": 4.8,
-        "card_lines": {
-          "over_3_5_cards_pct": 67.3,
-          "under_3_5_cards_pct": 32.7,
-          "over_4_5_cards_pct": 48.6,
-          "under_4_5_cards_pct": 51.4,
-          "over_5_5_cards_pct": 31.3,
-          "under_5_5_cards_pct": 68.7
-        }
-      },
-      "player_props": {
-        "home_key_players": [
-          {
-            "name": "Eljif Elmas",
-            "position": "Mediapunta Creador",
-            "health_status": "Disponible",
-            "expected_shots": 1.87,
-            "expected_sot": 0.81,
-            "prob_at_least_1_sot_pct": 55.6,
-            "prob_at_least_2_sot_pct": 19.6,
-            "prob_over_1_5_shots_pct": 55.8,
-            "prob_over_2_5_shots_pct": 28.8,
-            "goal_anytime_prob_pct": 28.0,
-            "reallocated_from": null
-          },
-          {
-            "name": "Enis Bardhi",
-            "position": "Mediocentro / Balón Parado",
-            "health_status": "Disponible",
-            "expected_shots": 1.71,
-            "expected_sot": 0.73,
-            "prob_at_least_1_sot_pct": 51.9,
-            "prob_at_least_2_sot_pct": 16.7,
-            "prob_over_1_5_shots_pct": 50.9,
-            "prob_over_2_5_shots_pct": 24.5,
-            "goal_anytime_prob_pct": 24.0,
-            "reallocated_from": null
-          }
-        ],
-        "away_key_players": [
-          {
-            "name": "Teemu Pukki",
-            "position": "Delantero Referencia",
-            "health_status": "Disponible",
-            "expected_shots": 1.24,
-            "expected_sot": 0.54,
-            "prob_at_least_1_sot_pct": 41.6,
-            "prob_at_least_2_sot_pct": 10.2,
-            "prob_over_1_5_shots_pct": 35.1,
-            "prob_over_2_5_shots_pct": 12.9,
-            "goal_anytime_prob_pct": 32.0,
-            "reallocated_from": null
-          },
-          {
-            "name": "Joel Pohjanpalo",
-            "position": "Delantero Área",
-            "health_status": "Disponible",
-            "expected_shots": 1.13,
-            "expected_sot": 0.48,
-            "prob_at_least_1_sot_pct": 38.4,
-            "prob_at_least_2_sot_pct": 8.6,
-            "prob_over_1_5_shots_pct": 31.2,
-            "prob_over_2_5_shots_pct": 10.6,
-            "goal_anytime_prob_pct": 30.0,
-            "reallocated_from": null
-          }
-        ]
-      },
-      "la_fija_real": {
-        "market": "Hándicap Blindado",
-        "category_code": "HANDICAP_BLINDADO",
-        "selection": "Macedonia del Norte (+2.5)",
-        "probability": 98.1,
-        "odds": 1.09,
-        "availability": "Universal en casas con líneas asiáticas",
-        "rationale": "Blindaje total de 2 goles de margen a favor de Macedonia del Norte en su propio feudo.",
-        "_rank_score": 203.65
-      },
-      "all_fija_options": [
-        {
-          "market": "Hándicap Blindado",
-          "category_code": "HANDICAP_BLINDADO",
-          "selection": "Macedonia del Norte (+2.5)",
-          "probability": 98.1,
-          "odds": 1.09,
-          "availability": "Universal en casas con líneas asiáticas",
-          "rationale": "Blindaje total de 2 goles de margen a favor de Macedonia del Norte en su propio feudo.",
-          "_rank_score": 203.65
-        },
-        {
-          "market": "Total de Goles Fijo",
-          "category_code": "GOLES_UNDER",
-          "selection": "Menos de 5.5 goles totales",
-          "probability": 96.1,
-          "odds": 1.09,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Línea de máxima protección: ritmo conjunto de 2.5 xG descarta completamente un festival de 6 goles.",
-          "_rank_score": 187.65
-        },
-        {
-          "market": "Total de Córners Fijo",
-          "category_code": "TOTAL_CORNERS",
-          "selection": "Menos de 12.5 córners totales",
-          "probability": 94.1,
-          "odds": 1.12,
-          "availability": "Universal en casas principales (Bet365, Betano)",
-          "rationale": "Línea de contención alta: el promedio proyectado de 7.9 esquinas hace casi imposible alcanzar 13 córners.",
-          "_rank_score": 58.25
-        },
-        {
-          "market": "Doble Oportunidad Blindada",
-          "category_code": "DOBLE_OPORTUNIDAD",
-          "selection": "Macedonia del Norte o Empate (1X)",
-          "probability": 82.7,
-          "odds": 1.27,
-          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "Protección total ante el empate con 82.7% de cobertura matemática.",
-          "_rank_score": 54.05
-        },
-        {
-          "market": "Gol de Equipo de Seguridad",
-          "category_code": "GOL_EQUIPO",
-          "selection": "Macedonia del Norte anota más de 0.5 goles",
-          "probability": 76.6,
+          "selection": "Empate o Georgia (X2)",
+          "probability": 76.9,
           "odds": 1.37,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Volumen ofensivo de Macedonia del Norte (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 52.0
+          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+          "rationale": "El favorito visitante Georgia puntúa en el 76.9% de las simulaciones.",
+          "_rank_score": 52.15
         },
         {
           "market": "Victoria Sin Empate (DNB)",
           "category_code": "VICTORIA_SIN_EMPATE",
-          "selection": "Macedonia del Norte Gana (Empate No Válido / DNB)",
-          "probability": 76.0,
-          "odds": 1.39,
+          "selection": "Georgia Gana (Empate No Válido / DNB)",
+          "probability": 67.63,
+          "odds": 1.57,
           "availability": "100% Casas de Apuestas (Mercado 'Draw No Bet')",
-          "rationale": "Triunfo de Macedonia del Norte con devolución íntegra del 100% del dinero apostado si el juego finaliza igualado.",
-          "_rank_score": 51.9
+          "rationale": "Victoria de Georgia con devolución del importe en caso de igualdad.",
+          "_rank_score": 49.52
+        },
+        {
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "Irlanda del Norte anota más de 0.5 goles",
+          "probability": 58.4,
+          "odds": 1.8,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Volumen ofensivo de Irlanda del Norte (1.4 xG) asegura al menos un gol a favor.",
+          "_rank_score": 47.2
         }
       ]
     }
