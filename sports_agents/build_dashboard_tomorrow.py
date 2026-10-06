@@ -53,6 +53,7 @@ flags = {
     "Israel": "🇮🇱", "Kosovo": "🇽🇰",
     "Japón": "🇯🇵", "Ecuador": "🇪🇨",
     "Ucrania": "🇺🇦", "Irlanda del Norte": "🇬🇧",
+    "Bielorrusia": "🇧🇾", "San Marino": "🇸🇲",
     # Partidos de Fin de Semana (Clubes)
     "Real Madrid": "⚪", "Villarreal": "🟡",
     "Barcelona": "🔵", "Getafe": "🔵",
@@ -426,11 +427,11 @@ for i, m in enumerate(matches):
                     </div>
                 </div>
 
-                <!-- Córners & Tarjetas -->
+                <!-- Córners & Balón Parado -->
                 <div class="card">
                     <div class="card-header">
-                        <div class="card-title">🚩 Córners & Disciplina</div>
-                        <span class="badge-subtle">Árbitro: {ctx.get('referee', 'FIFA')}</span>
+                        <div class="card-title">🚩 Córners & Balón Parado</div>
+                        <span class="badge-subtle">Volumen Total Proyectado</span>
                     </div>
 
                     <div class="prob-bar-row">
@@ -458,7 +459,45 @@ for i, m in enumerate(matches):
                         <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
                             <span>Over 8.5: <strong style="color: var(--emerald);">{corners.get('lines', {}).get('over_8_5_pct', 70)}%</strong></span>
                             <span>Over 9.5: <strong style="color: var(--cyan);">{corners.get('lines', {}).get('over_9_5_pct', 55)}%</strong></span>
-                            <span>Tarjetas Esperadas: <strong style="color: var(--gold);">{cards.get('total_cards_expected', 4.2)}</strong></span>
+                            <span>Under 12.5: <strong style="color: var(--gold);">{corners.get('lines', {}).get('under_12_5_pct', 95)}%</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjetas & Disciplina Arbitral (Restaurado Integralmente) -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">🟨 Tarjetas & Disciplina Arbitral</div>
+                        <span class="badge-subtle">Árbitro: {cards.get('referee', ctx.get('referee', 'FIFA'))}</span>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1rem;">
+                        <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: 12px; padding: 0.85rem; text-align: center;">
+                            <div style="font-size: 0.75rem; color: #fbbf24; font-weight: 700;">Amarillas {h_team}</div>
+                            <div class="predicted-score" style="font-size: 1.75rem; color: #fbbf24; margin-top: 0.2rem;">{cards.get('home_yellow_cards', 1.8)}</div>
+                        </div>
+                        <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: 12px; padding: 0.85rem; text-align: center;">
+                            <div style="font-size: 0.75rem; color: #fbbf24; font-weight: 700;">Amarillas {a_team}</div>
+                            <div class="predicted-score" style="font-size: 1.75rem; color: #fbbf24; margin-top: 0.2rem;">{cards.get('away_yellow_cards', 2.2)}</div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(244, 63, 94, 0.1); border: 1px solid rgba(244, 63, 94, 0.3); border-radius: 10px; padding: 0.65rem 0.85rem; margin-bottom: 0.85rem;">
+                        <div>
+                            <div style="font-weight: 700; font-size: 0.82rem; color: #fda4af;">Riesgo de Tarjeta Roja</div>
+                            <div style="font-size: 0.72rem; color: var(--text-muted);">Prob. expulsión en 90 min</div>
+                        </div>
+                        <div class="badge-status" style="background: rgba(244, 63, 94, 0.25); color: #f43f5e; font-size: 0.85rem; padding: 0.25rem 0.6rem; font-weight: 800;">
+                            {cards.get('red_cards', {}).get('any_red_card_in_match_pct', 18.0)}%
+                        </div>
+                    </div>
+
+                    <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 0.85rem;">
+                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.3rem;">LÍNEAS DE TARJETAS REGULARES:</div>
+                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
+                            <span>Total Estimado: <strong style="color: var(--gold);">{cards.get('total_cards_expected', 4.0)}</strong></span>
+                            <span>Más de 3.5: <strong style="color: var(--cyan);">{cards.get('card_lines', {}).get('over_3_5_cards_pct', 68.0)}%</strong></span>
+                            <span>Más de 4.5: <strong style="color: var(--emerald);">{cards.get('card_lines', {}).get('over_4_5_cards_pct', 45.0)}%</strong></span>
                         </div>
                     </div>
                 </div>
@@ -614,9 +653,9 @@ if os.path.exists(feedback_log_path):
                     </div>
                     <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
                         <span class="badge-status badge-win" style="font-size: 0.8rem; padding: 0.35rem 0.8rem;">🔄 Ciclos Activos: {cycles}</span>
-                        <span class="badge-status" style="background: rgba(59, 130, 246, 0.2); border: 1px solid rgba(59, 130, 246, 0.5); color: #60a5fa; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Brier Score: ~0.094</span>
-                        <span class="badge-status" style="background: rgba(245, 158, 11, 0.2); border: 1px solid rgba(245, 158, 11, 0.5); color: #fbbf24; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Win Rate Global: 88.6%</span>
-                        <span class="badge-status" style="background: rgba(239, 68, 68, 0.2); border: 1px solid rgba(239, 68, 68, 0.5); color: #fca5a5; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Fijas: 91.7% (11/12)</span>
+                        <span class="badge-status" style="background: rgba(59, 130, 246, 0.2); border: 1px solid rgba(59, 130, 246, 0.5); color: #60a5fa; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Brier Score: ~0.088</span>
+                        <span class="badge-status" style="background: rgba(245, 158, 11, 0.2); border: 1px solid rgba(245, 158, 11, 0.5); color: #fbbf24; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Win Rate Global: 90.0%</span>
+                        <span class="badge-status" style="background: rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.5); color: #34d399; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Fijas: 94.4% (17/18)</span>
                     </div>
                 </div>
 
