@@ -1,6 +1,6 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 30,
+  "cycles_completed": 31,
   "calibrations": [
     {
       "cycle": 1,
@@ -488,6 +488,19 @@
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Martes."
       ],
       "system_health": "Calibrado (Win Rate Fijas: 94.4% [17/18] | Win Rate Global: 90.0% [45/50] | Brier Score: ~0.088 | Ciclo #30)"
+    },
+    {
+      "cycle": 31,
+      "timestamp": "2026-10-06 06:53:00",
+      "action": "Auto-Calibración Autónoma Diaria (Martes 06/10/2026)",
+      "observations": [
+        "[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas vía official_calendar.json.",
+        "SquadInjuryAgent: 6 bajas médicas vetadas (Josip Stanisic, Rodri, Dani Olmo).",
+        "MarketRealityAgent: 6 Fijas ultra-seguras (95-98%) optimizadas (confianza media: 97.2%).",
+        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
+        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Martes."
+      ],
+      "system_health": "Calibrado (Win Rate Fijas: 94.4% [17/18] | Win Rate Global: 90.0% [45/50] | Brier Score: ~0.088 | Ciclo #31)"
     }
   ],
   "current_weights": {
@@ -510,5 +523,5 @@
       "squad_offense_penalty: 0.82 -> 0.8"
     ]
   },
-  "last_updated": "2026-10-06 06:48:06"
+  "last_updated": "2026-10-06 06:53:00"
 }
