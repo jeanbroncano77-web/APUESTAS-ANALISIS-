@@ -674,9 +674,9 @@ if os.path.exists(feedback_log_path):
                         <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.25rem;">Protección anti-goleada élite</div>
                     </div>
                     <div style="background: rgba(15, 23, 42, 0.65); border: 1px solid rgba(255, 255, 255, 0.06); padding: 1.1rem; border-radius: 14px;">
-                        <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 800; letter-spacing: 0.04em;">Techo Hándicap Underdog</div>
-                        <div style="font-size: 1.45rem; font-weight: 900; color: var(--gold); margin-top: 0.3rem;">{weights.get('underdog_handicap_ceiling', 72.0)}%</div>
-                        <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.25rem;">Veto automático a Fijas riesgosas</div>
+                        <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 800; letter-spacing: 0.04em;">Veto de Raíz a Hándicaps</div>
+                        <div style="font-size: 1.45rem; font-weight: 900; color: #10b981; margin-top: 0.3rem;">100% ACTIVO</div>
+                        <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.25rem;">Cero hándicaps; solo mercados reales</div>
                     </div>
                     <div style="background: rgba(15, 23, 42, 0.65); border: 1px solid rgba(255, 255, 255, 0.06); padding: 1.1rem; border-radius: 14px;">
                         <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 800; letter-spacing: 0.04em;">Suelo Mínimo de Empate</div>
