@@ -1,14 +1,15 @@
 # Reglas de Raíz: Mercados Reales de Apuestas Deportivas (Veto Definitivo a Hándicaps)
 
-## 1. Prohibición Categórica de Hándicaps y Preferencia de Victoria o Empate
-- **Queda TERMINANTEMENTE PROHIBIDO** ofrecer hándicaps positivos (+2.5, +1.5, +0.5, etc.) a equipos favoritos.
-- Las casas de apuestas reales (Bet365, Betano, 1xBet, Ecuabet, Caliente) **NUNCA** ofrecen hándicaps positivos a favor de favoritos.
-- **DIRECTIVA DEL USUARIO**: Si se necesita dar cobertura o seguridad a un equipo, **SIEMPRE utilizar 'Victoria o Empate' (Doble Oportunidad: 1X o X2)** como la opción número 1 preferida, en lugar de cualquier hándicap.
-- Ninguna probabilidad matemática (aunque el modelo arroje 98% o 99%) justifica proponer una selección que las casas no permiten apostar o que no existe en el mercado real.
+## 1. Prohibición Categórica de Hándicaps (Lo Único Vetado)
+- **LO ÚNICO TERMINANTEMENTE PROHIBIDO ES EL HÁNDICAP** (+2.5, +1.5, -1.5, etc.), especialmente en favoritos o líneas sintéticas que no existen ni permiten las casas.
+- **Victoria o Empate (Doble Oportunidad: 1X o X2)** está 100% permitida y aprobada cuando se necesite cubrir a un equipo, sustituyendo cualquier idea de hándicap.
 
-## 2. Catálogo Único de Mercados Permitidos para "La Fija"
-"La Fija" SOLO puede pertenecer a mercados 100% universales, altamente líquidos y operables en cualquier casa de apuestas:
-1. **Doble Oportunidad (Victoria o Empate)**: 1X (Local o Empate), X2 (Empate o Visitante) &bull; *Mercado de preferencia prioritaria*.
+## 2. Diversificación Inteligente entre Mercados Reales
+- **No obsesionarse ni forzar un solo mercado**: El sistema debe diversificar de forma natural y analítica entre los diferentes mercados reales disponibles.
+- No todos los partidos deben ser Doble Oportunidad; el modelo debe elegir libremente el mercado con mayor valor y solidez matemática según el partido (Goles, Córners, Gol de equipo, Victoria o Empate).
+
+### Catálogo de Mercados Reales Permitidos para "La Fija":
+1. **Doble Oportunidad (Victoria o Empate)**: 1X (Local o Empate), X2 (Empate o Visitante) &bull; *Totalmente habilitado y válido para cobertura*.
 2. **Total de Goles Estándar (Over/Under)**:
    - Más de 0.5 goles totales
    - Más de 1.5 goles totales

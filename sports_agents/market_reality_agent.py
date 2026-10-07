@@ -412,16 +412,11 @@ class MarketRealityAgent:
             # Si la probabilidad está en la franja ultra-fija exigida (94.8% - 97.8%):
             if 94.8 <= prob <= 97.8:
                 base_score = 150.0 + (prob - 94.8) * 8.0 + (odds * 25.0)
-                # PREFERENCIA ABSOLUTA DEL USUARIO: "Victoria o Empate" (Doble Oportunidad)
-                # Es la opción prioritaria ante cualquier necesidad de cobertura de equipo (1X / X2)
-                if c.get("category_code") == "DOBLE_OPORTUNIDAD":
-                    base_score += 25.0
+                # Diversificación inteligente: Si el orquestador solicita una categoría preferida para no repetir mercado
                 if preferred_category and c.get("category_code") == preferred_category:
                     base_score += 35.0
             elif prob > 97.8:
                 base_score = 110.0 + (odds * 15.0)
-                if c.get("category_code") == "DOBLE_OPORTUNIDAD":
-                    base_score += 20.0
             else:
                 base_score = prob * 0.50 + (odds * 10.0)
 
