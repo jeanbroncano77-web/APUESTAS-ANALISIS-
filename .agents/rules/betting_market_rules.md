@@ -1,13 +1,14 @@
 # Reglas de Raíz: Mercados Reales de Apuestas Deportivas (Veto Definitivo a Hándicaps)
 
-## 1. Prohibición Categórica de Hándicaps en La Fija
+## 1. Prohibición Categórica de Hándicaps y Preferencia de Victoria o Empate
 - **Queda TERMINANTEMENTE PROHIBIDO** ofrecer hándicaps positivos (+2.5, +1.5, +0.5, etc.) a equipos favoritos.
 - Las casas de apuestas reales (Bet365, Betano, 1xBet, Ecuabet, Caliente) **NUNCA** ofrecen hándicaps positivos a favor de favoritos.
+- **DIRECTIVA DEL USUARIO**: Si se necesita dar cobertura o seguridad a un equipo, **SIEMPRE utilizar 'Victoria o Empate' (Doble Oportunidad: 1X o X2)** como la opción número 1 preferida, en lugar de cualquier hándicap.
 - Ninguna probabilidad matemática (aunque el modelo arroje 98% o 99%) justifica proponer una selección que las casas no permiten apostar o que no existe en el mercado real.
 
 ## 2. Catálogo Único de Mercados Permitidos para "La Fija"
 "La Fija" SOLO puede pertenecer a mercados 100% universales, altamente líquidos y operables en cualquier casa de apuestas:
-1. **Doble Oportunidad**: 1X (Local o Empate), X2 (Empate o Visitante), 12 (Local o Visitante).
+1. **Doble Oportunidad (Victoria o Empate)**: 1X (Local o Empate), X2 (Empate o Visitante) &bull; *Mercado de preferencia prioritaria*.
 2. **Total de Goles Estándar (Over/Under)**:
    - Más de 0.5 goles totales
    - Más de 1.5 goles totales

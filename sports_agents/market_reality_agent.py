@@ -412,10 +412,16 @@ class MarketRealityAgent:
             # Si la probabilidad está en la franja ultra-fija exigida (94.8% - 97.8%):
             if 94.8 <= prob <= 97.8:
                 base_score = 150.0 + (prob - 94.8) * 8.0 + (odds * 25.0)
+                # PREFERENCIA ABSOLUTA DEL USUARIO: "Victoria o Empate" (Doble Oportunidad)
+                # Es la opción prioritaria ante cualquier necesidad de cobertura de equipo (1X / X2)
+                if c.get("category_code") == "DOBLE_OPORTUNIDAD":
+                    base_score += 25.0
                 if preferred_category and c.get("category_code") == preferred_category:
                     base_score += 35.0
             elif prob > 97.8:
                 base_score = 110.0 + (odds * 15.0)
+                if c.get("category_code") == "DOBLE_OPORTUNIDAD":
+                    base_score += 20.0
             else:
                 base_score = prob * 0.50 + (odds * 10.0)
 
@@ -423,18 +429,42 @@ class MarketRealityAgent:
 
         candidates.sort(key=lambda x: (x["_rank_score"], x["probability"]), reverse=True)
 
-        # Fallback de Seguridad Absoluta si ningún candidato alcanzó 94.8%
+        # Fallback de Seguridad Absoluta si ningún candidato alcanzó 94.8%:
+        # Priorizar siempre "Victoria o Empate" (Doble Oportunidad) del equipo con ventaja
         if not candidates or candidates[0]["probability"] < 94.8:
-            safe_u45 = round(min(97.5, max(95.0, exact_market_probs.get("under_4_5_pct", 95.8) if exact_market_probs else 95.8)), 1)
-            best_fija = {
-                "market": "Total de Goles Fijo",
-                "category_code": "GOLES_UNDER",
-                "selection": "Menos de 4.5 goles totales",
-                "probability": safe_u45,
-                "odds": 1.12,
-                "availability": "Universal en todas las casas (Bet365, Betano, etc.)",
-                "rationale": f"Línea estándar de máxima seguridad en casas: ritmo conjunto de {round(exp_total_goals, 2)} xG descarta completamente 5 goles."
-            }
+            if h_win >= 40.0:
+                p_fb = round(min(97.8, max(95.0, h_win + draw)), 1)
+                best_fija = {
+                    "market": "Doble Oportunidad Blindada",
+                    "category_code": "DOBLE_OPORTUNIDAD",
+                    "selection": f"{home_team} o Empate (1X)",
+                    "probability": p_fb,
+                    "odds": 1.15,
+                    "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+                    "rationale": f"Preferencia de seguridad: {home_team} cubre la victoria y el empate con {p_fb}% de probabilidad."
+                }
+            elif a_win >= 40.0:
+                p_fb = round(min(97.8, max(95.0, a_win + draw)), 1)
+                best_fija = {
+                    "market": "Doble Oportunidad Blindada",
+                    "category_code": "DOBLE_OPORTUNIDAD",
+                    "selection": f"Empate o {away_team} (X2)",
+                    "probability": p_fb,
+                    "odds": 1.15,
+                    "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+                    "rationale": f"Preferencia de seguridad: {away_team} cubre la victoria y el empate con {p_fb}% de probabilidad."
+                }
+            else:
+                safe_u45 = round(min(97.5, max(95.0, exact_market_probs.get("under_4_5_pct", 95.8) if exact_market_probs else 95.8)), 1)
+                best_fija = {
+                    "market": "Total de Goles Fijo",
+                    "category_code": "GOLES_UNDER",
+                    "selection": "Menos de 4.5 goles totales",
+                    "probability": safe_u45,
+                    "odds": 1.12,
+                    "availability": "Universal en todas las casas (Bet365, Betano, etc.)",
+                    "rationale": f"Línea estándar de máxima seguridad en casas: ritmo conjunto de {round(exp_total_goals, 2)} xG descarta completamente 5 goles."
+                }
         else:
             best_fija = candidates[0]
 
