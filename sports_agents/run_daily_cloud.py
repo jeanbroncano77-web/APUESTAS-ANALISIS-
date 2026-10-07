@@ -100,14 +100,14 @@ def main():
                     ("Polonia", "Rumanía", "DOBLE_OPORTUNIDAD"),
                     ("Hungría", "Georgia", "GOLES_UNDER")
                 ]
-            else:  # LUNES A JUEVES (Intersemanal FIFA - Partidos Estelares)
+            else:  # LUNES A JUEVES (Intersemanal - Brasileirão Serie A & Liga Argentina)
                 fixtures_tomorrow = [
-                    ("Francia", "Bélgica", "GOL_EQUIPO"),
-                    ("España", "Croacia", "DOBLE_OPORTUNIDAD"),
-                    ("Inglaterra", "Chequia", "TOTAL_CORNERS"),
-                    ("Suecia", "Eslovenia", "GOLES_OVER"),
-                    ("Italia", "Turquía", "DOBLE_OPORTUNIDAD"),
-                    ("Hungría", "Georgia", "GOLES_UNDER")
+                    ("Botafogo", "Vasco da Gama", "DOBLE_OPORTUNIDAD"),
+                    ("Cruzeiro", "São Paulo", "GOLES_UNDER"),
+                    ("Internacional", "Corinthians", "GOL_EQUIPO"),
+                    ("RB Bragantino", "Mirassol", "TOTAL_CORNERS"),
+                    ("Tigre", "Banfield", "GOLES_UNDER"),
+                    ("Barracas Central", "Huracán", "DOBLE_OPORTUNIDAD")
                 ]
         else:
             # Calendario de Clubes Europeos (Fuera de ventana FIFA)

@@ -1,6 +1,14 @@
 name: SportsAI 24/7 Daily Autonomous Predictions & Telegram Dispatch
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'sports_agents/official_calendar.json'
+      - 'sports_agents/teams_database.json'
+      - 'sports_agents/matches_database.json'
+      - 'trigger_run.txt'
   schedule:
     # 00:25 UTC = 19:25 (7:25 PM) hora de Lima - Fuera de pico de GitHub para arranque inmediato sin colas
     - cron: '25 0 * * *'

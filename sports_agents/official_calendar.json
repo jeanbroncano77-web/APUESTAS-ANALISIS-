@@ -113,74 +113,74 @@
   "2026-10-07": {
     "date_str": "07/10/2026",
     "day_name": "Miércoles",
-    "competition": "Amistosos Internacionales FIFA & UEFA Nations League",
+    "competition": "Brasileirão Serie A & Liga Profesional Argentina",
     "fixtures": [
       [
-        "Japón",
-        "Ecuador",
+        "Botafogo",
+        "Vasco da Gama",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Cruzeiro",
+        "São Paulo",
         "GOLES_UNDER"
       ],
       [
-        "Estados Unidos",
-        "México",
-        "DOBLE_OPORTUNIDAD"
-      ],
-      [
-        "Inglaterra",
-        "Finlandia",
+        "Internacional",
+        "Corinthians",
         "GOL_EQUIPO"
       ],
       [
-        "Albania",
-        "Chequia",
-        "DOBLE_OPORTUNIDAD"
-      ],
-      [
-        "Austria",
-        "Noruega",
-        "GOLES_OVER"
-      ],
-      [
-        "Grecia",
-        "Irlanda",
+        "RB Bragantino",
+        "Mirassol",
         "TOTAL_CORNERS"
+      ],
+      [
+        "Tigre",
+        "Banfield",
+        "GOLES_UNDER"
+      ],
+      [
+        "Barracas Central",
+        "Huracán",
+        "DOBLE_OPORTUNIDAD"
       ]
     ]
   },
   "2026-10-08": {
     "date_str": "08/10/2026",
     "day_name": "Jueves",
-    "competition": "UEFA Nations League - Jornada 5",
+    "competition": "Brasileirão Serie A & Liga Profesional Argentina",
     "fixtures": [
       [
-        "Italia",
-        "Bélgica",
+        "Botafogo",
+        "Vasco da Gama",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Francia",
-        "Israel",
+        "Cruzeiro",
+        "São Paulo",
+        "GOLES_UNDER"
+      ],
+      [
+        "Internacional",
+        "Corinthians",
         "GOL_EQUIPO"
       ],
       [
-        "Inglaterra",
-        "Grecia",
+        "RB Bragantino",
+        "Mirassol",
         "TOTAL_CORNERS"
       ],
       [
-        "Alemania",
-        "Bosnia y Herzegovina",
-        "GOLES_OVER"
-      ],
-      [
-        "Turquía",
-        "Hungría",
-        "DOBLE_OPORTUNIDAD"
-      ],
-      [
-        "Serbia",
-        "Suiza",
+        "Tigre",
+        "Banfield",
         "GOLES_UNDER"
+      ],
+      [
+        "Barracas Central",
+        "Huracán",
+        "DOBLE_OPORTUNIDAD"
       ]
     ]
   },

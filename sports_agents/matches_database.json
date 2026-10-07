@@ -52,5 +52,59 @@
     "referee_avg_yellows": 4.0,
     "referee_avg_reds": 0.15,
     "intensity": "Muy Alta (El rugido de la Puskás Aréna con Szoboszlai ante la magia desequilibrante de Khvicha Kvaratskhelia)"
+  },
+  "Botafogo vs Vasco da Gama": {
+    "tournament": "Brasileirão Serie A - Clássico da Amizade",
+    "stadium": "Estádio Nilton Santos (Río de Janeiro)",
+    "spectators_est": "42,000 en estadio (~25M audiencia en Brasil y Sudamérica)",
+    "referee": "Wilton Pereira Sampaio",
+    "referee_avg_yellows": 4.6,
+    "referee_avg_reds": 0.22,
+    "intensity": "Máxima (Clássico carioca de altísima tensión en Nilton Santos con Igor Jesus ante Pablo Vegetti)"
+  },
+  "Cruzeiro vs São Paulo": {
+    "tournament": "Brasileirão Serie A - Duelo de Campeones",
+    "stadium": "Estádio Mineirão (Belo Horizonte)",
+    "spectators_est": "52,000 en estadio (~22M audiencia)",
+    "referee": "Anderson Daronco",
+    "referee_avg_yellows": 4.8,
+    "referee_avg_reds": 0.18,
+    "intensity": "Muy Alta (Batalla táctica en el Mineirão con alta fricción en medio campo; Matheus Pereira vs Calleri)"
+  },
+  "Internacional vs Corinthians": {
+    "tournament": "Brasileirão Serie A - Clásico Interestatal",
+    "stadium": "Estádio Beira-Rio (Porto Alegre)",
+    "spectators_est": "44,000 en estadio (~20M audiencia)",
+    "referee": "Ramon Abatti Abel",
+    "referee_avg_yellows": 4.4,
+    "referee_avg_reds": 0.16,
+    "intensity": "Alta (Internacional en alza en el Beira-Rio ante el Corinthians estelar de Memphis Depay y Garro)"
+  },
+  "RB Bragantino vs Mirassol": {
+    "tournament": "Brasileirão Serie A / Paulistão Élite",
+    "stadium": "Estádio Nabi Abi Chedid (Bragança Paulista)",
+    "spectators_est": "12,000 en estadio (~8M audiencia)",
+    "referee": "Flavio Rodrigues de Souza",
+    "referee_avg_yellows": 4.2,
+    "referee_avg_reds": 0.14,
+    "intensity": "Media-Alta (Presión ofensiva de Bragantino por bandas provocando alto volumen de córners)"
+  },
+  "Tigre vs Banfield": {
+    "tournament": "Liga Profesional Argentina - Fecha 17",
+    "stadium": "Estadio José Dellagiovanna (Victoria, Buenos Aires)",
+    "spectators_est": "24,000 en estadio (~12M audiencia)",
+    "referee": "Fernando Echenique",
+    "referee_avg_yellows": 5.2,
+    "referee_avg_reds": 0.24,
+    "intensity": "Muy Alta (Duelo directo en la tabla anual del fútbol argentino, roce físico y máxima precaución defensiva)"
+  },
+  "Barracas Central vs Huracán": {
+    "tournament": "Liga Profesional Argentina - Fecha 17",
+    "stadium": "Estadio Tomás Adolfo Ducó / Claudio Chiqui Tapia",
+    "spectators_est": "18,000 en estadio (~14M audiencia)",
+    "referee": "Darío Herrera",
+    "referee_avg_yellows": 5.0,
+    "referee_avg_reds": 0.20,
+    "intensity": "Máxima (Huracán peleando la punta del campeonato ante el cerrojo defensivo de Barracas Central)"
   }
 }

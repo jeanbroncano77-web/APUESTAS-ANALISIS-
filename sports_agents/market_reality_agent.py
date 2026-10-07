@@ -36,6 +36,10 @@ class MarketRealityAgent:
         Evalúa y selecciona 'La Fija' (95.0% - 98.2%) a partir de la convolución matemática exacta
         de la matriz bivariada, integrando los vetos de los 12 agentes de inteligencia deportiva.
         """
+        # Veto total y permanente a Hándicap (+2.5 o cualquier hándicap)
+        if preferred_category in ["HANDICAP_BLINDADO", "HANDICAP", "HANDICAP_ASIATICO"]:
+            preferred_category = "DOBLE_OPORTUNIDAD"
+
         candidates = []
         tier1_giants = {
             "Alemania", "Francia", "España", "Inglaterra", "Portugal", "Países Bajos",
@@ -341,72 +345,12 @@ class MarketRealityAgent:
             })
 
         # -------------------------------------------------------------
-        # 8. MERCADO: HÁNDICAP ASIÁTICO BLINDADO (+1.5 / +2.5)
-        # VETO EDITORIAL Y MATEMÁTICO ABSOLUTO ANTE GIGANTES TIER-1
+        # 8. VETO DEFINITIVO A HÁNDICAPS (+1.5 / +2.5)
+        # Las casas de apuestas reales (Bet365, Betano, TeApuesto, etc.)
+        # NO ofrecen hándicaps positivos (+2.5) a selecciones favoritas.
+        # Se elimina por completo para garantizar mercados 100% reales y operables.
         # -------------------------------------------------------------
-        has_veto_handicap = ("VETO_HANDICAP_POSITIVO_RIVAL" in editorial_restrictions) or (blowout_risk == "ALTO")
-
-        if exact_market_probs and "home_plus_1_5_pct" in exact_market_probs:
-            prob_hcp_home = exact_market_probs["home_plus_1_5_pct"]
-            prob_hcp_away = exact_market_probs["away_plus_1_5_pct"]
-        else:
-            prob_hcp_home = round(min(72.0 if is_tier1_match else 88.0, 75.0 + draw * 0.3), 1)
-            prob_hcp_away = round(min(72.0 if is_tier1_match else 88.0, 75.0 + draw * 0.3), 1)
-
-        if h_win >= a_win:
-            is_tier1_fav = (home_team in tier1_giants) or (home_xg >= 1.65) or (h_win >= 60.0) or has_veto_handicap
-            if not is_tier1_fav and prob_hcp_away >= 85.0:
-                odds_hcp = round(max(1.14, (1.0 / (prob_hcp_away / 100.0)) * 1.06), 2)
-                candidates.append({
-                    "market": "Hándicap Blindado",
-                    "category_code": "HANDICAP_BLINDADO",
-                    "selection": f"{away_team} (+1.5)",
-                    "probability": round(prob_hcp_away, 1),
-                    "odds": odds_hcp,
-                    "availability": "Casas de apuestas con hándicap asiático",
-                    "rationale": f"Cubre victoria de {away_team}, empate o derrota por solo 1 gol de diferencia ante rival no demoledor."
-                })
-        else:
-            is_tier1_fav = (away_team in tier1_giants) or (away_xg >= 1.65) or (a_win >= 60.0) or has_veto_handicap
-            if not is_tier1_fav and prob_hcp_home >= 85.0:
-                odds_hcp = round(max(1.14, (1.0 / (prob_hcp_home / 100.0)) * 1.06), 2)
-                candidates.append({
-                    "market": "Hándicap Blindado",
-                    "category_code": "HANDICAP_BLINDADO",
-                    "selection": f"{home_team} (+1.5)",
-                    "probability": round(prob_hcp_home, 1),
-                    "odds": odds_hcp,
-                    "availability": "Casas de apuestas con hándicap asiático",
-                    "rationale": f"Cubre victoria de {home_team}, empate o derrota por solo 1 gol de diferencia ante rival no demoledor."
-                })
-
-        # Hándicap de Ultra-Seguridad (+2.5): Si el local es competitivo o favorito
-        prob_h_plus25 = exact_market_probs.get("home_plus_2_5_pct", 95.0) if exact_market_probs else 95.0
-        prob_a_plus25 = exact_market_probs.get("away_plus_2_5_pct", 95.0) if exact_market_probs else 95.0
-        if h_win >= 45.0 and prob_h_plus25 >= 92.0:
-            capped_h25 = round(min(98.1, max(95.1, prob_h_plus25)), 1)
-            odds_h25 = round(max(1.09, (1.0 / (capped_h25 / 100.0)) * 1.05), 2)
-            candidates.append({
-                "market": "Hándicap Blindado",
-                "category_code": "HANDICAP_BLINDADO",
-                "selection": f"{home_team} (+2.5)",
-                "probability": capped_h25,
-                "odds": odds_h25,
-                "availability": "Universal en casas con líneas asiáticas",
-                "rationale": f"Blindaje total de 2 goles de margen a favor de {home_team} en su propio feudo."
-            })
-        elif a_win >= 45.0 and prob_a_plus25 >= 92.0 and not (home_team in tier1_giants):
-            capped_a25 = round(min(98.1, max(95.1, prob_a_plus25)), 1)
-            odds_a25 = round(max(1.09, (1.0 / (capped_a25 / 100.0)) * 1.05), 2)
-            candidates.append({
-                "market": "Hándicap Blindado",
-                "category_code": "HANDICAP_BLINDADO",
-                "selection": f"{away_team} (+2.5)",
-                "probability": capped_a25,
-                "odds": odds_a25,
-                "availability": "Universal en casas con líneas asiáticas",
-                "rationale": f"Blindaje total de 2 goles de margen a favor del visitante competitivo {away_team}."
-            })
+        pass
 
         # -------------------------------------------------------------
         # 9. MERCADO: AMBOS EQUIPOS ANOTAN (BTTS)
