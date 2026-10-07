@@ -1,8 +1,8 @@
 {
-  "GeneratedAt": "2026-10-06 21:32:29",
+  "GeneratedAt": "2026-10-07 06:12:16",
   "TargetDay": "Miércoles",
   "TargetDate": "07/10/2026",
-  "TemporalLabel": "MAÑANA",
+  "TemporalLabel": "HOY",
   "Matches": [
     {
       "match": "Japón vs Ecuador",
@@ -398,6 +398,16 @@
           "availability": "Universal en todas las plataformas",
           "rationale": "Línea de máxima protección: ritmo conjunto de 2.5 xG descarta completamente un festival de 6 goles.",
           "_rank_score": 233.6
+        },
+        {
+          "market": "Hándicap Blindado",
+          "category_code": "HANDICAP_BLINDADO",
+          "selection": "Japón (+2.5)",
+          "probability": 98.1,
+          "odds": 1.09,
+          "availability": "Universal en casas con líneas asiáticas",
+          "rationale": "Blindaje total de 2 goles de margen a favor de Japón en su propio feudo.",
+          "_rank_score": 203.65
         },
         {
           "market": "Total de Córners Fijo",
@@ -827,16 +837,26 @@
         ]
       },
       "la_fija_real": {
-        "market": "Total de Goles Fijo",
-        "category_code": "GOLES_UNDER",
-        "selection": "Menos de 5.5 goles totales",
-        "probability": 96.1,
+        "market": "Hándicap Blindado",
+        "category_code": "HANDICAP_BLINDADO",
+        "selection": "México (+2.5)",
+        "probability": 97.8,
         "odds": 1.09,
-        "availability": "Universal en todas las plataformas",
-        "rationale": "Línea de máxima protección: ritmo conjunto de 2.5 xG descarta completamente un festival de 6 goles.",
-        "_rank_score": 187.65
+        "availability": "Universal en casas con líneas asiáticas",
+        "rationale": "Blindaje total de 2 goles de margen a favor del visitante competitivo México.",
+        "_rank_score": 201.25
       },
       "all_fija_options": [
+        {
+          "market": "Hándicap Blindado",
+          "category_code": "HANDICAP_BLINDADO",
+          "selection": "México (+2.5)",
+          "probability": 97.8,
+          "odds": 1.09,
+          "availability": "Universal en casas con líneas asiáticas",
+          "rationale": "Blindaje total de 2 goles de margen a favor del visitante competitivo México.",
+          "_rank_score": 201.25
+        },
         {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_UNDER",
@@ -1243,16 +1263,26 @@
         ]
       },
       "la_fija_real": {
-        "market": "Doble Oportunidad Blindada",
-        "category_code": "DOBLE_OPORTUNIDAD",
-        "selection": "Inglaterra o Empate (1X)",
-        "probability": 96.7,
-        "odds": 1.1,
-        "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-        "rationale": "Protección total ante el empate con 96.7% de cobertura matemática.",
-        "_rank_score": 192.7
+        "market": "Hándicap Blindado",
+        "category_code": "HANDICAP_BLINDADO",
+        "selection": "Inglaterra (+2.5)",
+        "probability": 98.1,
+        "odds": 1.09,
+        "availability": "Universal en casas con líneas asiáticas",
+        "rationale": "Blindaje total de 2 goles de margen a favor de Inglaterra en su propio feudo.",
+        "_rank_score": 203.65
       },
       "all_fija_options": [
+        {
+          "market": "Hándicap Blindado",
+          "category_code": "HANDICAP_BLINDADO",
+          "selection": "Inglaterra (+2.5)",
+          "probability": 98.1,
+          "odds": 1.09,
+          "availability": "Universal en casas con líneas asiáticas",
+          "rationale": "Blindaje total de 2 goles de margen a favor de Inglaterra en su propio feudo.",
+          "_rank_score": 203.65
+        },
         {
           "market": "Doble Oportunidad Blindada",
           "category_code": "DOBLE_OPORTUNIDAD",
@@ -1670,16 +1700,26 @@
         ]
       },
       "la_fija_real": {
-        "market": "Total de Goles Fijo",
-        "category_code": "GOLES_UNDER",
-        "selection": "Menos de 5.5 goles totales",
-        "probability": 95.2,
-        "odds": 1.1,
-        "availability": "Universal en todas las plataformas",
-        "rationale": "Línea de máxima protección: ritmo conjunto de 2.5 xG descarta completamente un festival de 6 goles.",
-        "_rank_score": 180.7
+        "market": "Hándicap Blindado",
+        "category_code": "HANDICAP_BLINDADO",
+        "selection": "Chequia (+2.5)",
+        "probability": 98.1,
+        "odds": 1.09,
+        "availability": "Universal en casas con líneas asiáticas",
+        "rationale": "Blindaje total de 2 goles de margen a favor del visitante competitivo Chequia.",
+        "_rank_score": 203.65
       },
       "all_fija_options": [
+        {
+          "market": "Hándicap Blindado",
+          "category_code": "HANDICAP_BLINDADO",
+          "selection": "Chequia (+2.5)",
+          "probability": 98.1,
+          "odds": 1.09,
+          "availability": "Universal en casas con líneas asiáticas",
+          "rationale": "Blindaje total de 2 goles de margen a favor del visitante competitivo Chequia.",
+          "_rank_score": 203.65
+        },
         {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_UNDER",
@@ -2165,6 +2205,16 @@
           "_rank_score": 238.4
         },
         {
+          "market": "Hándicap Blindado",
+          "category_code": "HANDICAP_BLINDADO",
+          "selection": "Austria (+2.5)",
+          "probability": 95.7,
+          "odds": 1.1,
+          "availability": "Universal en casas con líneas asiáticas",
+          "rationale": "Blindaje total de 2 goles de margen a favor de Austria en su propio feudo.",
+          "_rank_score": 184.7
+        },
+        {
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
           "selection": "Menos de 12.5 córners totales",
@@ -2606,16 +2656,26 @@
         ]
       },
       "la_fija_real": {
-        "market": "Total de Goles Fijo",
-        "category_code": "GOLES_UNDER",
-        "selection": "Menos de 5.5 goles totales",
-        "probability": 95.2,
-        "odds": 1.1,
-        "availability": "Universal en todas las plataformas",
-        "rationale": "Línea de máxima protección: ritmo conjunto de 2.5 xG descarta completamente un festival de 6 goles.",
-        "_rank_score": 180.7
+        "market": "Hándicap Blindado",
+        "category_code": "HANDICAP_BLINDADO",
+        "selection": "Grecia (+2.5)",
+        "probability": 98.1,
+        "odds": 1.09,
+        "availability": "Universal en casas con líneas asiáticas",
+        "rationale": "Blindaje total de 2 goles de margen a favor de Grecia en su propio feudo.",
+        "_rank_score": 203.65
       },
       "all_fija_options": [
+        {
+          "market": "Hándicap Blindado",
+          "category_code": "HANDICAP_BLINDADO",
+          "selection": "Grecia (+2.5)",
+          "probability": 98.1,
+          "odds": 1.09,
+          "availability": "Universal en casas con líneas asiáticas",
+          "rationale": "Blindaje total de 2 goles de margen a favor de Grecia en su propio feudo.",
+          "_rank_score": 203.65
+        },
         {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_UNDER",
