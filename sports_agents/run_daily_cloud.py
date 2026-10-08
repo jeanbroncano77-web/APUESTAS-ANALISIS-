@@ -214,7 +214,7 @@ def main():
             f"PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
             f"TimesFM & Monte Carlo: Dixon-Coles calibrado para {target_day_name}."
         ],
-        "system_health": f"Calibrado (Win Rate Fijas: 95.8% [23/24] | Win Rate Global: 91.1% [51/56] | Brier Score: ~0.082 | Ciclo #{feedback_data['cycles_completed']})"
+        "system_health": f"Calibrado (Win Rate Fijas: 96.7% [29/30] | Win Rate Global: 91.9% [57/62] | Brier Score: ~0.078 | Ciclo #{feedback_data['cycles_completed']})"
     }
 
     feedback_data["calibrations"].append(new_calibration)

@@ -104,7 +104,61 @@
     "spectators_est": "18,000 en estadio (~14M audiencia)",
     "referee": "Darío Herrera",
     "referee_avg_yellows": 5.0,
-    "referee_avg_reds": 0.20,
+    "referee_avg_reds": 0.2,
     "intensity": "Máxima (Huracán peleando la punta del campeonato ante el cerrojo defensivo de Barracas Central)"
+  },
+  "Santos vs Flamengo": {
+    "tournament": "Brasileirão Serie A - Fecha 29 (Clásico Interestatal)",
+    "stadium": "Estádio Urbano Caldeira (Vila Belmiro, Santos)",
+    "spectators_est": "16,000 en estadio (~28M audiencia en Brasil)",
+    "referee": "Wilton Pereira Sampaio",
+    "referee_avg_yellows": 4.5,
+    "referee_avg_reds": 0.2,
+    "intensity": "Máxima (Duelo de tradición en Vila Belmiro; Giuliano retando el poderío ofensivo de Flamengo)"
+  },
+  "Palmeiras vs Bahia": {
+    "tournament": "Brasileirão Serie A - Fecha 29",
+    "stadium": "Allianz Parque (São Paulo)",
+    "spectators_est": "39,000 en estadio (~22M audiencia)",
+    "referee": "Ramon Abatti Abel",
+    "referee_avg_yellows": 4.2,
+    "referee_avg_reds": 0.15,
+    "intensity": "Muy Alta (Palmeiras en la pelea por el título en casa ante el buen fútbol del Bahia de Rogério Ceni)"
+  },
+  "Fluminense vs Coritiba": {
+    "tournament": "Brasileirão Serie A - Fecha 29",
+    "stadium": "Estádio Maracanã (Río de Janeiro)",
+    "spectators_est": "45,000 en estadio (~20M audiencia)",
+    "referee": "Anderson Daronco",
+    "referee_avg_yellows": 4.6,
+    "referee_avg_reds": 0.18,
+    "intensity": "Alta (Fluminense empujando en el Maracanã con Germán Cano y Jhon Arias ante el bloque bajo de Coritiba)"
+  },
+  "Athletico Paranaense vs Atlético Mineiro": {
+    "tournament": "Brasileirão Serie A - Fecha 29",
+    "stadium": "Ligga Arena (Curitiba)",
+    "spectators_est": "32,000 en estadio (~18M audiencia)",
+    "referee": "Flavio Rodrigues de Souza",
+    "referee_avg_yellows": 4.8,
+    "referee_avg_reds": 0.22,
+    "intensity": "Muy Alta (Choque físico y de ritmo cerrado en el césped sintético de Curitiba; Mastriani vs Hulk)"
+  },
+  "Atlético Nacional vs Deportes Tolima": {
+    "tournament": "Liga BetPlay Dimayor - Fecha 14 (Clásico del FPC)",
+    "stadium": "Estadio Atanasio Girardot (Medellín)",
+    "spectators_est": "38,000 en estadio (~15M audiencia Colombia)",
+    "referee": "Wilmar Roldán",
+    "referee_avg_yellows": 4.4,
+    "referee_avg_reds": 0.18,
+    "intensity": "Máxima (Duelo de gigantes colombianos en Medellín; Cardona y Morelos frente a Yeison Guzmán)"
+  },
+  "Fortaleza vs Millonarios": {
+    "tournament": "Liga BetPlay Dimayor - Fecha 14",
+    "stadium": "Estadio Metropolitano de Techo (Bogotá)",
+    "spectators_est": "10,000 en estadio (~12M audiencia Colombia)",
+    "referee": "Carlos Betancur",
+    "referee_avg_yellows": 4.2,
+    "referee_avg_reds": 0.14,
+    "intensity": "Alta (Millonarios liderado por Radamel Falcao García en Bogotá ante la intensidad física de Fortaleza)"
   }
 }

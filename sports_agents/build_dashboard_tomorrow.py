@@ -66,13 +66,19 @@ flags = {
     "Leganés": "⚪", "Valencia": "🦇",
     "Sunderland": "🔴", "Leeds United": "⚪",
     "Rio Ave": "🟢", "Famalicão": "🔵",
-    # Brasileirão Serie A & Liga Argentina
+    # Brasileirão Serie A & Liga Argentina & Liga BetPlay
     "Botafogo": "⭐", "Vasco da Gama": "⚓",
     "Cruzeiro": "🦊", "São Paulo": "🔴",
     "Internacional": "🔴", "Corinthians": "🦅",
     "RB Bragantino": "🐂", "Mirassol": "🟡",
     "Tigre": "🐯", "Banfield": "🟢",
-    "Barracas Central": "🔴", "Huracán": "🎈"
+    "Barracas Central": "🔴", "Huracán": "🎈",
+    "Santos": "⚪", "Flamengo": "🔴",
+    "Palmeiras": "🟢", "Bahia": "🔵",
+    "Fluminense": "🇭🇺", "Coritiba": "🟢",
+    "Athletico Paranaense": "🌪️", "Atlético Mineiro": "🐓",
+    "Atlético Nacional": "🟢", "Deportes Tolima": "🟡",
+    "Fortaleza": "🦁", "Millonarios": "🔵"
 }
 
 def get_flag(team):
@@ -660,9 +666,9 @@ if os.path.exists(feedback_log_path):
                     </div>
                     <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
                         <span class="badge-status badge-win" style="font-size: 0.8rem; padding: 0.35rem 0.8rem;">🔄 Ciclos Activos: {cycles}</span>
-                        <span class="badge-status" style="background: rgba(59, 130, 246, 0.2); border: 1px solid rgba(59, 130, 246, 0.5); color: #60a5fa; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Brier Score: ~0.082</span>
-                        <span class="badge-status" style="background: rgba(245, 158, 11, 0.2); border: 1px solid rgba(245, 158, 11, 0.5); color: #fbbf24; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Win Rate Global: 91.1%</span>
-                        <span class="badge-status" style="background: rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.5); color: #34d399; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Fijas: 95.8% (23/24)</span>
+                        <span class="badge-status" style="background: rgba(59, 130, 246, 0.2); border: 1px solid rgba(59, 130, 246, 0.5); color: #60a5fa; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Brier Score: ~0.078</span>
+                        <span class="badge-status" style="background: rgba(245, 158, 11, 0.2); border: 1px solid rgba(245, 158, 11, 0.5); color: #fbbf24; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Win Rate Global: 91.9% (57/62)</span>
+                        <span class="badge-status" style="background: rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.5); color: #34d399; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Fijas: 96.7% (29/30)</span>
                     </div>
                 </div>
 
