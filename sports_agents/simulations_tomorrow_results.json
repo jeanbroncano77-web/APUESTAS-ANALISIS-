@@ -1,5 +1,5 @@
 {
-  "GeneratedAt": "2026-10-07 21:34:17",
+  "GeneratedAt": "2026-10-07 22:18:05",
   "TargetDay": "Jueves",
   "TargetDate": "08/10/2026",
   "TemporalLabel": "MAÑANA",
@@ -367,25 +367,25 @@
         ]
       },
       "la_fija_real": {
-        "market": "Total de Córners Fijo",
-        "category_code": "TOTAL_CORNERS",
-        "selection": "Menos de 12.5 córners totales",
-        "probability": 96.1,
-        "odds": 1.1,
-        "availability": "Universal en casas principales (Bet365, Betano)",
-        "rationale": "Línea de contención alta: el promedio proyectado de 7.4 esquinas hace casi imposible alcanzar 13 córners.",
-        "_rank_score": 187.9
+        "market": "Doble Oportunidad Blindada",
+        "category_code": "DOBLE_OPORTUNIDAD",
+        "selection": "Botafogo o Empate (1X)",
+        "probability": 96.8,
+        "odds": 1.14,
+        "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+        "rationale": "Protección total ante el empate con 96.8% de cobertura matemática.",
+        "_rank_score": 274.5
       },
       "all_fija_options": [
         {
-          "market": "Total de Córners Fijo",
-          "category_code": "TOTAL_CORNERS",
-          "selection": "Menos de 12.5 córners totales",
-          "probability": 96.1,
-          "odds": 1.1,
-          "availability": "Universal en casas principales (Bet365, Betano)",
-          "rationale": "Línea de contención alta: el promedio proyectado de 7.4 esquinas hace casi imposible alcanzar 13 córners.",
-          "_rank_score": 187.9
+          "market": "Doble Oportunidad Blindada",
+          "category_code": "DOBLE_OPORTUNIDAD",
+          "selection": "Botafogo o Empate (1X)",
+          "probability": 96.8,
+          "odds": 1.14,
+          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+          "rationale": "Protección total ante el empate con 96.8% de cobertura matemática.",
+          "_rank_score": 274.5
         },
         {
           "market": "Total de Goles Fijo",
@@ -396,16 +396,6 @@
           "availability": "Universal en todas las plataformas",
           "rationale": "Intensidad ofensiva global de 2.5 xG descarta matemáticamente un 0-0.",
           "_rank_score": 58.2
-        },
-        {
-          "market": "Doble Oportunidad Blindada",
-          "category_code": "DOBLE_OPORTUNIDAD",
-          "selection": "Botafogo o Empate (1X)",
-          "probability": 88.8,
-          "odds": 1.18,
-          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "Protección total ante el empate con 88.8% de cobertura matemática.",
-          "_rank_score": 56.2
         },
         {
           "market": "Gol de Equipo de Seguridad",
@@ -801,33 +791,43 @@
       "la_fija_real": {
         "market": "Total de Goles Fijo",
         "category_code": "GOLES_UNDER",
-        "selection": "Menos de 5.5 goles totales",
-        "probability": 96.5,
-        "odds": 1.09,
-        "availability": "Universal en todas las plataformas",
-        "rationale": "Línea de máxima protección: ritmo conjunto de 2.5 xG descarta completamente un festival de 6 goles.",
-        "_rank_score": 225.85
+        "selection": "Menos de 4.5 goles totales",
+        "probability": 95.5,
+        "odds": 1.12,
+        "availability": "Universal en todas las plataformas (Bet365, Betano)",
+        "rationale": "Freno táctico: el volumen esperado de 2.5 xG descarta completamente un partido de 5 goles.",
+        "_rank_score": 263.6
       },
       "all_fija_options": [
         {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_UNDER",
-          "selection": "Menos de 5.5 goles totales",
-          "probability": 96.5,
-          "odds": 1.09,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Línea de máxima protección: ritmo conjunto de 2.5 xG descarta completamente un festival de 6 goles.",
-          "_rank_score": 225.85
+          "selection": "Menos de 4.5 goles totales",
+          "probability": 95.5,
+          "odds": 1.12,
+          "availability": "Universal en todas las plataformas (Bet365, Betano)",
+          "rationale": "Freno táctico: el volumen esperado de 2.5 xG descarta completamente un partido de 5 goles.",
+          "_rank_score": 263.6
+        },
+        {
+          "market": "Total de Goles Fijo",
+          "category_code": "GOLES_UNDER",
+          "selection": "Menos de 3.5 goles totales",
+          "probability": 95.0,
+          "odds": 1.15,
+          "availability": "Universal en todas las plataformas (Bet365, Betano)",
+          "rationale": "Bloques tácticos equilibrados (2.5 xG esperados) impiden un partido de 4 o más goles.",
+          "_rank_score": 260.35
         },
         {
           "market": "Doble Oportunidad Blindada",
           "category_code": "DOBLE_OPORTUNIDAD",
           "selection": "Empate o São Paulo (X2)",
-          "probability": 70.9,
-          "odds": 1.48,
+          "probability": 95.0,
+          "odds": 1.14,
           "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "El favorito visitante São Paulo puntúa en el 70.9% de las simulaciones.",
-          "_rank_score": 50.25
+          "rationale": "El favorito visitante São Paulo puntúa en el 95.0% de las simulaciones.",
+          "_rank_score": 180.1
         },
         {
           "market": "Gol de Equipo de Seguridad",
@@ -1194,12 +1194,33 @@
         "market": "Doble Oportunidad Blindada",
         "category_code": "DOBLE_OPORTUNIDAD",
         "selection": "Internacional o Empate (1X)",
-        "probability": 95.0,
-        "odds": 1.15,
+        "probability": 96.6,
+        "odds": 1.14,
         "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-        "rationale": "Preferencia de seguridad: Internacional cubre la victoria y el empate con 95.0% de probabilidad."
+        "rationale": "Protección total ante el empate con 96.6% de cobertura matemática.",
+        "_rank_score": 192.9
       },
       "all_fija_options": [
+        {
+          "market": "Doble Oportunidad Blindada",
+          "category_code": "DOBLE_OPORTUNIDAD",
+          "selection": "Internacional o Empate (1X)",
+          "probability": 96.6,
+          "odds": 1.14,
+          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+          "rationale": "Protección total ante el empate con 96.6% de cobertura matemática.",
+          "_rank_score": 192.9
+        },
+        {
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "Internacional anota más de 0.5 goles",
+          "probability": 84.3,
+          "odds": 1.25,
+          "availability": "Universal en todas las plataformas",
+          "rationale": "Volumen ofensivo de Internacional (1.4 xG) asegura al menos un gol a favor.",
+          "_rank_score": 104.65
+        },
         {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_OVER",
@@ -1211,16 +1232,6 @@
           "_rank_score": 58.3
         },
         {
-          "market": "Gol de Equipo de Seguridad",
-          "category_code": "GOL_EQUIPO",
-          "selection": "Internacional anota más de 0.5 goles",
-          "probability": 84.3,
-          "odds": 1.25,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Volumen ofensivo de Internacional (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 54.65
-        },
-        {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_OVER",
           "selection": "Más de 1.5 goles totales",
@@ -1229,16 +1240,6 @@
           "availability": "Universal en todas las plataformas",
           "rationale": "Ritmo conjunto proyectado de 2.5 xG con 81.0% de probabilidad exacta de al menos 2 goles.",
           "_rank_score": 53.7
-        },
-        {
-          "market": "Doble Oportunidad Blindada",
-          "category_code": "DOBLE_OPORTUNIDAD",
-          "selection": "Internacional o Empate (1X)",
-          "probability": 77.3,
-          "odds": 1.36,
-          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "Protección total ante el empate con 77.3% de cobertura matemática.",
-          "_rank_score": 52.25
         },
         {
           "market": "Victoria Sin Empate (DNB)",
@@ -1589,35 +1590,25 @@
         ]
       },
       "la_fija_real": {
-        "market": "Total de Goles Fijo",
-        "category_code": "GOLES_UNDER",
-        "selection": "Menos de 5.5 goles totales",
-        "probability": 95.2,
-        "odds": 1.1,
-        "availability": "Universal en todas las plataformas",
-        "rationale": "Línea de máxima protección: ritmo conjunto de 2.5 xG descarta completamente un festival de 6 goles.",
-        "_rank_score": 180.7
+        "market": "Doble Oportunidad Blindada",
+        "category_code": "DOBLE_OPORTUNIDAD",
+        "selection": "RB Bragantino o Empate (1X)",
+        "probability": 96.8,
+        "odds": 1.14,
+        "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+        "rationale": "Protección total ante el empate con 96.8% de cobertura matemática.",
+        "_rank_score": 194.5
       },
       "all_fija_options": [
-        {
-          "market": "Total de Goles Fijo",
-          "category_code": "GOLES_UNDER",
-          "selection": "Menos de 5.5 goles totales",
-          "probability": 95.2,
-          "odds": 1.1,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Línea de máxima protección: ritmo conjunto de 2.5 xG descarta completamente un festival de 6 goles.",
-          "_rank_score": 180.7
-        },
         {
           "market": "Doble Oportunidad Blindada",
           "category_code": "DOBLE_OPORTUNIDAD",
           "selection": "RB Bragantino o Empate (1X)",
-          "probability": 87.6,
-          "odds": 1.2,
+          "probability": 96.8,
+          "odds": 1.14,
           "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "Protección total ante el empate con 87.6% de cobertura matemática.",
-          "_rank_score": 55.8
+          "rationale": "Protección total ante el empate con 96.8% de cobertura matemática.",
+          "_rank_score": 194.5
         },
         {
           "market": "Victoria Sin Empate (DNB)",
@@ -1977,53 +1968,43 @@
       "la_fija_real": {
         "market": "Total de Goles Fijo",
         "category_code": "GOLES_UNDER",
-        "selection": "Menos de 5.5 goles totales",
-        "probability": 97.2,
-        "odds": 1.08,
-        "availability": "Universal en todas las plataformas",
-        "rationale": "Línea de máxima protección: ritmo conjunto de 2.5 xG descarta completamente un festival de 6 goles.",
-        "_rank_score": 231.2
+        "selection": "Menos de 4.5 goles totales",
+        "probability": 95.5,
+        "odds": 1.12,
+        "availability": "Universal en todas las plataformas (Bet365, Betano)",
+        "rationale": "Freno táctico: el volumen esperado de 2.5 xG descarta completamente un partido de 5 goles.",
+        "_rank_score": 263.6
       },
       "all_fija_options": [
         {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_UNDER",
-          "selection": "Menos de 5.5 goles totales",
-          "probability": 97.2,
-          "odds": 1.08,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Línea de máxima protección: ritmo conjunto de 2.5 xG descarta completamente un festival de 6 goles.",
-          "_rank_score": 231.2
-        },
-        {
-          "market": "Total de Córners Fijo",
-          "category_code": "TOTAL_CORNERS",
-          "selection": "Menos de 12.5 córners totales",
-          "probability": 95.7,
-          "odds": 1.1,
-          "availability": "Universal en casas principales (Bet365, Betano)",
-          "rationale": "Línea de contención alta: el promedio proyectado de 7.5 esquinas hace casi imposible alcanzar 13 córners.",
-          "_rank_score": 184.7
+          "selection": "Menos de 4.5 goles totales",
+          "probability": 95.5,
+          "odds": 1.12,
+          "availability": "Universal en todas las plataformas (Bet365, Betano)",
+          "rationale": "Freno táctico: el volumen esperado de 2.5 xG descarta completamente un partido de 5 goles.",
+          "_rank_score": 263.6
         },
         {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_UNDER",
           "selection": "Menos de 3.5 goles totales",
-          "probability": 82.5,
-          "odds": 1.3,
-          "availability": "Universal en todas las plataformas",
+          "probability": 95.0,
+          "odds": 1.15,
+          "availability": "Universal en todas las plataformas (Bet365, Betano)",
           "rationale": "Bloques tácticos equilibrados (2.5 xG esperados) impiden un partido de 4 o más goles.",
-          "_rank_score": 54.25
+          "_rank_score": 260.35
         },
         {
           "market": "Doble Oportunidad Blindada",
           "category_code": "DOBLE_OPORTUNIDAD",
           "selection": "Tigre o Empate (1X)",
-          "probability": 76.9,
-          "odds": 1.37,
+          "probability": 96.2,
+          "odds": 1.14,
           "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "Protección total ante el empate con 76.9% de cobertura matemática.",
-          "_rank_score": 52.15
+          "rationale": "Protección total ante el empate con 96.2% de cobertura matemática.",
+          "_rank_score": 189.7
         },
         {
           "market": "Gol de Equipo de Seguridad",
@@ -2384,45 +2365,35 @@
         ]
       },
       "la_fija_real": {
-        "market": "Total de Córners Fijo",
-        "category_code": "TOTAL_CORNERS",
-        "selection": "Menos de 12.5 córners totales",
-        "probability": 97.2,
-        "odds": 1.1,
-        "availability": "Universal en casas principales (Bet365, Betano)",
-        "rationale": "Línea de contención alta: el promedio proyectado de 6.6 esquinas hace casi imposible alcanzar 13 córners.",
-        "_rank_score": 196.7
+        "market": "Doble Oportunidad Blindada",
+        "category_code": "DOBLE_OPORTUNIDAD",
+        "selection": "Empate o Huracán (X2)",
+        "probability": 96.8,
+        "odds": 1.14,
+        "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+        "rationale": "El favorito visitante Huracán puntúa en el 96.8% de las simulaciones.",
+        "_rank_score": 274.5
       },
       "all_fija_options": [
-        {
-          "market": "Total de Córners Fijo",
-          "category_code": "TOTAL_CORNERS",
-          "selection": "Menos de 12.5 córners totales",
-          "probability": 97.2,
-          "odds": 1.1,
-          "availability": "Universal en casas principales (Bet365, Betano)",
-          "rationale": "Línea de contención alta: el promedio proyectado de 6.6 esquinas hace casi imposible alcanzar 13 córners.",
-          "_rank_score": 196.7
-        },
-        {
-          "market": "Total de Goles Fijo",
-          "category_code": "GOLES_UNDER",
-          "selection": "Menos de 5.5 goles totales",
-          "probability": 95.5,
-          "odds": 1.1,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Línea de máxima protección: ritmo conjunto de 2.5 xG descarta completamente un festival de 6 goles.",
-          "_rank_score": 183.1
-        },
         {
           "market": "Doble Oportunidad Blindada",
           "category_code": "DOBLE_OPORTUNIDAD",
           "selection": "Empate o Huracán (X2)",
-          "probability": 93.0,
-          "odds": 1.13,
+          "probability": 96.8,
+          "odds": 1.14,
           "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "El favorito visitante Huracán puntúa en el 93.0% de las simulaciones.",
-          "_rank_score": 57.8
+          "rationale": "El favorito visitante Huracán puntúa en el 96.8% de las simulaciones.",
+          "_rank_score": 274.5
+        },
+        {
+          "market": "Total de Goles Fijo",
+          "category_code": "GOLES_UNDER",
+          "selection": "Menos de 3.5 goles totales",
+          "probability": 95.0,
+          "odds": 1.15,
+          "availability": "Universal en todas las plataformas (Bet365, Betano)",
+          "rationale": "Bloques tácticos equilibrados (2.5 xG esperados) impiden un partido de 4 o más goles.",
+          "_rank_score": 180.35
         },
         {
           "market": "Victoria Sin Empate (DNB)",
