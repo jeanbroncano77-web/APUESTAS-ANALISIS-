@@ -1,5 +1,5 @@
 {
-  "GeneratedAt": "2026-10-07 22:18:05",
+  "GeneratedAt": "2026-10-07 22:21:05",
   "TargetDay": "Jueves",
   "TargetDate": "08/10/2026",
   "TemporalLabel": "MAÑANA",
@@ -388,6 +388,16 @@
           "_rank_score": 274.5
         },
         {
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "Botafogo anota más de 0.5 goles",
+          "probability": 96.8,
+          "odds": 1.15,
+          "availability": "Universal en todas las plataformas (Bet365, Betano)",
+          "rationale": "Volumen ofensivo de Botafogo (1.4 xG) asegura al menos un gol a favor.",
+          "_rank_score": 194.75
+        },
+        {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_OVER",
           "selection": "Más de 0.5 goles totales",
@@ -396,16 +406,6 @@
           "availability": "Universal en todas las plataformas",
           "rationale": "Intensidad ofensiva global de 2.5 xG descarta matemáticamente un 0-0.",
           "_rank_score": 58.2
-        },
-        {
-          "market": "Gol de Equipo de Seguridad",
-          "category_code": "GOL_EQUIPO",
-          "selection": "Botafogo anota más de 0.5 goles",
-          "probability": 88.5,
-          "odds": 1.19,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Volumen ofensivo de Botafogo (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 56.15
         },
         {
           "market": "Victoria Sin Empate (DNB)",
@@ -791,14 +791,24 @@
       "la_fija_real": {
         "market": "Total de Goles Fijo",
         "category_code": "GOLES_UNDER",
-        "selection": "Menos de 4.5 goles totales",
-        "probability": 95.5,
-        "odds": 1.12,
+        "selection": "Menos de 3.5 goles totales",
+        "probability": 95.0,
+        "odds": 1.15,
         "availability": "Universal en todas las plataformas (Bet365, Betano)",
-        "rationale": "Freno táctico: el volumen esperado de 2.5 xG descarta completamente un partido de 5 goles.",
-        "_rank_score": 263.6
+        "rationale": "Bloques tácticos equilibrados (2.5 xG esperados) impiden un partido de 4 o más goles.",
+        "_rank_score": 275.35
       },
       "all_fija_options": [
+        {
+          "market": "Total de Goles Fijo",
+          "category_code": "GOLES_UNDER",
+          "selection": "Menos de 3.5 goles totales",
+          "probability": 95.0,
+          "odds": 1.15,
+          "availability": "Universal en todas las plataformas (Bet365, Betano)",
+          "rationale": "Bloques tácticos equilibrados (2.5 xG esperados) impiden un partido de 4 o más goles.",
+          "_rank_score": 275.35
+        },
         {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_UNDER",
@@ -810,14 +820,14 @@
           "_rank_score": 263.6
         },
         {
-          "market": "Total de Goles Fijo",
-          "category_code": "GOLES_UNDER",
-          "selection": "Menos de 3.5 goles totales",
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "Cruzeiro anota más de 0.5 goles",
           "probability": 95.0,
           "odds": 1.15,
           "availability": "Universal en todas las plataformas (Bet365, Betano)",
-          "rationale": "Bloques tácticos equilibrados (2.5 xG esperados) impiden un partido de 4 o más goles.",
-          "_rank_score": 260.35
+          "rationale": "Volumen ofensivo de Cruzeiro (1.4 xG) asegura al menos un gol a favor.",
+          "_rank_score": 180.35
         },
         {
           "market": "Doble Oportunidad Blindada",
@@ -828,16 +838,6 @@
           "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
           "rationale": "El favorito visitante São Paulo puntúa en el 95.0% de las simulaciones.",
           "_rank_score": 180.1
-        },
-        {
-          "market": "Gol de Equipo de Seguridad",
-          "category_code": "GOL_EQUIPO",
-          "selection": "Cruzeiro anota más de 0.5 goles",
-          "probability": 61.6,
-          "odds": 1.7,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Volumen ofensivo de Cruzeiro (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 47.8
         }
       ]
     },
@@ -1191,16 +1191,26 @@
         ]
       },
       "la_fija_real": {
-        "market": "Doble Oportunidad Blindada",
-        "category_code": "DOBLE_OPORTUNIDAD",
-        "selection": "Internacional o Empate (1X)",
-        "probability": 96.6,
-        "odds": 1.14,
-        "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-        "rationale": "Protección total ante el empate con 96.6% de cobertura matemática.",
-        "_rank_score": 192.9
+        "market": "Gol de Equipo de Seguridad",
+        "category_code": "GOL_EQUIPO",
+        "selection": "Internacional anota más de 0.5 goles",
+        "probability": 96.1,
+        "odds": 1.15,
+        "availability": "Universal en todas las plataformas (Bet365, Betano)",
+        "rationale": "Volumen ofensivo de Internacional (1.4 xG) asegura al menos un gol a favor.",
+        "_rank_score": 269.15
       },
       "all_fija_options": [
+        {
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "Internacional anota más de 0.5 goles",
+          "probability": 96.1,
+          "odds": 1.15,
+          "availability": "Universal en todas las plataformas (Bet365, Betano)",
+          "rationale": "Volumen ofensivo de Internacional (1.4 xG) asegura al menos un gol a favor.",
+          "_rank_score": 269.15
+        },
         {
           "market": "Doble Oportunidad Blindada",
           "category_code": "DOBLE_OPORTUNIDAD",
@@ -1210,16 +1220,6 @@
           "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
           "rationale": "Protección total ante el empate con 96.6% de cobertura matemática.",
           "_rank_score": 192.9
-        },
-        {
-          "market": "Gol de Equipo de Seguridad",
-          "category_code": "GOL_EQUIPO",
-          "selection": "Internacional anota más de 0.5 goles",
-          "probability": 84.3,
-          "odds": 1.25,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Volumen ofensivo de Internacional (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 104.65
         },
         {
           "market": "Total de Goles Fijo",
@@ -1611,6 +1611,16 @@
           "_rank_score": 194.5
         },
         {
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "RB Bragantino anota más de 0.5 goles",
+          "probability": 95.0,
+          "odds": 1.15,
+          "availability": "Universal en todas las plataformas (Bet365, Betano)",
+          "rationale": "Volumen ofensivo de RB Bragantino (1.4 xG) asegura al menos un gol a favor.",
+          "_rank_score": 180.35
+        },
+        {
           "market": "Victoria Sin Empate (DNB)",
           "category_code": "VICTORIA_SIN_EMPATE",
           "selection": "RB Bragantino Gana (Empate No Válido / DNB)",
@@ -1619,16 +1629,6 @@
           "availability": "100% Casas de Apuestas (Mercado 'Draw No Bet')",
           "rationale": "Triunfo de RB Bragantino con devolución íntegra del 100% del dinero apostado si el juego finaliza igualado.",
           "_rank_score": 54.6
-        },
-        {
-          "market": "Gol de Equipo de Seguridad",
-          "category_code": "GOL_EQUIPO",
-          "selection": "RB Bragantino anota más de 0.5 goles",
-          "probability": 83.3,
-          "odds": 1.26,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Volumen ofensivo de RB Bragantino (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 54.25
         },
         {
           "market": "Victoria Directa (1X2)",
@@ -1968,14 +1968,24 @@
       "la_fija_real": {
         "market": "Total de Goles Fijo",
         "category_code": "GOLES_UNDER",
-        "selection": "Menos de 4.5 goles totales",
-        "probability": 95.5,
-        "odds": 1.12,
+        "selection": "Menos de 3.5 goles totales",
+        "probability": 95.0,
+        "odds": 1.15,
         "availability": "Universal en todas las plataformas (Bet365, Betano)",
-        "rationale": "Freno táctico: el volumen esperado de 2.5 xG descarta completamente un partido de 5 goles.",
-        "_rank_score": 263.6
+        "rationale": "Bloques tácticos equilibrados (2.5 xG esperados) impiden un partido de 4 o más goles.",
+        "_rank_score": 275.35
       },
       "all_fija_options": [
+        {
+          "market": "Total de Goles Fijo",
+          "category_code": "GOLES_UNDER",
+          "selection": "Menos de 3.5 goles totales",
+          "probability": 95.0,
+          "odds": 1.15,
+          "availability": "Universal en todas las plataformas (Bet365, Betano)",
+          "rationale": "Bloques tácticos equilibrados (2.5 xG esperados) impiden un partido de 4 o más goles.",
+          "_rank_score": 275.35
+        },
         {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_UNDER",
@@ -1985,16 +1995,6 @@
           "availability": "Universal en todas las plataformas (Bet365, Betano)",
           "rationale": "Freno táctico: el volumen esperado de 2.5 xG descarta completamente un partido de 5 goles.",
           "_rank_score": 263.6
-        },
-        {
-          "market": "Total de Goles Fijo",
-          "category_code": "GOLES_UNDER",
-          "selection": "Menos de 3.5 goles totales",
-          "probability": 95.0,
-          "odds": 1.15,
-          "availability": "Universal en todas las plataformas (Bet365, Betano)",
-          "rationale": "Bloques tácticos equilibrados (2.5 xG esperados) impiden un partido de 4 o más goles.",
-          "_rank_score": 260.35
         },
         {
           "market": "Doble Oportunidad Blindada",
@@ -2010,11 +2010,11 @@
           "market": "Gol de Equipo de Seguridad",
           "category_code": "GOL_EQUIPO",
           "selection": "Tigre anota más de 0.5 goles",
-          "probability": 70.4,
-          "odds": 1.49,
-          "availability": "Universal en todas las plataformas",
+          "probability": 95.0,
+          "odds": 1.15,
+          "availability": "Universal en todas las plataformas (Bet365, Betano)",
           "rationale": "Volumen ofensivo de Tigre (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 50.1
+          "_rank_score": 180.35
         },
         {
           "market": "Victoria Sin Empate (DNB)",
@@ -2393,6 +2393,26 @@
           "odds": 1.15,
           "availability": "Universal en todas las plataformas (Bet365, Betano)",
           "rationale": "Bloques tácticos equilibrados (2.5 xG esperados) impiden un partido de 4 o más goles.",
+          "_rank_score": 195.35
+        },
+        {
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "Barracas Central anota más de 0.5 goles",
+          "probability": 95.0,
+          "odds": 1.15,
+          "availability": "Universal en todas las plataformas (Bet365, Betano)",
+          "rationale": "Volumen ofensivo de Barracas Central (1.4 xG) asegura al menos un gol a favor.",
+          "_rank_score": 180.35
+        },
+        {
+          "market": "Gol de Equipo de Seguridad",
+          "category_code": "GOL_EQUIPO",
+          "selection": "Huracán anota más de 0.5 goles",
+          "probability": 95.0,
+          "odds": 1.15,
+          "availability": "Universal en todas las plataformas (Bet365, Betano)",
+          "rationale": "Eficacia ofensiva de Huracán (1.1 xG) garantiza presencia en el marcador.",
           "_rank_score": 180.35
         },
         {
@@ -2414,16 +2434,6 @@
           "availability": "Universal en todas las casas",
           "rationale": "Triunfo directo del favorito visitante Huracán con 71.5% de probabilidad proyectada.",
           "_rank_score": 50.45
-        },
-        {
-          "market": "Gol de Equipo de Seguridad",
-          "category_code": "GOL_EQUIPO",
-          "selection": "Barracas Central anota más de 0.5 goles",
-          "probability": 33.6,
-          "odds": 3.12,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Volumen ofensivo de Barracas Central (1.4 xG) asegura al menos un gol a favor.",
-          "_rank_score": 48.0
         }
       ]
     }
