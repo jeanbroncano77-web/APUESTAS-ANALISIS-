@@ -1,5 +1,5 @@
 {
-  "GeneratedAt": "2026-10-07 22:21:05",
+  "GeneratedAt": "2026-10-07 22:22:17",
   "TargetDay": "Jueves",
   "TargetDate": "08/10/2026",
   "TemporalLabel": "MAÑANA",
@@ -820,6 +820,16 @@
           "_rank_score": 263.6
         },
         {
+          "market": "Total de Córners Fijo",
+          "category_code": "TOTAL_CORNERS",
+          "selection": "Más de 6.5 córners totales",
+          "probability": 95.2,
+          "odds": 1.14,
+          "availability": "Línea de máxima cobertura en Bet365 / Betano",
+          "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (8.2).",
+          "_rank_score": 181.7
+        },
+        {
           "market": "Gol de Equipo de Seguridad",
           "category_code": "GOL_EQUIPO",
           "selection": "Cruzeiro anota más de 0.5 goles",
@@ -1222,6 +1232,26 @@
           "_rank_score": 192.9
         },
         {
+          "market": "Total de Córners Fijo",
+          "category_code": "TOTAL_CORNERS",
+          "selection": "Más de 6.5 córners totales",
+          "probability": 95.2,
+          "odds": 1.14,
+          "availability": "Línea de máxima cobertura en Bet365 / Betano",
+          "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (8.9).",
+          "_rank_score": 181.7
+        },
+        {
+          "market": "Total de Córners Fijo",
+          "category_code": "TOTAL_CORNERS",
+          "selection": "Más de 7.5 córners totales",
+          "probability": 95.0,
+          "odds": 1.18,
+          "availability": "Línea principal en Bet365 / Betano",
+          "rationale": "Constante flujo de ataque por bandas que proyecta 8.9 saques de esquina acumulados.",
+          "_rank_score": 181.1
+        },
+        {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_OVER",
           "selection": "Más de 0.5 goles totales",
@@ -1590,16 +1620,36 @@
         ]
       },
       "la_fija_real": {
-        "market": "Doble Oportunidad Blindada",
-        "category_code": "DOBLE_OPORTUNIDAD",
-        "selection": "RB Bragantino o Empate (1X)",
-        "probability": 96.8,
+        "market": "Total de Córners Fijo",
+        "category_code": "TOTAL_CORNERS",
+        "selection": "Más de 6.5 córners totales",
+        "probability": 95.2,
         "odds": 1.14,
-        "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-        "rationale": "Protección total ante el empate con 96.8% de cobertura matemática.",
-        "_rank_score": 194.5
+        "availability": "Línea de máxima cobertura en Bet365 / Betano",
+        "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (8.9).",
+        "_rank_score": 261.7
       },
       "all_fija_options": [
+        {
+          "market": "Total de Córners Fijo",
+          "category_code": "TOTAL_CORNERS",
+          "selection": "Más de 6.5 córners totales",
+          "probability": 95.2,
+          "odds": 1.14,
+          "availability": "Línea de máxima cobertura en Bet365 / Betano",
+          "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (8.9).",
+          "_rank_score": 261.7
+        },
+        {
+          "market": "Total de Córners Fijo",
+          "category_code": "TOTAL_CORNERS",
+          "selection": "Más de 7.5 córners totales",
+          "probability": 95.0,
+          "odds": 1.18,
+          "availability": "Línea principal en Bet365 / Betano",
+          "rationale": "Constante flujo de ataque por bandas que proyecta 8.9 saques de esquina acumulados.",
+          "_rank_score": 261.1
+        },
         {
           "market": "Doble Oportunidad Blindada",
           "category_code": "DOBLE_OPORTUNIDAD",
