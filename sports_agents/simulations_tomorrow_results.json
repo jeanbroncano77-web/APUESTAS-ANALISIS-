@@ -1,8 +1,8 @@
 {
-  "GeneratedAt": "2026-10-07 14:28:48",
-  "TargetDay": "Miércoles",
-  "TargetDate": "07/10/2026",
-  "TemporalLabel": "HOY",
+  "GeneratedAt": "2026-10-07 21:34:17",
+  "TargetDay": "Jueves",
+  "TargetDate": "08/10/2026",
+  "TemporalLabel": "MAÑANA",
   "Matches": [
     {
       "match": "Botafogo vs Vasco da Gama",
@@ -1191,13 +1191,13 @@
         ]
       },
       "la_fija_real": {
-        "market": "Total de Goles Fijo",
-        "category_code": "GOLES_UNDER",
-        "selection": "Menos de 5.5 goles totales",
-        "probability": 95.2,
-        "odds": 1.09,
-        "availability": "Universal en todas las casas",
-        "rationale": "Selección blindada de seguridad: ritmo de 2.5 xG descarta completamente 6 goles."
+        "market": "Doble Oportunidad Blindada",
+        "category_code": "DOBLE_OPORTUNIDAD",
+        "selection": "Internacional o Empate (1X)",
+        "probability": 95.0,
+        "odds": 1.15,
+        "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+        "rationale": "Preferencia de seguridad: Internacional cubre la victoria y el empate con 95.0% de probabilidad."
       },
       "all_fija_options": [
         {
