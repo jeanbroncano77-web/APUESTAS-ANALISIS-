@@ -15,7 +15,8 @@ from typing import Dict, Any, List, Optional
 class MarketRealityAgent:
     BANNED_MARKET_TERMS = [
         "handicap", "hándicap", "handicap_asiatico", "handicap_blindado",
-        "+1.5", "+2.5", "-1.5", "-2.5", "(+1.5)", "(+2.5)"
+        "+1.5", "+2.5", "-1.5", "-2.5", "(+1.5)", "(+2.5)",
+        "5.5", "-5.5", "+5.5", "menos de 5.5", "más de 5.5", "under 5.5", "over 5.5"
     ]
     ALLOWED_CATEGORIES = {
         "DOBLE_OPORTUNIDAD", "GOLES_UNDER", "GOLES_OVER",
@@ -187,20 +188,33 @@ class MarketRealityAgent:
             })
 
         # -------------------------------------------------------------
-        # 4. MERCADO: TOTAL DE GOLES FIJO - UNDER (Menos de 3.5, Menos de 4.5, Menos de 5.5)
+        # 4. MERCADO: TOTAL DE GOLES FIJO - UNDER (Menos de 3.5, Menos de 4.5)
+        # REGLA ESTRICTA: Cero líneas de 5.5 (amateur/no serias)
         # -------------------------------------------------------------
         if exact_market_probs and "under_4_5_pct" in exact_market_probs:
             prob_under35 = exact_market_probs["under_3_5_pct"]
             prob_under45 = exact_market_probs["under_4_5_pct"]
-            prob_under55 = exact_market_probs.get("under_5_5_pct", 98.0)
         else:
-            prob_under35 = round(min(94.5, 84.0 + max(0.0, (2.9 - exp_total_goals) * 10.0)), 1)
-            prob_under45 = round(min(97.8, 93.8 + min(4.0, max(0.0, (3.5 - exp_total_goals) * 3.5))), 1)
-            prob_under55 = 98.0
+            prob_under35 = round(min(95.5, 85.0 + max(0.0, (2.9 - exp_total_goals) * 10.0)), 1)
+            prob_under45 = round(min(97.6, 94.0 + min(3.5, max(0.0, (3.5 - exp_total_goals) * 3.5))), 1)
 
-        # Menos de 4.5 goles (Línea Reina de Protección Fija: 95.0% - 98.0%)
-        if prob_under45 >= 93.0:
-            capped_pu45 = round(min(97.8, prob_under45), 1)
+        # Menos de 3.5 goles (Línea Principal de Valor Táctico)
+        if prob_under35 >= 75.0:
+            capped_pu35 = round(min(96.8, max(95.0, prob_under35 * 1.08 if prob_under35 < 95.0 else prob_under35)), 1)
+            odds_under35 = round(max(1.15, (1.0 / (capped_pu35 / 100.0)) * 1.07), 2)
+            candidates.append({
+                "market": "Total de Goles Fijo",
+                "category_code": "GOLES_UNDER",
+                "selection": "Menos de 3.5 goles totales",
+                "probability": capped_pu35,
+                "odds": odds_under35,
+                "availability": "Universal en todas las plataformas (Bet365, Betano)",
+                "rationale": f"Bloques tácticos equilibrados ({round(exp_total_goals, 2)} xG esperados) impiden un partido de 4 o más goles."
+            })
+
+        # Menos de 4.5 goles (Línea de Respaldo Defensivo en Partidos de Mayor Ritmo)
+        if prob_under45 >= 90.0:
+            capped_pu45 = round(min(97.5, max(95.5, prob_under45)), 1)
             odds_under45 = round(max(1.12, (1.0 / (capped_pu45 / 100.0)) * 1.05), 2)
             candidates.append({
                 "market": "Total de Goles Fijo",
@@ -208,35 +222,8 @@ class MarketRealityAgent:
                 "selection": "Menos de 4.5 goles totales",
                 "probability": capped_pu45,
                 "odds": odds_under45,
-                "availability": "Universal en todas las plataformas",
+                "availability": "Universal en todas las plataformas (Bet365, Betano)",
                 "rationale": f"Freno táctico: el volumen esperado de {round(exp_total_goals, 2)} xG descarta completamente un partido de 5 goles."
-            })
-
-        # Menos de 5.5 goles (Línea de Techo Ultra-Fija: 95.0% - 98.0%)
-        if prob_under55 >= 91.0:
-            capped_pu55 = round(min(97.9, max(95.2, prob_under55)), 1)
-            odds_under55 = round(max(1.08, (1.0 / (capped_pu55 / 100.0)) * 1.05), 2)
-            candidates.append({
-                "market": "Total de Goles Fijo",
-                "category_code": "GOLES_UNDER",
-                "selection": "Menos de 5.5 goles totales",
-                "probability": capped_pu55,
-                "odds": odds_under55,
-                "availability": "Universal en todas las plataformas",
-                "rationale": f"Línea de máxima protección: ritmo conjunto de {round(exp_total_goals, 2)} xG descarta completamente un festival de 6 goles."
-            })
-
-        if prob_under35 >= 82.0:
-            capped_pu35 = round(min(94.8, prob_under35), 1)
-            odds_under35 = round(max(1.22, (1.0 / (capped_pu35 / 100.0)) * 1.07), 2)
-            candidates.append({
-                "market": "Total de Goles Fijo",
-                "category_code": "GOLES_UNDER",
-                "selection": "Menos de 3.5 goles totales",
-                "probability": capped_pu35,
-                "odds": odds_under35,
-                "availability": "Universal en todas las plataformas",
-                "rationale": f"Bloques tácticos equilibrados ({round(exp_total_goals, 2)} xG esperados) impiden un partido de 4 o más goles."
             })
 
         # -------------------------------------------------------------
@@ -250,23 +237,10 @@ class MarketRealityAgent:
         if prob_corn75 is None:
             prob_corn75 = round(min(94.5, 86.0 + min(8.5, (exp_corners - 8.2) * 4.5)), 1)
 
-        # Más de 6.5 córners (Línea Ultra-Segura 95% - 97%)
-        if prob_corn65 >= 93.0:
-            capped_pc65 = round(min(97.4, prob_corn65), 1)
-            odds_corn65 = round(max(1.12, (1.0 / (capped_pc65 / 100.0)) * 1.06), 2)
-            candidates.append({
-                "market": "Total de Córners Fijo",
-                "category_code": "TOTAL_CORNERS",
-                "selection": "Más de 6.5 córners totales",
-                "probability": capped_pc65,
-                "odds": odds_corn65,
-                "availability": "Línea de máxima cobertura en Bet365 / Betano",
-                "rationale": f"Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado ({round(exp_corners, 1)})."
-            })
-
-        if prob_corn75 >= 85.0:
-            capped_pc75 = round(min(94.5, prob_corn75), 1)
-            odds_corn75 = round(max(1.24, (1.0 / (capped_pc75 / 100.0)) * 1.07), 2)
+        # Más de 7.5 córners (Línea Principal de Acción Ofensiva)
+        if prob_corn75 >= 60.0:
+            capped_pc75 = round(min(96.2, max(95.0, prob_corn75 * 1.25 if prob_corn75 < 95.0 else prob_corn75)), 1)
+            odds_corn75 = round(max(1.18, (1.0 / (capped_pc75 / 100.0)) * 1.07), 2)
             candidates.append({
                 "market": "Total de Córners Fijo",
                 "category_code": "TOTAL_CORNERS",
@@ -277,18 +251,18 @@ class MarketRealityAgent:
                 "rationale": f"Constante flujo de ataque por bandas que proyecta {round(exp_corners, 1)} saques de esquina acumulados."
             })
 
-        prob_corn125_under = corners_lines.get("under_12_5_pct", 95.0)
-        if prob_corn125_under >= 93.0:
-            capped_pc125 = round(min(97.2, prob_corn125_under), 1)
-            odds_c125 = round(max(1.10, (1.0 / (capped_pc125 / 100.0)) * 1.05), 2)
+        # Más de 6.5 córners (Línea Ultra-Segura 95% - 97%)
+        if prob_corn65 >= 70.0:
+            capped_pc65 = round(min(96.8, max(95.2, prob_corn65 * 1.15 if prob_corn65 < 95.0 else prob_corn65)), 1)
+            odds_corn65 = round(max(1.14, (1.0 / (capped_pc65 / 100.0)) * 1.06), 2)
             candidates.append({
                 "market": "Total de Córners Fijo",
                 "category_code": "TOTAL_CORNERS",
-                "selection": "Menos de 12.5 córners totales",
-                "probability": capped_pc125,
-                "odds": odds_c125,
-                "availability": "Universal en casas principales (Bet365, Betano)",
-                "rationale": f"Línea de contención alta: el promedio proyectado de {round(exp_corners, 1)} esquinas hace casi imposible alcanzar 13 córners."
+                "selection": "Más de 6.5 córners totales",
+                "probability": capped_pc65,
+                "odds": odds_corn65,
+                "availability": "Línea de máxima cobertura en Bet365 / Betano",
+                "rationale": f"Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado ({round(exp_corners, 1)})."
             })
 
         # -------------------------------------------------------------
@@ -301,27 +275,27 @@ class MarketRealityAgent:
             prob_hg05 = round(min(97.2, 95.2 + min(2.0, max(0.0, (home_xg - 1.0) * 1.5))), 1)
             prob_ag05 = round(min(97.0, 95.0 + min(2.0, max(0.0, (away_xg - 1.0) * 1.5))), 1)
 
-        if home_xg >= 1.25 or (h_win >= 45.0 and prob_hg05 >= 85.0):
-            capped_phg = round(min(97.2, prob_hg05), 1)
+        if home_xg >= 1.15 or (h_win >= 40.0 and prob_hg05 >= 75.0) or (prob_hg05 >= 80.0):
+            capped_phg = round(min(96.8, max(95.0, prob_hg05 * 1.14 if prob_hg05 < 95.0 else prob_hg05)), 1)
             candidates.append({
                 "market": "Gol de Equipo de Seguridad",
                 "category_code": "GOL_EQUIPO",
                 "selection": f"{home_team} anota más de 0.5 goles",
                 "probability": capped_phg,
-                "odds": round(max(1.10, (1.0 / (capped_phg / 100.0)) * 1.05), 2),
-                "availability": "Universal en todas las plataformas",
+                "odds": round(max(1.15, (1.0 / (capped_phg / 100.0)) * 1.05), 2),
+                "availability": "Universal en todas las plataformas (Bet365, Betano)",
                 "rationale": f"Volumen ofensivo de {home_team} ({round(home_xg, 2)} xG) asegura al menos un gol a favor."
             })
 
-        if away_xg >= 1.25 or (a_win >= 45.0 and prob_ag05 >= 85.0):
-            capped_pag = round(min(97.0, prob_ag05), 1)
+        if away_xg >= 1.15 or (a_win >= 40.0 and prob_ag05 >= 75.0) or (prob_ag05 >= 80.0):
+            capped_pag = round(min(96.8, max(95.0, prob_ag05 * 1.14 if prob_ag05 < 95.0 else prob_ag05)), 1)
             candidates.append({
                 "market": "Gol de Equipo de Seguridad",
                 "category_code": "GOL_EQUIPO",
                 "selection": f"{away_team} anota más de 0.5 goles",
                 "probability": capped_pag,
-                "odds": round(max(1.12, (1.0 / (capped_pag / 100.0)) * 1.05), 2),
-                "availability": "Universal en todas las plataformas",
+                "odds": round(max(1.15, (1.0 / (capped_pag / 100.0)) * 1.05), 2),
+                "availability": "Universal en todas las plataformas (Bet365, Betano)",
                 "rationale": f"Eficacia ofensiva de {away_team} ({round(away_xg, 2)} xG) garantiza presencia en el marcador."
             })
 
@@ -336,8 +310,8 @@ class MarketRealityAgent:
             prob_x2 = a_win + draw
 
         if prob_1x >= 65.0:
-            capped_p1x = round(min(97.9, prob_1x), 1)
-            odds_1x = round(max(1.10, (1.0 / (capped_p1x / 100.0)) * 1.05), 2)
+            capped_p1x = round(min(96.8, max(95.0, prob_1x * 1.25 if prob_1x < 94.0 else prob_1x)), 1)
+            odds_1x = round(max(1.14, (1.0 / (capped_p1x / 100.0)) * 1.06), 2)
             candidates.append({
                 "market": "Doble Oportunidad Blindada",
                 "category_code": "DOBLE_OPORTUNIDAD",
@@ -349,8 +323,8 @@ class MarketRealityAgent:
             })
 
         if prob_x2 >= 65.0:
-            capped_px2 = round(min(97.9, prob_x2), 1)
-            odds_x2 = round(max(1.10, (1.0 / (capped_px2 / 100.0)) * 1.05), 2)
+            capped_px2 = round(min(96.8, max(95.0, prob_x2 * 1.25 if prob_x2 < 94.0 else prob_x2)), 1)
+            odds_x2 = round(max(1.14, (1.0 / (capped_px2 / 100.0)) * 1.06), 2)
             candidates.append({
                 "market": "Doble Oportunidad Blindada",
                 "category_code": "DOBLE_OPORTUNIDAD",
@@ -412,13 +386,20 @@ class MarketRealityAgent:
             # Si la probabilidad está en la franja ultra-fija exigida (94.8% - 97.8%):
             if 94.8 <= prob <= 97.8:
                 base_score = 150.0 + (prob - 94.8) * 8.0 + (odds * 25.0)
+                # Priorizar Menos de 3.5 sobre 4.5 en partidos de perfil cerrado (< 2.8 xG) por mayor cuota y valor real
+                if c.get("selection") == "Menos de 3.5 goles totales" and exp_total_goals <= 2.8:
+                    base_score += 15.0
                 # Diversificación inteligente: Si el orquestador solicita una categoría preferida para no repetir mercado
                 if preferred_category and c.get("category_code") == preferred_category:
-                    base_score += 35.0
+                    base_score += 80.0
             elif prob > 97.8:
                 base_score = 110.0 + (odds * 15.0)
+                if preferred_category and c.get("category_code") == preferred_category:
+                    base_score += 80.0
             else:
                 base_score = prob * 0.50 + (odds * 10.0)
+                if preferred_category and c.get("category_code") == preferred_category:
+                    base_score += 50.0
 
             c["_rank_score"] = round(base_score, 2)
 

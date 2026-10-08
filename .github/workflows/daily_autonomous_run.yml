@@ -10,14 +10,16 @@ on:
       - 'sports_agents/matches_database.json'
       - 'trigger_run.txt'
   schedule:
-    # 00:25 UTC = 19:25 (7:25 PM) hora de Lima - Fuera de pico de GitHub para arranque inmediato sin colas
+    # --- VENTANA NOCTURNA (7:30 PM / 19:30 Lima = 00:30 UTC) ---
     - cron: '25 0 * * *'
-    # 00:30 UTC = 19:30 (7:30 PM) hora oficial
     - cron: '30 0 * * *'
-    # Reintentos escalonados por si la cola gratuita de GitHub Actions se satura a la hora en punto
     - cron: '40 0 * * *'
     - cron: '50 0 * * *'
     - cron: '10 1 * * *'
+    # --- VENTANA MATUTINA (7:30 AM Lima = 12:30 UTC) ---
+    - cron: '25 12 * * *'
+    - cron: '30 12 * * *'
+    - cron: '40 12 * * *'
   workflow_dispatch: # Permite disparar manualmente con 1 clic desde GitHub
   repository_dispatch: # Permite disparar vía webhook externo gratuito a las 19:30 exactas
     types: [daily-trigger]

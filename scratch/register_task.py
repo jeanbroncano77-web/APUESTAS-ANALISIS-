@@ -1,10 +1,10 @@
 import subprocess
 
 vbs_path = r'c:\Users\jeanb\Documents\Antigravity Proyectos\Analisis deportivo\EJECUTAR_DIARIO_1930.vbs'
-cmd = ['schtasks', '/create', '/tn', 'SportsAI_Daily_1930', '/tr', f'wscript.exe "{vbs_path}"', '/sc', 'daily', '/st', '19:30', '/f']
+cmd1 = ['schtasks', '/create', '/tn', 'SportsAI_Daily_1930', '/tr', f'wscript.exe "{vbs_path}"', '/sc', 'daily', '/st', '19:30', '/f']
+res1 = subprocess.run(cmd1, capture_output=True, text=True)
+print("19:30 task:", res1.stdout)
 
-print("Running:", ' '.join(cmd))
-res = subprocess.run(cmd, capture_output=True, text=True)
-print("Return code:", res.returncode)
-print("Stdout:", res.stdout)
-print("Stderr:", res.stderr)
+cmd2 = ['schtasks', '/create', '/tn', 'SportsAI_Daily_0730', '/tr', f'wscript.exe "{vbs_path}"', '/sc', 'daily', '/st', '07:30', '/f']
+res2 = subprocess.run(cmd2, capture_output=True, text=True)
+print("07:30 task:", res2.stdout)
