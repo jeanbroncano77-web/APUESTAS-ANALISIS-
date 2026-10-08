@@ -1,6 +1,6 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 39,
+  "cycles_completed": 40,
   "calibrations": [
     {
       "cycle": 1,
@@ -604,6 +604,19 @@
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Jueves."
       ],
       "system_health": "Calibrado (Win Rate Fijas: 95.8% [23/24] | Win Rate Global: 91.1% [51/56] | Brier Score: ~0.082 | Ciclo #39)"
+    },
+    {
+      "cycle": 40,
+      "timestamp": "2026-10-08 07:16:52",
+      "action": "Auto-Calibración Autónoma Diaria (Jueves 08/10/2026)",
+      "observations": [
+        "[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas vía official_calendar.json.",
+        "SquadInjuryAgent: 100% de planteles ratificados.",
+        "MarketRealityAgent: 6 Fijas ultra-seguras (95-98%) optimizadas (confianza media: 95.8%).",
+        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
+        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Jueves."
+      ],
+      "system_health": "Calibrado (Win Rate Fijas: 95.8% [23/24] | Win Rate Global: 91.1% [51/56] | Brier Score: ~0.082 | Ciclo #40)"
     }
   ],
   "current_weights": {
@@ -626,5 +639,5 @@
       "squad_offense_penalty: 0.82 -> 0.8"
     ]
   },
-  "last_updated": "2026-10-08 06:40:43"
+  "last_updated": "2026-10-08 07:16:52"
 }
