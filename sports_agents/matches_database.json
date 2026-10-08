@@ -160,5 +160,59 @@
     "referee_avg_yellows": 4.2,
     "referee_avg_reds": 0.14,
     "intensity": "Alta (Millonarios liderado por Radamel Falcao García en Bogotá ante la intensidad física de Fortaleza)"
+  },
+  "Instituto vs Boca Juniors": {
+    "tournament": "Liga Profesional Argentina - Torneo Clausura (Fecha 12)",
+    "stadium": "Estadio Monumental de Alta Córdoba (Córdoba)",
+    "spectators_est": "26,000 en estadio (~18M audiencia nacional e internacional)",
+    "referee": "Nicolás Ramírez",
+    "referee_avg_yellows": 4.6,
+    "referee_avg_reds": 0.18,
+    "intensity": "Máxima (Boca obligado a ganar en Córdoba con Cavani y Merentiel ante la intensidad de La Gloria)"
+  },
+  "River Plate vs Vélez Sarsfield": {
+    "tournament": "Liga Profesional Argentina - Duelo en la Cima",
+    "stadium": "Estadio Mâs Monumental (Buenos Aires)",
+    "spectators_est": "84,500 en estadio (~25M audiencia)",
+    "referee": "Yael Falcón Pérez",
+    "referee_avg_yellows": 4.2,
+    "referee_avg_reds": 0.15,
+    "intensity": "Máxima (Coliseo repleto con 85,000 almas; River de Gallardo retando al líder Vélez de Braian Romero y Aquino)"
+  },
+  "Racing Club vs San Lorenzo": {
+    "tournament": "Liga Profesional Argentina - Clásico Histórico de Avellaneda",
+    "stadium": "Estadio Presidente Perón (El Cilindro, Avellaneda)",
+    "spectators_est": "45,000 en estadio (~20M audiencia)",
+    "referee": "Facundo Tello",
+    "referee_avg_yellows": 5.0,
+    "referee_avg_reds": 0.24,
+    "intensity": "Extrema (Clásico de alta fricción táctica; Maravilla Martínez y Quintero frente a Muniain y San Lorenzo)"
+  },
+  "Gimnasia (LP) vs Atlético Tucumán": {
+    "tournament": "Liga Profesional Argentina - Torneo Clausura (Fecha 12)",
+    "stadium": "Estadio Juan Carmelo Zerillo (El Bosque, La Plata)",
+    "spectators_est": "24,000 en estadio (~12M audiencia)",
+    "referee": "Pablo Dóvalo",
+    "referee_avg_yellows": 4.4,
+    "referee_avg_reds": 0.16,
+    "intensity": "Muy Alta (Duelo directo por puestos de copas en El Bosque con alta presión en mitad de cancha)"
+  },
+  "Estudiantes vs Flamengo": {
+    "tournament": "Copa CONMEBOL Libertadores - Semifinal de Ida",
+    "stadium": "Estadio Jorge Luis Hirschi (UNO, La Plata)",
+    "spectators_est": "32,500 en estadio (~35M audiencia continental)",
+    "referee": "Piero Maza",
+    "referee_avg_yellows": 5.2,
+    "referee_avg_reds": 0.25,
+    "intensity": "Máxima Continental (Caldera de La Plata; la mística pincharrata de Carrillo frente al poderío de Flamengo)"
+  },
+  "Boca Juniors vs Vasco da Gama": {
+    "tournament": "Copa CONMEBOL Sudamericana - Semifinal de Ida",
+    "stadium": "Estadio Alberto J. Armando (La Bombonera, Buenos Aires)",
+    "spectators_est": "54,000 en estadio (~30M audiencia continental)",
+    "referee": "Jesús Valenzuela",
+    "referee_avg_yellows": 4.8,
+    "referee_avg_reds": 0.22,
+    "intensity": "Máxima Continental (Noche de copa vibrante en La Bombonera; Cavani liderando a Boca ante el gigante carioca)"
   }
 }

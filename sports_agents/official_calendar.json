@@ -150,37 +150,37 @@
   "2026-10-08": {
     "date_str": "08/10/2026",
     "day_name": "Jueves",
-    "competition": "Brasileirão Serie A (Fecha 29) & Liga BetPlay Élite",
+    "competition": "Liga Profesional Argentina & Copas Sudamericanas (CONMEBOL)",
     "fixtures": [
       [
-        "Santos",
-        "Flamengo",
+        "Instituto",
+        "Boca Juniors",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Palmeiras",
-        "Bahia",
+        "River Plate",
+        "Vélez Sarsfield",
         "GOL_EQUIPO"
       ],
       [
-        "Fluminense",
-        "Coritiba",
+        "Racing Club",
+        "San Lorenzo",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Athletico Paranaense",
-        "Atlético Mineiro",
+        "Gimnasia (LP)",
+        "Atlético Tucumán",
         "GOLES_UNDER"
       ],
       [
-        "Atlético Nacional",
-        "Deportes Tolima",
-        "DOBLE_OPORTUNIDAD"
+        "Estudiantes",
+        "Flamengo",
+        "GOLES_UNDER"
       ],
       [
-        "Fortaleza",
-        "Millonarios",
-        "GOL_EQUIPO"
+        "Boca Juniors",
+        "Vasco da Gama",
+        "DOBLE_OPORTUNIDAD"
       ]
     ]
   },

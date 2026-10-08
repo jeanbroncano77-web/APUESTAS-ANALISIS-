@@ -32,6 +32,13 @@ with open(sim_path, "r", encoding="utf-8") as f:
 matches = sim_data["Matches"]
 
 flags = {
+    # Liga Profesional Argentina & Copas Sudamericanas
+    "Boca Juniors": "🟡", "River Plate": "⚪",
+    "Racing Club": "🩵", "San Lorenzo": "🔴",
+    "Vélez Sarsfield": "⚪", "Instituto": "🔴",
+    "Estudiantes": "🔴", "Gimnasia (LP)": "🐺",
+    "Atlético Tucumán": "🩵", "Vasco da Gama": "⚓", "Flamengo": "🔴",
+
     # Partidos de Selecciones / UEFA Nations League / FIFA
     "España": "🇪🇸", "Chequia": "🇨🇿",
     "Croacia": "🇭🇷", "Inglaterra": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
