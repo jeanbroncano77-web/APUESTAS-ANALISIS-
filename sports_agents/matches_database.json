@@ -162,40 +162,40 @@
     "intensity": "Alta (Millonarios liderado por Radamel Falcao García en Bogotá ante la intensidad física de Fortaleza)"
   },
   "Instituto vs Boca Juniors": {
-    "tournament": "Liga Profesional Argentina - Torneo Clausura (Fecha 12)",
+    "tournament": "Liga Profesional Argentina - Fecha 12",
     "stadium": "Estadio Monumental de Alta Córdoba (Córdoba)",
-    "spectators_est": "26,000 en estadio (~18M audiencia nacional e internacional)",
+    "spectators_est": "26,000 en estadio (~20M audiencia)",
     "referee": "Nicolás Ramírez",
-    "referee_avg_yellows": 4.6,
-    "referee_avg_reds": 0.18,
-    "intensity": "Máxima (Boca obligado a ganar en Córdoba con Cavani y Merentiel ante la intensidad de La Gloria)"
+    "referee_avg_yellows": 4.5,
+    "referee_avg_reds": 0.16,
+    "intensity": "Máxima (Cita estelar en Córdoba; Cavani y Merentiel en busca de puntos decisivos ante La Gloria)"
   },
   "River Plate vs Vélez Sarsfield": {
-    "tournament": "Liga Profesional Argentina - Duelo en la Cima",
-    "stadium": "Estadio Mâs Monumental (Buenos Aires)",
+    "tournament": "Liga Profesional Argentina - Fecha 12",
+    "stadium": "Estadio Monumental (Buenos Aires)",
     "spectators_est": "84,500 en estadio (~25M audiencia)",
-    "referee": "Yael Falcón Pérez",
-    "referee_avg_yellows": 4.2,
+    "referee": "Facundo Tello",
+    "referee_avg_yellows": 4.3,
     "referee_avg_reds": 0.15,
-    "intensity": "Máxima (Coliseo repleto con 85,000 almas; River de Gallardo retando al líder Vélez de Braian Romero y Aquino)"
+    "intensity": "Máxima (Choque en la cima; River busca hacer valer el Monumental ante el líder Vélez)"
   },
   "Racing Club vs San Lorenzo": {
-    "tournament": "Liga Profesional Argentina - Clásico Histórico de Avellaneda",
+    "tournament": "Liga Profesional Argentina - Fecha 12",
     "stadium": "Estadio Presidente Perón (El Cilindro, Avellaneda)",
-    "spectators_est": "45,000 en estadio (~20M audiencia)",
-    "referee": "Facundo Tello",
-    "referee_avg_yellows": 5.0,
-    "referee_avg_reds": 0.24,
-    "intensity": "Extrema (Clásico de alta fricción táctica; Maravilla Martínez y Quintero frente a Muniain y San Lorenzo)"
+    "spectators_est": "50,000 en estadio (~18M audiencia)",
+    "referee": "Yael Falcón Pérez",
+    "referee_avg_yellows": 4.7,
+    "referee_avg_reds": 0.2,
+    "intensity": "Clásico de Alta Tensión (La Academia de Costas ante el Ciclón de Romagnoli)"
   },
   "Gimnasia (LP) vs Atlético Tucumán": {
-    "tournament": "Liga Profesional Argentina - Torneo Clausura (Fecha 12)",
+    "tournament": "Liga Profesional Argentina - Fecha 12",
     "stadium": "Estadio Juan Carmelo Zerillo (El Bosque, La Plata)",
-    "spectators_est": "24,000 en estadio (~12M audiencia)",
+    "spectators_est": "22,000 en estadio (~12M audiencia)",
     "referee": "Pablo Dóvalo",
-    "referee_avg_yellows": 4.4,
-    "referee_avg_reds": 0.16,
-    "intensity": "Muy Alta (Duelo directo por puestos de copas en El Bosque con alta presión en mitad de cancha)"
+    "referee_avg_yellows": 4.6,
+    "referee_avg_reds": 0.18,
+    "intensity": "Muy Alta (El Lobo busca hacerse fuerte en El Bosque con Castillo ante el contragolpe de Mateo Coronel)"
   },
   "Estudiantes vs Flamengo": {
     "tournament": "Copa CONMEBOL Libertadores - Semifinal de Ida",
@@ -214,5 +214,77 @@
     "referee_avg_yellows": 4.8,
     "referee_avg_reds": 0.22,
     "intensity": "Máxima Continental (Noche de copa vibrante en La Bombonera; Cavani liderando a Boca ante el gigante carioca)"
+  },
+  "Aldosivi vs Sarmiento": {
+    "tournament": "Liga Profesional Argentina - Fecha 12",
+    "stadium": "Estadio José María Minella (Mar del Plata)",
+    "spectators_est": "18,000 en estadio (~10M audiencia)",
+    "referee": "Fernando Echenique",
+    "referee_avg_yellows": 4.4,
+    "referee_avg_reds": 0.16,
+    "intensity": "Alta (Duelo directo en la tabla anual con alta fricción y precaución en el Minella)"
+  },
+  "Unión vs Defensa y Justicia": {
+    "tournament": "Liga Profesional Argentina - Fecha 12",
+    "stadium": "Estadio 15 de Abril (Santa Fe)",
+    "spectators_est": "24,000 en estadio (~11M audiencia)",
+    "referee": "Darío Herrera",
+    "referee_avg_yellows": 4.8,
+    "referee_avg_reds": 0.2,
+    "intensity": "Muy Alta (Unión busca ratificar su gran fortaleza en el 15 de Abril ante el fútbol ofensivo del Halcón)"
+  },
+  "Delfín vs Mushuc Runa": {
+    "tournament": "LigaPro Serie A Ecuador - Fase Final",
+    "stadium": "Estadio Jocay (Manta)",
+    "spectators_est": "12,000 en estadio (~8M audiencia Ecuador)",
+    "referee": "Augusto Aragón",
+    "referee_avg_yellows": 4.2,
+    "referee_avg_reds": 0.14,
+    "intensity": "Alta (El Cetáceo defiende el fortín de Manta con Messiniti ante el peligro a balón parado de Joaquín Vergés)"
+  },
+  "Libertad vs Leones FC": {
+    "tournament": "LigaPro Serie A Ecuador - Hexagonal",
+    "stadium": "Estadio Reina del Cisne (Loja)",
+    "spectators_est": "8,000 en estadio (~5M audiencia Ecuador)",
+    "referee": "Bryan Loayza",
+    "referee_avg_yellows": 4.0,
+    "referee_avg_reds": 0.12,
+    "intensity": "Media-Alta (Libertad domina en la altura de Loja ante el bloque resistente de Leones FC)"
+  },
+  "Lanús vs Godoy Cruz": {
+    "tournament": "Liga Profesional Argentina - Fecha 12",
+    "stadium": "Estadio Ciudad de Lanús (La Fortaleza)",
+    "spectators_est": "25,000 en estadio (~10M audiencia)",
+    "referee": "Fernando Rapallini",
+    "referee_avg_yellows": 4.1,
+    "referee_avg_reds": 0.14,
+    "intensity": "Alta (La Fortaleza de Lanús ante el Tomba mendocino en lucha por copas)"
+  },
+  "Central Córdoba vs Belgrano": {
+    "tournament": "Liga Profesional Argentina - Fecha 12",
+    "stadium": "Estadio Madre de Ciudades (Santiago del Estero)",
+    "spectators_est": "28,000 en estadio (~9M audiencia)",
+    "referee": "Andrés Merlos",
+    "referee_avg_yellows": 4.5,
+    "referee_avg_reds": 0.18,
+    "intensity": "Alta (Duelo de estilos; bloque cerrado de Santiago ante la pegada de Franco Jara)"
+  },
+  "Independiente vs Newell's Old Boys": {
+    "tournament": "Liga Profesional Argentina - Fecha 12",
+    "stadium": "Estadio Libertadores de América (Avellaneda)",
+    "spectators_est": "42,000 en estadio (~16M audiencia)",
+    "referee": "Leandro Rey Hilfer",
+    "referee_avg_yellows": 4.6,
+    "referee_avg_reds": 0.16,
+    "intensity": "Muy Alta (El Rojo de Vaccari busca ratificar su gran racha de local ante la Lepra de Banega)"
+  },
+  "Argentinos Juniors vs Talleres": {
+    "tournament": "Liga Profesional Argentina - Fecha 12",
+    "stadium": "Estadio Diego Armando Maradona (La Paternal)",
+    "spectators_est": "15,000 en estadio (~12M audiencia)",
+    "referee": "Silvio Trucco",
+    "referee_avg_yellows": 4.4,
+    "referee_avg_reds": 0.15,
+    "intensity": "Muy Alta (Duelo técnico en La Paternal; posesión del Bicho ante la velocidad de Girotti y Botta)"
   }
 }
