@@ -1,19 +1,7 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 52,
+  "cycles_completed": 53,
   "calibrations": [
-    {
-      "cycle": 3,
-      "timestamp": "2026-10-03 08:35:52",
-      "action": "Auto-Calibración Autónoma Diaria (Sábado 03/10/2026)",
-      "observations": [
-        "SquadInjuryAgent: 8 bajas médicas vetadas (Rodri, Dani Olmo, Dani Carvajal).",
-        "MarketRealityAgent: 6 Fijas optimizadas con confianza media del 94.6%.",
-        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
-        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Sábado."
-      ],
-      "system_health": "Excelente (Win Rate Auditado: 89.5%, Brier Score: 0.102, Ciclo #3)"
-    },
     {
       "cycle": 4,
       "timestamp": "2026-10-03 08:39:12",
@@ -627,6 +615,19 @@
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Viernes."
       ],
       "system_health": "Excelente (Win Rate Fijas: 97.2% [35/36] | Win Rate Global: 92.6% [63/68] | Brier Score: ~0.076 | Ciclo #52)"
+    },
+    {
+      "cycle": 53,
+      "timestamp": "2026-10-09 09:53:46",
+      "action": "Auto-Calibración Diaria (Viernes 09/10/2026)",
+      "observations": [
+        "[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas para Viernes.",
+        "SquadInjuryAgent: 100% de planteles ratificados.",
+        "MarketRealityAgent: 6 Fijas ultra-seguras (95-98%) optimizadas (confianza media: 95.3%). Cero hándicaps, cero líneas de 5.5 goles.",
+        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
+        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Viernes."
+      ],
+      "system_health": "Excelente (Win Rate Fijas: 97.2% [35/36] | Win Rate Global: 92.6% [63/68] | Brier Score: ~0.076 | Ciclo #53)"
     }
   ],
   "current_weights": {
@@ -649,5 +650,5 @@
       "squad_offense_penalty: 0.82 -> 0.8"
     ]
   },
-  "last_updated": "2026-10-09 09:52:14"
+  "last_updated": "2026-10-09 09:53:46"
 }
