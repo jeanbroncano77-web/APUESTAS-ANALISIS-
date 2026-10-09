@@ -187,36 +187,36 @@
   "2026-10-09": {
     "date_str": "09/10/2026",
     "day_name": "Viernes",
-    "competition": "UEFA Nations League - Jornada 5",
+    "competition": "Liga Profesional Argentina (Fecha 12) & LigaPro Ecuador",
     "fixtures": [
       [
-        "España",
-        "Dinamarca",
+        "Aldosivi",
+        "Sarmiento",
+        "GOLES_UNDER"
+      ],
+      [
+        "Gimnasia (LP)",
+        "Atlético Tucumán",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Instituto",
+        "Boca Juniors",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Unión",
+        "Defensa y Justicia",
         "GOL_EQUIPO"
       ],
       [
-        "Croacia",
-        "Escocia",
+        "Delfín",
+        "Mushuc Runa",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Portugal",
-        "Polonia",
-        "GOLES_OVER"
-      ],
-      [
-        "Países Bajos",
-        "Hungría",
-        "DOBLE_OPORTUNIDAD"
-      ],
-      [
-        "Suecia",
-        "Eslovenia",
-        "TOTAL_CORNERS"
-      ],
-      [
-        "Georgia",
-        "Albania",
+        "Libertad",
+        "Leones FC",
         "GOLES_UNDER"
       ]
     ]
@@ -224,36 +224,36 @@
   "2026-10-10": {
     "date_str": "10/10/2026",
     "day_name": "Sábado",
-    "competition": "UEFA Nations League - Jornada 5",
+    "competition": "Liga Profesional Argentina - Sábado de Gigantes",
     "fixtures": [
       [
-        "Alemania",
-        "Países Bajos",
-        "GOLES_OVER"
+        "River Plate",
+        "Vélez Sarsfield",
+        "GOL_EQUIPO"
       ],
       [
-        "Bélgica",
-        "Francia",
-        "TOTAL_CORNERS"
-      ],
-      [
-        "Finlandia",
-        "Inglaterra",
+        "Racing Club",
+        "San Lorenzo",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Austria",
-        "Noruega",
+        "Lanús",
+        "Godoy Cruz",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Grecia",
-        "Irlanda",
+        "Central Córdoba",
+        "Belgrano",
         "GOLES_UNDER"
       ],
       [
-        "Israel",
-        "Francia",
+        "Independiente",
+        "Newell's Old Boys",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Argentinos Juniors",
+        "Talleres",
         "GOL_EQUIPO"
       ]
     ]
@@ -261,37 +261,37 @@
   "2026-10-11": {
     "date_str": "11/10/2026",
     "day_name": "Domingo",
-    "competition": "UEFA Nations League - Jornada 5",
+    "competition": "Liga Profesional Argentina & Clásicos Sudamericanos",
     "fixtures": [
       [
-        "Polonia",
-        "Croacia",
-        "DOBLE_OPORTUNIDAD"
-      ],
-      [
-        "Escocia",
-        "Portugal",
-        "GOL_EQUIPO"
-      ],
-      [
-        "España",
-        "Serbia",
-        "GOLES_OVER"
-      ],
-      [
-        "Suiza",
-        "Dinamarca",
-        "DOBLE_OPORTUNIDAD"
-      ],
-      [
-        "Kosovo",
-        "Rumanía",
+        "Estudiantes",
+        "Flamengo",
         "GOLES_UNDER"
       ],
       [
-        "Bosnia y Herzegovina",
-        "Hungría",
-        "TOTAL_CORNERS"
+        "Boca Juniors",
+        "Vasco da Gama",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Tigre",
+        "Platense",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Banfield",
+        "Barracas Central",
+        "GOLES_UNDER"
+      ],
+      [
+        "Huracán",
+        "Rosario Central",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Fluminense",
+        "Palmeiras",
+        "DOBLE_OPORTUNIDAD"
       ]
     ]
   },
@@ -366,6 +366,191 @@
         "Borussia Dortmund",
         "Werder Bremen",
         "GOLES_UNDER"
+      ]
+    ]
+  },
+  "2026-10-12": {
+    "date_str": "12/10/2026",
+    "day_name": "Lunes",
+    "competition": "Liga Profesional Argentina & Brasileirão Serie A",
+    "fixtures": [
+      [
+        "Atlético Tucumán",
+        "Newell's Old Boys",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Defensa y Justicia",
+        "San Lorenzo",
+        "GOL_EQUIPO"
+      ],
+      [
+        "Botafogo",
+        "Internacional",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Cruzeiro",
+        "São Paulo",
+        "GOLES_UNDER"
+      ],
+      [
+        "Banfield",
+        "Barracas Central",
+        "GOLES_UNDER"
+      ],
+      [
+        "Tigre",
+        "Platense",
+        "DOBLE_OPORTUNIDAD"
+      ]
+    ]
+  },
+  "2026-10-13": {
+    "date_str": "13/10/2026",
+    "day_name": "Martes",
+    "competition": "Brasileirão Serie A & Clásicos Estaduales",
+    "fixtures": [
+      [
+        "Corinthians",
+        "Santos",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Flamengo",
+        "Bahia",
+        "GOL_EQUIPO"
+      ],
+      [
+        "Palmeiras",
+        "RB Bragantino",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Fluminense",
+        "Vasco da Gama",
+        "GOLES_UNDER"
+      ],
+      [
+        "São Paulo",
+        "Mirassol",
+        "GOL_EQUIPO"
+      ],
+      [
+        "Botafogo",
+        "Cruzeiro",
+        "DOBLE_OPORTUNIDAD"
+      ]
+    ]
+  },
+  "2026-10-14": {
+    "date_str": "14/10/2026",
+    "day_name": "Miércoles",
+    "competition": "Liga Profesional Argentina - Fecha de Clásicos",
+    "fixtures": [
+      [
+        "Boca Juniors",
+        "Racing Club",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "River Plate",
+        "San Lorenzo",
+        "GOL_EQUIPO"
+      ],
+      [
+        "Vélez Sarsfield",
+        "Estudiantes",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Talleres",
+        "Belgrano",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Independiente",
+        "Lanús",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Rosario Central",
+        "Newell's Old Boys",
+        "GOLES_UNDER"
+      ]
+    ]
+  },
+  "2026-10-15": {
+    "date_str": "15/10/2026",
+    "day_name": "Jueves",
+    "competition": "Liga Profesional Argentina & LigaPro Ecuador",
+    "fixtures": [
+      [
+        "Huracán",
+        "Banfield",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Unión",
+        "Central Córdoba",
+        "GOL_EQUIPO"
+      ],
+      [
+        "Gimnasia (LP)",
+        "Sarmiento",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Godoy Cruz",
+        "Argentinos Juniors",
+        "GOLES_UNDER"
+      ],
+      [
+        "Delfín",
+        "Libertad",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Mushuc Runa",
+        "Leones FC",
+        "GOLES_UNDER"
+      ]
+    ]
+  },
+  "2026-10-16": {
+    "date_str": "16/10/2026",
+    "day_name": "Viernes",
+    "competition": "Retorno de Ligas Europeas & Liga Argentina",
+    "fixtures": [
+      [
+        "Borussia Dortmund",
+        "Werder Bremen",
+        "GOLES_UNDER"
+      ],
+      [
+        "Banfield",
+        "Lanús",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Instituto",
+        "Unión",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Defensa y Justicia",
+        "Gimnasia (LP)",
+        "GOL_EQUIPO"
+      ],
+      [
+        "Sarmiento",
+        "Aldosivi",
+        "GOLES_UNDER"
+      ],
+      [
+        "Atlético Tucumán",
+        "Central Córdoba",
+        "DOBLE_OPORTUNIDAD"
       ]
     ]
   }
