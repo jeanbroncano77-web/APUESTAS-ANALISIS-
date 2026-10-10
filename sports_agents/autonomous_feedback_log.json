@@ -1,16 +1,7 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 55,
+  "cycles_completed": 56,
   "calibrations": [
-    {
-      "cycle": 6,
-      "timestamp": "2026-10-03 09:10:16",
-      "action": "Auto-Calibración Bayesian Feedback (España vs Chequia)",
-      "observations": [
-        "squad_offense_penalty: 0.82 -> 0.8"
-      ],
-      "system_health": "Calibrado (Brier Score: 0.079, Ciclo #6)"
-    },
     {
       "cycle": 7,
       "timestamp": "2026-10-03 09:10:31",
@@ -630,6 +621,19 @@
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Sábado."
       ],
       "system_health": "Excelente (Win Rate Fijas: 97.5% [39/40] | Win Rate Global: 93.1% [67/72] | Brier Score: ~0.076 | Ciclo #55)"
+    },
+    {
+      "cycle": 56,
+      "timestamp": "2026-10-10 01:03:53",
+      "action": "Auto-Calibración Diaria (Sábado 10/10/2026)",
+      "observations": [
+        "[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas para Sábado.",
+        "SquadInjuryAgent: 100% de planteles ratificados.",
+        "MarketRealityAgent: 6 Fijas ultra-seguras (95-98%) optimizadas (confianza media: 96.7%). Cero hándicaps, cero líneas de 5.5 goles.",
+        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
+        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Sábado."
+      ],
+      "system_health": "Excelente (Win Rate Fijas: 97.5% [39/40] | Win Rate Global: 93.1% [67/72] | Brier Score: ~0.076 | Ciclo #56)"
     }
   ],
   "current_weights": {
@@ -652,5 +656,5 @@
       "squad_offense_penalty: 0.82 -> 0.8"
     ]
   },
-  "last_updated": "2026-10-09 22:27:59"
+  "last_updated": "2026-10-10 01:03:53"
 }
