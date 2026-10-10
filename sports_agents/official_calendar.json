@@ -224,36 +224,36 @@
   "2026-10-10": {
     "date_str": "10/10/2026",
     "day_name": "Sábado",
-    "competition": "Liga Profesional Argentina - Sábado de Gigantes",
+    "competition": "Ligas Europeas de Élite (Sábado de Gigantes)",
     "fixtures": [
       [
-        "River Plate",
-        "Vélez Sarsfield",
+        "Real Madrid",
+        "Villarreal",
         "GOL_EQUIPO"
       ],
       [
-        "Racing Club",
-        "San Lorenzo",
+        "Barcelona",
+        "Getafe",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Lanús",
-        "Godoy Cruz",
+        "Arsenal",
+        "Leeds United",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Central Córdoba",
-        "Belgrano",
-        "GOLES_UNDER"
+        "FC Augsburg",
+        "Bayern Munich",
+        "GOL_EQUIPO"
       ],
       [
-        "Independiente",
-        "Newell's Old Boys",
+        "Inter Milan",
+        "Parma",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Argentinos Juniors",
-        "Talleres",
+        "Borussia Dortmund",
+        "Werder Bremen",
         "GOL_EQUIPO"
       ]
     ]

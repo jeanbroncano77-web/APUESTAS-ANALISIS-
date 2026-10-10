@@ -221,14 +221,14 @@ def main():
                 ("Delfín", "Mushuc Runa", "DOBLE_OPORTUNIDAD"),
                 ("Libertad", "Leones FC", "GOLES_UNDER")
             ]
-        elif target_weekday == 5:  # SÁBADO
+        elif target_weekday == 5:  # SÁBADO - GIGANTES DE EUROPA
             fixtures_target = [
-                ("River Plate", "Vélez Sarsfield", "GOL_EQUIPO"),
-                ("Racing Club", "San Lorenzo", "DOBLE_OPORTUNIDAD"),
-                ("Lanús", "Godoy Cruz", "DOBLE_OPORTUNIDAD"),
-                ("Central Córdoba", "Belgrano", "GOLES_UNDER"),
-                ("Independiente", "Newell's Old Boys", "DOBLE_OPORTUNIDAD"),
-                ("Argentinos Juniors", "Talleres", "GOL_EQUIPO")
+                ("Real Madrid", "Villarreal", "GOL_EQUIPO"),
+                ("Barcelona", "Getafe", "DOBLE_OPORTUNIDAD"),
+                ("Arsenal", "Leeds United", "DOBLE_OPORTUNIDAD"),
+                ("FC Augsburg", "Bayern Munich", "GOL_EQUIPO"),
+                ("Inter Milan", "Parma", "DOBLE_OPORTUNIDAD"),
+                ("Borussia Dortmund", "Werder Bremen", "GOL_EQUIPO")
             ]
         elif target_weekday == 6:  # DOMINGO
             fixtures_target = [

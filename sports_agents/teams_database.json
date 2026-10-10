@@ -8789,5 +8789,971 @@
         "goal_prob": 0.12
       }
     ]
+  },
+  "Real Madrid": {
+    "fifa_rank": 2,
+    "recent_form": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "W",
+      "W",
+      "W"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 3,
+        "goals_conceded": 1,
+        "xg_for": 2.8,
+        "xg_against": 0.8,
+        "corners_for": 7,
+        "corners_against": 3,
+        "shots_total": 19,
+        "shots_on_target": 8,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 9,
+        "possession": 63
+      },
+      {
+        "goals_scored": 4,
+        "goals_conceded": 1,
+        "xg_for": 3.1,
+        "xg_against": 0.9,
+        "corners_for": 8,
+        "corners_against": 4,
+        "shots_total": 21,
+        "shots_on_target": 9,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 10,
+        "possession": 65
+      },
+      {
+        "goals_scored": 1,
+        "goals_conceded": 1,
+        "xg_for": 1.7,
+        "xg_against": 1.2,
+        "corners_for": 6,
+        "corners_against": 4,
+        "shots_total": 15,
+        "shots_on_target": 5,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 58
+      },
+      {
+        "goals_scored": 2,
+        "goals_conceded": 0,
+        "xg_for": 2.3,
+        "xg_against": 0.6,
+        "corners_for": 7,
+        "corners_against": 3,
+        "shots_total": 18,
+        "shots_on_target": 7,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 8,
+        "possession": 62
+      },
+      {
+        "goals_scored": 3,
+        "goals_conceded": 2,
+        "xg_for": 2.5,
+        "xg_against": 1.4,
+        "corners_for": 6,
+        "corners_against": 4,
+        "shots_total": 17,
+        "shots_on_target": 7,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 9,
+        "possession": 61
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Kylian Mbappé",
+        "position": "Delantero Centro (PARTE MÉDICO)",
+        "avg_shots_p90": 4.3,
+        "avg_sot_p90": 2.1,
+        "shot_creation_actions": 4.5,
+        "goal_prob": 0.68
+      },
+      {
+        "name": "Vinícius Jr.",
+        "position": "Extremo Desborde / Líder Ofensivo",
+        "avg_shots_p90": 3.6,
+        "avg_sot_p90": 1.7,
+        "shot_creation_actions": 6.3,
+        "goal_prob": 0.54
+      },
+      {
+        "name": "Jude Bellingham",
+        "position": "Mediapunta Llegada",
+        "avg_shots_p90": 2.9,
+        "avg_sot_p90": 1.4,
+        "shot_creation_actions": 5.2,
+        "goal_prob": 0.44
+      },
+      {
+        "name": "Rodrygo Goes",
+        "position": "Extremo / Delantero Referencia",
+        "avg_shots_p90": 3.1,
+        "avg_sot_p90": 1.5,
+        "shot_creation_actions": 5.4,
+        "goal_prob": 0.46
+      },
+      {
+        "name": "Federico Valverde",
+        "position": "Interior / Potencia",
+        "avg_shots_p90": 2.1,
+        "avg_sot_p90": 0.8,
+        "shot_creation_actions": 3.8,
+        "goal_prob": 0.22
+      }
+    ]
+  },
+  "Villarreal": {
+    "fifa_rank": 24,
+    "recent_form": [
+      "W",
+      "L",
+      "W",
+      "W",
+      "D",
+      "W"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 2,
+        "goals_conceded": 1,
+        "xg_for": 1.8,
+        "xg_against": 1.2,
+        "corners_for": 5,
+        "corners_against": 5,
+        "shots_total": 13,
+        "shots_on_target": 5,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 12,
+        "possession": 51
+      },
+      {
+        "goals_scored": 1,
+        "goals_conceded": 5,
+        "xg_for": 1.3,
+        "xg_against": 2.9,
+        "corners_for": 4,
+        "corners_against": 7,
+        "shots_total": 10,
+        "shots_on_target": 4,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 14,
+        "possession": 44
+      },
+      {
+        "goals_scored": 3,
+        "goals_conceded": 1,
+        "xg_for": 2.2,
+        "xg_against": 1.1,
+        "corners_for": 6,
+        "corners_against": 4,
+        "shots_total": 15,
+        "shots_on_target": 6,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 53
+      },
+      {
+        "goals_scored": 2,
+        "goals_conceded": 2,
+        "xg_for": 1.9,
+        "xg_against": 1.7,
+        "corners_for": 5,
+        "corners_against": 5,
+        "shots_total": 14,
+        "shots_on_target": 5,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 13,
+        "possession": 49
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Ayoze Pérez",
+        "position": "Segundo Delantero",
+        "avg_shots_p90": 2.7,
+        "avg_sot_p90": 1.3,
+        "shot_creation_actions": 3.4,
+        "goal_prob": 0.4
+      },
+      {
+        "name": "Álex Baena",
+        "position": "Mediapunta Creador",
+        "avg_shots_p90": 2.2,
+        "avg_sot_p90": 0.9,
+        "shot_creation_actions": 5.8,
+        "goal_prob": 0.24
+      },
+      {
+        "name": "Thierno Barry",
+        "position": "Delantero Centro Físico",
+        "avg_shots_p90": 2.4,
+        "avg_sot_p90": 1.1,
+        "shot_creation_actions": 2.1,
+        "goal_prob": 0.35
+      }
+    ]
+  },
+  "Barcelona": {
+    "fifa_rank": 3,
+    "recent_form": [
+      "W",
+      "W",
+      "W",
+      "W",
+      "L",
+      "W",
+      "W"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 5,
+        "goals_conceded": 1,
+        "xg_for": 3.6,
+        "xg_against": 0.8,
+        "corners_for": 8,
+        "corners_against": 3,
+        "shots_total": 20,
+        "shots_on_target": 9,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 9,
+        "possession": 66
+      },
+      {
+        "goals_scored": 1,
+        "goals_conceded": 0,
+        "xg_for": 2.1,
+        "xg_against": 0.5,
+        "corners_for": 7,
+        "corners_against": 2,
+        "shots_total": 16,
+        "shots_on_target": 6,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 8,
+        "possession": 68
+      },
+      {
+        "goals_scored": 4,
+        "goals_conceded": 2,
+        "xg_for": 2.9,
+        "xg_against": 1.3,
+        "corners_for": 7,
+        "corners_against": 4,
+        "shots_total": 18,
+        "shots_on_target": 8,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 10,
+        "possession": 64
+      },
+      {
+        "goals_scored": 5,
+        "goals_conceded": 0,
+        "xg_for": 3.8,
+        "xg_against": 0.4,
+        "corners_for": 9,
+        "corners_against": 2,
+        "shots_total": 22,
+        "shots_on_target": 11,
+        "yellow_cards": 0,
+        "red_cards": 0,
+        "fouls": 7,
+        "possession": 71
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Lamine Yamal",
+        "position": "Extremo Generacional / Balón de Oro Contender",
+        "avg_shots_p90": 3.8,
+        "avg_sot_p90": 1.9,
+        "shot_creation_actions": 7.5,
+        "goal_prob": 0.54
+      },
+      {
+        "name": "Raphinha",
+        "position": "Extremo & Mediapunta / Capitán Líder",
+        "avg_shots_p90": 3.9,
+        "avg_sot_p90": 1.9,
+        "shot_creation_actions": 6.8,
+        "goal_prob": 0.56
+      },
+      {
+        "name": "Ferran Torres",
+        "position": "Delantero Centro / El Tiburón",
+        "avg_shots_p90": 2.8,
+        "avg_sot_p90": 1.4,
+        "shot_creation_actions": 3.2,
+        "goal_prob": 0.44
+      },
+      {
+        "name": "Dani Olmo",
+        "position": "Mediapunta Llegador / Falso 9",
+        "avg_shots_p90": 3.2,
+        "avg_sot_p90": 1.6,
+        "shot_creation_actions": 5.8,
+        "goal_prob": 0.48
+      },
+      {
+        "name": "Pau Víctor",
+        "position": "Delantero Centro / Rematador",
+        "avg_shots_p90": 2.4,
+        "avg_sot_p90": 1.2,
+        "shot_creation_actions": 2.6,
+        "goal_prob": 0.38
+      },
+      {
+        "name": "Pedri",
+        "position": "Mediocentro Creativo / Llegada",
+        "avg_shots_p90": 1.6,
+        "avg_sot_p90": 0.7,
+        "shot_creation_actions": 6.1,
+        "goal_prob": 0.22
+      }
+    ]
+  },
+  "Getafe": {
+    "fifa_rank": 58,
+    "recent_form": [
+      "L",
+      "D",
+      "L",
+      "W",
+      "D",
+      "L"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 0,
+        "goals_conceded": 1,
+        "xg_for": 0.6,
+        "xg_against": 1.8,
+        "corners_for": 3,
+        "corners_against": 6,
+        "shots_total": 7,
+        "shots_on_target": 2,
+        "yellow_cards": 4,
+        "red_cards": 0,
+        "fouls": 18,
+        "possession": 36
+      },
+      {
+        "goals_scored": 1,
+        "goals_conceded": 1,
+        "xg_for": 0.9,
+        "xg_against": 1.4,
+        "corners_for": 4,
+        "corners_against": 5,
+        "shots_total": 9,
+        "shots_on_target": 3,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 16,
+        "possession": 38
+      },
+      {
+        "goals_scored": 2,
+        "goals_conceded": 0,
+        "xg_for": 1.5,
+        "xg_against": 0.8,
+        "corners_for": 4,
+        "corners_against": 4,
+        "shots_total": 11,
+        "shots_on_target": 4,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 15,
+        "possession": 42
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Borja Mayoral",
+        "position": "Delantero Centro",
+        "avg_shots_p90": 2.2,
+        "avg_sot_p90": 0.9,
+        "shot_creation_actions": 2.0,
+        "goal_prob": 0.28
+      },
+      {
+        "name": "Luis Milla",
+        "position": "Pivote Organizador",
+        "avg_shots_p90": 1.1,
+        "avg_sot_p90": 0.3,
+        "shot_creation_actions": 3.5,
+        "goal_prob": 0.08
+      },
+      {
+        "name": "Mauro Arambarri",
+        "position": "Mediocentro Físico",
+        "avg_shots_p90": 1.6,
+        "avg_sot_p90": 0.6,
+        "shot_creation_actions": 2.2,
+        "goal_prob": 0.15
+      }
+    ]
+  },
+  "Arsenal": {
+    "fifa_rank": 4,
+    "recent_form": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "W",
+      "D",
+      "W"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 4,
+        "goals_conceded": 2,
+        "xg_for": 2.9,
+        "xg_against": 1.0,
+        "corners_for": 8,
+        "corners_against": 3,
+        "shots_total": 19,
+        "shots_on_target": 8,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 9,
+        "possession": 64
+      },
+      {
+        "goals_scored": 2,
+        "goals_conceded": 0,
+        "xg_for": 2.2,
+        "xg_against": 0.6,
+        "corners_for": 7,
+        "corners_against": 2,
+        "shots_total": 16,
+        "shots_on_target": 6,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 8,
+        "possession": 67
+      },
+      {
+        "goals_scored": 2,
+        "goals_conceded": 2,
+        "xg_for": 1.8,
+        "xg_against": 1.5,
+        "corners_for": 6,
+        "corners_against": 5,
+        "shots_total": 14,
+        "shots_on_target": 5,
+        "yellow_cards": 2,
+        "red_cards": 1,
+        "fouls": 11,
+        "possession": 52
+      },
+      {
+        "goals_scored": 3,
+        "goals_conceded": 1,
+        "xg_for": 2.6,
+        "xg_against": 0.7,
+        "corners_for": 8,
+        "corners_against": 3,
+        "shots_total": 18,
+        "shots_on_target": 8,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 9,
+        "possession": 63
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Bukayo Saka",
+        "position": "Extremo Derecho Élite",
+        "avg_shots_p90": 3.3,
+        "avg_sot_p90": 1.6,
+        "shot_creation_actions": 6.4,
+        "goal_prob": 0.48
+      },
+      {
+        "name": "Kai Havertz",
+        "position": "Delantero Boya",
+        "avg_shots_p90": 3.0,
+        "avg_sot_p90": 1.4,
+        "shot_creation_actions": 4.1,
+        "goal_prob": 0.45
+      },
+      {
+        "name": "Gabriel Martinelli",
+        "position": "Extremo Eléctrico",
+        "avg_shots_p90": 2.8,
+        "avg_sot_p90": 1.2,
+        "shot_creation_actions": 4.8,
+        "goal_prob": 0.38
+      },
+      {
+        "name": "Declan Rice",
+        "position": "Pivote / Balón Parado",
+        "avg_shots_p90": 1.6,
+        "avg_sot_p90": 0.6,
+        "shot_creation_actions": 4.2,
+        "goal_prob": 0.16
+      }
+    ]
+  },
+  "Leeds United": {
+    "fifa_rank": 65,
+    "recent_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "W",
+      "D"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 2,
+        "goals_conceded": 0,
+        "xg_for": 1.7,
+        "xg_against": 0.8,
+        "corners_for": 6,
+        "corners_against": 4,
+        "shots_total": 14,
+        "shots_on_target": 5,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 12,
+        "possession": 56
+      },
+      {
+        "goals_scored": 1,
+        "goals_conceded": 1,
+        "xg_for": 1.3,
+        "xg_against": 1.2,
+        "corners_for": 5,
+        "corners_against": 5,
+        "shots_total": 12,
+        "shots_on_target": 4,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 13,
+        "possession": 52
+      },
+      {
+        "goals_scored": 0,
+        "goals_conceded": 1,
+        "xg_for": 0.9,
+        "xg_against": 1.4,
+        "corners_for": 4,
+        "corners_against": 5,
+        "shots_total": 10,
+        "shots_on_target": 3,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 14,
+        "possession": 48
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Joël Piroe",
+        "position": "Delantero Centro",
+        "avg_shots_p90": 2.6,
+        "avg_sot_p90": 1.2,
+        "shot_creation_actions": 2.6,
+        "goal_prob": 0.36
+      },
+      {
+        "name": "Wilfried Gnonto",
+        "position": "Extremo Desequilibrio",
+        "avg_shots_p90": 2.3,
+        "avg_sot_p90": 1.0,
+        "shot_creation_actions": 4.2,
+        "goal_prob": 0.28
+      },
+      {
+        "name": "Brenden Aaronson",
+        "position": "Mediapunta Presión",
+        "avg_shots_p90": 1.8,
+        "avg_sot_p90": 0.7,
+        "shot_creation_actions": 3.8,
+        "goal_prob": 0.2
+      }
+    ]
+  },
+  "FC Augsburg": {
+    "fifa_rank": 72,
+    "recent_form": [
+      "L",
+      "L",
+      "W",
+      "L",
+      "D"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 1,
+        "goals_conceded": 3,
+        "xg_for": 1.1,
+        "xg_against": 2.4,
+        "corners_for": 4,
+        "corners_against": 7,
+        "shots_total": 10,
+        "shots_on_target": 3,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 14,
+        "possession": 42
+      },
+      {
+        "goals_scored": 2,
+        "goals_conceded": 3,
+        "xg_for": 1.5,
+        "xg_against": 2.2,
+        "corners_for": 5,
+        "corners_against": 6,
+        "shots_total": 12,
+        "shots_on_target": 4,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 15,
+        "possession": 44
+      },
+      {
+        "goals_scored": 3,
+        "goals_conceded": 1,
+        "xg_for": 1.9,
+        "xg_against": 1.2,
+        "corners_for": 5,
+        "corners_against": 5,
+        "shots_total": 13,
+        "shots_on_target": 5,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 12,
+        "possession": 47
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Phillip Tietz",
+        "position": "Delantero Referencia",
+        "avg_shots_p90": 2.3,
+        "avg_sot_p90": 1.0,
+        "shot_creation_actions": 2.2,
+        "goal_prob": 0.3
+      },
+      {
+        "name": "Alexis Claude-Maurice",
+        "position": "Mediapunta",
+        "avg_shots_p90": 2.1,
+        "avg_sot_p90": 0.9,
+        "shot_creation_actions": 3.6,
+        "goal_prob": 0.24
+      }
+    ]
+  },
+  "Bayern Munich": {
+    "fifa_rank": 1,
+    "recent_form": [
+      "W",
+      "W",
+      "W",
+      "D",
+      "W",
+      "W"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 5,
+        "goals_conceded": 0,
+        "xg_for": 3.7,
+        "xg_against": 0.5,
+        "corners_for": 9,
+        "corners_against": 2,
+        "shots_total": 23,
+        "shots_on_target": 11,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 8,
+        "possession": 70
+      },
+      {
+        "goals_scored": 1,
+        "goals_conceded": 1,
+        "xg_for": 2.2,
+        "xg_against": 0.7,
+        "corners_for": 8,
+        "corners_against": 2,
+        "shots_total": 18,
+        "shots_on_target": 6,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 9,
+        "possession": 69
+      },
+      {
+        "goals_scored": 9,
+        "goals_conceded": 2,
+        "xg_for": 5.4,
+        "xg_against": 1.0,
+        "corners_for": 11,
+        "corners_against": 3,
+        "shots_total": 29,
+        "shots_on_target": 17,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 7,
+        "possession": 72
+      },
+      {
+        "goals_scored": 6,
+        "goals_conceded": 1,
+        "xg_for": 4.1,
+        "xg_against": 0.6,
+        "corners_for": 8,
+        "corners_against": 3,
+        "shots_total": 22,
+        "shots_on_target": 12,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 8,
+        "possession": 68
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Harry Kane",
+        "position": "Delantero Centro Total",
+        "avg_shots_p90": 4.2,
+        "avg_sot_p90": 2.3,
+        "shot_creation_actions": 4.8,
+        "goal_prob": 0.75
+      },
+      {
+        "name": "Michael Olise",
+        "position": "Extremo Generador",
+        "avg_shots_p90": 3.1,
+        "avg_sot_p90": 1.5,
+        "shot_creation_actions": 6.2,
+        "goal_prob": 0.44
+      },
+      {
+        "name": "Jamal Musiala",
+        "position": "Mediapunta Desborde",
+        "avg_shots_p90": 3.3,
+        "avg_sot_p90": 1.6,
+        "shot_creation_actions": 5.8,
+        "goal_prob": 0.45
+      },
+      {
+        "name": "Serge Gnabry",
+        "position": "Extremo Llegada",
+        "avg_shots_p90": 2.6,
+        "avg_sot_p90": 1.2,
+        "shot_creation_actions": 3.9,
+        "goal_prob": 0.38
+      }
+    ]
+  },
+  "Inter Milan": {
+    "fifa_rank": 5,
+    "recent_form": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "W",
+      "L",
+      "W"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 3,
+        "goals_conceded": 2,
+        "xg_for": 2.5,
+        "xg_against": 1.1,
+        "corners_for": 7,
+        "corners_against": 4,
+        "shots_total": 17,
+        "shots_on_target": 7,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 61
+      },
+      {
+        "goals_scored": 4,
+        "goals_conceded": 0,
+        "xg_for": 3.2,
+        "xg_against": 0.6,
+        "corners_for": 8,
+        "corners_against": 2,
+        "shots_total": 19,
+        "shots_on_target": 9,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 9,
+        "possession": 64
+      },
+      {
+        "goals_scored": 0,
+        "goals_conceded": 0,
+        "xg_for": 1.7,
+        "xg_against": 0.8,
+        "corners_for": 6,
+        "corners_against": 3,
+        "shots_total": 14,
+        "shots_on_target": 5,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 10,
+        "possession": 59
+      },
+      {
+        "goals_scored": 2,
+        "goals_conceded": 1,
+        "xg_for": 2.1,
+        "xg_against": 0.9,
+        "corners_for": 7,
+        "corners_against": 3,
+        "shots_total": 16,
+        "shots_on_target": 6,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 12,
+        "possession": 62
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Lautaro Martínez",
+        "position": "Delantero Capitán",
+        "avg_shots_p90": 3.8,
+        "avg_sot_p90": 1.9,
+        "shot_creation_actions": 3.6,
+        "goal_prob": 0.65
+      },
+      {
+        "name": "Marcus Thuram",
+        "position": "Delantero Potencia",
+        "avg_shots_p90": 3.2,
+        "avg_sot_p90": 1.5,
+        "shot_creation_actions": 4.1,
+        "goal_prob": 0.48
+      },
+      {
+        "name": "Hakan Çalhanoğlu",
+        "position": "Pivote / Francotirador",
+        "avg_shots_p90": 2.2,
+        "avg_sot_p90": 0.9,
+        "shot_creation_actions": 5.4,
+        "goal_prob": 0.28
+      },
+      {
+        "name": "Nicolò Barella",
+        "position": "Interior Box-to-Box",
+        "avg_shots_p90": 1.8,
+        "avg_sot_p90": 0.7,
+        "shot_creation_actions": 4.8,
+        "goal_prob": 0.2
+      }
+    ]
+  },
+  "Parma": {
+    "fifa_rank": 85,
+    "recent_form": [
+      "L",
+      "D",
+      "L",
+      "W",
+      "D"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 2,
+        "goals_conceded": 3,
+        "xg_for": 1.4,
+        "xg_against": 2.1,
+        "corners_for": 4,
+        "corners_against": 6,
+        "shots_total": 11,
+        "shots_on_target": 4,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 14,
+        "possession": 46
+      },
+      {
+        "goals_scored": 2,
+        "goals_conceded": 2,
+        "xg_for": 1.6,
+        "xg_against": 1.9,
+        "corners_for": 5,
+        "corners_against": 5,
+        "shots_total": 12,
+        "shots_on_target": 5,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 15,
+        "possession": 48
+      },
+      {
+        "goals_scored": 2,
+        "goals_conceded": 1,
+        "xg_for": 1.8,
+        "xg_against": 1.5,
+        "corners_for": 5,
+        "corners_against": 6,
+        "shots_total": 13,
+        "shots_on_target": 6,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 13,
+        "possession": 45
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Ange-Yoan Bonny",
+        "position": "Delantero Dinámico",
+        "avg_shots_p90": 2.4,
+        "avg_sot_p90": 1.1,
+        "shot_creation_actions": 3.0,
+        "goal_prob": 0.32
+      },
+      {
+        "name": "Dennis Man",
+        "position": "Extremo Zurdo",
+        "avg_shots_p90": 2.5,
+        "avg_sot_p90": 1.2,
+        "shot_creation_actions": 4.5,
+        "goal_prob": 0.34
+      },
+      {
+        "name": "Valentin Mihăilă",
+        "position": "Extremo Diestro",
+        "avg_shots_p90": 2.1,
+        "avg_sot_p90": 0.8,
+        "shot_creation_actions": 3.4,
+        "goal_prob": 0.22
+      }
+    ]
   }
 }

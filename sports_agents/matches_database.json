@@ -295,5 +295,50 @@
     "referee_avg_yellows": 4.2,
     "referee_avg_reds": 0.14,
     "intensity": "Máxima (Duelo de viernes en la Muralla Amarilla; Dortmund busca afianzar el liderato invicto ante el Bremen)"
+  },
+  "Real Madrid vs Villarreal": {
+    "tournament": "LaLiga EA Sports - Jornada 9 (Estelar)",
+    "stadium": "Santiago Bernabéu (Madrid)",
+    "spectators_est": "81,044 en estadio (~45M audiencia global)",
+    "referee": "Guillermo Cuadra Fernández",
+    "referee_avg_yellows": 4.4,
+    "referee_avg_reds": 0.18,
+    "intensity": "Máxima (Real Madrid en el Bernabéu buscando el liderato frente a un Villarreal muy goleador)"
+  },
+  "Barcelona vs Getafe": {
+    "tournament": "LaLiga EA Sports - Jornada 9",
+    "stadium": "Estadi Olímpic Lluís Companys (Montjuïc)",
+    "spectators_est": "49,500 en estadio (~38M audiencia global)",
+    "referee": "Pablo González Fuertes",
+    "referee_avg_yellows": 4.8,
+    "referee_avg_reds": 0.22,
+    "intensity": "Alta (Duelo de estilos: La máquina ofensiva de Hansi Flick ante el cerrojo ultra-físico de Bordalás)"
+  },
+  "Arsenal vs Leeds United": {
+    "tournament": "Premier League - Matchday 8",
+    "stadium": "Emirates Stadium (Londres)",
+    "spectators_est": "60,260 en estadio (~42M audiencia global)",
+    "referee": "Michael Oliver",
+    "referee_avg_yellows": 3.6,
+    "referee_avg_reds": 0.14,
+    "intensity": "Muy Alta (Arsenal de Arteta buscando imponer su jerarquía con Saka y Havertz)"
+  },
+  "FC Augsburg vs Bayern Munich": {
+    "tournament": "Bundesliga - Jornada 6 (Derbi de Baviera)",
+    "stadium": "WWK Arena (Augsburg)",
+    "spectators_est": "30,660 en estadio (~28M audiencia global)",
+    "referee": "Felix Zwayer",
+    "referee_avg_yellows": 3.9,
+    "referee_avg_reds": 0.15,
+    "intensity": "Máxima (Derbi bávaro caliente; Bayern de Kompany con Kane y Olise promediando 4 goles)"
+  },
+  "Inter Milan vs Parma": {
+    "tournament": "Serie A - Giornata 7",
+    "stadium": "Stadio Giuseppe Meazza - San Siro (Milán)",
+    "spectators_est": "72,500 en estadio (~25M audiencia global)",
+    "referee": "Daniele Doveri",
+    "referee_avg_yellows": 4.1,
+    "referee_avg_reds": 0.16,
+    "intensity": "Alta (El campeón de Italia ante el descaro y verticalidad al contragolpe del Parma de Man y Bonny)"
   }
 }
