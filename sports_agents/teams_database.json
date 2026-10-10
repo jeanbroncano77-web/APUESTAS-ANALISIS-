@@ -8601,5 +8601,193 @@
         "goal_prob": 0.34
       }
     ]
+  },
+  "Borussia Dortmund": {
+    "fifa_rank": 11,
+    "recent_form": [
+      "W",
+      "W",
+      "W",
+      "W",
+      "D",
+      "W",
+      "W",
+      "W"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 3,
+        "goals_conceded": 1,
+        "xg_for": 2.65,
+        "xg_against": 0.85,
+        "corners_for": 8,
+        "corners_against": 3,
+        "shots_total": 18,
+        "shots_on_target": 7,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 9,
+        "possession": 62
+      },
+      {
+        "goals_scored": 2,
+        "goals_conceded": 0,
+        "xg_for": 2.2,
+        "xg_against": 0.6,
+        "corners_for": 7,
+        "corners_against": 2,
+        "shots_total": 16,
+        "shots_on_target": 6,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 10,
+        "possession": 64
+      },
+      {
+        "goals_scored": 4,
+        "goals_conceded": 2,
+        "xg_for": 3.1,
+        "xg_against": 1.25,
+        "corners_for": 9,
+        "corners_against": 4,
+        "shots_total": 20,
+        "shots_on_target": 9,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 8,
+        "possession": 60
+      },
+      {
+        "goals_scored": 2,
+        "goals_conceded": 1,
+        "xg_for": 2.4,
+        "xg_against": 0.95,
+        "corners_for": 6,
+        "corners_against": 4,
+        "shots_total": 15,
+        "shots_on_target": 5,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 58
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Serhou Guirassy",
+        "position": "Delantero Centro Goleador",
+        "avg_shots_p90": 3.4,
+        "avg_sot_p90": 1.6,
+        "shot_creation_actions": 3.2,
+        "goal_prob": 0.62
+      },
+      {
+        "name": "Julian Brandt",
+        "position": "Mediapunta Organizador",
+        "avg_shots_p90": 2.3,
+        "avg_sot_p90": 0.9,
+        "shot_creation_actions": 5.4,
+        "goal_prob": 0.28
+      },
+      {
+        "name": "Karim Adeyemi",
+        "position": "Extremo Eléctrico",
+        "avg_shots_p90": 2.8,
+        "avg_sot_p90": 1.2,
+        "shot_creation_actions": 4.1,
+        "goal_prob": 0.35
+      },
+      {
+        "name": "Marcel Sabitzer",
+        "position": "Volante Mixto con Pegada",
+        "avg_shots_p90": 1.8,
+        "avg_sot_p90": 0.7,
+        "shot_creation_actions": 3.6,
+        "goal_prob": 0.18
+      }
+    ]
+  },
+  "Werder Bremen": {
+    "fifa_rank": 36,
+    "recent_form": [
+      "L",
+      "D",
+      "W",
+      "L",
+      "D",
+      "L",
+      "W",
+      "D"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 1,
+        "goals_conceded": 2,
+        "xg_for": 1.15,
+        "xg_against": 2.1,
+        "corners_for": 4,
+        "corners_against": 7,
+        "shots_total": 10,
+        "shots_on_target": 3,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 13,
+        "possession": 42
+      },
+      {
+        "goals_scored": 0,
+        "goals_conceded": 2,
+        "xg_for": 0.85,
+        "xg_against": 2.3,
+        "corners_for": 3,
+        "corners_against": 8,
+        "shots_total": 8,
+        "shots_on_target": 2,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 14,
+        "possession": 40
+      },
+      {
+        "goals_scored": 2,
+        "goals_conceded": 1,
+        "xg_for": 1.4,
+        "xg_against": 1.5,
+        "corners_for": 5,
+        "corners_against": 6,
+        "shots_total": 11,
+        "shots_on_target": 4,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 12,
+        "possession": 46
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Marvin Ducksch",
+        "position": "Delantero Referente",
+        "avg_shots_p90": 2.6,
+        "avg_sot_p90": 1.0,
+        "shot_creation_actions": 3.8,
+        "goal_prob": 0.3
+      },
+      {
+        "name": "Romano Schmid",
+        "position": "Volante Ofensivo Rápido",
+        "avg_shots_p90": 1.9,
+        "avg_sot_p90": 0.7,
+        "shot_creation_actions": 4.2,
+        "goal_prob": 0.18
+      },
+      {
+        "name": "Mitchell Weiser",
+        "position": "Carrilero Derecho",
+        "avg_shots_p90": 1.2,
+        "avg_sot_p90": 0.4,
+        "shot_creation_actions": 3.5,
+        "goal_prob": 0.12
+      }
+    ]
   }
 }

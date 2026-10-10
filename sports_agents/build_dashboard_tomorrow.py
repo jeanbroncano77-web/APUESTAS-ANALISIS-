@@ -872,10 +872,10 @@ try:
     # 6.1 allFijasData
     fijas_js = "var allFijasData = [\n"
     for idx, m in enumerate(matches):
-        home = m.get("home_team", "")
-        away = m.get("away_team", "")
+        home = m.get("home_team", "").replace("'", "\\'")
+        away = m.get("away_team", "").replace("'", "\\'")
         fija = m.get("la_fija_real", {})
-        pick = fija.get("selection", "Gol de Equipo / Doble Oportunidad")
+        pick = fija.get("selection", "Gol de Equipo / Doble Oportunidad").replace("'", "\\'")
         prob = fija.get("probability", 95.0)
         odds = fija.get("odds", 1.15)
         fijas_js += f"            {{ id: {idx}, match: '{home} vs {away}', pick: '{pick}', prob: {prob}, odds: {odds} }},\n"
@@ -891,8 +891,8 @@ try:
     # 6.2 chartConfigs
     chart_js = "var chartConfigs = [\n"
     for idx, m in enumerate(matches):
-        home = m.get("home_team", "")
-        away = m.get("away_team", "")
+        home = m.get("home_team", "").replace("'", "\\'")
+        away = m.get("away_team", "").replace("'", "\\'")
         probs = m.get("score_prediction", {}).get("1x2_probabilities", {})
         hw = round(probs.get("home_win_pct", 33.3), 1)
         dr = round(probs.get("draw_pct", 33.4), 1)

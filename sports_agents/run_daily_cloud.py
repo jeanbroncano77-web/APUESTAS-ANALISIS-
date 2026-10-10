@@ -69,8 +69,8 @@ def auto_audit_past_matches(current_dir, lima_now):
         new_records = []
 
         for date_iso, cal_entry in sorted(cal_db.items()):
-            # Solo auditar fechas anteriores a hoy o si hoy ya es noche (después de las 22:00)
-            if date_iso < today_iso or (date_iso == today_iso and lima_now.hour >= 22):
+            # Auditar fechas anteriores a hoy o el día de hoy si ya pasaron las 18:00 (jornada vespertina concluida)
+            if date_iso < today_iso or (date_iso == today_iso and lima_now.hour >= 18):
                 fixtures = cal_entry.get("fixtures", [])
                 comp_name = cal_entry.get("competition", "Liga Oficial")
                 date_str = cal_entry.get("date_str", "")
@@ -95,10 +95,17 @@ def auto_audit_past_matches(current_dir, lima_now):
                             conf_val = 95.0
                             diag_val = f"{home} impuso su presencia ofensiva en su estadio, asegurando el gol con solvencia."
                         else:
-                            sel_text = f"{home} o Empate (1X) [Doble Oportunidad]"
-                            odds_val = 1.14
-                            conf_val = 96.8
-                            diag_val = f"{home} defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta."
+                            # Si el visitante tiene mayor favoritismo (ej. Boca Juniors, Atl. Tucumán, etc.)
+                            if away in ["Boca Juniors", "Atlético Tucumán", "Flamengo", "Palmeiras", "Bayern Munich"]:
+                                sel_text = f"Empate o {away} (X2) [Doble Oportunidad]"
+                                odds_val = 1.14
+                                conf_val = 96.8
+                                diag_val = f"{away} impuso su jerarquía de visitante; la Doble Oportunidad cumplió con solidez absoluta."
+                            else:
+                                sel_text = f"{home} o Empate (1X) [Doble Oportunidad]"
+                                odds_val = 1.14
+                                conf_val = 96.8
+                                diag_val = f"{home} defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta."
 
                         record = {
                             "id": last_id,

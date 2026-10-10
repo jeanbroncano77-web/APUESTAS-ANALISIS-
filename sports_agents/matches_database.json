@@ -286,5 +286,14 @@
     "referee_avg_yellows": 4.4,
     "referee_avg_reds": 0.15,
     "intensity": "Muy Alta (Duelo técnico en La Paternal; posesión del Bicho ante la velocidad de Girotti y Botta)"
+  },
+  "Borussia Dortmund vs Werder Bremen": {
+    "tournament": "Bundesliga Alemana - Jornada 5 (Freitagsspiel)",
+    "stadium": "Signal Iduna Park (Westfalenstadion, Dortmund)",
+    "spectators_est": "81,365 en estadio (~30M audiencia global)",
+    "referee": "Felix Zwayer",
+    "referee_avg_yellows": 4.2,
+    "referee_avg_reds": 0.14,
+    "intensity": "Máxima (Duelo de viernes en la Muralla Amarilla; Dortmund busca afianzar el liderato invicto ante el Bremen)"
   }
 }
