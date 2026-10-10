@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-09 09:25:00",
+  "last_updated": "2026-10-09 21:45:35",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 2120.75,
-  "total_profit": 1120.75,
-  "roi_pct": 112.1,
+  "current_bankroll": 2192.75,
+  "total_profit": 1192.75,
+  "roi_pct": 119.3,
   "global_stats": {
-    "total": 68,
-    "wins": 63,
+    "total": 72,
+    "wins": 67,
     "losses": 5,
-    "win_rate": 92.6
+    "win_rate": 93.1
   },
   "fija_stats": {
-    "total": 36,
-    "wins": 35,
+    "total": 40,
+    "wins": 39,
     "losses": 1,
-    "win_rate": 97.2,
-    "active_streak": 24
+    "win_rate": 97.5,
+    "active_streak": 28
   },
   "history": [
     {
@@ -901,6 +901,58 @@
       "status": "win",
       "diagnostic": "Noche soñada en La Bombonera con victoria categórica 2-0 ante Vasco da Gama; la Doble Oportunidad cumplió con solidez absoluta.",
       "pnl": 14.0
+    },
+    {
+      "id": 69,
+      "match": "Aldosivi vs Sarmiento",
+      "tournament": "Liga Profesional Argentina (Fecha 12) & LigaPro Ecuador • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Menos de 3.5 goles totales [Total Goles]",
+      "odds": 1.15,
+      "confidence": 95.0,
+      "status": "win",
+      "diagnostic": "Choque equilibrado entre Aldosivi y Sarmiento; la línea conservadora de menos de 3.5 goles cumplió con holgura táctica.",
+      "pnl": 15.0
+    },
+    {
+      "id": 70,
+      "match": "Unión vs Defensa y Justicia",
+      "tournament": "Liga Profesional Argentina (Fecha 12) & LigaPro Ecuador • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Unión anota más de 0.5 goles [Gol de Equipo]",
+      "odds": 1.15,
+      "confidence": 95.0,
+      "status": "win",
+      "diagnostic": "Unión impuso su presencia ofensiva en su estadio, asegurando el gol con solvencia.",
+      "pnl": 15.0
+    },
+    {
+      "id": 71,
+      "match": "Delfín vs Mushuc Runa",
+      "tournament": "Liga Profesional Argentina (Fecha 12) & LigaPro Ecuador • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Delfín o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Delfín defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
+      "pnl": 14.0
+    },
+    {
+      "id": 72,
+      "match": "Libertad vs Leones FC",
+      "tournament": "Liga Profesional Argentina (Fecha 12) & LigaPro Ecuador • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Menos de 3.5 goles totales [Total Goles]",
+      "odds": 1.15,
+      "confidence": 95.0,
+      "status": "win",
+      "diagnostic": "Choque equilibrado entre Libertad y Leones FC; la línea conservadora de menos de 3.5 goles cumplió con holgura táctica.",
+      "pnl": 15.0
     }
   ]
 }
