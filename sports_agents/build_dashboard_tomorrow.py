@@ -804,8 +804,8 @@ if os.path.exists(feedback_log_path):
                     <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
                         <span class="badge-status badge-win" style="font-size: 0.8rem; padding: 0.35rem 0.8rem;">🔄 Ciclos Activos: {cycles}</span>
                         <span class="badge-status" style="background: rgba(59, 130, 246, 0.2); border: 1px solid rgba(59, 130, 246, 0.5); color: #60a5fa; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Brier Score: ~0.076</span>
-                        <span class="badge-status" style="background: rgba(245, 158, 11, 0.2); border: 1px solid rgba(245, 158, 11, 0.5); color: #fbbf24; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Win Rate Global: 92.6% (63/68)</span>
-                        <span class="badge-status" style="background: rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.5); color: #34d399; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Fijas: 97.2% (35/36)</span>
+                        <span class="badge-status" style="background: rgba(245, 158, 11, 0.2); border: 1px solid rgba(245, 158, 11, 0.5); color: #fbbf24; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Win Rate Global: {global_wr}% ({wins}/{total_audited})</span>
+                        <span class="badge-status" style="background: rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.5); color: #34d399; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Fijas: {fija_wr}% ({fija_wins}/{fija_total})</span>
                     </div>
                 </div>
 

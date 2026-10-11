@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-10 22:51:04",
+  "last_updated": "2026-10-11 15:29:11",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 2279.75,
-  "total_profit": 1279.75,
-  "roi_pct": 128.0,
+  "current_bankroll": 2121.75,
+  "total_profit": 1121.75,
+  "roi_pct": 112.2,
   "global_stats": {
-    "total": 78,
-    "wins": 73,
-    "losses": 5,
-    "win_rate": 93.6
+    "total": 83,
+    "wins": 76,
+    "losses": 7,
+    "win_rate": 91.6
   },
   "fija_stats": {
-    "total": 46,
-    "wins": 45,
-    "losses": 1,
-    "win_rate": 97.8,
-    "active_streak": 34
+    "total": 51,
+    "wins": 48,
+    "losses": 3,
+    "win_rate": 94.1,
+    "active_streak": 1
   },
   "history": [
     {
@@ -1031,6 +1031,71 @@
       "status": "win",
       "diagnostic": "Borussia Dortmund impuso su presencia ofensiva en su estadio, asegurando el gol con solvencia.",
       "pnl": 15.0
+    },
+    {
+      "id": 79,
+      "match": "Liverpool vs Manchester City",
+      "tournament": "Premier League • Finalizado (0 - 3)",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Liverpool anota más de 0.5 goles [Gol de Equipo]",
+      "odds": 1.15,
+      "confidence": 95.7,
+      "status": "loss",
+      "diagnostic": "FALLADO (0 - 3): Liverpool se quedó en cero tras la expulsión de Ryan Gravenberch (61'). El City dominó y cerró el arco red con goles de Haaland, Doku y Cherki.",
+      "pnl": -100.0
+    },
+    {
+      "id": 80,
+      "match": "Lazio vs Monza",
+      "tournament": "Serie A • Finalizado (3 - 1)",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Lazio o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 95.0,
+      "status": "win",
+      "diagnostic": "ACERTADO (3 - 1): Lazio dominó con autoridad en el Stadio Olimpico con goles de Tavares, Isaksen y Pinamonti, sellando la Doble Oportunidad.",
+      "pnl": 14.0
+    },
+    {
+      "id": 81,
+      "match": "Como vs AS Roma",
+      "tournament": "Serie A • Finalizado (0 - 0)",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Empate o AS Roma (X2) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "ACERTADO (0 - 0): La Roma aguantó con solvencia táctica de visita e incluso jugando con diez por roja a Malen; la Doble Oportunidad X2 protegió la apuesta.",
+      "pnl": 14.0
+    },
+    {
+      "id": 82,
+      "match": "Crystal Palace vs Nottingham Forest",
+      "tournament": "Premier League • Finalizado (3 - 1)",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Menos de 3.5 goles totales [Total Goles]",
+      "odds": 1.15,
+      "confidence": 95.0,
+      "status": "loss",
+      "diagnostic": "FALLADO (3 - 1 / 4 goles): El partido se desmadró tras el primer gol; el ritmo vertiginoso de transiciones de Premier League provocó 4 tantos, rompiendo el Under 3.5.",
+      "pnl": -100.0
+    },
+    {
+      "id": 83,
+      "match": "Elche vs Celta de Vigo",
+      "tournament": "LaLiga EA Sports • Finalizado (0 - 0)",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Empate o Celta de Vigo (X2) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "ACERTADO (0 - 0): Partido de riguroso orden táctico en el Martínez Valero; Celta no concedió ocasiones claras y cumplió la Doble Oportunidad X2.",
+      "pnl": 14.0
     }
   ]
 }

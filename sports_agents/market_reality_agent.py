@@ -61,8 +61,12 @@ class MarketRealityAgent:
         candidates = []
         tier1_giants = {
             "Alemania", "Francia", "España", "Inglaterra", "Portugal", "Países Bajos",
-            "Argentina", "Brasil", "Real Madrid", "Bayern Munich", "Manchester City", "Barcelona"
+            "Argentina", "Brasil", "Real Madrid", "Bayern Munich", "Manchester City", "Barcelona",
+            "Liverpool", "Arsenal", "Chelsea", "PSG", "Inter Milan", "Inter", "Juventus",
+            "Atlético Madrid", "Borussia Dortmund", "Dortmund"
         }
+
+        both_tier1_giants = (home_team in tier1_giants and away_team in tier1_giants)
 
         # 1. Extraer probabilidades de 1X2 (Prioridad: Matriz Exacta)
         if exact_market_probs:
@@ -190,6 +194,9 @@ class MarketRealityAgent:
         # -------------------------------------------------------------
         # 4. MERCADO: TOTAL DE GOLES FIJO - UNDER (Menos de 3.5, Menos de 4.5)
         # REGLA ESTRICTA: Cero líneas de 5.5 (amateur/no serias)
+        # REGLA DE RETROALIMENTACIÓN CICLO #58: Cero inflación artificial.
+        # En ligas dinámicas, transiciones directas convierten un 1-0 en 3-1 rápidamente.
+        # Menos de 3.5 SOLO es elegible si el xG conjunto es <= 2.2 y la probabilidad real >= 92.0%.
         # -------------------------------------------------------------
         if exact_market_probs and "under_4_5_pct" in exact_market_probs:
             prob_under35 = exact_market_probs["under_3_5_pct"]
@@ -198,9 +205,9 @@ class MarketRealityAgent:
             prob_under35 = round(min(95.5, 85.0 + max(0.0, (2.9 - exp_total_goals) * 10.0)), 1)
             prob_under45 = round(min(97.6, 94.0 + min(3.5, max(0.0, (3.5 - exp_total_goals) * 3.5))), 1)
 
-        # Menos de 3.5 goles (Línea Principal de Valor Táctico)
-        if prob_under35 >= 75.0:
-            capped_pu35 = round(min(96.8, max(95.0, prob_under35 * 1.08 if prob_under35 < 95.0 else prob_under35)), 1)
+        # Menos de 3.5 goles (Solo admisible si no hay inflación y el partido es estrictamente cerrado)
+        if prob_under35 >= 92.0 and exp_total_goals <= 2.2:
+            capped_pu35 = round(min(96.5, prob_under35), 1)
             odds_under35 = round(max(1.15, (1.0 / (capped_pu35 / 100.0)) * 1.07), 2)
             candidates.append({
                 "market": "Total de Goles Fijo",
@@ -209,12 +216,12 @@ class MarketRealityAgent:
                 "probability": capped_pu35,
                 "odds": odds_under35,
                 "availability": "Universal en todas las plataformas (Bet365, Betano)",
-                "rationale": f"Bloques tácticos equilibrados ({round(exp_total_goals, 2)} xG esperados) impiden un partido de 4 o más goles."
+                "rationale": f"Bloques tácticos ultra-cerrados ({round(exp_total_goals, 2)} xG esperados) impiden un partido de 4 o más goles."
             })
 
-        # Menos de 4.5 goles (Línea de Respaldo Defensivo en Partidos de Mayor Ritmo)
-        if prob_under45 >= 90.0:
-            capped_pu45 = round(min(97.5, max(95.5, prob_under45)), 1)
+        # Menos de 4.5 goles (Línea de Respaldo Defensivo en Partidos con xG moderado <= 2.85)
+        if prob_under45 >= 93.0 and exp_total_goals <= 2.85:
+            capped_pu45 = round(min(97.2, prob_under45), 1)
             odds_under45 = round(max(1.12, (1.0 / (capped_pu45 / 100.0)) * 1.05), 2)
             candidates.append({
                 "market": "Total de Goles Fijo",
@@ -267,6 +274,11 @@ class MarketRealityAgent:
 
         # -------------------------------------------------------------
         # 6. MERCADO: GOL DE EQUIPO DE SEGURIDAD (Equipo Marca > 0.5)
+        # REGLA DE RETROALIMENTACIÓN CICLO #58:
+        # En duelos directos entre Gigantes Tier-1 (ej. Liverpool vs Man City),
+        # VETO TOTAL a Gol de Equipo como La Fija: el riesgo de tarjeta roja (ej. Gravenberch al 61')
+        # o cerrojo defensivo de nivel mundial es demasiado alto para jugárselo a un solo club.
+        # En esos partidos se exige Doble Oportunidad, Over Total o Córners.
         # -------------------------------------------------------------
         if exact_market_probs and "home_over_0_5_pct" in exact_market_probs:
             prob_hg05 = exact_market_probs["home_over_0_5_pct"]
@@ -275,29 +287,30 @@ class MarketRealityAgent:
             prob_hg05 = round(min(97.2, 95.2 + min(2.0, max(0.0, (home_xg - 1.0) * 1.5))), 1)
             prob_ag05 = round(min(97.0, 95.0 + min(2.0, max(0.0, (away_xg - 1.0) * 1.5))), 1)
 
-        if home_xg >= 1.15 or (h_win >= 40.0 and prob_hg05 >= 75.0) or (prob_hg05 >= 80.0):
-            capped_phg = round(min(96.8, max(95.0, prob_hg05 * 1.14 if prob_hg05 < 95.0 else prob_hg05)), 1)
-            candidates.append({
-                "market": "Gol de Equipo de Seguridad",
-                "category_code": "GOL_EQUIPO",
-                "selection": f"{home_team} anota más de 0.5 goles",
-                "probability": capped_phg,
-                "odds": round(max(1.15, (1.0 / (capped_phg / 100.0)) * 1.05), 2),
-                "availability": "Universal en todas las plataformas (Bet365, Betano)",
-                "rationale": f"Volumen ofensivo de {home_team} ({round(home_xg, 2)} xG) asegura al menos un gol a favor."
-            })
+        if not both_tier1_giants:
+            if home_xg >= 1.35 and prob_hg05 >= 82.0:
+                capped_phg = round(min(96.8, max(94.8, prob_hg05 if prob_hg05 >= 94.8 else prob_hg05 * 1.08)), 1)
+                candidates.append({
+                    "market": "Gol de Equipo de Seguridad",
+                    "category_code": "GOL_EQUIPO",
+                    "selection": f"{home_team} anota más de 0.5 goles",
+                    "probability": capped_phg,
+                    "odds": round(max(1.15, (1.0 / (capped_phg / 100.0)) * 1.05), 2),
+                    "availability": "Universal en todas las plataformas (Bet365, Betano)",
+                    "rationale": f"Volumen ofensivo de {home_team} ({round(home_xg, 2)} xG) asegura al menos un gol a favor."
+                })
 
-        if away_xg >= 1.15 or (a_win >= 40.0 and prob_ag05 >= 75.0) or (prob_ag05 >= 80.0):
-            capped_pag = round(min(96.8, max(95.0, prob_ag05 * 1.14 if prob_ag05 < 95.0 else prob_ag05)), 1)
-            candidates.append({
-                "market": "Gol de Equipo de Seguridad",
-                "category_code": "GOL_EQUIPO",
-                "selection": f"{away_team} anota más de 0.5 goles",
-                "probability": capped_pag,
-                "odds": round(max(1.15, (1.0 / (capped_pag / 100.0)) * 1.05), 2),
-                "availability": "Universal en todas las plataformas (Bet365, Betano)",
-                "rationale": f"Eficacia ofensiva de {away_team} ({round(away_xg, 2)} xG) garantiza presencia en el marcador."
-            })
+            if away_xg >= 1.35 and prob_ag05 >= 82.0:
+                capped_pag = round(min(96.8, max(94.8, prob_ag05 if prob_ag05 >= 94.8 else prob_ag05 * 1.08)), 1)
+                candidates.append({
+                    "market": "Gol de Equipo de Seguridad",
+                    "category_code": "GOL_EQUIPO",
+                    "selection": f"{away_team} anota más de 0.5 goles",
+                    "probability": capped_pag,
+                    "odds": round(max(1.15, (1.0 / (capped_pag / 100.0)) * 1.05), 2),
+                    "availability": "Universal en todas las plataformas (Bet365, Betano)",
+                    "rationale": f"Eficacia ofensiva de {away_team} ({round(away_xg, 2)} xG) garantiza presencia en el marcador."
+                })
 
         # -------------------------------------------------------------
         # 7. MERCADO: DOBLE OPORTUNIDAD BLINDADA (1X / X2)
@@ -386,9 +399,6 @@ class MarketRealityAgent:
             # Si la probabilidad está en la franja ultra-fija exigida (94.8% - 97.8%):
             if 94.8 <= prob <= 97.8:
                 base_score = 150.0 + (prob - 94.8) * 8.0 + (odds * 25.0)
-                # Priorizar Menos de 3.5 sobre 4.5 en partidos de perfil cerrado (< 2.8 xG) por mayor cuota y valor real
-                if c.get("selection") == "Menos de 3.5 goles totales" and exp_total_goals <= 2.8:
-                    base_score += 15.0
                 # Diversificación inteligente: Si el orquestador solicita una categoría preferida para no repetir mercado
                 if preferred_category and c.get("category_code") == preferred_category:
                     base_score += 80.0
