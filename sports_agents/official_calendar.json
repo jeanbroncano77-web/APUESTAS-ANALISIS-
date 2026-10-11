@@ -261,37 +261,37 @@
   "2026-10-11": {
     "date_str": "11/10/2026",
     "day_name": "Domingo",
-    "competition": "Liga Profesional Argentina & Clásicos Sudamericanos",
+    "competition": "Ligas Europeas de Élite (Domingo de Grandes)",
     "fixtures": [
       [
-        "Estudiantes",
-        "Flamengo",
+        "Napoli",
+        "Como",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Marseille",
+        "Angers",
+        "GOL_EQUIPO"
+      ],
+      [
+        "Borussia Dortmund",
+        "St. Pauli",
+        "GOL_EQUIPO"
+      ],
+      [
+        "Leganés",
+        "Valencia",
         "GOLES_UNDER"
       ],
       [
-        "Boca Juniors",
-        "Vasco da Gama",
-        "DOBLE_OPORTUNIDAD"
-      ],
-      [
-        "Tigre",
-        "Platense",
-        "DOBLE_OPORTUNIDAD"
-      ],
-      [
-        "Banfield",
-        "Barracas Central",
+        "Sunderland",
+        "Leeds United",
         "GOLES_UNDER"
       ],
       [
-        "Huracán",
-        "Rosario Central",
-        "DOBLE_OPORTUNIDAD"
-      ],
-      [
-        "Fluminense",
-        "Palmeiras",
-        "DOBLE_OPORTUNIDAD"
+        "Rio Ave",
+        "Famalicão",
+        "GOLES_UNDER"
       ]
     ]
   },

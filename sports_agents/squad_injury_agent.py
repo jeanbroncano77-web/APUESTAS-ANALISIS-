@@ -75,14 +75,24 @@ class SquadInjuryAgent:
             ],
             "Barcelona": [
                 {
-                    "name": "Dani Olmo",
-                    "aliases": ["olmo", "dani olmo"],
-                    "injury": "Lesión en el bíceps femoral del muslo derecho",
+                    "name": "Raphinha",
+                    "aliases": ["raphinha", "raphiña"],
+                    "injury": "Sobrecarga muscular en el bíceps femoral / baja confirmada",
+                    "severity": "BAJA MÉDICA CONFIRMADA",
+                    "veto_player_props": True,
+                    "offense_penalty": 0.90,
+                    "reallocation_targets": ["Dani Olmo", "Lamine Yamal", "Robert Lewandowski", "Pedri"],
+                    "medical_detail": "Baja médica ratificada; Dani Olmo y Lamine Yamal absorben el volumen ofensivo."
+                },
+                {
+                    "name": "Roony Bardghji",
+                    "aliases": ["roony bardghji", "rony bhadji", "bardghji", "rony"],
+                    "injury": "Rotura de ligamento cruzado anterior en proceso de recuperación",
                     "severity": "BAJA CONFIRMADA",
                     "veto_player_props": True,
-                    "offense_penalty": 0.92,
-                    "reallocation_targets": ["Raphinha", "Pedri", "Lamine Yamal"],
-                    "medical_detail": "Lesión muscular sufrida en Montilivi; veto total de remates."
+                    "offense_penalty": 0.98,
+                    "reallocation_targets": ["Lamine Yamal", "Ferran Torres"],
+                    "medical_detail": "Baja médica de larga duración confirmada."
                 },
                 {
                     "name": "Marc-André ter Stegen",

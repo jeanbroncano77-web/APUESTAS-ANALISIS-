@@ -110,15 +110,50 @@ class SportsDirectorAgent:
         # Paso 6: Simulación Cuantitativa Monte Carlo (10,000 iteraciones con Dixon-Coles)
         score_analysis = self.simulator.simulate_match(lambda_h, lambda_a)
         
-        # Proteger suelo mínimo de empate si es partido competitivo de visitante (usando dynamic_draw_floor calibrado)
+        # Calibración Robusta de 1X2 y Amortiguación de Favoritos Visitantes (Away Variance Friction)
         probs_1x2 = dict(score_analysis["1x2_probabilities"])
         effective_draw_floor = dynamic_draw_floor if not psychology["is_friendly"] else max(20.0, dynamic_draw_floor - 2.0)
+        
+        # 1. Proteger suelo mínimo de empate redistribuyendo proporcionalmente (sin dejar porcentajes negativos)
         if probs_1x2["draw_pct"] < effective_draw_floor:
             deficit = effective_draw_floor - probs_1x2["draw_pct"]
             probs_1x2["draw_pct"] = round(effective_draw_floor, 2)
-            probs_1x2["home_win_pct"] = round(probs_1x2["home_win_pct"] - (deficit * 0.5), 2)
-            probs_1x2["away_win_pct"] = round(probs_1x2["away_win_pct"] - (deficit * 0.5), 2)
-            score_analysis["1x2_probabilities"] = probs_1x2
+            tot_win = max(0.1, probs_1x2["home_win_pct"] + probs_1x2["away_win_pct"])
+            h_ratio = probs_1x2["home_win_pct"] / tot_win
+            a_ratio = probs_1x2["away_win_pct"] / tot_win
+            probs_1x2["home_win_pct"] = max(4.0, round(probs_1x2["home_win_pct"] - (deficit * h_ratio), 2))
+            probs_1x2["away_win_pct"] = max(4.0, round(probs_1x2["away_win_pct"] - (deficit * a_ratio), 2))
+        
+        # 2. Fricción Cuantitativa para Favoritos Visitantes (Tope de Realismo)
+        # En las 5 grandes ligas europeas, ningún visitante supera 68-70% de probabilidad de victoria directa
+        # debido a la varianza inherente del factor local del rival y riesgo de tropiezo
+        if probs_1x2["away_win_pct"] > 68.0:
+            excess_away = probs_1x2["away_win_pct"] - 68.0
+            probs_1x2["away_win_pct"] = 68.0
+            probs_1x2["draw_pct"] = round(probs_1x2["draw_pct"] + (excess_away * 0.6), 2)
+            probs_1x2["home_win_pct"] = round(probs_1x2["home_win_pct"] + (excess_away * 0.4), 2)
+
+        # Normalizar exactamente a 100.0%
+        tot_1x2 = probs_1x2["home_win_pct"] + probs_1x2["draw_pct"] + probs_1x2["away_win_pct"]
+        if tot_1x2 > 0:
+            probs_1x2["home_win_pct"] = round((probs_1x2["home_win_pct"] / tot_1x2) * 100.0, 2)
+            probs_1x2["draw_pct"] = round((probs_1x2["draw_pct"] / tot_1x2) * 100.0, 2)
+            probs_1x2["away_win_pct"] = round(100.0 - probs_1x2["home_win_pct"] - probs_1x2["draw_pct"], 2)
+
+        score_analysis["1x2_probabilities"] = probs_1x2
+
+        # Sincronizar en exact_market_probabilities para coherencia absoluta
+        if "exact_market_probabilities" in score_analysis:
+            emp = score_analysis["exact_market_probabilities"]
+            emp["home_win_pct"] = probs_1x2["home_win_pct"]
+            emp["draw_pct"] = probs_1x2["draw_pct"]
+            emp["away_win_pct"] = probs_1x2["away_win_pct"]
+            emp["double_chance_1x_pct"] = round(probs_1x2["home_win_pct"] + probs_1x2["draw_pct"], 2)
+            emp["double_chance_x2_pct"] = round(probs_1x2["away_win_pct"] + probs_1x2["draw_pct"], 2)
+            emp["double_chance_12_pct"] = round(probs_1x2["home_win_pct"] + probs_1x2["away_win_pct"], 2)
+            dnb_denom = max(0.1, probs_1x2["home_win_pct"] + probs_1x2["away_win_pct"])
+            emp["dnb_home_pct"] = round((probs_1x2["home_win_pct"] / dnb_denom) * 100.0, 2)
+            emp["dnb_away_pct"] = round((probs_1x2["away_win_pct"] / dnb_denom) * 100.0, 2)
 
         # Paso 7: Remates y Tiros a Puerta de Jugadores VETADOS / FILTRADOS
         home_players_proj = self.player_agent.analyze_team_players(

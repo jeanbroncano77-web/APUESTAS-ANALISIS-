@@ -340,5 +340,59 @@
     "referee_avg_yellows": 4.1,
     "referee_avg_reds": 0.16,
     "intensity": "Alta (El campeón de Italia ante el descaro y verticalidad al contragolpe del Parma de Man y Bonny)"
+  },
+  "Napoli vs Como": {
+    "tournament": "Serie A - Giornata 7 (Estelar de Viernes)",
+    "stadium": "Stadio Diego Armando Maradona (Nápoles)",
+    "spectators_est": "50,500 en estadio (~28M audiencia global)",
+    "referee": "Ermanno Feliciani",
+    "referee_avg_yellows": 4.2,
+    "referee_avg_reds": 0.15,
+    "intensity": "Muy Alta (Napoli de Antonio Conte liderando la Serie A con Kvaratskhelia, Lukaku y McTominay)"
+  },
+  "Marseille vs Angers": {
+    "tournament": "Ligue 1 McDonald's - Jornada 7 (Viernes)",
+    "stadium": "Orange Vélodrome (Marsella)",
+    "spectators_est": "64,000 en estadio (~22M audiencia global)",
+    "referee": "Romain Lissorgue",
+    "referee_avg_yellows": 3.9,
+    "referee_avg_reds": 0.2,
+    "intensity": "Alta (El Vélodrome rugiendo con De Zerbi y Greenwood en busca de puntos clave de Champions)"
+  },
+  "Borussia Dortmund vs St. Pauli": {
+    "tournament": "Bundesliga - Jornada 7 (Viernes Noche)",
+    "stadium": "Signal Iduna Park (Dortmund)",
+    "spectators_est": "81,365 en estadio (~32M audiencia global)",
+    "referee": "Sascha Stegemann",
+    "referee_avg_yellows": 4.1,
+    "referee_avg_reds": 0.16,
+    "intensity": "Máxima (Signal Iduna Park encendido; Dortmund de Sahin con Guirassy buscando el asalto al liderato)"
+  },
+  "Leganés vs Valencia": {
+    "tournament": "LaLiga EA Sports - Jornada 9 (Viernes)",
+    "stadium": "Estadio Municipal Butarque (Leganés, Madrid)",
+    "spectators_est": "12,450 en estadio (~18M audiencia global)",
+    "referee": "Jorge Figueroa Vázquez",
+    "referee_avg_yellows": 4.7,
+    "referee_avg_reds": 0.24,
+    "intensity": "Tensión Extrema (Duelo directo por la permanencia con defensas cerradas y alto roce físico)"
+  },
+  "Sunderland vs Leeds United": {
+    "tournament": "EFL Championship - Matchday 9 (Viernes Estelar)",
+    "stadium": "Stadium of Light (Sunderland)",
+    "spectators_est": "41,500 en estadio (~14M audiencia global)",
+    "referee": "Tim Robinson",
+    "referee_avg_yellows": 3.8,
+    "referee_avg_reds": 0.12,
+    "intensity": "Máxima (Batalla por el ascenso directo a Premier League en un Stadium of Light a reventar)"
+  },
+  "Rio Ave vs Famalicão": {
+    "tournament": "Liga Portugal Betclic - Jornada 8 (Viernes)",
+    "stadium": "Estádio dos Arcos (Vila do Conde)",
+    "spectators_est": "5,300 en estadio (~4M audiencia global)",
+    "referee": "Gustavo Correia",
+    "referee_avg_yellows": 5.4,
+    "referee_avg_reds": 0.28,
+    "intensity": "Alta (Duelo táctico portugués con alta fricción y arbitraje severo)"
   }
 }
