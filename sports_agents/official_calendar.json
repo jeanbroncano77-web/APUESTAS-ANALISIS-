@@ -261,37 +261,37 @@
   "2026-10-11": {
     "date_str": "11/10/2026",
     "day_name": "Domingo",
-    "competition": "Ligas Europeas de Élite (Domingo de Grandes)",
+    "competition": "Ligas de Élite & Superclásicos (Domingo 11 de Octubre)",
     "fixtures": [
       [
-        "Napoli",
-        "Como",
+        "Liverpool",
+        "Manchester City",
+        "GOL_EQUIPO"
+      ],
+      [
+        "Lazio",
+        "Monza",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Marseille",
-        "Angers",
-        "GOL_EQUIPO"
+        "Como",
+        "AS Roma",
+        "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Borussia Dortmund",
-        "St. Pauli",
-        "GOL_EQUIPO"
-      ],
-      [
-        "Leganés",
-        "Valencia",
+        "Crystal Palace",
+        "Nottingham Forest",
         "GOLES_UNDER"
       ],
       [
-        "Sunderland",
-        "Leeds United",
+        "Elche",
+        "Celta de Vigo",
         "GOLES_UNDER"
       ],
       [
-        "Rio Ave",
-        "Famalicão",
-        "GOLES_UNDER"
+        "Liga de Quito",
+        "Barcelona SC",
+        "DOBLE_OPORTUNIDAD"
       ]
     ]
   },
