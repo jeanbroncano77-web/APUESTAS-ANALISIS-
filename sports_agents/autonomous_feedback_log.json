@@ -1,19 +1,7 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 58,
+  "cycles_completed": 59,
   "calibrations": [
-    {
-      "cycle": 9,
-      "timestamp": "2026-10-03 09:20:54",
-      "action": "Auto-Calibración Autónoma Diaria (Sábado 03/10/2026)",
-      "observations": [
-        "SquadInjuryAgent: 8 bajas médicas vetadas (Rodri, Dani Olmo, Dani Carvajal).",
-        "MarketRealityAgent: 6 Fijas optimizadas con confianza media del 97.1%.",
-        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
-        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Sábado."
-      ],
-      "system_health": "Excelente (Win Rate Auditado: 89.5%, Brier Score: 0.102, Ciclo #9)"
-    },
     {
       "cycle": 10,
       "timestamp": "2026-10-03 09:22:04",
@@ -640,17 +628,33 @@
         "SALUD DEL SISTEMA: Track record honesto y transparente con 83 picks auditados (91.6% Win Rate Global | 94.1% Win Rate Fijas | Banca: $2,121.75 USD | ROI: +112.2%)."
       ],
       "system_health": "Calibrado (Win Rate Fijas: 94.1% [48/51] | Win Rate Global: 91.6% [76/83] | Ciclo #58)"
+    },
+    {
+      "cycle": 59,
+      "timestamp": "2026-10-11 18:32:56",
+      "action": "Calibración Bayesiana Post-Auditoría (Veto Clásicos & Ritmo Premier League)",
+      "observations": [
+        "AJUSTE VINCULADO AL PARTIDO #79 (Liverpool 0-3 Man City): Activado tier1_clash_single_team_goal_ban=True. Se prohíbe el mercado 'Gol de Equipo' en derbis entre colosos Tier-1 de élite debido al riesgo de expulsiones o colapso táctico.",
+        "AJUSTE VINCULADO AL PARTIDO #82 (Crystal Palace 3-1 Nottingham Forest): Activado pl_under_market_veto_fija=True y premier_league_pace_volatility=1.20. Prohibición estricta de mercados Under como La Fija en Premier League.",
+        "MERCADO PREFERENCIAL PRIORITARIO: Doble Oportunidad (1X / X2) blindada con double_chance_resilience_priority=1.40 como el mercado más infalible del sistema cuantitativo.",
+        "REGLA DE CONVERGENCIA: Auditoría sincronizada al 100% con 83 partidos registrados (76 Aciertos / 7 Fallos | 51 Fijas: 48 Aciertos / 3 Fallos | 94.1% Win Rate en Fijas)."
+      ],
+      "system_health": "Calibrado y Blindado (Win Rate Fijas: 94.1% [48/51] | Win Rate Global: 91.6% [76/83] | Ciclo #59)"
     }
   ],
   "current_weights": {
-    "squad_offense_penalty": 0.8,
+    "squad_offense_penalty": 0.78,
     "minimum_draw_floor": 26.0,
     "corner_game_state_dampener": 0.85,
     "player_sot_restriction_factor": 0.35,
     "tier1_superiority_buffer": 1.35,
     "root_ban_handicaps": true,
     "bivariate_overdispersion_alpha": 0.1,
-    "strength_of_schedule_floor": 1.45
+    "strength_of_schedule_floor": 1.45,
+    "tier1_clash_single_team_goal_ban": true,
+    "pl_under_market_veto_fija": true,
+    "premier_league_pace_volatility": 1.2,
+    "double_chance_resilience_priority": 1.4
   },
   "last_auto_audit": {
     "cycle": 6,
@@ -662,5 +666,5 @@
       "squad_offense_penalty: 0.82 -> 0.8"
     ]
   },
-  "last_updated": "2026-10-11 15:29:11"
+  "last_updated": "2026-10-11 18:32:56"
 }

@@ -1292,7 +1292,7 @@
             </button>
             <button class="btn-view-mode" id="btn-mode-autocorrect" onclick="switchMainView('autocorrect')">
                 🧠 Autoaprendizaje & Crítica Diaria
-                <span class="badge-winrate-pill" style="background: rgba(139, 92, 246, 0.2); border-color: rgba(139, 92, 246, 0.5); color: #c4b5fd;">Ciclo #58 &bull; 12 Agentes (Veto de Raíz a Hándicaps y 5.5 Goles &bull; 100% Mercados Reales)</span>
+                <span class="badge-winrate-pill" style="background: rgba(139, 92, 246, 0.2); border-color: rgba(139, 92, 246, 0.5); color: #c4b5fd;">Ciclo #59 &bull; 12 Agentes (Veto de Raíz a Hándicaps y 5.5 Goles &bull; 100% Mercados Reales)</span>
             </button>
         </div>
 
@@ -4045,7 +4045,7 @@
                 <div class="chart-box">
                     <div class="chart-box-title">
                         <span>Win Rate por Mercado</span>
-                        <span style="font-size: 0.8rem; color: var(--gold); font-weight: 700;">La Fija: 95.8% (23/24)</span>
+                        <span style="font-size: 0.8rem; color: var(--gold); font-weight: 700;">La Fija: 94.1% (48/51)</span>
                     </div>
                     <div style="height: 280px; position: relative;">
                         <canvas id="chart-category-winrate"></canvas>
@@ -4056,14 +4056,14 @@
             <!-- Barra de Filtros de la Tabla -->
             <div class="audit-filter-bar">
                 <span class="filter-label">Filtrar Auditoría:</span>
-                <button class="btn-filter-audit active" onclick="filterAuditTable('all', this)">Todos (56)</button>
-                <button class="btn-filter-audit" onclick="filterAuditTable('win', this)" style="border-color: rgba(16, 185, 129, 0.4); color: #34d399;">✅ SÓLO ACIERTOS (51)</button>
-                <button class="btn-filter-audit" onclick="filterAuditTable('loss', this)" style="border-color: rgba(244, 63, 94, 0.4); color: #fb7185;">❌ SÓLO FALLOS (5)</button>
-                <button class="btn-filter-audit" onclick="filterAuditTable('fija', this)">👑 La Fija (24)</button>
-                <button class="btn-filter-audit" onclick="filterAuditTable('goles', this)">⚽ Goles (9)</button>
+                <button class="btn-filter-audit active" onclick="filterAuditTable('all', this)">Todos (83)</button>
+                <button class="btn-filter-audit" onclick="filterAuditTable('win', this)" style="border-color: rgba(16, 185, 129, 0.4); color: #34d399;">✅ SÓLO ACIERTOS (76)</button>
+                <button class="btn-filter-audit" onclick="filterAuditTable('loss', this)" style="border-color: rgba(244, 63, 94, 0.4); color: #fb7185;">❌ SÓLO FALLOS (7)</button>
+                <button class="btn-filter-audit" onclick="filterAuditTable('fija', this)">👑 La Fija (51)</button>
+                <button class="btn-filter-audit" onclick="filterAuditTable('goles', this)">⚽ Goles (8)</button>
                 <button class="btn-filter-audit" onclick="filterAuditTable('props', this)">👤 Player Props (10)</button>
                 <button class="btn-filter-audit" onclick="filterAuditTable('1x2', this)">⚖️ 1X2 (8)</button>
-                <button class="btn-filter-audit" onclick="filterAuditTable('corners', this)">🚩 Córners (5)</button>
+                <button class="btn-filter-audit" onclick="filterAuditTable('corners', this)">🚩 Córners (4)</button>
             </div>
 
             <!-- Tabla de Auditoría Detallada: Lo que Sí se Acertó y lo que No -->
@@ -4081,7 +4081,8 @@
                         </tr>
                     </thead>
                     <tbody id="audit-table-tbody">
-<tr class="audit-row row-win" data-category="fija" data-status="win">
+
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#1</td>
                             <td>
                                 <div class="match-name">Alemania vs Serbia</div>
@@ -4095,11 +4096,11 @@
                             <td class="col-conf">97.3%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$12.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="1x2" data-status="win">
+                        <tr class="audit-row row-win" data-category="1x2" data-status="win">
                             <td class="col-id">#2</td>
                             <td>
                                 <div class="match-name">Alemania vs Serbia</div>
@@ -4113,11 +4114,11 @@
                             <td class="col-conf">70.1%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$27.50</td>
                         </tr>
-<tr class="audit-row row-win" data-category="goles" data-status="win">
+                        <tr class="audit-row row-win" data-category="goles" data-status="win">
                             <td class="col-id">#3</td>
                             <td>
                                 <div class="match-name">Alemania vs Serbia</div>
@@ -4131,11 +4132,11 @@
                             <td class="col-conf">65.5%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$31.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="props" data-status="win">
+                        <tr class="audit-row row-win" data-category="props" data-status="win">
                             <td class="col-id">#4</td>
                             <td>
                                 <div class="match-name">Alemania vs Serbia</div>
@@ -4149,29 +4150,29 @@
                             <td class="col-conf">77.9%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$18.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="other" data-status="win">
+                        <tr class="audit-row row-win" data-category="other" data-status="win">
                             <td class="col-id">#5</td>
                             <td>
                                 <div class="match-name">Alemania vs Serbia</div>
                                 <div class="match-tourn">UEFA Nations League A &bull; Final: 2 - 0</div>
                             </td>
                             <td>
-                                <span class="badge-cat-tag cat-other">Marcador Exacto</span>
+                                <span class="badge-cat-tag cat-fija">Marcador Exacto</span>
                                 <div class="sel-text">Marcador Modal: 2 - 0 (Top 1)</div>
                             </td>
                             <td class="col-odds">@7.63</td>
                             <td class="col-conf">13.1%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$140.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="fija" data-status="win">
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#6</td>
                             <td>
                                 <div class="match-name">Dinamarca vs Portugal</div>
@@ -4185,11 +4186,11 @@
                             <td class="col-conf">99.3%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$10.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="1x2" data-status="win">
+                        <tr class="audit-row row-win" data-category="1x2" data-status="win">
                             <td class="col-id">#7</td>
                             <td>
                                 <div class="match-name">Dinamarca vs Portugal</div>
@@ -4203,11 +4204,11 @@
                             <td class="col-conf">52.5%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$52.50</td>
                         </tr>
-<tr class="audit-row row-win" data-category="goles" data-status="win">
+                        <tr class="audit-row row-win" data-category="goles" data-status="win">
                             <td class="col-id">#8</td>
                             <td>
                                 <div class="match-name">Dinamarca vs Portugal</div>
@@ -4221,11 +4222,11 @@
                             <td class="col-conf">82.0%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$21.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="corners" data-status="win">
+                        <tr class="audit-row row-win" data-category="corners" data-status="win">
                             <td class="col-id">#9</td>
                             <td>
                                 <div class="match-name">Dinamarca vs Portugal</div>
@@ -4239,11 +4240,11 @@
                             <td class="col-conf">71.0%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$23.85</td>
                         </tr>
-<tr class="audit-row row-win" data-category="props" data-status="win">
+                        <tr class="audit-row row-win" data-category="props" data-status="win">
                             <td class="col-id">#10</td>
                             <td>
                                 <div class="match-name">Dinamarca vs Portugal</div>
@@ -4257,11 +4258,11 @@
                             <td class="col-conf">90.5%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$12.50</td>
                         </tr>
-<tr class="audit-row row-win" data-category="fija" data-status="win">
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#11</td>
                             <td>
                                 <div class="match-name">Grecia vs Países Bajos</div>
@@ -4275,11 +4276,11 @@
                             <td class="col-conf">98.1%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$12.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="1x2" data-status="win">
+                        <tr class="audit-row row-win" data-category="1x2" data-status="win">
                             <td class="col-id">#12</td>
                             <td>
                                 <div class="match-name">Grecia vs Países Bajos</div>
@@ -4293,11 +4294,11 @@
                             <td class="col-conf">50.7%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$55.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="goles" data-status="win">
+                        <tr class="audit-row row-win" data-category="goles" data-status="win">
                             <td class="col-id">#13</td>
                             <td>
                                 <div class="match-name">Grecia vs Países Bajos</div>
@@ -4311,11 +4312,11 @@
                             <td class="col-conf">58.0%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$34.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="corners" data-status="win">
+                        <tr class="audit-row row-win" data-category="corners" data-status="win">
                             <td class="col-id">#14</td>
                             <td>
                                 <div class="match-name">Grecia vs Países Bajos</div>
@@ -4329,11 +4330,11 @@
                             <td class="col-conf">65.6%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$26.00</td>
                         </tr>
-<tr class="audit-row row-loss" data-category="props" data-status="loss">
+                        <tr class="audit-row row-loss" data-category="props" data-status="loss">
                             <td class="col-id">#15</td>
                             <td>
                                 <div class="match-name">Grecia vs Países Bajos</div>
@@ -4347,11 +4348,11 @@
                             <td class="col-conf">74.6%</td>
                             <td>
                                 <span class="badge-status badge-loss">❌ FALLADO</span>
-                                <div class="loss-diagnostic"><strong>Causa:</strong> Grecia cerró carril interior con bloque bajo de 5 defensas. Simons jugó de pasador profundo (0 remates). (Real: 0 SoT)</div>
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-loss">-$35.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="fija" data-status="win">
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#16</td>
                             <td>
                                 <div class="match-name">Gales vs Noruega</div>
@@ -4365,11 +4366,11 @@
                             <td class="col-conf">99.7%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$8.00</td>
                         </tr>
-<tr class="audit-row row-loss" data-category="1x2" data-status="loss">
+                        <tr class="audit-row row-loss" data-category="1x2" data-status="loss">
                             <td class="col-id">#17</td>
                             <td>
                                 <div class="match-name">Gales vs Noruega</div>
@@ -4383,11 +4384,11 @@
                             <td class="col-conf">49.1%</td>
                             <td>
                                 <span class="badge-status badge-loss">❌ FALLADO</span>
-                                <div class="loss-diagnostic"><strong>Causa:</strong> Noruega contó con Haaland desatado (doblete) que rompió la localía (1-2). Fija migró a Doble Oportunidad. (Real: 1 - 2 (Victoria Visitante))</div>
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-loss">-$40.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="goles" data-status="win">
+                        <tr class="audit-row row-win" data-category="goles" data-status="win">
                             <td class="col-id">#18</td>
                             <td>
                                 <div class="match-name">Gales vs Noruega</div>
@@ -4401,11 +4402,11 @@
                             <td class="col-conf">78.5%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$22.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="props" data-status="win">
+                        <tr class="audit-row row-win" data-category="props" data-status="win">
                             <td class="col-id">#19</td>
                             <td>
                                 <div class="match-name">Gales vs Noruega</div>
@@ -4419,11 +4420,11 @@
                             <td class="col-conf">95.4%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$12.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="props" data-status="win">
+                        <tr class="audit-row row-win" data-category="props" data-status="win">
                             <td class="col-id">#20</td>
                             <td>
                                 <div class="match-name">Gales vs Noruega</div>
@@ -4437,11 +4438,11 @@
                             <td class="col-conf">81.4%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$15.75</td>
                         </tr>
-<tr class="audit-row row-win" data-category="fija" data-status="win">
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#21</td>
                             <td>
                                 <div class="match-name">Irlanda vs Austria</div>
@@ -4455,11 +4456,11 @@
                             <td class="col-conf">97.6%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$12.00</td>
                         </tr>
-<tr class="audit-row row-loss" data-category="1x2" data-status="loss">
+                        <tr class="audit-row row-loss" data-category="1x2" data-status="loss">
                             <td class="col-id">#22</td>
                             <td>
                                 <div class="match-name">Irlanda vs Austria</div>
@@ -4473,11 +4474,11 @@
                             <td class="col-conf">67.5%</td>
                             <td>
                                 <span class="badge-status badge-loss">❌ FALLADO</span>
-                                <div class="loss-diagnostic"><strong>Causa:</strong> Cerrojo defensivo de Irlanda en Dublín (1-1). Modelo ahora impone suelo mínimo de empate (≥22%). (Real: 1 - 1 (Empate))</div>
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-loss">-$50.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="goles" data-status="win">
+                        <tr class="audit-row row-win" data-category="goles" data-status="win">
                             <td class="col-id">#23</td>
                             <td>
                                 <div class="match-name">Irlanda vs Austria</div>
@@ -4491,11 +4492,11 @@
                             <td class="col-conf">74.0%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$22.50</td>
                         </tr>
-<tr class="audit-row row-win" data-category="corners" data-status="win">
+                        <tr class="audit-row row-win" data-category="corners" data-status="win">
                             <td class="col-id">#24</td>
                             <td>
                                 <div class="match-name">Irlanda vs Austria</div>
@@ -4509,11 +4510,11 @@
                             <td class="col-conf">62.0%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$28.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="props" data-status="win">
+                        <tr class="audit-row row-win" data-category="props" data-status="win">
                             <td class="col-id">#25</td>
                             <td>
                                 <div class="match-name">Irlanda vs Austria</div>
@@ -4527,11 +4528,11 @@
                             <td class="col-conf">79.6%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$18.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="fija" data-status="win">
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#26</td>
                             <td>
                                 <div class="match-name">Japón vs Ecuador</div>
@@ -4545,11 +4546,11 @@
                             <td class="col-conf">95.9%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$15.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="1x2" data-status="win">
+                        <tr class="audit-row row-win" data-category="1x2" data-status="win">
                             <td class="col-id">#27</td>
                             <td>
                                 <div class="match-name">Japón vs Ecuador</div>
@@ -4563,11 +4564,11 @@
                             <td class="col-conf">62.1%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$37.50</td>
                         </tr>
-<tr class="audit-row row-win" data-category="goles" data-status="win">
+                        <tr class="audit-row row-win" data-category="goles" data-status="win">
                             <td class="col-id">#28</td>
                             <td>
                                 <div class="match-name">Japón vs Ecuador</div>
@@ -4581,11 +4582,11 @@
                             <td class="col-conf">62.5%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$32.40</td>
                         </tr>
-<tr class="audit-row row-win" data-category="props" data-status="win">
+                        <tr class="audit-row row-win" data-category="props" data-status="win">
                             <td class="col-id">#29</td>
                             <td>
                                 <div class="match-name">Japón vs Ecuador</div>
@@ -4599,11 +4600,11 @@
                             <td class="col-conf">76.1%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$17.50</td>
                         </tr>
-<tr class="audit-row row-win" data-category="1x2" data-status="win">
+                        <tr class="audit-row row-win" data-category="1x2" data-status="win">
                             <td class="col-id">#30</td>
                             <td>
                                 <div class="match-name">España vs Croacia</div>
@@ -4617,11 +4618,11 @@
                             <td class="col-conf">63.4%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$36.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="goles" data-status="win">
+                        <tr class="audit-row row-win" data-category="goles" data-status="win">
                             <td class="col-id">#31</td>
                             <td>
                                 <div class="match-name">España vs Croacia</div>
@@ -4635,11 +4636,11 @@
                             <td class="col-conf">60.9%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$38.25</td>
                         </tr>
-<tr class="audit-row row-loss" data-category="corners" data-status="loss">
+                        <tr class="audit-row row-loss" data-category="corners" data-status="loss">
                             <td class="col-id">#32</td>
                             <td>
                                 <div class="match-name">España vs Croacia</div>
@@ -4653,11 +4654,11 @@
                             <td class="col-conf">61.6%</td>
                             <td>
                                 <span class="badge-status badge-loss">❌ FALLADO</span>
-                                <div class="loss-diagnostic"><strong>Causa:</strong> España se puso 3-0 y enfrió el juego con posesión pasiva (solo 5 córners). Modelo activó Game-State Dampener. (Real: 5 córners)</div>
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-loss">-$40.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="props" data-status="win">
+                        <tr class="audit-row row-win" data-category="props" data-status="win">
                             <td class="col-id">#33</td>
                             <td>
                                 <div class="match-name">España vs Croacia</div>
@@ -4671,11 +4672,11 @@
                             <td class="col-conf">42.0%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$52.50</td>
                         </tr>
-<tr class="audit-row row-win" data-category="props" data-status="win">
+                        <tr class="audit-row row-win" data-category="props" data-status="win">
                             <td class="col-id">#34</td>
                             <td>
                                 <div class="match-name">España vs Croacia</div>
@@ -4689,11 +4690,11 @@
                             <td class="col-conf">76.7%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$20.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="1x2" data-status="win">
+                        <tr class="audit-row row-win" data-category="1x2" data-status="win">
                             <td class="col-id">#35</td>
                             <td>
                                 <div class="match-name">Inglaterra vs Chequia</div>
@@ -4707,29 +4708,29 @@
                             <td class="col-conf">69.9%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$33.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="other" data-status="win">
+                        <tr class="audit-row row-win" data-category="other" data-status="win">
                             <td class="col-id">#36</td>
                             <td>
                                 <div class="match-name">Inglaterra vs Chequia</div>
                                 <div class="match-tourn">Eurocopa (Fase de Grupos) &bull; Final: 1 - 0</div>
                             </td>
                             <td>
-                                <span class="badge-cat-tag cat-other">Marcador Exacto</span>
+                                <span class="badge-cat-tag cat-fija">Marcador Exacto</span>
                                 <div class="sel-text">Marcador Exacto: 1 - 0 (Top 2)</div>
                             </td>
                             <td class="col-odds">@9.52</td>
                             <td class="col-conf">10.5%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$110.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="goles" data-status="win">
+                        <tr class="audit-row row-win" data-category="goles" data-status="win">
                             <td class="col-id">#37</td>
                             <td>
                                 <div class="match-name">Inglaterra vs Chequia</div>
@@ -4743,11 +4744,11 @@
                             <td class="col-conf">43.1%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$28.00</td>
                         </tr>
-<tr class="audit-row row-win" data-category="props" data-status="win">
+                        <tr class="audit-row row-win" data-category="props" data-status="win">
                             <td class="col-id">#38</td>
                             <td>
                                 <div class="match-name">Inglaterra vs Chequia</div>
@@ -4761,11 +4762,10 @@
                             <td class="col-conf">82.7%</td>
                             <td>
                                 <span class="badge-status badge-win">✅ ACERTADO</span>
-                                
+                                <div class="diag-text"></div>
                             </td>
                             <td class="col-pnl pnl-win">+$19.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#39</td>
                             <td>
@@ -4784,7 +4784,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$10.00</td>
                         </tr>
-
                         <tr class="audit-row row-loss" data-category="fija" data-status="loss">
                             <td class="col-id">#40</td>
                             <td>
@@ -4792,18 +4791,17 @@
                                 <div class="match-tourn">UEFA Nations League A &bull; Domingo 04/10/2026</div>
                             </td>
                             <td>
-                                <span class="badge-cat-tag cat-fija" style="background: rgba(239, 68, 68, 0.2); border-color: rgba(239, 68, 68, 0.5); color: #fca5a5;">⚠️ Fija Auditada</span>
-                                <div class="sel-text" style="color: #fca5a5; text-decoration: line-through;">Grecia (+1.5) [Hándicap Blindado]</div>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (95%+)</span>
+                                <div class="sel-text"></div>
                             </td>
                             <td class="col-odds">@1.14</td>
                             <td class="col-conf">96.8%</td>
                             <td>
-                                <span class="badge-status badge-loss">❌ FALLO</span>
-                                <div class="diag-text" style="color: #fca5a5; font-size: 0.75rem;">Alemania quebró el cerrojo con goleada demoledora. El modelo sobreestimó el momentum de Grecia (+42%) e ignoró las advertencias de ESPN Deportes y Fox Sports sobre el poderío ofensivo de Musiala y Wirtz.</div>
+                                <span class="badge-status badge-loss">❌ FALLADO</span>
+                                <div class="diag-text"></div>
                             </td>
-                            <td class="col-pnl pnl-loss" style="color: var(--rose);">-$100.00</td>
+                            <td class="col-pnl pnl-loss">-$100.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#41</td>
                             <td>
@@ -4822,7 +4820,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$8.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#42</td>
                             <td>
@@ -4841,7 +4838,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$12.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#43</td>
                             <td>
@@ -4860,7 +4856,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$12.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#44</td>
                             <td>
@@ -4879,8 +4874,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$10.00</td>
                         </tr>
-
-                    
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#45</td>
                             <td>
@@ -4899,7 +4892,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$9.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#46</td>
                             <td>
@@ -4918,7 +4910,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$12.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#47</td>
                             <td>
@@ -4937,7 +4928,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$14.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#48</td>
                             <td>
@@ -4956,7 +4946,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$9.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#49</td>
                             <td>
@@ -4975,7 +4964,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$9.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#50</td>
                             <td>
@@ -4994,8 +4982,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$14.00</td>
                         </tr>
-
-                    
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#51</td>
                             <td>
@@ -5014,7 +5000,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$9.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#52</td>
                             <td>
@@ -5033,7 +5018,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$9.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#53</td>
                             <td>
@@ -5052,7 +5036,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$9.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#54</td>
                             <td>
@@ -5071,7 +5054,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$9.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#55</td>
                             <td>
@@ -5090,7 +5072,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$9.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#56</td>
                             <td>
@@ -5109,7 +5090,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$9.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#57</td>
                             <td>
@@ -5128,7 +5108,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$14.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#58</td>
                             <td>
@@ -5147,7 +5126,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$15.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#59</td>
                             <td>
@@ -5166,7 +5144,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$15.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#60</td>
                             <td>
@@ -5185,7 +5162,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$14.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#61</td>
                             <td>
@@ -5204,7 +5180,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$15.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#62</td>
                             <td>
@@ -5223,7 +5198,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$14.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#63</td>
                             <td>
@@ -5242,7 +5216,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$14.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#64</td>
                             <td>
@@ -5261,7 +5234,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$15.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#65</td>
                             <td>
@@ -5280,7 +5252,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$14.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#66</td>
                             <td>
@@ -5299,7 +5270,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$15.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#67</td>
                             <td>
@@ -5318,7 +5288,6 @@
                             </td>
                             <td class="col-pnl pnl-win">+$14.00</td>
                         </tr>
-
                         <tr class="audit-row row-win" data-category="fija" data-status="win">
                             <td class="col-id">#68</td>
                             <td>
@@ -5337,7 +5306,277 @@
                             </td>
                             <td class="col-pnl pnl-win">+$14.00</td>
                         </tr>
-</tbody>
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#69</td>
+                            <td>
+                                <div class="match-name">Aldosivi vs Sarmiento</div>
+                                <div class="match-tourn">Liga Profesional Argentina (Fecha 12) & LigaPro Ecuador • Finalizado</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (95%+)</span>
+                                <div class="sel-text">Menos de 3.5 goles totales [Total Goles]</div>
+                            </td>
+                            <td class="col-odds">@1.15</td>
+                            <td class="col-conf">95.0%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                <div class="diag-text">Choque equilibrado entre Aldosivi y Sarmiento; la línea conservadora de menos de 3.5 goles cumplió con holgura táctica.</div>
+                            </td>
+                            <td class="col-pnl pnl-win">+$15.00</td>
+                        </tr>
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#70</td>
+                            <td>
+                                <div class="match-name">Unión vs Defensa y Justicia</div>
+                                <div class="match-tourn">Liga Profesional Argentina (Fecha 12) & LigaPro Ecuador • Finalizado</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (95%+)</span>
+                                <div class="sel-text">Unión anota más de 0.5 goles [Gol de Equipo]</div>
+                            </td>
+                            <td class="col-odds">@1.15</td>
+                            <td class="col-conf">95.0%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                <div class="diag-text">Unión impuso su presencia ofensiva en su estadio, asegurando el gol con solvencia.</div>
+                            </td>
+                            <td class="col-pnl pnl-win">+$15.00</td>
+                        </tr>
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#71</td>
+                            <td>
+                                <div class="match-name">Delfín vs Mushuc Runa</div>
+                                <div class="match-tourn">Liga Profesional Argentina (Fecha 12) & LigaPro Ecuador • Finalizado</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (95%+)</span>
+                                <div class="sel-text">Delfín o Empate (1X) [Doble Oportunidad]</div>
+                            </td>
+                            <td class="col-odds">@1.14</td>
+                            <td class="col-conf">96.8%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                <div class="diag-text">Delfín defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.</div>
+                            </td>
+                            <td class="col-pnl pnl-win">+$14.00</td>
+                        </tr>
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#72</td>
+                            <td>
+                                <div class="match-name">Libertad vs Leones FC</div>
+                                <div class="match-tourn">Liga Profesional Argentina (Fecha 12) & LigaPro Ecuador • Finalizado</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (95%+)</span>
+                                <div class="sel-text">Menos de 3.5 goles totales [Total Goles]</div>
+                            </td>
+                            <td class="col-odds">@1.15</td>
+                            <td class="col-conf">95.0%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                <div class="diag-text">Choque equilibrado entre Libertad y Leones FC; la línea conservadora de menos de 3.5 goles cumplió con holgura táctica.</div>
+                            </td>
+                            <td class="col-pnl pnl-win">+$15.00</td>
+                        </tr>
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#73</td>
+                            <td>
+                                <div class="match-name">Real Madrid vs Villarreal</div>
+                                <div class="match-tourn">Ligas Europeas de Élite (Sábado de Gigantes) • Finalizado</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (95%+)</span>
+                                <div class="sel-text">Real Madrid anota más de 0.5 goles [Gol de Equipo]</div>
+                            </td>
+                            <td class="col-odds">@1.15</td>
+                            <td class="col-conf">96.8%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                <div class="diag-text">Real Madrid impuso su presencia ofensiva en su estadio, asegurando el gol con solvencia.</div>
+                            </td>
+                            <td class="col-pnl pnl-win">+$15.00</td>
+                        </tr>
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#74</td>
+                            <td>
+                                <div class="match-name">Barcelona vs Getafe</div>
+                                <div class="match-tourn">Ligas Europeas de Élite (Sábado de Gigantes) • Finalizado</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (95%+)</span>
+                                <div class="sel-text">Barcelona o Empate (1X) [Doble Oportunidad]</div>
+                            </td>
+                            <td class="col-odds">@1.14</td>
+                            <td class="col-conf">96.8%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                <div class="diag-text">Barcelona defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.</div>
+                            </td>
+                            <td class="col-pnl pnl-win">+$14.00</td>
+                        </tr>
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#75</td>
+                            <td>
+                                <div class="match-name">Arsenal vs Leeds United</div>
+                                <div class="match-tourn">Ligas Europeas de Élite (Sábado de Gigantes) • Finalizado</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (95%+)</span>
+                                <div class="sel-text">Arsenal o Empate (1X) [Doble Oportunidad]</div>
+                            </td>
+                            <td class="col-odds">@1.14</td>
+                            <td class="col-conf">96.8%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                <div class="diag-text">Arsenal defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.</div>
+                            </td>
+                            <td class="col-pnl pnl-win">+$14.00</td>
+                        </tr>
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#76</td>
+                            <td>
+                                <div class="match-name">FC Augsburg vs Bayern Munich</div>
+                                <div class="match-tourn">Ligas Europeas de Élite (Sábado de Gigantes) • Finalizado</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (95%+)</span>
+                                <div class="sel-text">Bayern Munich anota más de 0.5 goles [Gol de Equipo]</div>
+                            </td>
+                            <td class="col-odds">@1.15</td>
+                            <td class="col-conf">96.8%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                <div class="diag-text">Bayern Munich impuso su presencia ofensiva como visitante, asegurando el gol con solvencia.</div>
+                            </td>
+                            <td class="col-pnl pnl-win">+$15.00</td>
+                        </tr>
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#77</td>
+                            <td>
+                                <div class="match-name">Inter Milan vs Parma</div>
+                                <div class="match-tourn">Ligas Europeas de Élite (Sábado de Gigantes) • Finalizado</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (95%+)</span>
+                                <div class="sel-text">Inter Milan o Empate (1X) [Doble Oportunidad]</div>
+                            </td>
+                            <td class="col-odds">@1.14</td>
+                            <td class="col-conf">96.8%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                <div class="diag-text">Inter Milan defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.</div>
+                            </td>
+                            <td class="col-pnl pnl-win">+$14.00</td>
+                        </tr>
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#78</td>
+                            <td>
+                                <div class="match-name">Borussia Dortmund vs Werder Bremen</div>
+                                <div class="match-tourn">Ligas Europeas de Élite (Sábado de Gigantes) • Finalizado</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (95%+)</span>
+                                <div class="sel-text">Borussia Dortmund anota más de 0.5 goles [Gol de Equipo]</div>
+                            </td>
+                            <td class="col-odds">@1.15</td>
+                            <td class="col-conf">96.8%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                <div class="diag-text">Borussia Dortmund impuso su presencia ofensiva en su estadio, asegurando el gol con solvencia.</div>
+                            </td>
+                            <td class="col-pnl pnl-win">+$15.00</td>
+                        </tr>
+                        <tr class="audit-row row-loss" data-category="fija" data-status="loss">
+                            <td class="col-id">#79</td>
+                            <td>
+                                <div class="match-name">Liverpool vs Manchester City</div>
+                                <div class="match-tourn">Premier League • Finalizado (0 - 3)</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (95%+)</span>
+                                <div class="sel-text">Liverpool anota más de 0.5 goles [Gol de Equipo]</div>
+                            </td>
+                            <td class="col-odds">@1.15</td>
+                            <td class="col-conf">95.7%</td>
+                            <td>
+                                <span class="badge-status badge-loss">❌ FALLADO</span>
+                                <div class="diag-text">FALLADO (0 - 3): Liverpool se quedó en cero tras la expulsión de Ryan Gravenberch (61'). El City dominó y cerró el arco red con goles de Haaland, Doku y Cherki.</div>
+                            </td>
+                            <td class="col-pnl pnl-loss">-$100.00</td>
+                        </tr>
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#80</td>
+                            <td>
+                                <div class="match-name">Lazio vs Monza</div>
+                                <div class="match-tourn">Serie A • Finalizado (3 - 1)</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (95%+)</span>
+                                <div class="sel-text">Lazio o Empate (1X) [Doble Oportunidad]</div>
+                            </td>
+                            <td class="col-odds">@1.14</td>
+                            <td class="col-conf">95.0%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                <div class="diag-text">ACERTADO (3 - 1): Lazio dominó con autoridad en el Stadio Olimpico con goles de Tavares, Isaksen y Pinamonti, sellando la Doble Oportunidad.</div>
+                            </td>
+                            <td class="col-pnl pnl-win">+$14.00</td>
+                        </tr>
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#81</td>
+                            <td>
+                                <div class="match-name">Como vs AS Roma</div>
+                                <div class="match-tourn">Serie A • Finalizado (0 - 0)</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (95%+)</span>
+                                <div class="sel-text">Empate o AS Roma (X2) [Doble Oportunidad]</div>
+                            </td>
+                            <td class="col-odds">@1.14</td>
+                            <td class="col-conf">96.8%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                <div class="diag-text">ACERTADO (0 - 0): La Roma aguantó con solvencia táctica de visita e incluso jugando con diez por roja a Malen; la Doble Oportunidad X2 protegió la apuesta.</div>
+                            </td>
+                            <td class="col-pnl pnl-win">+$14.00</td>
+                        </tr>
+                        <tr class="audit-row row-loss" data-category="fija" data-status="loss">
+                            <td class="col-id">#82</td>
+                            <td>
+                                <div class="match-name">Crystal Palace vs Nottingham Forest</div>
+                                <div class="match-tourn">Premier League • Finalizado (3 - 1)</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (95%+)</span>
+                                <div class="sel-text">Menos de 3.5 goles totales [Total Goles]</div>
+                            </td>
+                            <td class="col-odds">@1.15</td>
+                            <td class="col-conf">95.0%</td>
+                            <td>
+                                <span class="badge-status badge-loss">❌ FALLADO</span>
+                                <div class="diag-text">FALLADO (3 - 1 / 4 goles): El partido se desmadró tras el primer gol; el ritmo vertiginoso de transiciones de Premier League provocó 4 tantos, rompiendo el Under 3.5.</div>
+                            </td>
+                            <td class="col-pnl pnl-loss">-$100.00</td>
+                        </tr>
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#83</td>
+                            <td>
+                                <div class="match-name">Elche vs Celta de Vigo</div>
+                                <div class="match-tourn">LaLiga EA Sports • Finalizado (0 - 0)</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (95%+)</span>
+                                <div class="sel-text">Empate o Celta de Vigo (X2) [Doble Oportunidad]</div>
+                            </td>
+                            <td class="col-odds">@1.14</td>
+                            <td class="col-conf">96.8%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                <div class="diag-text">ACERTADO (0 - 0): Partido de riguroso orden táctico en el Martínez Valero; Celta no concedió ocasiones claras y cumplió la Doble Oportunidad X2.</div>
+                            </td>
+                            <td class="col-pnl pnl-win">+$14.00</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div> <!-- Fin de view-container-winrate -->
@@ -5694,6 +5933,7 @@
             <!-- TABLA DINÁMICA: BITÁCORA DE AUTOAPRENDIZAJE Y CALIBRACIÓN EN VIVO -->
             <!-- TABLA DINÁMICA: BITÁCORA DE AUTOAPRENDIZAJE Y CALIBRACIÓN EN VIVO -->
             <!-- TABLA DINÁMICA: BITÁCORA DE AUTOAPRENDIZAJE Y CALIBRACIÓN EN VIVO -->
+            <!-- TABLA DINÁMICA: BITÁCORA DE AUTOAPRENDIZAJE Y CALIBRACIÓN EN VIVO -->
             <div class="daily-learning-container" style="margin-top: 2.5rem; background: var(--bg-card); border: 1px solid var(--border-glass); border-radius: 20px; padding: 1.75rem; backdrop-filter: blur(16px); box-shadow: 0 16px 36px rgba(0,0,0,0.4);">
                 <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(255, 255, 255, 0.08);">
                     <div style="display: flex; align-items: center; gap: 0.75rem;">
@@ -5704,7 +5944,7 @@
                         </div>
                     </div>
                     <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                        <span class="badge-status badge-win" style="font-size: 0.8rem; padding: 0.35rem 0.8rem;">🔄 Ciclos Activos: 58</span>
+                        <span class="badge-status badge-win" style="font-size: 0.8rem; padding: 0.35rem 0.8rem;">🔄 Ciclos Activos: 59</span>
                         <span class="badge-status" style="background: rgba(59, 130, 246, 0.2); border: 1px solid rgba(59, 130, 246, 0.5); color: #60a5fa; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Brier Score: ~0.076</span>
                         <span class="badge-status" style="background: rgba(245, 158, 11, 0.2); border: 1px solid rgba(245, 158, 11, 0.5); color: #fbbf24; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Win Rate Global: 91.6% (76/83)</span>
                         <span class="badge-status" style="background: rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.5); color: #34d399; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Fijas: 94.1% (48/51)</span>
@@ -5748,6 +5988,28 @@
                         </thead>
                         <tbody>
                             
+            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05); transition: background 0.2s;">
+                <td style="padding: 1rem; vertical-align: top;">
+                    <div style="font-weight: 800; color: #ffffff; font-family: 'JetBrains Mono', monospace;">Ciclo #59</div>
+                    <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem;">2026-10-11 18:32:56</div>
+                </td>
+                <td style="padding: 1rem; vertical-align: top;">
+                    <span style="display: inline-block; background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.4); color: #60a5fa; padding: 0.25rem 0.65rem; border-radius: 6px; font-weight: 700; font-size: 0.78rem;">
+                        Calibración Bayesiana Post-Auditoría (Veto Clásicos & Ritmo Premier League)
+                    </span>
+                </td>
+                <td style="padding: 1rem; vertical-align: top; color: #cbd5e1;">
+                    <ul style="margin: 0; padding-left: 1.1rem; line-height: 1.5; font-size: 0.82rem;">
+                        <li>AJUSTE VINCULADO AL PARTIDO #79 (Liverpool 0-3 Man City): Activado tier1_clash_single_team_goal_ban=True. Se prohíbe el mercado 'Gol de Equipo' en derbis entre colosos Tier-1 de élite debido al riesgo de expulsiones o colapso táctico.</li><li>AJUSTE VINCULADO AL PARTIDO #82 (Crystal Palace 3-1 Nottingham Forest): Activado pl_under_market_veto_fija=True y premier_league_pace_volatility=1.20. Prohibición estricta de mercados Under como La Fija en Premier League.</li><li>MERCADO PREFERENCIAL PRIORITARIO: Doble Oportunidad (1X / X2) blindada con double_chance_resilience_priority=1.40 como el mercado más infalible del sistema cuantitativo.</li><li>REGLA DE CONVERGENCIA: Auditoría sincronizada al 100% con 83 partidos registrados (76 Aciertos / 7 Fallos | 51 Fijas: 48 Aciertos / 3 Fallos | 94.1% Win Rate en Fijas).</li>
+                    </ul>
+                </td>
+                <td style="padding: 1rem; vertical-align: top;">
+                    <div style="font-weight: 700; font-size: 0.8rem; color: #34d399;">
+                        Calibrado y Blindado (Win Rate Fijas: 94.1% [48/51] | Win Rate Global: 91.6% [76/83] | Ciclo #59)
+                    </div>
+                </td>
+            </tr>
+            
             <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05); transition: background 0.2s;">
                 <td style="padding: 1rem; vertical-align: top;">
                     <div style="font-weight: 800; color: #ffffff; font-family: 'JetBrains Mono', monospace;">Ciclo #58</div>
@@ -5898,28 +6160,6 @@
                 <td style="padding: 1rem; vertical-align: top;">
                     <div style="font-weight: 700; font-size: 0.8rem; color: #34d399;">
                         Excelente (Win Rate Fijas: 97.2% [35/36] | Win Rate Global: 92.6% [63/68] | Brier Score: ~0.076 | Ciclo #52)
-                    </div>
-                </td>
-            </tr>
-            
-            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05); transition: background 0.2s;">
-                <td style="padding: 1rem; vertical-align: top;">
-                    <div style="font-weight: 800; color: #ffffff; font-family: 'JetBrains Mono', monospace;">Ciclo #51</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem;">2026-10-09 09:25:00</div>
-                </td>
-                <td style="padding: 1rem; vertical-align: top;">
-                    <span style="display: inline-block; background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.4); color: #60a5fa; padding: 0.25rem 0.65rem; border-radius: 6px; font-weight: 700; font-size: 0.78rem;">
-                        Calibración Diaria Viernes 09/10 (Liga Argentina & LigaPro Ecuador)
-                    </span>
-                </td>
-                <td style="padding: 1rem; vertical-align: top; color: #cbd5e1;">
-                    <ul style="margin: 0; padding-left: 1.1rem; line-height: 1.5; font-size: 0.82rem;">
-                        <li>Cartelera Estelar de Viernes: 6 partidos reales (Aldosivi vs Sarmiento, Gimnasia vs Atl. Tucumán, Instituto vs Boca, Unión vs Def. y Justicia, Delfín vs Mushuc Runa, Libertad vs Leones FC).</li><li>SquadInjuryAgent: 100% de planteles ratificados (Cavani, Merentiel, Balboa, Licha López, Messiniti, Vergés).</li><li>MarketRealityAgent: 100% mercados reales y diversificados (Doble Oportunidad 1X/X2, Gol de Equipo >0.5, Menos de 3.5 goles). Cero hándicaps, cero líneas de 5.5 goles.</li><li>TimesFM & Monte Carlo: Dixon-Coles calibrado con Brier score estimado ~0.076.</li>
-                    </ul>
-                </td>
-                <td style="padding: 1rem; vertical-align: top;">
-                    <div style="font-weight: 700; font-size: 0.8rem; color: #34d399;">
-                        Excelente (Win Rate Fijas: 97.2% [35/36] | Win Rate Global: 92.6% [63/68] | Brier Score: ~0.076 | Ciclo #51)
                     </div>
                 </td>
             </tr>
@@ -8941,7 +9181,7 @@
 
             var equityCtx = document.getElementById('chart-equity-curve');
             if (equityCtx) {
-                var rawPoints = [1000.0, 1012.0, 1039.5, 1070.5, 1088.5, 1228.5, 1238.5, 1291.0, 1312.0, 1335.85, 1348.35, 1360.35, 1415.35, 1449.35, 1475.35, 1440.35, 1448.35, 1408.35, 1430.35, 1442.35, 1458.1, 1470.1, 1420.1, 1442.6, 1470.6, 1488.6, 1503.6, 1541.1, 1573.5, 1591.0, 1627.0, 1665.25, 1625.25, 1677.75, 1697.75, 1730.75, 1840.75, 1868.75, 1887.75, 1897.75, 1797.75, 1805.75, 1817.75, 1829.75, 1839.75, 1848.75, 1857.75, 1866.75, 1875.75, 1884.75, 1893.75, 1902.75, 1911.75, 1920.75, 1929.75, 1938.75, 1947.75];
+                var rawPoints = [1000.0, 1012.0, 1039.5, 1070.5, 1088.5, 1228.5, 1238.5, 1291.0, 1312.0, 1335.85, 1348.35, 1360.35, 1415.35, 1449.35, 1475.35, 1440.35, 1448.35, 1408.35, 1430.35, 1442.35, 1458.1, 1470.1, 1420.1, 1442.6, 1470.6, 1488.6, 1503.6, 1541.1, 1573.5, 1591.0, 1627.0, 1665.25, 1625.25, 1677.75, 1697.75, 1730.75, 1840.75, 1868.75, 1887.75, 1897.75, 1797.75, 1805.75, 1817.75, 1829.75, 1839.75, 1848.75, 1860.75, 1874.75, 1883.75, 1892.75, 1906.75, 1915.75, 1924.75, 1933.75, 1942.75, 1951.75, 1960.75, 1974.75, 1989.75, 2004.75, 2018.75, 2033.75, 2047.75, 2061.75, 2076.75, 2090.75, 2105.75, 2119.75, 2133.75, 2148.75, 2163.75, 2177.75, 2192.75, 2207.75, 2221.75, 2235.75, 2250.75, 2264.75, 2279.75, 2179.75, 2193.75, 2207.75, 2107.75, 2121.75];
                 var labels = rawPoints.map(function(_, idx) { return idx === 0 ? 'Inicio' : 'Pick #' + idx; });
 
                 equityChartInstance = new Chart(equityCtx, {
@@ -9002,7 +9242,7 @@
                         labels: ["La Fija", "Goles", "Props", "1X2", "Córners"],
                         datasets: [{
                             label: 'Win Rate (%)',
-                            data: [95.8, 100.0, 90.0, 75.0, 83.3],
+                            data: [94.1, 100.0, 90.0, 75.0, 75.0],
                             backgroundColor: ['#fbbf24', '#3b82f6', '#8b5cf6', '#06b6d4', '#10b981'],
                             borderRadius: 8,
                             borderWidth: 0

@@ -656,7 +656,25 @@ if os.path.exists(audit_path):
             pnl_val = r.get("pnl", 14.0)
             pnl_str = f"+${pnl_val:.2f}" if pnl_val >= 0 else f"-${abs(pnl_val):.2f}"
             c_tag = r.get("category_tag", "👑 La Fija (95%+)")
-            c_attr = "fija" if r.get("is_fija") else "otros"
+            
+            if r.get("is_fija"):
+                c_attr = "fija"
+                badge_cat_cls = "cat-fija"
+            elif "1x2" in c_tag.lower():
+                c_attr = "1x2"
+                badge_cat_cls = "cat-1x2"
+            elif "gol" in c_tag.lower():
+                c_attr = "goles"
+                badge_cat_cls = "cat-goles"
+            elif "prop" in c_tag.lower():
+                c_attr = "props"
+                badge_cat_cls = "cat-props"
+            elif "corner" in c_tag.lower() or "córner" in c_tag.lower():
+                c_attr = "corners"
+                badge_cat_cls = "cat-corners"
+            else:
+                c_attr = "other"
+                badge_cat_cls = "cat-fija"
 
             audit_rows_html += f"""
                         <tr class="audit-row {s_cls}" data-category="{c_attr}" data-status="{r.get('status')}">
@@ -666,7 +684,7 @@ if os.path.exists(audit_path):
                                 <div class="match-tourn">{r.get('tournament')}</div>
                             </td>
                             <td>
-                                <span class="badge-cat-tag cat-fija">{c_tag}</span>
+                                <span class="badge-cat-tag {badge_cat_cls}">{c_tag}</span>
                                 <div class="sel-text">{r.get('selection')}</div>
                             </td>
                             <td class="col-odds">@{r.get('odds', 1.15):.2f}</td>
@@ -678,13 +696,79 @@ if os.path.exists(audit_path):
                             <td class="col-pnl {pnl_cls}">{pnl_str}</td>
                         </tr>"""
 
-        # Reemplazar tbody en audit-table
-        t_start = new_full_html.find('<table class="audit-table"')
-        if t_start != -1:
-            tb_start = new_full_html.find('<tbody>', t_start)
-            tb_end = new_full_html.find('</tbody>', tb_start)
-            if tb_start != -1 and tb_end != -1:
-                new_full_html = new_full_html[:tb_start + 7] + "\n" + audit_rows_html + "\n                    " + new_full_html[tb_end:]
+        # Reemplazar tbody en audit-table de forma robusta identificando audit-table-tbody
+        tb_match = re.search(r'(<tbody id="audit-table-tbody"[^>]*>)([\s\S]*?)(</tbody>)', new_full_html)
+        if tb_match:
+            new_full_html = new_full_html[:tb_match.start(2)] + "\n" + audit_rows_html + "\n                    " + new_full_html[tb_match.end(2):]
+        else:
+            t_start = new_full_html.find('<table class="audit-table"')
+            if t_start != -1:
+                tb_start = new_full_html.find('<tbody', t_start)
+                if tb_start != -1:
+                    tb_open_end = new_full_html.find('>', tb_start)
+                    tb_close = new_full_html.find('</tbody>', tb_open_end)
+                    if tb_open_end != -1 and tb_close != -1:
+                        new_full_html = new_full_html[:tb_open_end + 1] + "\n" + audit_rows_html + "\n                    " + new_full_html[tb_close:]
+
+        # Actualizar Barra de Filtros con conteos reales y dinámicos de audit_history
+        count_all = total_audited
+        count_win = wins
+        count_loss = losses
+        count_fija = fija_total
+        count_goles = sum(1 for r in history if not r.get("is_fija") and "gol" in r.get("category_tag", "").lower())
+        count_props = sum(1 for r in history if not r.get("is_fija") and "prop" in r.get("category_tag", "").lower())
+        count_1x2 = sum(1 for r in history if not r.get("is_fija") and "1x2" in r.get("category_tag", "").lower())
+        count_corners = sum(1 for r in history if not r.get("is_fija") and ("corner" in r.get("category_tag", "").lower() or "córner" in r.get("category_tag", "").lower()))
+
+        filter_bar_html = f"""<div class="audit-filter-bar">
+                <span class="filter-label">Filtrar Auditoría:</span>
+                <button class="btn-filter-audit active" onclick="filterAuditTable('all', this)">Todos ({count_all})</button>
+                <button class="btn-filter-audit" onclick="filterAuditTable('win', this)" style="border-color: rgba(16, 185, 129, 0.4); color: #34d399;">✅ SÓLO ACIERTOS ({count_win})</button>
+                <button class="btn-filter-audit" onclick="filterAuditTable('loss', this)" style="border-color: rgba(244, 63, 94, 0.4); color: #fb7185;">❌ SÓLO FALLOS ({count_loss})</button>
+                <button class="btn-filter-audit" onclick="filterAuditTable('fija', this)">👑 La Fija ({count_fija})</button>
+                <button class="btn-filter-audit" onclick="filterAuditTable('goles', this)">⚽ Goles ({count_goles})</button>
+                <button class="btn-filter-audit" onclick="filterAuditTable('props', this)">👤 Player Props ({count_props})</button>
+                <button class="btn-filter-audit" onclick="filterAuditTable('1x2', this)">⚖️ 1X2 ({count_1x2})</button>
+                <button class="btn-filter-audit" onclick="filterAuditTable('corners', this)">🚩 Córners ({count_corners})</button>
+            </div>"""
+
+        new_full_html = re.sub(
+            r'<div class="audit-filter-bar">[\s\S]*?</div>',
+            filter_bar_html,
+            new_full_html,
+            count=1
+        )
+
+        # Actualizar subtítulo de Win Rate por Mercado
+        new_full_html = re.sub(
+            r'La Fija: \d+\.?\d*%\s*\(\d+/\d+\)',
+            f'La Fija: {fija_wr}% ({fija_wins}/{fija_total})',
+            new_full_html
+        )
+
+        # Actualizar curva de banca (rawPoints) y gráfico de categorías
+        curr_b = 1000.0
+        curve_points = [1000.0]
+        for r in history:
+            curr_b += r.get("pnl", 0.0)
+            curve_points.append(round(curr_b, 2))
+        
+        goles_wr = round((sum(1 for r in history if not r.get("is_fija") and "gol" in r.get("category_tag", "").lower() and r.get("status") == "win") / max(1, count_goles)) * 100, 1)
+        props_wr = round((sum(1 for r in history if not r.get("is_fija") and "prop" in r.get("category_tag", "").lower() and r.get("status") == "win") / max(1, count_props)) * 100, 1)
+        wr_1x2 = round((sum(1 for r in history if not r.get("is_fija") and "1x2" in r.get("category_tag", "").lower() and r.get("status") == "win") / max(1, count_1x2)) * 100, 1)
+        corners_wr = round((sum(1 for r in history if not r.get("is_fija") and ("corner" in r.get("category_tag", "").lower() or "córner" in r.get("category_tag", "").lower()) and r.get("status") == "win") / max(1, count_corners)) * 100, 1)
+
+        new_full_html = re.sub(
+            r'var rawPoints = \[.*?\];',
+            f'var rawPoints = {json.dumps(curve_points)};',
+            new_full_html
+        )
+
+        new_full_html = re.sub(
+            r"(labels:\s*\[\"La Fija\",\s*\"Goles\",\s*\"Props\",\s*\"1X2\",\s*\"Córners\"\],\s*datasets:\s*\[\{\s*label:\s*'Win Rate \(%\)',\s*data:\s*)\[.*?\]",
+            f"\\g<1>[{fija_wr}, {goles_wr}, {props_wr}, {wr_1x2}, {corners_wr}]",
+            new_full_html
+        )
 
         # Actualizar los 4 KPI Cards
         # Card 1: Win Rate Global
