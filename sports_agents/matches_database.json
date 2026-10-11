@@ -394,5 +394,59 @@
     "referee_avg_yellows": 5.4,
     "referee_avg_reds": 0.28,
     "intensity": "Alta (Duelo táctico portugués con alta fricción y arbitraje severo)"
+  },
+  "Liverpool vs Manchester City": {
+    "tournament": "Premier League - Matchday 6 (El Clásico Inglés)",
+    "stadium": "Anfield Stadium (Liverpool)",
+    "spectators_est": "61,276 en estadio (~120M audiencia global)",
+    "referee": "Michael Oliver",
+    "referee_avg_yellows": 3.9,
+    "referee_avg_reds": 0.14,
+    "intensity": "Máxima Mundial (El duelo definitivo de la Premier League; Anfield encendido frente a los de Guardiola)"
+  },
+  "Lazio vs Monza": {
+    "tournament": "Serie A - Giornata 6",
+    "stadium": "Stadio Olimpico (Roma)",
+    "spectators_est": "46,000 en estadio (~20M audiencia global)",
+    "referee": "Davide Massa",
+    "referee_avg_yellows": 4.3,
+    "referee_avg_reds": 0.18,
+    "intensity": "Alta (Lazio buscando consolidarse en puestos Champions League ante un Monza en bloque bajo)"
+  },
+  "Como vs AS Roma": {
+    "tournament": "Serie A - Giornata 6",
+    "stadium": "Stadio Giuseppe Sinigaglia (Como)",
+    "spectators_est": "13,600 en estadio (~24M audiencia global)",
+    "referee": "Gianluca Manganiello",
+    "referee_avg_yellows": 4.1,
+    "referee_avg_reds": 0.16,
+    "intensity": "Muy Alta (La revelación de Cesc Fàbregas con Nico Paz frente a la Roma de Dybala y Dovbyk)"
+  },
+  "Crystal Palace vs Nottingham Forest": {
+    "tournament": "Premier League - Matchday 6",
+    "stadium": "Selhurst Park (Londres)",
+    "spectators_est": "25,400 en estadio (~18M audiencia global)",
+    "referee": "Craig Pawson",
+    "referee_avg_yellows": 4.2,
+    "referee_avg_reds": 0.2,
+    "intensity": "Alta Táctica (Duelo físico de ritmo inglés; Eze contra el bloque impenetrable de Nuno Espírito Santo)"
+  },
+  "Elche vs Celta de Vigo": {
+    "tournament": "LaLiga EA Sports - Jornada 9",
+    "stadium": "Estadio Martínez Valero (Elche)",
+    "spectators_est": "22,000 en estadio (~15M audiencia global)",
+    "referee": "Pablo González Fuertes",
+    "referee_avg_yellows": 4.6,
+    "referee_avg_reds": 0.22,
+    "intensity": "Intensidad Táctica (Choque de pizarra; Elche intentando cerrarse ante la magia de Iago Aspas)"
+  },
+  "Liga de Quito vs Barcelona SC": {
+    "tournament": "LigaPro Ecuabet - Fase Final (Superclásico Nacional)",
+    "stadium": "Estadio Rodrigo Paz Delgado - Casa Blanca (Quito, 2,850m)",
+    "spectators_est": "41,575 en estadio (~16M audiencia nacional e internacional)",
+    "referee": "Augusto Aragón",
+    "referee_avg_yellows": 5.2,
+    "referee_avg_reds": 0.32,
+    "intensity": "Tensión Absoluta (El Superclásico de Ecuador en la altitud de Quito; Alex Arce ante el Ídolo del Astillero)"
   }
 }

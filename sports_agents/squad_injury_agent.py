@@ -73,6 +73,52 @@ class SquadInjuryAgent:
                     "medical_detail": "En tratamiento fisioterapéutico."
                 }
             ],
+            "Manchester City": [
+                {
+                    "name": "Rodri",
+                    "aliases": ["rodri", "rodrigo hernandez", "rodri hernandez"],
+                    "injury": "Rotura del ligamento cruzado anterior y menisco",
+                    "severity": "BAJA DE TEMPORADA",
+                    "veto_player_props": True,
+                    "offense_penalty": 0.94,
+                    "defense_penalty": 1.15,
+                    "reallocation_targets": ["Mateo Kovačić", "İlkay Gündoğan", "Bernardo Silva"],
+                    "medical_detail": "Baja capital en el pivote defensivo de los citizens; Kovačić y Gündoğan asumen el eje."
+                },
+                {
+                    "name": "Kevin De Bruyne",
+                    "aliases": ["de bruyne", "kevin de bruyne", "kdb"],
+                    "injury": "Molestia muscular en la ingle",
+                    "severity": "MONITOREO MÉDICO / MINUTOS RESTRINGIDOS",
+                    "veto_player_props": False,
+                    "offense_penalty": 0.96,
+                    "reallocation_targets": ["Phil Foden", "Bernardo Silva"],
+                    "medical_detail": "Bajo estricto control de cargas por Pep Guardiola."
+                }
+            ],
+            "Liverpool": [
+                {
+                    "name": "Alisson Becker",
+                    "aliases": ["alisson", "alisson becker"],
+                    "injury": "Lesión en el tendón de la corva",
+                    "severity": "BAJA MÉDICA CONFIRMADA",
+                    "veto_player_props": True,
+                    "offense_penalty": 1.0,
+                    "defense_penalty": 1.14,
+                    "reallocation_targets": [],
+                    "medical_detail": "Baja en portería; Caoimhín Kelleher titular bajo los tres palos en Anfield."
+                },
+                {
+                    "name": "Harvey Elliott",
+                    "aliases": ["elliott", "harvey elliott"],
+                    "injury": "Fractura de pie",
+                    "severity": "BAJA CONFIRMADA",
+                    "veto_player_props": True,
+                    "offense_penalty": 0.98,
+                    "reallocation_targets": ["Dominik Szoboszlai", "Curtis Jones"],
+                    "medical_detail": "Baja médica en fase de recuperación ósea."
+                }
+            ],
             "Barcelona": [
                 {
                     "name": "Raphinha",

@@ -76,6 +76,12 @@ flags = {
     "Napoli": "🔵", "Como": "⚪",
     "Marseille": "⚪", "Angers": "⚫",
     "Leganés": "⚪", "Valencia": "🦇",
+    "Liverpool": "🔴", "Manchester City": "🩵",
+    "Lazio": "🦅", "Monza": "🔴",
+    "AS Roma": "🐺", "Roma": "🐺",
+    "Crystal Palace": "🦅", "Nottingham Forest": "🌳",
+    "Elche": "🟢", "Celta de Vigo": "🩵",
+    "Liga de Quito": "⚪", "Barcelona SC": "🟡",
     "Sunderland": "🔴", "Leeds United": "⚪",
     "Rio Ave": "🟢", "Famalicão": "🔵",
     # Brasileirão Serie A & Liga Argentina & Liga BetPlay

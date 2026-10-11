@@ -234,14 +234,14 @@ def main():
                 ("Inter Milan", "Parma", "DOBLE_OPORTUNIDAD"),
                 ("Borussia Dortmund", "Werder Bremen", "GOL_EQUIPO")
             ]
-        elif target_weekday == 6:  # DOMINGO - GIGANTES DE EUROPA
+        elif target_weekday == 6:  # DOMINGO - GRANDES DE EUROPA & CLÁSICO ECUADOR (11/10/2026)
             fixtures_target = [
-                ("Napoli", "Como", "DOBLE_OPORTUNIDAD"),
-                ("Marseille", "Angers", "GOL_EQUIPO"),
-                ("Borussia Dortmund", "St. Pauli", "GOL_EQUIPO"),
-                ("Leganés", "Valencia", "GOLES_UNDER"),
-                ("Sunderland", "Leeds United", "GOLES_UNDER"),
-                ("Rio Ave", "Famalicão", "GOLES_UNDER")
+                ("Liverpool", "Manchester City", "GOL_EQUIPO"),
+                ("Lazio", "Monza", "DOBLE_OPORTUNIDAD"),
+                ("Como", "AS Roma", "DOBLE_OPORTUNIDAD"),
+                ("Crystal Palace", "Nottingham Forest", "GOLES_UNDER"),
+                ("Elche", "Celta de Vigo", "GOLES_UNDER"),
+                ("Liga de Quito", "Barcelona SC", "DOBLE_OPORTUNIDAD")
             ]
         else:  # LUNES A JUEVES
             fixtures_target = [
