@@ -11602,5 +11602,247 @@
         "goal_prob": 0.26
       }
     ]
+  },
+  "Barcelona Femení": {
+    "fifa_rank": 1,
+    "recent_form": [
+      "W",
+      "W",
+      "W",
+      "W",
+      "W",
+      "W",
+      "W",
+      "W"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 5,
+        "goals_conceded": 0,
+        "xg_for": 4.1,
+        "xg_against": 0.3,
+        "corners_for": 9,
+        "corners_against": 1,
+        "shots_total": 24,
+        "shots_on_target": 11,
+        "yellow_cards": 0,
+        "red_cards": 0,
+        "fouls": 6,
+        "possession": 72
+      },
+      {
+        "goals_scored": 4,
+        "goals_conceded": 1,
+        "xg_for": 3.65,
+        "xg_against": 0.55,
+        "corners_for": 8,
+        "corners_against": 2,
+        "shots_total": 21,
+        "shots_on_target": 10,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 7,
+        "possession": 70
+      },
+      {
+        "goals_scored": 6,
+        "goals_conceded": 0,
+        "xg_for": 4.8,
+        "xg_against": 0.25,
+        "corners_for": 11,
+        "corners_against": 1,
+        "shots_total": 26,
+        "shots_on_target": 13,
+        "yellow_cards": 0,
+        "red_cards": 0,
+        "fouls": 5,
+        "possession": 75
+      },
+      {
+        "goals_scored": 3,
+        "goals_conceded": 0,
+        "xg_for": 2.95,
+        "xg_against": 0.4,
+        "corners_for": 7,
+        "corners_against": 2,
+        "shots_total": 18,
+        "shots_on_target": 8,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 8,
+        "possession": 68
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Ewa Pajor",
+        "position": "Delantera Centro Goleadora",
+        "avg_shots_p90": 4.2,
+        "avg_sot_p90": 2.2,
+        "shot_creation_actions": 4.5,
+        "goal_prob": 0.68
+      },
+      {
+        "name": "Alexia Putellas",
+        "position": "Mediapunta / Balón de Oro",
+        "avg_shots_p90": 3.5,
+        "avg_sot_p90": 1.8,
+        "shot_creation_actions": 7.2,
+        "goal_prob": 0.52
+      },
+      {
+        "name": "Aitana Bonmatí",
+        "position": "Volante Creativa / Balón de Oro",
+        "avg_shots_p90": 3.1,
+        "avg_sot_p90": 1.6,
+        "shot_creation_actions": 7.8,
+        "goal_prob": 0.48
+      },
+      {
+        "name": "Caroline Graham Hansen",
+        "position": "Extremo Desequilibrante",
+        "avg_shots_p90": 3.6,
+        "avg_sot_p90": 1.9,
+        "shot_creation_actions": 8.5,
+        "goal_prob": 0.55
+      },
+      {
+        "name": "Salma Paralluelo",
+        "position": "Extremo Eléctrica",
+        "avg_shots_p90": 3.4,
+        "avg_sot_p90": 1.7,
+        "shot_creation_actions": 5.2,
+        "goal_prob": 0.5
+      },
+      {
+        "name": "Patri Guijarro",
+        "position": "Mediocentro con Pegada",
+        "avg_shots_p90": 2.2,
+        "avg_sot_p90": 1.0,
+        "shot_creation_actions": 5.0,
+        "goal_prob": 0.28
+      }
+    ]
+  },
+  "FC Barcelona Femení": {
+    "fifa_rank": 1,
+    "recent_form": [
+      "W",
+      "W",
+      "W",
+      "W",
+      "W",
+      "W",
+      "W",
+      "W"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 5,
+        "goals_conceded": 0,
+        "xg_for": 4.1,
+        "xg_against": 0.3,
+        "corners_for": 9,
+        "corners_against": 1,
+        "shots_total": 24,
+        "shots_on_target": 11,
+        "yellow_cards": 0,
+        "red_cards": 0,
+        "fouls": 6,
+        "possession": 72
+      },
+      {
+        "goals_scored": 4,
+        "goals_conceded": 1,
+        "xg_for": 3.65,
+        "xg_against": 0.55,
+        "corners_for": 8,
+        "corners_against": 2,
+        "shots_total": 21,
+        "shots_on_target": 10,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 7,
+        "possession": 70
+      },
+      {
+        "goals_scored": 6,
+        "goals_conceded": 0,
+        "xg_for": 4.8,
+        "xg_against": 0.25,
+        "corners_for": 11,
+        "corners_against": 1,
+        "shots_total": 26,
+        "shots_on_target": 13,
+        "yellow_cards": 0,
+        "red_cards": 0,
+        "fouls": 5,
+        "possession": 75
+      },
+      {
+        "goals_scored": 3,
+        "goals_conceded": 0,
+        "xg_for": 2.95,
+        "xg_against": 0.4,
+        "corners_for": 7,
+        "corners_against": 2,
+        "shots_total": 18,
+        "shots_on_target": 8,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 8,
+        "possession": 68
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Ewa Pajor",
+        "position": "Delantera Centro Goleadora",
+        "avg_shots_p90": 4.2,
+        "avg_sot_p90": 2.2,
+        "shot_creation_actions": 4.5,
+        "goal_prob": 0.68
+      },
+      {
+        "name": "Alexia Putellas",
+        "position": "Mediapunta / Balón de Oro",
+        "avg_shots_p90": 3.5,
+        "avg_sot_p90": 1.8,
+        "shot_creation_actions": 7.2,
+        "goal_prob": 0.52
+      },
+      {
+        "name": "Aitana Bonmatí",
+        "position": "Volante Creativa / Balón de Oro",
+        "avg_shots_p90": 3.1,
+        "avg_sot_p90": 1.6,
+        "shot_creation_actions": 7.8,
+        "goal_prob": 0.48
+      },
+      {
+        "name": "Caroline Graham Hansen",
+        "position": "Extremo Desequilibrante",
+        "avg_shots_p90": 3.6,
+        "avg_sot_p90": 1.9,
+        "shot_creation_actions": 8.5,
+        "goal_prob": 0.55
+      },
+      {
+        "name": "Salma Paralluelo",
+        "position": "Extremo Eléctrica",
+        "avg_shots_p90": 3.4,
+        "avg_sot_p90": 1.7,
+        "shot_creation_actions": 5.2,
+        "goal_prob": 0.5
+      },
+      {
+        "name": "Patri Guijarro",
+        "position": "Mediocentro con Pegada",
+        "avg_shots_p90": 2.2,
+        "avg_sot_p90": 1.0,
+        "shot_creation_actions": 5.0,
+        "goal_prob": 0.28
+      }
+    ]
   }
 }
