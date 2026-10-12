@@ -1,19 +1,7 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 66,
+  "cycles_completed": 67,
   "calibrations": [
-    {
-      "cycle": 17,
-      "timestamp": "2026-10-04 18:55:00",
-      "action": "Salto Cualitativo y Elevación Estructural del Nivel de Pronósticos: Convolución Matemática Bivariada Negativa Binomial + Ensamble de 12 Agentes",
-      "observations": [
-        "Erradicación de Fórmulas Heurísticas: Todas las probabilidades de mercado (1X2, DNB, Over/Under 0.5 a 5.5, Doble Oportunidad, Hándicaps, BTTS) ahora se calculan mediante convolución bivariada matemática exacta de la matriz conjunta 8x8 con sobredispersión Binomial Negativa (alpha=0.10) y factor Dixon-Coles calibrado.",
-        "Strength of Schedule (SOS) en TimesFM: Se introduce la normalización por dificultad de calendario en TimesFMForecasterAgent. La baja concesión de equipos modestos frente a rivales de ranking bajo no puede engañar al modelo reduciendo artificialmente el xG de favoritos de élite.",
-        "Amortiguador de Córners y Líneas de Piso/Techo: MatchEventsAgent ahora calcula analíticamente probabilidades para Over 6.5, Over 7.5 y Under 12.5 córners totales.",
-        "Veto Multi-Agente Infranqueable en La Fija: Solo califican selecciones con probabilidad real conmutada >= 95.0% y <= 98.2% con cuotas viables, respaldadas por consenso periodístico (ESPN, Fox, TNT) y sin alertas de desborde."
-      ],
-      "system_health": "Elevación de Nivel Verificada — Modelado Cuantitativo Bivariado Directo + 12 Agentes en Ensamble (Ciclo #17)"
-    },
     {
       "cycle": 18,
       "timestamp": "2026-10-04 19:04:06",
@@ -660,6 +648,21 @@
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Lunes."
       ],
       "system_health": "Excelente (Win Rate Fijas: 94.2% [49/52] | Win Rate Global: 91.7% [77/84] | Brier Score: ~0.076 | Ciclo #66)"
+    },
+    {
+      "cycle": 67,
+      "timestamp": "2026-10-12 16:20:22",
+      "action": "Auto-Calibración Diaria (Lunes 12/10/2026)",
+      "observations": [
+        "[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas para Lunes.",
+        "Calibración Favoritos Visitantes: Fricción cuantitativa aplicada (tope 68% en 1X2 visitante) para erradicar sobreconfianza irreal; ratificación de Gol de Equipo y Doble Oportunidad como blindaje.",
+        "SquadInjuryAgent (FC Barcelona): Dani Olmo 100% habilitado en once titular; Raphinha y Roony Bardghji ratificados como bajas médicas oficiales con veto de props.",
+        "SquadInjuryAgent: 100% de planteles ratificados.",
+        "MarketRealityAgent: 6 Fijas ultra-seguras (95-98%) optimizadas (confianza media: 96.1%). Cero hándicaps, cero líneas de 5.5 goles.",
+        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
+        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Lunes."
+      ],
+      "system_health": "Excelente (Win Rate Fijas: 94.2% [49/52] | Win Rate Global: 91.7% [77/84] | Brier Score: ~0.076 | Ciclo #67)"
     }
   ],
   "current_weights": {
@@ -686,5 +689,5 @@
       "squad_offense_penalty: 0.82 -> 0.8"
     ]
   },
-  "last_updated": "2026-10-12 02:17:34"
+  "last_updated": "2026-10-12 16:20:22"
 }
