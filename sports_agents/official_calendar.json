@@ -372,36 +372,36 @@
   "2026-10-12": {
     "date_str": "12/10/2026",
     "day_name": "Lunes",
-    "competition": "Liga Profesional Argentina & Brasileirão Serie A",
+    "competition": "Ligas de Élite Europea & Sudamérica (LaLiga, Premier, Serie A, LPF, Brasileirão)",
     "fixtures": [
       [
-        "Atlético Tucumán",
-        "Newell's Old Boys",
+        "Atalanta",
+        "Venezia",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Defensa y Justicia",
-        "San Lorenzo",
-        "GOL_EQUIPO"
-      ],
-      [
-        "Botafogo",
-        "Internacional",
+        "Coventry City",
+        "Newcastle",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Cruzeiro",
-        "São Paulo",
-        "GOLES_UNDER"
+        "Levante",
+        "Sevilla",
+        "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Banfield",
-        "Barracas Central",
-        "GOLES_UNDER"
+        "Torino",
+        "Udinese",
+        "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Tigre",
-        "Platense",
+        "Racing Club",
+        "Belgrano",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Bahia",
+        "Mirassol",
         "DOBLE_OPORTUNIDAD"
       ]
     ]

@@ -84,6 +84,11 @@ flags = {
     "Liga de Quito": "⚪", "Barcelona SC": "🟡",
     "Sunderland": "🔴", "Leeds United": "⚪",
     "Rio Ave": "🟢", "Famalicão": "🔵",
+    "Levante": "🐸", "Sevilla": "⚪",
+    "Coventry City": "🩵", "Newcastle": "⚪",
+    "Atalanta": "🔵", "Venezia": "🦁",
+    "Torino": "🐂", "Udinese": "⚪",
+    "Belgrano": "🏴‍☠️",
     # Brasileirão Serie A & Liga Argentina & Liga BetPlay
     "Botafogo": "⭐", "Vasco da Gama": "⚓",
     "Cruzeiro": "🦊", "São Paulo": "🔴",
@@ -304,11 +309,6 @@ for i, m in enumerate(matches):
                     <div class="fija-stat-box">
                         <div class="fija-stat-val" style="color: var(--cyan);">{market_odds}</div>
                         <div class="fija-stat-lbl">Cuota Mercado</div>
-                    </div>
-                    <div style="display: flex; align-items: center;">
-                        <button class="btn-slip-action" id="btn-add-{i}" onclick="toggleBetInSlip({i}, '{m['match']}', '{fija.get('selection')}', {fija.get('probability', 95)}, {market_odds})">
-                            <span>➕</span> <span id="btn-txt-{i}">Añadir al Ticket</span>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -1008,6 +1008,33 @@ try:
     print("   -> Variables JS (allFijasData, chartConfigs, dataset-json) sincronizadas al 100%.")
 except Exception as ex_js:
     print(f"   -> Nota sincronizando JS: {ex_js}")
+
+# ========================================================
+# 6.4 ELIMINACIÓN PERMANENTE DEL TICKET CUANTITATIVO
+# ========================================================
+# 1. Eliminar elemento HTML slip-drawer para que nunca tape la pantalla en móviles
+new_full_html = re.sub(r'<div class="slip-drawer" id="slip-drawer"[\s\S]*?</div>\s*</div>', '', new_full_html)
+
+# 2. Desactivar CSS de slip-drawer
+new_full_html = re.sub(r'\.slip-drawer\s*\{[\s\S]*?\}', '.slip-drawer { display: none !important; }', new_full_html)
+
+# 3. Reemplazar funciones JS de slip con no-ops seguros
+slip_stubs = """
+        // 3. Ticket Cuantitativo Desactivado Permanentemente para Mobile/Desktop
+        function toggleBetInSlip() {}
+        function loadAllFijas() {}
+        function loadTop3() {}
+        function clearSlip() {}
+        function renderSlip() {}
+        function calculateSlip() {}
+        function copySlipToClipboard() {}
+        function toggleSlipDrawer() {}
+"""
+new_full_html = re.sub(
+    r'// 3\. Manejo de Selección de Apuestas en el Ticket Flotante[\s\S]*?(?=// 4\. Inicialización de Gráficos de Partidos|function initCharts)',
+    slip_stubs + '\n        ',
+    new_full_html
+)
 
 # ========================================================
 # 7. BLINDAJE ANTI-CACHE EN HEAD

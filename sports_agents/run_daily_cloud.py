@@ -243,14 +243,14 @@ def main():
                 ("Elche", "Celta de Vigo", "GOLES_UNDER"),
                 ("Liga de Quito", "Barcelona SC", "DOBLE_OPORTUNIDAD")
             ]
-        else:  # LUNES A JUEVES
+        else:  # LUNES
             fixtures_target = [
-                ("Botafogo", "Vasco da Gama", "DOBLE_OPORTUNIDAD"),
-                ("Cruzeiro", "São Paulo", "GOLES_UNDER"),
-                ("Internacional", "Corinthians", "GOL_EQUIPO"),
-                ("RB Bragantino", "Mirassol", "GOLES_UNDER"),
-                ("Tigre", "Banfield", "GOLES_UNDER"),
-                ("Barracas Central", "Huracán", "DOBLE_OPORTUNIDAD")
+                ("Atalanta", "Venezia", "DOBLE_OPORTUNIDAD"),
+                ("Coventry City", "Newcastle", "DOBLE_OPORTUNIDAD"),
+                ("Levante", "Sevilla", "DOBLE_OPORTUNIDAD"),
+                ("Torino", "Udinese", "DOBLE_OPORTUNIDAD"),
+                ("Racing Club", "Belgrano", "DOBLE_OPORTUNIDAD"),
+                ("Bahia", "Mirassol", "DOBLE_OPORTUNIDAD")
             ]
 
     # 6. Simulación Cuantitativa con los 11 Agentes
