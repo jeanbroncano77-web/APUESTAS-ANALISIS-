@@ -1,19 +1,7 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 62,
+  "cycles_completed": 63,
   "calibrations": [
-    {
-      "cycle": 13,
-      "timestamp": "2026-10-04 09:13:11",
-      "action": "Auto-Calibración Autónoma Diaria (Domingo 04/10/2026)",
-      "observations": [
-        "SquadInjuryAgent: 100% de planteles ratificados.",
-        "MarketRealityAgent: 6 Fijas optimizadas con confianza media del 96.6%.",
-        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
-        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Domingo."
-      ],
-      "system_health": "Excelente (Win Rate Auditado: 89.5%, Brier Score: 0.102, Ciclo #13)"
-    },
     {
       "cycle": 14,
       "timestamp": "2026-10-04 09:18:31",
@@ -649,6 +637,21 @@
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Lunes."
       ],
       "system_health": "Excelente (Win Rate Fijas: 94.2% [49/52] | Win Rate Global: 91.7% [77/84] | Brier Score: ~0.076 | Ciclo #62)"
+    },
+    {
+      "cycle": 63,
+      "timestamp": "2026-10-12 01:15:28",
+      "action": "Auto-Calibración Diaria (Lunes 12/10/2026)",
+      "observations": [
+        "[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas para Lunes.",
+        "Calibración Favoritos Visitantes: Fricción cuantitativa aplicada (tope 68% en 1X2 visitante) para erradicar sobreconfianza irreal; ratificación de Gol de Equipo y Doble Oportunidad como blindaje.",
+        "SquadInjuryAgent (FC Barcelona): Dani Olmo 100% habilitado en once titular; Raphinha y Roony Bardghji ratificados como bajas médicas oficiales con veto de props.",
+        "SquadInjuryAgent: 100% de planteles ratificados.",
+        "MarketRealityAgent: 6 Fijas ultra-seguras (95-98%) optimizadas (confianza media: 96.1%). Cero hándicaps, cero líneas de 5.5 goles.",
+        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
+        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Lunes."
+      ],
+      "system_health": "Excelente (Win Rate Fijas: 94.2% [49/52] | Win Rate Global: 91.7% [77/84] | Brier Score: ~0.076 | Ciclo #63)"
     }
   ],
   "current_weights": {
@@ -675,5 +678,5 @@
       "squad_offense_penalty: 0.82 -> 0.8"
     ]
   },
-  "last_updated": "2026-10-12 01:12:07"
+  "last_updated": "2026-10-12 01:15:28"
 }
