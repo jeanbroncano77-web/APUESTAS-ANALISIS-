@@ -1,20 +1,7 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 65,
+  "cycles_completed": 66,
   "calibrations": [
-    {
-      "cycle": 16,
-      "timestamp": "2026-10-04 18:35:00",
-      "action": "Recalibración Crítica por Desviación en Alemania vs Grecia & Veto Tier-1 con Ingesta de Medios (ESPN, Fox Sports, TNT Sports)",
-      "observations": [
-        "Autopsia de Fallo Inapelable: La Fija de Grecia (+1.5) ante Alemania resultó en FALLO (LOSS) contundente. El modelo sufrió de sobreponderación de momentum (1.42x) y una fórmula de hándicap ingenua que ignoró el riesgo real de goleada de un coloso mundial.",
-        "Ajuste Estructural en MarketRealityAgent: Queda terminantemente vetado seleccionar Hándicap Positivo (+1.5) para un no-favorito ante potencias Tier-1 (Alemania, Francia, etc.) o rivales con xG > 1.60.",
-        "Amortiguador de Momentum Tier-1 en MomentumStreakAgent: Se impone un freno del 75% al factor de racha cuando se enfrenta a gigantes europeos (inflection factor escalado a 1.0 + (factor - 1.0)*0.25).",
-        "Despliegue del Agente #12 (SportsMediaScoutAgent): Ingesta activa de señales editoriales y consenso periodístico de ESPN Deportes, ESPN Ecuador (espn.com.ec), Fox Sports y TNT Sports para alertar sobre asfixia táctica y onces demoledores.",
-        "Actualización Honesta del Track Record: Registro de pick #40 como LOSS en la auditoría oficial. Fijas: 11 aciertos de 12 (91.7%). Win Rate Global: 88.6% (39/44). Banca recalculada con deducción real a $1,839.75 USD."
-      ],
-      "system_health": "En Calibración Adaptativa (Win Rate Global: 88.6% | Fijas: 91.7% [11/12] | 1 Fallo Auditado y Autopsiado, Ciclo #16)"
-    },
     {
       "cycle": 17,
       "timestamp": "2026-10-04 18:55:00",
@@ -658,6 +645,21 @@
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Lunes."
       ],
       "system_health": "Excelente (Win Rate Fijas: 94.2% [49/52] | Win Rate Global: 91.7% [77/84] | Brier Score: ~0.076 | Ciclo #65)"
+    },
+    {
+      "cycle": 66,
+      "timestamp": "2026-10-12 02:17:34",
+      "action": "Auto-Calibración Diaria (Lunes 12/10/2026)",
+      "observations": [
+        "[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas para Lunes.",
+        "Calibración Favoritos Visitantes: Fricción cuantitativa aplicada (tope 68% en 1X2 visitante) para erradicar sobreconfianza irreal; ratificación de Gol de Equipo y Doble Oportunidad como blindaje.",
+        "SquadInjuryAgent (FC Barcelona): Dani Olmo 100% habilitado en once titular; Raphinha y Roony Bardghji ratificados como bajas médicas oficiales con veto de props.",
+        "SquadInjuryAgent: 100% de planteles ratificados.",
+        "MarketRealityAgent: 6 Fijas ultra-seguras (95-98%) optimizadas (confianza media: 96.1%). Cero hándicaps, cero líneas de 5.5 goles.",
+        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
+        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Lunes."
+      ],
+      "system_health": "Excelente (Win Rate Fijas: 94.2% [49/52] | Win Rate Global: 91.7% [77/84] | Brier Score: ~0.076 | Ciclo #66)"
     }
   ],
   "current_weights": {
@@ -684,5 +686,5 @@
       "squad_offense_penalty: 0.82 -> 0.8"
     ]
   },
-  "last_updated": "2026-10-12 01:34:37"
+  "last_updated": "2026-10-12 02:17:34"
 }
