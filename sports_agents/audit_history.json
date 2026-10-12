@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-11 15:29:11",
+  "last_updated": "2026-10-11 19:49:35",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 2121.75,
-  "total_profit": 1121.75,
-  "roi_pct": 112.2,
+  "current_bankroll": 2135.75,
+  "total_profit": 1135.75,
+  "roi_pct": 113.6,
   "global_stats": {
-    "total": 83,
-    "wins": 76,
+    "total": 84,
+    "wins": 77,
     "losses": 7,
-    "win_rate": 91.6
+    "win_rate": 91.7
   },
   "fija_stats": {
-    "total": 51,
-    "wins": 48,
+    "total": 52,
+    "wins": 49,
     "losses": 3,
-    "win_rate": 94.1,
-    "active_streak": 1
+    "win_rate": 94.2,
+    "active_streak": 2
   },
   "history": [
     {
@@ -1095,6 +1095,19 @@
       "confidence": 96.8,
       "status": "win",
       "diagnostic": "ACERTADO (0 - 0): Partido de riguroso orden táctico en el Martínez Valero; Celta no concedió ocasiones claras y cumplió la Doble Oportunidad X2.",
+      "pnl": 14.0
+    },
+    {
+      "id": 84,
+      "match": "Liga de Quito vs Barcelona SC",
+      "tournament": "Ligas de Élite & Superclásicos (Domingo 11 de Octubre) • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Liga de Quito o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Liga de Quito defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
       "pnl": 14.0
     }
   ]
