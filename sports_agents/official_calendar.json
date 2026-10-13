@@ -409,36 +409,36 @@
   "2026-10-13": {
     "date_str": "13/10/2026",
     "day_name": "Martes",
-    "competition": "Brasileirão Serie A & Clásicos Estaduales",
+    "competition": "UEFA Champions League - Fase de Liga (Jornada 2)",
     "fixtures": [
       [
-        "Corinthians",
-        "Santos",
+        "Galatasaray",
+        "Barcelona",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Flamengo",
-        "Bahia",
-        "GOL_EQUIPO"
-      ],
-      [
-        "Palmeiras",
-        "RB Bragantino",
+        "Arsenal",
+        "Lille",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Fluminense",
-        "Vasco da Gama",
-        "GOLES_UNDER"
+        "Atlético de Madrid",
+        "Manchester United",
+        "DOBLE_OPORTUNIDAD"
       ],
       [
-        "São Paulo",
-        "Mirassol",
+        "Inter Milan",
+        "Club Brugge",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Viking FK",
+        "Bayern Munich",
         "GOL_EQUIPO"
       ],
       [
-        "Botafogo",
-        "Cruzeiro",
+        "Villarreal",
+        "Napoli",
         "DOBLE_OPORTUNIDAD"
       ]
     ]

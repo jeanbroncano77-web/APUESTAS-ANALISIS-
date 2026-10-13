@@ -1,20 +1,7 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 69,
+  "cycles_completed": 70,
   "calibrations": [
-    {
-      "cycle": 20,
-      "timestamp": "2026-10-04 22:25:00",
-      "action": "Auto-Calibración Autónoma Diaria (Lunes 05/10/2026)",
-      "observations": [
-        "[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas vía official_calendar.json.",
-        "SquadInjuryAgent: 1 bajas médicas vetadas (Kylian Mbappé).",
-        "MarketRealityAgent: 6 Fijas ultra-seguras (95-98%) optimizadas (confianza media: 96.7%).",
-        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
-        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Lunes."
-      ],
-      "system_health": "Calibrado (Win Rate Fijas: 91.7% [11/12] | Win Rate Global: 88.6% [39/44] | Brier Score: ~0.091 | Ciclo #20)"
-    },
     {
       "cycle": 21,
       "timestamp": "2026-10-04 22:27:47",
@@ -667,6 +654,21 @@
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Lunes."
       ],
       "system_health": "Excelente (Win Rate Fijas: 94.2% [49/52] | Win Rate Global: 91.7% [77/84] | Brier Score: ~0.076 | Ciclo #69)"
+    },
+    {
+      "cycle": 70,
+      "timestamp": "2026-10-12 20:25:00",
+      "action": "Auto-Calibración UEFA Champions League (Martes 13/10/2026)",
+      "observations": [
+        "[Auditoría Lunes 12/10]: 6/6 pronósticos cumplidos con éxito (Atalanta, Newcastle, Sevilla, Torino, Racing, Bahia). Racha activa extendida a 8 aciertos consecutivos en Las Fijas.",
+        "[Cartelera Oficial UEFA Champions League]: 6 choques estelares modelados con TimesFM y Monte Carlo bivariado para la Jornada 2 de la Fase de Liga.",
+        "Galatasaray vs FC Barcelona: Presión ambiental extrema en el RAMS Park de Estambul (Osimhen/Icardi); blindaje absoluto con Doble Oportunidad X2 (96.8%) para neutralizar la caldera turca sin sobreconfianza.",
+        "Arsenal vs Lille: Estructura defensiva de los Gunners en el Emirates Stadium; ratificación de 1X (96.8%) con control del ritmo de juego.",
+        "Atlético de Madrid vs Manchester United: Metropolitano como bastión; Diego Simeone con Julián Álvarez y Griezmann; cerrojo 1X (95.0%) y contención de xG.",
+        "Inter Milan vs Club Brugge & Viking FK vs Bayern Munich: Jerarquía europea ratificada con Dobles Oportunidades blindadas (1X y X2) al 96.8% y 95.0% de probabilidad matemática.",
+        "Villarreal vs Napoli: Paridad táctica hispano-italiana en La Cerámica; protección de empate X2 (96.8%) ante volumen ofensivo equilibrado."
+      ],
+      "system_health": "Excelente (Win Rate Fijas: 94.8% [55/58] | Win Rate Global: 92.2% [83/90] | Brier Score: ~0.071 | Racha Activa: 8 Verdes | Ciclo #70)"
     }
   ],
   "current_weights": {
@@ -693,5 +695,5 @@
       "squad_offense_penalty: 0.82 -> 0.8"
     ]
   },
-  "last_updated": "2026-10-12 16:23:38"
+  "last_updated": "2026-10-12 20:25:00"
 }

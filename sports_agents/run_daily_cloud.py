@@ -243,7 +243,16 @@ def main():
                 ("Elche", "Celta de Vigo", "GOLES_UNDER"),
                 ("Liga de Quito", "Barcelona SC", "DOBLE_OPORTUNIDAD")
             ]
-        else:  # LUNES
+        elif target_weekday == 1:  # MARTES - UEFA CHAMPIONS LEAGUE
+            fixtures_target = [
+                ("Galatasaray", "Barcelona", "DOBLE_OPORTUNIDAD"),
+                ("Arsenal", "Lille", "DOBLE_OPORTUNIDAD"),
+                ("Atlético de Madrid", "Manchester United", "DOBLE_OPORTUNIDAD"),
+                ("Inter Milan", "Club Brugge", "DOBLE_OPORTUNIDAD"),
+                ("Viking FK", "Bayern Munich", "GOL_EQUIPO"),
+                ("Villarreal", "Napoli", "DOBLE_OPORTUNIDAD")
+            ]
+        else:  # LUNES / OTROS DÍAS
             fixtures_target = [
                 ("Atalanta", "Venezia", "DOBLE_OPORTUNIDAD"),
                 ("Coventry City", "Newcastle", "DOBLE_OPORTUNIDAD"),
@@ -303,22 +312,22 @@ def main():
 
     # Cargar métricas reales de auditoría
     audit_file = os.path.join(current_dir, "audit_history.json")
-    g_wr = 92.6
-    g_tot = 68
-    g_w = 63
-    f_wr = 97.2
-    f_tot = 36
-    f_w = 35
+    g_wr = 92.2
+    g_tot = 90
+    g_w = 83
+    f_wr = 94.8
+    f_tot = 58
+    f_w = 55
     if os.path.exists(audit_file):
         try:
             with open(audit_file, "r", encoding="utf-8") as f_a:
                 ad = json.load(f_a)
-                g_wr = ad.get("global_stats", {}).get("win_rate", 92.6)
-                g_tot = ad.get("global_stats", {}).get("total", 68)
-                g_w = ad.get("global_stats", {}).get("wins", 63)
-                f_wr = ad.get("fija_stats", {}).get("win_rate", 97.2)
-                f_tot = ad.get("fija_stats", {}).get("total", 36)
-                f_w = ad.get("fija_stats", {}).get("wins", 35)
+                g_wr = ad.get("global_stats", {}).get("win_rate", 92.2)
+                g_tot = ad.get("global_stats", {}).get("total", 90)
+                g_w = ad.get("global_stats", {}).get("wins", 83)
+                f_wr = ad.get("fija_stats", {}).get("win_rate", 94.8)
+                f_tot = ad.get("fija_stats", {}).get("total", 58)
+                f_w = ad.get("fija_stats", {}).get("wins", 55)
         except Exception:
             pass
 

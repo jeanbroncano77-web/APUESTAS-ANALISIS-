@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-11 19:49:35",
+  "last_updated": "2026-10-12 20:15:00",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 2135.75,
-  "total_profit": 1135.75,
-  "roi_pct": 113.6,
+  "current_bankroll": 2219.75,
+  "total_profit": 1219.75,
+  "roi_pct": 122.0,
   "global_stats": {
-    "total": 84,
-    "wins": 77,
+    "total": 90,
+    "wins": 83,
     "losses": 7,
-    "win_rate": 91.7
+    "win_rate": 92.2
   },
   "fija_stats": {
-    "total": 52,
-    "wins": 49,
+    "total": 58,
+    "wins": 55,
     "losses": 3,
-    "win_rate": 94.2,
-    "active_streak": 2
+    "win_rate": 94.8,
+    "active_streak": 8
   },
   "history": [
     {
@@ -1108,6 +1108,84 @@
       "confidence": 96.8,
       "status": "win",
       "diagnostic": "Liga de Quito defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
+      "pnl": 14.0
+    },
+    {
+      "id": 85,
+      "match": "Atalanta vs Venezia",
+      "tournament": "Serie A • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Atalanta o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.0,
+      "status": "win",
+      "diagnostic": "Atalanta dominó en Bérgamo (2-0) controlando el trámite y asegurando la Doble Oportunidad con solidez defensiva y ofensiva.",
+      "pnl": 14.0
+    },
+    {
+      "id": 86,
+      "match": "Coventry City vs Newcastle",
+      "tournament": "Premier League • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Empate o Newcastle (X2) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 95.1,
+      "status": "win",
+      "diagnostic": "Newcastle impuso su jerarquía en la Premier League (0-2), cumpliendo la Doble Oportunidad X2 con solvencia de visitante.",
+      "pnl": 14.0
+    },
+    {
+      "id": 87,
+      "match": "Levante vs Sevilla",
+      "tournament": "LaLiga EA Sports • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Empate o Sevilla (X2) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Sevilla sumó con jerarquía en el Ciutat de València; el blindaje de Doble Oportunidad X2 cumplió holgadamente el objetivo cuantitativo.",
+      "pnl": 14.0
+    },
+    {
+      "id": 88,
+      "match": "Torino vs Udinese",
+      "tournament": "Serie A • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Torino o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 95.0,
+      "status": "win",
+      "diagnostic": "Torino hizo valer su localía táctica en el Olímpico de Turín; la Doble Oportunidad 1X selló el resultado con total solvencia.",
+      "pnl": 14.0
+    },
+    {
+      "id": 89,
+      "match": "Racing Club vs Belgrano",
+      "tournament": "Liga Profesional Argentina • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Racing Club o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "La Academia dominó en el Cilindro de Avellaneda (1-0), confirmando el respaldo de Doble Oportunidad 1X sin sobresaltos.",
+      "pnl": 14.0
+    },
+    {
+      "id": 90,
+      "match": "Bahia vs Mirassol",
+      "tournament": "Brasileirão Serie A • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Bahia o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Bahia mantuvo su fortaleza en Salvador (2-1), ratificando la Doble Oportunidad 1X como cerrojo matemático.",
       "pnl": 14.0
     }
   ]
