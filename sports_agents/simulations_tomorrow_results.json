@@ -1,9 +1,8 @@
 {
-  "GeneratedAt": "2026-10-12 20:25:00",
+  "GeneratedAt": "2026-10-12 20:25:03",
   "TargetDay": "Martes",
   "TargetDate": "13/10/2026",
   "TemporalLabel": "MAÑANA",
-  "CompetitionHeader": "UEFA Champions League • Fase de Liga (Jornada 2)",
   "Matches": [
     {
       "match": "Galatasaray vs Barcelona",
@@ -2358,26 +2357,16 @@
         ]
       },
       "la_fija_real": {
-        "market": "Doble Oportunidad Blindada",
-        "category_code": "DOBLE_OPORTUNIDAD",
-        "selection": "Empate o Bayern Munich (X2)",
-        "probability": 95.0,
+        "market": "Total de Córners Fijo",
+        "category_code": "TOTAL_CORNERS",
+        "selection": "Más de 6.5 córners totales",
+        "probability": 95.2,
         "odds": 1.14,
-        "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-        "rationale": "El favorito visitante Bayern Munich puntúa en el 95.0% de las simulaciones.",
-        "_rank_score": 260.1
+        "availability": "Línea de máxima cobertura en Bet365 / Betano",
+        "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (8.4).",
+        "_rank_score": 181.7
       },
       "all_fija_options": [
-        {
-          "market": "Doble Oportunidad Blindada",
-          "category_code": "DOBLE_OPORTUNIDAD",
-          "selection": "Empate o Bayern Munich (X2)",
-          "probability": 95.0,
-          "odds": 1.14,
-          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "El favorito visitante Bayern Munich puntúa en el 95.0% de las simulaciones.",
-          "_rank_score": 260.1
-        },
         {
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
@@ -2397,6 +2386,16 @@
           "availability": "Línea principal en Bet365 / Betano",
           "rationale": "Constante flujo de ataque por bandas que proyecta 8.4 saques de esquina acumulados.",
           "_rank_score": 181.1
+        },
+        {
+          "market": "Doble Oportunidad Blindada",
+          "category_code": "DOBLE_OPORTUNIDAD",
+          "selection": "Empate o Bayern Munich (X2)",
+          "probability": 95.0,
+          "odds": 1.14,
+          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+          "rationale": "El favorito visitante Bayern Munich puntúa en el 95.0% de las simulaciones.",
+          "_rank_score": 180.1
         },
         {
           "market": "Total de Goles Fijo",
