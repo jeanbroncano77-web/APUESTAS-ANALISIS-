@@ -446,37 +446,37 @@
   "2026-10-14": {
     "date_str": "14/10/2026",
     "day_name": "Miércoles",
-    "competition": "Liga Profesional Argentina - Fecha de Clásicos",
+    "competition": "UEFA Champions League • Fase de Liga (Jornada 2)",
     "fixtures": [
       [
-        "Boca Juniors",
-        "Racing Club",
+        "Manchester City",
+        "Paris Saint-Germain",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "River Plate",
-        "San Lorenzo",
-        "GOL_EQUIPO"
-      ],
-      [
-        "Vélez Sarsfield",
-        "Estudiantes",
+        "Roma",
+        "Real Madrid",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Talleres",
-        "Belgrano",
+        "LASK",
+        "Liverpool",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Independiente",
-        "Lanús",
+        "Bodø/Glimt",
+        "Borussia Dortmund",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Rosario Central",
-        "Newell's Old Boys",
-        "GOLES_UNDER"
+        "Aston Villa",
+        "Fenerbahçe",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Feyenoord",
+        "Como",
+        "DOBLE_OPORTUNIDAD"
       ]
     ]
   },

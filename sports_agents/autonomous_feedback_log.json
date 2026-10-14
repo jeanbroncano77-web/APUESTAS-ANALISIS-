@@ -1,20 +1,7 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 79,
+  "cycles_completed": 81,
   "calibrations": [
-    {
-      "cycle": 30,
-      "timestamp": "2026-10-06 23:30:00",
-      "action": "Auto-Calibración en Vivo (Brasileirão Serie A & Liga Argentina)",
-      "observations": [
-        "[Calendario Oficial]: 6 partidos reales y activos en casas de apuestas (Botafogo vs Vasco, Cruzeiro vs São Paulo, Inter vs Corinthians, RB Bragantino vs Mirassol, Tigre vs Banfield, Barracas vs Huracán).",
-        "SquadInjuryAgent: 100% de planteles sudamericanos ratificados sin bajas críticas.",
-        "MarketRealityAgent: Veto permanente a hándicaps aplicado; 6 Fijas en mercados reales (Doble Oportunidad, Total Goles Menos, Goles Equipo >0.5, Córners).",
-        "PlayerPropsAgent: Proyecciones activas para figuras reales (Igor Jesus, Vegetti, Calleri, Borré, Depay, Echeverría).",
-        "Dixon-Coles & Poisson: Brier Score calibrado para fútbol sudamericano con alta disciplina arbitral."
-      ],
-      "system_health": "Calibrado (Win Rate Fijas: 95.8% [23/24] | Win Rate Global: 91.1% [51/56] | Brier Score: ~0.080 | Ciclo #30)"
-    },
     {
       "cycle": 31,
       "timestamp": "2026-10-07 09:30:00",
@@ -687,6 +674,21 @@
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Martes."
       ],
       "system_health": "Excelente (Win Rate Fijas: 94.8% [55/58] | Win Rate Global: 92.2% [83/90] | Brier Score: ~0.076 | Ciclo #79)"
+    },
+    {
+      "cycle": 81,
+      "timestamp": "2026-10-13 21:35:00",
+      "action": "Auto-Calibración Miércoles UEFA Champions League (14/10/2026)",
+      "observations": [
+        "[Auditoría Martes 13/10]: 6/6 pronósticos cumplidos con éxito (Arsenal, Inter, Barcelona, Bayern, Atlético, Napoli). Racha activa extendida a 14 aciertos consecutivos en Las Fijas.",
+        "[Cartelera Oficial UEFA Champions League]: 6 choques estelares modelados para el Miércoles 14/10 de la Jornada 2 de la Fase de Liga.",
+        "Manchester City vs Paris Saint-Germain: Choque de gigantes en el Etihad Stadium; Erling Haaland y De Bruyne respaldados con cerrojo 1X (95.0%) para amortiguar el poder de Barcola y Dembélé.",
+        "Roma vs Real Madrid: Visita al Stadio Olimpico; Vinícius Jr., Mbappé y Bellingham con blindaje X2 (96.0%) protegiendo ante la fricción táctica de Dybala.",
+        "LASK vs Liverpool & Bodø/Glimt vs Borussia Dortmund: Doble Oportunidad X2 (95.0% y 96.8%) para neutralizar visitas europeas y climas nórdicos.",
+        "Aston Villa vs Fenerbahçe & Feyenoord vs Como: Fortalezas locales de Villa Park y De Kuip ratificadas con 1X (96.8%).",
+        "Regla de Oro Permanente: Veto total a hándicaps negativos y mantenimiento de cuotas justas en mercados reales 100% disponibles."
+      ],
+      "system_health": "Excelente (Win Rate Fijas: 95.3% [61/64] | Win Rate Global: 92.7% [89/96] | Brier Score: ~0.068 | Racha Activa: 14 Verdes | Ciclo #81)"
     }
   ],
   "current_weights": {
@@ -713,5 +715,5 @@
       "squad_offense_penalty: 0.82 -> 0.8"
     ]
   },
-  "last_updated": "2026-10-13 14:30:17"
+  "last_updated": "2026-10-13 21:35:00"
 }

@@ -1,0 +1,450 @@
+{
+  "match": "Borussia Dortmund vs Werder Bremen",
+  "home_team": "Borussia Dortmund",
+  "away_team": "Werder Bremen",
+  "context": {
+    "tournament": "Bundesliga Alemana - Jornada 5 (Freitagsspiel)",
+    "stadium": "Signal Iduna Park (Westfalenstadion, Dortmund)",
+    "spectators_est": "81,365 en estadio (~30M audiencia global)",
+    "referee": "Felix Zwayer",
+    "referee_avg_yellows": 4.2,
+    "referee_avg_reds": 0.14,
+    "intensity": "Máxima (Duelo de viernes en la Muralla Amarilla; Dortmund busca afianzar el liderato invicto ante el Bremen)"
+  },
+  "projections": {
+    "expected_goals": {
+      "home": 3.13,
+      "away": 0.7,
+      "total": 3.83
+    },
+    "variance_and_uncertainty": {
+      "variance_index": 1.05,
+      "is_high_volatility": false,
+      "rank_factor_applied": 0.375
+    },
+    "expected_corners": {
+      "home": 7.22,
+      "away": 3.78,
+      "total": 11.0,
+      "home_quantiles": {
+        "p10": 5.4,
+        "p90": 9.3
+      },
+      "away_quantiles": {
+        "p10": 2.2,
+        "p90": 5.7
+      }
+    },
+    "expected_yellow_cards": {
+      "home": 1.54,
+      "away": 2.28,
+      "total": 3.82
+    },
+    "expected_shots": {
+      "home": 17.14,
+      "away": 9.73
+    }
+  },
+  "tactical_analysis": {
+    "home_manager": {
+      "style": "Estándar",
+      "pace": "Medio"
+    },
+    "away_manager": {
+      "style": "Estándar",
+      "pace": "Medio"
+    },
+    "tactical_xg_multiplier_home": 1.0,
+    "tactical_xg_multiplier_away": 1.0,
+    "corner_dampener_factor": 0.85,
+    "player_role_restrictions": {},
+    "tactical_summary": "Choque de estilos: Estándar vs Estándar"
+  },
+  "squad_health": {
+    "home_team": "Borussia Dortmund",
+    "away_team": "Werder Bremen",
+    "home_vetoed": [
+      {
+        "name": "Giovanni Reyna",
+        "injury": "Lesión en la ingle",
+        "severity": "BAJA CONFIRMADA",
+        "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+        "medical_detail": "Baja en la mediapunta."
+      },
+      {
+        "name": "Julien Duranville",
+        "injury": "Lesión muscular en el muslo",
+        "severity": "BAJA",
+        "action": "VETO TOTAL DE PROPS (Baja Confirmada)",
+        "medical_detail": "Baja en los extremos."
+      }
+    ],
+    "away_vetoed": [],
+    "home_reallocation": "Ausencia de Giovanni Reyna: Volumen de tiros transferido hacia Julian Brandt, Serhou Guirassy.",
+    "away_reallocation": "Plantel al 100% sin reasignación necesaria.",
+    "home_health_status": "VETO ACTIVO: Bajas Detectadas",
+    "away_health_status": "Plantel Ratificado al 100%",
+    "status": "Auditoría Médica y Convocatorias Oficiales Verificadas"
+  },
+  "psychological_context": {
+    "tournament_urgency": 0.9,
+    "is_friendly": false,
+    "stadium_name": "Estadio Neutral",
+    "intimidation_factor": 0.5,
+    "intimidation_impact": "Neutro",
+    "minimum_draw_floor_pct": 26.0,
+    "complacency_risk": "Medio",
+    "psychological_notes": "Urgencia: Máxima (Puntos Oficiales) | Caldera: 50.0%"
+  },
+  "momentum_analysis": {
+    "agent": "MomentumStreakAgent",
+    "version": "1.0.0",
+    "home_team": "Borussia Dortmund",
+    "away_team": "Werder Bremen",
+    "home_momentum_factor": 1.0,
+    "away_momentum_factor": 1.0,
+    "momentum_differential": 0.0,
+    "has_breakthrough": false,
+    "breakthrough_summary": "Ambos equipos en rangos estándar de volatilidad.",
+    "home_details": null,
+    "away_details": null,
+    "tier1_dampener_active": false,
+    "recommendation_bias": "MANTENER_EQUILIBRIO"
+  },
+  "media_intelligence": {
+    "agent": "SportsMediaScoutAgent",
+    "version": "1.0.0",
+    "sources_consulted": [
+      "ESPN Deportes",
+      "ESPN Ecuador (https://www.espn.com.ec/)",
+      "Fox Sports",
+      "TNT Sports"
+    ],
+    "has_tier1_powerhouse": false,
+    "tier1_team": null,
+    "blowout_risk_level": "MODERADO",
+    "editorial_restrictions": [],
+    "editorial_insights": [
+      "COBERTURA ESPN ECUADOR / FOX SPORTS: Enfrentamiento parejo (Borussia Dortmund vs Werder Bremen). Partida de ritmo medio con preponderancia de mercados de goles moderados y dobles oportunidades respaldadas por localía."
+    ],
+    "press_quotes": [],
+    "summary_tag": "Señal Editorial Activa (MODERADO Riesgo Desborde)"
+  },
+  "score_prediction": {
+    "most_probable_score": "2 - 0",
+    "most_probable_prob_pct": 11.16,
+    "top_5_scores": [
+      {
+        "score": "2 - 0",
+        "home_goals": 2,
+        "away_goals": 0,
+        "probability_pct": 11.16
+      },
+      {
+        "score": "3 - 0",
+        "home_goals": 3,
+        "away_goals": 0,
+        "probability_pct": 10.22
+      },
+      {
+        "score": "1 - 0",
+        "home_goals": 1,
+        "away_goals": 0,
+        "probability_pct": 8.84
+      },
+      {
+        "score": "4 - 0",
+        "home_goals": 4,
+        "away_goals": 0,
+        "probability_pct": 7.6
+      },
+      {
+        "score": "2 - 1",
+        "home_goals": 2,
+        "away_goals": 1,
+        "probability_pct": 7.3
+      }
+    ],
+    "1x2_probabilities": {
+      "home_win_pct": 72.92,
+      "draw_pct": 26.0,
+      "away_win_pct": 1.08
+    },
+    "goals_markets": {
+      "over_0_5_pct": 96.11,
+      "under_0_5_pct": 3.89,
+      "over_1_5_pct": 84.76,
+      "under_1_5_pct": 15.24,
+      "over_2_5_pct": 66.88,
+      "under_2_5_pct": 33.12,
+      "over_3_5_pct": 47.04,
+      "under_3_5_pct": 52.96,
+      "over_4_5_pct": 29.53,
+      "under_4_5_pct": 70.47,
+      "under_5_5_pct": 83.54,
+      "btts_yes_pct": 45.44,
+      "btts_no_pct": 54.56
+    },
+    "exact_market_probabilities": {
+      "home_win_pct": 79.39,
+      "draw_pct": 13.06,
+      "away_win_pct": 7.55,
+      "double_chance_1x_pct": 92.45,
+      "double_chance_x2_pct": 20.61,
+      "double_chance_12_pct": 86.94,
+      "dnb_home_pct": 91.32,
+      "dnb_away_pct": 8.68,
+      "over_0_5_pct": 96.11,
+      "under_0_5_pct": 3.89,
+      "over_1_5_pct": 84.76,
+      "under_1_5_pct": 15.24,
+      "over_2_5_pct": 66.88,
+      "under_2_5_pct": 33.12,
+      "over_3_5_pct": 47.04,
+      "under_3_5_pct": 52.96,
+      "over_4_5_pct": 29.53,
+      "under_4_5_pct": 70.47,
+      "under_5_5_pct": 83.54,
+      "btts_yes_pct": 45.44,
+      "btts_no_pct": 54.56,
+      "home_over_0_5_pct": 92.39,
+      "home_under_2_5_pct": 46.98,
+      "away_over_0_5_pct": 49.16,
+      "away_under_2_5_pct": 96.06,
+      "home_plus_1_5_pct": 97.89,
+      "away_plus_1_5_pct": 39.7,
+      "home_plus_2_5_pct": 99.52,
+      "away_plus_2_5_pct": 59.67,
+      "home_minus_1_5_pct": 60.3,
+      "away_minus_1_5_pct": 2.11,
+      "home_clean_sheet_pct": 50.84,
+      "away_clean_sheet_pct": 7.61,
+      "home_win_by_1_pct": 19.09,
+      "away_win_by_1_pct": 5.44
+    },
+    "simulated_averages": {
+      "home_goals": 2.99,
+      "away_goals": 0.7,
+      "total_goals": 3.68
+    }
+  },
+  "corners_prediction": {
+    "home_corners_expected": 5.2,
+    "away_corners_expected": 2.7,
+    "total_corners_expected": 7.9,
+    "most_likely_range": "6 - 9 córners",
+    "lines": {
+      "over_6_5_pct": 67.4,
+      "under_6_5_pct": 32.6,
+      "over_7_5_pct": 53.3,
+      "under_7_5_pct": 46.7,
+      "over_8_5_pct": 39.3,
+      "under_8_5_pct": 60.7,
+      "over_9_5_pct": 27.1,
+      "under_9_5_pct": 72.9,
+      "over_10_5_pct": 17.4,
+      "under_10_5_pct": 82.6,
+      "over_11_5_pct": 10.5,
+      "under_11_5_pct": 89.5,
+      "under_12_5_pct": 94.1
+    },
+    "team_lines": {
+      "home_over_4_5_pct": 59.4,
+      "home_over_5_5_pct": 41.9,
+      "away_over_3_5_pct": 28.6,
+      "away_over_4_5_pct": 13.7
+    }
+  },
+  "cards_prediction": {
+    "referee": "Felix Zwayer",
+    "home_yellow_cards": 1.6,
+    "away_yellow_cards": 2.4,
+    "total_yellow_cards": 4.0,
+    "red_cards": {
+      "expected_home_reds": 0.05,
+      "expected_away_reds": 0.08,
+      "expected_total_reds": 0.13,
+      "home_red_prob_pct": 5.4,
+      "away_red_prob_prob_pct": 7.9,
+      "any_red_card_in_match_pct": 12.5
+    },
+    "total_cards_expected": 4.1,
+    "card_lines": {
+      "over_3_5_cards_pct": 56.5,
+      "under_3_5_cards_pct": 43.5,
+      "over_4_5_cards_pct": 36.9,
+      "under_4_5_cards_pct": 63.1,
+      "over_5_5_cards_pct": 21.3,
+      "under_5_5_cards_pct": 78.7
+    }
+  },
+  "player_props": {
+    "home_key_players": [
+      {
+        "name": "Serhou Guirassy",
+        "position": "Delantero Centro Goleador",
+        "health_status": "Disponible",
+        "expected_shots": 4.55,
+        "expected_sot": 2.12,
+        "prob_at_least_1_sot_pct": 88.0,
+        "prob_at_least_2_sot_pct": 62.5,
+        "prob_over_1_5_shots_pct": 94.1,
+        "prob_over_2_5_shots_pct": 83.2,
+        "goal_anytime_prob_pct": 62.0,
+        "reallocated_from": "Giovanni Reyna"
+      },
+      {
+        "name": "Julian Brandt",
+        "position": "Mediapunta Organizador",
+        "health_status": "Disponible",
+        "expected_shots": 3.07,
+        "expected_sot": 1.2,
+        "prob_at_least_1_sot_pct": 69.8,
+        "prob_at_least_2_sot_pct": 33.7,
+        "prob_over_1_5_shots_pct": 81.1,
+        "prob_over_2_5_shots_pct": 59.2,
+        "goal_anytime_prob_pct": 28.0,
+        "reallocated_from": "Giovanni Reyna"
+      },
+      {
+        "name": "Karim Adeyemi",
+        "position": "Extremo Eléctrico",
+        "health_status": "Disponible",
+        "expected_shots": 3.26,
+        "expected_sot": 1.4,
+        "prob_at_least_1_sot_pct": 75.2,
+        "prob_at_least_2_sot_pct": 40.7,
+        "prob_over_1_5_shots_pct": 83.6,
+        "prob_over_2_5_shots_pct": 63.2,
+        "goal_anytime_prob_pct": 35.0,
+        "reallocated_from": null
+      },
+      {
+        "name": "Marcel Sabitzer",
+        "position": "Volante Mixto con Pegada",
+        "health_status": "Disponible",
+        "expected_shots": 2.09,
+        "expected_sot": 0.81,
+        "prob_at_least_1_sot_pct": 55.7,
+        "prob_at_least_2_sot_pct": 19.6,
+        "prob_over_1_5_shots_pct": 61.9,
+        "prob_over_2_5_shots_pct": 34.9,
+        "goal_anytime_prob_pct": 18.0,
+        "reallocated_from": null
+      }
+    ],
+    "away_key_players": [
+      {
+        "name": "Marvin Ducksch",
+        "position": "Delantero Referente",
+        "health_status": "Disponible",
+        "expected_shots": 1.81,
+        "expected_sot": 0.7,
+        "prob_at_least_1_sot_pct": 50.1,
+        "prob_at_least_2_sot_pct": 15.4,
+        "prob_over_1_5_shots_pct": 53.9,
+        "prob_over_2_5_shots_pct": 27.1,
+        "goal_anytime_prob_pct": 30.0,
+        "reallocated_from": null
+      },
+      {
+        "name": "Romano Schmid",
+        "position": "Volante Ofensivo Rápido",
+        "health_status": "Disponible",
+        "expected_shots": 1.32,
+        "expected_sot": 0.49,
+        "prob_at_least_1_sot_pct": 38.5,
+        "prob_at_least_2_sot_pct": 8.6,
+        "prob_over_1_5_shots_pct": 38.0,
+        "prob_over_2_5_shots_pct": 14.8,
+        "goal_anytime_prob_pct": 18.0,
+        "reallocated_from": null
+      },
+      {
+        "name": "Mitchell Weiser",
+        "position": "Carrilero Derecho",
+        "health_status": "Disponible",
+        "expected_shots": 0.83,
+        "expected_sot": 0.28,
+        "prob_at_least_1_sot_pct": 24.3,
+        "prob_at_least_2_sot_pct": 3.2,
+        "prob_over_1_5_shots_pct": 20.3,
+        "prob_over_2_5_shots_pct": 5.2,
+        "goal_anytime_prob_pct": 12.0,
+        "reallocated_from": null
+      }
+    ]
+  },
+  "la_fija_real": {
+    "market": "Gol de Equipo de Seguridad",
+    "category_code": "GOL_EQUIPO",
+    "selection": "Borussia Dortmund anota más de 0.5 goles",
+    "probability": 96.8,
+    "odds": 1.15,
+    "availability": "Universal en todas las plataformas (Bet365, Betano)",
+    "rationale": "Volumen ofensivo de Borussia Dortmund (1.4 xG) asegura al menos un gol a favor.",
+    "_rank_score": 274.75
+  },
+  "all_fija_options": [
+    {
+      "market": "Gol de Equipo de Seguridad",
+      "category_code": "GOL_EQUIPO",
+      "selection": "Borussia Dortmund anota más de 0.5 goles",
+      "probability": 96.8,
+      "odds": 1.15,
+      "availability": "Universal en todas las plataformas (Bet365, Betano)",
+      "rationale": "Volumen ofensivo de Borussia Dortmund (1.4 xG) asegura al menos un gol a favor.",
+      "_rank_score": 274.75
+    },
+    {
+      "market": "Doble Oportunidad Blindada",
+      "category_code": "DOBLE_OPORTUNIDAD",
+      "selection": "Borussia Dortmund o Empate (1X)",
+      "probability": 96.8,
+      "odds": 1.14,
+      "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+      "rationale": "Protección total ante el empate con 96.8% de cobertura matemática.",
+      "_rank_score": 194.5
+    },
+    {
+      "market": "Total de Goles Fijo",
+      "category_code": "GOLES_OVER",
+      "selection": "Más de 0.5 goles totales",
+      "probability": 96.1,
+      "odds": 1.09,
+      "availability": "Universal en todas las plataformas",
+      "rationale": "Intensidad ofensiva global de 2.5 xG descarta matemáticamente un 0-0.",
+      "_rank_score": 187.65
+    },
+    {
+      "market": "Victoria Sin Empate (DNB)",
+      "category_code": "VICTORIA_SIN_EMPATE",
+      "selection": "Borussia Dortmund Gana (Empate No Válido / DNB)",
+      "probability": 91.32,
+      "odds": 1.18,
+      "availability": "100% Casas de Apuestas (Mercado 'Draw No Bet')",
+      "rationale": "Triunfo de Borussia Dortmund con devolución íntegra del 100% del dinero apostado si el juego finaliza igualado.",
+      "_rank_score": 57.46
+    },
+    {
+      "market": "Total de Goles Fijo",
+      "category_code": "GOLES_OVER",
+      "selection": "Más de 1.5 goles totales",
+      "probability": 84.8,
+      "odds": 1.26,
+      "availability": "Universal en todas las plataformas",
+      "rationale": "Ritmo conjunto proyectado de 2.5 xG con 84.8% de probabilidad exacta de al menos 2 goles.",
+      "_rank_score": 55.0
+    },
+    {
+      "market": "Victoria Directa (1X2)",
+      "category_code": "VICTORIA_DIRECTA",
+      "selection": "Borussia Dortmund Gana el Partido (1)",
+      "probability": 79.4,
+      "odds": 1.32,
+      "availability": "Universal en todas las casas (Bet365, Betano, etc.)",
+      "rationale": "Triunfo directo de Borussia Dortmund respaldado por una probabilidad de victoria del 79.4% en 90 minutos.",
+      "_rank_score": 52.9
+    }
+  ]
+}

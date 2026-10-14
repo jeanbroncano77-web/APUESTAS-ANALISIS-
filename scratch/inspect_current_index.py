@@ -1,20 +1,31 @@
 import re
 
 html = open("index.html", encoding="utf-8").read()
-badge = re.findall(r'<div class="badge-fija-oro">.*?</div>', html)
-fija_title = re.findall(r'<div class="fija-oro-title">.*?</div>', html)
-switcher = re.findall(r'<div class="switcher-teams">.*?</div>', html, re.DOTALL)
-matches_hero = re.findall(r'<div class="team-name">(.*?)</div>', html)
 
-out = []
-out.append("Badge: " + str(badge))
-out.append("Fija title: " + str(fija_title))
-for s in switcher:
-    cleaned = re.sub(r'\s+', ' ', s).strip()
-    out.append("Match: " + cleaned)
-out.append("Hero teams: " + str(matches_hero))
+# Look for section header
+header_match = re.search(r'<div class="header-content">([\s\S]*?)</div>\s*</div>', html)
+if header_match:
+    print("Header content:")
+    for line in header_match.group(1).splitlines():
+        if line.strip():
+            print(" ", line.strip()[:100])
 
-with open("scratch/index_inspection_result.txt", "w", encoding="utf-8") as f_out:
-    f_out.write("\n".join(out))
+# Look for view-container-matches
+start_m = html.find('id="view-container-matches"')
+if start_m != -1:
+    print("\nFound view-container-matches at pos:", start_m)
+    # Search for match names within next 10000 chars
+    chunk = html[start_m:start_m+20000]
+    matches_in_chunk = re.findall(r'<div class="match-[^"]*">([^<]+)</div>', chunk)
+    print("Matches in chunk sample:", matches_in_chunk[:10])
+    
+    # Check what teams appear in chunk
+    for team in ["Liverpool", "Manchester City", "Galatasaray", "Barcelona", "Arsenal", "Inter", "Atalanta", "Real Madrid", "Boca"]:
+        if team in chunk:
+            print(f"  Team {team} is in Area 1!")
 
-print("Inspection written to scratch/index_inspection_result.txt")
+# Also check date pill / badge
+pills = re.findall(r'<span[^>]*class="[^"]*badge[^"]*"[^>]*>(.*?)</span>', html)
+print("\nBadges sample:")
+for p in pills[:8]:
+    print(" ", p.strip()[:80])

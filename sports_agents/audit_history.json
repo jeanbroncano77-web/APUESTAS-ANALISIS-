@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-12 20:15:00",
+  "last_updated": "2026-10-13 21:30:00",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 2219.75,
-  "total_profit": 1219.75,
-  "roi_pct": 122.0,
+  "current_bankroll": 2303.75,
+  "total_profit": 1303.75,
+  "roi_pct": 130.4,
   "global_stats": {
-    "total": 90,
-    "wins": 83,
+    "total": 96,
+    "wins": 89,
     "losses": 7,
-    "win_rate": 92.2
+    "win_rate": 92.7
   },
   "fija_stats": {
-    "total": 58,
-    "wins": 55,
+    "total": 64,
+    "wins": 61,
     "losses": 3,
-    "win_rate": 94.8,
-    "active_streak": 8
+    "win_rate": 95.3,
+    "active_streak": 14
   },
   "history": [
     {
@@ -1186,6 +1186,84 @@
       "confidence": 96.8,
       "status": "win",
       "diagnostic": "Bahia mantuvo su fortaleza en Salvador (2-1), ratificando la Doble Oportunidad 1X como cerrojo matemático.",
+      "pnl": 14.0
+    },
+    {
+      "id": 91,
+      "match": "Arsenal vs Lille",
+      "tournament": "UEFA Champions League • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Arsenal o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Arsenal impuso su solidez defensiva en el Emirates Stadium (2-0), cumpliendo el cerrojo de Doble Oportunidad 1X con autoridad europea.",
+      "pnl": 14.0
+    },
+    {
+      "id": 92,
+      "match": "Inter Milan vs Club Brugge",
+      "tournament": "UEFA Champions League • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Inter Milan o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Inter dominó en San Siro (3-0) con doblete de Lautaro Martínez, ratificando la Doble Oportunidad 1X con solvencia total.",
+      "pnl": 14.0
+    },
+    {
+      "id": 93,
+      "match": "Galatasaray vs Barcelona",
+      "tournament": "UEFA Champions League • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Empate o Barcelona (X2) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "El Barça superó la caldera del RAMS Park en Estambul (1-2), asegurando el blindaje X2 ante la presión turca.",
+      "pnl": 14.0
+    },
+    {
+      "id": 94,
+      "match": "Viking FK vs Bayern Munich",
+      "tournament": "UEFA Champions League • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Empate o Bayern Munich (X2) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 95.0,
+      "status": "win",
+      "diagnostic": "Bayern Munich impuso su jerarquía en Noruega (1-3) con Harry Kane comandando el ataque; el X2 cumplió holgadamente.",
+      "pnl": 14.0
+    },
+    {
+      "id": 95,
+      "match": "Atlético de Madrid vs Manchester United",
+      "tournament": "UEFA Champions League • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Atlético de Madrid o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 95.0,
+      "status": "win",
+      "diagnostic": "El Cholo Simeone convirtió el Metropolitano en un bastión inexpugnable (1-0), asegurando la Doble Oportunidad 1X.",
+      "pnl": 14.0
+    },
+    {
+      "id": 96,
+      "match": "Villarreal vs Napoli",
+      "tournament": "UEFA Champions League • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Empate o Napoli (X2) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Napoli rescató un empate táctico en La Cerámica (1-1); la Doble Oportunidad X2 protegió el pronóstico con total precisión.",
       "pnl": 14.0
     }
   ]

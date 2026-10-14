@@ -28,6 +28,14 @@ agents_dir = os.path.join(base_dir, "sports_agents")
 
 app = Flask(__name__)
 
+# Blindaje anti-caché absoluto para navegadores móviles y desktop
+@app.after_request
+def add_no_cache_headers(response):
+    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, post-check=0, pre-check=0, max-age=0"
+    response.headers["Pragma"] = "no-cache"
+    response.headers["Expires"] = "-1"
+    return response
+
 # Control de bloqueo para evitar ejecuciones concurrentes
 update_lock = threading.Lock()
 last_auto_check = None
