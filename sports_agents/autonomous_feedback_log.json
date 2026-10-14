@@ -1,19 +1,7 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 87,
+  "cycles_completed": 88,
   "calibrations": [
-    {
-      "cycle": 37,
-      "timestamp": "2026-10-08 09:05:00",
-      "action": "Calibración Diaria Jueves 08/10 (UEFA Nations League & Internacionales)",
-      "observations": [
-        "Cartelera Estelar de Jueves: 6 pronósticos de alta fiabilidad en juego internacional (Italia vs Bélgica, Inglaterra vs Finlandia, Israel vs Francia, Macedonia vs Albania, Bosnia vs Turquía, Venezuela vs Corea del Sur).",
-        "SquadInjuryAgent: 100% de planteles ratificados sin bajas críticas desatendidas.",
-        "MarketRealityAgent: 100% mercados apostables y reales (Doble Oportunidad, Menos de 3.5 goles, Gol de Equipo). Cero hándicaps, cero líneas sintéticas.",
-        "TimesFM & Monte Carlo: Dixon-Coles calibrado con Brier score estimado ~0.078."
-      ],
-      "system_health": "Excelente (Win Rate Fijas: 96.7% [29/30] | Win Rate Global: 91.9% [57/62] | Brier Score: ~0.078 | Ciclo #37)"
-    },
     {
       "cycle": 38,
       "timestamp": "2026-10-08 09:25:00",
@@ -720,6 +708,21 @@
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Miércoles."
       ],
       "system_health": "Excelente (Win Rate Fijas: 92.2% [59/64] | Win Rate Global: 90.6% [87/96] | Brier Score: ~0.076 | Ciclo #87)"
+    },
+    {
+      "cycle": 88,
+      "timestamp": "2026-10-14 12:27:46",
+      "action": "Auto-Calibración Diaria (Miércoles 14/10/2026)",
+      "observations": [
+        "[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas para Miércoles.",
+        "Calibración Favoritos Visitantes: Fricción cuantitativa aplicada (tope 68% en 1X2 visitante) para erradicar sobreconfianza irreal; ratificación de Gol de Equipo y Doble Oportunidad como blindaje.",
+        "SquadInjuryAgent (FC Barcelona): Dani Olmo 100% habilitado en once titular; Raphinha y Roony Bardghji ratificados como bajas médicas oficiales con veto de props.",
+        "SquadInjuryAgent: 100% de planteles ratificados.",
+        "MarketRealityAgent: 6 Fijas ultra-seguras (95-98%) optimizadas (confianza media: 96.1%). Cero hándicaps, cero líneas de 5.5 goles.",
+        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
+        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Miércoles."
+      ],
+      "system_health": "Excelente (Win Rate Fijas: 92.2% [59/64] | Win Rate Global: 90.6% [87/96] | Brier Score: ~0.076 | Ciclo #88)"
     }
   ],
   "current_weights": {
@@ -737,5 +740,5 @@
     "double_chance_resilience_priority": 1.4
   },
   "last_auto_audit": "2026-10-13 21:40:00",
-  "last_updated": "2026-10-14 12:23:41"
+  "last_updated": "2026-10-14 12:27:46"
 }
