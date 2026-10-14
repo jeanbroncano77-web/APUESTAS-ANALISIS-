@@ -6,16 +6,16 @@
   "roi_pct": 130.4,
   "global_stats": {
     "total": 96,
-    "wins": 89,
-    "losses": 7,
-    "win_rate": 92.7
+    "wins": 87,
+    "losses": 9,
+    "win_rate": 90.6
   },
   "fija_stats": {
     "total": 64,
-    "wins": 61,
-    "losses": 3,
-    "win_rate": 95.3,
-    "active_streak": 14
+    "wins": 59,
+    "losses": 5,
+    "win_rate": 92.2,
+    "active_streak": 0
   },
   "history": [
     {
@@ -1198,7 +1198,7 @@
       "odds": 1.14,
       "confidence": 96.8,
       "status": "win",
-      "diagnostic": "Arsenal impuso su solidez defensiva en el Emirates Stadium (2-0), cumpliendo el cerrojo de Doble Oportunidad 1X con autoridad europea.",
+      "diagnostic": "ACIERTO ROTUNDO: Arsenal superó 3-0 a Lille en el Emirates con autoridad absoluta de Saliba, Gabriel y Saka.",
       "pnl": 14.0
     },
     {
@@ -1210,9 +1210,9 @@
       "selection": "Inter Milan o Empate (1X) [Doble Oportunidad]",
       "odds": 1.14,
       "confidence": 96.8,
-      "status": "win",
-      "diagnostic": "Inter dominó en San Siro (3-0) con doblete de Lautaro Martínez, ratificando la Doble Oportunidad 1X con solvencia total.",
-      "pnl": 14.0
+      "status": "loss",
+      "diagnostic": "FALLO CATASTRÓFICO: Inter Milan cayó 3-4 en San Siro ante Club Brugge (hat-trick de Nicolò Tresoldi). El modelo subestimó la vulnerabilidad del repliegue defensivo y la letalidad belga al contraataque.",
+      "pnl": -100.0
     },
     {
       "id": 93,
@@ -1224,7 +1224,7 @@
       "odds": 1.14,
       "confidence": 96.8,
       "status": "win",
-      "diagnostic": "El Barça superó la caldera del RAMS Park en Estambul (1-2), asegurando el blindaje X2 ante la presión turca.",
+      "diagnostic": "ACIERTO X2 (Victoria 1-4 del Barça): El modelo sobreestimó el factor ambiental de la caldera de Estambul. El Barcelona de Flick aplastó 1-4 demostrando que la jerarquía y el pressing superaban el factor cancha.",
       "pnl": 14.0
     },
     {
@@ -1237,7 +1237,7 @@
       "odds": 1.14,
       "confidence": 95.0,
       "status": "win",
-      "diagnostic": "Bayern Munich impuso su jerarquía en Noruega (1-3) con Harry Kane comandando el ataque; el X2 cumplió holgadamente.",
+      "diagnostic": "ACIERTO TÉCNICO X2 (Empate 0-0): El césped y el frío en Stavanger frenaron el ataque bávaro, que no pudo romper el cerrojo del Viking. El X2 salvó el pick, pero evidenció la advertencia climática.",
       "pnl": 14.0
     },
     {
@@ -1250,7 +1250,7 @@
       "odds": 1.14,
       "confidence": 95.0,
       "status": "win",
-      "diagnostic": "El Cholo Simeone convirtió el Metropolitano en un bastión inexpugnable (1-0), asegurando la Doble Oportunidad 1X.",
+      "diagnostic": "ACIERTO SÓLIDO: Atlético de Madrid impuso su cerrojo en el Metropolitano (2-0) ante un Manchester United inoperante en ataque.",
       "pnl": 14.0
     },
     {
@@ -1262,9 +1262,15 @@
       "selection": "Empate o Napoli (X2) [Doble Oportunidad]",
       "odds": 1.14,
       "confidence": 96.8,
-      "status": "win",
-      "diagnostic": "Napoli rescató un empate táctico en La Cerámica (1-1); la Doble Oportunidad X2 protegió el pronóstico con total precisión.",
-      "pnl": 14.0
+      "status": "loss",
+      "diagnostic": "FALLO: Villarreal venció 1-0 en La Cerámica con gol en el tramo final. Napoli no tuvo contundencia en sus transiciones y cedió la victoria local.",
+      "pnl": -100.0
     }
-  ]
+  ],
+  "bankroll": {
+    "initial": 1000.0,
+    "current": 2075.75,
+    "profit": 1075.75,
+    "roi": 107.6
+  }
 }

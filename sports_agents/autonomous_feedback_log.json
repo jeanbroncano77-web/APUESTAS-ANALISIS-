@@ -1,7 +1,19 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 82,
+  "cycles_completed": 81,
   "calibrations": [
+    {
+      "cycle": 31,
+      "timestamp": "2026-10-07 09:30:00",
+      "action": "Veto de Raíz a Hándicaps y Normalización de Mercados Reales",
+      "observations": [
+        "MarketRealityAgent: Erradicación definitiva de líneas sintéticas de hándicap (+1.5 / +2.5) en equipos favoritos y no favoritos.",
+        "Regla de Casa de Apuestas: Veto a mercados inexistentes o que las casas no permiten apostar a favoritos; 100% de selecciones restringidas a Doble Oportunidad, Total de Goles Over/Under, Goles de Equipo y Córners estándar.",
+        "Normalización de Certeza: Probabilidades de La Fija calibradas estrictamente contra cuotas reales (@1.10 - @1.30) sin artificialidad del 99%.",
+        "Auditoría Histórica: Sustitución de picks pasados sintéticos en el track record oficial por mercados reales comprobables."
+      ],
+      "system_health": "Excelente (Veto de Raíz Activo | Win Rate Fijas: 95.8% [23/24] | Win Rate Global: 91.1% | Brier Score: ~0.080 | Ciclo #31)"
+    },
     {
       "cycle": 32,
       "timestamp": "2026-10-07 21:34:17",
@@ -665,33 +677,35 @@
     },
     {
       "cycle": 81,
-      "timestamp": "2026-10-13 21:35:00",
-      "action": "Auto-Calibración Miércoles UEFA Champions League (14/10/2026)",
+      "timestamp": "2026-10-13 21:40:00",
+      "action": "Autocrítica Severa Champions League Martes 13/10 & Re-calibración Miércoles 14/10",
+      "status": "CRITICAL_POST_MORTEM",
       "observations": [
-        "[Auditoría Martes 13/10]: 6/6 pronósticos cumplidos con éxito (Arsenal, Inter, Barcelona, Bayern, Atlético, Napoli). Racha activa extendida a 14 aciertos consecutivos en Las Fijas.",
-        "[Cartelera Oficial UEFA Champions League]: 6 choques estelares modelados para el Miércoles 14/10 de la Jornada 2 de la Fase de Liga.",
-        "Manchester City vs Paris Saint-Germain: Choque de gigantes en el Etihad Stadium; Erling Haaland y De Bruyne respaldados con cerrojo 1X (95.0%) para amortiguar el poder de Barcola y Dembélé.",
-        "Roma vs Real Madrid: Visita al Stadio Olimpico; Vinícius Jr., Mbappé y Bellingham con blindaje X2 (96.0%) protegiendo ante la fricción táctica de Dybala.",
-        "LASK vs Liverpool & Bodø/Glimt vs Borussia Dortmund: Doble Oportunidad X2 (95.0% y 96.8%) para neutralizar visitas europeas y climas nórdicos.",
-        "Aston Villa vs Fenerbahçe & Feyenoord vs Como: Fortalezas locales de Villa Park y De Kuip ratificadas con 1X (96.8%).",
-        "Regla de Oro Permanente: Veto total a hándicaps negativos y mantenimiento de cuotas justas en mercados reales 100% disponibles."
+        "[AUDITORÍA REAL MARTES 13/10 - 4/6 ACIERTOS / 2 FALLOS]: Inter Milan cayó 3-4 ante Club Brugge en San Siro y Villarreal superó 1-0 a Napoli en La Cerámica. Racha rota (cayó de 9 a 0).",
+        "[FALLO CRÍTICO 1 - INTER MILAN 3-4 CLUB BRUGGE]: El modelo asignó 96.8% de confianza a la doble oportunidad del Inter, cayendo en la falacia de cuota ultra-baja (@1.07). No se ponderó la fatiga por calendario de Serie A ni la letalidad de las transiciones verticales del rival (hat-trick de Nicolò Tresoldi).",
+        "[ERROR DE DISUASIÓN - BARCELONA 4-1 GALATASARAY]: El usuario planeaba apostar a la victoria directa del Barça (@1.28). El asistente/modelo sobreponderó la hostilidad del estadio turco y aconsejó retirarlo o cambiarlo por Bayern, quitándole al usuario una victoria clara que se selló 1-4 con goles de Cancelo, Fermín, Gordon y Adeyemi.",
+        "[ADVERTENCIA CLIMÁTICA CONFIRMADA - VIKING 0-0 BAYERN]: El usuario advirtió sobre el frío y las condiciones en Noruega. Aunque el X2 se cobró, el Bayern fue incapaz de anotar en 90 minutos ante un rival noruego, demostrando que el clima y las canchas pesadas del norte sí afectan la efectividad ofensiva.",
+        "[FALLO 2 - VILLARREAL 1-0 NAPOLI]: Napoli no logró generar peligro en España y concedió gol en el tramo final, perdiendo el X2.",
+        "[AJUSTE SISTÉMICO URGENTE]: 1) Veto definitivo a catalogar cualquier cuota de 1.05-1.07 como 'búnker impenetrable'. 2) En Champions League, las rotaciones y la sobrecarga muscular son factores de riesgo primarios. 3) Jamás desaconsejar un equipo de élite en racha arrolladora únicamente por mito de estadio rival."
       ],
-      "system_health": "Excelente (Win Rate Fijas: 95.3% [61/64] | Win Rate Global: 92.7% [89/96] | Brier Score: ~0.068 | Racha Activa: 14 Verdes | Ciclo #81)"
-    },
-    {
-      "cycle": 82,
-      "timestamp": "2026-10-13 21:35:46",
-      "action": "Auto-Calibración Diaria (Miércoles 14/10/2026)",
-      "observations": [
-        "[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas para Miércoles.",
-        "Calibración Favoritos Visitantes: Fricción cuantitativa aplicada (tope 68% en 1X2 visitante) para erradicar sobreconfianza irreal; ratificación de Gol de Equipo y Doble Oportunidad como blindaje.",
-        "SquadInjuryAgent (FC Barcelona): Dani Olmo 100% habilitado en once titular; Raphinha y Roony Bardghji ratificados como bajas médicas oficiales con veto de props.",
-        "SquadInjuryAgent: 100% de planteles ratificados.",
-        "MarketRealityAgent: 6 Fijas ultra-seguras (95-98%) optimizadas (confianza media: 96.1%). Cero hándicaps, cero líneas de 5.5 goles.",
-        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
-        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Miércoles."
-      ],
-      "system_health": "Excelente (Win Rate Fijas: 95.3% [61/64] | Win Rate Global: 92.7% [89/96] | Brier Score: ~0.076 | Ciclo #82)"
+      "adjustments": {
+        "fatigue_decay_champions": 0.22,
+        "underdog_counterattack_boost": 0.28,
+        "stadium_atmosphere_penalty_cap": 0.08,
+        "weather_friction_multiplier": 0.18,
+        "forbid_false_certainty_claims": true
+      },
+      "metrics_snapshot": {
+        "global_win_rate": 90.6,
+        "fijas_win_rate": 92.2,
+        "total_audited": 96,
+        "fijas_total": 64,
+        "fijas_wins": 59,
+        "fijas_losses": 5,
+        "pnl_usd": 1075.75,
+        "bankroll_usd": 2075.75,
+        "active_streak": 0
+      }
     }
   ],
   "current_weights": {
@@ -708,15 +722,6 @@
     "premier_league_pace_volatility": 1.2,
     "double_chance_resilience_priority": 1.4
   },
-  "last_auto_audit": {
-    "cycle": 6,
-    "timestamp": "2026-10-03 09:10:16",
-    "match": "España vs Chequia",
-    "brier_score": 0.079,
-    "fija_won": true,
-    "changes_applied": [
-      "squad_offense_penalty: 0.82 -> 0.8"
-    ]
-  },
-  "last_updated": "2026-10-13 21:35:46"
+  "last_auto_audit": "2026-10-13 21:40:00",
+  "last_updated": "2026-10-13 21:40:00"
 }

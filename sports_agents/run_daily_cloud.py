@@ -321,22 +321,22 @@ def main():
 
     # Cargar métricas reales de auditoría
     audit_file = os.path.join(current_dir, "audit_history.json")
-    g_wr = 92.7
+    g_wr = 90.6
     g_tot = 96
-    g_w = 89
-    f_wr = 95.3
+    g_w = 87
+    f_wr = 92.2
     f_tot = 64
-    f_w = 61
+    f_w = 59
     if os.path.exists(audit_file):
         try:
             with open(audit_file, "r", encoding="utf-8") as f_a:
                 ad = json.load(f_a)
-                g_wr = ad.get("global_stats", {}).get("win_rate", 92.7)
+                g_wr = ad.get("global_stats", {}).get("win_rate", 90.6)
                 g_tot = ad.get("global_stats", {}).get("total", 96)
-                g_w = ad.get("global_stats", {}).get("wins", 89)
-                f_wr = ad.get("fija_stats", {}).get("win_rate", 95.3)
+                g_w = ad.get("global_stats", {}).get("wins", 87)
+                f_wr = ad.get("fija_stats", {}).get("win_rate", 92.2)
                 f_tot = ad.get("fija_stats", {}).get("total", 64)
-                f_w = ad.get("fija_stats", {}).get("wins", 61)
+                f_w = ad.get("fija_stats", {}).get("wins", 59)
         except Exception:
             pass
 
