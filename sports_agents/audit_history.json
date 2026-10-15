@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-13 21:30:00",
+  "last_updated": "2026-10-14 22:15:33",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 2303.75,
-  "total_profit": 1303.75,
-  "roi_pct": 130.4,
+  "current_bankroll": 1945.75,
+  "total_profit": 945.75,
+  "roi_pct": 94.6,
   "global_stats": {
-    "total": 102,
-    "wins": 91,
+    "total": 103,
+    "wins": 92,
     "losses": 11,
-    "win_rate": 89.2
+    "win_rate": 89.3
   },
   "fija_stats": {
-    "total": 70,
-    "wins": 63,
+    "total": 71,
+    "wins": 64,
     "losses": 7,
-    "win_rate": 90.0,
-    "active_streak": 2
+    "win_rate": 90.1,
+    "active_streak": 3
   },
   "history": [
     {
@@ -1342,6 +1342,19 @@
       "confidence": 96.8,
       "status": "win",
       "diagnostic": "ACIERTO: Feyenoord superó 3-2 al combativo Como en De Kuip, sellando la Doble Oportunidad 1X.",
+      "pnl": 14.0
+    },
+    {
+      "id": 103,
+      "match": "Roma vs Real Madrid",
+      "tournament": "UEFA Champions League • Fase de Liga (Jornada 2) • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Roma o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Roma defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
       "pnl": 14.0
     }
   ],
