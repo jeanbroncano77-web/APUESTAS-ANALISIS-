@@ -128,14 +128,22 @@ for i, m in enumerate(matches):
     tournament = m["context"].get("tournament", "Competición")
     modal_score = m["score_prediction"]["most_probable_score"]
     fija = m["la_fija_real"]
-    fija_market_name = fija.get("market", "Fija")
-    fija_badge = f"<span class='badge-fija-pill'>⭐ {fija_market_name} {fija['probability']}%</span>" if fija else ""
+    f_prob = float(fija.get('probability', 90.0))
+    if i == 0 or f_prob >= 96.0:
+        tier_badge = f"<span class='badge-fija-pill' style='background: linear-gradient(135deg, rgba(245, 158, 11, 0.3), rgba(217, 119, 6, 0.4)); border: 1px solid #fbbf24; color: #fef08a;'>👑 LA FIJA DE ORO {f_prob}%</span>"
+        label_text = f"👑 Fija de Oro: <strong style='color: #fbbf24;'>{fija.get('selection')}</strong>"
+    elif f_prob >= 92.5:
+        tier_badge = f"<span class='badge-fija-pill' style='background: rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.5); color: #34d399;'>⭐ RESPALDO SÓLIDO {f_prob}%</span>"
+        label_text = f"⭐ Respaldo: <strong style='color: var(--emerald);'>{fija.get('selection')}</strong>"
+    else:
+        tier_badge = f"<span class='badge-fija-pill' style='background: rgba(148, 163, 184, 0.15); border: 1px solid rgba(148, 163, 184, 0.35); color: #94a3b8;'>⚠️ RIESGO MODERADO {f_prob}%</span>"
+        label_text = f"⚠️ Táctico: <strong style='color: #cbd5e1;'>{fija.get('selection')}</strong>"
 
     tabs_html += f"""
         <div class="switcher-card {active_cls}" onclick="setMatch({i})" id="tab-{i}">
             <div class="switcher-header">
                 <span>Partido {i + 1} &bull; {tournament}</span>
-                {fija_badge}
+                {tier_badge}
             </div>
             <div class="switcher-teams">
                 <span>{h_flag} {h_team}</span>
@@ -143,8 +151,8 @@ for i, m in enumerate(matches):
                 <span>{a_team} {a_flag}</span>
             </div>
             <div class="switcher-meta">
-                <span>Fija: <strong style="color: var(--emerald);">{fija.get('selection')}</strong></span>
-                <span class="mono-bold" style="color: var(--cyan);">@{fija.get('odds')} ({fija.get('probability')}%)</span>
+                <span>{label_text}</span>
+                <span class="mono-bold" style="color: var(--cyan);">@{fija.get('odds')} ({f_prob}%)</span>
             </div>
         </div>
     """
@@ -593,6 +601,9 @@ new_matches_section = f"""
                     <div class="badge-fija-oro">👑 LA FIJA DE ORO &bull; {temporal_label} {target_day_name} ({target_date}) (CONFIANZA {bm_fija.get('probability', 95.0)}%)</div>
                     <div class="fija-oro-title">⭐ {best_m.get('home_team')} vs {best_m.get('away_team')} &bull; {bm_fija.get('market')}: {bm_fija.get('selection')} (@{bm_fija.get('odds', 1.25)} | {bm_fija.get('probability')}%)</div>
                     <div class="fija-oro-sub">⭐ Respaldo Estelar: {backup_m.get('home_team')} vs {backup_m.get('away_team')} &bull; {bk_fija.get('market')}: {bk_fija.get('selection')} (@{bk_fija.get('odds', 1.20)} | {bk_fija.get('probability')}%)</div>
+                    <div style="font-size: 0.78rem; color: #fca5a5; margin-top: 0.4rem; font-weight: 600; display: flex; align-items: center; gap: 0.4rem;">
+                        <span>🛑</span> <strong>FILTRO DE SEGURIDAD:</strong> Los otros 4 partidos de la cartelera tienen fricción táctica (Riesgo Moderado). No forzar combinadas en partidos secundarios.
+                    </div>
                 </div>
 
                 <div class="toolbar-btn-group">
