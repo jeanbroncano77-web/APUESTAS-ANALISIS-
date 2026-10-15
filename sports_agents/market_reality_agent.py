@@ -322,30 +322,30 @@ class MarketRealityAgent:
             prob_1x = h_win + draw
             prob_x2 = a_win + draw
 
-        if prob_1x >= 65.0:
-            capped_p1x = round(min(96.8, max(95.0, prob_1x * 1.25 if prob_1x < 94.0 else prob_1x)), 1)
-            odds_1x = round(max(1.14, (1.0 / (capped_p1x / 100.0)) * 1.06), 2)
+        if prob_1x >= 60.0:
+            capped_p1x = round(prob_1x, 1)
+            odds_1x = round(max(1.10, (1.0 / (capped_p1x / 100.0)) * 1.05), 2)
             candidates.append({
-                "market": "Doble Oportunidad Blindada",
+                "market": "Doble Oportunidad",
                 "category_code": "DOBLE_OPORTUNIDAD",
                 "selection": f"{home_team} o Empate (1X)",
                 "probability": capped_p1x,
                 "odds": odds_1x,
                 "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-                "rationale": f"Protección total ante el empate con {capped_p1x}% de cobertura matemática."
+                "rationale": f"Protección total ante el empate con {capped_p1x}% de cobertura matemática pura."
             })
 
-        if prob_x2 >= 65.0:
-            capped_px2 = round(min(96.8, max(95.0, prob_x2 * 1.25 if prob_x2 < 94.0 else prob_x2)), 1)
-            odds_x2 = round(max(1.14, (1.0 / (capped_px2 / 100.0)) * 1.06), 2)
+        if prob_x2 >= 60.0:
+            capped_px2 = round(prob_x2, 1)
+            odds_x2 = round(max(1.10, (1.0 / (capped_px2 / 100.0)) * 1.05), 2)
             candidates.append({
-                "market": "Doble Oportunidad Blindada",
+                "market": "Doble Oportunidad",
                 "category_code": "DOBLE_OPORTUNIDAD",
                 "selection": f"Empate o {away_team} (X2)",
                 "probability": capped_px2,
                 "odds": odds_x2,
                 "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-                "rationale": f"El favorito visitante {away_team} puntúa en el {capped_px2}% de las simulaciones."
+                "rationale": f"El favorito visitante {away_team} puntúa en el {capped_px2}% de las simulaciones puras."
             })
 
         # -------------------------------------------------------------
@@ -417,31 +417,31 @@ class MarketRealityAgent:
 
         # Fallback de Seguridad Absoluta si ningún candidato alcanzó 94.8%:
         # Priorizar siempre "Victoria o Empate" (Doble Oportunidad) del equipo con ventaja
-        if not candidates or candidates[0]["probability"] < 94.8:
+        if not candidates or candidates[0]["probability"] < 90.0:
             if h_win >= 40.0:
-                p_fb = round(min(97.8, max(95.0, h_win + draw)), 1)
+                p_fb = round(h_win + draw, 1)
                 best_fija = {
-                    "market": "Doble Oportunidad Blindada",
+                    "market": "Doble Oportunidad",
                     "category_code": "DOBLE_OPORTUNIDAD",
                     "selection": f"{home_team} o Empate (1X)",
                     "probability": p_fb,
-                    "odds": 1.15,
+                    "odds": round(max(1.10, (1.0 / (p_fb / 100.0)) * 1.05), 2),
                     "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-                    "rationale": f"Preferencia de seguridad: {home_team} cubre la victoria y el empate con {p_fb}% de probabilidad."
+                    "rationale": f"Selección óptima de seguridad: {home_team} cubre victoria y empate con {p_fb}% de probabilidad real."
                 }
             elif a_win >= 40.0:
-                p_fb = round(min(97.8, max(95.0, a_win + draw)), 1)
+                p_fb = round(a_win + draw, 1)
                 best_fija = {
-                    "market": "Doble Oportunidad Blindada",
+                    "market": "Doble Oportunidad",
                     "category_code": "DOBLE_OPORTUNIDAD",
                     "selection": f"Empate o {away_team} (X2)",
                     "probability": p_fb,
-                    "odds": 1.15,
+                    "odds": round(max(1.10, (1.0 / (p_fb / 100.0)) * 1.05), 2),
                     "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-                    "rationale": f"Preferencia de seguridad: {away_team} cubre la victoria y el empate con {p_fb}% de probabilidad."
+                    "rationale": f"Selección óptima de seguridad: {away_team} cubre empate y triunfo con {p_fb}% de probabilidad real."
                 }
             else:
-                safe_u45 = round(min(97.5, max(95.0, exact_market_probs.get("under_4_5_pct", 95.8) if exact_market_probs else 95.8)), 1)
+                safe_u45 = round(exact_market_probs.get("under_4_5_pct", 91.5) if exact_market_probs else 91.5, 1)
                 best_fija = {
                     "market": "Total de Goles Fijo",
                     "category_code": "GOLES_UNDER",
@@ -449,7 +449,7 @@ class MarketRealityAgent:
                     "probability": safe_u45,
                     "odds": 1.12,
                     "availability": "Universal en todas las casas (Bet365, Betano, etc.)",
-                    "rationale": f"Línea estándar de máxima seguridad en casas: ritmo conjunto de {round(exp_total_goals, 2)} xG descarta completamente 5 goles."
+                    "rationale": f"Línea de contención: ritmo de {round(exp_total_goals, 2)} xG descarta matemáticamente 5 goles ({safe_u45}% real)."
                 }
         else:
             best_fija = candidates[0]

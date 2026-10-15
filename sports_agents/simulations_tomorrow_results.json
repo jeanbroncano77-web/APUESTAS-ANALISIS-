@@ -367,26 +367,16 @@
         ]
       },
       "la_fija_real": {
-        "market": "Doble Oportunidad Blindada",
-        "category_code": "DOBLE_OPORTUNIDAD",
-        "selection": "Benfica o Empate (1X)",
+        "market": "Gol de Equipo de Seguridad",
+        "category_code": "GOL_EQUIPO",
+        "selection": "Benfica anota más de 0.5 goles",
         "probability": 96.8,
-        "odds": 1.14,
-        "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-        "rationale": "Protección total ante el empate con 96.8% de cobertura matemática.",
-        "_rank_score": 274.5
+        "odds": 1.15,
+        "availability": "Universal en todas las plataformas (Bet365, Betano)",
+        "rationale": "Volumen ofensivo de Benfica (1.4 xG) asegura al menos un gol a favor.",
+        "_rank_score": 194.75
       },
       "all_fija_options": [
-        {
-          "market": "Doble Oportunidad Blindada",
-          "category_code": "DOBLE_OPORTUNIDAD",
-          "selection": "Benfica o Empate (1X)",
-          "probability": 96.8,
-          "odds": 1.14,
-          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "Protección total ante el empate con 96.8% de cobertura matemática.",
-          "_rank_score": 274.5
-        },
         {
           "market": "Gol de Equipo de Seguridad",
           "category_code": "GOL_EQUIPO",
@@ -416,6 +406,16 @@
           "availability": "Línea de máxima cobertura en Bet365 / Betano",
           "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (8.2).",
           "_rank_score": 181.7
+        },
+        {
+          "market": "Doble Oportunidad",
+          "category_code": "DOBLE_OPORTUNIDAD",
+          "selection": "Benfica o Empate (1X)",
+          "probability": 90.5,
+          "odds": 1.16,
+          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+          "rationale": "Protección total ante el empate con 90.5% de cobertura matemática pura.",
+          "_rank_score": 106.85
         },
         {
           "market": "Victoria Sin Empate (DNB)",
@@ -786,26 +786,16 @@
         ]
       },
       "la_fija_real": {
-        "market": "Doble Oportunidad Blindada",
-        "category_code": "DOBLE_OPORTUNIDAD",
-        "selection": "Empate o AC Milan (X2)",
-        "probability": 96.8,
-        "odds": 1.14,
-        "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-        "rationale": "El favorito visitante AC Milan puntúa en el 96.8% de las simulaciones.",
-        "_rank_score": 274.5
+        "market": "Total de Goles Fijo",
+        "category_code": "GOLES_OVER",
+        "selection": "Más de 0.5 goles totales",
+        "probability": 95.4,
+        "odds": 1.1,
+        "availability": "Universal en todas las plataformas",
+        "rationale": "Intensidad ofensiva global de 2.5 xG descarta matemáticamente un 0-0.",
+        "_rank_score": 182.3
       },
       "all_fija_options": [
-        {
-          "market": "Doble Oportunidad Blindada",
-          "category_code": "DOBLE_OPORTUNIDAD",
-          "selection": "Empate o AC Milan (X2)",
-          "probability": 96.8,
-          "odds": 1.14,
-          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "El favorito visitante AC Milan puntúa en el 96.8% de las simulaciones.",
-          "_rank_score": 274.5
-        },
         {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_OVER",
@@ -815,6 +805,16 @@
           "availability": "Universal en todas las plataformas",
           "rationale": "Intensidad ofensiva global de 2.5 xG descarta matemáticamente un 0-0.",
           "_rank_score": 182.3
+        },
+        {
+          "market": "Doble Oportunidad",
+          "category_code": "DOBLE_OPORTUNIDAD",
+          "selection": "Empate o AC Milan (X2)",
+          "probability": 93.0,
+          "odds": 1.13,
+          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+          "rationale": "El favorito visitante AC Milan puntúa en el 93.0% de las simulaciones puras.",
+          "_rank_score": 107.8
         },
         {
           "market": "Victoria Sin Empate (DNB)",
@@ -1185,25 +1185,25 @@
         ]
       },
       "la_fija_real": {
-        "market": "Doble Oportunidad Blindada",
+        "market": "Doble Oportunidad",
         "category_code": "DOBLE_OPORTUNIDAD",
         "selection": "Empate o Juventus (X2)",
-        "probability": 96.8,
-        "odds": 1.14,
+        "probability": 92.9,
+        "odds": 1.13,
         "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-        "rationale": "El favorito visitante Juventus puntúa en el 96.8% de las simulaciones.",
-        "_rank_score": 274.5
+        "rationale": "El favorito visitante Juventus puntúa en el 92.9% de las simulaciones puras.",
+        "_rank_score": 107.75
       },
       "all_fija_options": [
         {
-          "market": "Doble Oportunidad Blindada",
+          "market": "Doble Oportunidad",
           "category_code": "DOBLE_OPORTUNIDAD",
           "selection": "Empate o Juventus (X2)",
-          "probability": 96.8,
-          "odds": 1.14,
+          "probability": 92.9,
+          "odds": 1.13,
           "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "El favorito visitante Juventus puntúa en el 96.8% de las simulaciones.",
-          "_rank_score": 274.5
+          "rationale": "El favorito visitante Juventus puntúa en el 92.9% de las simulaciones puras.",
+          "_rank_score": 107.75
         },
         {
           "market": "Total de Goles Fijo",
@@ -1597,26 +1597,16 @@
         ]
       },
       "la_fija_real": {
-        "market": "Doble Oportunidad Blindada",
-        "category_code": "DOBLE_OPORTUNIDAD",
-        "selection": "Empate o Bayer Leverkusen (X2)",
-        "probability": 96.8,
-        "odds": 1.14,
-        "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-        "rationale": "El favorito visitante Bayer Leverkusen puntúa en el 96.8% de las simulaciones.",
-        "_rank_score": 274.5
+        "market": "Total de Goles Fijo",
+        "category_code": "GOLES_OVER",
+        "selection": "Más de 0.5 goles totales",
+        "probability": 96.7,
+        "odds": 1.09,
+        "availability": "Universal en todas las plataformas",
+        "rationale": "Intensidad ofensiva global de 2.5 xG descarta matemáticamente un 0-0.",
+        "_rank_score": 192.45
       },
       "all_fija_options": [
-        {
-          "market": "Doble Oportunidad Blindada",
-          "category_code": "DOBLE_OPORTUNIDAD",
-          "selection": "Empate o Bayer Leverkusen (X2)",
-          "probability": 96.8,
-          "odds": 1.14,
-          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "El favorito visitante Bayer Leverkusen puntúa en el 96.8% de las simulaciones.",
-          "_rank_score": 274.5
-        },
         {
           "market": "Total de Goles Fijo",
           "category_code": "GOLES_OVER",
@@ -1646,6 +1636,16 @@
           "availability": "Línea principal en Bet365 / Betano",
           "rationale": "Constante flujo de ataque por bandas que proyecta 8.4 saques de esquina acumulados.",
           "_rank_score": 181.1
+        },
+        {
+          "market": "Doble Oportunidad",
+          "category_code": "DOBLE_OPORTUNIDAD",
+          "selection": "Empate o Bayer Leverkusen (X2)",
+          "probability": 94.0,
+          "odds": 1.12,
+          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+          "rationale": "El favorito visitante Bayer Leverkusen puntúa en el 94.0% de las simulaciones puras.",
+          "_rank_score": 108.2
         },
         {
           "market": "Victoria Sin Empate (DNB)",
@@ -2016,26 +2016,16 @@
         ]
       },
       "la_fija_real": {
-        "market": "Doble Oportunidad Blindada",
-        "category_code": "DOBLE_OPORTUNIDAD",
-        "selection": "Olympique Lyon o Empate (1X)",
-        "probability": 96.8,
+        "market": "Total de Córners Fijo",
+        "category_code": "TOTAL_CORNERS",
+        "selection": "Más de 6.5 córners totales",
+        "probability": 95.2,
         "odds": 1.14,
-        "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-        "rationale": "Protección total ante el empate con 96.8% de cobertura matemática.",
-        "_rank_score": 274.5
+        "availability": "Línea de máxima cobertura en Bet365 / Betano",
+        "rationale": "Línea de seguridad rebajada en casi 3 tiros de esquina frente al promedio estimado (8.8).",
+        "_rank_score": 181.7
       },
       "all_fija_options": [
-        {
-          "market": "Doble Oportunidad Blindada",
-          "category_code": "DOBLE_OPORTUNIDAD",
-          "selection": "Olympique Lyon o Empate (1X)",
-          "probability": 96.8,
-          "odds": 1.14,
-          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "Protección total ante el empate con 96.8% de cobertura matemática.",
-          "_rank_score": 274.5
-        },
         {
           "market": "Total de Córners Fijo",
           "category_code": "TOTAL_CORNERS",
@@ -2065,6 +2055,16 @@
           "availability": "Universal en todas las plataformas (Bet365, Betano)",
           "rationale": "Volumen ofensivo de Olympique Lyon (1.4 xG) asegura al menos un gol a favor.",
           "_rank_score": 178.75
+        },
+        {
+          "market": "Doble Oportunidad",
+          "category_code": "DOBLE_OPORTUNIDAD",
+          "selection": "Olympique Lyon o Empate (1X)",
+          "probability": 81.4,
+          "odds": 1.29,
+          "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
+          "rationale": "Protección total ante el empate con 81.4% de cobertura matemática pura.",
+          "_rank_score": 103.6
         },
         {
           "market": "Total de Goles Fijo",
@@ -2435,25 +2435,25 @@
         ]
       },
       "la_fija_real": {
-        "market": "Doble Oportunidad Blindada",
+        "market": "Doble Oportunidad",
         "category_code": "DOBLE_OPORTUNIDAD",
         "selection": "Empate o AFC Ajax (X2)",
-        "probability": 96.8,
-        "odds": 1.14,
+        "probability": 93.0,
+        "odds": 1.13,
         "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-        "rationale": "El favorito visitante AFC Ajax puntúa en el 96.8% de las simulaciones.",
-        "_rank_score": 274.5
+        "rationale": "El favorito visitante AFC Ajax puntúa en el 93.0% de las simulaciones puras.",
+        "_rank_score": 107.8
       },
       "all_fija_options": [
         {
-          "market": "Doble Oportunidad Blindada",
+          "market": "Doble Oportunidad",
           "category_code": "DOBLE_OPORTUNIDAD",
           "selection": "Empate o AFC Ajax (X2)",
-          "probability": 96.8,
-          "odds": 1.14,
+          "probability": 93.0,
+          "odds": 1.13,
           "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-          "rationale": "El favorito visitante AFC Ajax puntúa en el 96.8% de las simulaciones.",
-          "_rank_score": 274.5
+          "rationale": "El favorito visitante AFC Ajax puntúa en el 93.0% de las simulaciones puras.",
+          "_rank_score": 107.8
         },
         {
           "market": "Total de Goles Fijo",
