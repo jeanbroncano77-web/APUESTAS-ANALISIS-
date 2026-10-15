@@ -1,20 +1,7 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 84,
+  "cycles_completed": 85,
   "calibrations": [
-    {
-      "cycle": 34,
-      "timestamp": "2026-10-07 22:21:05",
-      "action": "Auto-Calibración Autónoma Diaria (Jueves 08/10/2026)",
-      "observations": [
-        "[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas vía official_calendar.json.",
-        "SquadInjuryAgent: 100% de planteles ratificados.",
-        "MarketRealityAgent: 6 Fijas ultra-seguras (95-98%) optimizadas (confianza media: 96.1%).",
-        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
-        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Jueves."
-      ],
-      "system_health": "Calibrado (Win Rate Fijas: 95.8% [23/24] | Win Rate Global: 91.1% [51/56] | Brier Score: ~0.082 | Ciclo #34)"
-    },
     {
       "cycle": 35,
       "timestamp": "2026-10-07 22:22:17",
@@ -727,6 +714,21 @@
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Jueves."
       ],
       "system_health": "Excelente (Win Rate Fijas: 90.1% [64/71] | Win Rate Global: 89.3% [92/103] | Brier Score: ~0.076 | Ciclo #84)"
+    },
+    {
+      "cycle": 85,
+      "timestamp": "2026-10-14 23:53:42",
+      "action": "Auto-Calibración Diaria (Jueves 15/10/2026)",
+      "observations": [
+        "[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas para Jueves.",
+        "Calibración Favoritos Visitantes: Fricción cuantitativa aplicada (tope 68% en 1X2 visitante) para erradicar sobreconfianza irreal; ratificación de Gol de Equipo y Doble Oportunidad como blindaje.",
+        "SquadInjuryAgent (FC Barcelona): Dani Olmo 100% habilitado en once titular; Raphinha y Roony Bardghji ratificados como bajas médicas oficiales con veto de props.",
+        "SquadInjuryAgent: 100% de planteles ratificados.",
+        "MarketRealityAgent: 6 Fijas ultra-seguras (95-98%) optimizadas (confianza media: 95.0%). Cero hándicaps, cero líneas de 5.5 goles.",
+        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
+        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Jueves."
+      ],
+      "system_health": "Excelente (Win Rate Fijas: 90.1% [64/71] | Win Rate Global: 89.3% [92/103] | Brier Score: ~0.076 | Ciclo #85)"
     }
   ],
   "current_weights": {
@@ -744,5 +746,5 @@
     "double_chance_resilience_priority": 1.4
   },
   "last_auto_audit": "2026-10-13 21:40:00",
-  "last_updated": "2026-10-14 23:01:43"
+  "last_updated": "2026-10-14 23:53:42"
 }
