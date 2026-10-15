@@ -556,7 +556,11 @@ class SquadInjuryAgent:
 
         vetoed_names_set = set()
         for p in key_players:
-            p_name = p.get("name", "")
+            if isinstance(p, dict):
+                p_name = p.get("name", "")
+            else:
+                p_name = str(p)
+                p = {"name": p_name, "position": "Titular", "avg_shots_p90": 2.5, "avg_sot_p90": 1.2, "shot_creation_actions": 3.5, "goal_prob": 0.35}
             bulletin_entry = self._match_bulletin_entry(p_name, team_bulletin)
 
             if bulletin_entry and bulletin_entry.get("veto_player_props", False):

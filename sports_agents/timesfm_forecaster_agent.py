@@ -30,7 +30,7 @@ class TimesFMForecasterAgent:
         estimar los cuantiles p10 (conservador), p50 (mediana) y p90 (escenario alto).
         """
         if len(series) == 0:
-            return {"p10": 0.0, "p50": 0.0, "p90": 0.0, "mean": 0.0}
+            return {"p10": 0.0, "p50": 0.0, "p90": 0.0, "mean": 0.0, "std": 0.0}
 
         n = len(series)
         # Ponderaciones exponenciales para dar más relevancia a los partidos recientes

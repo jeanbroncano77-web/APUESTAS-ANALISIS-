@@ -1,19 +1,7 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 81,
+  "cycles_completed": 82,
   "calibrations": [
-    {
-      "cycle": 31,
-      "timestamp": "2026-10-07 09:30:00",
-      "action": "Veto de Raíz a Hándicaps y Normalización de Mercados Reales",
-      "observations": [
-        "MarketRealityAgent: Erradicación definitiva de líneas sintéticas de hándicap (+1.5 / +2.5) en equipos favoritos y no favoritos.",
-        "Regla de Casa de Apuestas: Veto a mercados inexistentes o que las casas no permiten apostar a favoritos; 100% de selecciones restringidas a Doble Oportunidad, Total de Goles Over/Under, Goles de Equipo y Córners estándar.",
-        "Normalización de Certeza: Probabilidades de La Fija calibradas estrictamente contra cuotas reales (@1.10 - @1.30) sin artificialidad del 99%.",
-        "Auditoría Histórica: Sustitución de picks pasados sintéticos en el track record oficial por mercados reales comprobables."
-      ],
-      "system_health": "Excelente (Veto de Raíz Activo | Win Rate Fijas: 95.8% [23/24] | Win Rate Global: 91.1% | Brier Score: ~0.080 | Ciclo #31)"
-    },
     {
       "cycle": 32,
       "timestamp": "2026-10-07 21:34:17",
@@ -706,6 +694,35 @@
         "bankroll_usd": 2075.75,
         "active_streak": 0
       }
+    },
+    {
+      "cycle": 82,
+      "timestamp": "2026-10-14 22:00:00",
+      "action": "Auditoría Real Miércoles 14/10 Champions League & Calibración Jueves 15/10 Europa/Conference League",
+      "status": "CRITICAL_POST_MORTEM_WEDNESDAY",
+      "observations": [
+        "[AUDITORÍA REAL MIÉRCOLES 14/10 - 4/6 ACIERTOS / 2 FALLOS]: Ganaron Roma-Madrid (3-4), LASK-Liverpool (3-6), Aston Villa-Fenerbahçe (6-0) y Feyenoord-Como (3-2). Cayeron Man City (2-4 vs PSG) y Borussia Dortmund (0-1 en Noruega ante Bodø/Glimt). Racha activa: 2 aciertos.",
+        "[FALLO 1 - LA TRAMPA NÓRDICA CONFIRMADA (BODØ/GLIMT 1-0 DORTMUND)]: El usuario advirtió repetidamente sobre el frío y las canchas de Noruega. El modelo cometió el error garrafal de poner a Dortmund X2 como 'Fija de Oro'. En el círculo polar ártico y sobre césped sintético, Bodø/Glimt anuló al Dortmund y ganó 1-0. VETO PERMANENTE a poner Fijas de Oro en visitas al norte de Europa en césped artificial.",
+        "[FALLO 2 - MANCHESTER CITY 2-4 PSG]: El usuario desconfió del City y prefirió sacarlo del boleto. El PSG desnudó las debilidades en transición rápida del City y se puso 0-3 en el primer tiempo. El modelo sobreponderó el mito de la localía en el Etihad.",
+        "[ÉXITO DEL USUARIO - RECUPERACIÓN DE $50 A ~$70]: El usuario apostó con cabeza $35 a cuota @1.51 con Aston Villa 1X (goleó 6-0) y Real Madrid X2 (remontó 3-4 de la mano de Mourinho y gol de Rüdiger), guardando $15 de reserva y logrando su primer escalón de recuperación verde con ~$70 de saldo.",
+        "[CARTELERA JUEVES 15/10 UEFA EUROPA LEAGUE & CONFERENCE LEAGUE]: 6 choques modelados (Benfica vs Celtic, Salzburg vs Milan, Celta vs Juventus, Poznań vs Leverkusen, Lyon vs Crystal Palace, Hajduk vs Ajax). Fija de Oro otorgada al Benfica en el Estádio da Luz (1X)."
+      ],
+      "adjustments": {
+        "nordic_synthetic_pitch_ban": true,
+        "away_fav_european_penalty": 0.25,
+        "home_fortress_strict_threshold": 0.82
+      },
+      "metrics_snapshot": {
+        "global_win_rate": 89.2,
+        "fijas_win_rate": 90.0,
+        "total_audited": 102,
+        "fijas_total": 70,
+        "fijas_wins": 63,
+        "fijas_losses": 7,
+        "pnl_usd": 931.75,
+        "bankroll_usd": 1931.75,
+        "active_streak": 2
+      }
     }
   ],
   "current_weights": {
@@ -723,5 +740,5 @@
     "double_chance_resilience_priority": 1.4
   },
   "last_auto_audit": "2026-10-13 21:40:00",
-  "last_updated": "2026-10-13 21:40:00"
+  "last_updated": "2026-10-14 22:00:00"
 }

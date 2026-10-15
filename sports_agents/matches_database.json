@@ -556,5 +556,59 @@
     "referee_avg_yellows": 3.7,
     "referee_avg_reds": 0.12,
     "intensity": "Alta (La caldera de De Kuip empujando a Santiago Giménez ante la revelación italiana de Fàbregas)"
+  },
+  "Benfica vs Celtic": {
+    "tournament": "UEFA Europa League - Fase de Liga (Jornada 2 - La Fija de Oro)",
+    "stadium": "Estádio da Luz (Lisboa, Portugal)",
+    "spectators_est": "64,500 en estadio (~40M audiencia global)",
+    "referee": "Clément Turpin",
+    "referee_avg_yellows": 4.1,
+    "referee_avg_reds": 0.15,
+    "intensity": "Máxima (Las Águilas de Di María y Pavlidis buscando la supremacía europea ante el fervor escocés de Celtic)"
+  },
+  "Red Bull Salzburg vs AC Milan": {
+    "tournament": "UEFA Europa League - Fase de Liga (Jornada 2)",
+    "stadium": "Red Bull Arena (Salzburgo, Austria)",
+    "spectators_est": "30,188 espectadores",
+    "referee": "Michael Oliver",
+    "referee_avg_yellows": 3.9,
+    "referee_avg_reds": 0.14,
+    "intensity": "Alta (Juventud de Konaté y Gloukh ante la jerarquía italiana de Leão, Pulisic y Theo Hernández)"
+  },
+  "Celta Vigo vs Juventus": {
+    "tournament": "UEFA Europa League - Fase de Liga (Jornada 2)",
+    "stadium": "Abanca-Balaídos (Vigo, España)",
+    "spectators_est": "24,000 espectadores",
+    "referee": "Felix Zwayer",
+    "referee_avg_yellows": 4.3,
+    "referee_avg_reds": 0.17,
+    "intensity": "Alta (Balaídos empujando a Iago Aspas ante el sólido cerrojo bianconero de Bremer y la contundencia de Vlahović)"
+  },
+  "Lech Poznań vs Bayer Leverkusen": {
+    "tournament": "UEFA Europa League - Fase de Liga (Jornada 2)",
+    "stadium": "Enea Stadion (Poznań, Polonia)",
+    "spectators_est": "42,000 espectadores",
+    "referee": "Anthony Taylor",
+    "referee_avg_yellows": 4.0,
+    "referee_avg_reds": 0.15,
+    "intensity": "Muy Alta (Caldera polaca en Poznań retando al vertiginoso campeón alemán de Wirtz, Boniface y Xhaka)"
+  },
+  "Olympique Lyon vs Crystal Palace": {
+    "tournament": "UEFA Conference League - Fase de Liga (Jornada 2)",
+    "stadium": "Groupama Stadium (Décines-Charpieu, Francia)",
+    "spectators_est": "58,000 espectadores",
+    "referee": "Jesús Gil Manzano",
+    "referee_avg_yellows": 4.5,
+    "referee_avg_reds": 0.2,
+    "intensity": "Máxima (Lacazette y Cherki protegiendo la localía francesa ante la verticalidad de la Premier League de Mateta y Eze)"
+  },
+  "Hajduk Split vs AFC Ajax": {
+    "tournament": "UEFA Conference League - Fase de Liga (Jornada 2)",
+    "stadium": "Stadion Poljud (Split, Croacia)",
+    "spectators_est": "34,000 hinchas de la Torcida",
+    "referee": "Espen Eskås",
+    "referee_avg_yellows": 4.2,
+    "referee_avg_reds": 0.18,
+    "intensity": "Extrema (El infierno de Poljud con Rakitić y Livaja ante la escuela dinámica de Ámsterdam liderada por Brobbey y Taylor)"
   }
 }

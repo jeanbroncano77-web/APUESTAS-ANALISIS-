@@ -483,37 +483,37 @@
   "2026-10-15": {
     "date_str": "15/10/2026",
     "day_name": "Jueves",
-    "competition": "Liga Profesional Argentina & LigaPro Ecuador",
+    "competition": "UEFA Europa League & UEFA Conference League",
     "fixtures": [
       [
-        "Huracán",
-        "Banfield",
+        "Benfica",
+        "Celtic",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Unión",
-        "Central Córdoba",
-        "GOL_EQUIPO"
-      ],
-      [
-        "Gimnasia (LP)",
-        "Sarmiento",
+        "Red Bull Salzburg",
+        "AC Milan",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Godoy Cruz",
-        "Argentinos Juniors",
-        "GOLES_UNDER"
-      ],
-      [
-        "Delfín",
-        "Libertad",
+        "Celta Vigo",
+        "Juventus",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Mushuc Runa",
-        "Leones FC",
-        "GOLES_UNDER"
+        "Lech Poznań",
+        "Bayer Leverkusen",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Olympique Lyon",
+        "Crystal Palace",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Hajduk Split",
+        "AFC Ajax",
+        "DOBLE_OPORTUNIDAD"
       ]
     ]
   },

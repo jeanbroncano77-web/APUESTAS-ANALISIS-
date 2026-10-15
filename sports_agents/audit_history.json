@@ -5,17 +5,17 @@
   "total_profit": 1303.75,
   "roi_pct": 130.4,
   "global_stats": {
-    "total": 96,
-    "wins": 87,
-    "losses": 9,
-    "win_rate": 90.6
+    "total": 102,
+    "wins": 91,
+    "losses": 11,
+    "win_rate": 89.2
   },
   "fija_stats": {
-    "total": 64,
-    "wins": 59,
-    "losses": 5,
-    "win_rate": 92.2,
-    "active_streak": 0
+    "total": 70,
+    "wins": 63,
+    "losses": 7,
+    "win_rate": 90.0,
+    "active_streak": 2
   },
   "history": [
     {
@@ -1265,12 +1265,90 @@
       "status": "loss",
       "diagnostic": "FALLO: Villarreal venció 1-0 en La Cerámica con gol en el tramo final. Napoli no tuvo contundencia en sus transiciones y cedió la victoria local.",
       "pnl": -100.0
+    },
+    {
+      "id": 97,
+      "match": "Manchester City vs Paris Saint-Germain",
+      "tournament": "UEFA Champions League &bull; Miércoles 14/10/2026 &bull; Final: 2 - 4",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Manchester City o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 95.0,
+      "status": "loss",
+      "diagnostic": "FALLO: Manchester City cayó 2-4 en el Etihad Stadium ante un PSG letal al contragolpe (Doué, Dembélé, Vitinha, Akliouche). Pese al doblete de Haaland, el repliegue defensivo citizen colapsó.",
+      "pnl": -100.0
+    },
+    {
+      "id": 98,
+      "match": "AS Roma vs Real Madrid",
+      "tournament": "UEFA Champions League &bull; Miércoles 14/10/2026 &bull; Final: 3 - 4",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Empate o Real Madrid (X2) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.0,
+      "status": "win",
+      "diagnostic": "ACIERTO AGÓNICO: Real Madrid de José Mourinho remontó un 3-1 en contra para vencer 3-4 a la Roma en el Stadio Olimpico con gol heroico de Antonio Rüdiger. El escudo X2 cumplió.",
+      "pnl": 14.0
+    },
+    {
+      "id": 99,
+      "match": "LASK vs Liverpool",
+      "tournament": "UEFA Champions League &bull; Miércoles 14/10/2026 &bull; Final: 3 - 6",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Empate o Liverpool (X2) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 95.0,
+      "status": "win",
+      "diagnostic": "ACIERTO: Festival goleador en Linz (3-6) con triplete de Bradley Barcola; el Liverpool aseguró la Doble Oportunidad X2 con comodidad.",
+      "pnl": 14.0
+    },
+    {
+      "id": 100,
+      "match": "Bodø/Glimt vs Borussia Dortmund",
+      "tournament": "UEFA Champions League &bull; Miércoles 14/10/2026 &bull; Final: 1 - 0",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Empate o Borussia Dortmund (X2) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "loss",
+      "diagnostic": "FALLO CATASTRÓFICO: Bodø/Glimt dio el gran golpe en Noruega al vencer 1-0 a Borussia Dortmund (gol de Sjøvold 52'). El césped sintético ártico y el clima polar volvieron a congelar al favorito alemán, ratificando la advertencia del usuario.",
+      "pnl": -100.0
+    },
+    {
+      "id": 101,
+      "match": "Aston Villa vs Fenerbahçe",
+      "tournament": "UEFA Champions League &bull; Miércoles 14/10/2026 &bull; Final: 6 - 0",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Aston Villa o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "ACIERTO ROTUNDO: Paliza histórica 6-0 de Unai Emery en Villa Park; el cerrojo de Doble Oportunidad 1X se cubrió con margen abrumador.",
+      "pnl": 14.0
+    },
+    {
+      "id": 102,
+      "match": "Feyenoord vs Como",
+      "tournament": "UEFA Champions League &bull; Miércoles 14/10/2026 &bull; Final: 3 - 2",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Feyenoord o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "ACIERTO: Feyenoord superó 3-2 al combativo Como en De Kuip, sellando la Doble Oportunidad 1X.",
+      "pnl": 14.0
     }
   ],
   "bankroll": {
     "initial": 1000.0,
-    "current": 2075.75,
-    "profit": 1075.75,
-    "roi": 107.6
+    "current": 1931.75,
+    "profit": 931.75,
+    "roi": 93.2
   }
 }

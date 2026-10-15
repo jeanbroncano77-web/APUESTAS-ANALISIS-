@@ -261,6 +261,15 @@ def main():
                 ("Aston Villa", "Fenerbahçe", "DOBLE_OPORTUNIDAD"),
                 ("Feyenoord", "Como", "DOBLE_OPORTUNIDAD")
             ]
+        elif target_weekday == 3:  # JUEVES - UEFA EUROPA LEAGUE & CONFERENCE LEAGUE
+            fixtures_target = [
+                ("Benfica", "Celtic", "DOBLE_OPORTUNIDAD"),
+                ("Red Bull Salzburg", "AC Milan", "DOBLE_OPORTUNIDAD"),
+                ("Celta Vigo", "Juventus", "DOBLE_OPORTUNIDAD"),
+                ("Lech Poznań", "Bayer Leverkusen", "DOBLE_OPORTUNIDAD"),
+                ("Olympique Lyon", "Crystal Palace", "DOBLE_OPORTUNIDAD"),
+                ("Hajduk Split", "AFC Ajax", "DOBLE_OPORTUNIDAD")
+            ]
         else:  # LUNES / OTROS DÍAS
             fixtures_target = [
                 ("Atalanta", "Venezia", "DOBLE_OPORTUNIDAD"),
