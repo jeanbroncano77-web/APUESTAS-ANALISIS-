@@ -207,7 +207,8 @@ class SportsDirectorAgent:
             preferred_category=preferred_market_category,
             exact_market_probs=score_analysis.get("exact_market_probabilities"),
             media_analysis=media_analysis,
-            momentum_analysis=momentum_analysis
+            momentum_analysis=momentum_analysis,
+            cards_data=cards_analysis
         )
 
         return {

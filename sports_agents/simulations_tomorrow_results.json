@@ -1236,6 +1236,16 @@
           "_rank_score": 53.35
         },
         {
+          "market": "Tarjetas por Equipo",
+          "category_code": "TARJETAS",
+          "selection": "Celta Vigo - Más de 1.5 tarjetas",
+          "probability": 71.3,
+          "odds": 1.38,
+          "availability": "Universal en Ecuabet, Bet365, Betano",
+          "rationale": "Intensidad táctica de Celta Vigo: proyecta 2.5 tarjetas individuales con 71.3% de probabilidad de recibir 2 o más tarjetas.",
+          "_rank_score": 49.45
+        },
+        {
           "market": "Victoria Directa (1X2)",
           "category_code": "VICTORIA_DIRECTA",
           "selection": "Juventus Gana el Partido (2)",
@@ -2095,6 +2105,16 @@
           "availability": "100% Casas de Apuestas (Mercado 'Draw No Bet')",
           "rationale": "Triunfo de Olympique Lyon con devolución íntegra del 100% del dinero apostado si el juego finaliza igualado.",
           "_rank_score": 51.62
+        },
+        {
+          "market": "Tarjetas por Equipo",
+          "category_code": "TARJETAS",
+          "selection": "Crystal Palace - Más de 1.5 tarjetas",
+          "probability": 71.3,
+          "odds": 1.38,
+          "availability": "Universal en Ecuabet, Bet365, Betano",
+          "rationale": "Intensidad táctica de Crystal Palace: proyecta 2.5 tarjetas individuales con 71.3% de probabilidad de recibir 2 o más tarjetas.",
+          "_rank_score": 49.45
         }
       ]
     },
@@ -2484,6 +2504,16 @@
           "availability": "Universal en todas las plataformas",
           "rationale": "Ritmo conjunto proyectado de 2.5 xG con 81.1% de probabilidad exacta de al menos 2 goles.",
           "_rank_score": 53.75
+        },
+        {
+          "market": "Tarjetas por Equipo",
+          "category_code": "TARJETAS",
+          "selection": "Hajduk Split - Más de 1.5 tarjetas",
+          "probability": 73.3,
+          "odds": 1.38,
+          "availability": "Universal en Ecuabet, Bet365, Betano",
+          "rationale": "Intensidad táctica de Hajduk Split: proyecta 2.6 tarjetas individuales con 73.3% de probabilidad de recibir 2 o más tarjetas.",
+          "_rank_score": 50.45
         },
         {
           "market": "Victoria Directa (1X2)",

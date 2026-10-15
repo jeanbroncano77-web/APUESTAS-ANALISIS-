@@ -9,6 +9,7 @@ y amortiguadores de momentum.
 Garantiza que todos los picks sean 100% matemáticamente consistentes y operables en Bet365, Betano, 1xBet, etc.
 """
 
+import math
 from typing import Dict, Any, List, Optional
 
 
@@ -21,12 +22,12 @@ class MarketRealityAgent:
     ALLOWED_CATEGORIES = {
         "DOBLE_OPORTUNIDAD", "GOLES_UNDER", "GOLES_OVER",
         "GOL_EQUIPO", "TOTAL_CORNERS", "VICTORIA_SIN_EMPATE",
-        "VICTORIA_DIRECTA", "AMBOS_ANOTAN"
+        "VICTORIA_DIRECTA", "AMBOS_ANOTAN", "TARJETAS"
     }
 
     def __init__(self):
         self.name = "MarketRealityAgent"
-        self.version = "4.1.0"
+        self.version = "4.2.0"
 
     def select_realistic_la_fija(
         self,
@@ -41,7 +42,8 @@ class MarketRealityAgent:
         preferred_category: Optional[str] = None,
         exact_market_probs: Optional[Dict[str, float]] = None,
         media_analysis: Optional[Dict[str, Any]] = None,
-        momentum_analysis: Optional[Dict[str, Any]] = None
+        momentum_analysis: Optional[Dict[str, Any]] = None,
+        cards_data: Optional[Dict[str, Any]] = None
     ) -> Dict[str, Any]:
         """
         Evalúa y selecciona 'La Fija' (94.8% - 97.8%) a partir de la convolución matemática exacta
@@ -370,6 +372,46 @@ class MarketRealityAgent:
                 "availability": "Universal en todas las plataformas",
                 "rationale": f"Eficacia ofensiva cruzada: ambos cuadros promedian ocasiones claras de gol ({round(home_xg, 2)} vs {round(away_xg, 2)} xG)."
             })
+
+        # -------------------------------------------------------------
+        # 10. MERCADO: TARJETAS Y DISCIPLINA ARBITRAL (MERCADO DE ALTA EFICACIA)
+        # Especialmente potente en LaLiga española y partidos de alta fricción (Real Madrid, derbis)
+        # -------------------------------------------------------------
+        if cards_data:
+            total_cards_exp = cards_data.get("total_cards_expected", 0.0)
+            card_lines = cards_data.get("card_lines", {})
+            home_yellows = cards_data.get("home_yellow_cards", 0.0)
+            away_yellows = cards_data.get("away_yellow_cards", 0.0)
+
+            # Línea Más de 3.5 tarjetas totales (muy habitual y con gran valor en España y torneos europeos)
+            prob_o35 = card_lines.get("over_3_5_cards_pct", 0.0)
+            if prob_o35 >= 70.0:
+                odds_o35 = round(max(1.22, min(1.42, (1.0 / (prob_o35 / 100.0)) * 1.05)), 2)
+                candidates.append({
+                    "market": "Total Tarjetas",
+                    "category_code": "TARJETAS",
+                    "selection": "Más de 3.5 tarjetas totales",
+                    "probability": round(prob_o35, 1),
+                    "odds": odds_o35,
+                    "availability": "Universal en Ecuabet, Bet365, Betano",
+                    "rationale": f"Fricción disciplinaria elevada: {total_cards_exp} tarjetas esperadas en el cotejo bajo rigor arbitral."
+                })
+
+            # Línea de tarjetas por equipo: Más de 1.5 tarjetas del equipo (Poisson P(X >= 2))
+            for t_name, y_exp in [(home_team, home_yellows), (away_team, away_yellows)]:
+                if y_exp >= 1.65:
+                    p_ge2 = (1.0 - math.exp(-y_exp) * (1.0 + y_exp)) * 100.0
+                    if p_ge2 >= 70.0:
+                        odds_team = round(max(1.22, min(1.38, (1.0 / (p_ge2 / 100.0)) * 1.05)), 2)
+                        candidates.append({
+                            "market": "Tarjetas por Equipo",
+                            "category_code": "TARJETAS",
+                            "selection": f"{t_name} - Más de 1.5 tarjetas",
+                            "probability": round(p_ge2, 1),
+                            "odds": odds_team,
+                            "availability": "Universal en Ecuabet, Bet365, Betano",
+                            "rationale": f"Intensidad táctica de {t_name}: proyecta {y_exp} tarjetas individuales con {round(p_ge2, 1)}% de probabilidad de recibir 2 o más tarjetas."
+                        })
 
         # -------------------------------------------------------------
         # FILTRO DE RAÍZ INVIOLABLE: ERRADICACIÓN TOTAL DE HÁNDICAPS
