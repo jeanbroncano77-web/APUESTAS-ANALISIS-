@@ -1,8 +1,9 @@
 {
-  "GeneratedAt": "2026-10-14 22:15:33",
+  "GeneratedAt": "2026-10-14 22:00:00",
   "TargetDay": "Jueves",
   "TargetDate": "15/10/2026",
   "TemporalLabel": "MAÑANA",
+  "CompetitionHeader": "UEFA Europa League & UEFA Conference League • Fase de Liga (Jornada 2)",
   "Matches": [
     {
       "match": "Benfica vs Celtic",
@@ -15,7 +16,7 @@
         "referee": "Clément Turpin",
         "referee_avg_yellows": 4.1,
         "referee_avg_reds": 0.15,
-        "intensity": "Máxima (Las Águilas de Di María y Pavlidis buscando la supremacía europea ante el fervor escocés de Celtic)"
+        "intensity": "Máxima (Las Águilas con el poderío ofensivo de Kerem Aktürkoğlu, Pavlidis y Kökçü en el Estádio da Luz ante el Celtic)"
       },
       "projections": {
         "expected_goals": {
@@ -272,47 +273,47 @@
       "player_props": {
         "home_key_players": [
           {
-            "name": "Ángel Di María",
-            "position": "Extremo Creador / Estrella",
+            "name": "Kerem Aktürkoğlu",
+            "position": "Extremo Desequilibrante / Goleador",
             "health_status": "Disponible",
-            "expected_shots": 3.54,
-            "expected_sot": 1.71,
-            "prob_at_least_1_sot_pct": 81.9,
-            "prob_at_least_2_sot_pct": 51.0,
-            "prob_over_1_5_shots_pct": 86.8,
-            "prob_over_2_5_shots_pct": 68.7,
-            "goal_anytime_prob_pct": 40.0,
+            "expected_shots": 3.78,
+            "expected_sot": 1.83,
+            "prob_at_least_1_sot_pct": 84.0,
+            "prob_at_least_2_sot_pct": 54.6,
+            "prob_over_1_5_shots_pct": 89.1,
+            "prob_over_2_5_shots_pct": 72.9,
+            "goal_anytime_prob_pct": 44.0,
             "reallocated_from": null
           },
           {
             "name": "Vangelis Pavlidis",
-            "position": "Delantero Centro Goleador",
+            "position": "Delantero Centro Killer",
             "health_status": "Disponible",
-            "expected_shots": 3.91,
+            "expected_shots": 4.03,
             "expected_sot": 1.95,
             "prob_at_least_1_sot_pct": 85.8,
             "prob_at_least_2_sot_pct": 58.1,
-            "prob_over_1_5_shots_pct": 90.1,
-            "prob_over_2_5_shots_pct": 74.8,
+            "prob_over_1_5_shots_pct": 91.0,
+            "prob_over_2_5_shots_pct": 76.6,
             "goal_anytime_prob_pct": 48.0,
             "reallocated_from": null
           },
           {
             "name": "Orkun Kökçü",
-            "position": "Pivote Organizador",
+            "position": "Cerebro y Marcapasos",
             "health_status": "Disponible",
-            "expected_shots": 2.2,
+            "expected_shots": 2.32,
             "expected_sot": 0.98,
             "prob_at_least_1_sot_pct": 62.3,
             "prob_at_least_2_sot_pct": 25.6,
-            "prob_over_1_5_shots_pct": 64.5,
-            "prob_over_2_5_shots_pct": 37.7,
+            "prob_over_1_5_shots_pct": 67.4,
+            "prob_over_2_5_shots_pct": 40.9,
             "goal_anytime_prob_pct": 22.0,
             "reallocated_from": null
           },
           {
             "name": "Florentino Luís",
-            "position": "Pivote Defensivo",
+            "position": "Pivote Recuperador",
             "health_status": "Disponible",
             "expected_shots": 0.73,
             "expected_sot": 0.24,

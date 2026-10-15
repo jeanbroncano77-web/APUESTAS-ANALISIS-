@@ -14683,32 +14683,32 @@
     ],
     "key_players": [
       {
-        "name": "Ángel Di María",
-        "position": "Extremo Creador / Estrella",
-        "avg_shots_p90": 2.9,
-        "avg_sot_p90": 1.4,
-        "shot_creation_actions": 6.9,
-        "goal_prob": 0.4
+        "name": "Kerem Aktürkoğlu",
+        "position": "Extremo Desequilibrante / Goleador",
+        "avg_shots_p90": 3.1,
+        "avg_sot_p90": 1.5,
+        "shot_creation_actions": 6.2,
+        "goal_prob": 0.44
       },
       {
         "name": "Vangelis Pavlidis",
-        "position": "Delantero Centro Goleador",
-        "avg_shots_p90": 3.2,
+        "position": "Delantero Centro Killer",
+        "avg_shots_p90": 3.3,
         "avg_sot_p90": 1.6,
         "shot_creation_actions": 3.5,
         "goal_prob": 0.48
       },
       {
         "name": "Orkun Kökçü",
-        "position": "Pivote Organizador",
-        "avg_shots_p90": 1.8,
+        "position": "Cerebro y Marcapasos",
+        "avg_shots_p90": 1.9,
         "avg_sot_p90": 0.8,
-        "shot_creation_actions": 5.4,
+        "shot_creation_actions": 5.6,
         "goal_prob": 0.22
       },
       {
         "name": "Florentino Luís",
-        "position": "Pivote Defensivo",
+        "position": "Pivote Recuperador",
         "avg_shots_p90": 0.6,
         "avg_sot_p90": 0.2,
         "shot_creation_actions": 2.1,
