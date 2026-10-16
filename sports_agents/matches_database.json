@@ -630,13 +630,13 @@
     "intensity": "Muy Alta (El vendaval ofensivo del Barça de Flick con Lewandowski y Lamine Yamal ante el Sevilla)"
   },
   "Paris Saint-Germain vs Marseille": {
-    "tournament": "Ligue 1 - Jornada 8 (Le Classique)",
+    "tournament": "Ligue 1 - Jornada 8 (Domingo 18/10/2026 - Le Classique)",
     "stadium": "Parc des Princes (París, Francia)",
     "spectators_est": "48,000 en estadio (~35M audiencia global)",
     "referee": "Clément Turpin",
-    "referee_avg_yellows": 4.6,
-    "referee_avg_reds": 0.25,
-    "intensity": "Extrema (Máxima rivalidad de Francia; Dembélé y Barcola encendiendo el Parque de los Príncipes)"
+    "referee_avg_yellows": 4.7,
+    "referee_avg_reds": 0.22,
+    "intensity": "Extrema (Máxima tensión del fútbol francés: Dembélé y Barcola buscando imponer la jerarquía parisina)"
   },
   "Arsenal vs Crystal Palace": {
     "tournament": "Premier League - Jornada 8 (Derby de Londres)",
@@ -655,5 +655,50 @@
     "referee_avg_yellows": 4.7,
     "referee_avg_reds": 0.18,
     "intensity": "Máxima (Pelea táctica de gigantes: Dybala y Dovbyk retando a Lautaro Martínez y Thuram)"
+  },
+  "Real Madrid vs Sevilla": {
+    "tournament": "LaLiga Santander - Jornada 9 (Domingo 18/10/2026)",
+    "stadium": "Estadio Santiago Bernabéu (Madrid, España)",
+    "spectators_est": "81,044 en estadio (~60M audiencia global)",
+    "referee": "Jesús Gil Manzano",
+    "referee_avg_yellows": 5.4,
+    "referee_avg_reds": 0.24,
+    "intensity": "Máxima Rivalidad & Fricción (Vinícius, Mbappé y Bellingham desbordando ante la agresividad defensiva del Sevilla; media histórica de 5.8 tarjetas)"
+  },
+  "Juventus vs Lazio": {
+    "tournament": "Serie A - Jornada 7 (Domingo 18/10/2026)",
+    "stadium": "Allianz Stadium (Turín, Italia)",
+    "spectators_est": "41,500 en estadio (~30M audiencia global)",
+    "referee": "Davide Massa",
+    "referee_avg_yellows": 4.5,
+    "referee_avg_reds": 0.18,
+    "intensity": "Muy Alta (Muro bianconero de Thiago Motta y Vlahović en Turín ante la velocidad al contraataque de Zaccagni y Castellanos)"
+  },
+  "AC Milan vs Atalanta": {
+    "tournament": "Serie A - Jornada 7 (Domingo 18/10/2026)",
+    "stadium": "Stadio San Siro (Milán, Italia)",
+    "spectators_est": "75,000 en estadio (~35M audiencia global)",
+    "referee": "Maurizio Mariani",
+    "referee_avg_yellows": 4.3,
+    "referee_avg_reds": 0.15,
+    "intensity": "Máxima (El Milan encendido tras golear 4-0 en Europa retando a la máquina ofensiva y presión alta de Gasperini)"
+  },
+  "Newcastle vs Aston Villa": {
+    "tournament": "Premier League - Jornada 7 (Sábado 17/10/2026)",
+    "stadium": "St. James' Park (Newcastle, Inglaterra)",
+    "spectators_est": "52,300 en estadio (~42M audiencia global)",
+    "referee": "Anthony Taylor",
+    "referee_avg_yellows": 3.9,
+    "referee_avg_reds": 0.14,
+    "intensity": "Alta (Choque de trenes por puestos de Champions: Isak y Gordon en la caldera de St. James ante el Aston Villa de Emery tras su 6-0)"
+  },
+  "Barcelona vs Valencia": {
+    "tournament": "LaLiga Santander - Jornada 9 (Sábado 17/10/2026)",
+    "stadium": "Estadi Olímpic Lluís Companys (Barcelona, España)",
+    "spectators_est": "50,000 en estadio (~48M audiencia global)",
+    "referee": "Guillermo Cuadra Fernández",
+    "referee_avg_yellows": 4.8,
+    "referee_avg_reds": 0.19,
+    "intensity": "Muy Alta (El poderío ofensivo de Lewandowski y Lamine Yamal buscando dominar a un Valencia replegado)"
   }
 }

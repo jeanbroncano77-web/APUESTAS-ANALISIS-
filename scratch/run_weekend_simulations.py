@@ -30,15 +30,15 @@ from sports_agents import SportsDirectorAgent
 director = SportsDirectorAgent()
 
 matches_to_simulate = [
-    ("Borussia Dortmund", "St. Pauli", "DOBLE_OPORTUNIDAD"),
-    ("Celta de Vigo", "Real Madrid", "TARJETAS"),
-    ("Barcelona", "Sevilla", "DOBLE_OPORTUNIDAD"),
-    ("Paris Saint-Germain", "Marseille", "DOBLE_OPORTUNIDAD"),
-    ("Arsenal", "Crystal Palace", "DOBLE_OPORTUNIDAD"),
-    ("Roma", "Inter Milan", "DOBLE_OPORTUNIDAD")
+    ("Real Madrid", "Sevilla", "TARJETAS"),
+    ("Juventus", "Lazio", "DOBLE_OPORTUNIDAD"),
+    ("AC Milan", "Atalanta", "GOLES_OVER"),
+    ("Newcastle", "Aston Villa", "DOBLE_OPORTUNIDAD"),
+    ("Barcelona", "Valencia", "DOBLE_OPORTUNIDAD"),
+    ("Paris Saint-Germain", "Marseille", "DOBLE_OPORTUNIDAD")
 ]
 
-print("Simulando los 6 partidos estelares para Viernes 16 / Sábado 17 de Octubre 2026...")
+print("Simulando los 6 partidos estelares de LaLiga, Premier, Serie A y Ligue 1 para 16 - 18 de Octubre 2026...")
 
 results = []
 for home, away, category in matches_to_simulate:
@@ -50,9 +50,9 @@ for home, away, category in matches_to_simulate:
 
 output_data = {
     "GeneratedAt": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-    "TargetDay": "Viernes / Sábado",
-    "TargetDate": "16/10/2026 - 17/10/2026",
-    "TemporalLabel": "HOY Y MAÑANA",
+    "TargetDay": "Fin de Semana",
+    "TargetDate": "16/10/2026 - 18/10/2026",
+    "TemporalLabel": "ESTELAR FIN DE SEMANA",
     "Matches": results
 }
 
