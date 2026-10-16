@@ -726,7 +726,7 @@
     "minimum_draw_floor": 26.0,
     "corner_game_state_dampener": 0.85,
     "player_sot_restriction_factor": 0.35,
-    "tier1_superiority_buffer": 1.35,
+    "tier1_superiority_buffer": 1.45,
     "root_ban_handicaps": true,
     "bivariate_overdispersion_alpha": 0.1,
     "strength_of_schedule_floor": 1.45,
