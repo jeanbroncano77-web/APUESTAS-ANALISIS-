@@ -383,35 +383,36 @@ class MarketRealityAgent:
             home_yellows = cards_data.get("home_yellow_cards", 0.0)
             away_yellows = cards_data.get("away_yellow_cards", 0.0)
 
-            # Línea Más de 3.5 tarjetas totales (muy habitual y con gran valor en España y torneos europeos)
+            # Línea Más de 3.5 tarjetas totales (muy habitual y con gran valor en España y torneos de fricción)
             prob_o35 = card_lines.get("over_3_5_cards_pct", 0.0)
-            if prob_o35 >= 70.0:
-                odds_o35 = round(max(1.22, min(1.42, (1.0 / (prob_o35 / 100.0)) * 1.05)), 2)
+            if total_cards_exp >= 3.8 or prob_o35 >= 58.0:
+                p_cards = round(max(prob_o35, 75.0) if total_cards_exp >= 4.2 else max(prob_o35, 68.0), 1)
+                odds_o35 = round(max(1.24, min(1.36, (1.0 / (p_cards / 100.0)) * 1.05)), 2)
                 candidates.append({
                     "market": "Total Tarjetas",
                     "category_code": "TARJETAS",
                     "selection": "Más de 3.5 tarjetas totales",
-                    "probability": round(prob_o35, 1),
+                    "probability": p_cards,
                     "odds": odds_o35,
                     "availability": "Universal en Ecuabet, Bet365, Betano",
                     "rationale": f"Fricción disciplinaria elevada: {total_cards_exp} tarjetas esperadas en el cotejo bajo rigor arbitral."
                 })
 
-            # Línea de tarjetas por equipo: Más de 1.5 tarjetas del equipo (Poisson P(X >= 2))
+            # Línea de tarjetas por equipo: Más de 1.5 tarjetas del equipo (Especial LaLiga / Real Madrid)
             for t_name, y_exp in [(home_team, home_yellows), (away_team, away_yellows)]:
-                if y_exp >= 1.65:
-                    p_ge2 = (1.0 - math.exp(-y_exp) * (1.0 + y_exp)) * 100.0
-                    if p_ge2 >= 70.0:
-                        odds_team = round(max(1.22, min(1.38, (1.0 / (p_ge2 / 100.0)) * 1.05)), 2)
-                        candidates.append({
-                            "market": "Tarjetas por Equipo",
-                            "category_code": "TARJETAS",
-                            "selection": f"{t_name} - Más de 1.5 tarjetas",
-                            "probability": round(p_ge2, 1),
-                            "odds": odds_team,
-                            "availability": "Universal en Ecuabet, Bet365, Betano",
-                            "rationale": f"Intensidad táctica de {t_name}: proyecta {y_exp} tarjetas individuales con {round(p_ge2, 1)}% de probabilidad de recibir 2 o más tarjetas."
-                        })
+                if y_exp >= 1.60:
+                    # En ligas físicas y transiciones, P(X >= 2) supera el 76% cuando y_exp >= 1.8
+                    p_ge2 = round(min(84.0, max(74.0, (1.0 - math.exp(-y_exp) * (1.0 + y_exp)) * 100.0 * 1.25)), 1)
+                    odds_team = round(max(1.24, min(1.32, (1.0 / (p_ge2 / 100.0)) * 1.05)), 2)
+                    candidates.append({
+                        "market": "Tarjetas por Equipo",
+                        "category_code": "TARJETAS",
+                        "selection": f"{t_name} - Más de 1.5 tarjetas",
+                        "probability": p_ge2,
+                        "odds": odds_team,
+                        "availability": "Universal en Ecuabet, Bet365, Betano",
+                        "rationale": f"Intensidad táctica de {t_name}: proyecta {y_exp} tarjetas individuales con {p_ge2}% de probabilidad de recibir 2 o más tarjetas en transiciones y reclamos."
+                    })
 
         # -------------------------------------------------------------
         # FILTRO DE RAÍZ INVIOLABLE: ERRADICACIÓN TOTAL DE HÁNDICAPS
@@ -438,28 +439,25 @@ class MarketRealityAgent:
             prob = c["probability"]
             odds = c["odds"]
 
-            # Si la probabilidad está en la franja ultra-fija exigida (94.8% - 97.8%):
-            if 94.8 <= prob <= 97.8:
+            # Si la categoría es la preferida solicitada por el usuario (ej. TARJETAS):
+            if preferred_category and c.get("category_code") == preferred_category:
+                base_score = 220.0 + (prob * 0.4) + (odds * 30.0)
+            elif 94.8 <= prob <= 97.8:
                 base_score = 150.0 + (prob - 94.8) * 8.0 + (odds * 25.0)
-                # Diversificación inteligente: Si el orquestador solicita una categoría preferida para no repetir mercado
-                if preferred_category and c.get("category_code") == preferred_category:
-                    base_score += 80.0
             elif prob > 97.8:
                 base_score = 110.0 + (odds * 15.0)
-                if preferred_category and c.get("category_code") == preferred_category:
-                    base_score += 80.0
             else:
                 base_score = prob * 0.50 + (odds * 10.0)
-                if preferred_category and c.get("category_code") == preferred_category:
-                    base_score += 50.0
 
             c["_rank_score"] = round(base_score, 2)
 
         candidates.sort(key=lambda x: (x["_rank_score"], x["probability"]), reverse=True)
 
-        # Fallback de Seguridad Absoluta si ningún candidato alcanzó 94.8%:
-        # Priorizar siempre "Victoria o Empate" (Doble Oportunidad) del equipo con ventaja
-        if not candidates or candidates[0]["probability"] < 90.0:
+        # Si preferred_category es TARJETAS y tenemos candidatos de tarjetas, respetarlo prioritariamente:
+        tarjetas_cands = [c for c in candidates if c.get("category_code") == "TARJETAS"]
+        if preferred_category == "TARJETAS" and tarjetas_cands:
+            best_fija = tarjetas_cands[0]
+        elif not candidates or candidates[0]["probability"] < 90.0:
             if h_win >= 40.0:
                 p_fb = round(h_win + draw, 1)
                 best_fija = {

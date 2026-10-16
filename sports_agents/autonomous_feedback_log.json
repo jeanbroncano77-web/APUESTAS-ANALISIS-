@@ -1,6 +1,6 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 84,
+  "cycles_completed": 85,
   "calibrations": [
     {
       "cycle": 34,
@@ -727,6 +727,38 @@
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Jueves."
       ],
       "system_health": "Excelente (Win Rate Fijas: 90.1% [64/71] | Win Rate Global: 89.3% [92/103] | Brier Score: ~0.076 | Ciclo #84)"
+    },
+    {
+      "cycle": 85,
+      "timestamp": "2026-10-15 22:30:00",
+      "action": "Auditoría Jueves 15/10 & Calibración Viernes 16 / Sábado 17 de Octubre 2026",
+      "status": "POST_MORTEM_THURSDAY_AND_CARDS_INTEGRATION",
+      "observations": [
+        "[AUDITORÍA REAL JUEVES 15/10 - 5/6 ACIERTOS / 1 FALLO (83.3%)]: Ganaron Benfica-Celtic (2-0, gol Benfica), Salzburg-Milan (0-4, >0.5 goles), Celta-Juventus (1-1, Juventus X2), Poznań-Leverkusen (1-3, >0.5 goles) y Lyon-Palace (2-1, 9 córners). Solo falló Ajax (cayó 1-0 en Split ante Hajduk).",
+        "[ÉXITO COMBINADA DEL USUARIO - BANCA A ]: El usuario ganó su apuesta de  con Benfica y Juventus X2 (+10 USD limpios). Tras cubrir un gasto de urgencia de , la banca disponible se sitúa en  ( base intactos +  de ganancia pura acumulada).",
+        "[CALIBRACIÓN VICTORIAS ABRUMADORAS - AC MILAN 4-0 SALZBURG]: Tal como exigió el usuario tras Liverpool (3-6) y Aston Villa (6-0), el AC Milan goleó 0-4 de visitante. El modelo sobrecastigó la localía de Salzburg. Se calibra tier1_superiority_buffer para reconocer favoritismo aplastante de gigantes europeos ante equipos de segundo orden.",
+        "[CALIBRACIÓN CALDERAS BALCÁNICAS]: Hajduk Split 1-0 Ajax demostró que las calderas de los Balcanes son trampas para la Doble Oportunidad visitante. Veto a favoritas visitantes frágiles en Split/Belgrado.",
+        "[INTEGRACIÓN MERCADO DE TARJETAS - LALIGA & REAL MADRID]: Incorporado formalmente MarketRealityAgent 4.2 con mercado de TARJETAS (>1.5 tarjetas por equipo / >3.5 tarjetas totales) a petición estratégica del usuario para la visita del Real Madrid a Balaídos."
+      ],
+      "adjustments": {
+        "balkan_away_trap_veto": true,
+        "tier1_superiority_buffer": 1.45,
+        "cards_market_active": true,
+        "team_cards_poisson_enabled": true
+      },
+      "metrics_snapshot": {
+        "global_win_rate": 89.0,
+        "fijas_win_rate": 89.6,
+        "total_audited": 109,
+        "fijas_total": 77,
+        "fijas_wins": 69,
+        "fijas_losses": 8,
+        "pnl_usd": 913.0,
+        "bankroll_usd": 1913.0,
+        "user_bankroll_usd": 73.0,
+        "active_streak": 0
+      },
+      "system_health": "Calibrado y Optimizado (Win Rate Fijas: 89.6% [69/77] | Win Rate Global: 89.0% [97/109] | Ciclo #85)"
     }
   ],
   "current_weights": {
@@ -744,5 +776,5 @@
     "double_chance_resilience_priority": 1.4
   },
   "last_auto_audit": "2026-10-13 21:40:00",
-  "last_updated": "2026-10-14 23:01:43"
+  "last_updated": "2026-10-15 22:30:00"
 }

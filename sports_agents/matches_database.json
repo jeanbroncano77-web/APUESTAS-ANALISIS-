@@ -610,5 +610,50 @@
     "referee_avg_yellows": 4.2,
     "referee_avg_reds": 0.18,
     "intensity": "Extrema (El infierno de Poljud con Rakitić y Livaja ante la escuela dinámica de Ámsterdam liderada por Brobbey y Taylor)"
+  },
+  "Celta de Vigo vs Real Madrid": {
+    "tournament": "LaLiga Santander - Jornada 10 (Sábado)",
+    "stadium": "Abanca-Balaídos (Vigo, España)",
+    "spectators_est": "24,500 en estadio (~45M audiencia global)",
+    "referee": "Jesús Gil Manzano",
+    "referee_avg_yellows": 5.2,
+    "referee_avg_reds": 0.22,
+    "intensity": "Máxima Fricción (Vinícius, Bellingham y Mbappé ante el cerrojo gallego; duelo de altísimo índice de faltas tácticas y tarjetas)"
+  },
+  "Barcelona vs Sevilla": {
+    "tournament": "LaLiga Santander - Jornada 10",
+    "stadium": "Estadi Olímpic Lluís Companys (Barcelona, España)",
+    "spectators_est": "49,800 en estadio (~50M audiencia global)",
+    "referee": "Ricardo de Burgos Bengoetxea",
+    "referee_avg_yellows": 4.4,
+    "referee_avg_reds": 0.16,
+    "intensity": "Muy Alta (El vendaval ofensivo del Barça de Flick con Lewandowski y Lamine Yamal ante el Sevilla)"
+  },
+  "Paris Saint-Germain vs Marseille": {
+    "tournament": "Ligue 1 - Jornada 8 (Le Classique)",
+    "stadium": "Parc des Princes (París, Francia)",
+    "spectators_est": "48,000 en estadio (~35M audiencia global)",
+    "referee": "Clément Turpin",
+    "referee_avg_yellows": 4.6,
+    "referee_avg_reds": 0.25,
+    "intensity": "Extrema (Máxima rivalidad de Francia; Dembélé y Barcola encendiendo el Parque de los Príncipes)"
+  },
+  "Arsenal vs Crystal Palace": {
+    "tournament": "Premier League - Jornada 8 (Derby de Londres)",
+    "stadium": "Emirates Stadium (Londres, Inglaterra)",
+    "spectators_est": "60,200 en estadio (~40M audiencia global)",
+    "referee": "Michael Oliver",
+    "referee_avg_yellows": 3.7,
+    "referee_avg_reds": 0.12,
+    "intensity": "Alta (Arteta y sus cañoneros con Saka y Havertz buscando consolidar la punta en casa)"
+  },
+  "Roma vs Inter Milan": {
+    "tournament": "Serie A - Jornada 8 (Clásico Italiano)",
+    "stadium": "Stadio Olimpico (Roma, Italia)",
+    "spectators_est": "64,000 en estadio (~38M audiencia global)",
+    "referee": "Daniele Doveri",
+    "referee_avg_yellows": 4.7,
+    "referee_avg_reds": 0.18,
+    "intensity": "Máxima (Pelea táctica de gigantes: Dybala y Dovbyk retando a Lautaro Martínez y Thuram)"
   }
 }
