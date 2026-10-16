@@ -31,14 +31,13 @@ director = SportsDirectorAgent()
 
 friday_matches_to_simulate = [
     ("Boca Juniors", "Talleres", "DOBLE_OPORTUNIDAD"),
-    ("Banfield", "Lanús", "TARJETAS"),
     ("Defensa y Justicia", "Instituto", "DOBLE_OPORTUNIDAD"),
     ("Cruzeiro", "Liga de Quito", "DOBLE_OPORTUNIDAD"),
     ("Sarmiento", "Aldosivi", "GOLES_UNDER"),
     ("Atlético Tucumán", "Central Córdoba", "DOBLE_OPORTUNIDAD")
 ]
 
-print("Simulando los 6 partidos estelares EXCLUSIVAMENTE para MAÑANA VIERNES 16 DE OCTUBRE 2026...")
+print("Simulando los 5 partidos estelares EXCLUSIVAMENTE para MAÑANA VIERNES 16 DE OCTUBRE 2026...")
 
 results = []
 for home, away, category in friday_matches_to_simulate:
