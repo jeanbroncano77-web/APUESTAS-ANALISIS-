@@ -700,5 +700,59 @@
     "referee_avg_yellows": 4.8,
     "referee_avg_reds": 0.19,
     "intensity": "Muy Alta (El poderío ofensivo de Lewandowski y Lamine Yamal buscando dominar a un Valencia replegado)"
+  },
+  "Boca Juniors vs Talleres": {
+    "tournament": "Liga Profesional Argentina - Fecha 14 (Viernes 16/10/2026 - 21:30)",
+    "stadium": "Estadio Alberto J. Armando - La Bombonera (Buenos Aires)",
+    "spectators_est": "54,000 en estadio (~25M audiencia en Sudamérica)",
+    "referee": "Yael Falcón Pérez",
+    "referee_avg_yellows": 4.8,
+    "referee_avg_reds": 0.2,
+    "intensity": "Máxima (La Bombonera encendida con Edinson Cavani y Miguel Merentiel buscando la cima ante la T de Córdoba)"
+  },
+  "Banfield vs Lanús": {
+    "tournament": "Liga Profesional Argentina - Clásico del Sur (Viernes 16/10/2026 - 17:00)",
+    "stadium": "Estadio Florencio Sola (Banfield, Buenos Aires)",
+    "spectators_est": "34,901 hinchas en el Lencho",
+    "referee": "Facundo Tello",
+    "referee_avg_yellows": 5.6,
+    "referee_avg_reds": 0.28,
+    "intensity": "Extrema Fricción (Clásico barrial caliente; duelo de altísimo voltaje, tarjetas y pierna fuerte)"
+  },
+  "Defensa y Justicia vs Instituto": {
+    "tournament": "Liga Profesional Argentina (Viernes 16/10/2026 - 19:00)",
+    "stadium": "Estadio Norberto Tomaghello (Florencio Varela)",
+    "spectators_est": "20,000 espectadores",
+    "referee": "Leandro Rey Hilfer",
+    "referee_avg_yellows": 4.2,
+    "referee_avg_reds": 0.15,
+    "intensity": "Alta (Ritmo dinámico del Halcón de Varela en casa ante la Gloria cordobesa)"
+  },
+  "Cruzeiro vs Liga de Quito": {
+    "tournament": "Copa Conmebol Libertadores (Viernes 16/10/2026 - 19:00)",
+    "stadium": "Estadio Rodrigo Paz Delgado (Quito, Ecuador)",
+    "spectators_est": "28,000 hinchas albos en la Casa Blanca",
+    "referee": "Emicar Calderas",
+    "referee_avg_yellows": 3.8,
+    "referee_avg_reds": 0.12,
+    "intensity": "Alta (La fortaleza de la altura de Quito respaldando a las Guerreras Albas ante la técnica de Cruzeiro)"
+  },
+  "Sarmiento vs Aldosivi": {
+    "tournament": "Liga Profesional Argentina (Viernes 16/10/2026 - 15:00)",
+    "stadium": "Estadio Eva Perón (Junín)",
+    "spectators_est": "22,000 hinchas",
+    "referee": "Silvio Trucco",
+    "referee_avg_yellows": 4.4,
+    "referee_avg_reds": 0.18,
+    "intensity": "Alta (Duelo directo por la permanencia; cerrojo defensivo y líneas cortas)"
+  },
+  "Atlético Tucumán vs Central Córdoba": {
+    "tournament": "Liga Profesional Argentina - Clásico del Norte (Viernes 16/10/2026 - 21:00)",
+    "stadium": "Estadio Monumental José Fierro (San Miguel de Tucumán)",
+    "spectators_est": "35,200 en la caldera del Decano",
+    "referee": "Andrés Merlos",
+    "referee_avg_yellows": 5.0,
+    "referee_avg_reds": 0.22,
+    "intensity": "Muy Alta (La caldera tucumana del Monumental empujando al Decano en el clásico norteño)"
   }
 }
