@@ -520,27 +520,27 @@
   "2026-10-16": {
     "date_str": "16/10/2026",
     "day_name": "Viernes",
-    "competition": "Retorno de Ligas Europeas & Liga Argentina",
+    "competition": "Liga Profesional Argentina & Conmebol Libertadores",
     "fixtures": [
       [
-        "Borussia Dortmund",
-        "Werder Bremen",
-        "GOLES_UNDER"
+        "Boca Juniors",
+        "Talleres",
+        "DOBLE_OPORTUNIDAD"
       ],
       [
         "Banfield",
         "Lanús",
-        "DOBLE_OPORTUNIDAD"
-      ],
-      [
-        "Instituto",
-        "Unión",
-        "DOBLE_OPORTUNIDAD"
+        "TARJETAS"
       ],
       [
         "Defensa y Justicia",
-        "Gimnasia (LP)",
-        "GOL_EQUIPO"
+        "Instituto",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Cruzeiro",
+        "Liga de Quito",
+        "DOBLE_OPORTUNIDAD"
       ],
       [
         "Sarmiento",
