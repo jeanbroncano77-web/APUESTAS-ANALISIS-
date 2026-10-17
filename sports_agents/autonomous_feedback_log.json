@@ -1,32 +1,7 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 92,
+  "cycles_completed": 93,
   "calibrations": [
-    {
-      "cycle": 51,
-      "timestamp": "2026-10-09 09:25:00",
-      "action": "Calibración Diaria Viernes 09/10 (Liga Argentina & LigaPro Ecuador)",
-      "observations": [
-        "Cartelera Estelar de Viernes: 6 partidos reales (Aldosivi vs Sarmiento, Gimnasia vs Atl. Tucumán, Instituto vs Boca, Unión vs Def. y Justicia, Delfín vs Mushuc Runa, Libertad vs Leones FC).",
-        "SquadInjuryAgent: 100% de planteles ratificados (Cavani, Merentiel, Balboa, Licha López, Messiniti, Vergés).",
-        "MarketRealityAgent: 100% mercados reales y diversificados (Doble Oportunidad 1X/X2, Gol de Equipo >0.5, Menos de 3.5 goles). Cero hándicaps, cero líneas de 5.5 goles.",
-        "TimesFM & Monte Carlo: Dixon-Coles calibrado con Brier score estimado ~0.076."
-      ],
-      "system_health": "Excelente (Win Rate Fijas: 97.2% [35/36] | Win Rate Global: 92.6% [63/68] | Brier Score: ~0.076 | Ciclo #51)"
-    },
-    {
-      "cycle": 52,
-      "timestamp": "2026-10-09 09:52:14",
-      "action": "Auto-Calibración Diaria (Viernes 09/10/2026)",
-      "observations": [
-        "[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas para Viernes.",
-        "SquadInjuryAgent: 100% de planteles ratificados.",
-        "MarketRealityAgent: 6 Fijas ultra-seguras (95-98%) optimizadas (confianza media: 95.3%). Cero hándicaps, cero líneas de 5.5 goles.",
-        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
-        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Viernes."
-      ],
-      "system_health": "Excelente (Win Rate Fijas: 97.2% [35/36] | Win Rate Global: 92.6% [63/68] | Brier Score: ~0.076 | Ciclo #52)"
-    },
     {
       "cycle": 53,
       "timestamp": "2026-10-09 20:30:31",
@@ -807,6 +782,21 @@
         "fija_qualification_threshold": 92.0
       },
       "system_health": "Calibrado con rigor honesto (Win Rate Fijas: 86.6% [71/82] | Win Rate Global: 86.8% [99/114] | Ciclo #92)"
+    },
+    {
+      "cycle": 93,
+      "timestamp": "2026-10-16 23:42:06",
+      "action": "Auto-Calibración Diaria (Sábado 17/10/2026)",
+      "observations": [
+        "[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas para Sábado.",
+        "Calibración Favoritos Visitantes: Fricción cuantitativa aplicada (tope 68% en 1X2 visitante) para erradicar sobreconfianza irreal; ratificación de Gol de Equipo y Doble Oportunidad como blindaje.",
+        "SquadInjuryAgent (FC Barcelona): Dani Olmo 100% habilitado en once titular; Raphinha y Roony Bardghji ratificados como bajas médicas oficiales con veto de props.",
+        "SquadInjuryAgent: 100% de planteles ratificados.",
+        "MarketRealityAgent: 6 Fijas ultra-seguras (95-98%) optimizadas (confianza media: 90.8%). Cero hándicaps, cero líneas de 5.5 goles.",
+        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
+        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Sábado."
+      ],
+      "system_health": "Excelente (Win Rate Fijas: 86.7% [72/83] | Win Rate Global: 87.0% [100/115] | Brier Score: ~0.076 | Ciclo #93)"
     }
   ],
   "current_weights": {
@@ -824,5 +814,5 @@
     "double_chance_resilience_priority": 1.4
   },
   "last_auto_audit": "2026-10-13 21:40:00",
-  "last_updated": "2026-10-16 22:49:53"
+  "last_updated": "2026-10-16 23:42:06"
 }

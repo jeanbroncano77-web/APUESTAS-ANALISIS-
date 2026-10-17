@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-16 22:49:53",
+  "last_updated": "2026-10-16 23:42:06",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 1647.75,
-  "total_profit": 647.75,
-  "roi_pct": 87.9,
+  "current_bankroll": 1661.75,
+  "total_profit": 661.75,
+  "roi_pct": 66.2,
   "global_stats": {
-    "total": 114,
-    "wins": 99,
+    "total": 115,
+    "wins": 100,
     "losses": 15,
-    "win_rate": 86.8
+    "win_rate": 87.0
   },
   "fija_stats": {
-    "total": 82,
-    "wins": 71,
+    "total": 83,
+    "wins": 72,
     "losses": 11,
-    "win_rate": 86.6,
-    "active_streak": 0
+    "win_rate": 86.7,
+    "active_streak": 1
   },
   "history": [
     {
@@ -1499,6 +1499,19 @@
       "status": "win",
       "diagnostic": "ACIERTO: Empate 0-0 súper táctico y cerrado en Mar del Plata. La línea de seguridad de menos de 4.5 goles se cumplió con margen absoluto.",
       "pnl": 12.0
+    },
+    {
+      "id": 115,
+      "match": "Cruzeiro vs Liga de Quito",
+      "tournament": "Liga Profesional Argentina & Conmebol Libertadores • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Cruzeiro o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Cruzeiro defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
+      "pnl": 14.0
     }
   ],
   "bankroll": {
