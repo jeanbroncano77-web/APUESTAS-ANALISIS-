@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-16 22:44:57",
+  "last_updated": "2026-10-16 22:45:42",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 1860.75,
-  "total_profit": 860.75,
-  "roi_pct": 94.6,
+  "current_bankroll": 1878.75,
+  "total_profit": 878.75,
+  "roi_pct": 87.9,
   "global_stats": {
-    "total": 111,
-    "wins": 98,
+    "total": 114,
+    "wins": 101,
     "losses": 13,
-    "win_rate": 88.3
+    "win_rate": 88.6
   },
   "fija_stats": {
-    "total": 79,
-    "wins": 70,
+    "total": 82,
+    "wins": 73,
     "losses": 9,
-    "win_rate": 88.6,
-    "active_streak": 1
+    "win_rate": 89.0,
+    "active_streak": 4
   },
   "history": [
     {
@@ -1460,6 +1460,45 @@
       "status": "win",
       "diagnostic": "ACIERTO: Boca Juniors ganó 1-0 en La Bombonera con gol de Milton Giménez a pase de Kevin Zenón. La Doble Oportunidad 1X se cumplió con solvencia.",
       "pnl": 15.0
+    },
+    {
+      "id": 112,
+      "match": "Cruzeiro vs Liga de Quito",
+      "tournament": "Liga Profesional Argentina & Conmebol Libertadores • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Cruzeiro o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Cruzeiro defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
+      "pnl": 14.0
+    },
+    {
+      "id": 113,
+      "match": "Sarmiento vs Aldosivi",
+      "tournament": "Liga Profesional Argentina & Conmebol Libertadores • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Menos de 3.5 goles totales [Total Goles]",
+      "odds": 1.15,
+      "confidence": 95.0,
+      "status": "win",
+      "diagnostic": "Choque equilibrado entre Sarmiento y Aldosivi; la línea conservadora de menos de 3.5 goles cumplió con holgura táctica.",
+      "pnl": 15.0
+    },
+    {
+      "id": 114,
+      "match": "Atlético Tucumán vs Central Córdoba",
+      "tournament": "Liga Profesional Argentina & Conmebol Libertadores • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Atlético Tucumán o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Atlético Tucumán defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
+      "pnl": 14.0
     }
   ],
   "bankroll": {
