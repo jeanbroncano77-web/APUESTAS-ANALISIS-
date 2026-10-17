@@ -15592,5 +15592,165 @@
         "goal_prob": 0.12
       }
     ]
+  },
+  "Real Betis": {
+    "fifa_rank": 28,
+    "recent_form": [
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 1,
+        "goals_conceded": 1,
+        "xg_for": 1.3,
+        "xg_against": 1.2,
+        "corners_for": 5,
+        "corners_against": 4,
+        "shots_total": 12,
+        "shots_on_target": 4,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 49
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Giovani Lo Celso",
+        "position": "Mediapunta Organizador",
+        "avg_shots_p90": 2.6,
+        "avg_sot_p90": 1.1,
+        "shot_creation_actions": 5.4,
+        "goal_prob": 0.35
+      },
+      {
+        "name": "Vitor Roque",
+        "position": "Delantero Centro",
+        "avg_shots_p90": 2.9,
+        "avg_sot_p90": 1.3,
+        "shot_creation_actions": 3.1,
+        "goal_prob": 0.4
+      }
+    ]
+  },
+  "RB Leipzig": {
+    "fifa_rank": 16,
+    "recent_form": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "L"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 2,
+        "goals_conceded": 0,
+        "xg_for": 2.2,
+        "xg_against": 0.7,
+        "corners_for": 7,
+        "corners_against": 3,
+        "shots_total": 16,
+        "shots_on_target": 7,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 9,
+        "possession": 56
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Benjamin Šeško",
+        "position": "Delantero Tanque",
+        "avg_shots_p90": 3.4,
+        "avg_sot_p90": 1.7,
+        "shot_creation_actions": 3.8,
+        "goal_prob": 0.48
+      },
+      {
+        "name": "Loïs Openda",
+        "position": "Punta de Ruptura",
+        "avg_shots_p90": 3.6,
+        "avg_sot_p90": 1.8,
+        "shot_creation_actions": 4.1,
+        "goal_prob": 0.52
+      }
+    ]
+  },
+  "Genoa": {
+    "fifa_rank": 52,
+    "recent_form": [
+      "L",
+      "D",
+      "L",
+      "W",
+      "D"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 0,
+        "goals_conceded": 1,
+        "xg_for": 0.8,
+        "xg_against": 1.4,
+        "corners_for": 3,
+        "corners_against": 6,
+        "shots_total": 9,
+        "shots_on_target": 2,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 14,
+        "possession": 42
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Andrea Pinamonti",
+        "position": "Centrodelantero",
+        "avg_shots_p90": 2.1,
+        "avg_sot_p90": 0.9,
+        "shot_creation_actions": 2.2,
+        "goal_prob": 0.3
+      }
+    ]
+  },
+  "Ipswich Town": {
+    "fifa_rank": 65,
+    "recent_form": [
+      "D",
+      "D",
+      "L",
+      "D",
+      "L"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 1,
+        "goals_conceded": 2,
+        "xg_for": 0.9,
+        "xg_against": 2.4,
+        "corners_for": 3,
+        "corners_against": 8,
+        "shots_total": 8,
+        "shots_on_target": 3,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 12,
+        "possession": 38
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Liam Delap",
+        "position": "Delantero",
+        "avg_shots_p90": 2.2,
+        "avg_sot_p90": 1.0,
+        "shot_creation_actions": 2.4,
+        "goal_prob": 0.32
+      }
+    ]
   }
 }

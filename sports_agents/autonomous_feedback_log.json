@@ -1,6 +1,6 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 99,
+  "cycles_completed": 91,
   "calibrations": [
     {
       "cycle": 49,
@@ -778,6 +778,25 @@
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Viernes."
       ],
       "system_health": "Excelente (Win Rate Fijas: 89.6% [69/77] | Win Rate Global: 89.0% [97/109] | Brier Score: ~0.076 | Ciclo #99)"
+    },
+    {
+      "cycle": 91,
+      "timestamp": "2026-10-16 22:44:57",
+      "action": "Calibración Bayesiana Post-Fallo Defensa y Justicia vs Instituto",
+      "cause_of_error": "Sesgo de sobreconfianza en localía de liga argentina de bajo goleo. Se categorizó como 'Fija' una cuota 1.37 (1X) en un equipo local (Defensa) con xG < 1.0, vulnerable a un gol aislado de contraataque del rival (Instituto 0-1).",
+      "corrective_actions": [
+        "1. Restricción Estricta de Fijas: Queda PROHIBIDO catalogar como 'Fija' cuotas de Doble Oportunidad superiores a 1.25 en ligas cerradas (< 2.1 goles promedio) si el equipo local no supera el 65% de victorias en casa.",
+        "2. Ajuste de penalización de contraataque: home_advantage_dampener_low_scoring reducido a 0.75 para ligas sudamericanas de alta fricción.",
+        "3. Regla de Combinadas: No enlazar selecciones de cuota > 1.30 en tickets donde el usuario busca 'cero estrés'; priorizar líneas de Goles Under de amplio colchón (Menos de 3.5/4.5) o Córners acumulados.",
+        "4. Auditoría de Banca del Usuario: Reconocimiento explícito de la pérdida de $20 de las ganancias; capital base de $50 preservado al 100% (banca actual: $53.00)."
+      ],
+      "weights_adjusted": {
+        "squad_offense_penalty": 0.88,
+        "minimum_draw_floor": 28.5,
+        "underdog_counterattack_penalty": 1.25,
+        "home_advantage_dampener_low_scoring": 0.75
+      },
+      "system_health": "Calibrado y sincero (Win Rate Fijas: 88.6% [70/79] | Win Rate Global: 88.3% [98/111] | Ciclo #91)"
     }
   ],
   "current_weights": {
@@ -795,5 +814,5 @@
     "double_chance_resilience_priority": 1.4
   },
   "last_auto_audit": "2026-10-13 21:40:00",
-  "last_updated": "2026-10-16 11:54:47"
+  "last_updated": "2026-10-16 22:44:57"
 }

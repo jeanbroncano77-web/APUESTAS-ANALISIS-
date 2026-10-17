@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-15 22:30:00",
+  "last_updated": "2026-10-16 22:44:57",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 1945.75,
-  "total_profit": 945.75,
+  "current_bankroll": 1860.75,
+  "total_profit": 860.75,
   "roi_pct": 94.6,
   "global_stats": {
-    "total": 109,
-    "wins": 97,
-    "losses": 12,
-    "win_rate": 89.0
+    "total": 111,
+    "wins": 98,
+    "losses": 13,
+    "win_rate": 88.3
   },
   "fija_stats": {
-    "total": 77,
-    "wins": 69,
-    "losses": 8,
-    "win_rate": 89.6,
-    "active_streak": 0
+    "total": 79,
+    "wins": 70,
+    "losses": 9,
+    "win_rate": 88.6,
+    "active_streak": 1
   },
   "history": [
     {
@@ -1434,6 +1434,32 @@
       "status": "loss",
       "diagnostic": "FALLO DETECTADO POR EL USUARIO: Hajduk Split venció 1-0 al Ajax en el infierno de Poljud (gol de Livaja 68'). La hostilidad de la Torcida y el juego físico neutralizaron al Ajax, quebrando la Doble Oportunidad.",
       "pnl": -100.0
+    },
+    {
+      "id": 110,
+      "match": "Defensa y Justicia vs Instituto",
+      "tournament": "Liga Profesional Argentina • Viernes 16/10/2026 • Final: 0 - 1",
+      "category_tag": "👑 La Fija (Doble Oportunidad)",
+      "is_fija": true,
+      "selection": "Defensa y Justicia o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.37,
+      "confidence": 75.2,
+      "status": "loss",
+      "diagnostic": "FALLO REPORTADO POR EL USUARIO: Instituto sorprendió 0-1 a Defensa en Florencio Varela. El Halcón generó muy poco volumen ofensivo (xG 0.82) y fue incapaz de remontar la contra cordobesa. Error de modelado: clasificar como 'fija' una cuota 1.37 en liga argentina de bajo goleo sin factor xG > 1.4.",
+      "pnl": -100.0
+    },
+    {
+      "id": 111,
+      "match": "Boca Juniors vs Talleres",
+      "tournament": "Liga Profesional Argentina • Viernes 16/10/2026 • Final: 1 - 0",
+      "category_tag": "👑 La Fija (Doble Oportunidad)",
+      "is_fija": true,
+      "selection": "Boca Juniors o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.15,
+      "confidence": 86.4,
+      "status": "win",
+      "diagnostic": "ACIERTO: Boca Juniors ganó 1-0 en La Bombonera con gol de Milton Giménez a pase de Kevin Zenón. La Doble Oportunidad 1X se cumplió con solvencia.",
+      "pnl": 15.0
     }
   ],
   "bankroll": {

@@ -298,37 +298,37 @@
   "2026-10-17": {
     "date_str": "17/10/2026",
     "day_name": "Sábado",
-    "competition": "Ligas Europeas de Élite (Retorno Post-FIFA)",
+    "competition": "LaLiga EA Sports, Premier League, Serie A & Liga Profesional",
     "fixtures": [
       [
+        "Real Betis",
+        "Barcelona",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
         "Real Madrid",
-        "Villarreal",
+        "Sevilla",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Manchester City",
+        "Ipswich Town",
         "GOL_EQUIPO"
       ],
       [
-        "FC Augsburg",
         "Bayern Munich",
+        "RB Leipzig",
         "GOLES_OVER"
       ],
       [
-        "Arsenal",
-        "Leeds United",
-        "TOTAL_CORNERS"
-      ],
-      [
-        "Barcelona",
-        "Getafe",
+        "AS Roma",
+        "Genoa",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Inter Milan",
-        "Parma",
-        "DOBLE_OPORTUNIDAD"
-      ],
-      [
-        "Borussia Dortmund",
-        "Werder Bremen",
-        "GOLES_UNDER"
+        "Banfield",
+        "Lanús",
+        "TARJETAS"
       ]
     ]
   },
