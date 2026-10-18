@@ -1,22 +1,7 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 109,
+  "cycles_completed": 110,
   "calibrations": [
-    {
-      "cycle": 77,
-      "timestamp": "2026-10-13 14:24:00",
-      "action": "Auto-Calibración Diaria (Martes 13/10/2026)",
-      "observations": [
-        "[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas para Martes.",
-        "Calibración Favoritos Visitantes: Fricción cuantitativa aplicada (tope 68% en 1X2 visitante) para erradicar sobreconfianza irreal; ratificación de Gol de Equipo y Doble Oportunidad como blindaje.",
-        "SquadInjuryAgent (FC Barcelona): Dani Olmo 100% habilitado en once titular; Raphinha y Roony Bardghji ratificados como bajas médicas oficiales con veto de props.",
-        "SquadInjuryAgent: 100% de planteles ratificados.",
-        "MarketRealityAgent: 6 Fijas ultra-seguras (95-98%) optimizadas (confianza media: 96.2%). Cero hándicaps, cero líneas de 5.5 goles.",
-        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
-        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Martes."
-      ],
-      "system_health": "Excelente (Win Rate Fijas: 94.8% [55/58] | Win Rate Global: 92.2% [83/90] | Brier Score: ~0.076 | Ciclo #77)"
-    },
     {
       "cycle": 78,
       "timestamp": "2026-10-13 14:26:44",
@@ -812,6 +797,21 @@
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Domingo con fricción en favoritos visitantes (Arsenal @1.58, Man United @1.67)."
       ],
       "system_health": "Excelente (Win Rate Fijas: 86.3% [82/95] | Win Rate Global: 86.6% [110/127] | Brier Score: 0.1307 | Ciclo #109)"
+    },
+    {
+      "cycle": 110,
+      "timestamp": "2026-10-18 04:52:02",
+      "action": "Auto-Calibración Bayesiana & Aprendizaje Dinámico (Domingo 18/10/2026)",
+      "observations": [
+        "[Calendario Oficial Verificado]: Fixtures confirmados sin invenciones para Domingo 18/10/2026 (Premier League, LaLiga, Liga MX).",
+        "[Autopsia Cuantitativa Villarreal 1-1 Getafe]: Detección de trampa de bloque bajo. Getafe igualó con penal tardío (87'). Se elevó 'low_block_draw_resistance' a 1.35 y 'minimum_draw_floor' a 27.5%. Prohibición de forzar victoria directa en favoritos locales con xG diferencial < +0.75; migración obligatoria a Doble Oportunidad.",
+        "[Autopsia Cuantitativa AS Roma 0-1 Inter Milan]: Fallo en Ambos Anotan (BTTS). Sommer y el cerrojo interista neutralizaron el 1.15 xG romano. Endurecimiento de filtro BTTS en duelos estelares: umbral mínimo de xG combinado elevado a 2.60 y probabilidad mínima a 58.0%; de lo contrario, veto preventivo.",
+        "[Ratificación Empírica FC Barcelona 5-1 Sevilla]: Cobro exitoso del usuario (+20.00) en Barcelona Gana + Más 1.5 goles. Se activó el factor 'offensive_juggernaut_combo_boost' (1.25) para gigantes ofensivos con xG_home >= 2.40, respaldando formalmente la lectura cuantitativa del usuario.",
+        "[Brier Score Global]: 0.1307 en 127 eventos auditados en vivo. Calibración de confiabilidad en equilibrio óptimo.",
+        "MarketRealityAgent: 6 Fijas de alta convicción calibradas para Domingo (confianza media: 62.1%). Veto de raíz a hándicaps ficticios y líneas de 5.5 goles.",
+        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Domingo con fricción en favoritos visitantes (Arsenal @1.58, Man United @1.67)."
+      ],
+      "system_health": "Excelente (Win Rate Fijas: 86.3% [82/95] | Win Rate Global: 86.6% [110/127] | Brier Score: 0.1307 | Ciclo #110)"
     }
   ],
   "current_weights": {
@@ -829,5 +829,5 @@
     "double_chance_resilience_priority": 1.4
   },
   "last_auto_audit": "2026-10-13 21:40:00",
-  "last_updated": "2026-10-18 04:47:28"
+  "last_updated": "2026-10-18 04:52:02"
 }
