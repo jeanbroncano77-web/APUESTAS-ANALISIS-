@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-17 19:48:53",
+  "last_updated": "2026-10-17 19:49:26",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 1756.75,
-  "total_profit": 756.75,
-  "roi_pct": 66.2,
+  "current_bankroll": 1770.75,
+  "total_profit": 770.75,
+  "roi_pct": 77.1,
   "global_stats": {
-    "total": 120,
-    "wins": 105,
+    "total": 121,
+    "wins": 106,
     "losses": 15,
-    "win_rate": 87.5
+    "win_rate": 87.6
   },
   "fija_stats": {
-    "total": 88,
-    "wins": 77,
+    "total": 89,
+    "wins": 78,
     "losses": 11,
-    "win_rate": 87.5,
-    "active_streak": 6
+    "win_rate": 87.6,
+    "active_streak": 7
   },
   "history": [
     {
@@ -1577,6 +1577,19 @@
       "status": "win",
       "diagnostic": "ACIERTO: Clásico del Sur de máxima fricción en el Florencio Sola. Facundo Tello mostró 7 tarjetas amarillas y 1 roja. Línea de 3.5 tarjetas superada con holgura.",
       "pnl": 36.0
+    },
+    {
+      "id": 121,
+      "match": "Cruzeiro vs Liga de Quito",
+      "tournament": "Liga Profesional Argentina & Conmebol Libertadores • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Cruzeiro o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Cruzeiro defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
+      "pnl": 14.0
     }
   ],
   "bankroll": {
