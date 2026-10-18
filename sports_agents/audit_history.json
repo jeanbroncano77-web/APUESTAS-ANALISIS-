@@ -1,20 +1,20 @@
 {
-  "last_updated": "2026-10-17 20:37:38",
+  "last_updated": "2026-10-17 20:39:06",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 1766.75,
-  "total_profit": 766.75,
-  "roi_pct": 76.7,
+  "current_bankroll": 1780.75,
+  "total_profit": 780.75,
+  "roi_pct": 78.1,
   "global_stats": {
-    "total": 121,
-    "wins": 106,
+    "total": 122,
+    "wins": 107,
     "losses": 15,
-    "win_rate": 87.6
+    "win_rate": 87.7
   },
   "fija_stats": {
-    "total": 89,
-    "wins": 78,
+    "total": 90,
+    "wins": 79,
     "losses": 11,
-    "win_rate": 87.6,
+    "win_rate": 87.8,
     "active_streak": 7
   },
   "history": [
@@ -1590,12 +1590,25 @@
       "status": "win",
       "diagnostic": "Real Madrid defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
       "pnl": 14.0
+    },
+    {
+      "id": 122,
+      "match": "Athletic Club vs Espanyol",
+      "tournament": "LaLiga EA Sports, Premier League, Serie A & Liga Profesional • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Athletic Club o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Athletic Club defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
+      "pnl": 14.0
     }
   ],
   "bankroll": {
     "initial": 1000.0,
-    "current": 1752.75,
-    "profit": 752.75,
-    "roi": 75.3
+    "current": 1766.75,
+    "profit": 766.75,
+    "roi": 76.7
   }
 }
