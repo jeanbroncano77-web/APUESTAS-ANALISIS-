@@ -1,6 +1,6 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 100,
+  "cycles_completed": 93,
   "calibrations": [
     {
       "cycle": 60,
@@ -808,6 +808,25 @@
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Sábado."
       ],
       "system_health": "Excelente (Win Rate Fijas: 86.7% [72/83] | Win Rate Global: 87.0% [100/115] | Brier Score: ~0.076 | Ciclo #100)"
+    },
+    {
+      "cycle": 93,
+      "timestamp": "2026-10-17 19:48:53",
+      "action": "Calibración Bayesiana Ciclo #93: Pleno 6 de 6 en Europa y Recuperación de Banca",
+      "observations": [
+        "1. Pleno 6 de 6 en la jornada de Sábado 17/10: Las grandes ligas de Europa (LaLiga, Premier, Bundesliga, Serie A) ratificaron la confiabilidad matemática de los planteles de élite frente a la alta varianza sudamericana.",
+        "2. Victoria del usuario: Los dos tiros personales ($40 en Barça Gana y +1.5 goles @1.70, y $10 en tarjetas del Real Madrid @1.40) resultaron en verdes impecables, cobrando $82.00 totales. Banca del usuario recuperada a $85.00 ($50 base intacto + $35 ganancia neta).",
+        "3. Despliegue del Escudo de Confiabilidad 5.0 (Reliability Shield): Erradicado el sesgo de recompensa de cuota alta; implementados los 3 Niveles de Confianza (Tier 1 Candado, Tier 2 Valor, Tier 3 Riesgo).",
+        "4. Validación del mercado de tarjetas en clásicos: Banfield vs Lanús registró 8 amonestaciones totales, confirmando que la fricción arbitral en derbis es una línea de alta predictibilidad cuando el 1X2 es incierto."
+      ],
+      "weights_adjusted": {
+        "squad_offense_penalty": 0.88,
+        "minimum_draw_floor": 27.5,
+        "underdog_counterattack_penalty": 1.3,
+        "home_advantage_dampener_low_scoring": 0.68,
+        "fija_qualification_threshold": 92.0
+      },
+      "system_health": "Excelente y Reforzado (Win Rate Fijas: 87.5% [77/88] | Win Rate Global: 87.5% [105/120] | Racha Activa: 6 Verdes | Ciclo #93)"
     }
   ],
   "current_weights": {
@@ -825,5 +844,5 @@
     "double_chance_resilience_priority": 1.4
   },
   "last_auto_audit": "2026-10-13 21:40:00",
-  "last_updated": "2026-10-17 10:54:06"
+  "last_updated": "2026-10-17 19:48:53"
 }

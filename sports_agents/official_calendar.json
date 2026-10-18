@@ -335,36 +335,36 @@
   "2026-10-18": {
     "date_str": "18/10/2026",
     "day_name": "Domingo",
-    "competition": "Ligas Europeas de Élite (Domingo de Clubes)",
+    "competition": "Premier League, LaLiga, Serie A & Liga Profesional",
     "fixtures": [
       [
-        "Real Madrid",
-        "Villarreal",
+        "Liverpool",
+        "Chelsea",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Wolverhampton",
+        "Manchester City",
         "GOL_EQUIPO"
       ],
       [
-        "Barcelona",
+        "Atlético de Madrid",
+        "Leganés",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "AS Roma",
+        "Inter Milan",
+        "GOLES_OVER"
+      ],
+      [
+        "Villarreal",
         "Getafe",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Arsenal",
-        "Leeds United",
-        "TOTAL_CORNERS"
-      ],
-      [
-        "FC Augsburg",
-        "Bayern Munich",
-        "GOLES_OVER"
-      ],
-      [
-        "Inter Milan",
-        "Parma",
-        "DOBLE_OPORTUNIDAD"
-      ],
-      [
-        "Borussia Dortmund",
-        "Werder Bremen",
+        "River Plate",
+        "Vélez Sarsfield",
         "GOLES_UNDER"
       ]
     ]

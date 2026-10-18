@@ -15752,5 +15752,77 @@
         "goal_prob": 0.32
       }
     ]
+  },
+  "Chelsea": {
+    "fifa_rank": 14,
+    "recent_form": [
+      "W",
+      "W",
+      "D",
+      "W",
+      "W"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 3,
+        "goals_conceded": 0,
+        "xg_for": 2.6,
+        "xg_against": 0.8,
+        "corners_for": 6,
+        "corners_against": 4,
+        "shots_total": 16,
+        "shots_on_target": 7,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 10,
+        "possession": 62
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Cole Palmer",
+        "position": "Mediapunta / Estrella Mundial",
+        "avg_shots_p90": 3.6,
+        "avg_sot_p90": 1.8,
+        "shot_creation_actions": 6.8,
+        "goal_prob": 0.52
+      }
+    ]
+  },
+  "Wolverhampton": {
+    "fifa_rank": 48,
+    "recent_form": [
+      "L",
+      "L",
+      "D",
+      "L",
+      "L"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 1,
+        "goals_conceded": 2,
+        "xg_for": 1.0,
+        "xg_against": 2.3,
+        "corners_for": 4,
+        "corners_against": 7,
+        "shots_total": 9,
+        "shots_on_target": 3,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 13,
+        "possession": 41
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Matheus Cunha",
+        "position": "Extremo / Punta",
+        "avg_shots_p90": 2.6,
+        "avg_sot_p90": 1.1,
+        "shot_creation_actions": 4.1,
+        "goal_prob": 0.35
+      }
+    ]
   }
 }

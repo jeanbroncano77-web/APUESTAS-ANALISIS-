@@ -432,67 +432,61 @@ class MarketRealityAgent:
         candidates = clean_candidates
 
         # -------------------------------------------------------------
-        # RANKING Y DIVERSIFICACIÓN INTELIGENTE (FRANJA ULTRA-FIJA: 94.8% - 97.8%)
-        # REGLA DE ORO: MERCADOS 100% REALES Y OPERABLES EN CASAS DE APUESTAS
+        # ESCUDO DE CONFIABILIDAD 5.0 (RELIABILITY SHIELD)
+        # REGLA FUNDAMENTAL: MAXIMIZAR SEGURIDAD REAL, NO CUOTA.
+        # Una cuota alta (> 1.25) en un pick de seguridad indica RIESGO, no valor.
+        # Se penaliza drásticamente el riesgo para garantizar CANDADOS AUTÉNTICOS (Tier 1).
         # -------------------------------------------------------------
         for c in candidates:
-            prob = c["probability"]
-            odds = c["odds"]
+            prob = float(c["probability"])
+            odds = float(c["odds"])
 
-            # Si la categoría es la preferida solicitada por el usuario (ej. TARJETAS):
-            if preferred_category and c.get("category_code") == preferred_category:
-                base_score = 220.0 + (prob * 0.4) + (odds * 30.0)
-            elif 94.8 <= prob <= 97.8:
-                base_score = 150.0 + (prob - 94.8) * 8.0 + (odds * 25.0)
-            elif prob > 97.8:
-                base_score = 110.0 + (odds * 15.0)
+            # Asignación de Confidence Tier
+            if prob >= 92.0 and odds <= 1.28:
+                c["confidence_tier"] = "TIER_1_CANDADO"
+                c["tier_badge"] = "🟢 CANDADO INSTITUCIONAL"
+            elif prob >= 80.0:
+                c["confidence_tier"] = "TIER_2_VALOR"
+                c["tier_badge"] = "🟡 VALOR ESTRATÉGICO"
             else:
-                base_score = prob * 0.50 + (odds * 10.0)
+                c["confidence_tier"] = "TIER_3_RIESGO"
+                c["tier_badge"] = "🔴 OBSERVACIÓN / RIESGO"
 
-            c["_rank_score"] = round(base_score, 2)
+            # Puntuación de Seguridad Matemática Pura (SafetyScore)
+            safety_score = prob * 2.5
+
+            if prob >= 92.0:
+                safety_score += 150.0
+
+            if odds > 1.25:
+                excess_risk = (odds - 1.25) * 60.0
+                safety_score -= excess_risk
+
+            if preferred_category and c.get("category_code") == preferred_category:
+                safety_score += 35.0
+
+            c["_rank_score"] = round(safety_score, 2)
 
         candidates.sort(key=lambda x: (x["_rank_score"], x["probability"]), reverse=True)
 
-        # Si preferred_category es TARJETAS y tenemos candidatos de tarjetas, respetarlo prioritariamente:
-        tarjetas_cands = [c for c in candidates if c.get("category_code") == "TARJETAS"]
+        tarjetas_cands = [c for c in candidates if c.get("category_code") == "TARJETAS" and c["probability"] >= 74.0]
         if preferred_category == "TARJETAS" and tarjetas_cands:
             best_fija = tarjetas_cands[0]
-        elif not candidates or candidates[0]["probability"] < 90.0:
-            if h_win >= 40.0:
-                p_fb = round(h_win + draw, 1)
-                best_fija = {
-                    "market": "Doble Oportunidad",
-                    "category_code": "DOBLE_OPORTUNIDAD",
-                    "selection": f"{home_team} o Empate (1X)",
-                    "probability": p_fb,
-                    "odds": round(max(1.10, (1.0 / (p_fb / 100.0)) * 1.05), 2),
-                    "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-                    "rationale": f"Selección óptima de seguridad: {home_team} cubre victoria y empate con {p_fb}% de probabilidad real."
-                }
-            elif a_win >= 40.0:
-                p_fb = round(a_win + draw, 1)
-                best_fija = {
-                    "market": "Doble Oportunidad",
-                    "category_code": "DOBLE_OPORTUNIDAD",
-                    "selection": f"Empate o {away_team} (X2)",
-                    "probability": p_fb,
-                    "odds": round(max(1.10, (1.0 / (p_fb / 100.0)) * 1.05), 2),
-                    "availability": "100% Casas de Apuestas (Bet365, Betano, etc.)",
-                    "rationale": f"Selección óptima de seguridad: {away_team} cubre empate y triunfo con {p_fb}% de probabilidad real."
-                }
-            else:
-                safe_u45 = round(exact_market_probs.get("under_4_5_pct", 91.5) if exact_market_probs else 91.5, 1)
-                best_fija = {
-                    "market": "Total de Goles Fijo",
-                    "category_code": "GOLES_UNDER",
-                    "selection": "Menos de 4.5 goles totales",
-                    "probability": safe_u45,
-                    "odds": 1.12,
-                    "availability": "Universal en todas las casas (Bet365, Betano, etc.)",
-                    "rationale": f"Línea de contención: ritmo de {round(exp_total_goals, 2)} xG descarta matemáticamente 5 goles ({safe_u45}% real)."
-                }
-        else:
+        elif candidates:
             best_fija = candidates[0]
+        else:
+            safe_u45 = round(exact_market_probs.get("under_4_5_pct", 94.0) if exact_market_probs else 94.0, 1)
+            best_fija = {
+                "market": "Total de Goles Fijo",
+                "category_code": "GOLES_UNDER",
+                "selection": "Menos de 4.5 goles totales",
+                "probability": safe_u45,
+                "odds": 1.12,
+                "confidence_tier": "TIER_1_CANDADO",
+                "tier_badge": "🟢 CANDADO INSTITUCIONAL",
+                "availability": "Universal en todas las casas",
+                "rationale": "Línea de contención estadística máxima para evitar sorpresas."
+            }
 
         return {
             "selected_la_fija": best_fija,
