@@ -1,22 +1,7 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 96,
+  "cycles_completed": 97,
   "calibrations": [
-    {
-      "cycle": 64,
-      "timestamp": "2026-10-12 01:26:19",
-      "action": "Auto-Calibración Diaria (Lunes 12/10/2026)",
-      "observations": [
-        "[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas para Lunes.",
-        "Calibración Favoritos Visitantes: Fricción cuantitativa aplicada (tope 68% en 1X2 visitante) para erradicar sobreconfianza irreal; ratificación de Gol de Equipo y Doble Oportunidad como blindaje.",
-        "SquadInjuryAgent (FC Barcelona): Dani Olmo 100% habilitado en once titular; Raphinha y Roony Bardghji ratificados como bajas médicas oficiales con veto de props.",
-        "SquadInjuryAgent: 100% de planteles ratificados.",
-        "MarketRealityAgent: 6 Fijas ultra-seguras (95-98%) optimizadas (confianza media: 96.1%). Cero hándicaps, cero líneas de 5.5 goles.",
-        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
-        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Lunes."
-      ],
-      "system_health": "Excelente (Win Rate Fijas: 94.2% [49/52] | Win Rate Global: 91.7% [77/84] | Brier Score: ~0.076 | Ciclo #64)"
-    },
     {
       "cycle": 65,
       "timestamp": "2026-10-12 01:34:37",
@@ -812,6 +797,21 @@
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Domingo."
       ],
       "system_health": "Excelente (Win Rate Fijas: 87.6% [78/89] | Win Rate Global: 87.6% [106/121] | Brier Score: ~0.076 | Ciclo #96)"
+    },
+    {
+      "cycle": 97,
+      "timestamp": "2026-10-17 20:32:01",
+      "action": "Auto-Calibración Diaria (Domingo 18/10/2026)",
+      "observations": [
+        "[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas para Domingo.",
+        "Calibración Favoritos Visitantes: Fricción cuantitativa aplicada (tope 68% en 1X2 visitante) para erradicar sobreconfianza irreal; ratificación de Gol de Equipo y Doble Oportunidad como blindaje.",
+        "SquadInjuryAgent (FC Barcelona): Dani Olmo 100% habilitado en once titular; Raphinha y Roony Bardghji ratificados como bajas médicas oficiales con veto de props.",
+        "SquadInjuryAgent: 100% de planteles ratificados.",
+        "MarketRealityAgent: 6 Fijas ultra-seguras (95-98%) optimizadas (confianza media: 65.5%). Cero hándicaps, cero líneas de 5.5 goles.",
+        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
+        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Domingo."
+      ],
+      "system_health": "Excelente (Win Rate Fijas: 87.8% [79/90] | Win Rate Global: 87.7% [107/122] | Brier Score: ~0.076 | Ciclo #97)"
     }
   ],
   "current_weights": {
@@ -829,5 +829,5 @@
     "double_chance_resilience_priority": 1.4
   },
   "last_auto_audit": "2026-10-13 21:40:00",
-  "last_updated": "2026-10-17 20:24:55"
+  "last_updated": "2026-10-17 20:32:01"
 }

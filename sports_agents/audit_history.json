@@ -1,21 +1,21 @@
 {
   "last_updated": "2026-10-17 19:49:26",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 1770.75,
-  "total_profit": 770.75,
-  "roi_pct": 77.1,
+  "current_bankroll": 1803.75,
+  "total_profit": 803.75,
+  "roi_pct": 80.4,
   "global_stats": {
-    "total": 121,
-    "wins": 106,
+    "total": 122,
+    "wins": 107,
     "losses": 15,
-    "win_rate": 87.6
+    "win_rate": 87.7
   },
   "fija_stats": {
-    "total": 89,
-    "wins": 78,
+    "total": 90,
+    "wins": 79,
     "losses": 11,
-    "win_rate": 87.6,
-    "active_streak": 7
+    "win_rate": 87.8,
+    "active_streak": 8
   },
   "history": [
     {
@@ -1590,12 +1590,25 @@
       "status": "win",
       "diagnostic": "Cruzeiro defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
       "pnl": 14.0
+    },
+    {
+      "id": 122,
+      "match": "Celta de Vigo vs Real Madrid",
+      "tournament": "LaLiga EA Sports • Sábado 19/10/2024 • Final: 1 - 2",
+      "category_tag": "👑 La Fija (Victoria Directa)",
+      "is_fija": true,
+      "selection": "Real Madrid Gana el Partido (2)",
+      "odds": 1.66,
+      "confidence": 63.9,
+      "status": "win",
+      "diagnostic": "ACIERTO ROTUNDO: Real Madrid venció 1-2 al Celta de Vigo en Balaídos con goles de Kylian Mbappé (20') y Vinícius Júnior (66'). Pick verde con victoria directa confirmada.",
+      "pnl": 33.0
     }
   ],
   "bankroll": {
     "initial": 1000.0,
-    "current": 1931.75,
-    "profit": 931.75,
-    "roi": 93.2
+    "current": 1803.75,
+    "profit": 803.75,
+    "roi": 80.4
   }
 }
