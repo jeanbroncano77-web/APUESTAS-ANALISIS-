@@ -345,27 +345,27 @@
       [
         "Wolverhampton",
         "Manchester City",
-        "GOL_EQUIPO"
+        "VICTORIA_DIRECTA"
       ],
       [
         "Atlético de Madrid",
         "Leganés",
-        "DOBLE_OPORTUNIDAD"
+        "VICTORIA_DIRECTA"
       ],
       [
         "AS Roma",
         "Inter Milan",
-        "GOLES_OVER"
+        "AMBOS_ANOTAN"
       ],
       [
         "Villarreal",
         "Getafe",
-        "DOBLE_OPORTUNIDAD"
+        "VICTORIA_DIRECTA"
       ],
       [
         "River Plate",
         "Vélez Sarsfield",
-        "GOLES_UNDER"
+        "DOBLE_OPORTUNIDAD"
       ]
     ]
   },
