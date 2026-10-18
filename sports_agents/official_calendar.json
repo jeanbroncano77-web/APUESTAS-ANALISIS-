@@ -335,7 +335,7 @@
   "2026-10-18": {
     "date_str": "18/10/2026",
     "day_name": "Domingo",
-    "competition": "LaLiga EA Sports, Premier League, Serie A & Superclásico (Domingo Estelar)",
+    "competition": "Premier League, LaLiga EA Sports & Liga MX (Domingo Estelar)",
     "fixtures": [
       [
         "Real Madrid",
@@ -353,18 +353,18 @@
         "VICTORIA_DIRECTA"
       ],
       [
-        "AC Milan",
-        "Atalanta",
+        "Brighton & Hove Albion",
+        "Crystal Palace",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Juventus",
-        "Lazio",
+        "AFC Bournemouth",
+        "Sunderland",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Valencia",
-        "Getafe",
+        "Monterrey",
+        "Pachuca",
         "DOBLE_OPORTUNIDAD"
       ]
     ]
