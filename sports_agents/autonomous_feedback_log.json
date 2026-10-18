@@ -1,36 +1,7 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 113,
+  "cycles_completed": 114,
   "calibrations": [
-    {
-      "cycle": 82,
-      "timestamp": "2026-10-14 22:00:00",
-      "action": "Auditoría Real Miércoles 14/10 Champions League & Calibración Jueves 15/10 Europa/Conference League",
-      "status": "CRITICAL_POST_MORTEM_WEDNESDAY",
-      "observations": [
-        "[AUDITORÍA REAL MIÉRCOLES 14/10 - 4/6 ACIERTOS / 2 FALLOS]: Ganaron Roma-Madrid (3-4), LASK-Liverpool (3-6), Aston Villa-Fenerbahçe (6-0) y Feyenoord-Como (3-2). Cayeron Man City (2-4 vs PSG) y Borussia Dortmund (0-1 en Noruega ante Bodø/Glimt). Racha activa: 2 aciertos.",
-        "[FALLO 1 - LA TRAMPA NÓRDICA CONFIRMADA (BODØ/GLIMT 1-0 DORTMUND)]: El usuario advirtió repetidamente sobre el frío y las canchas de Noruega. El modelo cometió el error garrafal de poner a Dortmund X2 como 'Fija de Oro'. En el círculo polar ártico y sobre césped sintético, Bodø/Glimt anuló al Dortmund y ganó 1-0. VETO PERMANENTE a poner Fijas de Oro en visitas al norte de Europa en césped artificial.",
-        "[FALLO 2 - MANCHESTER CITY 2-4 PSG]: El usuario desconfió del City y prefirió sacarlo del boleto. El PSG desnudó las debilidades en transición rápida del City y se puso 0-3 en el primer tiempo. El modelo sobreponderó el mito de la localía en el Etihad.",
-        "[ÉXITO DEL USUARIO - RECUPERACIÓN DE $50 A ~$70]: El usuario apostó con cabeza $35 a cuota @1.51 con Aston Villa 1X (goleó 6-0) y Real Madrid X2 (remontó 3-4 de la mano de Mourinho y gol de Rüdiger), guardando $15 de reserva y logrando su primer escalón de recuperación verde con ~$70 de saldo.",
-        "[CARTELERA JUEVES 15/10 UEFA EUROPA LEAGUE & CONFERENCE LEAGUE]: 6 choques modelados (Benfica vs Celtic, Salzburg vs Milan, Celta vs Juventus, Poznań vs Leverkusen, Lyon vs Crystal Palace, Hajduk vs Ajax). Fija de Oro otorgada al Benfica en el Estádio da Luz (1X)."
-      ],
-      "adjustments": {
-        "nordic_synthetic_pitch_ban": true,
-        "away_fav_european_penalty": 0.25,
-        "home_fortress_strict_threshold": 0.82
-      },
-      "metrics_snapshot": {
-        "global_win_rate": 89.2,
-        "fijas_win_rate": 90.0,
-        "total_audited": 102,
-        "fijas_total": 70,
-        "fijas_wins": 63,
-        "fijas_losses": 7,
-        "pnl_usd": 931.75,
-        "bankroll_usd": 1931.75,
-        "active_streak": 2
-      }
-    },
     {
       "cycle": 83,
       "timestamp": "2026-10-14 22:15:33",
@@ -795,6 +766,21 @@
         "TimesFM & Monte Carlo: Dixon-Coles calibrado para Domingo con fricción en favoritos visitantes (Arsenal @1.58, Man United @1.67)."
       ],
       "system_health": "Excelente (Win Rate Fijas: 86.3% [82/95] | Win Rate Global: 86.6% [110/127] | Brier Score: 0.1307 | Ciclo #113)"
+    },
+    {
+      "cycle": 114,
+      "timestamp": "2026-10-18 16:01:24",
+      "action": "Auto-Calibración Bayesiana & Aprendizaje Dinámico (Domingo 18/10/2026)",
+      "observations": [
+        "[Calendario Oficial Verificado]: Fixtures confirmados sin invenciones para Domingo 18/10/2026 (Premier League, LaLiga, Liga MX).",
+        "[Autopsia Cuantitativa Villarreal 1-1 Getafe]: Detección de trampa de bloque bajo. Getafe igualó con penal tardío (87'). Se elevó 'low_block_draw_resistance' a 1.35 y 'minimum_draw_floor' a 27.5%. Prohibición de forzar victoria directa en favoritos locales con xG diferencial < +0.75; migración obligatoria a Doble Oportunidad.",
+        "[Autopsia Cuantitativa AS Roma 0-1 Inter Milan]: Fallo en Ambos Anotan (BTTS). Sommer y el cerrojo interista neutralizaron el 1.15 xG romano. Endurecimiento de filtro BTTS en duelos estelares: umbral mínimo de xG combinado elevado a 2.60 y probabilidad mínima a 58.0%; de lo contrario, veto preventivo.",
+        "[Ratificación Empírica FC Barcelona 5-1 Sevilla]: Cobro exitoso del usuario (+20.00) en Barcelona Gana + Más 1.5 goles. Se activó el factor 'offensive_juggernaut_combo_boost' (1.25) para gigantes ofensivos con xG_home >= 2.40, respaldando formalmente la lectura cuantitativa del usuario.",
+        "[Brier Score Global]: 0.1307 en 127 eventos auditados en vivo. Calibración de confiabilidad en equilibrio óptimo.",
+        "MarketRealityAgent: 6 Fijas de alta convicción calibradas para Domingo (confianza media: 62.1%). Veto de raíz a hándicaps ficticios y líneas de 5.5 goles.",
+        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Domingo con fricción en favoritos visitantes (Arsenal @1.58, Man United @1.67)."
+      ],
+      "system_health": "Excelente (Win Rate Fijas: 86.3% [82/95] | Win Rate Global: 86.6% [110/127] | Brier Score: 0.1307 | Ciclo #114)"
     }
   ],
   "current_weights": {
@@ -812,5 +798,5 @@
     "double_chance_resilience_priority": 1.4
   },
   "last_auto_audit": "2026-10-13 21:40:00",
-  "last_updated": "2026-10-18 05:48:12"
+  "last_updated": "2026-10-18 16:01:24"
 }
