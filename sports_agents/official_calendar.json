@@ -343,29 +343,29 @@
         "VICTORIA_DIRECTA"
       ],
       [
-        "Wolverhampton",
-        "Manchester City",
+        "Barcelona",
+        "Getafe",
         "VICTORIA_DIRECTA"
       ],
       [
-        "Atlético de Madrid",
-        "Leganés",
+        "Arsenal",
+        "Leeds United",
         "VICTORIA_DIRECTA"
       ],
       [
-        "Liverpool",
-        "Chelsea",
-        "DOBLE_OPORTUNIDAD"
-      ],
-      [
-        "AS Roma",
-        "Inter Milan",
+        "Bayer Leverkusen",
+        "Borussia Dortmund",
         "AMBOS_ANOTAN"
       ],
       [
-        "Villarreal",
-        "Getafe",
-        "VICTORIA_DIRECTA"
+        "Juventus",
+        "Lazio",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "River Plate",
+        "Independiente",
+        "DOBLE_OPORTUNIDAD"
       ]
     ]
   },

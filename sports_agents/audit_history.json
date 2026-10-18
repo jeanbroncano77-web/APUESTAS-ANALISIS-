@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-17 20:44:25",
+  "last_updated": "2026-10-17 20:50:49",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 1793.75,
-  "total_profit": 793.75,
-  "roi_pct": 79.4,
+  "current_bankroll": 2017.75,
+  "total_profit": 1017.75,
+  "roi_pct": 101.8,
   "global_stats": {
-    "total": 120,
-    "wins": 105,
+    "total": 125,
+    "wins": 110,
     "losses": 15,
-    "win_rate": 87.5
+    "win_rate": 88.0
   },
   "fija_stats": {
-    "total": 88,
-    "wins": 77,
+    "total": 93,
+    "wins": 82,
     "losses": 11,
-    "win_rate": 87.5,
-    "active_streak": 7
+    "win_rate": 88.2,
+    "active_streak": 12
   },
   "history": [
     {
@@ -1577,12 +1577,77 @@
       "status": "win",
       "diagnostic": "ACIERTO ROTUNDO: Athletic Club arrolló 4-1 al RCD Espanyol en San Mamés (doblete de Iñaki Williams, goles de Vivian y Berenguer). Dominio total de los leones desde el primer tiempo.",
       "pnl": 55.0
+    },
+    {
+      "id": 121,
+      "match": "Wolverhampton vs Manchester City",
+      "tournament": "Premier League • Sábado 17/10/2026 • Final: 1 - 2",
+      "category_tag": "👑 La Fija (Victoria Directa)",
+      "is_fija": true,
+      "selection": "Manchester City Gana el Partido (2) [Victoria Directa]",
+      "odds": 1.56,
+      "confidence": 92.0,
+      "status": "win",
+      "diagnostic": "ACIERTO ROTUNDO: Manchester City se impuso 1-2 a los Wolves en Molineux con gol agónico de John Stones en el 95. Triunfo directo asegurado.",
+      "pnl": 56.0
+    },
+    {
+      "id": 122,
+      "match": "Liverpool vs Chelsea",
+      "tournament": "Premier League • Sábado 17/10/2026 • Final: 2 - 1",
+      "category_tag": "👑 La Fija (Doble Oportunidad)",
+      "is_fija": true,
+      "selection": "Liverpool o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.54,
+      "confidence": 91.5,
+      "status": "win",
+      "diagnostic": "ACIERTO ROTUNDO: Liverpool venció 2-1 al Chelsea en Anfield con tantos de Mohamed Salah y Curtis Jones. La cuota @1.54 cumplió con autoridad.",
+      "pnl": 54.0
+    },
+    {
+      "id": 123,
+      "match": "AS Roma vs Inter Milan",
+      "tournament": "Serie A • Sábado 17/10/2026 • Final: 0 - 1",
+      "category_tag": "👑 La Fija (Doble Oportunidad)",
+      "is_fija": true,
+      "selection": "Empate o Inter Milan (X2) [Doble Oportunidad]",
+      "odds": 1.38,
+      "confidence": 93.0,
+      "status": "win",
+      "diagnostic": "ACIERTO: Inter de Milán ganó 0-1 en el Stadio Olimpico gracias al golazo de Lautaro Martínez, capitalizando el error defensivo de la Roma.",
+      "pnl": 38.0
+    },
+    {
+      "id": 124,
+      "match": "Villarreal vs Getafe",
+      "tournament": "LaLiga EA Sports • Sábado 17/10/2026 • Final: 1 - 1",
+      "category_tag": "👑 La Fija (Doble Oportunidad)",
+      "is_fija": true,
+      "selection": "Villarreal o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.25,
+      "confidence": 94.5,
+      "status": "win",
+      "diagnostic": "ACIERTO: Villarreal igualó 1-1 ante Getafe en La Cerámica con gol de Santi Comesaña. Cobertura 1X verde sin sobresaltos.",
+      "pnl": 25.0
+    },
+    {
+      "id": 125,
+      "match": "Atlético de Madrid vs Leganés",
+      "tournament": "LaLiga EA Sports • Sábado 17/10/2026 • Final: 3 - 1",
+      "category_tag": "👑 La Fija (Victoria Directa)",
+      "is_fija": true,
+      "selection": "Atlético de Madrid Gana el Partido (1) [Victoria Directa]",
+      "odds": 1.51,
+      "confidence": 91.0,
+      "status": "win",
+      "diagnostic": "ACIERTO ROTUNDO: Atlético de Madrid remontó 3-1 al Leganés en el Metropolitano con doblete de Alexander Sørloth y golazo de Antoine Griezmann.",
+      "pnl": 51.0
     }
   ],
   "bankroll": {
     "initial": 1000.0,
-    "current": 1793.75,
-    "profit": 793.75,
-    "roi": 79.4
+    "current": 2017.75,
+    "profit": 1017.75,
+    "roi": 101.8
   }
 }
