@@ -552,11 +552,16 @@
   "2026-10-19": {
     "date_str": "19/10/2026",
     "day_name": "Lunes",
-    "competition": "LaLiga EA Sports, Premier League, Serie A & Ligas Sudamericanas",
+    "competition": "LigaPro Ecuador, Premier League, LaLiga EA Sports & Serie A",
     "fixtures": [
       [
-        "Getafe",
-        "Rayo Vallecano",
+        "Mushuc Runa",
+        "Orense SC",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Macará",
+        "Independiente del Valle",
         "DOBLE_OPORTUNIDAD"
       ],
       [
@@ -565,23 +570,18 @@
         "VICTORIA_DIRECTA"
       ],
       [
+        "Getafe",
+        "Rayo Vallecano",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
         "Monza",
         "Cagliari",
         "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Sarmiento",
-        "Barracas Central",
-        "GOLES_UNDER"
-      ],
-      [
-        "Newell's Old Boys",
-        "Central Córdoba",
-        "DOBLE_OPORTUNIDAD"
-      ],
-      [
-        "Deportivo Pasto",
-        "Alianza",
+        "Parma",
+        "Torino",
         "DOBLE_OPORTUNIDAD"
       ]
     ]

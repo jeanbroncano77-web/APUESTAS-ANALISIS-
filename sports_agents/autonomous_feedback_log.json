@@ -800,7 +800,7 @@
     },
     {
       "cycle": 110,
-      "timestamp": "2026-10-18 23:09:27",
+      "timestamp": "2026-10-18 18:57:03",
       "action": "Auto-Calibración Bayesiana & Aprendizaje Dinámico (Lunes 19/10/2026)",
       "observations": [
         "[Calendario Oficial Verificado]: Fixtures confirmados sin invenciones para Lunes 19/10/2026 (LaLiga, Premier League, Serie A, Ligas Sudamericanas).",
@@ -809,7 +809,7 @@
         "[Autopsia Cuantitativa Leeds 1-1 Manchester United (Fallo Real)]: El United se adelantó con Mbeumo pero empató Calvert-Lewin al 51'. La hostilidad de Elland Road neutralizó la victoria visitante, ratificando la advertencia del usuario: 'el arsenal va de visita, no quieres que se dañe la fija que de ley gane'. Se eleva 'premier_league_away_favorite_friction' a 1.28x y se exige DNB en favoritos visitantes con cuota > 1.50.",
         "[Autopsias Previas Ratificadas]: Filtros de bloque bajo (1.35) y veto a BTTS en Tier-1 defensivo se mantienen activos.",
         "[Brier Score Cuadrático Global]: 0.1326 en 133 eventos auditados en vivo. Banca oficial supera los $2,000 USD ($2,007.52 USD, +100.8% ROI).",
-        "MarketRealityAgent: Fijas de alta convicción calibradas para Lunes (confianza media: 76.7%). Cero hándicaps, cero líneas sintéticas."
+        "MarketRealityAgent: Fijas de alta convicción calibradas para Lunes (confianza media: 73.5%). Cero hándicaps, cero líneas sintéticas."
       ],
       "system_health": "Excelente (Win Rate Fijas: 86.1% [87/101] | Win Rate Global: 86.5% [115/133] | Brier Score: 0.1326 | Ciclo #110)"
     }
@@ -829,5 +829,5 @@
     "double_chance_resilience_priority": 1.4
   },
   "last_auto_audit": "2026-10-13 21:40:00",
-  "last_updated": "2026-10-18 23:09:27"
+  "last_updated": "2026-10-18 18:57:03"
 }
