@@ -1,20 +1,20 @@
 {
-  "last_updated": "2026-10-17 22:22:22",
+  "last_updated": "2026-10-18 18:01:40",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 1822.75,
-  "total_profit": 822.75,
-  "roi_pct": 82.3,
+  "current_bankroll": 2007.52,
+  "total_profit": 1007.52,
+  "roi_pct": 100.8,
   "global_stats": {
-    "total": 127,
-    "wins": 110,
-    "losses": 17,
-    "win_rate": 86.6
+    "total": 133,
+    "wins": 115,
+    "losses": 18,
+    "win_rate": 86.5
   },
   "fija_stats": {
-    "total": 95,
-    "wins": 82,
-    "losses": 13,
-    "win_rate": 86.3,
+    "total": 101,
+    "wins": 87,
+    "losses": 14,
+    "win_rate": 86.1,
     "active_streak": 3
   },
   "history": [
@@ -1668,13 +1668,91 @@
       "status": "win",
       "diagnostic": "ACIERTO ROTUNDO (Pick de Usuario Ratificado): FC Barcelona goleó 5-1 al Sevilla en Montjuïc (doblete de Lewandowski, doblete de Pablo Torre y golazo de Pedri). Lectura impecable del usuario respaldando Barcelona Gana + Más 1.5 goles (+$20.00 netos).",
       "pnl": 20.0
+    },
+    {
+      "id": 128,
+      "match": "Nottingham Forest vs Arsenal",
+      "tournament": "Premier League • Domingo 18/10/2026 • Final: 0 - 1",
+      "category_tag": "👑 La Fija (Victoria Directa)",
+      "is_fija": true,
+      "selection": "Arsenal Gana el Partido (2) [Victoria Directa]",
+      "odds": 1.58,
+      "confidence": 67.0,
+      "status": "win",
+      "diagnostic": "ACIERTO ROTUNDO: Arsenal se impuso 0-1 en el City Ground con gol agónico de Noni Madueke. Solidez defensiva implacable de William Saliba y Gabriel Magalhães para asegurar los 3 puntos.",
+      "pnl": 58.0
+    },
+    {
+      "id": 129,
+      "match": "Real Madrid vs Sevilla",
+      "tournament": "LaLiga EA Sports • Domingo 18/10/2026 • Final: 4 - 1",
+      "category_tag": "👑 La Fija (Victoria Directa)",
+      "is_fija": true,
+      "selection": "Real Madrid Gana el Partido (1) [Victoria Directa]",
+      "odds": 1.68,
+      "confidence": 63.2,
+      "status": "win",
+      "diagnostic": "ACIERTO APLASTANTE: Real Madrid arrolló 4-1 al Sevilla en el Santiago Bernabéu con doblete de Kylian Mbappé, tanto de Arda Güler y gol de Diomande, ratificando su hegemonía en casa pese a la ausencia de Vinícius.",
+      "pnl": 68.0
+    },
+    {
+      "id": 130,
+      "match": "Leeds United vs Manchester United",
+      "tournament": "Premier League • Domingo 18/10/2026 • Final: 1 - 1",
+      "category_tag": "👑 La Fija (Victoria Directa)",
+      "is_fija": true,
+      "selection": "Manchester United Gana el Partido (2) [Victoria Directa]",
+      "odds": 1.67,
+      "confidence": 63.5,
+      "status": "loss",
+      "diagnostic": "FALLO REAL: Bryan Mbeumo adelantó al United al 35', pero Calvert-Lewin empató para Leeds al 51' (1-1). La hostilidad de Elland Road frustró la victoria visitante, ratificando la advertencia del usuario sobre la alta fricción de favoritos visitantes.",
+      "pnl": -100.0
+    },
+    {
+      "id": 131,
+      "match": "Brighton & Hove Albion vs Crystal Palace",
+      "tournament": "Premier League • Domingo 18/10/2026 • Final: 5 - 0",
+      "category_tag": "👑 La Fija (Victoria Directa)",
+      "is_fija": true,
+      "selection": "Brighton & Hove Albion Gana el Partido (1) [Victoria Directa]",
+      "odds": 1.75,
+      "confidence": 60.4,
+      "status": "win",
+      "diagnostic": "ACIERTO APLASTANTE: Brighton demolió 5-0 al Crystal Palace en el Amex Stadium (goles de Gómez, Ayari, Kostoulas, Hinshelwood y autogol), resolviendo el derbi M23 con autoridad.",
+      "pnl": 75.0
+    },
+    {
+      "id": 132,
+      "match": "AFC Bournemouth vs Sunderland",
+      "tournament": "Premier League • Domingo 18/10/2026 • Final: 2 - 0",
+      "category_tag": "👑 La Fija (Victoria Directa)",
+      "is_fija": true,
+      "selection": "AFC Bournemouth Gana el Partido (1) [Victoria Directa]",
+      "odds": 1.79,
+      "confidence": 59.1,
+      "status": "win",
+      "diagnostic": "ACIERTO: AFC Bournemouth superó con claridad 2-0 a Sunderland con goles de Marcus Tavernier y Francisco Evanilson tras la roja temprana de Danso al 17'.",
+      "pnl": 79.0
+    },
+    {
+      "id": 133,
+      "match": "Nottingham vs Arsenal & Madrid vs Sevilla",
+      "tournament": "Ecuabet • Domingo 18/10/2026 • Boleto Doble Ganador",
+      "category_tag": "👑 Boleto Usuario (DNB + 1X2)",
+      "is_fija": true,
+      "selection": "Arsenal DNB (@1.18) + Real Madrid Gana (@1.25) [Cuota 1.47]",
+      "odds": 1.47,
+      "confidence": 73.0,
+      "status": "win",
+      "diagnostic": "ACIERTO ROTUNDO DEL USUARIO EN ECUABET: Arsenal ganó 0-1 y Real Madrid goleó 4-1. El usuario cobró $14.77 netos con $10 de stake (+$4.77 netos), elevando su capital personal de $70.00 a $74.77 USD.",
+      "pnl": 4.77
     }
   ],
   "bankroll": {
     "initial": 1000.0,
-    "current": 1822.75,
-    "profit": 822.75,
-    "roi": 82.3
+    "current": 2007.52,
+    "profit": 1007.52,
+    "roi": 100.8
   },
-  "brier_score": 0.1307
+  "brier_score": 0.1326
 }
