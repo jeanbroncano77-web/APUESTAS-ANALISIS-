@@ -335,36 +335,36 @@
   "2026-10-18": {
     "date_str": "18/10/2026",
     "day_name": "Domingo",
-    "competition": "LaLiga EA Sports, Serie A & Liga Profesional (Domingo Estelar)",
+    "competition": "LaLiga EA Sports, Premier League, Serie A & Superclásico (Domingo Estelar)",
     "fixtures": [
       [
-        "Celta de Vigo",
         "Real Madrid",
-        "VICTORIA_DIRECTA"
-      ],
-      [
-        "Barcelona",
         "Sevilla",
         "VICTORIA_DIRECTA"
       ],
       [
-        "Torino",
+        "Nottingham Forest",
+        "Arsenal",
+        "VICTORIA_DIRECTA"
+      ],
+      [
+        "Leeds United",
+        "Manchester United",
+        "VICTORIA_DIRECTA"
+      ],
+      [
+        "AC Milan",
         "Atalanta",
-        "VICTORIA_DIRECTA"
+        "DOBLE_OPORTUNIDAD"
       ],
       [
-        "Monza",
-        "Napoli",
-        "VICTORIA_DIRECTA"
-      ],
-      [
-        "Valencia",
-        "Getafe",
+        "Juventus",
+        "Lazio",
         "DOBLE_OPORTUNIDAD"
       ],
       [
         "River Plate",
-        "Racing Club",
+        "Boca Juniors",
         "DOBLE_OPORTUNIDAD"
       ]
     ]

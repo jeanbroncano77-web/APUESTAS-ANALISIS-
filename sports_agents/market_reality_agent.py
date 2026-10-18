@@ -43,7 +43,7 @@ class MarketRealityAgent:
 
     def __init__(self):
         self.name = "MarketRealityAgent"
-        self.version = "6.0.0"
+        self.version = "6.5.0"
 
     @staticmethod
     def _fair_odds(prob_pct: float, margin: float = 1.06) -> float:
@@ -218,10 +218,11 @@ class MarketRealityAgent:
             })
 
         # =====================================================================
-        # 3. MERCADO: AMBOS EQUIPOS ANOTAN (BTTS Sí)
+        # 3. MERCADO: AMBOS EQUIPOS ANOTAN (BTTS Sí) - FILTRO TÁCTICO BLINDADO
+        # Requiere alta vocación ofensiva bilateral (evita trampas 0-1 / 1-0 de duelos cerrados)
         # =====================================================================
         prob_btts = exact_market_probs.get("btts_yes_pct", 60.0) if exact_market_probs else 60.0
-        if prob_btts >= 52.0 and home_xg >= 1.10 and away_xg >= 1.05:
+        if prob_btts >= 58.0 and home_xg >= 1.20 and away_xg >= 1.15 and exp_total_goals >= 2.60:
             odds_btts = self._fair_odds(prob_btts, margin=1.07)
             candidates.append({
                 "market": "Ambos Equipos Anotan",
@@ -229,9 +230,9 @@ class MarketRealityAgent:
                 "selection": "Ambos Equipos Anotan (Sí)",
                 "probability": round(prob_btts, 1),
                 "odds": odds_btts,
-                "_high_conviction": prob_btts >= 64.0,
+                "_high_conviction": prob_btts >= 65.0,
                 "availability": "Universal en todas las plataformas (Bet365, Betano, etc.)",
-                "rationale": f"Poder de fuego bilateral: ambos cuadros promedian ocasiones claras ({round(home_xg, 2)} vs {round(away_xg, 2)} xG) con {round(prob_btts, 1)}% de gol cruzado."
+                "rationale": f"Poder de fuego bilateral verificado: ambos cuadros promedian ocasiones claras ({round(home_xg, 2)} vs {round(away_xg, 2)} xG) con {round(prob_btts, 1)}% de gol cruzado."
             })
 
         # =====================================================================
