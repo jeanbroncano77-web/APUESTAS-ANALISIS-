@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-17 20:39:06",
+  "last_updated": "2026-10-17 20:43:15",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 1780.75,
-  "total_profit": 780.75,
-  "roi_pct": 78.1,
+  "current_bankroll": 1807.75,
+  "total_profit": 807.75,
+  "roi_pct": 80.8,
   "global_stats": {
-    "total": 122,
-    "wins": 107,
+    "total": 121,
+    "wins": 106,
     "losses": 15,
-    "win_rate": 87.7
+    "win_rate": 87.6
   },
   "fija_stats": {
-    "total": 90,
-    "wins": 79,
+    "total": 89,
+    "wins": 78,
     "losses": 11,
-    "win_rate": 87.8,
-    "active_streak": 7
+    "win_rate": 87.6,
+    "active_streak": 8
   },
   "history": [
     {
@@ -1567,6 +1567,19 @@
     },
     {
       "id": 120,
+      "match": "Athletic Club vs Espanyol",
+      "tournament": "LaLiga EA Sports • Sábado 17/10/2026 • Final: 4 - 1",
+      "category_tag": "👑 La Fija (Victoria Directa / 1X)",
+      "is_fija": true,
+      "selection": "Athletic Club o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.55,
+      "confidence": 91.5,
+      "status": "win",
+      "diagnostic": "ACIERTO ROTUNDO: Athletic Club arrolló 4-1 al RCD Espanyol en San Mamés (doblete de Iñaki Williams, goles de Vivian y Berenguer). Dominio total de los leones desde el primer tiempo.",
+      "pnl": 55.0
+    },
+    {
+      "id": 121,
       "match": "Cruzeiro vs Liga de Quito",
       "tournament": "Liga Profesional Argentina & Conmebol Libertadores • Finalizado",
       "category_tag": "👑 La Fija (95%+)",
@@ -1577,38 +1590,12 @@
       "status": "win",
       "diagnostic": "Cruzeiro defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
       "pnl": 14.0
-    },
-    {
-      "id": 121,
-      "match": "Real Madrid vs Sevilla",
-      "tournament": "LaLiga EA Sports, Premier League, Serie A & Liga Profesional • Finalizado",
-      "category_tag": "👑 La Fija (95%+)",
-      "is_fija": true,
-      "selection": "Real Madrid o Empate (1X) [Doble Oportunidad]",
-      "odds": 1.14,
-      "confidence": 96.8,
-      "status": "win",
-      "diagnostic": "Real Madrid defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
-      "pnl": 14.0
-    },
-    {
-      "id": 122,
-      "match": "Athletic Club vs Espanyol",
-      "tournament": "LaLiga EA Sports, Premier League, Serie A & Liga Profesional • Finalizado",
-      "category_tag": "👑 La Fija (95%+)",
-      "is_fija": true,
-      "selection": "Athletic Club o Empate (1X) [Doble Oportunidad]",
-      "odds": 1.14,
-      "confidence": 96.8,
-      "status": "win",
-      "diagnostic": "Athletic Club defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
-      "pnl": 14.0
     }
   ],
   "bankroll": {
     "initial": 1000.0,
-    "current": 1766.75,
-    "profit": 766.75,
-    "roi": 76.7
+    "current": 1793.75,
+    "profit": 793.75,
+    "roi": 79.4
   }
 }
