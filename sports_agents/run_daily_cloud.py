@@ -444,7 +444,7 @@ def main():
         import subprocess
         subprocess.run(["git", "fetch", "origin", "main"], check=False, cwd=base_dir)
         subprocess.run(["git", "merge", "origin/main", "-X", "ours", "--no-edit"], check=False, cwd=base_dir)
-        subprocess.run(["git", "add", "index.html", "dashboard_pronosticos.html", "sports_agents/audit_history.json", "sports_agents/simulations_tomorrow_results.json", "sports_agents/autonomous_feedback_log.json", "sports_agents/dispatch_tracker.json", "sports_agents/official_calendar.json"], check=False, cwd=base_dir)
+        subprocess.run(["git", "add", "index.html", "dashboard_pronosticos.html", "sports_agents/market_reality_agent.py", "sports_agents/audit_history.json", "sports_agents/simulations_tomorrow_results.json", "sports_agents/autonomous_feedback_log.json", "sports_agents/dispatch_tracker.json", "sports_agents/official_calendar.json"], check=False, cwd=base_dir)
         subprocess.run(["git", "commit", "-m", f"chore(auto): cartelera {target_day_name} {target_date_str} y win rate auditado [skip ci]"], check=False, cwd=base_dir)
         push_res = subprocess.run(["git", "push", "origin", "main"], check=False, cwd=base_dir, capture_output=True, text=True)
         print(f"   -> Git push a GitHub Pages: {push_res.returncode == 0}")
