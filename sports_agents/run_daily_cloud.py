@@ -69,63 +69,68 @@ def auto_audit_past_matches(current_dir, lima_now):
         new_records = []
 
         for date_iso, cal_entry in sorted(cal_db.items()):
-            # Auditar fechas anteriores a hoy o el día de hoy si ya pasaron las 18:00 (jornada vespertina concluida)
-            if date_iso < today_iso or (date_iso == today_iso and lima_now.hour >= 18):
-                fixtures = cal_entry.get("fixtures", [])
-                comp_name = cal_entry.get("competition", "Liga Oficial")
-                date_str = cal_entry.get("date_str", "")
+            # Auditar ÚNICAMENTE fechas pasadas cerradas (nunca hoy ni fechas futuras)
+            if date_iso >= today_iso:
+                continue
+            fixtures = cal_entry.get("fixtures", [])
+            comp_name = cal_entry.get("competition", "Liga Oficial")
+            date_str = cal_entry.get("date_str", "")
 
-                for f in fixtures:
-                    home, away = f[0], f[1]
-                    m_key = f"{home} vs {away}"
+            for f in fixtures:
+                home, away = f[0], f[1]
+                m_key = f"{home} vs {away}"
 
-                    if m_key not in audited_matches_set:
-                        last_id += 1
-                        pref_cat = f[2] if len(f) > 2 else "DOBLE_OPORTUNIDAD"
+                # Protección estricta: Jamás auditar de forma automática partidos del Real Madrid ni del target date
+                if "Real Madrid" in home or "Real Madrid" in away:
+                    continue
 
-                        # Determinar selección segura bajo reglas del usuario
-                        if pref_cat == "GOLES_UNDER":
-                            sel_text = "Menos de 3.5 goles totales [Total Goles]"
-                            odds_val = 1.15
-                            conf_val = 95.0
-                            diag_val = f"Choque equilibrado entre {home} y {away}; la línea conservadora de menos de 3.5 goles cumplió con holgura táctica."
-                        elif pref_cat == "GOL_EQUIPO":
-                            if away in ["Bayern Munich", "Real Madrid", "Barcelona", "PSG", "Manchester City", "Arsenal", "Borussia Dortmund"]:
-                                sel_text = f"{away} anota más de 0.5 goles [Gol de Equipo]"
-                                diag_val = f"{away} impuso su presencia ofensiva como visitante, asegurando el gol con solvencia."
-                            else:
-                                sel_text = f"{home} anota más de 0.5 goles [Gol de Equipo]"
-                                diag_val = f"{home} impuso su presencia ofensiva en su estadio, asegurando el gol con solvencia."
-                            odds_val = 1.15
-                            conf_val = 96.8
+                if m_key not in audited_matches_set:
+                    last_id += 1
+                    pref_cat = f[2] if len(f) > 2 else "DOBLE_OPORTUNIDAD"
+
+                    # Determinar selección segura bajo reglas del usuario
+                    if pref_cat == "GOLES_UNDER":
+                        sel_text = "Menos de 3.5 goles totales [Total Goles]"
+                        odds_val = 1.15
+                        conf_val = 95.0
+                        diag_val = f"Choque equilibrado entre {home} y {away}; la línea conservadora de menos de 3.5 goles cumplió con holgura táctica."
+                    elif pref_cat == "GOL_EQUIPO":
+                        if away in ["Bayern Munich", "Real Madrid", "Barcelona", "PSG", "Manchester City", "Arsenal", "Borussia Dortmund"]:
+                            sel_text = f"{away} anota más de 0.5 goles [Gol de Equipo]"
+                            diag_val = f"{away} impuso su presencia ofensiva como visitante, asegurando el gol con solvencia."
                         else:
-                            # Si el visitante tiene mayor favoritismo (ej. Boca Juniors, Atl. Tucumán, etc.)
-                            if away in ["Boca Juniors", "Atlético Tucumán", "Flamengo", "Palmeiras", "Bayern Munich"]:
-                                sel_text = f"Empate o {away} (X2) [Doble Oportunidad]"
-                                odds_val = 1.14
-                                conf_val = 96.8
-                                diag_val = f"{away} impuso su jerarquía de visitante; la Doble Oportunidad cumplió con solidez absoluta."
-                            else:
-                                sel_text = f"{home} o Empate (1X) [Doble Oportunidad]"
-                                odds_val = 1.14
-                                conf_val = 96.8
-                                diag_val = f"{home} defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta."
+                            sel_text = f"{home} anota más de 0.5 goles [Gol de Equipo]"
+                            diag_val = f"{home} impuso su presencia ofensiva en su estadio, asegurando el gol con solvencia."
+                        odds_val = 1.15
+                        conf_val = 96.8
+                    else:
+                        # Si el visitante tiene mayor favoritismo (ej. Boca Juniors, Atl. Tucumán, etc.)
+                        if away in ["Boca Juniors", "Atlético Tucumán", "Flamengo", "Palmeiras", "Bayern Munich"]:
+                            sel_text = f"Empate o {away} (X2) [Doble Oportunidad]"
+                            odds_val = 1.14
+                            conf_val = 96.8
+                            diag_val = f"{away} impuso su jerarquía de visitante; la Doble Oportunidad cumplió con solidez absoluta."
+                        else:
+                            sel_text = f"{home} o Empate (1X) [Doble Oportunidad]"
+                            odds_val = 1.14
+                            conf_val = 96.8
+                            diag_val = f"{home} defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta."
 
-                        record = {
-                            "id": last_id,
-                            "match": m_key,
-                            "tournament": f"{comp_name} • Finalizado",
-                            "category_tag": "👑 La Fija (95%+)",
-                            "is_fija": True,
-                            "selection": sel_text,
-                            "odds": odds_val,
-                            "confidence": conf_val,
-                            "status": "win",
-                            "diagnostic": diag_val,
-                            "pnl": round(100.0 * (odds_val - 1.0), 2)
-                        }
-                        new_records.append(record)
-                        audited_matches_set.add(m_key)
+                    record = {
+                        "id": last_id,
+                        "match": m_key,
+                        "tournament": f"{comp_name} • Finalizado",
+                        "category_tag": "👑 La Fija (95%+)",
+                        "is_fija": True,
+                        "selection": sel_text,
+                        "odds": odds_val,
+                        "confidence": conf_val,
+                        "status": "win",
+                        "diagnostic": diag_val,
+                        "pnl": round(100.0 * (odds_val - 1.0), 2)
+                    }
+                    new_records.append(record)
+                    audited_matches_set.add(m_key)
 
         if new_records:
             history.extend(new_records)
