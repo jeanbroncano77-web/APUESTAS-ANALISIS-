@@ -3960,7 +3960,7 @@
         <div id="view-container-winrate" style="display: none;">
             
             <!-- Resumen Ejecutivo -->
-                                    <div class="spotlight-banner" style="background: linear-gradient(135deg, rgba(6, 78, 59, 0.5), rgba(16, 185, 129, 0.15)); border-color: rgba(16, 185, 129, 0.4); box-shadow: 0 12px 32px -8px rgba(16, 185, 129, 0.35);">
+                                                <div class="spotlight-banner" style="background: linear-gradient(135deg, rgba(6, 78, 59, 0.5), rgba(16, 185, 129, 0.15)); border-color: rgba(16, 185, 129, 0.4); box-shadow: 0 12px 32px -8px rgba(16, 185, 129, 0.35);">
                 <div class="spotlight-left">
                     <div class="spotlight-icon">📊</div>
                     <div>
@@ -3970,13 +3970,15 @@
                 </div>
                 <div class="spotlight-prob-badge" style="background: linear-gradient(135deg, #10b981, #059669); color: #ffffff;"><span>WIN RATE GLOBAL: 86.6% | FIJAS: 86.3% (82/95) | BRIER: 0.1307</span></div>
             </div>
+                <div class="spotlight-prob-badge" style="background: linear-gradient(135deg, #10b981, #059669); color: #ffffff;"><span>WIN RATE GLOBAL: 86.6% | FIJAS: 86.3% (82/95) | BRIER: 0.1307</span></div>
+            </div>
                 <div class="spotlight-prob-badge" style="background: linear-gradient(135deg, #10b981, #059669); color: #ffffff;"><span>WIN RATE GLOBAL: 86.6% | FIJAS: 86.3% (82/95)</span></div>
             </div>
                 <div class="spotlight-prob-badge" style="background: linear-gradient(135deg, #10b981, #059669); color: #ffffff;"><span>WIN RATE GLOBAL: 86.6% | FIJAS: 86.3% (82/95)</span></div>
             </div>
 
             <!-- KPI Cards Grid -->
-                                    <div class="winrate-kpi-grid">
+                                                <div class="winrate-kpi-grid">
                 <div class="kpi-card kpi-card-emerald">
                     <div class="kpi-title">
                         <span>Win Rate Global</span>
@@ -3985,6 +3987,34 @@
                     <div class="kpi-value" style="color: var(--emerald);">86.6%</div>
                     <div class="kpi-subtext"><strong>110 Aciertos</strong> / 17 Fallos de 127 selecciones auditadas</div>
                 </div>
+
+                <div class="kpi-card kpi-card-gold">
+                    <div class="kpi-title">
+                        <span>"La Fija" (95% - 98%)</span>
+                        <span>👑</span>
+                    </div>
+                    <div class="kpi-value" style="color: var(--gold);">86.3%</div>
+                    <div class="kpi-subtext"><strong>82 de 95 aciertos</strong> &bull; Racha activa de 3 aciertos consecutivos en Fijas</div>
+                </div>
+
+                <div class="kpi-card kpi-card-cyan">
+                    <div class="kpi-title">
+                        <span>Yield / ROI Financiero</span>
+                        <span>📈</span>
+                    </div>
+                    <div class="kpi-value" style="color: var(--cyan);">+82.3%</div>
+                    <div class="kpi-subtext"><strong>+$822.75 USD neto</strong> sobre banca inicial de $1,000 USD</div>
+                </div>
+
+                <div class="kpi-card kpi-card-purple">
+                    <div class="kpi-title">
+                        <span>Banca Total Liquidada</span>
+                        <span>💰</span>
+                    </div>
+                    <div class="kpi-value" style="color: #c084fc;">$1,822.75</div>
+                    <div class="kpi-subtext"><strong>+$822.75 USD neto</strong> (+82.3% ROI acumulado)</div>
+                </div>
+            </div>
 
                 <div class="kpi-card kpi-card-gold">
                     <div class="kpi-title">
@@ -4094,7 +4124,7 @@
             </div>
 
             <!-- Barra de Filtros de la Tabla -->
-                                    <div class="audit-filter-bar">
+                                                <div class="audit-filter-bar">
                 <span class="filter-label">Filtrar Auditoría:</span>
                 <button class="btn-filter-audit active" onclick="filterAuditTable('all', this)">Todos (127)</button>
                 <button class="btn-filter-audit" onclick="filterAuditTable('win', this)" style="border-color: rgba(16, 185, 129, 0.4); color: #34d399;">✅ SÓLO ACIERTOS (110)</button>
