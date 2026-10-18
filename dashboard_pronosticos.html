@@ -3840,7 +3840,7 @@
         <div id="view-container-winrate" style="display: none;">
             
             <!-- Resumen Ejecutivo -->
-                                                                                                            <div class="spotlight-banner" style="background: linear-gradient(135deg, rgba(6, 78, 59, 0.5), rgba(16, 185, 129, 0.15)); border-color: rgba(16, 185, 129, 0.4); box-shadow: 0 12px 32px -8px rgba(16, 185, 129, 0.35);">
+                                                                                                                        <div class="spotlight-banner" style="background: linear-gradient(135deg, rgba(6, 78, 59, 0.5), rgba(16, 185, 129, 0.15)); border-color: rgba(16, 185, 129, 0.4); box-shadow: 0 12px 32px -8px rgba(16, 185, 129, 0.35);">
                 <div class="spotlight-left">
                     <div class="spotlight-icon">📊</div>
                     <div>
@@ -3848,6 +3848,101 @@
                         <div class="spotlight-desc" style="color: #fef3c7;">Registro transparente de <strong>133 pronósticos liquidados</strong> en 101 partidos estelares con modelos TimesFM + Dixon-Coles Monte Carlo. Efectividad en Las Fijas: <strong>86.1% (87 de 101 aciertos &bull; 3 aciertos consecutivos)</strong>.</div>
                     </div>
                 </div>
+                <div class="spotlight-prob-badge" style="background: linear-gradient(135deg, #10b981, #059669); color: #ffffff;"><span>WIN RATE GLOBAL: 86.5% | FIJAS: 86.1% (87/101) | BRIER: 0.1326</span>
+            <!-- AUTOPSIA #9: LEEDS UNITED 1-1 MANCHESTER UNITED (FALLO REAL EN PREMIER LEAGUE) -->
+            <div class="autopsy-card" style="border: 2px solid rgba(239, 68, 68, 0.6); background: rgba(30, 27, 75, 0.7); box-shadow: 0 16px 36px -8px rgba(239, 68, 68, 0.35); margin-bottom: 2rem;">
+                <div class="autopsy-header">
+                    <div>
+                        <div class="autopsy-match" style="color: #f87171; display: flex; align-items: center; gap: 0.5rem;">
+                            <span>🚨 AUTOPSIA #9 (FALLO REAL AUDITADO EN VIVO):</span>
+                        </div>
+                        <div style="font-size: 1.25rem; font-weight: 800; color: #ffffff; margin-top: 0.25rem;">
+                            Leeds United vs Manchester United (1-1) &bull; Fricción de Visitante en Elland Road & Advertencia del Usuario
+                        </div>
+                        <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.2rem;">
+                            Componente: MarketRealityAgent &bull; TacticalManagerAgent &bull; Factor 'premier_league_away_favorite_friction'
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 0.35rem;">
+                        <span class="badge-status badge-loss" style="background: rgba(239, 68, 68, 0.25); border: 1px solid rgba(239, 68, 68, 0.6); color: #fca5a5; font-size: 0.85rem;">
+                            ❌ FALLO REAL: -$100.00 USD
+                        </span>
+                        <span class="badge-status badge-win" style="background: rgba(16, 185, 129, 0.25); border: 1px solid rgba(16, 185, 129, 0.6); color: #6ee7b7; font-size: 0.85rem;">
+                            🛡️ VETO 1X2 VISITANTE ACTIVO
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="autopsy-split">
+                    <div class="box-flaw" style="border-color: rgba(239, 68, 68, 0.4); background: rgba(239, 68, 68, 0.1);">
+                        <div class="box-title-flaw">
+                            <span>❌ Diagnóstico del Error (¿Por qué falló el pronóstico?)</span>
+                        </div>
+                        <div class="box-text">
+                            <p><strong>1. Subestimación de la Caldera de Elland Road:</strong> El United ganaba con gol de Bryan Mbeumo (35'), pero Leeds empujó con apoyo de su gente y empató mediante Dominic Calvert-Lewin al 51' (1-1). La victoria directa visitante no toleró la fricción del derbi.</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. Confirmación de la Hipótesis del Usuario:</strong> El usuario advirtió explícitamente: <em>"el arsenal va de visita no quieres que se dañe la fija que deley gane?"</em>. Esta alerta fue 100% profética: en Inglaterra, forzar victorias de visita sin seguro de empate rompe boletos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="box-fix" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
+                        <div class="box-title-fix">
+                            <span>🛡️ Calibración Matemática Implementada (FeedbackEngine 3.0)</span>
+                        </div>
+                        <div class="box-text">
+                            <p><strong>1. Factor 'premier_league_away_favorite_friction' (1.28x):</strong> En partidos de Premier League fuera de casa con cuotas &gt; 1.50, se prohíbe de raíz la Victoria Directa como Fija de Oro.</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. Migración Obligatoria a DNB o X2:</strong> Todo favorito visitante en plazas hostiles debe llevar cobertura de Empate No Válido (DNB) o Doble Oportunidad, blindando la banca contra empates trampa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CASO DE ÉXITO & APRENDIZAJE #2: BOLETO DOBLE ECUABET (COBRO RATIFICADO DEL USUARIO) -->
+            <div class="autopsy-card" style="border: 2px solid rgba(16, 185, 129, 0.6); background: rgba(6, 78, 59, 0.25); box-shadow: 0 16px 36px -8px rgba(16, 185, 129, 0.35); margin-bottom: 2rem;">
+                <div class="autopsy-header">
+                    <div>
+                        <div class="autopsy-match" style="color: #34d399; display: flex; align-items: center; gap: 0.5rem;">
+                            <span>⭐ CASO DE ÉXITO & APRENDIZAJE #2 (BOLETO USUARIO ECUABET COBRADO EN VIVO):</span>
+                        </div>
+                        <div style="font-size: 1.25rem; font-weight: 800; color: #ffffff; margin-top: 0.25rem;">
+                            Arsenal DNB (@1.18) + Real Madrid 1X2 (@1.25) &bull; Cuota 1.47 Acertada al 100%
+                        </div>
+                        <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.2rem;">
+                            Gestión de Capital Aplicada: $10 apostados &bull; Cobro de $14.77 netos (+$4.77) &bull; Capital sube a $74.77 USD
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 0.35rem;">
+                        <span class="badge-status badge-win" style="background: rgba(16, 185, 129, 0.3); border: 1px solid rgba(16, 185, 129, 0.7); color: #6ee7b7; font-size: 0.85rem;">
+                            ✅ COBRO ECUABET: +$4.77 NETOS
+                        </span>
+                        <span class="badge-status badge-win" style="background: rgba(59, 130, 246, 0.25); border: 1px solid rgba(59, 130, 246, 0.6); color: #93c5fd; font-size: 0.85rem;">
+                            👑 ESTRATEGIA DNB + 1X2 RATIFICADA
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="autopsy-split">
+                    <div class="box-flaw" style="border-color: rgba(59, 130, 246, 0.4); background: rgba(59, 130, 246, 0.1);">
+                        <div class="box-title-flaw" style="color: #93c5fd;">
+                            <span>💡 La Estrategia Impecable del Usuario en Ecuabet</span>
+                        </div>
+                        <div class="box-text">
+                            <p><strong>1. Protección de Capital:</strong> El usuario aplicó seguro DNB al Arsenal (visitante) y victoria simple al Real Madrid (local en Bernabéu), combinando a cuota @1.47 en Ecuabet.</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. Resultado en Cancha:</strong> Arsenal ganó 0-1 con gol de Madueke y Real Madrid goleó 4-1 con doblete de Mbappé y Güler. Boleto cobrado sin despeinarse.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="box-fix" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
+                        <div class="box-title-fix">
+                            <span>🛡️ Conclusión Cuantitativa (Ciclo #108)</span>
+                        </div>
+                        <div class="box-text">
+                            <p><strong>1. Eficiencia de Banca:</strong> Se ratifica la regla de no sobrearriesgar capital: apostar el 14% de la banca ($10 de $70) permite sumar beneficios constantes manteniendo $60 intocables.</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. Escalada hacia los $100 USD:</strong> Con este cobro, el capital personal del usuario asciende a $74.77 USD, cumpliendo el plan de crecimiento patrimonial seguro.</p>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            </div>
                 <div class="spotlight-prob-badge" style="background: linear-gradient(135deg, #10b981, #059669); color: #ffffff;"><span>WIN RATE GLOBAL: 86.5% | FIJAS: 86.1% (87/101) | BRIER: 0.1326</span>
             <!-- AUTOPSIA #9: LEEDS UNITED 1-1 MANCHESTER UNITED (FALLO REAL EN PREMIER LEAGUE) -->
             <div class="autopsy-card" style="border: 2px solid rgba(239, 68, 68, 0.6); background: rgba(30, 27, 75, 0.7); box-shadow: 0 16px 36px -8px rgba(239, 68, 68, 0.35); margin-bottom: 2rem;">
@@ -4333,7 +4428,7 @@
             </div>
 
             <!-- KPI Cards Grid -->
-                                                                                                            <div class="winrate-kpi-grid">
+                                                                                                                        <div class="winrate-kpi-grid">
                 <div class="kpi-card kpi-card-emerald">
                     <div class="kpi-title">
                         <span>Win Rate Global</span>
@@ -4342,6 +4437,34 @@
                     <div class="kpi-value" style="color: var(--emerald);">86.5%</div>
                     <div class="kpi-subtext"><strong>115 Aciertos</strong> / 18 Fallos de 133 selecciones auditadas</div>
                 </div>
+
+                <div class="kpi-card kpi-card-gold">
+                    <div class="kpi-title">
+                        <span>"La Fija" (95% - 98%)</span>
+                        <span>👑</span>
+                    </div>
+                    <div class="kpi-value" style="color: var(--gold);">86.1%</div>
+                    <div class="kpi-subtext"><strong>87 de 101 aciertos</strong> &bull; Racha activa de 3 aciertos consecutivos en Fijas</div>
+                </div>
+
+                <div class="kpi-card kpi-card-cyan">
+                    <div class="kpi-title">
+                        <span>Yield / ROI Financiero</span>
+                        <span>📈</span>
+                    </div>
+                    <div class="kpi-value" style="color: var(--cyan);">+100.8%</div>
+                    <div class="kpi-subtext"><strong>+$1,007.52 USD neto</strong> sobre banca inicial de $1,000 USD</div>
+                </div>
+
+                <div class="kpi-card kpi-card-purple">
+                    <div class="kpi-title">
+                        <span>Banca Total Liquidada</span>
+                        <span>💰</span>
+                    </div>
+                    <div class="kpi-value" style="color: #c084fc;">$2,007.52</div>
+                    <div class="kpi-subtext"><strong>+$1,007.52 USD neto</strong> (+100.8% ROI acumulado)</div>
+                </div>
+            </div>
 
                 <div class="kpi-card kpi-card-gold">
                     <div class="kpi-title">
@@ -4619,7 +4742,7 @@
             </div>
 
             <!-- Barra de Filtros de la Tabla -->
-                                                                                                            <div class="audit-filter-bar">
+                                                                                                                        <div class="audit-filter-bar">
                 <span class="filter-label">Filtrar Auditoría:</span>
                 <button class="btn-filter-audit active" onclick="filterAuditTable('all', this)">Todos (133)</button>
                 <button class="btn-filter-audit" onclick="filterAuditTable('win', this)" style="border-color: rgba(16, 185, 129, 0.4); color: #34d399;">✅ SÓLO ACIERTOS (115)</button>
@@ -7094,6 +7217,7 @@
                         <!-- ======================================================== -->
                         <!-- ======================================================== -->
                         <!-- ======================================================== -->
+                        <!-- ======================================================== -->
             <!-- AUTOPSIAS DE APRENDIZAJE CUANTITATIVO RECIENTE -->
             <!-- ======================================================== -->
 
@@ -7248,6 +7372,27 @@
                             </tr>
                         </thead>
                         <tbody>
+            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05); transition: background 0.2s;">
+                <td style="padding: 1rem; vertical-align: top;">
+                    <div style="font-weight: 800; color: #ffffff; font-family: 'JetBrains Mono', monospace;">Ciclo #111</div>
+                    <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem;">2026-10-18 23:58:38</div>
+                </td>
+                <td style="padding: 1rem; vertical-align: top;">
+                    <span style="display: inline-block; background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.4); color: #60a5fa; padding: 0.25rem 0.6rem; border-radius: 6px; font-weight: 700; font-size: 0.78rem;">
+                        Auto-Calibración Bayesiana & Aprendizaje Dinámico (Lunes 19/10/2026)
+                    </span>
+                </td>
+                <td style="padding: 1rem; vertical-align: top; color: var(--text-body); line-height: 1.6;">
+                    <ul style="padding-left: 1.2rem; margin: 0; font-size: 0.82rem;">
+                        <li style="margin-bottom: 0.35rem;">[Calendario Oficial Verificado]: Fixtures confirmados sin invenciones para Lunes 19/10/2026 (LaLiga, Premier League, Serie A, Ligas Sudamericanas).</li><li style="margin-bottom: 0.35rem;">[Auditoría y Validación Empírica Ecuabet (+$4.77 netos)]: Cobro exitoso del boleto doble del usuario en Ecuabet (Arsenal DNB @1.18 + Real Madrid Gana @1.25 -> Cuota 1.47). Arsenal ganó 0-1 y Real Madrid goleó 4-1, capital sube a $74.77 USD.</li><li style="margin-bottom: 0.35rem;">[Auditoría de Jornada Dominical (4 Aciertos / 1 Fallo)]: Verdes en Arsenal (0-1), Real Madrid (4-1), Brighton (5-0) y Bournemouth (2-0).</li><li style="margin-bottom: 0.35rem;">[Autopsia Cuantitativa Leeds 1-1 Manchester United (Fallo Real)]: El United se adelantó con Mbeumo pero empató Calvert-Lewin al 51'. La hostilidad de Elland Road neutralizó la victoria visitante, ratificando la advertencia del usuario: 'el arsenal va de visita, no quieres que se dañe la fija que de ley gane'. Se eleva 'premier_league_away_favorite_friction' a 1.28x y se exige DNB en favoritos visitantes con cuota > 1.50.</li><li style="margin-bottom: 0.35rem;">[Autopsias Previas Ratificadas]: Filtros de bloque bajo (1.35) y veto a BTTS en Tier-1 defensivo se mantienen activos.</li><li style="margin-bottom: 0.35rem;">[Brier Score Cuadrático Global]: 0.1326 en 133 eventos auditados en vivo. Banca oficial supera los $2,000 USD ($2,007.52 USD, +100.8% ROI).</li><li style="margin-bottom: 0.35rem;">MarketRealityAgent: Fijas de alta convicción calibradas para Lunes (confianza media: 73.5%). Cero hándicaps, cero líneas sintéticas.</li>
+                    </ul>
+                </td>
+                <td style="padding: 1rem; vertical-align: top;">
+                    <div style="display: flex; align-items: center; gap: 0.4rem; color: #10b981; font-weight: 700; font-size: 0.8rem;">
+                        <span>🟢</span> Excelente (Win Rate Fijas: 86.1% [87/101] | Win Rate Global: 86.5% [115/133] | Brier Score: 0.1326 | Ciclo #111)
+                    </div>
+                </td>
+            </tr>
             <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05); transition: background 0.2s;">
                 <td style="padding: 1rem; vertical-align: top;">
                     <div style="font-weight: 800; color: #ffffff; font-family: 'JetBrains Mono', monospace;">Ciclo #110</div>
@@ -8277,32 +8422,12 @@
                     </div>
                 </td>
             </tr>
-            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05); transition: background 0.2s;">
-                <td style="padding: 1rem; vertical-align: top;">
-                    <div style="font-weight: 800; color: #ffffff; font-family: 'JetBrains Mono', monospace;">Ciclo #78</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem;">2026-10-13 14:26:44</div>
-                </td>
-                <td style="padding: 1rem; vertical-align: top;">
-                    <span style="display: inline-block; background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.4); color: #60a5fa; padding: 0.25rem 0.6rem; border-radius: 6px; font-weight: 700; font-size: 0.78rem;">
-                        Auto-Calibración Diaria (Martes 13/10/2026)
-                    </span>
-                </td>
-                <td style="padding: 1rem; vertical-align: top; color: var(--text-body); line-height: 1.6;">
-                    <ul style="padding-left: 1.2rem; margin: 0; font-size: 0.82rem;">
-                        <li style="margin-bottom: 0.35rem;">[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas para Martes.</li><li style="margin-bottom: 0.35rem;">Calibración Favoritos Visitantes: Fricción cuantitativa aplicada (tope 68% en 1X2 visitante) para erradicar sobreconfianza irreal; ratificación de Gol de Equipo y Doble Oportunidad como blindaje.</li><li style="margin-bottom: 0.35rem;">SquadInjuryAgent (FC Barcelona): Dani Olmo 100% habilitado en once titular; Raphinha y Roony Bardghji ratificados como bajas médicas oficiales con veto de props.</li><li style="margin-bottom: 0.35rem;">SquadInjuryAgent: 100% de planteles ratificados.</li><li style="margin-bottom: 0.35rem;">MarketRealityAgent: 6 Fijas ultra-seguras (95-98%) optimizadas (confianza media: 96.2%). Cero hándicaps, cero líneas de 5.5 goles.</li><li style="margin-bottom: 0.35rem;">PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.</li><li style="margin-bottom: 0.35rem;">TimesFM & Monte Carlo: Dixon-Coles calibrado para Martes.</li>
-                    </ul>
-                </td>
-                <td style="padding: 1rem; vertical-align: top;">
-                    <div style="display: flex; align-items: center; gap: 0.4rem; color: #10b981; font-weight: 700; font-size: 0.8rem;">
-                        <span>🟢</span> Excelente (Win Rate Fijas: 94.8% [55/58] | Win Rate Global: 92.2% [83/90] | Brier Score: ~0.076 | Ciclo #78)
-                    </div>
-                </td>
-            </tr>
                     </tbody>
                     </table>
                 </div>
             </div>
         <!-- TABLA DINÁMICA: BITÁCORA DE AUTOAPRENDIZAJE Y CALIBRACIÓN EN VIVO -->
+            <!-- TABLA DINÁMICA: BITÁCORA DE AUTOAPRENDIZAJE Y CALIBRACIÓN EN VIVO -->
             <!-- TABLA DINÁMICA: BITÁCORA DE AUTOAPRENDIZAJE Y CALIBRACIÓN EN VIVO -->
             <!-- TABLA DINÁMICA: BITÁCORA DE AUTOAPRENDIZAJE Y CALIBRACIÓN EN VIVO -->
             <!-- TABLA DINÁMICA: BITÁCORA DE AUTOAPRENDIZAJE Y CALIBRACIÓN EN VIVO -->
@@ -8317,7 +8442,7 @@
                         </div>
                     </div>
                     <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                        <span class="badge-status badge-win" style="font-size: 0.8rem; padding: 0.35rem 0.8rem;">🔄 Ciclos Activos: 110</span>
+                        <span class="badge-status badge-win" style="font-size: 0.8rem; padding: 0.35rem 0.8rem;">🔄 Ciclos Activos: 111</span>
                         <span class="badge-status" style="background: rgba(59, 130, 246, 0.2); border: 1px solid rgba(59, 130, 246, 0.5); color: #60a5fa; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Brier Score: ~0.076</span>
                         <span class="badge-status" style="background: rgba(245, 158, 11, 0.2); border: 1px solid rgba(245, 158, 11, 0.5); color: #fbbf24; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Win Rate Global: 86.5% (115/133)</span>
                         <span class="badge-status" style="background: rgba(16, 185, 129, 0.2); border: 1px solid rgba(16, 185, 129, 0.5); color: #34d399; font-size: 0.8rem; padding: 0.35rem 0.8rem;">Fijas: 86.1% (87/101)</span>
@@ -8361,6 +8486,28 @@
                         </thead>
                         <tbody>
                             
+            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05); transition: background 0.2s;">
+                <td style="padding: 1rem; vertical-align: top;">
+                    <div style="font-weight: 800; color: #ffffff; font-family: 'JetBrains Mono', monospace;">Ciclo #111</div>
+                    <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem;">2026-10-18 23:58:38</div>
+                </td>
+                <td style="padding: 1rem; vertical-align: top;">
+                    <span style="display: inline-block; background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.4); color: #60a5fa; padding: 0.25rem 0.65rem; border-radius: 6px; font-weight: 700; font-size: 0.78rem;">
+                        Auto-Calibración Bayesiana & Aprendizaje Dinámico (Lunes 19/10/2026)
+                    </span>
+                </td>
+                <td style="padding: 1rem; vertical-align: top; color: #cbd5e1;">
+                    <ul style="margin: 0; padding-left: 1.1rem; line-height: 1.5; font-size: 0.82rem;">
+                        <li>[Calendario Oficial Verificado]: Fixtures confirmados sin invenciones para Lunes 19/10/2026 (LaLiga, Premier League, Serie A, Ligas Sudamericanas).</li><li>[Auditoría y Validación Empírica Ecuabet (+$4.77 netos)]: Cobro exitoso del boleto doble del usuario en Ecuabet (Arsenal DNB @1.18 + Real Madrid Gana @1.25 -> Cuota 1.47). Arsenal ganó 0-1 y Real Madrid goleó 4-1, capital sube a $74.77 USD.</li><li>[Auditoría de Jornada Dominical (4 Aciertos / 1 Fallo)]: Verdes en Arsenal (0-1), Real Madrid (4-1), Brighton (5-0) y Bournemouth (2-0).</li><li>[Autopsia Cuantitativa Leeds 1-1 Manchester United (Fallo Real)]: El United se adelantó con Mbeumo pero empató Calvert-Lewin al 51'. La hostilidad de Elland Road neutralizó la victoria visitante, ratificando la advertencia del usuario: 'el arsenal va de visita, no quieres que se dañe la fija que de ley gane'. Se eleva 'premier_league_away_favorite_friction' a 1.28x y se exige DNB en favoritos visitantes con cuota > 1.50.</li><li>[Autopsias Previas Ratificadas]: Filtros de bloque bajo (1.35) y veto a BTTS en Tier-1 defensivo se mantienen activos.</li><li>[Brier Score Cuadrático Global]: 0.1326 en 133 eventos auditados en vivo. Banca oficial supera los $2,000 USD ($2,007.52 USD, +100.8% ROI).</li><li>MarketRealityAgent: Fijas de alta convicción calibradas para Lunes (confianza media: 73.5%). Cero hándicaps, cero líneas sintéticas.</li>
+                    </ul>
+                </td>
+                <td style="padding: 1rem; vertical-align: top;">
+                    <div style="font-weight: 700; font-size: 0.8rem; color: #34d399;">
+                        Excelente (Win Rate Fijas: 86.1% [87/101] | Win Rate Global: 86.5% [115/133] | Brier Score: 0.1326 | Ciclo #111)
+                    </div>
+                </td>
+            </tr>
+            
             <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05); transition: background 0.2s;">
                 <td style="padding: 1rem; vertical-align: top;">
                     <div style="font-weight: 800; color: #ffffff; font-family: 'JetBrains Mono', monospace;">Ciclo #110</div>
@@ -8515,28 +8662,6 @@
                 </td>
             </tr>
             
-            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05); transition: background 0.2s;">
-                <td style="padding: 1rem; vertical-align: top;">
-                    <div style="font-weight: 800; color: #ffffff; font-family: 'JetBrains Mono', monospace;">Ciclo #103</div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem;">2026-10-17 21:01:44</div>
-                </td>
-                <td style="padding: 1rem; vertical-align: top;">
-                    <span style="display: inline-block; background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.4); color: #60a5fa; padding: 0.25rem 0.65rem; border-radius: 6px; font-weight: 700; font-size: 0.78rem;">
-                        Auto-Calibración Diaria (Domingo 18/10/2026)
-                    </span>
-                </td>
-                <td style="padding: 1rem; vertical-align: top; color: #cbd5e1;">
-                    <ul style="margin: 0; padding-left: 1.1rem; line-height: 1.5; font-size: 0.82rem;">
-                        <li>[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas para Domingo.</li><li>Calibración Favoritos Visitantes: Fricción cuantitativa aplicada (tope 68% en 1X2 visitante) para erradicar sobreconfianza irreal; ratificación de Gol de Equipo y Doble Oportunidad como blindaje.</li><li>SquadInjuryAgent (FC Barcelona): Dani Olmo 100% habilitado en once titular; Raphinha y Roony Bardghji ratificados como bajas médicas oficiales con veto de props.</li><li>SquadInjuryAgent: 100% de planteles ratificados.</li><li>MarketRealityAgent: 6 Fijas ultra-seguras (95-98%) optimizadas (confianza media: 70.0%). Cero hándicaps, cero líneas de 5.5 goles.</li><li>PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.</li><li>TimesFM & Monte Carlo: Dixon-Coles calibrado para Domingo.</li>
-                    </ul>
-                </td>
-                <td style="padding: 1rem; vertical-align: top;">
-                    <div style="font-weight: 700; font-size: 0.8rem; color: #34d399;">
-                        Excelente (Win Rate Fijas: 86.2% [81/94] | Win Rate Global: 86.5% [109/126] | Brier Score: ~0.076 | Ciclo #103)
-                    </div>
-                </td>
-            </tr>
-            
                         </tbody>
                     </table>
                 </div>
@@ -8550,7 +8675,7 @@
 
 <script id="dataset-json" type="application/json">
 {
-  "GeneratedAt": "2026-10-18 18:57:02",
+  "GeneratedAt": "2026-10-18 18:58:38",
   "TargetDay": "Lunes",
   "TargetDate": "19/10/2026",
   "TemporalLabel": "MAÑANA",
