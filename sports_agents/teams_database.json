@@ -17150,5 +17150,187 @@
       "Mosquera",
       "Torres"
     ]
+  },
+  "Rayo Vallecano": {
+    "league": "LaLiga EA Sports",
+    "country": "España",
+    "stadium": "Campo de Fútbol de Vallecas",
+    "tactical_style": "Presión Alta & Transiciones Rápidas",
+    "pace": "Rápido",
+    "possession_avg": 48.5,
+    "xg_for_home": 1.35,
+    "xg_for_away": 1.05,
+    "xg_against_home": 1.15,
+    "xg_against_away": 1.45,
+    "corners_for_avg": 5.1,
+    "corners_against_avg": 4.8,
+    "fouls_committed_avg": 13.8,
+    "yellow_cards_avg": 2.4,
+    "key_players": {
+      "forwards": [
+        "Sergio Camello",
+        "Álvaro García",
+        "Jorge de Frutos"
+      ],
+      "midfielders": [
+        "Isi Palazón",
+        "Unai López",
+        "Óscar Valentín"
+      ],
+      "defenders": [
+        "Florian Lejeune",
+        "Abdul Mumin",
+        "Andrei Rațiu",
+        "Pep Chavarría"
+      ],
+      "goalkeepers": [
+        "Augusto Batalla"
+      ]
+    }
+  },
+  "Tottenham Hotspur": {
+    "league": "Premier League",
+    "country": "Inglaterra",
+    "stadium": "Tottenham Hotspur Stadium",
+    "tactical_style": "Ofensivo Total & Posesión Vertical",
+    "pace": "Muy Rápido",
+    "possession_avg": 62.0,
+    "xg_for_home": 2.45,
+    "xg_for_away": 1.95,
+    "xg_against_home": 1.1,
+    "xg_against_away": 1.4,
+    "corners_for_avg": 7.4,
+    "corners_against_avg": 4.2,
+    "fouls_committed_avg": 11.2,
+    "yellow_cards_avg": 1.9,
+    "key_players": {
+      "forwards": [
+        "Son Heung-min",
+        "Dominic Solanke",
+        "Brennan Johnson"
+      ],
+      "midfielders": [
+        "James Maddison",
+        "Dejan Kulusevski",
+        "Rodrigo Bentancur",
+        "Pape Matar Sarr"
+      ],
+      "defenders": [
+        "Cristian Romero",
+        "Micky van de Ven",
+        "Pedro Porro",
+        "Destiny Udogie"
+      ],
+      "goalkeepers": [
+        "Guglielmo Vicario"
+      ]
+    }
+  },
+  "Cagliari": {
+    "league": "Serie A",
+    "country": "Italia",
+    "stadium": "Unipol Domus",
+    "tactical_style": "Bloque Bajo & Contragolpe Directo",
+    "pace": "Lento",
+    "possession_avg": 42.5,
+    "xg_for_home": 1.2,
+    "xg_for_away": 0.85,
+    "xg_against_home": 1.35,
+    "xg_against_away": 1.65,
+    "corners_for_avg": 4.2,
+    "corners_against_avg": 5.8,
+    "fouls_committed_avg": 14.5,
+    "yellow_cards_avg": 2.6,
+    "key_players": {
+      "forwards": [
+        "Roberto Piccoli",
+        "Zito Luvumbo",
+        "Gianluca Lapadula"
+      ],
+      "midfielders": [
+        "Răzvan Marin",
+        "Antoine Makoumbou",
+        "Michel Adopo"
+      ],
+      "defenders": [
+        "Sebastiano Luperto",
+        "Yerry Mina",
+        "Gabriele Zappa",
+        "Tommaso Augello"
+      ],
+      "goalkeepers": [
+        "Simone Scuffet"
+      ]
+    }
+  },
+  "Deportivo Pasto": {
+    "league": "Liga BetPlay",
+    "country": "Colombia",
+    "stadium": "Estadio Departamental Libertad (San Juan de Pasto)",
+    "tactical_style": "Asfixia en Altura (2,527m) & Remate Exterior",
+    "pace": "Medio",
+    "possession_avg": 51.0,
+    "xg_for_home": 1.55,
+    "xg_for_away": 0.78,
+    "xg_against_home": 0.82,
+    "xg_against_away": 1.48,
+    "corners_for_avg": 5.5,
+    "corners_against_avg": 3.9,
+    "fouls_committed_avg": 15.2,
+    "yellow_cards_avg": 2.8,
+    "key_players": {
+      "forwards": [
+        "Daniel Moreno",
+        "Kevin Londoño"
+      ],
+      "midfielders": [
+        "Diego Chávez",
+        "Christian Mafla",
+        "Juan Castilla"
+      ],
+      "defenders": [
+        "Brayan Carabalí",
+        "Nicolás Gil",
+        "Israel Alba"
+      ],
+      "goalkeepers": [
+        "Diego Martínez"
+      ]
+    }
+  },
+  "Alianza": {
+    "league": "Liga BetPlay",
+    "country": "Colombia",
+    "stadium": "Estadio Armando Maestre Pavajeau",
+    "tactical_style": "Bloque Defensivo Rígido & Juego Físico",
+    "pace": "Lento",
+    "possession_avg": 44.0,
+    "xg_for_home": 1.15,
+    "xg_for_away": 0.68,
+    "xg_against_home": 1.18,
+    "xg_against_away": 1.65,
+    "corners_for_avg": 3.8,
+    "corners_against_avg": 5.6,
+    "fouls_committed_avg": 16.0,
+    "yellow_cards_avg": 3.1,
+    "key_players": {
+      "forwards": [
+        "Misael Martínez",
+        "Emerson Batalla"
+      ],
+      "midfielders": [
+        "Rubén Manjarrés",
+        "Royscer Colpa",
+        "Jair Castillo"
+      ],
+      "defenders": [
+        "Pedro Franco",
+        "Jesús Figueroa",
+        "Efraín Navarro"
+      ],
+      "goalkeepers": [
+        "Carlos Mosquera"
+      ]
+    }
   }
 }

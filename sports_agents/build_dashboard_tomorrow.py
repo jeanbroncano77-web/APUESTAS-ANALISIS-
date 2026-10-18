@@ -111,7 +111,10 @@ flags = {
     "Fluminense": "🇭🇺", "Coritiba": "🟢",
     "Athletico Paranaense": "🌪️", "Atlético Mineiro": "🐓",
     "Atlético Nacional": "🟢", "Deportes Tolima": "🟡",
-    "Fortaleza": "🦁", "Millonarios": "🔵"
+    "Fortaleza": "🦁", "Millonarios": "🔵",
+    "Rayo Vallecano": "⚡", "Tottenham Hotspur": "🐓", "Tottenham": "🐓",
+    "Cagliari": "🔴", "Newell's Old Boys": "🔴", "Central Córdoba": "⚫",
+    "Deportivo Pasto": "🌋", "Alianza": "🔵"
 }
 
 def get_flag(team):
