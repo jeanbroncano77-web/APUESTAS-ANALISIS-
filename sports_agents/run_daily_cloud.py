@@ -319,68 +319,20 @@ def main():
     print("   -> simulations_tomorrow_results.json actualizado con éxito.")
 
     # 7. Actualizar Registro de Autoaprendizaje y Calibración
-    print("4. Actualizando Bitácora de Autoaprendizaje (Self-Learning Loop)...")
-    feedback_log_path = os.path.join(current_dir, "autonomous_feedback_log.json")
-    feedback_data = {"cycles_completed": 51, "last_updated": lima_now.strftime("%Y-%m-%d %H:%M:%S"), "calibrations": []}
-
-    if os.path.exists(feedback_log_path):
-        try:
-            with open(feedback_log_path, "r", encoding="utf-8") as f_fb:
-                feedback_data = json.load(f_fb)
-        except Exception as e_fb_load:
-            print(f"   -> Nota cargando feedback_log: {e_fb_load}")
-
-    feedback_data["cycles_completed"] = feedback_data.get("cycles_completed", 50) + 1
-    feedback_data["last_updated"] = lima_now.strftime("%Y-%m-%d %H:%M:%S")
-
-    # Cargar métricas reales de auditoría
-    audit_file = os.path.join(current_dir, "audit_history.json")
-    g_wr = 90.6
-    g_tot = 96
-    g_w = 87
-    f_wr = 92.2
-    f_tot = 64
-    f_w = 59
-    if os.path.exists(audit_file):
-        try:
-            with open(audit_file, "r", encoding="utf-8") as f_a:
-                ad = json.load(f_a)
-                g_wr = ad.get("global_stats", {}).get("win_rate", 90.6)
-                g_tot = ad.get("global_stats", {}).get("total", 96)
-                g_w = ad.get("global_stats", {}).get("wins", 87)
-                f_wr = ad.get("fija_stats", {}).get("win_rate", 92.2)
-                f_tot = ad.get("fija_stats", {}).get("total", 64)
-                f_w = ad.get("fija_stats", {}).get("wins", 59)
-        except Exception:
-            pass
-
+    print("4. Actualizando Bitácora de Autoaprendizaje (Self-Learning Loop con FeedbackEngine 3.0)...")
+    from sports_agents.feedback_engine import FeedbackEngine
+    fb_engine = FeedbackEngine()
     avg_fija_conf = round(sum(fija_probs) / max(1, len(fija_probs)), 1)
-    unique_vetoed = list(dict.fromkeys(total_vetoed))
-    veto_summary_str = f"SquadInjuryAgent: {len(unique_vetoed)} bajas médicas vetadas ({', '.join(unique_vetoed[:3])})." if unique_vetoed else "SquadInjuryAgent: 100% de planteles ratificados."
-
-    new_calibration = {
-        "cycle": feedback_data["cycles_completed"],
-        "timestamp": feedback_data["last_updated"],
-        "action": f"Auto-Calibración Diaria ({target_day_name} {target_date_str})",
-        "observations": [
-            f"[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas para {target_day_name}.",
-            "Calibración Favoritos Visitantes: Fricción cuantitativa aplicada (tope 68% en 1X2 visitante) para erradicar sobreconfianza irreal; ratificación de Gol de Equipo y Doble Oportunidad como blindaje.",
-            "SquadInjuryAgent (FC Barcelona): Dani Olmo 100% habilitado en once titular; Raphinha y Roony Bardghji ratificados como bajas médicas oficiales con veto de props.",
-            veto_summary_str,
-            f"MarketRealityAgent: {len(results)} Fijas ultra-seguras (95-98%) optimizadas (confianza media: {avg_fija_conf}%). Cero hándicaps, cero líneas de 5.5 goles.",
-            f"PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
-            f"TimesFM & Monte Carlo: Dixon-Coles calibrado para {target_day_name}."
-        ],
-        "system_health": f"Excelente (Win Rate Fijas: {f_wr}% [{f_w}/{f_tot}] | Win Rate Global: {g_wr}% [{g_w}/{g_tot}] | Brier Score: ~0.076 | Ciclo #{feedback_data['cycles_completed']})"
-    }
-
-    feedback_data["calibrations"].append(new_calibration)
-    if len(feedback_data["calibrations"]) > 50:
-        feedback_data["calibrations"] = feedback_data["calibrations"][-50:]
-
-    with open(feedback_log_path, "w", encoding="utf-8") as f_fb_w:
-        json.dump(feedback_data, f_fb_w, ensure_ascii=False, indent=2)
-    print(f"   -> Registro de aprendizaje guardado (Ciclo #{feedback_data['cycles_completed']}).")
+    cycle_num = fb_engine.log_data.get("cycles_completed", 106) + 1
+    new_calibration = fb_engine.generate_cycle_entry(
+        cycle_num=cycle_num,
+        target_day=target_day_name,
+        target_date=target_date_str,
+        fija_conf_avg=avg_fija_conf
+    )
+    fb_engine.record_cycle(new_calibration)
+    feedback_data = fb_engine.log_data
+    print(f"   -> Registro de aprendizaje guardado (Ciclo #{cycle_num} | Brier: {fb_engine.compute_brier_score()}).")
 
     # 8. Reconstruir index.html y dashboard_pronosticos.html en las 3 ÁREAS
     print("5. Reconstruyendo index.html y dashboard_pronosticos.html (Sincronización de las 3 Áreas)...")

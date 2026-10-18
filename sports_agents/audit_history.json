@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-17 21:01:32",
+  "last_updated": "2026-10-17 22:22:22",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 1802.75,
-  "total_profit": 802.75,
-  "roi_pct": 80.3,
+  "current_bankroll": 1822.75,
+  "total_profit": 822.75,
+  "roi_pct": 82.3,
   "global_stats": {
-    "total": 126,
-    "wins": 109,
+    "total": 127,
+    "wins": 110,
     "losses": 17,
-    "win_rate": 86.5
+    "win_rate": 86.6
   },
   "fija_stats": {
-    "total": 94,
-    "wins": 81,
+    "total": 95,
+    "wins": 82,
     "losses": 13,
-    "win_rate": 86.2,
-    "active_streak": 2
+    "win_rate": 86.3,
+    "active_streak": 3
   },
   "history": [
     {
@@ -1655,12 +1655,26 @@
       "status": "win",
       "diagnostic": "ACIERTO: Borussia Dortmund ganó 2-1 al FC St. Pauli en el Signal Iduna Park con cabezazo agónico de Serhou Guirassy al minuto 83 tras el empate transitorio de Smith.",
       "pnl": 48.0
+    },
+    {
+      "id": 127,
+      "match": "FC Barcelona vs Sevilla",
+      "tournament": "LaLiga EA Sports • Domingo 20/10/2024 • Final: 5 - 1",
+      "category_tag": "👑 La Fija (Gana + Goles / Combo)",
+      "is_fija": true,
+      "selection": "FC Barcelona Gana y Más de 1.5 Goles totales",
+      "odds": 1.4,
+      "confidence": 88.5,
+      "status": "win",
+      "diagnostic": "ACIERTO ROTUNDO (Pick de Usuario Ratificado): FC Barcelona goleó 5-1 al Sevilla en Montjuïc (doblete de Lewandowski, doblete de Pablo Torre y golazo de Pedri). Lectura impecable del usuario respaldando Barcelona Gana + Más 1.5 goles (+$20.00 netos).",
+      "pnl": 20.0
     }
   ],
   "bankroll": {
     "initial": 1000.0,
-    "current": 1802.75,
-    "profit": 802.75,
-    "roi": 80.3
-  }
+    "current": 1822.75,
+    "profit": 822.75,
+    "roi": 82.3
+  },
+  "brier_score": 0.1307
 }
