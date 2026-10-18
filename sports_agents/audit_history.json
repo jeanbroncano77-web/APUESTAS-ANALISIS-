@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-17 20:43:15",
+  "last_updated": "2026-10-17 20:44:25",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 1807.75,
-  "total_profit": 807.75,
-  "roi_pct": 80.8,
+  "current_bankroll": 1793.75,
+  "total_profit": 793.75,
+  "roi_pct": 79.4,
   "global_stats": {
-    "total": 121,
-    "wins": 106,
+    "total": 120,
+    "wins": 105,
     "losses": 15,
-    "win_rate": 87.6
+    "win_rate": 87.5
   },
   "fija_stats": {
-    "total": 89,
-    "wins": 78,
+    "total": 88,
+    "wins": 77,
     "losses": 11,
-    "win_rate": 87.6,
-    "active_streak": 8
+    "win_rate": 87.5,
+    "active_streak": 7
   },
   "history": [
     {
@@ -1577,19 +1577,6 @@
       "status": "win",
       "diagnostic": "ACIERTO ROTUNDO: Athletic Club arrolló 4-1 al RCD Espanyol en San Mamés (doblete de Iñaki Williams, goles de Vivian y Berenguer). Dominio total de los leones desde el primer tiempo.",
       "pnl": 55.0
-    },
-    {
-      "id": 121,
-      "match": "Cruzeiro vs Liga de Quito",
-      "tournament": "Liga Profesional Argentina & Conmebol Libertadores • Finalizado",
-      "category_tag": "👑 La Fija (95%+)",
-      "is_fija": true,
-      "selection": "Cruzeiro o Empate (1X) [Doble Oportunidad]",
-      "odds": 1.14,
-      "confidence": 96.8,
-      "status": "win",
-      "diagnostic": "Cruzeiro defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
-      "pnl": 14.0
     }
   ],
   "bankroll": {
