@@ -340,7 +340,13 @@ def main():
     if os.path.exists(builder_script):
         import subprocess
         subprocess.run([sys.executable, builder_script], check=True)
-        print("   -> Dashboard HTML completamente sincronizado en Área 1, Área 2 y Área 3.")
+        print("   -> Área 1 (Partidos & Pronósticos) sincronizada.")
+
+    sync_3areas_script = os.path.join(current_dir, "sync_complete_dashboard_3areas.py")
+    if os.path.exists(sync_3areas_script):
+        import subprocess
+        subprocess.run([sys.executable, sync_3areas_script], check=True)
+        print("   -> Área 2 (Win Rate & Auditoría) y Área 3 (Autoaprendizaje) sincronizadas al 100%.")
 
     # 9. Despacho a Telegram con guardia inteligente
     dispatch_tracker_path = os.path.join(current_dir, "dispatch_tracker.json")
@@ -400,8 +406,7 @@ def main():
     try:
         import subprocess
         subprocess.run(["git", "fetch", "origin", "main"], check=False, cwd=base_dir)
-        subprocess.run(["git", "merge", "origin/main", "-X", "ours", "--no-edit"], check=False, cwd=base_dir)
-        subprocess.run(["git", "add", "index.html", "dashboard_pronosticos.html", "sports_agents/market_reality_agent.py", "sports_agents/audit_history.json", "sports_agents/simulations_tomorrow_results.json", "sports_agents/autonomous_feedback_log.json", "sports_agents/dispatch_tracker.json", "sports_agents/official_calendar.json"], check=False, cwd=base_dir)
+        subprocess.run(["git", "add", "index.html", "dashboard_pronosticos.html", "sports_agents/market_reality_agent.py", "sports_agents/feedback_engine.py", "sports_agents/sync_complete_dashboard_3areas.py", "sports_agents/audit_history.json", "sports_agents/simulations_tomorrow_results.json", "sports_agents/autonomous_feedback_log.json", "sports_agents/dispatch_tracker.json", "sports_agents/official_calendar.json"], check=False, cwd=base_dir)
         subprocess.run(["git", "commit", "-m", f"chore(auto): cartelera {target_day_name} {target_date_str} y win rate auditado [skip ci]"], check=False, cwd=base_dir)
         push_res = subprocess.run(["git", "push", "origin", "main"], check=False, cwd=base_dir, capture_output=True, text=True)
         print(f"   -> Git push a GitHub Pages: {push_res.returncode == 0}")
