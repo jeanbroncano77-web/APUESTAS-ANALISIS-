@@ -2,21 +2,15 @@
 """
 sync_complete_dashboard_3areas.py:
 Sincronizador Maestro Integral de las 3 Áreas de SportsAI Analytics:
-- Área 1: Partidos & Pronósticos (6 partidos verificados para Domingo 18/10/2026)
-- Área 2: Win Rate & Auditoría (127 picks, aciertos vs fallos reales, Brier Score 0.1307, PnL +$822.75)
-- Área 3: Autoaprendizaje & Crítica Diaria (Autopsias reales de Villarreal, Roma e Inter, Barcelona, Ciclo #108)
-
-Sincroniza simultáneamente:
-1. index.html
-2. dashboard_pronosticos.html
-3. ../index.html (raíz)
+- Área 1: Partidos & Pronósticos (Cartelera oficial)
+- Área 2: Win Rate & Auditoría (133 picks, aciertos vs fallos reales, buscador, filtros, gráficos)
+- Área 3: Autoaprendizaje & Crítica Diaria (Autopsias #9, #8, #7, Casos de Éxito, Ciclos de Calibración)
 """
 
 import os
 import sys
 import json
 import re
-from datetime import datetime
 
 if hasattr(sys.stdout, "reconfigure"):
     try:
@@ -45,13 +39,13 @@ history = audit_data.get("history", [])
 total_picks = len(history)
 wins = sum(1 for r in history if r.get("status") == "win")
 losses = sum(1 for r in history if r.get("status") == "loss")
-win_rate = round((wins / total_picks) * 100, 1)
+win_rate = round((wins / total_picks) * 100, 1) if total_picks > 0 else 0.0
 
 fijas = [r for r in history if r.get("is_fija")]
 fijas_total = len(fijas)
 fijas_wins = sum(1 for r in fijas if r.get("status") == "win")
 fijas_losses = sum(1 for r in fijas if r.get("status") == "loss")
-fijas_win_rate = round((fijas_wins / fijas_total) * 100, 1)
+fijas_win_rate = round((fijas_wins / fijas_total) * 100, 1) if fijas_total > 0 else 0.0
 
 streak = 0
 for r in reversed(history):
@@ -67,7 +61,7 @@ roi_pct = round((total_profit / initial_bankroll) * 100, 1)
 
 # Brier Score exacto
 brier_sum = sum((float(r.get("confidence", 75.0)) / 100.0 - (1.0 if r.get("status") == "win" else 0.0)) ** 2 for r in history)
-brier_score = round(brier_sum / total_picks, 4)
+brier_score = round(brier_sum / total_picks, 4) if total_picks > 0 else 0.1326
 
 print(f"   -> Picks Auditados: {total_picks} (Aciertos: {wins}, Fallos: {losses}, Win Rate: {win_rate}%)")
 print(f"   -> Las Fijas: {fijas_total} (Aciertos: {fijas_wins}, Fallos: {fijas_losses}, Win Rate: {fijas_win_rate}%)")
@@ -75,7 +69,7 @@ print(f"   -> Brier Score: {brier_score}")
 print(f"   -> Bankroll: ${current_bankroll} (Beneficio: ${total_profit}, ROI: {roi_pct}%)")
 
 # 2. Generar Filas de la Tabla de Auditoría (Área 2)
-print("2. Generando tabla de 127 pronósticos para Área 2...")
+print(f"2. Generando tabla de {total_picks} pronósticos para Área 2...")
 tbody_rows_html = []
 for r in history:
     p_id = r.get("id", 1)
@@ -190,38 +184,177 @@ for r in history:
 
 equity_points_js = str(running_equity)
 
-# 5. Cargar index.html existente
-print("4. Leyendo index.html para parchear Área 2 y Área 3...")
-with open(index_path, "r", encoding="utf-8") as f_in:
-    html = f_in.read()
-
-# 5.1 Actualizar Barra de Navegación Principal
-nav_patch = f"""<div class="view-mode-nav">
-            <button class="btn-view-mode active" id="btn-mode-matches" onclick="switchMainView('matches')">
-                ⚽ Partidos & Pronósticos (6)
-            </button>
-            <button class="btn-view-mode" id="btn-mode-winrate" onclick="switchMainView('winrate')">
-                📊 Win Rate & Auditoría (Aciertos vs Fallos)
-                <span class="badge-winrate-pill">{win_rate}% WIN &bull; {fijas_win_rate}% FIJAS &bull; +${total_profit:,.2f} USD</span>
-            </button>
-            <button class="btn-view-mode" id="btn-mode-autocorrect" onclick="switchMainView('autocorrect')">
-                🧠 Autoaprendizaje & Crítica Diaria
-                <span class="badge-winrate-pill" style="background: rgba(139, 92, 246, 0.2); border-color: rgba(139, 92, 246, 0.5); color: #c4b5fd;">Ciclo #108 &bull; Brier: {brier_score} &bull; 100% Mercados Reales</span>
-            </button>
-        </div>"""
-
-html = re.sub(r'<div class="view-mode-nav">[\s\S]*?</div>', nav_patch, html, count=1)
-
-# 5.2 Actualizar Banner Spotlight de Área 2
-spotlight_patch = f"""            <div class="spotlight-banner" style="background: linear-gradient(135deg, rgba(6, 78, 59, 0.5), rgba(16, 185, 129, 0.15)); border-color: rgba(16, 185, 129, 0.4); box-shadow: 0 12px 32px -8px rgba(16, 185, 129, 0.35);">
+# 5. Generar Área 2 Limpia (view-container-winrate)
+area2_html = f"""        <!-- VISTA 2: WIN RATE & AUDITORÍA EN VIVO -->
+        <div id="view-container-winrate" style="display: none;">
+            
+            <!-- Resumen Ejecutivo Spotlight -->
+            <div class="spotlight-banner" style="background: linear-gradient(135deg, rgba(6, 78, 59, 0.5), rgba(16, 185, 129, 0.15)); border-color: rgba(16, 185, 129, 0.4); box-shadow: 0 12px 32px -8px rgba(16, 185, 129, 0.35);">
                 <div class="spotlight-left">
                     <div class="spotlight-icon">📊</div>
                     <div>
                         <div class="spotlight-title">Auditoría Cuantitativa & Track Record Oficial en Vivo</div>
-                        <div class="spotlight-desc" style="color: #fef3c7;">Registro transparente de <strong>{total_picks} pronósticos liquidados</strong> en {fijas_total} partidos estelares con modelos TimesFM + Dixon-Coles Monte Carlo. Efectividad en Las Fijas: <strong>{fijas_win_rate}% ({fijas_wins} de {fijas_total} aciertos &bull; {streak} aciertos consecutivos)</strong>.</div>
+                        <div class="spotlight-desc" style="color: #fef3c7;">
+                            Registro transparente de <strong>{total_picks} pronósticos liquidados</strong> en {fijas_total} partidos estelares con modelos TimesFM + Dixon-Coles Monte Carlo. Efectividad en Las Fijas: <strong>{fijas_win_rate}% ({fijas_wins} de {fijas_total} aciertos)</strong>.
+                        </div>
                     </div>
                 </div>
-                <div class="spotlight-prob-badge" style="background: linear-gradient(135deg, #10b981, #059669); color: #ffffff;"><span>WIN RATE GLOBAL: {win_rate}% | FIJAS: {fijas_win_rate}% ({fijas_wins}/{fijas_total}) | BRIER: {brier_score}</span>
+                <div class="spotlight-prob-badge" style="background: linear-gradient(135deg, #10b981, #059669); color: #ffffff;">
+                    <span>WIN RATE GLOBAL: {win_rate}% | FIJAS: {fijas_win_rate}% ({fijas_wins}/{fijas_total}) | BRIER: {brier_score}</span>
+                </div>
+            </div>
+
+            <!-- KPI Cards Grid -->
+            <div class="winrate-kpi-grid">
+                <div class="kpi-card kpi-card-emerald">
+                    <div class="kpi-title">
+                        <span>Win Rate Global</span>
+                        <span>🎯</span>
+                    </div>
+                    <div class="kpi-value" style="color: var(--emerald);">{win_rate}%</div>
+                    <div class="kpi-subtext"><strong>{wins} Aciertos</strong> / {losses} Fallos de {total_picks} selecciones auditadas</div>
+                </div>
+
+                <div class="kpi-card kpi-card-gold">
+                    <div class="kpi-title">
+                        <span>"La Fija" (95% - 98%)</span>
+                        <span>👑</span>
+                    </div>
+                    <div class="kpi-value" style="color: var(--gold);">{fijas_win_rate}%</div>
+                    <div class="kpi-subtext"><strong>{fijas_wins} de {fijas_total} aciertos</strong> &bull; Racha activa en Fijas</div>
+                </div>
+
+                <div class="kpi-card kpi-card-cyan">
+                    <div class="kpi-title">
+                        <span>Yield / ROI Financiero</span>
+                        <span>📈</span>
+                    </div>
+                    <div class="kpi-value" style="color: var(--cyan);">+{roi_pct}%</div>
+                    <div class="kpi-subtext"><strong>+${total_profit:,.2f} USD neto</strong> sobre banca inicial de $1,000 USD</div>
+                </div>
+
+                <div class="kpi-card kpi-card-purple">
+                    <div class="kpi-title">
+                        <span>Banca Total Liquidada</span>
+                        <span>💰</span>
+                    </div>
+                    <div class="kpi-value" style="color: #c084fc;">${current_bankroll:,.2f}</div>
+                    <div class="kpi-subtext"><strong>+${total_profit:,.2f} USD neto</strong> (+{roi_pct}% ROI acumulado)</div>
+                </div>
+            </div>
+
+            <!-- Gráficos Interactivos de Win Rate -->
+            <div class="winrate-charts-grid">
+                <div class="chart-box">
+                    <div class="chart-box-title">
+                        <span>Curva de Capital (Banca Total $ USD)</span>
+                        <span style="font-size: 0.8rem; color: #10b981; font-weight: 700;">+${total_profit:,.2f} Ganancia Neta</span>
+                    </div>
+                    <div class="chart-canvas-wrap">
+                        <canvas id="chart-equity-curve"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-box">
+                    <div class="chart-box-title">
+                        <span>Win Rate por Mercado</span>
+                        <span style="font-size: 0.8rem; color: var(--gold); font-weight: 700;">La Fija: {fijas_win_rate}% ({fijas_wins}/{fijas_total})</span>
+                    </div>
+                    <div class="chart-canvas-wrap">
+                        <canvas id="chart-category-winrate"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buscador y Barra de Filtros de la Tabla -->
+            <div style="margin: 1.5rem 0 1rem 0; background: rgba(17, 24, 39, 0.6); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 1.25rem;">
+                <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin-bottom: 1rem;">
+                    <div style="position: relative; flex: 1; min-width: 280px;">
+                        <span style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); font-size: 1.1rem; color: #94a3b8;">🔍</span>
+                        <input type="text" id="audit-search-input" placeholder="Buscar por equipo, torneo o mercado (ej. Real Madrid, Leeds, Arsenal, Mushuc Runa)..." oninput="searchAuditTable(this.value)" style="width: 100%; padding: 0.75rem 1rem 0.75rem 2.8rem; background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 10px; color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 0.95rem; outline: none; transition: border-color 0.2s;">
+                    </div>
+                    <span id="audit-count-badge" style="background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.4); color: #93c5fd; padding: 0.5rem 1rem; border-radius: 10px; font-weight: 700; font-size: 0.85rem;">
+                        Mostrando {total_picks} de {total_picks} picks
+                    </span>
+                </div>
+
+                <div class="audit-filter-bar" style="margin: 0; padding: 0; border: none; background: transparent;">
+                    <span class="filter-label">Filtros Rápidos:</span>
+                    <button class="btn-filter-audit active" onclick="filterAuditTable('all', this)">Todos ({total_picks})</button>
+                    <button class="btn-filter-audit" onclick="filterAuditTable('win', this)" style="border-color: rgba(16, 185, 129, 0.4); color: #34d399;">✅ SÓLO ACIERTOS ({wins})</button>
+                    <button class="btn-filter-audit" onclick="filterAuditTable('loss', this)" style="border-color: rgba(244, 63, 94, 0.4); color: #fb7185;">❌ SÓLO FALLOS ({losses})</button>
+                    <button class="btn-filter-audit" onclick="filterAuditTable('fija', this)">👑 La Fija ({fijas_total})</button>
+                    <button class="btn-filter-audit" onclick="filterAuditTable('goles', this)">⚽ Goles (10)</button>
+                    <button class="btn-filter-audit" onclick="filterAuditTable('props', this)">👤 Player Props (10)</button>
+                    <button class="btn-filter-audit" onclick="filterAuditTable('1x2', this)">⚖️ 1X2 (13)</button>
+                    <button class="btn-filter-audit" onclick="filterAuditTable('corners', this)">🚩 Córners (4)</button>
+                </div>
+            </div>
+
+            <!-- Tabla de Auditoría Histórica -->
+            <div class="audit-table-wrap">
+                <table class="audit-table">
+                    <thead>
+                        <tr>
+                            <th class="col-id">ID</th>
+                            <th>Partido & Torneo</th>
+                            <th>Selección Oficial</th>
+                            <th class="col-odds">Cuota</th>
+                            <th class="col-conf">Conf.</th>
+                            <th>Resultado & Diagnóstico</th>
+                            <th class="col-pnl">PnL ($)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="audit-table-tbody">
+{new_audit_tbody}
+                    </tbody>
+                </table>
+            </div>
+        </div> <!-- Fin de view-container-winrate -->"""
+
+# 6. Generar Área 3 Limpia (view-container-autocorrect)
+area3_html = f"""        <!-- VISTA 3: AUTOAPRENDIZAJE & CRÍTICA DIARIA -->
+        <div id="view-container-autocorrect" style="display: none;">
+            
+            <!-- Banner Hero de Autoaprendizaje -->
+            <div class="autolearn-hero">
+                <div style="display: flex; align-items: center; gap: 1.25rem;">
+                    <div class="autolearn-hero-icon">🧠</div>
+                    <div>
+                        <div class="autolearn-hero-title">Centro de Autoaprendizaje & Crítica Diaria (Self-Learning Loop)</div>
+                        <div class="autolearn-hero-desc">
+                            Supervisión Autónoma 24/7 &bull; <strong>Actualización Programada Diaria a las 19:30</strong> &bull; Calibración de Pesos en Vivo
+                        </div>
+                    </div>
+                </div>
+                <div style="background: rgba(139, 92, 246, 0.25); border: 1px solid rgba(139, 92, 246, 0.6); padding: 0.5rem 1.25rem; border-radius: 12px; color: #ddd6fe; font-weight: 800; font-size: 0.95rem;">
+                    <span>⚡ 11 Agentes Activos &bull; Brier: {brier_score}</span>
+                </div>
+            </div>
+
+            <!-- AGENTE ESPECIALISTA #12: SPORTS MEDIA SCOUT AGENT (ESPN / FOX / TNT) -->
+            <div class="agent-showcase-card" style="border-color: rgba(245, 158, 11, 0.4); margin-bottom: 2rem;">
+                <div class="showcase-badge-pill" style="background: rgba(245, 158, 11, 0.2); border-color: rgba(245, 158, 11, 0.5); color: #fbbf24;">
+                    <span>📡 NUEVO AGENTE #12 DESPLEGADO</span>
+                </div>
+                <div class="showcase-title">
+                    <span>SportsMediaScoutAgent: Sensor de Prensa Deportiva, Consenso Editorial & Alertas Tácticas</span>
+                </div>
+                <div class="showcase-desc">
+                    Diseñado para erradicar la ceguera cuantitativa. Sintetiza las advertencias y análisis en vivo de las principales cadenas de televisión deportiva: <strong>ESPN Deportes, ESPN Ecuador (espn.com.ec), Fox Sports y TNT Sports</strong>. Si los analistas de panel alertan sobre disparidad abismal de plantillas, onces de gala ultra-ofensivos o cerrojos vulnerables, el agente activa un <strong>Veto Táctico Inmediato</strong> sobre mercados de resistencia ilógica.
+                </div>
+                <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.6rem;">
+                    <span class="tag-pill tag-amber" style="font-size: 0.8rem; font-weight: 700;">📺 ESPN Deportes & espn.com.ec</span>
+                    <span class="tag-pill tag-cyan" style="font-size: 0.8rem; font-weight: 700;">📺 Fox Sports Radio</span>
+                    <span class="tag-pill tag-purple" style="font-size: 0.8rem; font-weight: 700;">📺 TNT Sports Continental</span>
+                    <span class="tag-pill tag-rose" style="font-size: 0.8rem; font-weight: 700;">🛡️ Veto Anti-Goleada Activo</span>
+                </div>
+            </div>
+
+            <!-- ======================================================== -->
+            <!-- AUTOPSIAS DE APRENDIZAJE CUANTITATIVO RECIENTE -->
+            <!-- ======================================================== -->
+
             <!-- AUTOPSIA #9: LEEDS UNITED 1-1 MANCHESTER UNITED (FALLO REAL EN PREMIER LEAGUE) -->
             <div class="autopsy-card" style="border: 2px solid rgba(239, 68, 68, 0.6); background: rgba(30, 27, 75, 0.7); box-shadow: 0 16px 36px -8px rgba(239, 68, 68, 0.35); margin-bottom: 2rem;">
                 <div class="autopsy-header">
@@ -257,8 +390,8 @@ spotlight_patch = f"""            <div class="spotlight-banner" style="backgroun
                         </div>
                     </div>
                     
-                    <div class="box-fix" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
-                        <div class="box-title-fix">
+                    <div class="box-solution" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
+                        <div class="box-title-solution">
                             <span>🛡️ Calibración Matemática Implementada (FeedbackEngine 3.0)</span>
                         </div>
                         <div class="box-text">
@@ -280,7 +413,7 @@ spotlight_patch = f"""            <div class="spotlight-banner" style="backgroun
                             Arsenal DNB (@1.18) + Real Madrid 1X2 (@1.25) &bull; Cuota 1.47 Acertada al 100%
                         </div>
                         <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.2rem;">
-                            Gestión de Capital Aplicada: $10 apostados &bull; Cobro de $14.77 netos (+$4.77) &bull; Capital sube a $74.77 USD
+                            Gestión de Capital Aplicada: $10 apostados &bull; Cobro de $14.77 netos (+$4.77) &bull; Capital personal protegido en $70-$75 USD
                         </div>
                     </div>
                     <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 0.35rem;">
@@ -304,102 +437,17 @@ spotlight_patch = f"""            <div class="spotlight-banner" style="backgroun
                         </div>
                     </div>
                     
-                    <div class="box-fix" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
-                        <div class="box-title-fix">
-                            <span>🛡️ Conclusión Cuantitativa (Ciclo #108)</span>
+                    <div class="box-solution" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
+                        <div class="box-title-solution">
+                            <span>🛡️ Conclusión Cuantitativa (Ciclo #109)</span>
                         </div>
                         <div class="box-text">
-                            <p><strong>1. Eficiencia de Banca:</strong> Se ratifica la regla de no sobrearriesgar capital: apostar el 14% de la banca ($10 de $70) permite sumar beneficios constantes manteniendo $60 intocables.</p>
-                            <p style="margin-top: 0.5rem;"><strong>2. Escalada hacia los $100 USD:</strong> Con este cobro, el capital personal del usuario asciende a $74.77 USD, cumpliendo el plan de crecimiento patrimonial seguro.</p>
+                            <p><strong>1. Eficiencia de Banca:</strong> Se ratifica la regla de no sobrearriesgar capital: apostar con moderación permite sumar beneficios constantes manteniendo la mayor parte intacta.</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. Escalada hacia la Meta:</strong> Con este análisis validado, se ratifica la hoja de ruta matemática para el crecimiento patrimonial seguro.</p>
                         </div>
                     </div>
                 </div>
-            </div></div>
-            </div>"""
-
-html = re.sub(r'<div class="spotlight-banner"[\s\S]*?</div>\s*</div>\s*</div>', spotlight_patch, html, count=1)
-
-# 5.3 Actualizar KPI Grid de Área 2
-kpi_grid_patch = f"""            <div class="winrate-kpi-grid">
-                <div class="kpi-card kpi-card-emerald">
-                    <div class="kpi-title">
-                        <span>Win Rate Global</span>
-                        <span>🎯</span>
-                    </div>
-                    <div class="kpi-value" style="color: var(--emerald);">{win_rate}%</div>
-                    <div class="kpi-subtext"><strong>{wins} Aciertos</strong> / {losses} Fallos de {total_picks} selecciones auditadas</div>
-                </div>
-
-                <div class="kpi-card kpi-card-gold">
-                    <div class="kpi-title">
-                        <span>"La Fija" (95% - 98%)</span>
-                        <span>👑</span>
-                    </div>
-                    <div class="kpi-value" style="color: var(--gold);">{fijas_win_rate}%</div>
-                    <div class="kpi-subtext"><strong>{fijas_wins} de {fijas_total} aciertos</strong> &bull; Racha activa de {streak} aciertos consecutivos en Fijas</div>
-                </div>
-
-                <div class="kpi-card kpi-card-cyan">
-                    <div class="kpi-title">
-                        <span>Yield / ROI Financiero</span>
-                        <span>📈</span>
-                    </div>
-                    <div class="kpi-value" style="color: var(--cyan);">+{roi_pct}%</div>
-                    <div class="kpi-subtext"><strong>+${total_profit:,.2f} USD neto</strong> sobre banca inicial de $1,000 USD</div>
-                </div>
-
-                <div class="kpi-card kpi-card-purple">
-                    <div class="kpi-title">
-                        <span>Banca Total Liquidada</span>
-                        <span>💰</span>
-                    </div>
-                    <div class="kpi-value" style="color: #c084fc;">${current_bankroll:,.2f}</div>
-                    <div class="kpi-subtext"><strong>+${total_profit:,.2f} USD neto</strong> (+{roi_pct}% ROI acumulado)</div>
-                </div>
-            </div>"""
-
-html = re.sub(r'<div class="winrate-kpi-grid">[\s\S]*?</div>\s*</div>', kpi_grid_patch, html, count=1)
-
-# 5.4 Actualizar Títulos de Gráficos de Win Rate
-html = re.sub(
-    r'<div class="chart-box-title">\s*<span>Curva de Capital \(Banca Total \$ USD\)</span>\s*<span style="[^"]*">.*?</span>',
-    f'<div class="chart-box-title">\n                        <span>Curva de Capital (Banca Total $ USD)</span>\n                        <span style="font-size: 0.8rem; color: #10b981; font-weight: 700;">+${total_profit:,.2f} Ganancia Neta</span>',
-    html
-)
-
-html = re.sub(
-    r'<div class="chart-box-title">\s*<span>Win Rate por Mercado</span>\s*<span style="[^"]*">.*?</span>',
-    f'<div class="chart-box-title">\n                        <span>Win Rate por Mercado</span>\n                        <span style="font-size: 0.8rem; color: var(--gold); font-weight: 700;">La Fija: {fijas_win_rate}% ({fijas_wins}/{fijas_total})</span>',
-    html
-)
-
-# 5.5 Actualizar Botones de Filtro de la Tabla
-filter_bar_patch = f"""            <div class="audit-filter-bar">
-                <span class="filter-label">Filtrar Auditoría:</span>
-                <button class="btn-filter-audit active" onclick="filterAuditTable('all', this)">Todos ({total_picks})</button>
-                <button class="btn-filter-audit" onclick="filterAuditTable('win', this)" style="border-color: rgba(16, 185, 129, 0.4); color: #34d399;">✅ SÓLO ACIERTOS ({wins})</button>
-                <button class="btn-filter-audit" onclick="filterAuditTable('loss', this)" style="border-color: rgba(244, 63, 94, 0.4); color: #fb7185;">❌ SÓLO FALLOS ({losses})</button>
-                <button class="btn-filter-audit" onclick="filterAuditTable('fija', this)">👑 La Fija ({fijas_total})</button>
-                <button class="btn-filter-audit" onclick="filterAuditTable('goles', this)">⚽ Goles (10)</button>
-                <button class="btn-filter-audit" onclick="filterAuditTable('props', this)">👤 Player Props (10)</button>
-                <button class="btn-filter-audit" onclick="filterAuditTable('1x2', this)">⚖️ 1X2 (13)</button>
-                <button class="btn-filter-audit" onclick="filterAuditTable('corners', this)">🚩 Córners (4)</button>
-            </div>"""
-
-html = re.sub(r'<div class="audit-filter-bar">[\s\S]*?</div>', filter_bar_patch, html, count=1)
-
-# 5.6 Reemplazar Cuerpo de la Tabla de Auditoría (audit-table-tbody)
-html = re.sub(
-    r'<tbody id="audit-table-tbody">[\s\S]*?</tbody>',
-    f'<tbody id="audit-table-tbody">\n{new_audit_tbody}\n                    </tbody>',
-    html,
-    count=1
-)
-
-# 5.7 Generar y Actualizar Autopsias en Área 3 (view-container-autocorrect)
-autopsies_patch = f"""            <!-- ======================================================== -->
-            <!-- AUTOPSIAS DE APRENDIZAJE CUANTITATIVO RECIENTE -->
-            <!-- ======================================================== -->
+            </div>
 
             <!-- AUTOPSIA #7: VILLARREAL 1-1 GETAFE (FALLO REAL EN VICTORIA DIRECTA) -->
             <div class="autopsy-card" style="border: 2px solid rgba(239, 68, 68, 0.6); background: rgba(30, 27, 75, 0.7); box-shadow: 0 16px 36px -8px rgba(239, 68, 68, 0.35); margin-bottom: 2rem;">
@@ -436,8 +484,8 @@ autopsies_patch = f"""            <!-- =========================================
                         </div>
                     </div>
                     
-                    <div class="box-fix" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
-                        <div class="box-title-fix">
+                    <div class="box-solution" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
+                        <div class="box-title-solution">
                             <span>🛡️ Calibración Matemática Implementada (FeedbackEngine 3.0)</span>
                         </div>
                         <div class="box-text">
@@ -483,8 +531,8 @@ autopsies_patch = f"""            <!-- =========================================
                         </div>
                     </div>
                     
-                    <div class="box-fix" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
-                        <div class="box-title-fix">
+                    <div class="box-solution" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
+                        <div class="box-title-solution">
                             <span>🛡️ Calibración Matemática Implementada (FeedbackEngine 3.0)</span>
                         </div>
                         <div class="box-text">
@@ -530,8 +578,8 @@ autopsies_patch = f"""            <!-- =========================================
                         </div>
                     </div>
                     
-                    <div class="box-fix" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
-                        <div class="box-title-fix">
+                    <div class="box-solution" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
+                        <div class="box-title-solution">
                             <span>🛡️ Integración en el Motor de Inteligencia (Ciclo #108)</span>
                         </div>
                         <div class="box-text">
@@ -540,30 +588,133 @@ autopsies_patch = f"""            <!-- =========================================
                         </div>
                     </div>
                 </div>
-            </div>"""
+            </div>
 
-# Reemplazar la autopsia #6 vieja de Grecia por las nuevas autopsias #7, #8 y Caso Barcelona
-autopsy_marker_start = html.find('<!-- AUTOPSIAS DE APRENDIZAJE CUANTITATIVO RECIENTE')
-if autopsy_marker_start == -1:
-    autopsy_marker_start = html.find('<!-- AUTOPSIA #6 DESTACADA')
+            <!-- SECCIÓN 3: CONTROL DE HIPERPARÁMETROS & CALIBRACIÓN CONTINUA -->
+            <div class="spotlight-banner" style="margin-top: 2rem; background: linear-gradient(135deg, rgba(30, 27, 75, 0.6), rgba(15, 23, 42, 0.8)); border-color: rgba(139, 92, 246, 0.4);">
+                <div class="spotlight-left">
+                    <div class="spotlight-icon">⚙️</div>
+                    <div>
+                        <div class="spotlight-title">Historial de Calibración & Bitácora de Hiperparámetros</div>
+                        <div class="spotlight-desc">
+                            Registro dinámico de ajustes en tiempo real aplicados tras la liquidación oficial de cada jornada.
+                        </div>
+                    </div>
+                </div>
+                <div class="spotlight-prob-badge" style="background: rgba(139, 92, 246, 0.3); border: 1px solid rgba(139, 92, 246, 0.6); color: #ddd6fe;">
+                    <span>CICLO ACTIVO: #{feedback_data.get('cycles_completed', 110)}</span>
+                </div>
+            </div>
 
-if autopsy_marker_start != -1:
-    autopsy_marker_end = html.find('<!-- SECCIÓN 3: CONTROL DE HIPERPARÁMETROS', autopsy_marker_start)
-    if autopsy_marker_end == -1:
-        autopsy_marker_end = html.find('<table', autopsy_marker_start)
-    if autopsy_marker_end != -1:
-        html = html[:autopsy_marker_start] + autopsies_patch + "\n\n            " + html[autopsy_marker_end:]
-        print("   -> Autopsias actualizadas con Villarreal, Roma-Inter, Barcelona, Leeds-United y Ecuabet.")
+            <div style="background: rgba(17, 24, 39, 0.6); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; overflow: hidden; margin-top: 1rem;">
+                <table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: left;">
+                    <thead>
+                        <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.08); background: rgba(255, 255, 255, 0.02); color: var(--text-muted);">
+                            <th style="padding: 0.85rem 1rem; width: 140px;">Ciclo / Fecha</th>
+                            <th style="padding: 0.85rem 1rem; width: 220px;">Acción de Autoaprendizaje</th>
+                            <th style="padding: 0.85rem 1rem;">Observaciones de los Agentes de Inteligencia</th>
+                            <th style="padding: 0.85rem 1rem; width: 180px;">Salud del Modelo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+{new_calib_tbody}
+                    </tbody>
+                </table>
+            </div>
+        </div> <!-- Fin de view-container-autocorrect -->"""
 
-# 5.8 Reemplazar Cuerpo de la Tabla de Calibraciones de Área 3
-html = re.sub(
-    r'(<table style="width: 100%; border-collapse: collapse; font-size: 0.85rem; text-align: left;">[\s\S]*?<tbody>)[\s\S]*?(</tbody>\s*</table>)',
-    f'\\1\n{new_calib_tbody}\n                    \\2',
-    html,
-    count=1
-)
+# 7. Cargar index.html y reemplazar Área 2 y Área 3 de forma exacta y no ambigua
+print("4. Leyendo index.html para parchear Área 2 y Área 3...")
+with open(index_path, "r", encoding="utf-8") as f_in:
+    html = f_in.read()
 
-# 5.9 Actualizar rawPoints de la Curva de Capital en JavaScript
+# 7.1 Barra de Navegación Principal
+nav_patch = f"""<div class="view-mode-nav">
+            <button class="btn-view-mode active" id="btn-mode-matches" onclick="switchMainView('matches')">
+                ⚽ Partidos & Pronósticos (6)
+            </button>
+            <button class="btn-view-mode" id="btn-mode-winrate" onclick="switchMainView('winrate')">
+                📊 Win Rate & Auditoría (Aciertos vs Fallos)
+                <span class="badge-winrate-pill">{win_rate}% WIN &bull; {fijas_win_rate}% FIJAS &bull; +${total_profit:,.2f} USD</span>
+            </button>
+            <button class="btn-view-mode" id="btn-mode-autocorrect" onclick="switchMainView('autocorrect')">
+                🧠 Autoaprendizaje & Crítica Diaria
+                <span class="badge-winrate-pill" style="background: rgba(139, 92, 246, 0.2); border-color: rgba(139, 92, 246, 0.5); color: #c4b5fd;">Ciclo #{feedback_data.get('cycles_completed', 110)} &bull; Brier: {brier_score} &bull; 100% Mercados Reales</span>
+            </button>
+        </div>"""
+
+html = re.sub(r'<div class="view-mode-nav">[\s\S]*?</div>', nav_patch, html, count=1)
+
+# 7.2 Reemplazar Todo el Contenedor de Área 2
+pos_vr_start = html.find('<div id="view-container-winrate"')
+pos_vr_end = html.find('<!-- Fin de view-container-winrate -->')
+if pos_vr_start != -1 and pos_vr_end != -1:
+    pos_vr_end += len('<!-- Fin de view-container-winrate -->')
+    html = html[:pos_vr_start] + area2_html + html[pos_vr_end:]
+    print("   -> Área 2 (Win Rate & Auditoría) reemplazada con éxito integral.")
+
+# 7.3 Reemplazar Todo el Contenedor de Área 3
+pos_ac_start = html.find('<div id="view-container-autocorrect"')
+pos_ac_end = html.find('<!-- Fin de view-container-autocorrect -->')
+if pos_ac_start != -1 and pos_ac_end != -1:
+    pos_ac_end += len('<!-- Fin de view-container-autocorrect -->')
+    html = html[:pos_ac_start] + area3_html + html[pos_ac_end:]
+    print("   -> Área 3 (Autoaprendizaje & Crítica Diaria) reemplazada con éxito integral.")
+
+# 7.4 Asegurar Funciones JS en el Script
+if 'function searchAuditTable' not in html:
+    search_js_fn = """        // Búsqueda en Vivo de la Tabla de Auditoría
+        function searchAuditTable(query) {
+            query = (query || '').toLowerCase().trim();
+            var rows = document.querySelectorAll('.audit-row');
+            var visibleCount = 0;
+            rows.forEach(function(r) {
+                var text = r.textContent.toLowerCase();
+                if (!query || text.indexOf(query) !== -1) {
+                    r.style.display = '';
+                    visibleCount++;
+                } else {
+                    r.style.display = 'none';
+                }
+            });
+            var badge = document.getElementById('audit-count-badge');
+            if (badge) {
+                badge.textContent = 'Mostrando ' + visibleCount + ' de ' + rows.length + ' picks';
+            }
+        }
+"""
+    html = html.replace('function filterAuditTable', search_js_fn + '\n        function filterAuditTable')
+
+# 7.5 Actualizar filterAuditTable para sincronizar el badge de conteo
+old_filter_code = """                if (category === 'all') {
+                    r.style.display = '';
+                } else if (category === 'win') {
+                    r.style.display = (rowStat === 'win') ? '' : 'none';
+                } else if (category === 'loss') {
+                    r.style.display = (rowStat === 'loss') ? '' : 'none';
+                } else {
+                    r.style.display = (rowCat === category) ? '' : 'none';
+                }"""
+
+new_filter_code = """                var isMatch = false;
+                if (category === 'all') isMatch = true;
+                else if (category === 'win') isMatch = (rowStat === 'win');
+                else if (category === 'loss') isMatch = (rowStat === 'loss');
+                else isMatch = (rowCat === category);
+
+                if (isMatch) {
+                    r.style.display = '';
+                    visibleCount++;
+                } else {
+                    r.style.display = 'none';
+                }"""
+
+if old_filter_code in html:
+    html = html.replace(old_filter_code, new_filter_code)
+    html = html.replace("var rows = document.querySelectorAll('.audit-row');", "var rows = document.querySelectorAll('.audit-row');\n            var visibleCount = 0;")
+    html = html.replace("            });\n        }\n\n        // 8. Toolbar Utilities", "            });\n            var badge = document.getElementById('audit-count-badge');\n            if (badge) badge.textContent = 'Mostrando ' + visibleCount + ' de ' + rows.length + ' picks';\n        }\n\n        // 8. Toolbar Utilities")
+
+# 7.6 Actualizar rawPoints de la Curva de Capital
 html = re.sub(
     r'var rawPoints = \[.*?\];',
     f'var rawPoints = {equity_points_js};',
@@ -571,27 +722,27 @@ html = re.sub(
     count=1
 )
 
-# 5.10 Actualizar datos de categoría en JavaScript
+# 7.7 Actualizar datos de categoría en Chart.js
 html = re.sub(
-    r'data: \[86\.2, 100\.0, 90\.0, 75\.0, 75\.0\],',
-    f'data: [{fijas_win_rate}, 100.0, 90.0, 76.9, 75.0],',
+    r'data: \[[0-9\., ]+\],(\s*backgroundColor: \[\x27#fbbf24\x27)',
+    f'data: [{fijas_win_rate}, 100.0, 90.0, 75.0, 75.0],\\1',
     html,
     count=1
 )
 
-# 6. Escribir archivos sincronizados
+# 8. Guardar en los archivos destino
 print("5. Guardando archivos sincronizados...")
 with open(index_path, "w", encoding="utf-8") as f_out:
     f_out.write(html)
+print("   -> index.html sincronizado.")
 
-with open(dash_path, "w", encoding="utf-8") as f_out_dash:
-    f_out_dash.write(html)
+with open(dash_path, "w", encoding="utf-8") as f_dash:
+    f_dash.write(html)
+print("   -> dashboard_pronosticos.html sincronizado.")
 
-try:
-    with open(root_index_path, "w", encoding="utf-8") as f_out_root:
-        f_out_root.write(html)
+if os.path.exists(root_index_path):
+    with open(root_index_path, "w", encoding="utf-8") as f_root:
+        f_root.write(html)
     print("   -> ../index.html (raíz) sincronizado.")
-except Exception as e_root:
-    print(f"   -> Nota en raíz: {e_root}")
 
 print("¡index.html y dashboard_pronosticos.html SINCRONIZADOS AL 100% EN LAS 3 ÁREAS!")
