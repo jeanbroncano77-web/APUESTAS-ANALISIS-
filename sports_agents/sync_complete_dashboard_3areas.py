@@ -355,6 +355,54 @@ area3_html = f"""        <!-- VISTA 3: AUTOAPRENDIZAJE & CRÍTICA DIARIA -->
             <!-- AUTOPSIAS DE APRENDIZAJE CUANTITATIVO RECIENTE -->
             <!-- ======================================================== -->
 
+                        <!-- AUTOPSIA #10: MACARÁ 1-0 INDEPENDIENTE DEL VALLE (LA TRAMPA DEL CAMPEÓN ANTICIPADO) -->
+            <div class="autopsy-card" style="border: 2px solid rgba(239, 68, 68, 0.6); background: rgba(30, 27, 75, 0.7); box-shadow: 0 16px 36px -8px rgba(239, 68, 68, 0.35); margin-bottom: 2rem;">
+                <div class="autopsy-header">
+                    <div>
+                        <div class="autopsy-match" style="color: #f87171; display: flex; align-items: center; gap: 0.5rem;">
+                            <span>🚨 AUTOPSIA CLÍNICA #10 (CASO REAL LIGAPRO):</span>
+                        </div>
+                        <div style="font-size: 1.25rem; font-weight: 800; color: #ffffff; margin-top: 0.25rem;">
+                            Macará 1-0 Independiente del Valle &bull; La Trampa Psicológica del "Campeón Anticipado" de Visita
+                        </div>
+                        <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.2rem;">
+                            Componente: SportsPsychologyAgent &bull; MarketRealityAgent &bull; Factor 'championship_pressure_away_freeze'
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 0.35rem;">
+                        <span class="badge-status badge-loss" style="background: rgba(239, 68, 68, 0.25); border: 1px solid rgba(239, 68, 68, 0.6); color: #fca5a5; font-size: 0.85rem;">
+                            ❌ TRASPIÉ DEL GIGANTE VISITANTE
+                        </span>
+                        <span class="badge-status badge-win" style="background: rgba(16, 185, 129, 0.25); border: 1px solid rgba(16, 185, 129, 0.6); color: #6ee7b7; font-size: 0.85rem;">
+                            🛡️ REGLA ORO CONFIRMADA POR EL USUARIO
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="autopsy-split">
+                    <div class="box-flaw" style="border-color: rgba(239, 68, 68, 0.4); background: rgba(239, 68, 68, 0.1);">
+                        <div class="box-title-flaw">
+                            <span>❌ Diagnóstico Táctico y Psicológico (¿Qué ocurrió en Ambato?)</span>
+                        </div>
+                        <div class="box-text">
+                            <p><strong>1. La Presión de Coronarse de Visita:</strong> IDV llegaba a Ambato sabiendo que un triunfo los consagraba campeones nacionales. Esa urgencia generó precipitación y rigidez motriz, mientras Macará jugó con el orgullo herido de no permitir festejos ajenos en el Bellavista.</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. Varianza Brutal en Cancha:</strong> El arquero Rodrigo Rodríguez le atajó un penal a IDV, el VAR les anuló un gol milimétrico, y al 59' Agustín Campana marcó el 1-0 definitivo para Macará. ¡El favorito cayó estrepitosamente!</p>
+                            <p style="margin-top: 0.5rem;"><strong>3. ¡Salvación del Usuario!:</strong> El usuario detectó a tiempo el resultado previo real, evitando caer en la trampa en la que cayeron miles de apostadores en Ecuador.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="box-solution" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
+                        <div class="box-title-solution">
+                            <span>🛡️ Ley de Oro Implementada en FeedbackEngine 3.0</span>
+                        </div>
+                        <div class="box-text">
+                            <p><strong>1. Veto Definitivo a Victoria Simple Visitante en Partidos de Título:</strong> Se prohíbe de raíz recomendar Victoria Directa (1X2) a un equipo que busca ser campeón fuera de casa sin cobertura de Doble Oportunidad o Empate No Válido.</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. Ponderación de Resistencia Local (1.40x):</strong> Los equipos locales que enfrentan a un candidato al título en estadios de altura multiplican su agresividad defensiva por 1.40x.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- AUTOPSIA #9: LEEDS UNITED 1-1 MANCHESTER UNITED (FALLO REAL EN PREMIER LEAGUE) -->
             <div class="autopsy-card" style="border: 2px solid rgba(239, 68, 68, 0.6); background: rgba(30, 27, 75, 0.7); box-shadow: 0 16px 36px -8px rgba(239, 68, 68, 0.35); margin-bottom: 2rem;">
                 <div class="autopsy-header">

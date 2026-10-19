@@ -552,18 +552,8 @@
   "2026-10-19": {
     "date_str": "19/10/2026",
     "day_name": "Lunes",
-    "competition": "LigaPro Ecuador, Premier League, LaLiga EA Sports & Serie A",
+    "competition": "Premier League, LaLiga EA Sports, Serie A, LigaPro & Liga Profesional Argentina",
     "fixtures": [
-      [
-        "Mushuc Runa",
-        "Orense SC",
-        "DOBLE_OPORTUNIDAD"
-      ],
-      [
-        "Macará",
-        "Independiente del Valle",
-        "DOBLE_OPORTUNIDAD"
-      ],
       [
         "Tottenham Hotspur",
         "Coventry City",
@@ -583,6 +573,16 @@
         "Parma",
         "Torino",
         "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Mushuc Runa",
+        "Orense SC",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Deportivo Riestra",
+        "Unión de Santa Fe",
+        "GOLES_UNDER"
       ]
     ]
   }

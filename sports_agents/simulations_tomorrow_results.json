@@ -1,880 +1,9 @@
 {
-  "GeneratedAt": "2026-10-18 18:58:38",
+  "GeneratedAt": "2026-10-18 19:54:00",
   "TargetDay": "Lunes",
   "TargetDate": "19/10/2026",
   "TemporalLabel": "MAÑANA",
   "Matches": [
-    {
-      "match": "Mushuc Runa vs Orense SC",
-      "home_team": "Mushuc Runa",
-      "away_team": "Orense SC",
-      "context": {
-        "tournament": "LigaPro Ecuabet • Fase Final (Ecuador)",
-        "stadium": "Estadio COAC Mushuc Runa (Echaleche, 3,250 msnm)",
-        "spectators_est": "8,500 espectadores (13:30 Hora Ecuador)",
-        "referee": "Árbitro Central LigaPro",
-        "referee_avg_yellows": 4.8,
-        "referee_avg_reds": 0.22,
-        "intensity": "Muy Alta (Clima gélido y sol andino a 3,250m; ventaja física para el Poncho frente al calor costero de Orense)"
-      },
-      "projections": {
-        "expected_goals": {
-          "home": 1.1,
-          "away": 0.87,
-          "total": 1.97
-        },
-        "variance_and_uncertainty": {
-          "variance_index": 0.8,
-          "is_high_volatility": false,
-          "rank_factor_applied": 0.09
-        },
-        "expected_corners": {
-          "home": 4.59,
-          "away": 4.29,
-          "total": 8.88,
-          "home_quantiles": {
-            "p10": 2.8,
-            "p90": 6.7
-          },
-          "away_quantiles": {
-            "p10": 2.7,
-            "p90": 6.2
-          }
-        },
-        "expected_yellow_cards": {
-          "home": 2.5,
-          "away": 2.88,
-          "total": 5.38
-        },
-        "expected_shots": {
-          "home": 9.04,
-          "away": 8.98
-        }
-      },
-      "tactical_analysis": {
-        "home_manager": {
-          "style": "Estándar",
-          "pace": "Medio"
-        },
-        "away_manager": {
-          "style": "Estándar",
-          "pace": "Medio"
-        },
-        "tactical_xg_multiplier_home": 1.0,
-        "tactical_xg_multiplier_away": 1.0,
-        "corner_dampener_factor": 1.0,
-        "player_role_restrictions": {},
-        "tactical_summary": "Choque de estilos: Estándar vs Estándar"
-      },
-      "squad_health": {
-        "home_team": "Mushuc Runa",
-        "away_team": "Orense SC",
-        "home_vetoed": [],
-        "away_vetoed": [],
-        "home_reallocation": "Plantel al 100% sin reasignación necesaria.",
-        "away_reallocation": "Plantel al 100% sin reasignación necesaria.",
-        "home_health_status": "Plantel Ratificado al 100%",
-        "away_health_status": "Plantel Ratificado al 100%",
-        "status": "Auditoría Médica y Convocatorias Oficiales Verificadas"
-      },
-      "psychological_context": {
-        "tournament_urgency": 0.9,
-        "is_friendly": false,
-        "stadium_name": "Estadio Neutral",
-        "intimidation_factor": 0.5,
-        "intimidation_impact": "Neutro",
-        "minimum_draw_floor_pct": 26.0,
-        "complacency_risk": "Medio",
-        "psychological_notes": "Urgencia: Máxima (Puntos Oficiales) | Caldera: 50.0%"
-      },
-      "momentum_analysis": {
-        "agent": "MomentumStreakAgent",
-        "version": "1.0.0",
-        "home_team": "Mushuc Runa",
-        "away_team": "Orense SC",
-        "home_momentum_factor": 1.0,
-        "away_momentum_factor": 1.0,
-        "momentum_differential": 0.0,
-        "has_breakthrough": false,
-        "breakthrough_summary": "Ambos equipos en rangos estándar de volatilidad.",
-        "home_details": null,
-        "away_details": null,
-        "tier1_dampener_active": false,
-        "recommendation_bias": "MANTENER_EQUILIBRIO"
-      },
-      "media_intelligence": {
-        "agent": "SportsMediaScoutAgent",
-        "version": "1.0.0",
-        "sources_consulted": [
-          "ESPN Deportes",
-          "ESPN Ecuador (https://www.espn.com.ec/)",
-          "Fox Sports",
-          "TNT Sports"
-        ],
-        "has_tier1_powerhouse": false,
-        "tier1_team": null,
-        "blowout_risk_level": "MODERADO",
-        "editorial_restrictions": [],
-        "editorial_insights": [
-          "COBERTURA ESPN ECUADOR / FOX SPORTS: Enfrentamiento parejo (Mushuc Runa vs Orense SC). Partida de ritmo medio con preponderancia de mercados de goles moderados y dobles oportunidades respaldadas por localía."
-        ],
-        "press_quotes": [],
-        "summary_tag": "Señal Editorial Activa (MODERADO Riesgo Desborde)"
-      },
-      "score_prediction": {
-        "most_probable_score": "0 - 0",
-        "most_probable_prob_pct": 16.9,
-        "top_5_scores": [
-          {
-            "score": "0 - 0",
-            "home_goals": 0,
-            "away_goals": 0,
-            "probability_pct": 16.9
-          },
-          {
-            "score": "1 - 0",
-            "home_goals": 1,
-            "away_goals": 0,
-            "probability_pct": 13.7
-          },
-          {
-            "score": "1 - 1",
-            "home_goals": 1,
-            "away_goals": 1,
-            "probability_pct": 13.46
-          },
-          {
-            "score": "0 - 1",
-            "home_goals": 0,
-            "away_goals": 1,
-            "probability_pct": 10.76
-          },
-          {
-            "score": "2 - 0",
-            "home_goals": 2,
-            "away_goals": 0,
-            "probability_pct": 8.26
-          }
-        ],
-        "1x2_probabilities": {
-          "home_win_pct": 38.89,
-          "draw_pct": 33.68,
-          "away_win_pct": 27.43
-        },
-        "goals_markets": {
-          "over_0_5_pct": 83.1,
-          "under_0_5_pct": 16.9,
-          "over_1_5_pct": 58.64,
-          "under_1_5_pct": 41.36,
-          "over_2_5_pct": 31.52,
-          "under_2_5_pct": 68.48,
-          "over_3_5_pct": 14.57,
-          "under_3_5_pct": 85.43,
-          "over_4_5_pct": 5.83,
-          "under_4_5_pct": 94.17,
-          "under_5_5_pct": 97.94,
-          "btts_yes_pct": 37.98,
-          "btts_no_pct": 62.02
-        },
-        "exact_market_probabilities": {
-          "home_win_pct": 38.89,
-          "draw_pct": 33.68,
-          "away_win_pct": 27.43,
-          "double_chance_1x_pct": 72.57,
-          "double_chance_x2_pct": 61.11,
-          "double_chance_12_pct": 66.32,
-          "dnb_home_pct": 58.64,
-          "dnb_away_pct": 41.36,
-          "over_0_5_pct": 83.1,
-          "under_0_5_pct": 16.9,
-          "over_1_5_pct": 58.64,
-          "under_1_5_pct": 41.36,
-          "over_2_5_pct": 31.52,
-          "under_2_5_pct": 68.48,
-          "over_3_5_pct": 14.57,
-          "under_3_5_pct": 85.43,
-          "over_4_5_pct": 5.83,
-          "under_4_5_pct": 94.17,
-          "under_5_5_pct": 97.94,
-          "btts_yes_pct": 37.98,
-          "btts_no_pct": 62.02,
-          "home_over_0_5_pct": 64.65,
-          "home_under_2_5_pct": 89.15,
-          "away_over_0_5_pct": 56.42,
-          "away_under_2_5_pct": 93.48,
-          "home_plus_1_5_pct": 89.7,
-          "away_plus_1_5_pct": 82.71,
-          "home_plus_2_5_pct": 97.06,
-          "away_plus_2_5_pct": 94.0,
-          "home_minus_1_5_pct": 17.29,
-          "away_minus_1_5_pct": 10.3,
-          "home_clean_sheet_pct": 43.58,
-          "away_clean_sheet_pct": 35.35,
-          "home_win_by_1_pct": 21.6,
-          "away_win_by_1_pct": 17.13
-        },
-        "simulated_averages": {
-          "home_goals": 1.1,
-          "away_goals": 0.89,
-          "total_goals": 1.98
-        }
-      },
-      "corners_prediction": {
-        "home_corners_expected": 3.9,
-        "away_corners_expected": 3.6,
-        "total_corners_expected": 7.5,
-        "most_likely_range": "6 - 9 córners",
-        "lines": {
-          "over_6_5_pct": 62.2,
-          "under_6_5_pct": 37.8,
-          "over_7_5_pct": 47.5,
-          "under_7_5_pct": 52.5,
-          "over_8_5_pct": 33.8,
-          "under_8_5_pct": 66.2,
-          "over_9_5_pct": 22.4,
-          "under_9_5_pct": 77.6,
-          "over_10_5_pct": 13.8,
-          "under_10_5_pct": 86.2,
-          "over_11_5_pct": 7.9,
-          "under_11_5_pct": 92.1,
-          "under_12_5_pct": 95.7
-        },
-        "team_lines": {
-          "home_over_4_5_pct": 35.2,
-          "home_over_5_5_pct": 19.9,
-          "away_over_3_5_pct": 48.5,
-          "away_over_4_5_pct": 29.4
-        }
-      },
-      "cards_prediction": {
-        "referee": "Árbitro Central LigaPro",
-        "home_yellow_cards": 2.4,
-        "away_yellow_cards": 2.7,
-        "total_yellow_cards": 5.1,
-        "red_cards": {
-          "expected_home_reds": 0.1,
-          "expected_away_reds": 0.11,
-          "expected_total_reds": 0.21,
-          "home_red_prob_pct": 9.7,
-          "away_red_prob_prob_pct": 11.2,
-          "any_red_card_in_match_pct": 18.9
-        },
-        "total_cards_expected": 5.3,
-        "card_lines": {
-          "over_3_5_cards_pct": 75.1,
-          "under_3_5_cards_pct": 24.9,
-          "over_4_5_cards_pct": 58.0,
-          "under_4_5_cards_pct": 42.0,
-          "over_5_5_cards_pct": 40.5,
-          "under_5_5_cards_pct": 59.5
-        }
-      },
-      "player_props": {
-        "home_key_players": [
-          {
-            "name": "Enzo Ariel Fernández",
-            "position": "Delantero de Área",
-            "health_status": "Disponible",
-            "expected_shots": 1.61,
-            "expected_sot": 0.71,
-            "prob_at_least_1_sot_pct": 50.8,
-            "prob_at_least_2_sot_pct": 15.9,
-            "prob_over_1_5_shots_pct": 48.0,
-            "prob_over_2_5_shots_pct": 22.0,
-            "goal_anytime_prob_pct": 36.0,
-            "reallocated_from": null
-          },
-          {
-            "name": "Joaquín Vergés",
-            "position": "Especialista Pelota Parada",
-            "health_status": "Disponible",
-            "expected_shots": 1.55,
-            "expected_sot": 0.65,
-            "prob_at_least_1_sot_pct": 47.6,
-            "prob_at_least_2_sot_pct": 13.7,
-            "prob_over_1_5_shots_pct": 45.9,
-            "prob_over_2_5_shots_pct": 20.4,
-            "goal_anytime_prob_pct": 32.0,
-            "reallocated_from": null
-          },
-          {
-            "name": "Mauricio Alonso",
-            "position": "Extremo Rápido",
-            "health_status": "Disponible",
-            "expected_shots": 1.23,
-            "expected_sot": 0.52,
-            "prob_at_least_1_sot_pct": 40.3,
-            "prob_at_least_2_sot_pct": 9.5,
-            "prob_over_1_5_shots_pct": 34.7,
-            "prob_over_2_5_shots_pct": 12.6,
-            "goal_anytime_prob_pct": 22.0,
-            "reallocated_from": null
-          }
-        ],
-        "away_key_players": [
-          {
-            "name": "Miguel Parrales",
-            "position": "Delantero Centro",
-            "health_status": "Disponible",
-            "expected_shots": 1.67,
-            "expected_sot": 0.77,
-            "prob_at_least_1_sot_pct": 53.7,
-            "prob_at_least_2_sot_pct": 18.0,
-            "prob_over_1_5_shots_pct": 49.7,
-            "prob_over_2_5_shots_pct": 23.4,
-            "goal_anytime_prob_pct": 38.0,
-            "reallocated_from": null
-          },
-          {
-            "name": "Robert Burbano",
-            "position": "Extremo Rápido",
-            "health_status": "Disponible",
-            "expected_shots": 1.22,
-            "expected_sot": 0.51,
-            "prob_at_least_1_sot_pct": 40.1,
-            "prob_at_least_2_sot_pct": 9.4,
-            "prob_over_1_5_shots_pct": 34.4,
-            "prob_over_2_5_shots_pct": 12.5,
-            "goal_anytime_prob_pct": 22.0,
-            "reallocated_from": null
-          },
-          {
-            "name": "Agustín Herrera",
-            "position": "Segundo Punta",
-            "health_status": "Disponible",
-            "expected_shots": 1.15,
-            "expected_sot": 0.45,
-            "prob_at_least_1_sot_pct": 36.2,
-            "prob_at_least_2_sot_pct": 7.5,
-            "prob_over_1_5_shots_pct": 32.1,
-            "prob_over_2_5_shots_pct": 11.1,
-            "goal_anytime_prob_pct": 25.0,
-            "reallocated_from": null
-          }
-        ]
-      },
-      "la_fija_real": {
-        "market": "Doble Oportunidad",
-        "category_code": "DOBLE_OPORTUNIDAD",
-        "selection": "Mushuc Runa o Empate (1X)",
-        "probability": 72.6,
-        "odds": 1.45,
-        "_high_conviction": false,
-        "availability": "100% Casas de Apuestas (Bet365, Betano)",
-        "rationale": "Protección total ante el empate con 72.6% de cobertura matemática y factor local.",
-        "confidence_tier": "TIER_1_CANDADO",
-        "tier_badge": "🟢 CANDADO INSTITUCIONAL",
-        "_rank_score": 216.8,
-        "expected_value": 0.0527
-      },
-      "all_fija_options": [
-        {
-          "market": "Doble Oportunidad",
-          "category_code": "DOBLE_OPORTUNIDAD",
-          "selection": "Mushuc Runa o Empate (1X)",
-          "probability": 72.6,
-          "odds": 1.45,
-          "_high_conviction": false,
-          "availability": "100% Casas de Apuestas (Bet365, Betano)",
-          "rationale": "Protección total ante el empate con 72.6% de cobertura matemática y factor local.",
-          "confidence_tier": "TIER_1_CANDADO",
-          "tier_badge": "🟢 CANDADO INSTITUCIONAL",
-          "_rank_score": 216.8,
-          "expected_value": 0.0527
-        },
-        {
-          "market": "Total Tarjetas",
-          "category_code": "TARJETAS",
-          "selection": "Más de 3.5 tarjetas totales",
-          "probability": 75.1,
-          "odds": 1.41,
-          "_high_conviction": true,
-          "availability": "Universal en Bet365, Betano, Ecuabet",
-          "rationale": "Fricción disciplinaria elevada: 5.3 tarjetas esperadas en el cotejo bajo rigor arbitral.",
-          "confidence_tier": "TIER_2_VALOR",
-          "tier_badge": "🟡 VALOR ESTRATÉGICO",
-          "_rank_score": 181.48,
-          "expected_value": 0.0589
-        },
-        {
-          "market": "Total de Goles Fijo",
-          "category_code": "GOLES_OVER",
-          "selection": "Más de 0.5 goles totales",
-          "probability": 83.1,
-          "odds": 1.09,
-          "_high_conviction": false,
-          "availability": "Universal",
-          "rationale": "Línea de cobertura mínima que descarta el 0-0.",
-          "confidence_tier": "TIER_3_RIESGO",
-          "tier_badge": "🔴 OBSERVACIÓN / COBERTURA",
-          "_rank_score": 29.65,
-          "expected_value": -0.0942
-        }
-      ]
-    },
-    {
-      "match": "Macará vs Independiente del Valle",
-      "home_team": "Macará",
-      "away_team": "Independiente del Valle",
-      "context": {
-        "tournament": "LigaPro Ecuabet • Partido Definitorio por el Título",
-        "stadium": "Estadio Bellavista de Ambato (2,570 msnm)",
-        "spectators_est": "16,000 espectadores (15:30 Hora Ecuador — En vivo por Teleamazonas señal abierta)",
-        "referee": "Árbitro FIFA Ecuador",
-        "referee_avg_yellows": 4.5,
-        "referee_avg_reds": 0.18,
-        "intensity": "Máxima (Independiente del Valle se corona campeón con un triunfo ante el aguerrido Macará)"
-      },
-      "projections": {
-        "expected_goals": {
-          "home": 0.62,
-          "away": 2.46,
-          "total": 3.08
-        },
-        "variance_and_uncertainty": {
-          "variance_index": 0.9,
-          "is_high_volatility": false,
-          "rank_factor_applied": -0.36
-        },
-        "expected_corners": {
-          "home": 3.73,
-          "away": 5.94,
-          "total": 9.67,
-          "home_quantiles": {
-            "p10": 1.9,
-            "p90": 5.8
-          },
-          "away_quantiles": {
-            "p10": 4.3,
-            "p90": 7.8
-          }
-        },
-        "expected_yellow_cards": {
-          "home": 2.65,
-          "away": 1.82,
-          "total": 4.47
-        },
-        "expected_shots": {
-          "home": 9.77,
-          "away": 15.34
-        }
-      },
-      "tactical_analysis": {
-        "home_manager": {
-          "style": "Estándar",
-          "pace": "Medio"
-        },
-        "away_manager": {
-          "style": "Estándar",
-          "pace": "Medio"
-        },
-        "tactical_xg_multiplier_home": 1.0,
-        "tactical_xg_multiplier_away": 1.0,
-        "corner_dampener_factor": 0.85,
-        "player_role_restrictions": {},
-        "tactical_summary": "Choque de estilos: Estándar vs Estándar"
-      },
-      "squad_health": {
-        "home_team": "Macará",
-        "away_team": "Independiente del Valle",
-        "home_vetoed": [],
-        "away_vetoed": [],
-        "home_reallocation": "Plantel al 100% sin reasignación necesaria.",
-        "away_reallocation": "Plantel al 100% sin reasignación necesaria.",
-        "home_health_status": "Plantel Ratificado al 100%",
-        "away_health_status": "Plantel Ratificado al 100%",
-        "status": "Auditoría Médica y Convocatorias Oficiales Verificadas"
-      },
-      "psychological_context": {
-        "tournament_urgency": 0.9,
-        "is_friendly": false,
-        "stadium_name": "Estadio Neutral",
-        "intimidation_factor": 0.5,
-        "intimidation_impact": "Neutro",
-        "minimum_draw_floor_pct": 26.0,
-        "complacency_risk": "Medio",
-        "psychological_notes": "Urgencia: Máxima (Puntos Oficiales) | Caldera: 50.0%"
-      },
-      "momentum_analysis": {
-        "agent": "MomentumStreakAgent",
-        "version": "1.0.0",
-        "home_team": "Macará",
-        "away_team": "Independiente del Valle",
-        "home_momentum_factor": 1.0,
-        "away_momentum_factor": 1.0,
-        "momentum_differential": 0.0,
-        "has_breakthrough": false,
-        "breakthrough_summary": "Ambos equipos en rangos estándar de volatilidad.",
-        "home_details": null,
-        "away_details": null,
-        "tier1_dampener_active": false,
-        "recommendation_bias": "MANTENER_EQUILIBRIO"
-      },
-      "media_intelligence": {
-        "agent": "SportsMediaScoutAgent",
-        "version": "1.0.0",
-        "sources_consulted": [
-          "ESPN Deportes",
-          "ESPN Ecuador (https://www.espn.com.ec/)",
-          "Fox Sports",
-          "TNT Sports"
-        ],
-        "has_tier1_powerhouse": false,
-        "tier1_team": null,
-        "blowout_risk_level": "MODERADO",
-        "editorial_restrictions": [],
-        "editorial_insights": [
-          "COBERTURA ESPN ECUADOR / FOX SPORTS: Enfrentamiento parejo (Macará vs Independiente del Valle). Partida de ritmo medio con preponderancia de mercados de goles moderados y dobles oportunidades respaldadas por localía."
-        ],
-        "press_quotes": [],
-        "summary_tag": "Señal Editorial Activa (MODERADO Riesgo Desborde)"
-      },
-      "score_prediction": {
-        "most_probable_score": "0 - 2",
-        "most_probable_prob_pct": 13.16,
-        "top_5_scores": [
-          {
-            "score": "0 - 2",
-            "home_goals": 0,
-            "away_goals": 2,
-            "probability_pct": 13.16
-          },
-          {
-            "score": "0 - 1",
-            "home_goals": 0,
-            "away_goals": 1,
-            "probability_pct": 11.78
-          },
-          {
-            "score": "0 - 3",
-            "home_goals": 0,
-            "away_goals": 3,
-            "probability_pct": 10.39
-          },
-          {
-            "score": "1 - 2",
-            "home_goals": 1,
-            "away_goals": 2,
-            "probability_pct": 7.68
-          },
-          {
-            "score": "1 - 1",
-            "home_goals": 1,
-            "away_goals": 1,
-            "probability_pct": 7.4
-          }
-        ],
-        "1x2_probabilities": {
-          "home_win_pct": 7.48,
-          "draw_pct": 26.0,
-          "away_win_pct": 66.52
-        },
-        "goals_markets": {
-          "over_0_5_pct": 93.44,
-          "under_0_5_pct": 6.56,
-          "over_1_5_pct": 78.48,
-          "under_1_5_pct": 21.52,
-          "over_2_5_pct": 56.78,
-          "under_2_5_pct": 43.22,
-          "over_3_5_pct": 36.17,
-          "under_3_5_pct": 63.83,
-          "over_4_5_pct": 20.38,
-          "under_4_5_pct": 79.62,
-          "under_5_5_pct": 89.83,
-          "btts_yes_pct": 40.46,
-          "btts_no_pct": 59.54
-        },
-        "exact_market_probabilities": {
-          "home_win_pct": 7.48,
-          "draw_pct": 26.0,
-          "away_win_pct": 66.52,
-          "double_chance_1x_pct": 33.48,
-          "double_chance_x2_pct": 92.52,
-          "double_chance_12_pct": 74.0,
-          "dnb_home_pct": 10.11,
-          "dnb_away_pct": 89.89,
-          "over_0_5_pct": 93.44,
-          "under_0_5_pct": 6.56,
-          "over_1_5_pct": 78.48,
-          "under_1_5_pct": 21.52,
-          "over_2_5_pct": 56.78,
-          "under_2_5_pct": 43.22,
-          "over_3_5_pct": 36.17,
-          "under_3_5_pct": 63.83,
-          "over_4_5_pct": 20.38,
-          "under_4_5_pct": 79.62,
-          "under_5_5_pct": 89.83,
-          "btts_yes_pct": 40.46,
-          "btts_no_pct": 59.54,
-          "home_over_0_5_pct": 45.12,
-          "home_under_2_5_pct": 97.06,
-          "away_over_0_5_pct": 88.78,
-          "away_under_2_5_pct": 57.33,
-          "home_plus_1_5_pct": 47.07,
-          "away_plus_1_5_pct": 97.72,
-          "home_plus_2_5_pct": 67.72,
-          "away_plus_2_5_pct": 99.53,
-          "home_minus_1_5_pct": 2.28,
-          "away_minus_1_5_pct": 52.93,
-          "home_clean_sheet_pct": 11.22,
-          "away_clean_sheet_pct": 54.88,
-          "home_win_by_1_pct": 6.13,
-          "away_win_by_1_pct": 21.73
-        },
-        "simulated_averages": {
-          "home_goals": 0.62,
-          "away_goals": 2.47,
-          "total_goals": 3.09
-        }
-      },
-      "corners_prediction": {
-        "home_corners_expected": 2.7,
-        "away_corners_expected": 4.3,
-        "total_corners_expected": 7.0,
-        "most_likely_range": "6 - 8 córners",
-        "lines": {
-          "over_6_5_pct": 55.0,
-          "under_6_5_pct": 45.0,
-          "over_7_5_pct": 40.1,
-          "under_7_5_pct": 59.9,
-          "over_8_5_pct": 27.1,
-          "under_8_5_pct": 72.9,
-          "over_9_5_pct": 17.0,
-          "under_9_5_pct": 83.0,
-          "over_10_5_pct": 9.9,
-          "under_10_5_pct": 90.1,
-          "over_11_5_pct": 5.3,
-          "under_11_5_pct": 94.7,
-          "under_12_5_pct": 97.3
-        },
-        "team_lines": {
-          "home_over_4_5_pct": 13.7,
-          "home_over_5_5_pct": 5.7,
-          "away_over_3_5_pct": 62.3,
-          "away_over_4_5_pct": 43.0
-        }
-      },
-      "cards_prediction": {
-        "referee": "Árbitro FIFA Ecuador",
-        "home_yellow_cards": 2.7,
-        "away_yellow_cards": 1.8,
-        "total_yellow_cards": 4.5,
-        "red_cards": {
-          "expected_home_reds": 0.1,
-          "expected_away_reds": 0.07,
-          "expected_total_reds": 0.17,
-          "home_red_prob_pct": 10.1,
-          "away_red_prob_prob_pct": 7.0,
-          "any_red_card_in_match_pct": 15.7
-        },
-        "total_cards_expected": 4.7,
-        "card_lines": {
-          "over_3_5_cards_pct": 65.5,
-          "under_3_5_cards_pct": 34.5,
-          "over_4_5_cards_pct": 46.5,
-          "under_4_5_cards_pct": 53.5,
-          "over_5_5_cards_pct": 29.4,
-          "under_5_5_cards_pct": 70.6
-        }
-      },
-      "player_props": {
-        "home_key_players": [
-          {
-            "name": "Facundo Pons",
-            "position": "Delantero Centro",
-            "health_status": "Disponible",
-            "expected_shots": 1.67,
-            "expected_sot": 0.77,
-            "prob_at_least_1_sot_pct": 53.6,
-            "prob_at_least_2_sot_pct": 18.0,
-            "prob_over_1_5_shots_pct": 49.9,
-            "prob_over_2_5_shots_pct": 23.6,
-            "goal_anytime_prob_pct": 35.0,
-            "reallocated_from": null
-          },
-          {
-            "name": "Janpol Morales",
-            "position": "Extremo",
-            "health_status": "Disponible",
-            "expected_shots": 1.47,
-            "expected_sot": 0.63,
-            "prob_at_least_1_sot_pct": 46.6,
-            "prob_at_least_2_sot_pct": 13.1,
-            "prob_over_1_5_shots_pct": 43.1,
-            "prob_over_2_5_shots_pct": 18.3,
-            "goal_anytime_prob_pct": 28.0,
-            "reallocated_from": null
-          },
-          {
-            "name": "Emiliano Romero",
-            "position": "Volante Central",
-            "health_status": "Disponible",
-            "expected_shots": 0.77,
-            "expected_sot": 0.21,
-            "prob_at_least_1_sot_pct": 18.9,
-            "prob_at_least_2_sot_pct": 1.9,
-            "prob_over_1_5_shots_pct": 18.0,
-            "prob_over_2_5_shots_pct": 4.3,
-            "goal_anytime_prob_pct": 10.0,
-            "reallocated_from": null
-          }
-        ],
-        "away_key_players": [
-          {
-            "name": "Kendry Páez",
-            "position": "Mediapunta / Creador",
-            "health_status": "Disponible",
-            "expected_shots": 3.18,
-            "expected_sot": 1.53,
-            "prob_at_least_1_sot_pct": 78.4,
-            "prob_at_least_2_sot_pct": 45.3,
-            "prob_over_1_5_shots_pct": 82.6,
-            "prob_over_2_5_shots_pct": 61.5,
-            "goal_anytime_prob_pct": 42.0,
-            "reallocated_from": null
-          },
-          {
-            "name": "Michael Hoyos",
-            "position": "Delantero Centro",
-            "health_status": "Disponible",
-            "expected_shots": 3.07,
-            "expected_sot": 1.42,
-            "prob_at_least_1_sot_pct": 75.9,
-            "prob_at_least_2_sot_pct": 41.7,
-            "prob_over_1_5_shots_pct": 81.1,
-            "prob_over_2_5_shots_pct": 59.2,
-            "goal_anytime_prob_pct": 45.0,
-            "reallocated_from": null
-          },
-          {
-            "name": "Júnior Sornoza",
-            "position": "Organizador / 10",
-            "health_status": "Disponible",
-            "expected_shots": 2.41,
-            "expected_sot": 1.21,
-            "prob_at_least_1_sot_pct": 70.0,
-            "prob_at_least_2_sot_pct": 33.9,
-            "prob_over_1_5_shots_pct": 69.4,
-            "prob_over_2_5_shots_pct": 43.3,
-            "goal_anytime_prob_pct": 35.0,
-            "reallocated_from": null
-          },
-          {
-            "name": "Renato Ibarra",
-            "position": "Extremo Ofensivo",
-            "health_status": "Disponible",
-            "expected_shots": 2.63,
-            "expected_sot": 1.1,
-            "prob_at_least_1_sot_pct": 66.6,
-            "prob_at_least_2_sot_pct": 29.9,
-            "prob_over_1_5_shots_pct": 73.8,
-            "prob_over_2_5_shots_pct": 48.9,
-            "goal_anytime_prob_pct": 30.0,
-            "reallocated_from": null
-          }
-        ]
-      },
-      "la_fija_real": {
-        "market": "Victoria Directa (1X2)",
-        "category_code": "VICTORIA_DIRECTA",
-        "selection": "Independiente del Valle Gana el Partido (2)",
-        "probability": 66.5,
-        "odds": 1.59,
-        "_high_conviction": true,
-        "availability": "Universal en todas las casas (Bet365, Betano, 1xBet, Codere)",
-        "rationale": "Convicción visitante: Independiente del Valle proyecta superioridad táctica con 66.5% de probabilidad de llevarse los 3 puntos.",
-        "confidence_tier": "TIER_1_CANDADO",
-        "tier_badge": "🟢 VICTORIA DIRECTA - ALTA CONVICCIÓN",
-        "_rank_score": 278.36,
-        "expected_value": 0.0574
-      },
-      "all_fija_options": [
-        {
-          "market": "Victoria Directa (1X2)",
-          "category_code": "VICTORIA_DIRECTA",
-          "selection": "Independiente del Valle Gana el Partido (2)",
-          "probability": 66.5,
-          "odds": 1.59,
-          "_high_conviction": true,
-          "availability": "Universal en todas las casas (Bet365, Betano, 1xBet, Codere)",
-          "rationale": "Convicción visitante: Independiente del Valle proyecta superioridad táctica con 66.5% de probabilidad de llevarse los 3 puntos.",
-          "confidence_tier": "TIER_1_CANDADO",
-          "tier_badge": "🟢 VICTORIA DIRECTA - ALTA CONVICCIÓN",
-          "_rank_score": 278.36,
-          "expected_value": 0.0574
-        },
-        {
-          "market": "Total de Goles Fijo",
-          "category_code": "GOLES_OVER",
-          "selection": "Más de 1.5 goles totales",
-          "probability": 78.5,
-          "odds": 1.35,
-          "_high_conviction": false,
-          "availability": "Universal en todas las plataformas",
-          "rationale": "Volumen ofensivo conjunto proyecta 2.5 goles esperados con 78.5% de ver 2 o más tantos.",
-          "confidence_tier": "TIER_2_VALOR",
-          "tier_badge": "🟡 VALOR ESTRATÉGICO",
-          "_rank_score": 186.72,
-          "expected_value": 0.0598
-        },
-        {
-          "market": "Total Tarjetas",
-          "category_code": "TARJETAS",
-          "selection": "Más de 3.5 tarjetas totales",
-          "probability": 70.0,
-          "odds": 1.51,
-          "_high_conviction": false,
-          "availability": "Universal en Bet365, Betano, Ecuabet",
-          "rationale": "Fricción disciplinaria elevada: 4.7 tarjetas esperadas en el cotejo bajo rigor arbitral.",
-          "confidence_tier": "TIER_2_VALOR",
-          "tier_badge": "🟡 VALOR ESTRATÉGICO",
-          "_rank_score": 173.55,
-          "expected_value": 0.057
-        },
-        {
-          "market": "Victoria Sin Empate (DNB)",
-          "category_code": "VICTORIA_SIN_EMPATE",
-          "selection": "Independiente del Valle Gana (Empate No Válido / DNB)",
-          "probability": 89.89,
-          "odds": 1.18,
-          "_high_conviction": true,
-          "availability": "100% Casas de Apuestas (Mercado Draw No Bet)",
-          "rationale": "Triunfo de Independiente del Valle con devolución total en caso de empate (cobertura DNB: 89.89%).",
-          "confidence_tier": "TIER_1_CANDADO",
-          "tier_badge": "🟢 CANDADO INSTITUCIONAL",
-          "_rank_score": 158.94,
-          "expected_value": 0.0607
-        },
-        {
-          "market": "Doble Oportunidad",
-          "category_code": "DOBLE_OPORTUNIDAD",
-          "selection": "Empate o Independiente del Valle (X2)",
-          "probability": 92.5,
-          "odds": 1.13,
-          "_high_conviction": true,
-          "availability": "100% Casas de Apuestas (Bet365, Betano)",
-          "rationale": "El visitante Independiente del Valle puntúa en el 92.5% de las simulaciones tácticas.",
-          "confidence_tier": "TIER_1_CANDADO",
-          "tier_badge": "🟢 CANDADO INSTITUCIONAL",
-          "_rank_score": 90.55,
-          "expected_value": 0.0453
-        },
-        {
-          "market": "Total de Goles Fijo",
-          "category_code": "GOLES_OVER",
-          "selection": "Más de 0.5 goles totales",
-          "probability": 93.4,
-          "odds": 1.09,
-          "_high_conviction": false,
-          "availability": "Universal",
-          "rationale": "Línea de cobertura mínima que descarta el 0-0.",
-          "confidence_tier": "TIER_3_RIESGO",
-          "tier_badge": "🔴 OBSERVACIÓN / COBERTURA",
-          "_rank_score": 47.82,
-          "expected_value": 0.0181
-        }
-      ]
-    },
     {
       "match": "Tottenham Hotspur vs Coventry City",
       "home_team": "Tottenham Hotspur",
@@ -2631,6 +1760,850 @@
           "tier_badge": "🔴 OBSERVACIÓN / COBERTURA",
           "_rank_score": 45.92,
           "expected_value": 0.0115
+        }
+      ]
+    },
+    {
+      "match": "Mushuc Runa vs Orense SC",
+      "home_team": "Mushuc Runa",
+      "away_team": "Orense SC",
+      "context": {
+        "tournament": "LigaPro Ecuabet • Fase Final (Ecuador)",
+        "stadium": "Estadio COAC Mushuc Runa (Echaleche, 3,250 msnm)",
+        "spectators_est": "8,500 espectadores (13:30 Hora Ecuador)",
+        "referee": "Árbitro Central LigaPro",
+        "referee_avg_yellows": 4.8,
+        "referee_avg_reds": 0.22,
+        "intensity": "Muy Alta (Clima gélido y sol andino a 3,250m; ventaja física para el Poncho frente al calor costero de Orense)"
+      },
+      "projections": {
+        "expected_goals": {
+          "home": 1.1,
+          "away": 0.87,
+          "total": 1.97
+        },
+        "variance_and_uncertainty": {
+          "variance_index": 0.8,
+          "is_high_volatility": false,
+          "rank_factor_applied": 0.09
+        },
+        "expected_corners": {
+          "home": 4.59,
+          "away": 4.29,
+          "total": 8.88,
+          "home_quantiles": {
+            "p10": 2.8,
+            "p90": 6.7
+          },
+          "away_quantiles": {
+            "p10": 2.7,
+            "p90": 6.2
+          }
+        },
+        "expected_yellow_cards": {
+          "home": 2.5,
+          "away": 2.88,
+          "total": 5.38
+        },
+        "expected_shots": {
+          "home": 9.04,
+          "away": 8.98
+        }
+      },
+      "tactical_analysis": {
+        "home_manager": {
+          "style": "Estándar",
+          "pace": "Medio"
+        },
+        "away_manager": {
+          "style": "Estándar",
+          "pace": "Medio"
+        },
+        "tactical_xg_multiplier_home": 1.0,
+        "tactical_xg_multiplier_away": 1.0,
+        "corner_dampener_factor": 1.0,
+        "player_role_restrictions": {},
+        "tactical_summary": "Choque de estilos: Estándar vs Estándar"
+      },
+      "squad_health": {
+        "home_team": "Mushuc Runa",
+        "away_team": "Orense SC",
+        "home_vetoed": [],
+        "away_vetoed": [],
+        "home_reallocation": "Plantel al 100% sin reasignación necesaria.",
+        "away_reallocation": "Plantel al 100% sin reasignación necesaria.",
+        "home_health_status": "Plantel Ratificado al 100%",
+        "away_health_status": "Plantel Ratificado al 100%",
+        "status": "Auditoría Médica y Convocatorias Oficiales Verificadas"
+      },
+      "psychological_context": {
+        "tournament_urgency": 0.9,
+        "is_friendly": false,
+        "stadium_name": "Estadio Neutral",
+        "intimidation_factor": 0.5,
+        "intimidation_impact": "Neutro",
+        "minimum_draw_floor_pct": 26.0,
+        "complacency_risk": "Medio",
+        "psychological_notes": "Urgencia: Máxima (Puntos Oficiales) | Caldera: 50.0%"
+      },
+      "momentum_analysis": {
+        "agent": "MomentumStreakAgent",
+        "version": "1.0.0",
+        "home_team": "Mushuc Runa",
+        "away_team": "Orense SC",
+        "home_momentum_factor": 1.0,
+        "away_momentum_factor": 1.0,
+        "momentum_differential": 0.0,
+        "has_breakthrough": false,
+        "breakthrough_summary": "Ambos equipos en rangos estándar de volatilidad.",
+        "home_details": null,
+        "away_details": null,
+        "tier1_dampener_active": false,
+        "recommendation_bias": "MANTENER_EQUILIBRIO"
+      },
+      "media_intelligence": {
+        "agent": "SportsMediaScoutAgent",
+        "version": "1.0.0",
+        "sources_consulted": [
+          "ESPN Deportes",
+          "ESPN Ecuador (https://www.espn.com.ec/)",
+          "Fox Sports",
+          "TNT Sports"
+        ],
+        "has_tier1_powerhouse": false,
+        "tier1_team": null,
+        "blowout_risk_level": "MODERADO",
+        "editorial_restrictions": [],
+        "editorial_insights": [
+          "COBERTURA ESPN ECUADOR / FOX SPORTS: Enfrentamiento parejo (Mushuc Runa vs Orense SC). Partida de ritmo medio con preponderancia de mercados de goles moderados y dobles oportunidades respaldadas por localía."
+        ],
+        "press_quotes": [],
+        "summary_tag": "Señal Editorial Activa (MODERADO Riesgo Desborde)"
+      },
+      "score_prediction": {
+        "most_probable_score": "0 - 0",
+        "most_probable_prob_pct": 16.9,
+        "top_5_scores": [
+          {
+            "score": "0 - 0",
+            "home_goals": 0,
+            "away_goals": 0,
+            "probability_pct": 16.9
+          },
+          {
+            "score": "1 - 0",
+            "home_goals": 1,
+            "away_goals": 0,
+            "probability_pct": 13.7
+          },
+          {
+            "score": "1 - 1",
+            "home_goals": 1,
+            "away_goals": 1,
+            "probability_pct": 13.46
+          },
+          {
+            "score": "0 - 1",
+            "home_goals": 0,
+            "away_goals": 1,
+            "probability_pct": 10.76
+          },
+          {
+            "score": "2 - 0",
+            "home_goals": 2,
+            "away_goals": 0,
+            "probability_pct": 8.26
+          }
+        ],
+        "1x2_probabilities": {
+          "home_win_pct": 38.89,
+          "draw_pct": 33.68,
+          "away_win_pct": 27.43
+        },
+        "goals_markets": {
+          "over_0_5_pct": 83.1,
+          "under_0_5_pct": 16.9,
+          "over_1_5_pct": 58.64,
+          "under_1_5_pct": 41.36,
+          "over_2_5_pct": 31.52,
+          "under_2_5_pct": 68.48,
+          "over_3_5_pct": 14.57,
+          "under_3_5_pct": 85.43,
+          "over_4_5_pct": 5.83,
+          "under_4_5_pct": 94.17,
+          "under_5_5_pct": 97.94,
+          "btts_yes_pct": 37.98,
+          "btts_no_pct": 62.02
+        },
+        "exact_market_probabilities": {
+          "home_win_pct": 38.89,
+          "draw_pct": 33.68,
+          "away_win_pct": 27.43,
+          "double_chance_1x_pct": 72.57,
+          "double_chance_x2_pct": 61.11,
+          "double_chance_12_pct": 66.32,
+          "dnb_home_pct": 58.64,
+          "dnb_away_pct": 41.36,
+          "over_0_5_pct": 83.1,
+          "under_0_5_pct": 16.9,
+          "over_1_5_pct": 58.64,
+          "under_1_5_pct": 41.36,
+          "over_2_5_pct": 31.52,
+          "under_2_5_pct": 68.48,
+          "over_3_5_pct": 14.57,
+          "under_3_5_pct": 85.43,
+          "over_4_5_pct": 5.83,
+          "under_4_5_pct": 94.17,
+          "under_5_5_pct": 97.94,
+          "btts_yes_pct": 37.98,
+          "btts_no_pct": 62.02,
+          "home_over_0_5_pct": 64.65,
+          "home_under_2_5_pct": 89.15,
+          "away_over_0_5_pct": 56.42,
+          "away_under_2_5_pct": 93.48,
+          "home_plus_1_5_pct": 89.7,
+          "away_plus_1_5_pct": 82.71,
+          "home_plus_2_5_pct": 97.06,
+          "away_plus_2_5_pct": 94.0,
+          "home_minus_1_5_pct": 17.29,
+          "away_minus_1_5_pct": 10.3,
+          "home_clean_sheet_pct": 43.58,
+          "away_clean_sheet_pct": 35.35,
+          "home_win_by_1_pct": 21.6,
+          "away_win_by_1_pct": 17.13
+        },
+        "simulated_averages": {
+          "home_goals": 1.1,
+          "away_goals": 0.89,
+          "total_goals": 1.98
+        }
+      },
+      "corners_prediction": {
+        "home_corners_expected": 3.9,
+        "away_corners_expected": 3.6,
+        "total_corners_expected": 7.5,
+        "most_likely_range": "6 - 9 córners",
+        "lines": {
+          "over_6_5_pct": 62.2,
+          "under_6_5_pct": 37.8,
+          "over_7_5_pct": 47.5,
+          "under_7_5_pct": 52.5,
+          "over_8_5_pct": 33.8,
+          "under_8_5_pct": 66.2,
+          "over_9_5_pct": 22.4,
+          "under_9_5_pct": 77.6,
+          "over_10_5_pct": 13.8,
+          "under_10_5_pct": 86.2,
+          "over_11_5_pct": 7.9,
+          "under_11_5_pct": 92.1,
+          "under_12_5_pct": 95.7
+        },
+        "team_lines": {
+          "home_over_4_5_pct": 35.2,
+          "home_over_5_5_pct": 19.9,
+          "away_over_3_5_pct": 48.5,
+          "away_over_4_5_pct": 29.4
+        }
+      },
+      "cards_prediction": {
+        "referee": "Árbitro Central LigaPro",
+        "home_yellow_cards": 2.4,
+        "away_yellow_cards": 2.7,
+        "total_yellow_cards": 5.1,
+        "red_cards": {
+          "expected_home_reds": 0.1,
+          "expected_away_reds": 0.11,
+          "expected_total_reds": 0.21,
+          "home_red_prob_pct": 9.7,
+          "away_red_prob_prob_pct": 11.2,
+          "any_red_card_in_match_pct": 18.9
+        },
+        "total_cards_expected": 5.3,
+        "card_lines": {
+          "over_3_5_cards_pct": 75.1,
+          "under_3_5_cards_pct": 24.9,
+          "over_4_5_cards_pct": 58.0,
+          "under_4_5_cards_pct": 42.0,
+          "over_5_5_cards_pct": 40.5,
+          "under_5_5_cards_pct": 59.5
+        }
+      },
+      "player_props": {
+        "home_key_players": [
+          {
+            "name": "Enzo Ariel Fernández",
+            "position": "Delantero de Área",
+            "health_status": "Disponible",
+            "expected_shots": 1.61,
+            "expected_sot": 0.71,
+            "prob_at_least_1_sot_pct": 50.8,
+            "prob_at_least_2_sot_pct": 15.9,
+            "prob_over_1_5_shots_pct": 48.0,
+            "prob_over_2_5_shots_pct": 22.0,
+            "goal_anytime_prob_pct": 36.0,
+            "reallocated_from": null
+          },
+          {
+            "name": "Joaquín Vergés",
+            "position": "Especialista Pelota Parada",
+            "health_status": "Disponible",
+            "expected_shots": 1.55,
+            "expected_sot": 0.65,
+            "prob_at_least_1_sot_pct": 47.6,
+            "prob_at_least_2_sot_pct": 13.7,
+            "prob_over_1_5_shots_pct": 45.9,
+            "prob_over_2_5_shots_pct": 20.4,
+            "goal_anytime_prob_pct": 32.0,
+            "reallocated_from": null
+          },
+          {
+            "name": "Mauricio Alonso",
+            "position": "Extremo Rápido",
+            "health_status": "Disponible",
+            "expected_shots": 1.23,
+            "expected_sot": 0.52,
+            "prob_at_least_1_sot_pct": 40.3,
+            "prob_at_least_2_sot_pct": 9.5,
+            "prob_over_1_5_shots_pct": 34.7,
+            "prob_over_2_5_shots_pct": 12.6,
+            "goal_anytime_prob_pct": 22.0,
+            "reallocated_from": null
+          }
+        ],
+        "away_key_players": [
+          {
+            "name": "Miguel Parrales",
+            "position": "Delantero Centro",
+            "health_status": "Disponible",
+            "expected_shots": 1.67,
+            "expected_sot": 0.77,
+            "prob_at_least_1_sot_pct": 53.7,
+            "prob_at_least_2_sot_pct": 18.0,
+            "prob_over_1_5_shots_pct": 49.7,
+            "prob_over_2_5_shots_pct": 23.4,
+            "goal_anytime_prob_pct": 38.0,
+            "reallocated_from": null
+          },
+          {
+            "name": "Robert Burbano",
+            "position": "Extremo Rápido",
+            "health_status": "Disponible",
+            "expected_shots": 1.22,
+            "expected_sot": 0.51,
+            "prob_at_least_1_sot_pct": 40.1,
+            "prob_at_least_2_sot_pct": 9.4,
+            "prob_over_1_5_shots_pct": 34.4,
+            "prob_over_2_5_shots_pct": 12.5,
+            "goal_anytime_prob_pct": 22.0,
+            "reallocated_from": null
+          },
+          {
+            "name": "Agustín Herrera",
+            "position": "Segundo Punta",
+            "health_status": "Disponible",
+            "expected_shots": 1.15,
+            "expected_sot": 0.45,
+            "prob_at_least_1_sot_pct": 36.2,
+            "prob_at_least_2_sot_pct": 7.5,
+            "prob_over_1_5_shots_pct": 32.1,
+            "prob_over_2_5_shots_pct": 11.1,
+            "goal_anytime_prob_pct": 25.0,
+            "reallocated_from": null
+          }
+        ]
+      },
+      "la_fija_real": {
+        "market": "Doble Oportunidad",
+        "category_code": "DOBLE_OPORTUNIDAD",
+        "selection": "Mushuc Runa o Empate (1X)",
+        "probability": 72.6,
+        "odds": 1.45,
+        "_high_conviction": false,
+        "availability": "100% Casas de Apuestas (Bet365, Betano)",
+        "rationale": "Protección total ante el empate con 72.6% de cobertura matemática y factor local.",
+        "confidence_tier": "TIER_1_CANDADO",
+        "tier_badge": "🟢 CANDADO INSTITUCIONAL",
+        "_rank_score": 216.8,
+        "expected_value": 0.0527
+      },
+      "all_fija_options": [
+        {
+          "market": "Doble Oportunidad",
+          "category_code": "DOBLE_OPORTUNIDAD",
+          "selection": "Mushuc Runa o Empate (1X)",
+          "probability": 72.6,
+          "odds": 1.45,
+          "_high_conviction": false,
+          "availability": "100% Casas de Apuestas (Bet365, Betano)",
+          "rationale": "Protección total ante el empate con 72.6% de cobertura matemática y factor local.",
+          "confidence_tier": "TIER_1_CANDADO",
+          "tier_badge": "🟢 CANDADO INSTITUCIONAL",
+          "_rank_score": 216.8,
+          "expected_value": 0.0527
+        },
+        {
+          "market": "Total Tarjetas",
+          "category_code": "TARJETAS",
+          "selection": "Más de 3.5 tarjetas totales",
+          "probability": 75.1,
+          "odds": 1.41,
+          "_high_conviction": true,
+          "availability": "Universal en Bet365, Betano, Ecuabet",
+          "rationale": "Fricción disciplinaria elevada: 5.3 tarjetas esperadas en el cotejo bajo rigor arbitral.",
+          "confidence_tier": "TIER_2_VALOR",
+          "tier_badge": "🟡 VALOR ESTRATÉGICO",
+          "_rank_score": 181.48,
+          "expected_value": 0.0589
+        },
+        {
+          "market": "Total de Goles Fijo",
+          "category_code": "GOLES_OVER",
+          "selection": "Más de 0.5 goles totales",
+          "probability": 83.1,
+          "odds": 1.09,
+          "_high_conviction": false,
+          "availability": "Universal",
+          "rationale": "Línea de cobertura mínima que descarta el 0-0.",
+          "confidence_tier": "TIER_3_RIESGO",
+          "tier_badge": "🔴 OBSERVACIÓN / COBERTURA",
+          "_rank_score": 29.65,
+          "expected_value": -0.0942
+        }
+      ]
+    },
+    {
+      "match": "Deportivo Riestra vs Unión de Santa Fe",
+      "home_team": "Deportivo Riestra",
+      "away_team": "Unión de Santa Fe",
+      "context": {
+        "tournament": "Liga Profesional Argentina • Torneo Clausura (Fecha 13)",
+        "stadium": "Estadio Guillermo Laza (Buenos Aires)",
+        "spectators_est": "3,000 espectadores (19:15 Hora Ecuador / 21:15 Argentina)",
+        "referee": "Andrés Merlos",
+        "referee_avg_yellows": 5.4,
+        "referee_avg_reds": 0.28,
+        "intensity": "Extrema (Choque físico en campo de dimensiones reducidas; alta fricción y tendencia de tarjetas y Under)"
+      },
+      "projections": {
+        "expected_goals": {
+          "home": 0.58,
+          "away": 1.04,
+          "total": 1.62
+        },
+        "variance_and_uncertainty": {
+          "variance_index": 0.8,
+          "is_high_volatility": false,
+          "rank_factor_applied": -0.15
+        },
+        "expected_corners": {
+          "home": 3.48,
+          "away": 4.45,
+          "total": 7.93,
+          "home_quantiles": {
+            "p10": 1.7,
+            "p90": 5.6
+          },
+          "away_quantiles": {
+            "p10": 2.8,
+            "p90": 6.3
+          }
+        },
+        "expected_yellow_cards": {
+          "home": 3.93,
+          "away": 2.96,
+          "total": 6.89
+        },
+        "expected_shots": {
+          "home": 7.5,
+          "away": 10.03
+        }
+      },
+      "tactical_analysis": {
+        "home_manager": {
+          "style": "Estándar",
+          "pace": "Medio"
+        },
+        "away_manager": {
+          "style": "Estándar",
+          "pace": "Medio"
+        },
+        "tactical_xg_multiplier_home": 1.0,
+        "tactical_xg_multiplier_away": 1.0,
+        "corner_dampener_factor": 1.0,
+        "player_role_restrictions": {},
+        "tactical_summary": "Choque de estilos: Estándar vs Estándar"
+      },
+      "squad_health": {
+        "home_team": "Deportivo Riestra",
+        "away_team": "Unión de Santa Fe",
+        "home_vetoed": [],
+        "away_vetoed": [],
+        "home_reallocation": "Plantel al 100% sin reasignación necesaria.",
+        "away_reallocation": "Plantel al 100% sin reasignación necesaria.",
+        "home_health_status": "Plantel Ratificado al 100%",
+        "away_health_status": "Plantel Ratificado al 100%",
+        "status": "Auditoría Médica y Convocatorias Oficiales Verificadas"
+      },
+      "psychological_context": {
+        "tournament_urgency": 0.9,
+        "is_friendly": false,
+        "stadium_name": "Estadio Neutral",
+        "intimidation_factor": 0.5,
+        "intimidation_impact": "Neutro",
+        "minimum_draw_floor_pct": 26.0,
+        "complacency_risk": "Medio",
+        "psychological_notes": "Urgencia: Máxima (Puntos Oficiales) | Caldera: 50.0%"
+      },
+      "momentum_analysis": {
+        "agent": "MomentumStreakAgent",
+        "version": "1.0.0",
+        "home_team": "Deportivo Riestra",
+        "away_team": "Unión de Santa Fe",
+        "home_momentum_factor": 1.0,
+        "away_momentum_factor": 1.0,
+        "momentum_differential": 0.0,
+        "has_breakthrough": false,
+        "breakthrough_summary": "Ambos equipos en rangos estándar de volatilidad.",
+        "home_details": null,
+        "away_details": null,
+        "tier1_dampener_active": false,
+        "recommendation_bias": "MANTENER_EQUILIBRIO"
+      },
+      "media_intelligence": {
+        "agent": "SportsMediaScoutAgent",
+        "version": "1.0.0",
+        "sources_consulted": [
+          "ESPN Deportes",
+          "ESPN Ecuador (https://www.espn.com.ec/)",
+          "Fox Sports",
+          "TNT Sports"
+        ],
+        "has_tier1_powerhouse": false,
+        "tier1_team": null,
+        "blowout_risk_level": "MODERADO",
+        "editorial_restrictions": [],
+        "editorial_insights": [
+          "COBERTURA ESPN ECUADOR / FOX SPORTS: Enfrentamiento parejo (Deportivo Riestra vs Unión de Santa Fe). Partida de ritmo medio con preponderancia de mercados de goles moderados y dobles oportunidades respaldadas por localía."
+        ],
+        "press_quotes": [],
+        "summary_tag": "Señal Editorial Activa (MODERADO Riesgo Desborde)"
+      },
+      "score_prediction": {
+        "most_probable_score": "0 - 0",
+        "most_probable_prob_pct": 22.56,
+        "top_5_scores": [
+          {
+            "score": "0 - 0",
+            "home_goals": 0,
+            "away_goals": 0,
+            "probability_pct": 22.56
+          },
+          {
+            "score": "0 - 1",
+            "home_goals": 0,
+            "away_goals": 1,
+            "probability_pct": 18.66
+          },
+          {
+            "score": "1 - 1",
+            "home_goals": 1,
+            "away_goals": 1,
+            "probability_pct": 12.13
+          },
+          {
+            "score": "0 - 2",
+            "home_goals": 0,
+            "away_goals": 2,
+            "probability_pct": 10.33
+          },
+          {
+            "score": "1 - 0",
+            "home_goals": 1,
+            "away_goals": 0,
+            "probability_pct": 10.27
+          }
+        ],
+        "1x2_probabilities": {
+          "home_win_pct": 19.35,
+          "draw_pct": 36.54,
+          "away_win_pct": 44.11
+        },
+        "goals_markets": {
+          "over_0_5_pct": 77.44,
+          "under_0_5_pct": 22.56,
+          "over_1_5_pct": 48.51,
+          "under_1_5_pct": 51.49,
+          "over_2_5_pct": 22.56,
+          "under_2_5_pct": 77.44,
+          "over_3_5_pct": 8.94,
+          "under_3_5_pct": 91.06,
+          "over_4_5_pct": 3.05,
+          "under_4_5_pct": 96.95,
+          "under_5_5_pct": 99.08,
+          "btts_yes_pct": 28.27,
+          "btts_no_pct": 71.73
+        },
+        "exact_market_probabilities": {
+          "home_win_pct": 19.35,
+          "draw_pct": 36.54,
+          "away_win_pct": 44.11,
+          "double_chance_1x_pct": 55.89,
+          "double_chance_x2_pct": 80.65,
+          "double_chance_12_pct": 63.46,
+          "dnb_home_pct": 30.49,
+          "dnb_away_pct": 69.51,
+          "over_0_5_pct": 77.44,
+          "under_0_5_pct": 22.56,
+          "over_1_5_pct": 48.51,
+          "under_1_5_pct": 51.49,
+          "over_2_5_pct": 22.56,
+          "under_2_5_pct": 77.44,
+          "over_3_5_pct": 8.94,
+          "under_3_5_pct": 91.06,
+          "over_4_5_pct": 3.05,
+          "under_4_5_pct": 96.95,
+          "under_5_5_pct": 99.08,
+          "btts_yes_pct": 28.27,
+          "btts_no_pct": 71.73,
+          "home_over_0_5_pct": 42.97,
+          "home_under_2_5_pct": 97.51,
+          "away_over_0_5_pct": 62.74,
+          "away_under_2_5_pct": 90.36,
+          "home_plus_1_5_pct": 80.9,
+          "away_plus_1_5_pct": 94.62,
+          "home_plus_2_5_pct": 93.57,
+          "away_plus_2_5_pct": 98.91,
+          "home_minus_1_5_pct": 5.38,
+          "away_minus_1_5_pct": 19.1,
+          "home_clean_sheet_pct": 37.26,
+          "away_clean_sheet_pct": 57.03,
+          "home_win_by_1_pct": 13.97,
+          "away_win_by_1_pct": 25.01
+        },
+        "simulated_averages": {
+          "home_goals": 0.58,
+          "away_goals": 1.05,
+          "total_goals": 1.63
+        }
+      },
+      "corners_prediction": {
+        "home_corners_expected": 3.0,
+        "away_corners_expected": 3.8,
+        "total_corners_expected": 6.8,
+        "most_likely_range": "5 - 8 córners",
+        "lines": {
+          "over_6_5_pct": 52.0,
+          "under_6_5_pct": 48.0,
+          "over_7_5_pct": 37.2,
+          "under_7_5_pct": 62.8,
+          "over_8_5_pct": 24.5,
+          "under_8_5_pct": 75.5,
+          "over_9_5_pct": 15.0,
+          "under_9_5_pct": 85.0,
+          "over_10_5_pct": 8.5,
+          "under_10_5_pct": 91.5,
+          "over_11_5_pct": 4.5,
+          "under_11_5_pct": 95.5,
+          "under_12_5_pct": 97.8
+        },
+        "team_lines": {
+          "home_over_4_5_pct": 18.5,
+          "home_over_5_5_pct": 8.4,
+          "away_over_3_5_pct": 52.7,
+          "away_over_4_5_pct": 33.2
+        }
+      },
+      "cards_prediction": {
+        "referee": "Andrés Merlos",
+        "home_yellow_cards": 3.5,
+        "away_yellow_cards": 2.7,
+        "total_yellow_cards": 6.2,
+        "red_cards": {
+          "expected_home_reds": 0.15,
+          "expected_away_reds": 0.11,
+          "expected_total_reds": 0.27,
+          "home_red_prob_pct": 15.2,
+          "away_red_prob_prob_pct": 11.4,
+          "any_red_card_in_match_pct": 23.4
+        },
+        "total_cards_expected": 6.5,
+        "card_lines": {
+          "over_3_5_cards_pct": 86.7,
+          "under_3_5_cards_pct": 13.3,
+          "over_4_5_cards_pct": 74.3,
+          "under_4_5_cards_pct": 25.7,
+          "over_5_5_cards_pct": 58.9,
+          "under_5_5_cards_pct": 41.1
+        }
+      },
+      "player_props": {
+        "home_key_players": [
+          {
+            "name": "Jonathan Herrera",
+            "position": "Delantero Centro",
+            "health_status": "Disponible",
+            "expected_shots": 1.18,
+            "expected_sot": 0.48,
+            "prob_at_least_1_sot_pct": 38.3,
+            "prob_at_least_2_sot_pct": 8.5,
+            "prob_over_1_5_shots_pct": 33.0,
+            "prob_over_2_5_shots_pct": 11.6,
+            "goal_anytime_prob_pct": 32.0,
+            "reallocated_from": null
+          },
+          {
+            "name": "Milton Céliz",
+            "position": "Extremo / Capitán",
+            "health_status": "Disponible",
+            "expected_shots": 0.96,
+            "expected_sot": 0.37,
+            "prob_at_least_1_sot_pct": 31.3,
+            "prob_at_least_2_sot_pct": 5.5,
+            "prob_over_1_5_shots_pct": 25.1,
+            "prob_over_2_5_shots_pct": 7.4,
+            "goal_anytime_prob_pct": 22.0,
+            "reallocated_from": null
+          },
+          {
+            "name": "Braian Sánchez",
+            "position": "Mediocentro Físico",
+            "health_status": "Disponible",
+            "expected_shots": 0.54,
+            "expected_sot": 0.2,
+            "prob_at_least_1_sot_pct": 18.1,
+            "prob_at_least_2_sot_pct": 1.8,
+            "prob_over_1_5_shots_pct": 10.1,
+            "prob_over_2_5_shots_pct": 1.7,
+            "goal_anytime_prob_pct": 8.0,
+            "reallocated_from": null
+          }
+        ],
+        "away_key_players": [
+          {
+            "name": "Adrián Balboa",
+            "position": "Delantero Centro",
+            "health_status": "Disponible",
+            "expected_shots": 1.72,
+            "expected_sot": 0.72,
+            "prob_at_least_1_sot_pct": 51.2,
+            "prob_at_least_2_sot_pct": 16.2,
+            "prob_over_1_5_shots_pct": 51.3,
+            "prob_over_2_5_shots_pct": 24.8,
+            "goal_anytime_prob_pct": 34.0,
+            "reallocated_from": null
+          },
+          {
+            "name": "Nicolás Orsini",
+            "position": "Delantero / Segundo Punta",
+            "health_status": "Disponible",
+            "expected_shots": 1.5,
+            "expected_sot": 0.57,
+            "prob_at_least_1_sot_pct": 43.6,
+            "prob_at_least_2_sot_pct": 11.3,
+            "prob_over_1_5_shots_pct": 44.4,
+            "prob_over_2_5_shots_pct": 19.2,
+            "goal_anytime_prob_pct": 28.0,
+            "reallocated_from": null
+          },
+          {
+            "name": "Mauro Pittón",
+            "position": "Mediocampista Mixto",
+            "health_status": "Disponible",
+            "expected_shots": 1.0,
+            "expected_sot": 0.36,
+            "prob_at_least_1_sot_pct": 30.1,
+            "prob_at_least_2_sot_pct": 5.1,
+            "prob_over_1_5_shots_pct": 26.5,
+            "prob_over_2_5_shots_pct": 8.1,
+            "goal_anytime_prob_pct": 15.0,
+            "reallocated_from": null
+          }
+        ]
+      },
+      "la_fija_real": {
+        "market": "Victoria Sin Empate (DNB)",
+        "category_code": "VICTORIA_SIN_EMPATE",
+        "selection": "Unión de Santa Fe Gana (Empate No Válido / DNB)",
+        "probability": 69.51,
+        "odds": 1.52,
+        "_high_conviction": false,
+        "availability": "100% Casas de Apuestas (Mercado Draw No Bet)",
+        "rationale": "Triunfo de Unión de Santa Fe con devolución total en caso de empate (cobertura DNB: 69.51%).",
+        "confidence_tier": "TIER_1_CANDADO",
+        "tier_badge": "🟢 CANDADO INSTITUCIONAL",
+        "_rank_score": 172.76,
+        "expected_value": 0.0566
+      },
+      "all_fija_options": [
+        {
+          "market": "Victoria Sin Empate (DNB)",
+          "category_code": "VICTORIA_SIN_EMPATE",
+          "selection": "Unión de Santa Fe Gana (Empate No Válido / DNB)",
+          "probability": 69.51,
+          "odds": 1.52,
+          "_high_conviction": false,
+          "availability": "100% Casas de Apuestas (Mercado Draw No Bet)",
+          "rationale": "Triunfo de Unión de Santa Fe con devolución total en caso de empate (cobertura DNB: 69.51%).",
+          "confidence_tier": "TIER_1_CANDADO",
+          "tier_badge": "🟢 CANDADO INSTITUCIONAL",
+          "_rank_score": 172.76,
+          "expected_value": 0.0566
+        },
+        {
+          "market": "Doble Oportunidad",
+          "category_code": "DOBLE_OPORTUNIDAD",
+          "selection": "Empate o Unión de Santa Fe (X2)",
+          "probability": 80.7,
+          "odds": 1.3,
+          "_high_conviction": true,
+          "availability": "100% Casas de Apuestas (Bet365, Betano)",
+          "rationale": "El visitante Unión de Santa Fe puntúa en el 80.7% de las simulaciones tácticas.",
+          "confidence_tier": "TIER_1_CANDADO",
+          "tier_badge": "🟢 CANDADO INSTITUCIONAL",
+          "_rank_score": 163.42,
+          "expected_value": 0.0491
+        },
+        {
+          "market": "Total Tarjetas",
+          "category_code": "TARJETAS",
+          "selection": "Más de 3.5 tarjetas totales",
+          "probability": 86.7,
+          "odds": 1.22,
+          "_high_conviction": true,
+          "availability": "Universal en Bet365, Betano, Ecuabet",
+          "rationale": "Fricción disciplinaria elevada: 6.5 tarjetas esperadas en el cotejo bajo rigor arbitral.",
+          "confidence_tier": "TIER_3_RIESGO",
+          "tier_badge": "🔴 OBSERVACIÓN / COBERTURA",
+          "_rank_score": 98.71,
+          "expected_value": 0.0577
+        },
+        {
+          "market": "Victoria Directa (1X2)",
+          "category_code": "VICTORIA_DIRECTA",
+          "selection": "Unión de Santa Fe Gana el Partido (2)",
+          "probability": 44.1,
+          "odds": 2.4,
+          "_high_conviction": false,
+          "availability": "Universal en todas las casas (Bet365, Betano, 1xBet, Codere)",
+          "rationale": "Convicción visitante: Unión de Santa Fe proyecta superioridad táctica con 44.1% de probabilidad de llevarse los 3 puntos.",
+          "confidence_tier": "TIER_3_RIESGO",
+          "tier_badge": "🔴 OBSERVACIÓN / COBERTURA",
+          "_rank_score": 34.91,
+          "expected_value": 0.0584
+        },
+        {
+          "market": "Total de Goles Fijo",
+          "category_code": "GOLES_OVER",
+          "selection": "Más de 0.5 goles totales",
+          "probability": 77.4,
+          "odds": 1.09,
+          "_high_conviction": false,
+          "availability": "Universal",
+          "rationale": "Línea de cobertura mínima que descarta el 0-0.",
+          "confidence_tier": "TIER_3_RIESGO",
+          "tier_badge": "🔴 OBSERVACIÓN / COBERTURA",
+          "_rank_score": 21.1,
+          "expected_value": -0.1563
         }
       ]
     }
