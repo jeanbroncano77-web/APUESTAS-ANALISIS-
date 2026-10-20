@@ -119,7 +119,10 @@ flags = {
     "Deportivo Riestra": "⚫", "Riestra": "⚫", "Unión de Santa Fe": "🔴",
     "Sporting de Lisboa": "🟢", "Sporting CP": "🟢", "RB Leipzig": "🐂",
     "Viking FK": "⚔️", "Viking": "⚔️", "Shakhtar Donetsk": "⚒️", "Shakhtar": "⚒️",
-    "Al-Nassr": "🟡", "Neom SC": "🟣"
+    "Al-Nassr": "🟡", "Neom SC": "🟣",
+    "AEK Atenas": "🦅", "AEK": "🦅",
+    "Slovan Bratislava": "⚪", "SK Slovan Bratislava": "⚪",
+    "Sabah": "🦉"
 }
 
 def get_flag(team):
@@ -199,8 +202,14 @@ for i, m in enumerate(matches):
         """
 
     # Player props rows
-    home_pl = player_props.get("home_key_players", [])
-    away_pl = player_props.get("away_key_players", [])
+    if isinstance(player_props, dict):
+        home_pl = player_props.get("home_key_players", [])
+        away_pl = player_props.get("away_key_players", [])
+    elif isinstance(player_props, list):
+        home_pl = player_props
+        away_pl = []
+    else:
+        home_pl, away_pl = [], []
     player_rows = ""
     for p in (home_pl[:4] + away_pl[:3]):
         p_name = p.get("name", "Jugador")

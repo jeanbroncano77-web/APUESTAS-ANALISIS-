@@ -18595,5 +18595,365 @@
         "xg_contribution": 0.12
       }
     ]
+  },
+  "AEK Atenas": {
+    "fifa_rank": 72,
+    "recent_form": [
+      "W",
+      "D",
+      "L",
+      "W",
+      "D"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 1,
+        "goals_conceded": 0,
+        "xg_for": 1.2,
+        "xg_against": 0.8,
+        "corners_for": 4,
+        "corners_against": 4,
+        "shots_total": 10,
+        "shots_on_target": 4,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 50
+      },
+      {
+        "goals_scored": 1,
+        "goals_conceded": 1,
+        "xg_for": 1.0,
+        "xg_against": 1.3,
+        "corners_for": 5,
+        "corners_against": 5,
+        "shots_total": 9,
+        "shots_on_target": 3,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 48
+      },
+      {
+        "goals_scored": 0,
+        "goals_conceded": 2,
+        "xg_for": 0.6,
+        "xg_against": 2.2,
+        "corners_for": 3,
+        "corners_against": 7,
+        "shots_total": 6,
+        "shots_on_target": 2,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 38
+      },
+      {
+        "goals_scored": 2,
+        "goals_conceded": 1,
+        "xg_for": 1.8,
+        "xg_against": 1.1,
+        "corners_for": 6,
+        "corners_against": 4,
+        "shots_total": 12,
+        "shots_on_target": 5,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 55
+      },
+      {
+        "goals_scored": 1,
+        "goals_conceded": 1,
+        "xg_for": 1.1,
+        "xg_against": 1.2,
+        "corners_for": 4,
+        "corners_against": 5,
+        "shots_total": 10,
+        "shots_on_target": 4,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 49
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Levi García",
+        "role": "Forward",
+        "sot_avg": 1.6,
+        "xg_contribution": 0.45
+      }
+    ]
+  },
+  "Slovan Bratislava": {
+    "fifa_rank": 85,
+    "recent_form": [
+      "W",
+      "W",
+      "L",
+      "D",
+      "L"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 2,
+        "goals_conceded": 1,
+        "xg_for": 1.4,
+        "xg_against": 0.9,
+        "corners_for": 5,
+        "corners_against": 3,
+        "shots_total": 11,
+        "shots_on_target": 4,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 52
+      },
+      {
+        "goals_scored": 1,
+        "goals_conceded": 0,
+        "xg_for": 1.1,
+        "xg_against": 0.5,
+        "corners_for": 4,
+        "corners_against": 4,
+        "shots_total": 8,
+        "shots_on_target": 3,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 55
+      },
+      {
+        "goals_scored": 0,
+        "goals_conceded": 4,
+        "xg_for": 0.4,
+        "xg_against": 3.2,
+        "corners_for": 2,
+        "corners_against": 8,
+        "shots_total": 5,
+        "shots_on_target": 1,
+        "yellow_cards": 4,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 32
+      },
+      {
+        "goals_scored": 1,
+        "goals_conceded": 1,
+        "xg_for": 1.0,
+        "xg_against": 1.2,
+        "corners_for": 4,
+        "corners_against": 5,
+        "shots_total": 9,
+        "shots_on_target": 3,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 48
+      },
+      {
+        "goals_scored": 1,
+        "goals_conceded": 3,
+        "xg_for": 0.8,
+        "xg_against": 2.8,
+        "corners_for": 3,
+        "corners_against": 7,
+        "shots_total": 7,
+        "shots_on_target": 2,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 36
+      }
+    ],
+    "key_players": [
+      {
+        "name": "David Strelec",
+        "role": "Forward",
+        "sot_avg": 1.3,
+        "xg_contribution": 0.38
+      }
+    ]
+  },
+  "SK Slovan Bratislava": {
+    "fifa_rank": 85,
+    "recent_form": [
+      "W",
+      "W",
+      "L",
+      "D",
+      "L"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 2,
+        "goals_conceded": 1,
+        "xg_for": 1.4,
+        "xg_against": 0.9,
+        "corners_for": 5,
+        "corners_against": 3,
+        "shots_total": 11,
+        "shots_on_target": 4,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 52
+      },
+      {
+        "goals_scored": 1,
+        "goals_conceded": 0,
+        "xg_for": 1.1,
+        "xg_against": 0.5,
+        "corners_for": 4,
+        "corners_against": 4,
+        "shots_total": 8,
+        "shots_on_target": 3,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 55
+      },
+      {
+        "goals_scored": 0,
+        "goals_conceded": 4,
+        "xg_for": 0.4,
+        "xg_against": 3.2,
+        "corners_for": 2,
+        "corners_against": 8,
+        "shots_total": 5,
+        "shots_on_target": 1,
+        "yellow_cards": 4,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 32
+      },
+      {
+        "goals_scored": 1,
+        "goals_conceded": 1,
+        "xg_for": 1.0,
+        "xg_against": 1.2,
+        "corners_for": 4,
+        "corners_against": 5,
+        "shots_total": 9,
+        "shots_on_target": 3,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 48
+      },
+      {
+        "goals_scored": 1,
+        "goals_conceded": 3,
+        "xg_for": 0.8,
+        "xg_against": 2.8,
+        "corners_for": 3,
+        "corners_against": 7,
+        "shots_total": 7,
+        "shots_on_target": 2,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 36
+      }
+    ],
+    "key_players": [
+      {
+        "name": "David Strelec",
+        "role": "Forward",
+        "sot_avg": 1.3,
+        "xg_contribution": 0.38
+      }
+    ]
+  },
+  "Sabah": {
+    "fifa_rank": 110,
+    "recent_form": [
+      "W",
+      "D",
+      "W",
+      "L",
+      "D"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 1,
+        "goals_conceded": 0,
+        "xg_for": 1.0,
+        "xg_against": 0.7,
+        "corners_for": 4,
+        "corners_against": 4,
+        "shots_total": 8,
+        "shots_on_target": 3,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 46
+      },
+      {
+        "goals_scored": 0,
+        "goals_conceded": 0,
+        "xg_for": 0.7,
+        "xg_against": 0.8,
+        "corners_for": 3,
+        "corners_against": 4,
+        "shots_total": 6,
+        "shots_on_target": 2,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 44
+      },
+      {
+        "goals_scored": 2,
+        "goals_conceded": 1,
+        "xg_for": 1.5,
+        "xg_against": 1.2,
+        "corners_for": 5,
+        "corners_against": 5,
+        "shots_total": 11,
+        "shots_on_target": 4,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 51
+      },
+      {
+        "goals_scored": 1,
+        "goals_conceded": 3,
+        "xg_for": 0.8,
+        "xg_against": 2.6,
+        "corners_for": 3,
+        "corners_against": 8,
+        "shots_total": 7,
+        "shots_on_target": 2,
+        "yellow_cards": 4,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 35
+      },
+      {
+        "goals_scored": 1,
+        "goals_conceded": 1,
+        "xg_for": 1.1,
+        "xg_against": 1.3,
+        "corners_for": 4,
+        "corners_against": 5,
+        "shots_total": 9,
+        "shots_on_target": 3,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 11,
+        "possession": 45
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Pavol Šafranko",
+        "role": "Forward",
+        "sot_avg": 1.2,
+        "xg_contribution": 0.32
+      }
+    ]
   }
 }

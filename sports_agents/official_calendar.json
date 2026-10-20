@@ -589,36 +589,36 @@
   "2026-10-20": {
     "date_str": "20/10/2026",
     "day_name": "Martes",
-    "competition": "UEFA Champions League & Liga Profesional Saudí",
+    "competition": "UEFA Champions League (Jornada 3)",
     "fixtures": [
       [
-        "Real Madrid",
-        "RB Leipzig",
-        "VICTORIA_DIRECTA"
-      ],
-      [
-        "Sporting de Lisboa",
-        "LASK",
-        "VICTORIA_DIRECTA"
-      ],
-      [
-        "Aston Villa",
-        "Viking FK",
-        "VICTORIA_DIRECTA"
-      ],
-      [
-        "Inter Milan",
-        "Shakhtar Donetsk",
-        "DOBLE_OPORTUNIDAD"
-      ],
-      [
-        "Bayern Munich",
-        "Arsenal",
+        "París Saint-Germain",
+        "FC Barcelona",
         "AMBOS_MARCAN"
       ],
       [
-        "Al-Nassr",
-        "Neom SC",
+        "Manchester City",
+        "AEK Atenas",
+        "VICTORIA_DIRECTA"
+      ],
+      [
+        "AS Roma",
+        "Slovan Bratislava",
+        "VICTORIA_DIRECTA"
+      ],
+      [
+        "Liverpool",
+        "Villarreal",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Napoli",
+        "Bodø/Glimt",
+        "VICTORIA_DIRECTA"
+      ],
+      [
+        "Sabah",
+        "Borussia Dortmund",
         "VICTORIA_DIRECTA"
       ]
     ]
