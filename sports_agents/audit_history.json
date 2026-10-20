@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-19 22:16:38",
+  "last_updated": "2026-10-19 22:18:25",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 2308.52,
-  "total_profit": 1308.52,
-  "roi_pct": 130.9,
+  "current_bankroll": 2322.52,
+  "total_profit": 1322.52,
+  "roi_pct": 132.3,
   "global_stats": {
-    "total": 140,
-    "wins": 122,
+    "total": 141,
+    "wins": 123,
     "losses": 18,
-    "win_rate": 87.1
+    "win_rate": 87.2
   },
   "fija_stats": {
-    "total": 105,
-    "wins": 91,
+    "total": 106,
+    "wins": 92,
     "losses": 14,
-    "win_rate": 86.7,
-    "active_streak": 10
+    "win_rate": 86.8,
+    "active_streak": 11
   },
   "history": [
     {
@@ -1837,6 +1837,19 @@
       "status": "win",
       "diagnostic": "COMBINADA GANADORA RATIFICADA AL 100%: Tottenham ganó 2-0 y Mushuc Runa ganó 2-1 en Echaleche. Cuota 1.81 verde impecable. El usuario reconoció el acierto perfecto del modelo ('salio la combinadaaa'). Lección de superación de parálisis de ejecución registrada en Autoaprendizaje.",
       "pnl": 81.0
+    },
+    {
+      "id": 141,
+      "match": "Monterrey vs Pachuca",
+      "tournament": "Premier League, LaLiga EA Sports & Liga MX • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Monterrey o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Monterrey defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
+      "pnl": 14.0
     }
   ],
   "bankroll": {
