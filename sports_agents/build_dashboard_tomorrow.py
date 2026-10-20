@@ -116,7 +116,10 @@ flags = {
     "Deportivo Pasto": "🌋", "Alianza": "🔵",
     "Orense SC": "🟢", "Orense": "🟢", "Macará": "🔵", "Macara": "🔵",
     "Independiente del Valle": "⚫", "IDV": "⚫", "Mushuc Runa": "🦙",
-    "Deportivo Riestra": "⚫", "Riestra": "⚫", "Unión de Santa Fe": "🔴"
+    "Deportivo Riestra": "⚫", "Riestra": "⚫", "Unión de Santa Fe": "🔴",
+    "Sporting de Lisboa": "🟢", "Sporting CP": "🟢", "RB Leipzig": "🐂",
+    "Viking FK": "⚔️", "Viking": "⚔️", "Shakhtar Donetsk": "⚒️", "Shakhtar": "⚒️",
+    "Al-Nassr": "🟡", "Neom SC": "🟣"
 }
 
 def get_flag(team):

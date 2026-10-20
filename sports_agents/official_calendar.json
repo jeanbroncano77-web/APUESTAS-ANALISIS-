@@ -585,5 +585,42 @@
         "GOLES_UNDER"
       ]
     ]
+  },
+  "2026-10-20": {
+    "date_str": "20/10/2026",
+    "day_name": "Martes",
+    "competition": "UEFA Champions League & Liga Profesional Saudí",
+    "fixtures": [
+      [
+        "Real Madrid",
+        "RB Leipzig",
+        "VICTORIA_DIRECTA"
+      ],
+      [
+        "Sporting de Lisboa",
+        "LASK",
+        "VICTORIA_DIRECTA"
+      ],
+      [
+        "Aston Villa",
+        "Viking FK",
+        "VICTORIA_DIRECTA"
+      ],
+      [
+        "Inter Milan",
+        "Shakhtar Donetsk",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Bayern Munich",
+        "Arsenal",
+        "AMBOS_MARCAN"
+      ],
+      [
+        "Al-Nassr",
+        "Neom SC",
+        "VICTORIA_DIRECTA"
+      ]
+    ]
   }
 }
