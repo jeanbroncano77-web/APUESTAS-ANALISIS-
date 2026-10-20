@@ -7017,127 +7017,99 @@
     ]
   },
   "Unión": {
-    "fifa_rank": 26,
+    "fifa_rank": 48,
     "recent_form": [
-      "W",
-      "W",
       "D",
-      "W",
       "L",
       "W",
       "D",
-      "W"
+      "L",
+      "W",
+      "D",
+      "L"
     ],
     "sequence": [
       {
-        "goals_scored": 2,
-        "goals_conceded": 0,
-        "xg_for": 1.8,
-        "xg_against": 0.7,
-        "corners_for": 7,
-        "corners_against": 3,
-        "shots_total": 15,
-        "shots_on_target": 6,
-        "yellow_cards": 2,
-        "red_cards": 0,
-        "fouls": 11,
-        "possession": 56
-      },
-      {
-        "goals_scored": 1,
-        "goals_conceded": 0,
-        "xg_for": 1.55,
-        "xg_against": 0.8,
-        "corners_for": 6,
-        "corners_against": 4,
-        "shots_total": 13,
-        "shots_on_target": 5,
-        "yellow_cards": 2,
-        "red_cards": 0,
-        "fouls": 12,
-        "possession": 54
-      },
-      {
         "goals_scored": 1,
         "goals_conceded": 1,
-        "xg_for": 1.4,
-        "xg_against": 1.15,
-        "corners_for": 5,
+        "xg_for": 1.1,
+        "xg_against": 1.2,
+        "corners_for": 4,
         "corners_against": 5,
-        "shots_total": 12,
+        "shots_total": 10,
         "shots_on_target": 4,
         "yellow_cards": 3,
         "red_cards": 0,
         "fouls": 14,
-        "possession": 51
-      },
-      {
-        "goals_scored": 2,
-        "goals_conceded": 1,
-        "xg_for": 1.7,
-        "xg_against": 0.95,
-        "corners_for": 6,
-        "corners_against": 4,
-        "shots_total": 14,
-        "shots_on_target": 6,
-        "yellow_cards": 1,
-        "red_cards": 0,
-        "fouls": 10,
-        "possession": 55
+        "possession": 48
       },
       {
         "goals_scored": 0,
         "goals_conceded": 1,
-        "xg_for": 1.1,
-        "xg_against": 1.25,
-        "corners_for": 5,
-        "corners_against": 4,
-        "shots_total": 11,
-        "shots_on_target": 3,
-        "yellow_cards": 3,
+        "xg_for": 0.8,
+        "xg_against": 1.3,
+        "corners_for": 3,
+        "corners_against": 5,
+        "shots_total": 8,
+        "shots_on_target": 2,
+        "yellow_cards": 4,
         "red_cards": 0,
         "fouls": 15,
-        "possession": 52
+        "possession": 45
       },
       {
         "goals_scored": 2,
         "goals_conceded": 0,
-        "xg_for": 1.75,
-        "xg_against": 0.65,
-        "corners_for": 7,
+        "xg_for": 1.6,
+        "xg_against": 0.7,
+        "corners_for": 6,
         "corners_against": 3,
-        "shots_total": 14,
-        "shots_on_target": 5,
+        "shots_total": 13,
+        "shots_on_target": 6,
         "yellow_cards": 2,
         "red_cards": 0,
-        "fouls": 11,
-        "possession": 57
+        "fouls": 12,
+        "possession": 52
+      },
+      {
+        "goals_scored": 0,
+        "goals_conceded": 0,
+        "xg_for": 0.9,
+        "xg_against": 0.9,
+        "corners_for": 4,
+        "corners_against": 4,
+        "shots_total": 9,
+        "shots_on_target": 3,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 13,
+        "possession": 49
       }
     ],
     "key_players": [
       {
         "name": "Adrián Balboa",
-        "position": "Delantero Uruguayo",
-        "avg_shots_p90": 2.8,
-        "avg_sot_p90": 1.3,
-        "shot_creation_actions": 2.7,
-        "goal_prob": 0.4
+        "position": "Delantero Centro",
+        "avg_shots_p90": 2.4,
+        "avg_sot_p90": 1.0,
+        "shot_creation_actions": 2.4,
+        "goal_prob": 0.34
       },
       {
         "name": "Nicolás Orsini",
-        "position": "Potencia y Desmarque",
-        "avg_shots_p90": 2.5,
-        "avg_sot_p90": 1.1,
-        "shot_creation_actions": 2.4,
-        "goal_prob": 0.35
+        "position": "Delantero / Segundo Punta",
+        "avg_shots_p90": 2.1,
+        "avg_sot_p90": 0.8,
+        "shot_creation_actions": 2.2,
+        "goal_prob": 0.28
       },
       {
         "name": "Mauro Pittón",
-        "position": "Motor del Mediocampo",
-        "avg_shots_p90": 1.6,
-        "avg_sot_p90": 0.7,
-        "shot_creation_actions": 4.5,
-        "goal_prob": 0.2
+        "position": "Mediocampista Mixto",
+        "avg_shots_p90": 1.4,
+        "avg_sot_p90": 0.5,
+        "shot_creation_actions": 3.8,
+        "goal_prob": 0.15
       }
     ]
   },
@@ -17862,5 +17834,296 @@
     ],
     "injuries": [],
     "style": "Fútbol ofensivo vertical, presión intensa y desborde por bandas"
+  },
+  "Deportivo Riestra": {
+    "fifa_rank": 58,
+    "recent_form": [
+      "L",
+      "D",
+      "W",
+      "L",
+      "D",
+      "D",
+      "L",
+      "W"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 1,
+        "goals_conceded": 0,
+        "xg_for": 0.9,
+        "xg_against": 1.0,
+        "corners_for": 3,
+        "corners_against": 5,
+        "shots_total": 8,
+        "shots_on_target": 3,
+        "yellow_cards": 5,
+        "red_cards": 0,
+        "fouls": 18,
+        "possession": 36
+      },
+      {
+        "goals_scored": 0,
+        "goals_conceded": 1,
+        "xg_for": 0.6,
+        "xg_against": 1.2,
+        "corners_for": 2,
+        "corners_against": 6,
+        "shots_total": 6,
+        "shots_on_target": 2,
+        "yellow_cards": 4,
+        "red_cards": 1,
+        "fouls": 19,
+        "possession": 38
+      },
+      {
+        "goals_scored": 1,
+        "goals_conceded": 1,
+        "xg_for": 1.0,
+        "xg_against": 1.1,
+        "corners_for": 4,
+        "corners_against": 4,
+        "shots_total": 9,
+        "shots_on_target": 3,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 16,
+        "possession": 40
+      },
+      {
+        "goals_scored": 0,
+        "goals_conceded": 0,
+        "xg_for": 0.7,
+        "xg_against": 0.8,
+        "corners_for": 3,
+        "corners_against": 4,
+        "shots_total": 7,
+        "shots_on_target": 2,
+        "yellow_cards": 4,
+        "red_cards": 0,
+        "fouls": 17,
+        "possession": 39
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Jonathan Herrera",
+        "position": "Delantero Centro",
+        "avg_shots_p90": 2.2,
+        "avg_sot_p90": 0.9,
+        "shot_creation_actions": 2.1,
+        "goal_prob": 0.32
+      },
+      {
+        "name": "Milton Céliz",
+        "position": "Extremo / Capitán",
+        "avg_shots_p90": 1.8,
+        "avg_sot_p90": 0.7,
+        "shot_creation_actions": 3.2,
+        "goal_prob": 0.22
+      },
+      {
+        "name": "Braian Sánchez",
+        "position": "Mediocentro Físico",
+        "avg_shots_p90": 1.0,
+        "avg_sot_p90": 0.3,
+        "shot_creation_actions": 1.8,
+        "goal_prob": 0.08
+      }
+    ]
+  },
+  "Riestra": {
+    "fifa_rank": 58,
+    "recent_form": [
+      "L",
+      "D",
+      "W",
+      "L",
+      "D",
+      "D",
+      "L",
+      "W"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 1,
+        "goals_conceded": 0,
+        "xg_for": 0.9,
+        "xg_against": 1.0,
+        "corners_for": 3,
+        "corners_against": 5,
+        "shots_total": 8,
+        "shots_on_target": 3,
+        "yellow_cards": 5,
+        "red_cards": 0,
+        "fouls": 18,
+        "possession": 36
+      },
+      {
+        "goals_scored": 0,
+        "goals_conceded": 1,
+        "xg_for": 0.6,
+        "xg_against": 1.2,
+        "corners_for": 2,
+        "corners_against": 6,
+        "shots_total": 6,
+        "shots_on_target": 2,
+        "yellow_cards": 4,
+        "red_cards": 1,
+        "fouls": 19,
+        "possession": 38
+      },
+      {
+        "goals_scored": 1,
+        "goals_conceded": 1,
+        "xg_for": 1.0,
+        "xg_against": 1.1,
+        "corners_for": 4,
+        "corners_against": 4,
+        "shots_total": 9,
+        "shots_on_target": 3,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 16,
+        "possession": 40
+      },
+      {
+        "goals_scored": 0,
+        "goals_conceded": 0,
+        "xg_for": 0.7,
+        "xg_against": 0.8,
+        "corners_for": 3,
+        "corners_against": 4,
+        "shots_total": 7,
+        "shots_on_target": 2,
+        "yellow_cards": 4,
+        "red_cards": 0,
+        "fouls": 17,
+        "possession": 39
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Jonathan Herrera",
+        "position": "Delantero Centro",
+        "avg_shots_p90": 2.2,
+        "avg_sot_p90": 0.9,
+        "shot_creation_actions": 2.1,
+        "goal_prob": 0.32
+      },
+      {
+        "name": "Milton Céliz",
+        "position": "Extremo / Capitán",
+        "avg_shots_p90": 1.8,
+        "avg_sot_p90": 0.7,
+        "shot_creation_actions": 3.2,
+        "goal_prob": 0.22
+      },
+      {
+        "name": "Braian Sánchez",
+        "position": "Mediocentro Físico",
+        "avg_shots_p90": 1.0,
+        "avg_sot_p90": 0.3,
+        "shot_creation_actions": 1.8,
+        "goal_prob": 0.08
+      }
+    ]
+  },
+  "Unión de Santa Fe": {
+    "fifa_rank": 48,
+    "recent_form": [
+      "D",
+      "L",
+      "W",
+      "D",
+      "L",
+      "W",
+      "D",
+      "L"
+    ],
+    "sequence": [
+      {
+        "goals_scored": 1,
+        "goals_conceded": 1,
+        "xg_for": 1.1,
+        "xg_against": 1.2,
+        "corners_for": 4,
+        "corners_against": 5,
+        "shots_total": 10,
+        "shots_on_target": 4,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 14,
+        "possession": 48
+      },
+      {
+        "goals_scored": 0,
+        "goals_conceded": 1,
+        "xg_for": 0.8,
+        "xg_against": 1.3,
+        "corners_for": 3,
+        "corners_against": 5,
+        "shots_total": 8,
+        "shots_on_target": 2,
+        "yellow_cards": 4,
+        "red_cards": 0,
+        "fouls": 15,
+        "possession": 45
+      },
+      {
+        "goals_scored": 2,
+        "goals_conceded": 0,
+        "xg_for": 1.6,
+        "xg_against": 0.7,
+        "corners_for": 6,
+        "corners_against": 3,
+        "shots_total": 13,
+        "shots_on_target": 6,
+        "yellow_cards": 2,
+        "red_cards": 0,
+        "fouls": 12,
+        "possession": 52
+      },
+      {
+        "goals_scored": 0,
+        "goals_conceded": 0,
+        "xg_for": 0.9,
+        "xg_against": 0.9,
+        "corners_for": 4,
+        "corners_against": 4,
+        "shots_total": 9,
+        "shots_on_target": 3,
+        "yellow_cards": 3,
+        "red_cards": 0,
+        "fouls": 13,
+        "possession": 49
+      }
+    ],
+    "key_players": [
+      {
+        "name": "Adrián Balboa",
+        "position": "Delantero Centro",
+        "avg_shots_p90": 2.4,
+        "avg_sot_p90": 1.0,
+        "shot_creation_actions": 2.4,
+        "goal_prob": 0.34
+      },
+      {
+        "name": "Nicolás Orsini",
+        "position": "Delantero / Segundo Punta",
+        "avg_shots_p90": 2.1,
+        "avg_sot_p90": 0.8,
+        "shot_creation_actions": 2.2,
+        "goal_prob": 0.28
+      },
+      {
+        "name": "Mauro Pittón",
+        "position": "Mediocampista Mixto",
+        "avg_shots_p90": 1.4,
+        "avg_sot_p90": 0.5,
+        "shot_creation_actions": 3.8,
+        "goal_prob": 0.15
+      }
+    ]
   }
 }

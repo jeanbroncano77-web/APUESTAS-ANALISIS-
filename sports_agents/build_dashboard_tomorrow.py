@@ -115,7 +115,8 @@ flags = {
     "Cagliari": "🔴", "Newell's Old Boys": "🔴", "Central Córdoba": "⚫",
     "Deportivo Pasto": "🌋", "Alianza": "🔵",
     "Orense SC": "🟢", "Orense": "🟢", "Macará": "🔵", "Macara": "🔵",
-    "Independiente del Valle": "⚫", "IDV": "⚫", "Mushuc Runa": "🦙"
+    "Independiente del Valle": "⚫", "IDV": "⚫", "Mushuc Runa": "🦙",
+    "Deportivo Riestra": "⚫", "Riestra": "⚫", "Unión de Santa Fe": "🔴"
 }
 
 def get_flag(team):

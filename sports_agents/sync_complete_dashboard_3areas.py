@@ -450,6 +450,54 @@ area3_html = f"""        <!-- VISTA 3: AUTOAPRENDIZAJE & CRÍTICA DIARIA -->
                 </div>
             </div>
 
+            <!-- CASO DE ÉXITO & APRENDIZAJE #3: BOLETO MAESTRO ECUABET LUNES 19/10 (CUOTA 1.81 & PARÁLISIS DE EJECUCIÓN) -->
+            <div class="autopsy-card" style="border: 2px solid rgba(16, 185, 129, 0.6); background: rgba(6, 78, 59, 0.25); box-shadow: 0 16px 36px -8px rgba(16, 185, 129, 0.35); margin-bottom: 2rem;">
+                <div class="autopsy-header">
+                    <div>
+                        <div class="autopsy-match" style="color: #34d399; display: flex; align-items: center; gap: 0.5rem;">
+                            <span>⭐ CASO DE ÉXITO & APRENDIZAJE #3 (COMBINADA FIJA ECUABET CUOTA 1.81 EN VIVO):</span>
+                        </div>
+                        <div style="font-size: 1.25rem; font-weight: 800; color: #ffffff; margin-top: 0.25rem;">
+                            Tottenham Gana (@1.48) + Mushuc Runa 1X (@1.22) &bull; Cuota 1.81 Acertada & El Factor Psicológico de Ejecución
+                        </div>
+                        <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.2rem;">
+                            Componente: AltitudeDynamics &bull; ParityTrapFilter &bull; Factor 'psychological_friction_stake_adapter' &bull; Capital protegido en $70 USD
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 0.35rem;">
+                        <span class="badge-status badge-win" style="background: rgba(16, 185, 129, 0.3); border: 1px solid rgba(16, 185, 129, 0.7); color: #6ee7b7; font-size: 0.85rem;">
+                            ✅ PARLAY VERDE: CUOTA 1.81
+                        </span>
+                        <span class="badge-status badge-win" style="background: rgba(59, 130, 246, 0.25); border: 1px solid rgba(59, 130, 246, 0.6); color: #93c5fd; font-size: 0.85rem;">
+                            👑 FILTRO DE PARIDAD EXITOSO
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="autopsy-split">
+                    <div class="box-flaw" style="border-color: rgba(59, 130, 246, 0.4); background: rgba(59, 130, 246, 0.1);">
+                        <div class="box-title-flaw" style="color: #93c5fd;">
+                            <span>💡 Diagnóstico Táctico y Geográfico Impecable</span>
+                        </div>
+                        <div class="box-text">
+                            <p><strong>1. La Fortaleza de Echaleche (3.250m):</strong> Mushuc Runa superó 2-1 a Orense. Tal como proyectó el modelo, el equipo de Machala (nivel del mar) sufrió ahogo aeróbico severo en el segundo tiempo, consolidando la Doble Oportunidad 1X (@1.22).</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. Jerarquía Absoluta en Londres:</strong> Tottenham despachó 2-0 a Coventry City con 67% de posesión y solvencia, ratificando la cuota 1.48 de local.</p>
+                            <p style="margin-top: 0.5rem;"><strong>3. Aislamiento del Partido Trampa:</strong> El sistema alertó y aisló Getafe vs Rayo (cuotas 2.90-3.00-2.66), blindando el boleto principal contra la varianza de un derbi cerrado (1-1).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="box-solution" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
+                        <div class="box-title-solution">
+                            <span>🛡️ Autoaprendizaje Psicológico (Ciclo #113)</span>
+                        </div>
+                        <div class="box-text">
+                            <p><strong>1. Superación de la Aversión al Riesgo Post-Ganancia:</strong> El usuario confirmó que la combinada salió exacta pero la duda le impidió apretar el botón ("salio la combinada pero me ahueve a apostar seguimos con los 70"). La banca se preservó intacta ($70 USD), pero se dejó beneficio en la mesa.</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. Regla de Stake Asimétrico Gradual:</strong> Para erradicar la fricción psicológica de apostar $10 completos tras un descanso, se autoriza apostar fracciones de $5 a $7 USD (7-10% del bankroll), permitiendo validar el sistema y monetizar sin ansiedad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- CASO DE ÉXITO & APRENDIZAJE #2: BOLETO DOBLE ECUABET (COBRO RATIFICADO DEL USUARIO) -->
             <div class="autopsy-card" style="border: 2px solid rgba(16, 185, 129, 0.6); background: rgba(6, 78, 59, 0.25); box-shadow: 0 16px 36px -8px rgba(16, 185, 129, 0.35); margin-bottom: 2rem;">
                 <div class="autopsy-header">

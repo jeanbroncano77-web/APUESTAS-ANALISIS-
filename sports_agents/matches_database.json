@@ -808,5 +808,14 @@
     "referee_avg_yellows": 4.6,
     "referee_avg_reds": 0.2,
     "intensity": "Alta (Choque histórico del norte italiano; intensidad en mediocampo y transiciones veloces)"
+  },
+  "Deportivo Riestra vs Unión de Santa Fe": {
+    "tournament": "Liga Profesional Argentina • Torneo Clausura (Fecha 13)",
+    "stadium": "Estadio Guillermo Laza (Buenos Aires)",
+    "spectators_est": "3,000 espectadores (19:15 Hora Ecuador / 21:15 Argentina)",
+    "referee": "Andrés Merlos",
+    "referee_avg_yellows": 5.4,
+    "referee_avg_reds": 0.28,
+    "intensity": "Extrema (Choque físico en campo de dimensiones reducidas; alta fricción y tendencia de tarjetas y Under)"
   }
 }
