@@ -1,5 +1,5 @@
 {
-  "GeneratedAt": "2026-10-19 22:38:17",
+  "GeneratedAt": "2026-10-19 22:41:08",
   "TargetDay": "Martes",
   "TargetDate": "20/10/2026",
   "TemporalLabel": "MAÑANA",
@@ -651,7 +651,7 @@
         "summary_tag": "Señal Editorial Activa (ALTO Riesgo Desborde)"
       },
       "score_prediction": {
-        "most_probable_score": "0 - 2",
+        "most_probable_score": "3 - 0",
         "most_probable_prob_pct": 9.13,
         "top_5_scores": [
           {
@@ -686,9 +686,9 @@
           }
         ],
         "1x2_probabilities": {
-          "home_win_pct": 7.06,
-          "draw_pct": 26.0,
-          "away_win_pct": 66.94
+          "home_win_pct": 82.0,
+          "draw_pct": 12.0,
+          "away_win_pct": 6.0
         },
         "goals_markets": {
           "over_0_5_pct": 97.23,
@@ -937,16 +937,16 @@
       "la_fija_real": {
         "market": "Victoria Directa (1X2)",
         "category_code": "VICTORIA_DIRECTA",
-        "selection": "Barcelona Gana el Partido (2)",
-        "probability": 66.9,
-        "odds": 1.58,
+        "selection": "Sporting de Lisboa Gana el Partido (1)",
+        "probability": 82.0,
+        "odds": 1.22,
         "_high_conviction": true,
-        "availability": "Universal en todas las casas (Bet365, Betano, 1xBet, Codere)",
-        "rationale": "Convicción visitante: Barcelona proyecta superioridad táctica con 66.9% de probabilidad de llevarse los 3 puntos.",
+        "availability": "Universal en Ecuabet, Bet365, Betano",
+        "rationale": "Diferencia abismal de plantillas y ritmo competitivo. Sporting promedia 3.1 goles en el José Alvalade con Viktor Gyökeres como punta de lanza ante un modesto LASK austriaco.",
         "confidence_tier": "TIER_1_CANDADO",
-        "tier_badge": "🟢 VICTORIA DIRECTA - ALTA CONVICCIÓN",
-        "_rank_score": 278.9,
-        "expected_value": 0.057
+        "tier_badge": "🟢 RESPALDO ESTELAR &bull; JOSÉ ALVALADE",
+        "_rank_score": 370.0,
+        "expected_value": 0.05
       },
       "all_fija_options": [
         {
@@ -1036,9 +1036,9 @@
       },
       "projections": {
         "expected_goals": {
-          "home": 2.8,
-          "away": 0.96,
-          "total": 3.76
+          "home": 2.6,
+          "away": 0.5,
+          "total": 3.1
         },
         "variance_and_uncertainty": {
           "variance_index": 1.0,
@@ -1161,7 +1161,7 @@
         "summary_tag": "Señal Editorial Activa (MODERADO Riesgo Desborde)"
       },
       "score_prediction": {
-        "most_probable_score": "3 - 0",
+        "most_probable_score": "2 - 0",
         "most_probable_prob_pct": 12.64,
         "top_5_scores": [
           {
@@ -1196,9 +1196,9 @@
           }
         ],
         "1x2_probabilities": {
-          "home_win_pct": 82.0,
-          "draw_pct": 12.0,
-          "away_win_pct": 6.0
+          "home_win_pct": 83.3,
+          "draw_pct": 11.2,
+          "away_win_pct": 5.5
         },
         "goals_markets": {
           "over_0_5_pct": 96.18,
@@ -1395,15 +1395,15 @@
       "la_fija_real": {
         "market": "Victoria Directa (1X2)",
         "category_code": "VICTORIA_DIRECTA",
-        "selection": "Sporting de Lisboa Gana el Partido (1)",
-        "probability": 82.0,
-        "odds": 1.22,
+        "selection": "Aston Villa Gana el Partido (1)",
+        "probability": 83.3,
+        "odds": 1.2,
         "_high_conviction": true,
         "availability": "Universal en Ecuabet, Bet365, Betano",
-        "rationale": "Diferencia abismal de plantillas y ritmo competitivo. Sporting promedia 3.1 goles en el José Alvalade con Viktor Gyökeres como punta de lanza ante un modesto LASK austriaco.",
+        "rationale": "Unai Emery es especialista continental. Viking sale del frío y césped sintético noruego para enfrentar un Villa Park que ya vio caer 6-0 al Fenerbahçe.",
         "confidence_tier": "TIER_1_CANDADO",
-        "tier_badge": "🟢 RESPALDO ESTELAR &bull; JOSÉ ALVALADE",
-        "_rank_score": 370.0,
+        "tier_badge": "🟢 VICTORIA DIRECTA &bull; VILLA PARK",
+        "_rank_score": 360.0,
         "expected_value": 0.05
       },
       "all_fija_options": [
@@ -1508,9 +1508,9 @@
       },
       "projections": {
         "expected_goals": {
-          "home": 2.6,
-          "away": 0.5,
-          "total": 3.1
+          "home": 2.2,
+          "away": 0.7,
+          "total": 2.9
         },
         "variance_and_uncertainty": {
           "variance_index": 0.9,
@@ -1646,9 +1646,9 @@
           }
         ],
         "1x2_probabilities": {
-          "home_win_pct": 83.3,
-          "draw_pct": 11.2,
-          "away_win_pct": 5.5
+          "home_win_pct": 76.5,
+          "draw_pct": 16.9,
+          "away_win_pct": 6.6
         },
         "goals_markets": {
           "over_0_5_pct": 94.75,
@@ -1882,18 +1882,18 @@
         ]
       },
       "la_fija_real": {
-        "market": "Victoria Directa (1X2)",
-        "category_code": "VICTORIA_DIRECTA",
-        "selection": "Aston Villa Gana el Partido (1)",
-        "probability": 83.3,
-        "odds": 1.2,
+        "market": "Doble Oportunidad (1X)",
+        "category_code": "DOBLE_OPORTUNIDAD",
+        "selection": "Inter de Milán o Empate (1X)",
+        "probability": 93.4,
+        "odds": 1.08,
         "_high_conviction": true,
         "availability": "Universal en Ecuabet, Bet365, Betano",
-        "rationale": "Unai Emery es especialista continental. Viking sale del frío y césped sintético noruego para enfrentar un Villa Park que ya vio caer 6-0 al Fenerbahçe.",
+        "rationale": "Protección total ante cualquier sorpresa en San Siro. Lautaro Martínez y Thuram garantizan volumen ofensivo constante.",
         "confidence_tier": "TIER_1_CANDADO",
-        "tier_badge": "🟢 VICTORIA DIRECTA &bull; VILLA PARK",
-        "_rank_score": 360.0,
-        "expected_value": 0.05
+        "tier_badge": "🟢 CANDADO DE SEGURIDAD &bull; SAN SIRO",
+        "_rank_score": 350.0,
+        "expected_value": 0.04
       },
       "all_fija_options": [
         {
@@ -1997,9 +1997,9 @@
       },
       "projections": {
         "expected_goals": {
-          "home": 2.2,
-          "away": 0.7,
-          "total": 2.9
+          "home": 1.75,
+          "away": 1.55,
+          "total": 3.3
         },
         "variance_and_uncertainty": {
           "variance_index": 1.01,
@@ -2115,7 +2115,7 @@
         "summary_tag": "Señal Editorial Activa (MODERADO Riesgo Desborde)"
       },
       "score_prediction": {
-        "most_probable_score": "2 - 0",
+        "most_probable_score": "2 - 2",
         "most_probable_prob_pct": 12.58,
         "top_5_scores": [
           {
@@ -2150,9 +2150,9 @@
           }
         ],
         "1x2_probabilities": {
-          "home_win_pct": 76.5,
-          "draw_pct": 16.9,
-          "away_win_pct": 6.6
+          "home_win_pct": 46.0,
+          "draw_pct": 28.0,
+          "away_win_pct": 26.0
         },
         "goals_markets": {
           "over_0_5_pct": 94.67,
@@ -2347,17 +2347,17 @@
         ]
       },
       "la_fija_real": {
-        "market": "Doble Oportunidad (1X)",
-        "category_code": "DOBLE_OPORTUNIDAD",
-        "selection": "Inter de Milán o Empate (1X)",
-        "probability": 93.4,
-        "odds": 1.08,
-        "_high_conviction": true,
+        "market": "Ambos Equipos Anotan (BTTS)",
+        "category_code": "AMBOS_MARCAN",
+        "selection": "Ambos Equipos Anotan (Sí)",
+        "probability": 65.5,
+        "odds": 1.58,
+        "_high_conviction": false,
         "availability": "Universal en Ecuabet, Bet365, Betano",
-        "rationale": "Protección total ante cualquier sorpresa en San Siro. Lautaro Martínez y Thuram garantizan volumen ofensivo constante.",
-        "confidence_tier": "TIER_1_CANDADO",
-        "tier_badge": "🟢 CANDADO DE SEGURIDAD &bull; SAN SIRO",
-        "_rank_score": 350.0,
+        "rationale": "Choque de titanes en el Allianz Arena. Harry Kane y Musiala frente a Saka y Havertz proyectan goles en ambos arcos pero alta fricción de resultado 1X2.",
+        "confidence_tier": "TIER_2_VALOR",
+        "tier_badge": "🟡 VALOR ESTRATÉGICO &bull; ALLIANZ ARENA",
+        "_rank_score": 280.0,
         "expected_value": 0.04
       },
       "all_fija_options": [
@@ -2462,8 +2462,8 @@
       },
       "projections": {
         "expected_goals": {
-          "home": 1.75,
-          "away": 1.55,
+          "home": 2.7,
+          "away": 0.6,
           "total": 3.3
         },
         "variance_and_uncertainty": {
@@ -2623,7 +2623,7 @@
         "summary_tag": "Señal Editorial Activa (ALTO Riesgo Desborde)"
       },
       "score_prediction": {
-        "most_probable_score": "2 - 2",
+        "most_probable_score": "3 - 1",
         "most_probable_prob_pct": 6.44,
         "top_5_scores": [
           {
@@ -2658,9 +2658,9 @@
           }
         ],
         "1x2_probabilities": {
-          "home_win_pct": 46.0,
-          "draw_pct": 28.0,
-          "away_win_pct": 26.0
+          "home_win_pct": 80.0,
+          "draw_pct": 13.0,
+          "away_win_pct": 7.0
         },
         "goals_markets": {
           "over_0_5_pct": 98.58,
@@ -2881,18 +2881,18 @@
         ]
       },
       "la_fija_real": {
-        "market": "Ambos Equipos Anotan (BTTS)",
-        "category_code": "AMBOS_MARCAN",
-        "selection": "Ambos Equipos Anotan (Sí)",
-        "probability": 65.5,
-        "odds": 1.58,
-        "_high_conviction": false,
+        "market": "Victoria Directa (1X2)",
+        "category_code": "VICTORIA_DIRECTA",
+        "selection": "Al-Nassr Gana el Partido (1)",
+        "probability": 80.0,
+        "odds": 1.25,
+        "_high_conviction": true,
         "availability": "Universal en Ecuabet, Bet365, Betano",
-        "rationale": "Choque de titanes en el Allianz Arena. Harry Kane y Musiala frente a Saka y Havertz proyectan goles en ambos arcos pero alta fricción de resultado 1X2.",
-        "confidence_tier": "TIER_2_VALOR",
-        "tier_badge": "🟡 VALOR ESTRATÉGICO &bull; ALLIANZ ARENA",
-        "_rank_score": 280.0,
-        "expected_value": 0.04
+        "rationale": "Cristiano Ronaldo y Sadio Mané de locales en el Al-Awwal Park con jerarquía ofensiva frente al recién ascendido Neom SC.",
+        "confidence_tier": "TIER_1_CANDADO",
+        "tier_badge": "🟢 CANDADO SAUDÍ &bull; AL-AWWAL PARK",
+        "_rank_score": 340.0,
+        "expected_value": 0.05
       },
       "all_fija_options": [
         {
