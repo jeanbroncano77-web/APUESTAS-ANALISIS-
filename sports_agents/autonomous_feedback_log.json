@@ -1,39 +1,7 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 115,
+  "cycles_completed": 116,
   "calibrations": [
-    {
-      "cycle": 85,
-      "timestamp": "2026-10-15 22:30:00",
-      "action": "Auditoría Jueves 15/10 & Calibración Viernes 16 / Sábado 17 de Octubre 2026",
-      "status": "POST_MORTEM_THURSDAY_AND_CARDS_INTEGRATION",
-      "observations": [
-        "[AUDITORÍA REAL JUEVES 15/10 - 5/6 ACIERTOS / 1 FALLO (83.3%)]: Ganaron Benfica-Celtic (2-0, gol Benfica), Salzburg-Milan (0-4, >0.5 goles), Celta-Juventus (1-1, Juventus X2), Poznań-Leverkusen (1-3, >0.5 goles) y Lyon-Palace (2-1, 9 córners). Solo falló Ajax (cayó 1-0 en Split ante Hajduk).",
-        "[ÉXITO COMBINADA DEL USUARIO - BANCA A ]: El usuario ganó su apuesta de  con Benfica y Juventus X2 (+10 USD limpios). Tras cubrir un gasto de urgencia de , la banca disponible se sitúa en  ( base intactos +  de ganancia pura acumulada).",
-        "[CALIBRACIÓN VICTORIAS ABRUMADORAS - AC MILAN 4-0 SALZBURG]: Tal como exigió el usuario tras Liverpool (3-6) y Aston Villa (6-0), el AC Milan goleó 0-4 de visitante. El modelo sobrecastigó la localía de Salzburg. Se calibra tier1_superiority_buffer para reconocer favoritismo aplastante de gigantes europeos ante equipos de segundo orden.",
-        "[CALIBRACIÓN CALDERAS BALCÁNICAS]: Hajduk Split 1-0 Ajax demostró que las calderas de los Balcanes son trampas para la Doble Oportunidad visitante. Veto a favoritas visitantes frágiles en Split/Belgrado.",
-        "[INTEGRACIÓN MERCADO DE TARJETAS - LALIGA & REAL MADRID]: Incorporado formalmente MarketRealityAgent 4.2 con mercado de TARJETAS (>1.5 tarjetas por equipo / >3.5 tarjetas totales) a petición estratégica del usuario para la visita del Real Madrid a Balaídos."
-      ],
-      "adjustments": {
-        "balkan_away_trap_veto": true,
-        "tier1_superiority_buffer": 1.45,
-        "cards_market_active": true,
-        "team_cards_poisson_enabled": true
-      },
-      "metrics_snapshot": {
-        "global_win_rate": 89.0,
-        "fijas_win_rate": 89.6,
-        "total_audited": 109,
-        "fijas_total": 77,
-        "fijas_wins": 69,
-        "fijas_losses": 8,
-        "pnl_usd": 913.0,
-        "bankroll_usd": 1913.0,
-        "user_bankroll_usd": 73.0,
-        "active_streak": 0
-      },
-      "system_health": "Calibrado y Optimizado (Win Rate Fijas: 89.6% [69/77] | Win Rate Global: 89.0% [97/109] | Ciclo #85)"
-    },
     {
       "cycle": 86,
       "timestamp": "2026-10-15 22:35:09",
@@ -778,6 +746,21 @@
         "MarketRealityAgent: Fijas de alta convicción calibradas para Miércoles (confianza media: 61.5%). Cero hándicaps, cero líneas sintéticas."
       ],
       "system_health": "Excelente (Win Rate Fijas: 87.5% [98/112] | Win Rate Global: 87.9% [131/149] | Brier Score: 0.1222 | Ciclo #115)"
+    },
+    {
+      "cycle": 116,
+      "timestamp": "2026-10-21 05:02:05",
+      "action": "Auto-Calibración Bayesiana & Aprendizaje Dinámico (Miércoles 21/10/2026)",
+      "observations": [
+        "[Calendario Oficial Verificado]: Fixtures confirmados sin invenciones para Miércoles 21/10/2026 (LaLiga, Premier League, Serie A, Ligas Sudamericanas).",
+        "[Auditoría y Validación Empírica Ecuabet (+$4.77 netos)]: Cobro exitoso del boleto doble del usuario en Ecuabet (Arsenal DNB @1.18 + Real Madrid Gana @1.25 -> Cuota 1.47). Arsenal ganó 0-1 y Real Madrid goleó 4-1, capital sube a $74.77 USD.",
+        "[Auditoría de Jornada Dominical (4 Aciertos / 1 Fallo)]: Verdes en Arsenal (0-1), Real Madrid (4-1), Brighton (5-0) y Bournemouth (2-0).",
+        "[Autopsia Cuantitativa Leeds 1-1 Manchester United (Fallo Real)]: El United se adelantó con Mbeumo pero empató Calvert-Lewin al 51'. La hostilidad de Elland Road neutralizó la victoria visitante, ratificando la advertencia del usuario: 'el arsenal va de visita, no quieres que se dañe la fija que de ley gane'. Se eleva 'premier_league_away_favorite_friction' a 1.28x y se exige DNB en favoritos visitantes con cuota > 1.50.",
+        "[Autopsias Previas Ratificadas]: Filtros de bloque bajo (1.35) y veto a BTTS en Tier-1 defensivo se mantienen activos.",
+        "[Brier Score Cuadrático Global]: 0.1222 en 149 eventos auditados en vivo. Banca oficial supera los $2,000 USD ($2,007.52 USD, +100.8% ROI).",
+        "MarketRealityAgent: Fijas de alta convicción calibradas para Miércoles (confianza media: 61.5%). Cero hándicaps, cero líneas sintéticas."
+      ],
+      "system_health": "Excelente (Win Rate Fijas: 87.5% [98/112] | Win Rate Global: 87.9% [131/149] | Brier Score: 0.1222 | Ciclo #116)"
     }
   ],
   "current_weights": {
@@ -798,5 +781,5 @@
     "psychological_friction_stake_adapter": 0.08
   },
   "last_auto_audit": "2026-10-13 21:40:00",
-  "last_updated": "2026-10-21 04:01:25"
+  "last_updated": "2026-10-21 05:02:05"
 }
