@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-20 21:54:14",
+  "last_updated": "2026-10-20 23:01:25",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 2512.52,
-  "total_profit": 1512.52,
-  "roi_pct": 151.3,
+  "current_bankroll": 2526.52,
+  "total_profit": 1526.52,
+  "roi_pct": 152.7,
   "global_stats": {
-    "total": 148,
-    "wins": 130,
+    "total": 149,
+    "wins": 131,
     "losses": 18,
-    "win_rate": 87.8
+    "win_rate": 87.9
   },
   "fija_stats": {
-    "total": 111,
-    "wins": 97,
+    "total": 112,
+    "wins": 98,
     "losses": 14,
-    "win_rate": 87.4,
-    "active_streak": 18
+    "win_rate": 87.5,
+    "active_streak": 19
   },
   "history": [
     {
@@ -1941,6 +1941,19 @@
       "status": "win",
       "diagnostic": "COBRO MAESTRO EN ECUABET: Los 4 partidos cumplieron a la perfección. Con $20 apostados, el usuario cobró $35.20 USD (+$15.20 netos limpios). La regla de Doble Oportunidad 1X en Liverpool evitó la tragedia del 4-3.",
       "pnl": 76.0
+    },
+    {
+      "id": 149,
+      "match": "Getafe vs Rayo Vallecano",
+      "tournament": "Premier League, LaLiga EA Sports, Serie A, LigaPro & Liga Profesional Argentina • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Getafe o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Getafe defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
+      "pnl": 14.0
     }
   ],
   "bankroll": {

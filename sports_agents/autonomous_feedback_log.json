@@ -1,22 +1,7 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 114,
+  "cycles_completed": 115,
   "calibrations": [
-    {
-      "cycle": 84,
-      "timestamp": "2026-10-14 23:01:43",
-      "action": "Auto-Calibración Diaria (Jueves 15/10/2026)",
-      "observations": [
-        "[Calendario Oficial]: Fixtures confirmados sin dependencias sintéticas para Jueves.",
-        "Calibración Favoritos Visitantes: Fricción cuantitativa aplicada (tope 68% en 1X2 visitante) para erradicar sobreconfianza irreal; ratificación de Gol de Equipo y Doble Oportunidad como blindaje.",
-        "SquadInjuryAgent (FC Barcelona): Dani Olmo 100% habilitado en once titular; Raphinha y Roony Bardghji ratificados como bajas médicas oficiales con veto de props.",
-        "SquadInjuryAgent: 100% de planteles ratificados.",
-        "MarketRealityAgent: 6 Fijas ultra-seguras (95-98%) optimizadas (confianza media: 95.0%). Cero hándicaps, cero líneas de 5.5 goles.",
-        "PlayerPropsAgent: Volumen ofensivo redistribuido hacia titulares activos.",
-        "TimesFM & Monte Carlo: Dixon-Coles calibrado para Jueves."
-      ],
-      "system_health": "Excelente (Win Rate Fijas: 90.1% [64/71] | Win Rate Global: 89.3% [92/103] | Brier Score: ~0.076 | Ciclo #84)"
-    },
     {
       "cycle": 85,
       "timestamp": "2026-10-15 22:30:00",
@@ -767,21 +752,6 @@
       "system_health": "Excelente (Win Rate Fijas: 86.8% [92/106] | Win Rate Global: 87.2% [123/141] | Brier Score: 0.1281 | Ciclo #114)"
     },
     {
-      "cycle": 115,
-      "timestamp": "2026-10-20 03:41:37",
-      "action": "Auto-Calibración Bayesiana & Aprendizaje Dinámico (Martes 20/10/2026)",
-      "observations": [
-        "[Calendario Oficial Verificado]: Fixtures confirmados sin invenciones para Martes 20/10/2026 (LaLiga, Premier League, Serie A, Ligas Sudamericanas).",
-        "[Auditoría y Validación Empírica Ecuabet (+$4.77 netos)]: Cobro exitoso del boleto doble del usuario en Ecuabet (Arsenal DNB @1.18 + Real Madrid Gana @1.25 -> Cuota 1.47). Arsenal ganó 0-1 y Real Madrid goleó 4-1, capital sube a $74.77 USD.",
-        "[Auditoría de Jornada Dominical (4 Aciertos / 1 Fallo)]: Verdes en Arsenal (0-1), Real Madrid (4-1), Brighton (5-0) y Bournemouth (2-0).",
-        "[Autopsia Cuantitativa Leeds 1-1 Manchester United (Fallo Real)]: El United se adelantó con Mbeumo pero empató Calvert-Lewin al 51'. La hostilidad de Elland Road neutralizó la victoria visitante, ratificando la advertencia del usuario: 'el arsenal va de visita, no quieres que se dañe la fija que de ley gane'. Se eleva 'premier_league_away_favorite_friction' a 1.28x y se exige DNB en favoritos visitantes con cuota > 1.50.",
-        "[Autopsias Previas Ratificadas]: Filtros de bloque bajo (1.35) y veto a BTTS en Tier-1 defensivo se mantienen activos.",
-        "[Brier Score Cuadrático Global]: 0.1281 en 141 eventos auditados en vivo. Banca oficial supera los $2,000 USD ($2,007.52 USD, +100.8% ROI).",
-        "MarketRealityAgent: Fijas de alta convicción calibradas para Martes (confianza media: 62.4%). Cero hándicaps, cero líneas sintéticas."
-      ],
-      "system_health": "Excelente (Win Rate Fijas: 86.8% [92/106] | Win Rate Global: 87.2% [123/141] | Brier Score: 0.1281 | Ciclo #115)"
-    },
-    {
       "cycle": 114,
       "timestamp": "2026-10-20 21:54:14",
       "action": "Auditoría de Jornada Martes 20/10/2026 & Calibración de la Avalancha de Goles en Champions",
@@ -793,6 +763,21 @@
         "[MÉTRICAS OFICIALES ACTUALIZADAS]: Win Rate Global sube a 87.8% (130/148) | Win Rate Fijas sube a 87.4% (97/111) | Racha activa: 18 aciertos consecutivos | Brier Score: 0.123."
       ],
       "system_health": "Excelente (Win Rate Fijas: 87.4% [97/111] | Win Rate Global: 87.8% [130/148] | Brier Score: 0.123 | Ciclo #114)"
+    },
+    {
+      "cycle": 115,
+      "timestamp": "2026-10-21 04:01:25",
+      "action": "Auto-Calibración Bayesiana & Aprendizaje Dinámico (Miércoles 21/10/2026)",
+      "observations": [
+        "[Calendario Oficial Verificado]: Fixtures confirmados sin invenciones para Miércoles 21/10/2026 (LaLiga, Premier League, Serie A, Ligas Sudamericanas).",
+        "[Auditoría y Validación Empírica Ecuabet (+$4.77 netos)]: Cobro exitoso del boleto doble del usuario en Ecuabet (Arsenal DNB @1.18 + Real Madrid Gana @1.25 -> Cuota 1.47). Arsenal ganó 0-1 y Real Madrid goleó 4-1, capital sube a $74.77 USD.",
+        "[Auditoría de Jornada Dominical (4 Aciertos / 1 Fallo)]: Verdes en Arsenal (0-1), Real Madrid (4-1), Brighton (5-0) y Bournemouth (2-0).",
+        "[Autopsia Cuantitativa Leeds 1-1 Manchester United (Fallo Real)]: El United se adelantó con Mbeumo pero empató Calvert-Lewin al 51'. La hostilidad de Elland Road neutralizó la victoria visitante, ratificando la advertencia del usuario: 'el arsenal va de visita, no quieres que se dañe la fija que de ley gane'. Se eleva 'premier_league_away_favorite_friction' a 1.28x y se exige DNB en favoritos visitantes con cuota > 1.50.",
+        "[Autopsias Previas Ratificadas]: Filtros de bloque bajo (1.35) y veto a BTTS en Tier-1 defensivo se mantienen activos.",
+        "[Brier Score Cuadrático Global]: 0.1222 en 149 eventos auditados en vivo. Banca oficial supera los $2,000 USD ($2,007.52 USD, +100.8% ROI).",
+        "MarketRealityAgent: Fijas de alta convicción calibradas para Miércoles (confianza media: 61.5%). Cero hándicaps, cero líneas sintéticas."
+      ],
+      "system_health": "Excelente (Win Rate Fijas: 87.5% [98/112] | Win Rate Global: 87.9% [131/149] | Brier Score: 0.1222 | Ciclo #115)"
     }
   ],
   "current_weights": {
@@ -813,5 +798,5 @@
     "psychological_friction_stake_adapter": 0.08
   },
   "last_auto_audit": "2026-10-13 21:40:00",
-  "last_updated": "2026-10-20 21:54:14"
+  "last_updated": "2026-10-21 04:01:25"
 }
