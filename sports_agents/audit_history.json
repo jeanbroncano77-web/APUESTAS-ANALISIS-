@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-19 22:18:25",
+  "last_updated": "2026-10-20 21:54:14",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 2322.52,
-  "total_profit": 1322.52,
-  "roi_pct": 132.3,
+  "current_bankroll": 2512.52,
+  "total_profit": 1512.52,
+  "roi_pct": 151.3,
   "global_stats": {
-    "total": 141,
-    "wins": 123,
+    "total": 148,
+    "wins": 130,
     "losses": 18,
-    "win_rate": 87.2
+    "win_rate": 87.8
   },
   "fija_stats": {
-    "total": 106,
-    "wins": 92,
+    "total": 111,
+    "wins": 97,
     "losses": 14,
-    "win_rate": 86.8,
-    "active_streak": 11
+    "win_rate": 87.4,
+    "active_streak": 18
   },
   "history": [
     {
@@ -1850,13 +1850,104 @@
       "status": "win",
       "diagnostic": "Monterrey defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
       "pnl": 14.0
+    },
+    {
+      "id": 142,
+      "match": "París Saint-Germain vs FC Barcelona",
+      "tournament": "UEFA Champions League • Martes 20/10/2026 • Final: 4 - 2",
+      "category_tag": "👑 La Fija (Ambos Marcan)",
+      "is_fija": true,
+      "selection": "Ambos Equipos Anotan: Sí [BTTS]",
+      "odds": 1.22,
+      "confidence": 88.5,
+      "status": "win",
+      "diagnostic": "ACIERTO APLASTANTE EN EL PARTIDAZO (4 - 2): Lluvia de goles en el Parque de los Príncipes. La línea adelantada de Flick y la velocidad de Barcola y Dembélé cumplieron el Ambos Marcan en el primer tiempo.",
+      "pnl": 22.0
+    },
+    {
+      "id": 143,
+      "match": "Manchester City vs AEK Atenas",
+      "tournament": "UEFA Champions League • Martes 20/10/2026 • Final: 5 - 1",
+      "category_tag": "👑 La Fija (Victoria Directa)",
+      "is_fija": true,
+      "selection": "Manchester City Gana el Partido (1) [Victoria Directa]",
+      "odds": 1.14,
+      "confidence": 91.5,
+      "status": "win",
+      "diagnostic": "GOLEADA DE TRÁMITE (5 - 1): Haaland con triplete y asedio total en el Etihad. El City ratificó su condición de fortaleza continental indiscutible.",
+      "pnl": 14.0
+    },
+    {
+      "id": 144,
+      "match": "AS Roma vs Slovan Bratislava",
+      "tournament": "UEFA Champions League • Martes 20/10/2026 • Final: 4 - 0",
+      "category_tag": "👑 La Fija (Victoria Directa)",
+      "is_fija": true,
+      "selection": "AS Roma Gana el Partido (1) [Victoria Directa]",
+      "odds": 1.11,
+      "confidence": 89.0,
+      "status": "win",
+      "diagnostic": "MURALLA ROMANA (4 - 0): Dybala y Dovbyk liquidaron al modesto Slovan eslovaco en el Stadio Olimpico sin conceder remates francos al arco.",
+      "pnl": 11.0
+    },
+    {
+      "id": 145,
+      "match": "Liverpool vs Villarreal",
+      "tournament": "UEFA Champions League • Martes 20/10/2026 • Final: 4 - 3",
+      "category_tag": "👑 La Fija (Doble Oportunidad)",
+      "is_fija": true,
+      "selection": "Liverpool o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 90.5,
+      "status": "win",
+      "diagnostic": "ACIERTO CARDÍACO Y SALVADOR (4 - 3): Villarreal sorprendió poniéndose 2-2 y 3-3 con contragolpes de Baena y Gerard Moreno. La Doble Oportunidad 1X blindó el boleto del usuario del batacazo, cobrándose con gol de Salah al 88'.",
+      "pnl": 14.0
+    },
+    {
+      "id": 146,
+      "match": "Napoli vs Bodø/Glimt",
+      "tournament": "UEFA Champions League • Martes 20/10/2026 • Final: 4 - 3",
+      "category_tag": "Victoria Directa",
+      "is_fija": false,
+      "selection": "Napoli Gana el Partido (1) [Victoria Directa]",
+      "odds": 1.28,
+      "confidence": 78.5,
+      "status": "win",
+      "diagnostic": "FIESTA DE GOLES EN NÁPOLES (4 - 3): Conte sufrió ante la efectividad noruega pero Lukaku y Kvaratskhelia aseguraron los 3 puntos en el Stadio Maradona.",
+      "pnl": 28.0
+    },
+    {
+      "id": 147,
+      "match": "Sabah vs Borussia Dortmund",
+      "tournament": "UEFA Champions League • Martes 20/10/2026 • Final: 1 - 2",
+      "category_tag": "Victoria Directa",
+      "is_fija": false,
+      "selection": "Borussia Dortmund Gana (2) [Victoria Directa]",
+      "odds": 1.25,
+      "confidence": 80.0,
+      "status": "win",
+      "diagnostic": "CUMPLIÓ LA JERARQUÍA (1 - 2): En Bakú, el Dortmund resolvió con goles de Guirassy y Brandt para asegurar la victoria alemana.",
+      "pnl": 25.0
+    },
+    {
+      "id": 148,
+      "match": "Cupón Cuádruple Ecuabet (PSG BTTS + City + Roma + Liverpool 1X)",
+      "tournament": "Ecuabet • Martes 20/10/2026 • Boleto Cuádruple Combinado",
+      "category_tag": "👑 Boleto Maestro Usuario Ecuabet",
+      "is_fija": true,
+      "selection": "PSG BTTS (@1.22) + Man City (@1.14) + Roma (@1.11) + Liverpool 1X (@1.14) [Cuota 1.76]",
+      "odds": 1.76,
+      "confidence": 86.0,
+      "status": "win",
+      "diagnostic": "COBRO MAESTRO EN ECUABET: Los 4 partidos cumplieron a la perfección. Con $20 apostados, el usuario cobró $35.20 USD (+$15.20 netos limpios). La regla de Doble Oportunidad 1X en Liverpool evitó la tragedia del 4-3.",
+      "pnl": 76.0
     }
   ],
   "bankroll": {
     "initial": 1000.0,
-    "current": 2308.52,
-    "profit": 1308.52,
-    "roi": 130.9
+    "current": 2512.52,
+    "profit": 1512.52,
+    "roi": 151.3
   },
-  "brier_score": 0.129
+  "brier_score": 0.123
 }

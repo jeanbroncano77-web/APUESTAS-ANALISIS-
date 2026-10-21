@@ -450,6 +450,53 @@ area3_html = f"""        <!-- VISTA 3: AUTOAPRENDIZAJE & CRÍTICA DIARIA -->
                 </div>
             </div>
 
+            <!-- CASO DE ÉXITO & APRENDIZAJE #4: LA AVALANCHA DE GOLES EN CHAMPIONS & EL BLINDAJE 1X ANTE EL VILLARREAL (4-3) -->
+            <div class="autopsy-card" style="border: 2px solid rgba(16, 185, 129, 0.6); background: rgba(6, 78, 59, 0.25); box-shadow: 0 16px 36px -8px rgba(16, 185, 129, 0.35); margin-bottom: 2rem;">
+                <div class="autopsy-header">
+                    <div>
+                        <div class="autopsy-match" style="color: #34d399; display: flex; align-items: center; gap: 0.5rem;">
+                            <span>⭐ CASO DE ÉXITO & APRENDIZAJE #4 (JORNADA MARTES 20/10 CHAMPIONS LEAGUE):</span>
+                        </div>
+                        <div style="font-size: 1.25rem; font-weight: 800; color: #ffffff; margin-top: 0.25rem;">
+                            PSG 4-2 Barça &bull; Liverpool 4-3 Villarreal &bull; El Blindaje 1X Salvó el Cupón ante el Batacazo
+                        </div>
+                        <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.2rem;">
+                            Componente: HighGoalVariance &bull; TacticalManagerAgent &bull; Boleto Cuádruple Ecuabet (Cuota 1.76 Acertada)
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 0.35rem;">
+                        <span class="badge-status badge-win" style="background: rgba(16, 185, 129, 0.3); border: 1px solid rgba(16, 185, 129, 0.7); color: #6ee7b7; font-size: 0.85rem;">
+                            ✅ BOLETO COBRADO: +$15.20 NETOS
+                        </span>
+                        <span class="badge-status badge-win" style="background: rgba(59, 130, 246, 0.25); border: 1px solid rgba(59, 130, 246, 0.6); color: #93c5fd; font-size: 0.85rem;">
+                            🛡️ SEGURO 1X RATIFICADO EN ANFIELD
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="autopsy-split">
+                    <div class="box-flaw" style="border-color: rgba(59, 130, 246, 0.4); background: rgba(59, 130, 246, 0.1);">
+                        <div class="box-title-flaw" style="color: #93c5fd;">
+                            <span>💡 Diagnóstico del Partido y la Advertencia del Usuario</span>
+                        </div>
+                        <div class="box-text">
+                            <p><strong>1. El Ojo Clínico del Usuario en PSG vs Barça:</strong> El usuario vio venir el intercambio de golpes. PSG 4-2 Barcelona pulverizó las redes y el 'Ambos Marcan' se cobró con holgura total.</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. La Advertencia del Batacazo del Villarreal:</strong> El usuario preguntó temprano: <em>"¿crees que Villarreal dé batacazo?"</em>. Y casi ocurre: Villarreal igualó 2-2 y 3-3 en Anfield. Quienes jugaron victoria simple sufrieron hasta el 88' y quienes jugaron hándicap o menos goles perdieron todo. <strong>La Doble Oportunidad 1X (@1.14) blindó el cupón y aseguró el cobro.</strong></p>
+                        </div>
+                    </div>
+                    
+                    <div class="box-solution" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
+                        <div class="box-title-solution">
+                            <span>🛡️ Autoaprendizaje & Calibración (Ciclo #114)</span>
+                        </div>
+                        <div class="box-text">
+                            <p><strong>1. Avalancha Ofensiva de Champions (30 Goles en 5 Partidos):</strong> En fechas 3 de Champions con equipos de élite, los mercados 'Under' y 'Portería a Cero' tienen varianza destructiva. Se prioriza Doble Oportunidad y Ambos Marcan.</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. Capital del Usuario en Crecimiento:</strong> Con $20 apostados al cupón de 4 partidos (PSG BTTS + City + Roma + Liverpool 1X) a cuota 1.76, el usuario sumó +$15.20 netos, elevando su banca de $70 a <strong>$85.20 USD</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- CASO DE ÉXITO & APRENDIZAJE #3: BOLETO MAESTRO ECUABET LUNES 19/10 (CUOTA 1.81 & PARÁLISIS DE EJECUCIÓN) -->
             <div class="autopsy-card" style="border: 2px solid rgba(16, 185, 129, 0.6); background: rgba(6, 78, 59, 0.25); box-shadow: 0 16px 36px -8px rgba(16, 185, 129, 0.35); margin-bottom: 2rem;">
                 <div class="autopsy-header">
