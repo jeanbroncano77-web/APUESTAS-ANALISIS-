@@ -821,11 +821,11 @@
   "Real Madrid vs RB Leipzig": {
     "tournament": "UEFA Champions League • Fase de Liga (Santiago Bernabéu)",
     "stadium": "Estadio Santiago Bernabéu (Madrid)",
-    "spectators_est": "81,044 espectadores (14:00 Hora Ecuador)",
+    "spectators_est": "81,044 espectadores (14:00 Hora Ecuador — En vivo ESPN/Disney+)",
     "referee": "Szymon Marciniak",
     "referee_avg_yellows": 4.1,
     "referee_avg_reds": 0.14,
-    "intensity": "Máxima (Real Madrid en noche de gala continental con Mbappé y Vinícius Jr. 100% descansados)"
+    "intensity": "Máxima (Real Madrid en noche de Champions con Mbappé y Vinícius Jr. al 100%)"
   },
   "Sporting de Lisboa vs LASK": {
     "tournament": "UEFA Champions League • Fase de Liga (Estádio José Alvalade)",
@@ -855,13 +855,13 @@
     "intensity": "Media-Alta (Inter necesita consolidar su clasificación ante el bloque de Donetsk)"
   },
   "Bayern Munich vs Arsenal": {
-    "tournament": "UEFA Champions League • Choque Estelar de Gigantes",
+    "tournament": "UEFA Champions League • Choque Estelar de Gigantes (Allianz Arena)",
     "stadium": "Allianz Arena (Múnich)",
-    "spectators_est": "75,000 espectadores (14:00 Hora Ecuador)",
+    "spectators_est": "75,000 espectadores (14:00 Hora Ecuador — ¡El partidazo de la fecha!)",
     "referee": "Slavko Vinčić",
     "referee_avg_yellows": 4.5,
     "referee_avg_reds": 0.2,
-    "intensity": "Extrema (Poderío ofensivo total, ritmo frenético de Premier vs Bundesliga)"
+    "intensity": "Extrema (Poderío ofensivo total: Harry Kane y Musiala vs Saka y Havertz)"
   },
   "Al-Nassr vs Neom SC": {
     "tournament": "Liga Profesional Saudí • Al-Awwal Park",
@@ -871,5 +871,14 @@
     "referee_avg_yellows": 4.2,
     "referee_avg_reds": 0.15,
     "intensity": "Alta (Al-Nassr con Cristiano Ronaldo y Sadio Mané buscando la punta del torneo)"
+  },
+  "Como vs Manchester United": {
+    "tournament": "UEFA Champions League • Bloque Matutino (11:45 AM)",
+    "stadium": "Stadio Giuseppe Sinigaglia (Como, Italia)",
+    "spectators_est": "13,600 espectadores (11:45 AM Hora Ecuador — En vivo ESPN)",
+    "referee": "Daniele Orsato",
+    "referee_avg_yellows": 4.2,
+    "referee_avg_reds": 0.16,
+    "intensity": "Alta (Cesc Fàbregas buscando complicar a los Red Devils en las orillas del lago)"
   }
 }

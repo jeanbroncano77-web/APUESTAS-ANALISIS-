@@ -622,5 +622,42 @@
         "VICTORIA_DIRECTA"
       ]
     ]
+  },
+  "2026-10-21": {
+    "date_str": "21/10/2026",
+    "day_name": "Miércoles",
+    "competition": "UEFA Champions League (Jornada 3 - Bloque 2)",
+    "fixtures": [
+      [
+        "Real Madrid",
+        "RB Leipzig",
+        "VICTORIA_DIRECTA"
+      ],
+      [
+        "Sporting de Lisboa",
+        "LASK",
+        "VICTORIA_DIRECTA"
+      ],
+      [
+        "Aston Villa",
+        "Viking FK",
+        "VICTORIA_DIRECTA"
+      ],
+      [
+        "Inter Milan",
+        "Shakhtar Donetsk",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Bayern Munich",
+        "Arsenal",
+        "AMBOS_MARCAN"
+      ],
+      [
+        "Como",
+        "Manchester United",
+        "DOBLE_OPORTUNIDAD"
+      ]
+    ]
   }
 }
