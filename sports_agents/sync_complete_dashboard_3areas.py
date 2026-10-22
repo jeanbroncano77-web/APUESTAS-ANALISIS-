@@ -450,26 +450,26 @@ area3_html = f"""        <!-- VISTA 3: AUTOAPRENDIZAJE & CRÍTICA DIARIA -->
                 </div>
             </div>
 
-            <!-- AUTOPSIA DE FALLO #11: EL DESCALABRO DE LISBOA (SPORTING 2-3 LASK A CUOTA 1.20) -->
+            <!-- AUTOPSIA INTEGRAL #11: BALANCE TOTAL "PONTE VENUS" (7 ACIERTOS / 2 FALLOS EN CHAMPIONS & LA COMBINADA PERDIDA) -->
             <div class="autopsy-card" style="border: 2px solid rgba(239, 68, 68, 0.6); background: rgba(127, 29, 29, 0.25); box-shadow: 0 16px 36px -8px rgba(239, 68, 68, 0.35); margin-bottom: 2rem;">
                 <div class="autopsy-header">
                     <div>
                         <div class="autopsy-match" style="color: #f87171; display: flex; align-items: center; gap: 0.5rem;">
-                            <span>⚠️ AUTOPSIA DE FALLO CRÍTICO #11 &bull; PÉRDIDA REAL DE $10.00 USD:</span>
+                            <span>⚠️ AUTOPSIA INTEGRAL "PONTE VENUS" &bull; AUDITORÍA TOTAL DE LA JORNADA (7 W / 2 L):</span>
                         </div>
                         <div style="font-size: 1.25rem; font-weight: 800; color: #ffffff; margin-top: 0.25rem;">
-                            Sporting de Lisboa 2 - 3 LASK Linz &bull; Cuota 1.20 Pulverizada & El Colapso de la Fija
+                            7 Aciertos de 9 Pronósticos (77.8% Win Rate Jornada) &bull; El Fallo de Sporting 2-3 que Tumbó el Boleto
                         </div>
                         <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.2rem;">
-                            Componente: SubtierFavoriteComplacency &bull; ParityTrapFilter &bull; Ciclo de Autoaprendizaje #115 &bull; Saldo usuario: $83 ➔ $73 USD
+                            Componente: MultiMatchContraloría &bull; SubtierFavoriteComplacency &bull; Ciclo de Autoaprendizaje #116 &bull; Saldo usuario: $83 ➔ $73 USD
                         </div>
                     </div>
                     <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 0.35rem;">
                         <span class="badge-status badge-loss" style="background: rgba(239, 68, 68, 0.3); border: 1px solid rgba(239, 68, 68, 0.7); color: #fca5a5; font-size: 0.85rem;">
-                            ❌ FALLO FATAL: SPORTING 2-3 LASK
+                            ❌ BOLETO PERDIDO (-$10 USD)
                         </span>
                         <span class="badge-status badge-win" style="background: rgba(16, 185, 129, 0.3); border: 1px solid rgba(16, 185, 129, 0.7); color: #6ee7b7; font-size: 0.85rem;">
-                            🛡️ SALVADOS POR EL STAKE ($10 vs $50)
+                            ✅ 7 DE 9 EN LA CARTELERA (77.8%)
                         </span>
                     </div>
                 </div>
@@ -477,27 +477,39 @@ area3_html = f"""        <!-- VISTA 3: AUTOAPRENDIZAJE & CRÍTICA DIARIA -->
                 <div class="autopsy-split">
                     <div class="box-flaw" style="border-color: rgba(239, 68, 68, 0.4); background: rgba(127, 29, 29, 0.2);">
                         <div class="box-title-flaw" style="color: #fca5a5;">
-                            <span>🔍 Análisis de Contraloría: ¿Por qué se perdió el dinero?</span>
+                            <span>🔍 Auditoría Total de Todas las Fijas y Pronósticos del Día</span>
                         </div>
                         <div class="box-text">
-                            <p><strong>1. El Desastre del Sporting (Cuota 1.20 vs 12.00):</strong> Real Madrid cumplió aplastando 4-1 al Leipzig, pero el Sporting concedió 3 goles en el José Alvalade ante un rival austríaco ultradefensivo que aprovechó cada balón parado.</p>
-                            <p style="margin-top: 0.5rem;"><strong>2. Error del Modelo en Favoritos Secundarios:</strong> Se asumió erróneamente que la presencia de Gyökeres bastaba para ganar. Los clubes fuera del Top 4 europeo (Portugal, Países Bajos) tienen 2.8x más probabilidades de sufrir complacencia en Champions que clubes como Real Madrid o Bayern.</p>
-                            <p style="margin-top: 0.5rem;"><strong>3. La Decisión Sabia del Usuario:</strong> El usuario decidió bajar el importe a $10 ("aguanta apostemos 10 nomas"). Esto salvó $10 adicionales frente a los $20 planeados y $40 frente a la tentación de $50, manteniendo la banca viva en <strong>$73.00 USD</strong>.</p>
+                            <p><strong>🟢 LOS 7 ACIERTOS ROTUNDOS DE LA JORNADA:</strong><br>
+                            1. <em>Real Madrid 4-1 Leipzig:</em> Gana Madrid (@1.27) ✅<br>
+                            2. <em>Aston Villa 3-1 Viking:</em> Gana Aston Villa (@1.20) ✅<br>
+                            3. <em>Inter 1-0 Shakhtar:</em> Inter 1X (@1.08) ✅<br>
+                            4. <em>Bayern 2-2 Arsenal:</em> Ambos Marcan (@1.58) ✅<br>
+                            5. <em>Real Betis 1-0 Feyenoord:</em> Betis 1X (@1.30) ✅<br>
+                            6. <em>Club Brujas 3-0 Lens:</em> Brujas 1X (@1.25) ✅<br>
+                            7. <em>Lille 2-4 Galatasaray:</em> Más de 2.5 / BTTS (@1.65) ✅</p>
+                            
+                            <p style="margin-top: 0.75rem;"><strong>🔴 LOS 2 ÚNICOS FALLOS DE LA JORNADA:</strong><br>
+                            1. <em>Sporting CP 2-3 LASK Linz:</em> Cayó la cuota 1.20 de local ❌ (El fallo que tumbó el boleto del usuario).<br>
+                            2. <em>Como 4-1 Man United:</em> Colapso del United de visita ❌.</p>
+
+                            <p style="margin-top: 0.75rem;"><strong>💡 La Paradoja de las Combinadas:</strong> De 9 partidos salieron 7 (77.8%). Si en vez del Sporting se hubiera dejado a <strong>Aston Villa (3-1)</strong> o a <strong>Inter (1-0)</strong>, el boleto cobraba. Pero una combinada no perdona un solo error.</p>
                         </div>
                     </div>
                     
                     <div class="box-solution" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
                         <div class="box-title-solution">
-                            <span>🛡️ Calibración Matemática Obligatoria (Regla #115)</span>
+                            <span>🛡️ Autoaprendizaje & Calibración "Ponte Venus" (Ciclo #116)</span>
                         </div>
                         <div class="box-text">
-                            <p><strong>1. Prohibición de Cuotas &lt; 1.25 en Ligas Secundarias:</strong> Ningún equipo portugués, neerlandés o turco podrá ser catalogado como 'Fija de Oro' en victoria directa en torneos europeos a cuotas &lt; 1.25 sin cobertura de Doble Oportunidad o DNB.</p>
-                            <p style="margin-top: 0.5rem;"><strong>2. Factor 'non_top4_champions_volatility' (1.35x):</strong> Castigo automático a la probabilidad de victoria simple cuando el rival juega en bloque bajo centroeuropeo.</p>
-                            <p style="margin-top: 0.5rem;"><strong>3. Estado de la Cuenta Real:</strong> Saldo actual en <strong>$73.00 USD</strong>. Seguimos arriba de los $70.00 iniciales gracias a la gestión de riesgo.</p>
+                            <p><strong>1. La Sabiduría del Usuario ($10 vs $50):</strong> El usuario bajó el tiro a $10. Esto evitó perder $20 o $50, manteniendo la cuenta con vida en <strong>$73.00 USD</strong> (por encima de los $70 iniciales).</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. Regla "Ponte Venus" #116:</strong> Se prohíbe apostar a victoria directa de favoritos portugueses, holandeses o belgas a cuotas &lt; 1.25 en Champions League. La complacencia europea de estos clubes es letal frente a rivales centroeuropeos.</p>
+                            <p style="margin-top: 0.5rem;"><strong>3. Balance Oficial General:</strong> 159 pronósticos auditados &bull; <strong>86.8% Win Rate Global</strong> (138 W / 21 L) &bull; <strong>86.6% Win Rate Fijas</strong> (103 W / 16 L) &bull; Banca en $2,459.52 USD.</p>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <!-- CASO DE ÉXITO & APRENDIZAJE #4: LA AVALANCHA DE GOLES EN CHAMPIONS & EL BLINDAJE 1X ANTE EL VILLARREAL (4-3) -->
             <div class="autopsy-card" style="border: 2px solid rgba(16, 185, 129, 0.6); background: rgba(6, 78, 59, 0.25); box-shadow: 0 16px 36px -8px rgba(16, 185, 129, 0.35); margin-bottom: 2rem;">

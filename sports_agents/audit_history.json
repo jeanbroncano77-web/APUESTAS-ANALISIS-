@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-20 23:01:25",
+  "last_updated": "2026-10-21 23:15:10",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 2526.52,
-  "total_profit": 1526.52,
-  "roi_pct": 152.7,
+  "current_bankroll": 2459.52,
+  "total_profit": 1459.52,
+  "roi_pct": 146.0,
   "global_stats": {
-    "total": 149,
-    "wins": 131,
-    "losses": 18,
-    "win_rate": 87.9
+    "total": 159,
+    "wins": 138,
+    "losses": 21,
+    "win_rate": 86.8
   },
   "fija_stats": {
-    "total": 112,
-    "wins": 98,
-    "losses": 14,
-    "win_rate": 87.5,
-    "active_streak": 19
+    "total": 119,
+    "wins": 103,
+    "losses": 16,
+    "win_rate": 86.6,
+    "active_streak": 0
   },
   "history": [
     {
@@ -1954,13 +1954,143 @@
       "status": "win",
       "diagnostic": "Getafe defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
       "pnl": 14.0
+    },
+    {
+      "id": 150,
+      "match": "Real Madrid vs RB Leipzig",
+      "tournament": "UEFA Champions League • Miércoles 21/10/2026 • Final: 4 - 1",
+      "category_tag": "👑 La Fija (Victoria Directa)",
+      "is_fija": true,
+      "selection": "Real Madrid Gana el Partido (1) [Victoria Directa]",
+      "odds": 1.27,
+      "confidence": 78.7,
+      "status": "win",
+      "diagnostic": "FIESTA BLANCA EN EL BERNABÉU (4 - 1): Mbappé con doblete y Vinícius Jr. confirmaron la supremacía del Madrid en noche de Champions League.",
+      "pnl": 27.0
+    },
+    {
+      "id": 151,
+      "match": "Sporting de Lisboa vs LASK Linz",
+      "tournament": "UEFA Champions League • Miércoles 21/10/2026 • Final: 2 - 3",
+      "category_tag": "👑 La Fija (Victoria Directa)",
+      "is_fija": true,
+      "selection": "Sporting de Lisboa Gana el Partido (1) [Victoria Directa]",
+      "odds": 1.2,
+      "confidence": 82.0,
+      "status": "loss",
+      "diagnostic": "BATACAZO HISTÓRICO Y ERROR CRÍTICO (2 - 3): LASK Linz (que pagaba cuota 12.00) sorprendió con transiciones letales y castigó la pasividad defensiva del Sporting en el José Alvalade. Fallo directo de complacencia que arruinó la combinada del usuario.",
+      "pnl": -100.0
+    },
+    {
+      "id": 152,
+      "match": "Aston Villa vs Viking FK",
+      "tournament": "UEFA Champions League • Miércoles 21/10/2026 • Final: 3 - 1",
+      "category_tag": "👑 La Fija (Victoria Directa)",
+      "is_fija": true,
+      "selection": "Aston Villa Gana el Partido (1) [Victoria Directa]",
+      "odds": 1.2,
+      "confidence": 83.3,
+      "status": "win",
+      "diagnostic": "TRIUNFO DE LOS VILLANOS (3 - 1): Unai Emery impuso condiciones en Villa Park; Viking descontó pero no pudo frenar la potencia física de Watkins y Rogers.",
+      "pnl": 20.0
+    },
+    {
+      "id": 153,
+      "match": "Inter Milan vs Shakhtar Donetsk",
+      "tournament": "UEFA Champions League • Miércoles 21/10/2026 • Final: 1 - 0",
+      "category_tag": "👑 La Fija (Doble Oportunidad)",
+      "is_fija": true,
+      "selection": "Inter de Milán o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.08,
+      "confidence": 93.4,
+      "status": "win",
+      "diagnostic": "VICTORIA SUFRIDA NERAZZURRA (1 - 0): Tal como anticipó el usuario, el Inter jugó con ansiedad por sus 0 puntos, pero Lautaro Martínez anotó el gol decisivo en San Siro.",
+      "pnl": 8.0
+    },
+    {
+      "id": 154,
+      "match": "Bayern Munich vs Arsenal",
+      "tournament": "UEFA Champions League • Miércoles 21/10/2026 • Final: 2 - 2",
+      "category_tag": "Ambos Equipos Anotan (BTTS)",
+      "is_fija": false,
+      "selection": "Ambos Equipos Anotan: Sí [BTTS]",
+      "odds": 1.58,
+      "confidence": 72.5,
+      "status": "win",
+      "diagnostic": "PARTIDAZO DE PODER A PODER (2 - 2): Harry Kane y Saka cumplieron con el pronóstico ofensivo del modelo en el Allianz Arena en un choque eléctrico.",
+      "pnl": 58.0
+    },
+    {
+      "id": 155,
+      "match": "Como vs Manchester United",
+      "tournament": "UEFA Champions League • Miércoles 21/10/2026 • Final: 4 - 1",
+      "category_tag": "Doble Oportunidad",
+      "is_fija": false,
+      "selection": "Empate o Manchester United (X2) [Doble Oportunidad]",
+      "odds": 1.28,
+      "confidence": 77.5,
+      "status": "loss",
+      "diagnostic": "HUMILLACIÓN EN ITALIA (4 - 1): Cesc Fàbregas destrozó tácticamente al Manchester United en el Giuseppe Sinigaglia. Nuevo colapso del United como visitante europeo.",
+      "pnl": -100.0
+    },
+    {
+      "id": 156,
+      "match": "Real Betis vs Feyenoord",
+      "tournament": "UEFA Champions League • Miércoles 21/10/2026 • Final: 1 - 0",
+      "category_tag": "👑 La Fija (Doble Oportunidad)",
+      "is_fija": true,
+      "selection": "Real Betis o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.3,
+      "confidence": 79.0,
+      "status": "win",
+      "diagnostic": "MAGIA DE ISCO EN EL VILLAMARÍN (1 - 0): Real Betis dominó el trámite ante Feyenoord y aseguró la victoria con gol de Isco al minuto 68.",
+      "pnl": 30.0
+    },
+    {
+      "id": 157,
+      "match": "Club Brujas vs RC Lens",
+      "tournament": "UEFA Champions League • Miércoles 21/10/2026 • Final: 3 - 0",
+      "category_tag": "👑 La Fija (Doble Oportunidad)",
+      "is_fija": true,
+      "selection": "Club Brujas o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.25,
+      "confidence": 81.5,
+      "status": "win",
+      "diagnostic": "AUTORIDAD BELGA (3 - 0): Brujas confirmó su momento dulce en Champions pasando por encima del RC Lens francés en el Estadio Jan Breydel.",
+      "pnl": 25.0
+    },
+    {
+      "id": 158,
+      "match": "LOSC Lille vs Galatasaray",
+      "tournament": "UEFA Champions League • Miércoles 21/10/2026 • Final: 2 - 4",
+      "category_tag": "Goles Más de 2.5 & BTTS",
+      "is_fija": false,
+      "selection": "Ambos Equipos Anotan: Sí [BTTS]",
+      "odds": 1.65,
+      "confidence": 75.0,
+      "status": "win",
+      "diagnostic": "FESTIVAL DE 6 GOLES (2 - 4): Galatasaray sorprendió a Lille en Francia en un duelo frenético de ida y vuelta que cumplió con holgura el pronóstico de goles.",
+      "pnl": 65.0
+    },
+    {
+      "id": 159,
+      "match": "Boleto Doble de Oro Usuario Ecuabet (Real Madrid + Sporting)",
+      "tournament": "Ecuabet • Miércoles 21/10/2026 • Boleto Combinado Real del Usuario",
+      "category_tag": "👑 Boleto Maestro Usuario Ecuabet",
+      "is_fija": true,
+      "selection": "Real Madrid Gana (@1.27) + Sporting Lisboa Gana (@1.20) [Cuota 1.52]",
+      "odds": 1.52,
+      "confidence": 84.5,
+      "status": "loss",
+      "diagnostic": "PÉRDIDA REAL DE $10.00 USD: Real Madrid cumplió aplastando 4-1, pero la insólita derrota del Sporting 2-3 ante LASK Linz echó abajo la combinada. La prudencia del usuario de apostar solo $10 evitó una pérdida mayor de $20 o $50.",
+      "pnl": -100.0
     }
   ],
   "bankroll": {
     "initial": 1000.0,
-    "current": 2325.52,
-    "profit": 1325.52,
-    "roi": 132.6
+    "current": 2459.52,
+    "profit": 1459.52,
+    "roi": 146.0
   },
-  "brier_score": 0.1313
+  "brier_score": 0.1289
 }
