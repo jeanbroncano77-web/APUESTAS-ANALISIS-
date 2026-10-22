@@ -880,5 +880,50 @@
     "referee_avg_yellows": 4.2,
     "referee_avg_reds": 0.16,
     "intensity": "Alta (Cesc Fàbregas buscando complicar a los Red Devils en las orillas del lago)"
+  },
+  "Flamengo vs Estudiantes de La Plata": {
+    "tournament": "CONMEBOL Libertadores • Semifinales (Vuelta - Ida: 0-0)",
+    "stadium": "Estadio Maracaná (Río de Janeiro)",
+    "spectators_est": "72,500 hinchas del Mengão (19:30 Hora Ecuador — En vivo ESPN y Disney+)",
+    "referee": "Wilmar Roldán",
+    "referee_avg_yellows": 5.8,
+    "referee_avg_reds": 0.28,
+    "intensity": "Extrema (Boleto directo a la Gran Final de Montevideo. Ambiente volcánico en el Maracaná)"
+  },
+  "Getafe CF vs Lugano": {
+    "tournament": "UEFA Conference League • Fase de Liga (Jornada 2)",
+    "stadium": "Estadio Coliseum (Getafe, Madrid)",
+    "spectators_est": "14,000 espectadores (11:45 AM Hora Ecuador — En vivo ESPN)",
+    "referee": "Donatas Rumšas",
+    "referee_avg_yellows": 4.5,
+    "referee_avg_reds": 0.18,
+    "intensity": "Alta (José Bordalás buscando imponer la disciplina táctica y fricción defensiva de LaLiga)"
+  },
+  "Australia Sub-17 vs España Sub-17": {
+    "tournament": "Copa Mundial Femenina Sub-17 de la FIFA • Fase de Grupos",
+    "stadium": "Estadio Olímpico Félix Sánchez",
+    "spectators_est": "10:00 AM Hora Ecuador — En vivo DSPORTS / DGO",
+    "referee": "Katia Itzel García",
+    "referee_avg_yellows": 3.0,
+    "referee_avg_reds": 0.08,
+    "intensity": "Alta (España bicampeona del mundo y máxima candidata al título frente a las 'Mini Matildas')"
+  },
+  "Union Saint-Gilloise vs Hapoel Be'er Sheva": {
+    "tournament": "UEFA Europa League • Fase de Liga",
+    "stadium": "Lotto Park (Bruselas)",
+    "spectators_est": "18,500 espectadores (14:00 Hora Ecuador)",
+    "referee": "John Beaton",
+    "referee_avg_yellows": 4.1,
+    "referee_avg_reds": 0.15,
+    "intensity": "Media-Alta (Union Saint-Gilloise buscando consolidar su fortaleza local en Europa)"
+  },
+  "Chile Sub-17 vs México Sub-17": {
+    "tournament": "Copa Mundial Femenina Sub-17 de la FIFA • Fase de Grupos",
+    "stadium": "Estadio Cibao",
+    "spectators_est": "13:00 PM Hora Ecuador — En vivo DSPORTS / DGO",
+    "referee": "Edina Alves Batista",
+    "referee_avg_yellows": 3.2,
+    "referee_avg_reds": 0.08,
+    "intensity": "Alta (Duelo táctico cerrado donde la prioridad de ambos es no conceder espacios)"
   }
 }

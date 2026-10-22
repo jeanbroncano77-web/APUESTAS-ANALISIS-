@@ -659,5 +659,37 @@
         "DOBLE_OPORTUNIDAD"
       ]
     ]
+  },
+  "2026-10-22": {
+    "date_str": "22/10/2026",
+    "day_name": "Jueves",
+    "competition": "Copa Libertadores (Semifinales Vuelta) & Torneos UEFA (Europa & Conference League)",
+    "fixtures": [
+      [
+        "Flamengo",
+        "Estudiantes de La Plata",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Getafe CF",
+        "Lugano",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Australia Sub-17",
+        "España Sub-17",
+        "VICTORIA_DIRECTA"
+      ],
+      [
+        "Union Saint-Gilloise",
+        "Hapoel Be'er Sheva",
+        "DOBLE_OPORTUNIDAD"
+      ],
+      [
+        "Chile Sub-17",
+        "México Sub-17",
+        "UNDER_GOLES"
+      ]
+    ]
   }
 }

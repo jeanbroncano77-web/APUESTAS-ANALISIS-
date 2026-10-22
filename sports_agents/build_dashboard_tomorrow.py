@@ -41,8 +41,10 @@ flags = {
     "Boca Juniors": "🟡", "River Plate": "⚪",
     "Racing Club": "🩵", "San Lorenzo": "🔴",
     "Vélez Sarsfield": "⚪", "Instituto": "🔴",
-    "Estudiantes": "🔴", "Gimnasia (LP)": "🐺",
+    "Estudiantes": "🔴", "Estudiantes de La Plata": "🔴", "Gimnasia (LP)": "🐺",
     "Atlético Tucumán": "🩵", "Vasco da Gama": "⚓", "Flamengo": "🔴",
+    "Getafe CF": "🇪🇸", "Lugano": "🇨🇭", "Australia Sub-17": "🇦🇺", "España Sub-17": "🇪🇸",
+    "Union Saint-Gilloise": "🇧🇪", "Hapoel Be'er Sheva": "🇮🇱", "Chile Sub-17": "🇨🇱", "México Sub-17": "🇲🇽",
 
     # Partidos de Selecciones / UEFA Nations League / FIFA
     "España": "🇪🇸", "Chequia": "🇨🇿",
