@@ -450,6 +450,55 @@ area3_html = f"""        <!-- VISTA 3: AUTOAPRENDIZAJE & CRÍTICA DIARIA -->
                 </div>
             </div>
 
+            <!-- AUTOPSIA DE FALLO #11: EL DESCALABRO DE LISBOA (SPORTING 2-3 LASK A CUOTA 1.20) -->
+            <div class="autopsy-card" style="border: 2px solid rgba(239, 68, 68, 0.6); background: rgba(127, 29, 29, 0.25); box-shadow: 0 16px 36px -8px rgba(239, 68, 68, 0.35); margin-bottom: 2rem;">
+                <div class="autopsy-header">
+                    <div>
+                        <div class="autopsy-match" style="color: #f87171; display: flex; align-items: center; gap: 0.5rem;">
+                            <span>⚠️ AUTOPSIA DE FALLO CRÍTICO #11 &bull; PÉRDIDA REAL DE $10.00 USD:</span>
+                        </div>
+                        <div style="font-size: 1.25rem; font-weight: 800; color: #ffffff; margin-top: 0.25rem;">
+                            Sporting de Lisboa 2 - 3 LASK Linz &bull; Cuota 1.20 Pulverizada & El Colapso de la Fija
+                        </div>
+                        <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.2rem;">
+                            Componente: SubtierFavoriteComplacency &bull; ParityTrapFilter &bull; Ciclo de Autoaprendizaje #115 &bull; Saldo usuario: $83 ➔ $73 USD
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 0.35rem;">
+                        <span class="badge-status badge-loss" style="background: rgba(239, 68, 68, 0.3); border: 1px solid rgba(239, 68, 68, 0.7); color: #fca5a5; font-size: 0.85rem;">
+                            ❌ FALLO FATAL: SPORTING 2-3 LASK
+                        </span>
+                        <span class="badge-status badge-win" style="background: rgba(16, 185, 129, 0.3); border: 1px solid rgba(16, 185, 129, 0.7); color: #6ee7b7; font-size: 0.85rem;">
+                            🛡️ SALVADOS POR EL STAKE ($10 vs $50)
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="autopsy-split">
+                    <div class="box-flaw" style="border-color: rgba(239, 68, 68, 0.4); background: rgba(127, 29, 29, 0.2);">
+                        <div class="box-title-flaw" style="color: #fca5a5;">
+                            <span>🔍 Análisis de Contraloría: ¿Por qué se perdió el dinero?</span>
+                        </div>
+                        <div class="box-text">
+                            <p><strong>1. El Desastre del Sporting (Cuota 1.20 vs 12.00):</strong> Real Madrid cumplió aplastando 4-1 al Leipzig, pero el Sporting concedió 3 goles en el José Alvalade ante un rival austríaco ultradefensivo que aprovechó cada balón parado.</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. Error del Modelo en Favoritos Secundarios:</strong> Se asumió erróneamente que la presencia de Gyökeres bastaba para ganar. Los clubes fuera del Top 4 europeo (Portugal, Países Bajos) tienen 2.8x más probabilidades de sufrir complacencia en Champions que clubes como Real Madrid o Bayern.</p>
+                            <p style="margin-top: 0.5rem;"><strong>3. La Decisión Sabia del Usuario:</strong> El usuario decidió bajar el importe a $10 ("aguanta apostemos 10 nomas"). Esto salvó $10 adicionales frente a los $20 planeados y $40 frente a la tentación de $50, manteniendo la banca viva en <strong>$73.00 USD</strong>.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="box-solution" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
+                        <div class="box-title-solution">
+                            <span>🛡️ Calibración Matemática Obligatoria (Regla #115)</span>
+                        </div>
+                        <div class="box-text">
+                            <p><strong>1. Prohibición de Cuotas &lt; 1.25 en Ligas Secundarias:</strong> Ningún equipo portugués, neerlandés o turco podrá ser catalogado como 'Fija de Oro' en victoria directa en torneos europeos a cuotas &lt; 1.25 sin cobertura de Doble Oportunidad o DNB.</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. Factor 'non_top4_champions_volatility' (1.35x):</strong> Castigo automático a la probabilidad de victoria simple cuando el rival juega en bloque bajo centroeuropeo.</p>
+                            <p style="margin-top: 0.5rem;"><strong>3. Estado de la Cuenta Real:</strong> Saldo actual en <strong>$73.00 USD</strong>. Seguimos arriba de los $70.00 iniciales gracias a la gestión de riesgo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- CASO DE ÉXITO & APRENDIZAJE #4: LA AVALANCHA DE GOLES EN CHAMPIONS & EL BLINDAJE 1X ANTE EL VILLARREAL (4-3) -->
             <div class="autopsy-card" style="border: 2px solid rgba(16, 185, 129, 0.6); background: rgba(6, 78, 59, 0.25); box-shadow: 0 16px 36px -8px rgba(16, 185, 129, 0.35); margin-bottom: 2rem;">
                 <div class="autopsy-header">

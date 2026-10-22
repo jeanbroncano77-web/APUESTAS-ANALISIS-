@@ -1958,9 +1958,9 @@
   ],
   "bankroll": {
     "initial": 1000.0,
-    "current": 2512.52,
-    "profit": 1512.52,
-    "roi": 151.3
+    "current": 2325.52,
+    "profit": 1325.52,
+    "roi": 132.6
   },
-  "brier_score": 0.123
+  "brier_score": 0.1313
 }
