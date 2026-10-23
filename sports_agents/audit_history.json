@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-21 23:15:10",
+  "last_updated": "2026-10-23 00:04:27",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 2459.52,
-  "total_profit": 1459.52,
-  "roi_pct": 146.0,
+  "current_bankroll": 2543.52,
+  "total_profit": 1543.52,
+  "roi_pct": 154.4,
   "global_stats": {
-    "total": 159,
-    "wins": 138,
+    "total": 165,
+    "wins": 144,
     "losses": 21,
-    "win_rate": 86.8
+    "win_rate": 87.3
   },
   "fija_stats": {
-    "total": 119,
-    "wins": 103,
+    "total": 125,
+    "wins": 109,
     "losses": 16,
-    "win_rate": 86.6,
-    "active_streak": 0
+    "win_rate": 87.2,
+    "active_streak": 6
   },
   "history": [
     {
@@ -2084,6 +2084,84 @@
       "status": "loss",
       "diagnostic": "PÉRDIDA REAL DE $10.00 USD: Real Madrid cumplió aplastando 4-1, pero la insólita derrota del Sporting 2-3 ante LASK Linz echó abajo la combinada. La prudencia del usuario de apostar solo $10 evitó una pérdida mayor de $20 o $50.",
       "pnl": -100.0
+    },
+    {
+      "id": 160,
+      "match": "Sporting de Lisboa vs LASK",
+      "tournament": "UEFA Champions League (Jornada 3 - Bloque 2) • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Sporting de Lisboa o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Sporting de Lisboa defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
+      "pnl": 14.0
+    },
+    {
+      "id": 161,
+      "match": "Flamengo vs Estudiantes de La Plata",
+      "tournament": "Copa Libertadores (Semifinales Vuelta) & Torneos UEFA (Europa & Conference League) • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Flamengo o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Flamengo defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
+      "pnl": 14.0
+    },
+    {
+      "id": 162,
+      "match": "Getafe CF vs Lugano",
+      "tournament": "Copa Libertadores (Semifinales Vuelta) & Torneos UEFA (Europa & Conference League) • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Getafe CF o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Getafe CF defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
+      "pnl": 14.0
+    },
+    {
+      "id": 163,
+      "match": "Australia Sub-17 vs España Sub-17",
+      "tournament": "Copa Libertadores (Semifinales Vuelta) & Torneos UEFA (Europa & Conference League) • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Australia Sub-17 o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Australia Sub-17 defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
+      "pnl": 14.0
+    },
+    {
+      "id": 164,
+      "match": "Union Saint-Gilloise vs Hapoel Be'er Sheva",
+      "tournament": "Copa Libertadores (Semifinales Vuelta) & Torneos UEFA (Europa & Conference League) • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Union Saint-Gilloise o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Union Saint-Gilloise defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
+      "pnl": 14.0
+    },
+    {
+      "id": 165,
+      "match": "Chile Sub-17 vs México Sub-17",
+      "tournament": "Copa Libertadores (Semifinales Vuelta) & Torneos UEFA (Europa & Conference League) • Finalizado",
+      "category_tag": "👑 La Fija (95%+)",
+      "is_fija": true,
+      "selection": "Chile Sub-17 o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.14,
+      "confidence": 96.8,
+      "status": "win",
+      "diagnostic": "Chile Sub-17 defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
+      "pnl": 14.0
     }
   ],
   "bankroll": {
