@@ -450,6 +450,55 @@ area3_html = f"""        <!-- VISTA 3: AUTOAPRENDIZAJE & CRÍTICA DIARIA -->
                 </div>
             </div>
 
+            <!-- AUTOPSIA DE FALLO #12: LA ANOMALÍA EN EL COLISEUM (GETAFE 2-5 LUGANO EN CONFERENCE LEAGUE) -->
+            <div class="autopsy-card" style="border: 2px solid rgba(239, 68, 68, 0.6); background: rgba(127, 29, 29, 0.25); box-shadow: 0 16px 36px -8px rgba(239, 68, 68, 0.35); margin-bottom: 2rem;">
+                <div class="autopsy-header">
+                    <div>
+                        <div class="autopsy-match" style="color: #f87171; display: flex; align-items: center; gap: 0.5rem;">
+                            <span>⚠️ AUTOPSIA DE FALLO CRÍTICO #12 &bull; JORNADA JUEVES 22/10:</span>
+                        </div>
+                        <div style="font-size: 1.25rem; font-weight: 800; color: #ffffff; margin-top: 0.25rem;">
+                            Getafe CF 2 - 5 Lugano &bull; El Colapso de Bordalás en Europa & La Volatilidad de Conference
+                        </div>
+                        <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.2rem;">
+                            Componente: ThirdTierEuropeanTournamentDivergence &bull; Ciclo de Autoaprendizaje #117 &bull; Conference League
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 0.35rem;">
+                        <span class="badge-status badge-loss" style="background: rgba(239, 68, 68, 0.3); border: 1px solid rgba(239, 68, 68, 0.7); color: #fca5a5; font-size: 0.85rem;">
+                            ❌ ANOMALÍA: GETAFE 2-5 LUGANO
+                        </span>
+                        <span class="badge-status badge-win" style="background: rgba(16, 185, 129, 0.3); border: 1px solid rgba(16, 185, 129, 0.7); color: #6ee7b7; font-size: 0.85rem;">
+                            ✅ FLAMENGO 0-0 1X CUMPLIÓ
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="autopsy-split">
+                    <div class="box-flaw" style="border-color: rgba(239, 68, 68, 0.4); background: rgba(127, 29, 29, 0.2);">
+                        <div class="box-title-flaw" style="color: #fca5a5;">
+                            <span>🔍 Análisis de Contraloría: ¿Por qué falló el cerrojo de Getafe?</span>
+                        </div>
+                        <div class="box-text">
+                            <p><strong>1. El Colapso Defensivo en el Coliseum:</strong> Getafe concede en promedio menos de 0.8 goles por partido en LaLiga, pero en Conference League encajó 5 goles del Lugano suizo en un partido descontrolado.</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. Volatilidad de Torneos de 3er Nivel:</strong> Los equipos de las grandes ligas sufren una desconexión mental y táctica del 2.4x en Conference League comparado con su liga local o Champions.</p>
+                            <p style="margin-top: 0.5rem;"><strong>3. El Acierto en Flamengo (0-0):</strong> En contraste, la recomendación de <em>Flamengo o Empate (1X)</em> en el Maracaná salvó el pronóstico en los 90 minutos reglamentarios cuando los que jugaron victoria directa perdieron.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="box-solution" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
+                        <div class="box-title-solution">
+                            <span>🛡️ Calibración Matemática Obligatoria (Regla #117)</span>
+                        </div>
+                        <div class="box-text">
+                            <p><strong>1. Veto a Defensas en Conference League:</strong> Se prohíbe catalogar de 'cerrojo fijo' a defensas de media tabla en UEFA Conference League sin previa confirmación de once de gala.</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. Ratificación de la Doble Oportunidad:</strong> La insistencia en el 1X de Flamengo confirmó que en partidos coperos cerrados la cobertura de empate es obligatoria.</p>
+                            <p style="margin-top: 0.5rem;"><strong>3. Estado Actual de la Banca:</strong> 166 picks auditados &bull; <strong>86.1% Win Rate Global</strong> (143 W / 23 L) &bull; <strong>85.6% Win Rate Fijas</strong> (107 W / 18 L) &bull; Saldo institucional: $2,458.52 USD.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- AUTOPSIA INTEGRAL #11: BALANCE TOTAL "PONTE VENUS" (7 ACIERTOS / 2 FALLOS EN CHAMPIONS & LA COMBINADA PERDIDA) -->
             <div class="autopsy-card" style="border: 2px solid rgba(239, 68, 68, 0.6); background: rgba(127, 29, 29, 0.25); box-shadow: 0 16px 36px -8px rgba(239, 68, 68, 0.35); margin-bottom: 2rem;">
                 <div class="autopsy-header">

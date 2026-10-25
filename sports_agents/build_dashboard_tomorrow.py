@@ -70,7 +70,8 @@ flags = {
     "Bielorrusia": "🇧🇾", "San Marino": "🇸🇲",
     # Partidos de Fin de Semana (Clubes)
     "Real Madrid": "⚪", "Villarreal": "🟡",
-    "Barcelona": "🔵", "Barcelona Femení": "🔵", "FC Barcelona Femení": "🔵", "Getafe": "🔵",
+    "Barcelona": "🔵", "FC Barcelona": "🔵", "Barcelona Femení": "🔵", "FC Barcelona Femení": "🔵", "Getafe": "🔵",
+    "Brighton & Hove Albion": "🔵", "Brighton": "🔵",
     "Arsenal": "🔴", "FC Augsburg": "🔴",
     "Bayern Munich": "🔴", "Inter Milan": "⚫",
     "Parma": "🟡", "Werder Bremen": "🟢",
