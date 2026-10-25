@@ -691,5 +691,22 @@
         "UNDER_GOLES"
       ]
     ]
+  },
+  "2026-10-25": {
+    "date_str": "25/10/2026",
+    "day_name": "Domingo",
+    "competition": "LaLiga EA Sports (El Clásico) & Premier League",
+    "fixtures": [
+      [
+        "FC Barcelona",
+        "Real Madrid",
+        "AMBOS_MARCAN"
+      ],
+      [
+        "Liverpool",
+        "Brighton & Hove Albion",
+        "DOBLE_OPORTUNIDAD"
+      ]
+    ]
   }
 }

@@ -925,5 +925,23 @@
     "referee_avg_yellows": 3.2,
     "referee_avg_reds": 0.08,
     "intensity": "Alta (Duelo táctico cerrado donde la prioridad de ambos es no conceder espacios)"
+  },
+  "FC Barcelona vs Real Madrid": {
+    "tournament": "LaLiga EA Sports • Jornada 10 (El Clásico de España)",
+    "stadium": "Spotify Camp Nou (Barcelona)",
+    "spectators_est": "99,354 espectadores (15:00 Hora Ecuador — En vivo ESPN/Disney+)",
+    "referee": "Alejandro Hernández Hernández",
+    "referee_avg_yellows": 5.4,
+    "referee_avg_reds": 0.22,
+    "intensity": "Extrema (El partido más visto del planeta. Lamine Yamal y Lewandowski vs Vinícius y Mbappé)"
+  },
+  "Liverpool vs Brighton & Hove Albion": {
+    "tournament": "Premier League • Jornada 9 (Anfield)",
+    "stadium": "Anfield (Liverpool)",
+    "spectators_est": "61,276 hinchas Reds (09:00 AM Hora Ecuador — En vivo ESPN)",
+    "referee": "Michael Oliver",
+    "referee_avg_yellows": 3.8,
+    "referee_avg_reds": 0.12,
+    "intensity": "Alta (Liverpool busca despegarse en la cima tras la caída del Man City ante Aston Villa)"
   }
 }
