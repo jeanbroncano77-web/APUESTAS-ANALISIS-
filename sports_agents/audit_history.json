@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-23 00:04:27",
+  "last_updated": "2026-10-25 21:44:18",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 2543.52,
-  "total_profit": 1543.52,
-  "roi_pct": 154.4,
+  "current_bankroll": 2553.52,
+  "total_profit": 1553.52,
+  "roi_pct": 155.4,
   "global_stats": {
-    "total": 165,
-    "wins": 144,
-    "losses": 21,
-    "win_rate": 87.3
+    "total": 168,
+    "wins": 146,
+    "losses": 22,
+    "win_rate": 86.9
   },
   "fija_stats": {
-    "total": 125,
-    "wins": 109,
-    "losses": 16,
-    "win_rate": 87.2,
-    "active_streak": 6
+    "total": 128,
+    "wins": 111,
+    "losses": 17,
+    "win_rate": 86.7,
+    "active_streak": 0
   },
   "history": [
     {
@@ -2162,13 +2162,52 @@
       "status": "win",
       "diagnostic": "Chile Sub-17 defendió su localía con autoridad; la Doble Oportunidad cumplió con solidez absoluta.",
       "pnl": 14.0
+    },
+    {
+      "id": 167,
+      "match": "FC Barcelona vs Real Madrid",
+      "tournament": "LaLiga EA Sports • Domingo 25/10/2026 • Final: 1 - 2",
+      "category_tag": "👑 La Fija Oficial (Ambos Marcan)",
+      "is_fija": true,
+      "selection": "Ambos Equipos Anotan: Sí (BTTS) [Mercado Neutral]",
+      "odds": 1.48,
+      "confidence": 78.5,
+      "status": "win",
+      "diagnostic": "VERDE ROTUNDO EN GOLES (1 - 2): Mbappé (41', 88') y Raphinha (61') cumplieron la ley histórica de que en El Clásico ambos perforan la red.",
+      "pnl": 48.0
+    },
+    {
+      "id": 168,
+      "match": "Liverpool vs Brighton & Hove Albion",
+      "tournament": "Premier League • Domingo 25/10/2026 • Final: 2 - 0",
+      "category_tag": "👑 La Fija (Doble Oportunidad)",
+      "is_fija": true,
+      "selection": "Liverpool o Empate (1X) [Doble Oportunidad]",
+      "odds": 1.12,
+      "confidence": 91.5,
+      "status": "win",
+      "diagnostic": "SOLIDEZ TOTAL EN ANFIELD (2 - 0): Con autogol de Groß y tanto de Isak, Liverpool controló el partido de punta a punta cobrando el 1X.",
+      "pnl": 12.0
+    },
+    {
+      "id": 169,
+      "match": "Boleto Personal Usuario Ecuabet (Barça 1X + Ambos Marcan)",
+      "tournament": "Ecuabet • Domingo 25/10/2026 • Apuesta Personal Usuario",
+      "category_tag": "👑 Boleto Usuario Ecuabet (Riesgo Alto)",
+      "is_fija": true,
+      "selection": "FC Barcelona o Empate (1X) + Ambos Equipos Marcan (Sí) [Cuota 1.58]",
+      "odds": 1.58,
+      "confidence": 68.0,
+      "status": "loss",
+      "diagnostic": "LA PUÑALADA DEL MINUTO 88 (1 - 2): Hasta el minuto 87 el partido marchaba 1-1 y el cupón estaba ganado. Un contragolpe letal de Mbappé a la espalda de la línea adelantada de Flick derribó el 1X sobre el cierre. Pérdida real de $50 USD del usuario.",
+      "pnl": -50.0
     }
   ],
   "bankroll": {
     "initial": 1000.0,
-    "current": 2458.52,
-    "profit": 1458.52,
-    "roi": 145.9
+    "current": 2553.52,
+    "profit": 1553.52,
+    "roi": 155.4
   },
-  "brier_score": 0.1337
+  "brier_score": 0.1251
 }

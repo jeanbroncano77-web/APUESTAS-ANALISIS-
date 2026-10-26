@@ -450,6 +450,55 @@ area3_html = f"""        <!-- VISTA 3: AUTOAPRENDIZAJE & CRÍTICA DIARIA -->
                 </div>
             </div>
 
+            <!-- AUTOPSIA DE FALLO #13: LA PUÑALADA DE MBAPPÉ AL MINUTO 88 (BARÇA 1-2 REAL MADRID) & EL COSTO DEL ALL-IN EMOCIONAL -->
+            <div class="autopsy-card" style="border: 2px solid rgba(239, 68, 68, 0.6); background: rgba(127, 29, 29, 0.25); box-shadow: 0 16px 36px -8px rgba(239, 68, 68, 0.35); margin-bottom: 2rem;">
+                <div class="autopsy-header">
+                    <div>
+                        <div class="autopsy-match" style="color: #f87171; display: flex; align-items: center; gap: 0.5rem;">
+                            <span>⚠️ AUTOPSIA DE FALLO CRÍTICO #13 &bull; JORNADA DOMINGO 25/10 (EL CLÁSICO):</span>
+                        </div>
+                        <div style="font-size: 1.25rem; font-weight: 800; color: #ffffff; margin-top: 0.25rem;">
+                            FC Barcelona 1 - 2 Real Madrid &bull; La Puñalada de Mbappé (88') & El Costo del All-In Emocional (-$50 USD)
+                        </div>
+                        <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.2rem;">
+                            Componente: HighLineVulnerabilityCounter &bull; BankrollViolationTrap &bull; Ciclo de Autoaprendizaje #118 &bull; Saldo usuario: $73 ➔ $23 USD
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 0.35rem;">
+                        <span class="badge-status badge-loss" style="background: rgba(239, 68, 68, 0.3); border: 1px solid rgba(239, 68, 68, 0.7); color: #fca5a5; font-size: 0.85rem;">
+                            ❌ BOLETO USUARIO PERDIDO (-$50 USD)
+                        </span>
+                        <span class="badge-status badge-win" style="background: rgba(16, 185, 129, 0.3); border: 1px solid rgba(16, 185, 129, 0.7); color: #6ee7b7; font-size: 0.85rem;">
+                            ✅ AMBOS MARCAN 1-2 & LIVERPOOL 2-0 COBRARON
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="autopsy-split">
+                    <div class="box-flaw" style="border-color: rgba(239, 68, 68, 0.4); background: rgba(127, 29, 29, 0.2);">
+                        <div class="box-title-flaw" style="color: #fca5a5;">
+                            <span>🔍 Anatomía del Desenlace: Minuto 87 (1-1 Cobrado) ➔ Minuto 88 (1-2 Puñalada)</span>
+                        </div>
+                        <div class="box-text">
+                            <p><strong>1. La Advertencia Previa Cumplida:</strong> En el análisis previo se advirtió textualmente: <em>'El peligro de la línea alta de Flick es que si Mbappé pica al espacio, el Madrid clava un 1-2 y tumba el 1X; por eso el Ambos Marcan a secas es el tiro neutral perfecto'</em>. Ocurrió con exactitud matemática.</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. Los Goles y Liverpool Respondieron:</strong> Tanto la Fija Oficial del Modelo (<em>Ambos Equipos Anotan: Sí @ 1.48</em> -> 1-2) como <em>Liverpool 1X (@ 1.12)</em> fueron aciertos totales.</p>
+                            <p style="margin-top: 0.5rem;"><strong>3. El Error de Bankroll:</strong> El usuario apostó $50 USD (el 68.5% de su capital de $73). Una combinada jamás debe comprometer más del 15%-20% de la banca activa.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="box-solution" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
+                        <div class="box-title-solution">
+                            <span>🛡️ Regla de Hierro #118 & Protocolo de Reconstrucción ($23 USD)</span>
+                        </div>
+                        <div class="box-text">
+                            <p><strong>1. Prohibición Total de All-In:</strong> Queda terminantemente prohibido autorizar o validar jugadas que comprometan más del 20% de la banca remanente, sin excepciones.</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. Plan de Rescate Disciplinado:</strong> Con los $23.00 USD que el usuario aún conserva en Ecuabet, se activa el protocolo de micro-stakes de $3 a $5 USD con cuotas entre 1.30 y 1.60 para escalar a $50 y luego a $100.</p>
+                            <p style="margin-top: 0.5rem;"><strong>3. Estado Institucional:</strong> 168 picks auditados &bull; <strong>86.9% Win Rate Global</strong> (146 W / 22 L) &bull; <strong>86.7% Win Rate Fijas</strong> (111 W / 17 L) &bull; Saldo institucional: $2,553.52 USD.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- AUTOPSIA DE FALLO #12: LA ANOMALÍA EN EL COLISEUM (GETAFE 2-5 LUGANO EN CONFERENCE LEAGUE) -->
             <div class="autopsy-card" style="border: 2px solid rgba(239, 68, 68, 0.6); background: rgba(127, 29, 29, 0.25); box-shadow: 0 16px 36px -8px rgba(239, 68, 68, 0.35); margin-bottom: 2rem;">
                 <div class="autopsy-header">
