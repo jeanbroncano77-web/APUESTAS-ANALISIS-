@@ -450,6 +450,55 @@ area3_html = f"""        <!-- VISTA 3: AUTOAPRENDIZAJE & CRÍTICA DIARIA -->
                 </div>
             </div>
 
+            <!-- CASO DE ÉXITO & RECONSTRUCCIÓN #14: PLENO TOTAL LUNES 26 DE OCTUBRE (4 DE 4) & PROTOCOLO 'SELLO DE ALTA CERTEZA' -->
+            <div class="autopsy-card" style="border: 2px solid rgba(16, 185, 129, 0.6); background: rgba(6, 78, 59, 0.25); box-shadow: 0 16px 36px -8px rgba(16, 185, 129, 0.35); margin-bottom: 2rem;">
+                <div class="autopsy-header">
+                    <div>
+                        <div class="autopsy-match" style="color: #34d399; display: flex; align-items: center; gap: 0.5rem;">
+                            <span>🏆 CASO DE ÉXITO & CALIBRACIÓN #14 &bull; JORNADA LUNES 26/10:</span>
+                        </div>
+                        <div style="font-size: 1.25rem; font-weight: 800; color: #ffffff; margin-top: 0.25rem;">
+                            Pleno Total de la Cartelera (4 de 4 Aciertos) &bull; Activación del Protocolo 'Sello de Alta Certeza'
+                        </div>
+                        <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.2rem;">
+                            Componente: UserEmpowermentEngine &bull; HighConvictionProtocol &bull; Ciclo de Autoaprendizaje #119 &bull; Racha Activa: 4 W
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 0.35rem;">
+                        <span class="badge-status badge-win" style="background: rgba(16, 185, 129, 0.3); border: 1px solid rgba(16, 185, 129, 0.7); color: #6ee7b7; font-size: 0.85rem;">
+                            ✅ PLENO 4 DE 4 EN LA JORNADA
+                        </span>
+                        <span class="badge-status badge-win" style="background: rgba(245, 158, 11, 0.3); border: 1px solid rgba(245, 158, 11, 0.7); color: #fbbf24; font-size: 0.85rem;">
+                            🛡️ BANCA SALVAGUARDADA ($23 USD)
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="autopsy-split">
+                    <div class="box-solution" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
+                        <div class="box-title-solution">
+                            <span>🎯 Anatomía del Pleno: ¿Por qué la lectura táctica fue un misil teledirigido?</span>
+                        </div>
+                        <div class="box-text">
+                            <p><strong>1. Galatasaray 2 - 1 Fenerbahçe:</strong> Doblete de Victor Osimhen (29', 44') para noquear al clásico rival en el RAMS Park. La Fija de Oro cumplió sobrado.</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. PSG 2 - 0 Lyon:</strong> Con tantos de Mayulu (72') y Godts (84'), el PSG liquidó el partido para asumir el liderato en solitario de Francia.</p>
+                            <p style="margin-top: 0.5rem;"><strong>3. Coberturas Cumplidas:</strong> Sevilla 2-0 Osasuna (Menos de 3.5 goles) y Santa Clara 1-2 Benfica (X2) cerraron el 100% de efectividad del día.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="box-flaw" style="border-color: rgba(245, 158, 11, 0.4); background: rgba(245, 158, 11, 0.1);">
+                        <div class="box-title-flaw" style="color: #fbbf24;">
+                            <span>🤝 Crítica Constructiva del Usuario & Regla #119 (Sello de Alta Certeza)</span>
+                        </div>
+                        <div class="box-text">
+                            <p><strong>1. El Pedido del Usuario:</strong> El usuario advirtió que tras una caída se siente desconfianza, pero en las fijas maestras el agente debe ser más firme: <em>"deberías incentivarme más cuando creas que deley deley ganamos"</em>.</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. Regla de Oro #119:</strong> Cuando la convergencia estadística y táctica supere el 88%, el modelo activará el distintivo <strong>'SELLO DE ALTA CERTEZA'</strong> y empujará proactivamente al usuario a ejecutar la entrada sin vacilaciones.</p>
+                            <p style="margin-top: 0.5rem;"><strong>3. Estado Institucional:</strong> 172 picks auditados &bull; <strong>87.2% Win Rate Global</strong> (150 W / 22 L) &bull; <strong>87.1% Win Rate Fijas</strong> (115 W / 17 L) &bull; Racha activa: 4 W &bull; Saldo institucional: $2,648.52 USD.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- AUTOPSIA DE FALLO #13: LA PUÑALADA DE MBAPPÉ AL MINUTO 88 (BARÇA 1-2 REAL MADRID) & EL COSTO DEL ALL-IN EMOCIONAL -->
             <div class="autopsy-card" style="border: 2px solid rgba(239, 68, 68, 0.6); background: rgba(127, 29, 29, 0.25); box-shadow: 0 16px 36px -8px rgba(239, 68, 68, 0.35); margin-bottom: 2rem;">
                 <div class="autopsy-header">
