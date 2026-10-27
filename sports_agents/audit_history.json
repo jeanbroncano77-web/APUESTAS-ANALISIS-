@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-25 21:44:18",
+  "last_updated": "2026-10-26 21:11:53",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 2553.52,
-  "total_profit": 1553.52,
-  "roi_pct": 155.4,
+  "current_bankroll": 2648.52,
+  "total_profit": 1648.52,
+  "roi_pct": 164.9,
   "global_stats": {
-    "total": 168,
-    "wins": 146,
+    "total": 172,
+    "wins": 150,
     "losses": 22,
-    "win_rate": 86.9
+    "win_rate": 87.2
   },
   "fija_stats": {
-    "total": 128,
-    "wins": 111,
+    "total": 132,
+    "wins": 115,
     "losses": 17,
-    "win_rate": 86.7,
-    "active_streak": 0
+    "win_rate": 87.1,
+    "active_streak": 4
   },
   "history": [
     {
@@ -2201,13 +2201,65 @@
       "status": "loss",
       "diagnostic": "LA PUÑALADA DEL MINUTO 88 (1 - 2): Hasta el minuto 87 el partido marchaba 1-1 y el cupón estaba ganado. Un contragolpe letal de Mbappé a la espalda de la línea adelantada de Flick derribó el 1X sobre el cierre. Pérdida real de $50 USD del usuario.",
       "pnl": -50.0
+    },
+    {
+      "id": 170,
+      "match": "Galatasaray vs Fenerbahçe",
+      "tournament": "Süper Lig Turquía • Lunes 26/10/2026 • Final: 2 - 1",
+      "category_tag": "👑 La Fija de Oro (Doble Oportunidad)",
+      "is_fija": true,
+      "selection": "Galatasaray o Empate (1X) [Victoria Directa 2-1]",
+      "odds": 1.3,
+      "confidence": 88.0,
+      "status": "win",
+      "diagnostic": "EL INFIERNO DE ESTAMBUL (2 - 1): Doblete monumental de Victor Osimhen (29' y 44') para noquear al Fenerbahçe y sellar la Fija de Oro de forma inapelable.",
+      "pnl": 30.0
+    },
+    {
+      "id": 171,
+      "match": "Paris Saint-Germain vs Olympique de Lyon",
+      "tournament": "Ligue 1 Francia • Lunes 26/10/2026 • Final: 2 - 0",
+      "category_tag": "👑 La Fija (Doble Oportunidad / Gana)",
+      "is_fija": true,
+      "selection": "PSG o Empate (1X) [Victoria Directa 2-0]",
+      "odds": 1.18,
+      "confidence": 89.5,
+      "status": "win",
+      "diagnostic": "LIDERATO EN SOLITARIO EN PARÍS (2 - 0): Con goles de Senny Mayulu (72') y Mika Godts (84'), el PSG dominó el tramo final y cobró sobrado.",
+      "pnl": 18.0
+    },
+    {
+      "id": 172,
+      "match": "Sevilla FC vs CA Osasuna",
+      "tournament": "LaLiga EA Sports • Lunes 26/10/2026 • Final: 2 - 0",
+      "category_tag": "👑 La Fija (Total Goles)",
+      "is_fija": true,
+      "selection": "Total Goles: Menos de 3.5 Goles",
+      "odds": 1.25,
+      "confidence": 86.0,
+      "status": "win",
+      "diagnostic": "ORDEN EN NERVIÓN (2 - 0): Goles de Isaac Romero y Félix Correia en un partido controlado de 2 tantos, cobrando el Menos de 3.5 con holgura.",
+      "pnl": 25.0
+    },
+    {
+      "id": 173,
+      "match": "CD Santa Clara vs SL Benfica",
+      "tournament": "Liga Portugal • Lunes 26/10/2026 • Final: 1 - 2",
+      "category_tag": "👑 La Fija (Doble Oportunidad)",
+      "is_fija": true,
+      "selection": "SL Benfica o Empate (X2)",
+      "odds": 1.22,
+      "confidence": 85.0,
+      "status": "win",
+      "diagnostic": "REMONTADA EN LAS AZORES (1 - 2): Tras ir perdiendo 1-0 al descanso, las Águilas impusieron su jerarquía con dos goles en el complemento.",
+      "pnl": 22.0
     }
   ],
   "bankroll": {
     "initial": 1000.0,
-    "current": 2553.52,
-    "profit": 1553.52,
-    "roi": 155.4
+    "current": 2648.52,
+    "profit": 1648.52,
+    "roi": 164.9
   },
-  "brier_score": 0.1251
+  "brier_score": 0.1226
 }
