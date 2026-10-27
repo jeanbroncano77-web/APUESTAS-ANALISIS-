@@ -1281,2624 +1281,289 @@
 
         <!-- VISTA 1: PARTIDOS Y PRONÓSTICOS -->
                 <!-- VISTA 1: PARTIDOS Y PRONÓSTICOS (LUNES 26 DE OCTUBRE DE 2026) -->
+                <!-- VISTA 1: PARTIDOS Y PRONÓSTICOS (MARTES 27 DE OCTUBRE DE 2026) -->
         <div id="view-container-matches">
-            <!-- Phase 6: Top Actions Toolbar -->
-            <div class="top-actions-toolbar">
-                <div class="banner-fija-de-oro">
-                    <div class="badge-fija-oro">👑 LA FIJA DE ORO &bull; HOY LUNES (26/10/2026) (CONFIANZA 74.1%)</div>
-                    <div class="fija-oro-title">⭐ Torino vs Udinese &bull; Doble Oportunidad: Torino o Empate (1X) (@1.42 | 74.1%)</div>
-                    <div class="fija-oro-sub">⭐ Respaldo Estelar: Atalanta vs Venezia &bull; Victoria Directa (1X2): Atalanta Gana el Partido (1) (@1.51 | 70.0%)</div>
-                    <div style="font-size: 0.78rem; color: #fca5a5; margin-top: 0.4rem; font-weight: 600; display: flex; align-items: center; gap: 0.4rem;">
-                        <span>🛑</span> <strong>FILTRO DE SEGURIDAD:</strong> Los otros 4 partidos de la cartelera tienen fricción táctica (Riesgo Moderado). No forzar combinadas en partidos secundarios.
-                    </div>
-                </div>
-
-                <div class="toolbar-btn-group">
-                    <button class="btn-tool" onclick="downloadJSON()">
-                        <span>📥</span> Descargar Raw JSON
-                    </button>
-                    <button class="btn-tool" onclick="downloadCSV()">
-                        <span>📊</span> Exportar CSV Auditoría
-                    </button>
-                    <button class="btn-tool" onclick="window.print()">
-                        <span>🖨️</span> Imprimir Reporte
-                    </button>
-                </div>
-            </div>
-
-            <!-- Switcher Tabs -->
-            <div class="switcher-container">
-                
-        <div class="switcher-card active" onclick="setMatch(0)" id="tab-0">
-            <div class="switcher-header">
-                <span>Partido 1 &bull; Competición Internacional FIFA</span>
-                <span class='badge-fija-pill' style='background: linear-gradient(135deg, rgba(245, 158, 11, 0.3), rgba(217, 119, 6, 0.4)); border: 1px solid #fbbf24; color: #fef08a;'>👑 LA FIJA DE ORO 70.0%</span>
-            </div>
-            <div class="switcher-teams">
-                <span>🔵 Atalanta</span>
-                <span class="vs-text">vs</span>
-                <span>Venezia 🦁</span>
-            </div>
-            <div class="switcher-meta">
-                <span>👑 Fija de Oro: <strong style='color: #fbbf24;'>Atalanta Gana el Partido (1)</strong></span>
-                <span class="mono-bold" style="color: var(--cyan);">@1.51 (70.0%)</span>
-            </div>
-        </div>
-    
-        <div class="switcher-card " onclick="setMatch(1)" id="tab-1">
-            <div class="switcher-header">
-                <span>Partido 2 &bull; Competición Internacional FIFA</span>
-                <span class='badge-fija-pill' style='background: rgba(148, 163, 184, 0.15); border: 1px solid rgba(148, 163, 184, 0.35); color: #94a3b8;'>⚠️ RIESGO MODERADO 68.0%</span>
-            </div>
-            <div class="switcher-teams">
-                <span>🩵 Coventry City</span>
-                <span class="vs-text">vs</span>
-                <span>Newcastle ⚪</span>
-            </div>
-            <div class="switcher-meta">
-                <span>⚠️ Táctico: <strong style='color: #cbd5e1;'>Newcastle Gana el Partido (2)</strong></span>
-                <span class="mono-bold" style="color: var(--cyan);">@1.56 (68.0%)</span>
-            </div>
-        </div>
-    
-        <div class="switcher-card " onclick="setMatch(2)" id="tab-2">
-            <div class="switcher-header">
-                <span>Partido 3 &bull; Competición Internacional FIFA</span>
-                <span class='badge-fija-pill' style='background: rgba(148, 163, 184, 0.15); border: 1px solid rgba(148, 163, 184, 0.35); color: #94a3b8;'>⚠️ RIESGO MODERADO 57.8%</span>
-            </div>
-            <div class="switcher-teams">
-                <span>🐸 Levante</span>
-                <span class="vs-text">vs</span>
-                <span>Sevilla ⚪</span>
-            </div>
-            <div class="switcher-meta">
-                <span>⚠️ Táctico: <strong style='color: #cbd5e1;'>Sevilla Gana el Partido (2)</strong></span>
-                <span class="mono-bold" style="color: var(--cyan);">@1.83 (57.8%)</span>
-            </div>
-        </div>
-    
-        <div class="switcher-card " onclick="setMatch(3)" id="tab-3">
-            <div class="switcher-header">
-                <span>Partido 4 &bull; Competición Internacional FIFA</span>
-                <span class='badge-fija-pill' style='background: rgba(148, 163, 184, 0.15); border: 1px solid rgba(148, 163, 184, 0.35); color: #94a3b8;'>⚠️ RIESGO MODERADO 74.1%</span>
-            </div>
-            <div class="switcher-teams">
-                <span>🐂 Torino</span>
-                <span class="vs-text">vs</span>
-                <span>Udinese ⚪</span>
-            </div>
-            <div class="switcher-meta">
-                <span>⚠️ Táctico: <strong style='color: #cbd5e1;'>Torino o Empate (1X)</strong></span>
-                <span class="mono-bold" style="color: var(--cyan);">@1.42 (74.1%)</span>
-            </div>
-        </div>
-    
-        <div class="switcher-card " onclick="setMatch(4)" id="tab-4">
-            <div class="switcher-header">
-                <span>Partido 5 &bull; Competición Internacional FIFA</span>
-                <span class='badge-fija-pill' style='background: rgba(148, 163, 184, 0.15); border: 1px solid rgba(148, 163, 184, 0.35); color: #94a3b8;'>⚠️ RIESGO MODERADO 55.9%</span>
-            </div>
-            <div class="switcher-teams">
-                <span>🩵 Racing Club</span>
-                <span class="vs-text">vs</span>
-                <span>Belgrano 🏴‍☠️</span>
-            </div>
-            <div class="switcher-meta">
-                <span>⚠️ Táctico: <strong style='color: #cbd5e1;'>Racing Club Gana el Partido (1)</strong></span>
-                <span class="mono-bold" style="color: var(--cyan);">@1.9 (55.9%)</span>
-            </div>
-        </div>
-    
-        <div class="switcher-card " onclick="setMatch(5)" id="tab-5">
-            <div class="switcher-header">
-                <span>Partido 6 &bull; Competición Internacional FIFA</span>
-                <span class='badge-fija-pill' style='background: rgba(148, 163, 184, 0.15); border: 1px solid rgba(148, 163, 184, 0.35); color: #94a3b8;'>⚠️ RIESGO MODERADO 59.4%</span>
-            </div>
-            <div class="switcher-teams">
-                <span>🔵 Bahia</span>
-                <span class="vs-text">vs</span>
-                <span>Mirassol 🟡</span>
-            </div>
-            <div class="switcher-meta">
-                <span>⚠️ Táctico: <strong style='color: #cbd5e1;'>Bahia Gana el Partido (1)</strong></span>
-                <span class="mono-bold" style="color: var(--cyan);">@1.78 (59.4%)</span>
-            </div>
-        </div>
-    
-            </div>
-
-            <!-- Match Views -->
-            
-        <!-- ==================== PARTIDO 1: Atalanta vs Venezia ==================== -->
-        <div id="match-0" class="match-view active" style="display: block;">
-            <!-- Hero Banner -->
-            <div class="hero-banner">
-                <div class="hero-context-badge">
-                    <span>🏆 Competición Internacional FIFA</span>
-                    <span>📍 Estadio Principal</span>
-                    <span>👥 45,000 espectadores</span>
-                </div>
-
-                <div class="hero-grid">
-                    <div class="team-col">
-                        <div class="team-flag">🔵</div>
-                        <div class="team-name">Atalanta</div>
-                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--cyan);">2.92</span></div>
-                    </div>
-
-                    <div class="center-score-col">
-                        <div class="score-pill-title">Marcador Exacto Más Probable</div>
-                        <div class="hero-score-val">2 - 0</div>
-                        <div class="hero-score-conf">Top Alternativas: 3 - 0 (12.66%) &bull; 1 - 0 (11.2%)</div>
-                    </div>
-
-                    <div class="team-col">
-                        <div class="team-flag">🦁</div>
-                        <div class="team-name">Venezia</div>
-                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--amber);">0.47</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Glowing La Fija Card -->
-            
-        <div class="fija-gold-card">
-            <div class="fija-badge-glow">
-                <span class="fija-star">⭐</span> LA FIJA DEL PARTIDO &bull; Victoria Directa (1X2)
-            </div>
-            <div class="fija-content-grid">
-                <div class="fija-main">
-                    <div class="fija-market-label">Selección Cuantitativa Diversificada (Victoria Directa (1X2))</div>
-                    <div class="fija-market-title">Atalanta Gana el Partido (1)</div>
-                    <div class="fija-rationale">🔬 <em>Fundamento TimesFM & Monte Carlo:</em> Convicción directa: Atalanta domina la proyección con 70.0% de probabilidad de triunfo en los 90 minutos reglamentarios.</div>
-                </div>
-                <div class="fija-stats">
-                    <div class="fija-stat-box">
-                        <div class="fija-stat-val">70.0%</div>
-                        <div class="fija-stat-lbl">Probabilidad</div>
-                    </div>
-                    <div class="fija-stat-box">
-                        <div class="fija-stat-val" style="color: var(--emerald);">1.51</div>
-                        <div class="fija-stat-lbl">Cuota Justa</div>
-                    </div>
-                    <div class="fija-stat-box">
-                        <div class="fija-stat-val" style="color: var(--cyan);">1.63</div>
-                        <div class="fija-stat-lbl">Cuota Mercado</div>
-                    </div>
-                </div>
-            </div>
-            
-        <div style="margin-top: 0.85rem; padding-top: 0.65rem; border-top: 1px dashed rgba(255,255,255,0.15);">
-            <div style="font-size: 0.74rem; color: var(--text-muted); margin-bottom: 0.4rem; font-weight: 700; letter-spacing: 0.5px;">
-                📊 OTROS MERCADOS DE SEGURIDAD ANALIZADOS EN ESTE PARTIDO:
-            </div>
-            <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
-                
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Total Tarjetas: Fricción disciplinaria elevada: 3.9 tarjetas esperadas en el cotejo bajo rigor arbitral.">
-                    🎯 <strong>Total Tarjetas:</strong> Más de 3.5 tarjetas totales <span style="color: #ffffff;">(70.0% | @1.51)</span>
-                </span>
-            
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Total de Goles Fijo: Volumen ofensivo conjunto proyecta 2.5 goles esperados con 81.5% de ver 2 o más tantos.">
-                    🎯 <strong>Total de Goles Fijo:</strong> Más de 1.5 goles totales <span style="color: #ffffff;">(81.5% | @1.3)</span>
-                </span>
-            
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Victoria Sin Empate (DNB): Triunfo de Atalanta con devolución íntegra del dinero si el partido termina igualado (cobertura DNB: 94.6%).">
-                    🎯 <strong>Victoria Sin Empate (DNB):</strong> Atalanta Gana (Empate No Válido / DNB) <span style="color: #ffffff;">(94.6% | @1.12)</span>
-                </span>
-            
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Doble Oportunidad: Protección total ante el empate con 96.0% de cobertura matemática y factor local.">
-                    🎯 <strong>Doble Oportunidad:</strong> Atalanta o Empate (1X) <span style="color: #ffffff;">(96.0% | @1.09)</span>
-                </span>
-            
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Total de Goles Fijo: Línea de cobertura mínima que descarta el 0-0.">
-                    🎯 <strong>Total de Goles Fijo:</strong> Más de 0.5 goles totales <span style="color: #ffffff;">(94.8% | @1.09)</span>
-                </span>
-            
-            </div>
-        </div>
-    
-        </div>
-    
-
-            <!-- Analytics Grid -->
-            <div class="analytics-grid-3">
-                <!-- 1X2 & Exact Score -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">🎯 Marcador & Probabilidad 1X2</div>
-                        <span class="badge-subtle">Dixon-Coles + Monte Carlo</span>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Victoria Atalanta (1)</span>
-                            <span class="mono-bold" style="color: var(--cyan);">70.02%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 70.02%; background: linear-gradient(90deg, #3b82f6, #06b6d4);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Empate (X)</span>
-                            <span class="mono-bold" style="color: var(--gold);">25.98%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 25.98%; background: linear-gradient(90deg, #f59e0b, #fbbf24);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Victoria Venezia (2)</span>
-                            <span class="mono-bold" style="color: var(--rose);">4.0%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 4.0%; background: linear-gradient(90deg, #f43f5e, #e11d48);"></div>
-                        </div>
-                    </div>
-
-                    <div class="table-container" style="margin-top: 1.25rem;">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Marcador</th>
-                                    <th style="text-align: right;">Prob (%)</th>
-                                    <th style="text-align: right;">Rango</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                
-            <tr>
-                <td><strong style="color: #ffffff;">2 - 0</strong></td>
-                <td style="text-align: right;" class="mono-bold">14.04%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-emerald">Top 1</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">3 - 0</strong></td>
-                <td style="text-align: right;" class="mono-bold">12.66%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 2</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">1 - 0</strong></td>
-                <td style="text-align: right;" class="mono-bold">11.2%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 3</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">4 - 0</strong></td>
-                <td style="text-align: right;" class="mono-bold">9.27%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 4</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">2 - 1</strong></td>
-                <td style="text-align: right;" class="mono-bold">6.3%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 5</span></td>
-            </tr>
-        
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- Goals Distribution -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">⚽ Mercados de Goles</div>
-                        <span class="badge-subtle">Distribución Poisson Bivariada</span>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Más de 1.5 Goles</span>
-                            <span class="mono-bold" style="color: var(--emerald);">81.51%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 81.51%; background: linear-gradient(90deg, #10b981, #059669);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Más de 2.5 Goles</span>
-                            <span class="mono-bold" style="color: var(--cyan);">61.71%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 61.71%; background: linear-gradient(90deg, #06b6d4, #0284c7);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Ambos Equipos Anotan (BTTS)</span>
-                            <span class="mono-bold" style="color: var(--amber);">34.02%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 34.02%; background: linear-gradient(90deg, #f59e0b, #d97706);"></div>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 1rem; margin-top: 1rem;">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">PROMEDIO GOLES SIMULADOS:</div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                            <span>Atalanta: <strong style="color: var(--cyan);">2.92</strong></span>
-                            <span>Venezia: <strong style="color: var(--amber);">0.47</strong></span>
-                            <span>Total: <strong style="color: var(--emerald);">3.39</strong></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Córners & Balón Parado -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">🚩 Córners & Balón Parado</div>
-                        <span class="badge-subtle">Volumen Total Proyectado</span>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Córners Proyectados (Atalanta)</span>
-                            <span class="mono-bold" style="color: var(--cyan);">5.0</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 65%; background: var(--cyan);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Córners Proyectados (Venezia)</span>
-                            <span class="mono-bold" style="color: var(--amber);">2.4</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 45%; background: var(--amber);"></div>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 0.85rem; margin-top: 1rem;">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.3rem;">LÍNEAS DE CÓRNERS RECOMENDADAS:</div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                            <span>Over 8.5: <strong style="color: var(--emerald);">32.4%</strong></span>
-                            <span>Over 9.5: <strong style="color: var(--cyan);">21.2%</strong></span>
-                            <span>Under 12.5: <strong style="color: var(--gold);">96.1%</strong></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tarjetas & Disciplina Arbitral (Restaurado Integralmente) -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">🟨 Tarjetas & Disciplina Arbitral</div>
-                        <span class="badge-subtle">Árbitro: Árbitro FIFA Internacional</span>
-                    </div>
-
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1rem;">
-                        <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: 12px; padding: 0.85rem; text-align: center;">
-                            <div style="font-size: 0.75rem; color: #fbbf24; font-weight: 700;">Amarillas Atalanta</div>
-                            <div class="predicted-score" style="font-size: 1.75rem; color: #fbbf24; margin-top: 0.2rem;">1.6</div>
-                        </div>
-                        <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: 12px; padding: 0.85rem; text-align: center;">
-                            <div style="font-size: 0.75rem; color: #fbbf24; font-weight: 700;">Amarillas Venezia</div>
-                            <div class="predicted-score" style="font-size: 1.75rem; color: #fbbf24; margin-top: 0.2rem;">2.1</div>
-                        </div>
-                    </div>
-
-                    <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(244, 63, 94, 0.1); border: 1px solid rgba(244, 63, 94, 0.3); border-radius: 10px; padding: 0.65rem 0.85rem; margin-bottom: 0.85rem;">
-                        <div>
-                            <div style="font-weight: 700; font-size: 0.82rem; color: #fda4af;">Riesgo de Tarjeta Roja</div>
-                            <div style="font-size: 0.72rem; color: var(--text-muted);">Prob. expulsión en 90 min</div>
-                        </div>
-                        <div class="badge-status" style="background: rgba(244, 63, 94, 0.25); color: #f43f5e; font-size: 0.85rem; padding: 0.25rem 0.6rem; font-weight: 800;">
-                            15.7%
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 0.85rem;">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.3rem;">LÍNEAS DE TARJETAS REGULARES:</div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                            <span>Total Estimado: <strong style="color: var(--gold);">3.9</strong></span>
-                            <span>Más de 3.5: <strong style="color: var(--cyan);">50.8%</strong></span>
-                            <span>Más de 4.5: <strong style="color: var(--emerald);">31.4%</strong></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Medical Bulletin & Sanity Audit Section -->
-            
-            <div class="card" style="margin-top: 1.5rem; border-color: rgba(16, 185, 129, 0.3);">
-                <div style="display: flex; align-items: center; justify-content: space-between;">
-                    <div style="display: flex; align-items: center; gap: 0.5rem; color: #10b981; font-size: 0.85rem; font-weight: 600;">
-                        <span>✅</span> <strong>Auditoría Médica:</strong> 100% de futbolistas estelares con aptitud física ratificada para el once titular.
-                    </div>
-                    <span class="tag-pill tag-emerald">Sanidad Ratificada</span>
-                </div>
-            </div>
-        
-
-            <!-- Player Props Section -->
-            <div class="card" style="margin-top: 1.5rem;">
-                <div class="card-header">
-                    <div class="card-title">⭐ Remates & Disparos a Puerta de Figuras Clave</div>
-                    <span class="badge-subtle">Regresión Poisson Individual (p90) &bull; Cerrojo Sanitario Activo</span>
-                </div>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Jugador / Rol</th>
-                                <th style="text-align: center;">Tiros Proy.</th>
-                                <th style="text-align: center;">SoT Proy.</th>
-                                <th style="text-align: center;">≥1 SoT (%)</th>
-                                <th style="text-align: center;">≥1 Tiro (%)</th>
-                                <th style="text-align: right;">Gol (%)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Mateo Retegui </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🔵 Atalanta &bull; Delantero Centro</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">4.2</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">2.1</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">87.3%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-amber mono-bold">92.5%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">52.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Ademola Lookman </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🔵 Atalanta &bull; Segundo Delantero</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">3.9</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">1.8</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">83.8%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-amber mono-bold">89.9%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">44.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Charles De Ketelaere </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🔵 Atalanta &bull; Mediapunta</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">2.9</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">1.3</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">73.7%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">78.7%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">30.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Éderson </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🔵 Atalanta &bull; Centrocampista Total</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">2.1</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.7</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">51.7%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">61.0%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">16.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Joel Pohjanpalo </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🦁 Venezia &bull; Delantero Centro</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.4</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.6</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">44.2%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">40.8%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">32.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Gaetano Oristanio </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🦁 Venezia &bull; Segundo Delantero</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.2</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.5</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">37.3%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">32.5%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">22.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Gianluca Busio </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🦁 Venezia &bull; Centrocampista Creativo</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">0.9</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.3</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">25.3%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">21.9%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">14.0%</span></td>
-            </tr>
-        
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    
-        <!-- ==================== PARTIDO 2: Coventry City vs Newcastle ==================== -->
-        <div id="match-1" class="match-view " style="display: none;">
-            <!-- Hero Banner -->
-            <div class="hero-banner">
-                <div class="hero-context-badge">
-                    <span>🏆 Competición Internacional FIFA</span>
-                    <span>📍 Estadio Principal</span>
-                    <span>👥 45,000 espectadores</span>
-                </div>
-
-                <div class="hero-grid">
-                    <div class="team-col">
-                        <div class="team-flag">🩵</div>
-                        <div class="team-name">Coventry City</div>
-                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--cyan);">0.47</span></div>
-                    </div>
-
-                    <div class="center-score-col">
-                        <div class="score-pill-title">Marcador Exacto Más Probable</div>
-                        <div class="hero-score-val">0 - 2</div>
-                        <div class="hero-score-conf">Top Alternativas: 0 - 3 (12.48%) &bull; 0 - 1 (11.44%)</div>
-                    </div>
-
-                    <div class="team-col">
-                        <div class="team-flag">⚪</div>
-                        <div class="team-name">Newcastle</div>
-                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--amber);">2.87</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Glowing La Fija Card -->
-            
-        <div class="fija-gold-card">
-            <div class="fija-badge-glow">
-                <span class="fija-star">⭐</span> LA FIJA DEL PARTIDO &bull; Victoria Directa (1X2)
-            </div>
-            <div class="fija-content-grid">
-                <div class="fija-main">
-                    <div class="fija-market-label">Selección Cuantitativa Diversificada (Victoria Directa (1X2))</div>
-                    <div class="fija-market-title">Newcastle Gana el Partido (2)</div>
-                    <div class="fija-rationale">🔬 <em>Fundamento TimesFM & Monte Carlo:</em> Convicción visitante: Newcastle proyecta superioridad táctica con 68.0% de probabilidad de llevarse los 3 puntos.</div>
-                </div>
-                <div class="fija-stats">
-                    <div class="fija-stat-box">
-                        <div class="fija-stat-val">68.0%</div>
-                        <div class="fija-stat-lbl">Probabilidad</div>
-                    </div>
-                    <div class="fija-stat-box">
-                        <div class="fija-stat-val" style="color: var(--emerald);">1.56</div>
-                        <div class="fija-stat-lbl">Cuota Justa</div>
-                    </div>
-                    <div class="fija-stat-box">
-                        <div class="fija-stat-val" style="color: var(--cyan);">1.68</div>
-                        <div class="fija-stat-lbl">Cuota Mercado</div>
-                    </div>
-                </div>
-            </div>
-            
-        <div style="margin-top: 0.85rem; padding-top: 0.65rem; border-top: 1px dashed rgba(255,255,255,0.15);">
-            <div style="font-size: 0.74rem; color: var(--text-muted); margin-bottom: 0.4rem; font-weight: 700; letter-spacing: 0.5px;">
-                📊 OTROS MERCADOS DE SEGURIDAD ANALIZADOS EN ESTE PARTIDO:
-            </div>
-            <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
-                
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Total Tarjetas: Fricción disciplinaria elevada: 4.0 tarjetas esperadas en el cotejo bajo rigor arbitral.">
-                    🎯 <strong>Total Tarjetas:</strong> Más de 3.5 tarjetas totales <span style="color: #ffffff;">(70.0% | @1.51)</span>
-                </span>
-            
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Total de Goles Fijo: Volumen ofensivo conjunto proyecta 2.5 goles esperados con 80.9% de ver 2 o más tantos.">
-                    🎯 <strong>Total de Goles Fijo:</strong> Más de 1.5 goles totales <span style="color: #ffffff;">(80.9% | @1.31)</span>
-                </span>
-            
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Victoria Sin Empate (DNB): Triunfo de Newcastle con devolución total en caso de empate (cobertura DNB: 93.24%).">
-                    🎯 <strong>Victoria Sin Empate (DNB):</strong> Newcastle Gana (Empate No Válido / DNB) <span style="color: #ffffff;">(93.24% | @1.14)</span>
-                </span>
-            
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Doble Oportunidad: El visitante Newcastle puntúa en el 95.1% de las simulaciones tácticas.">
-                    🎯 <strong>Doble Oportunidad:</strong> Empate o Newcastle (X2) <span style="color: #ffffff;">(95.1% | @1.1)</span>
-                </span>
-            
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Total de Goles Fijo: Línea de cobertura mínima que descarta el 0-0.">
-                    🎯 <strong>Total de Goles Fijo:</strong> Más de 0.5 goles totales <span style="color: #ffffff;">(94.6% | @1.09)</span>
-                </span>
-            
-            </div>
-        </div>
-    
-        </div>
-    
-
-            <!-- Analytics Grid -->
-            <div class="analytics-grid-3">
-                <!-- 1X2 & Exact Score -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">🎯 Marcador & Probabilidad 1X2</div>
-                        <span class="badge-subtle">Dixon-Coles + Monte Carlo</span>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Victoria Coventry City (1)</span>
-                            <span class="mono-bold" style="color: var(--cyan);">4.93%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 4.93%; background: linear-gradient(90deg, #3b82f6, #06b6d4);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Empate (X)</span>
-                            <span class="mono-bold" style="color: var(--gold);">27.07%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 27.07%; background: linear-gradient(90deg, #f59e0b, #fbbf24);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Victoria Newcastle (2)</span>
-                            <span class="mono-bold" style="color: var(--rose);">68.0%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 68.0%; background: linear-gradient(90deg, #f43f5e, #e11d48);"></div>
-                        </div>
-                    </div>
-
-                    <div class="table-container" style="margin-top: 1.25rem;">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Marcador</th>
-                                    <th style="text-align: right;">Prob (%)</th>
-                                    <th style="text-align: right;">Rango</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                
-            <tr>
-                <td><strong style="color: #ffffff;">0 - 2</strong></td>
-                <td style="text-align: right;" class="mono-bold">14.1%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-emerald">Top 1</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">0 - 3</strong></td>
-                <td style="text-align: right;" class="mono-bold">12.48%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 2</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">0 - 1</strong></td>
-                <td style="text-align: right;" class="mono-bold">11.44%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 3</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">0 - 4</strong></td>
-                <td style="text-align: right;" class="mono-bold">8.97%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 4</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">1 - 2</strong></td>
-                <td style="text-align: right;" class="mono-bold">6.46%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 5</span></td>
-            </tr>
-        
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- Goals Distribution -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">⚽ Mercados de Goles</div>
-                        <span class="badge-subtle">Distribución Poisson Bivariada</span>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Más de 1.5 Goles</span>
-                            <span class="mono-bold" style="color: var(--emerald);">80.91%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 80.91%; background: linear-gradient(90deg, #10b981, #059669);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Más de 2.5 Goles</span>
-                            <span class="mono-bold" style="color: var(--cyan);">60.74%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 60.74%; background: linear-gradient(90deg, #06b6d4, #0284c7);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Ambos Equipos Anotan (BTTS)</span>
-                            <span class="mono-bold" style="color: var(--amber);">34.44%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 34.44%; background: linear-gradient(90deg, #f59e0b, #d97706);"></div>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 1rem; margin-top: 1rem;">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">PROMEDIO GOLES SIMULADOS:</div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                            <span>Coventry City: <strong style="color: var(--cyan);">0.47</strong></span>
-                            <span>Newcastle: <strong style="color: var(--amber);">2.87</strong></span>
-                            <span>Total: <strong style="color: var(--emerald);">3.34</strong></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Córners & Balón Parado -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">🚩 Córners & Balón Parado</div>
-                        <span class="badge-subtle">Volumen Total Proyectado</span>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Córners Proyectados (Coventry City)</span>
-                            <span class="mono-bold" style="color: var(--cyan);">2.3</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 65%; background: var(--cyan);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Córners Proyectados (Newcastle)</span>
-                            <span class="mono-bold" style="color: var(--amber);">5.0</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 45%; background: var(--amber);"></div>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 0.85rem; margin-top: 1rem;">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.3rem;">LÍNEAS DE CÓRNERS RECOMENDADAS:</div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                            <span>Over 8.5: <strong style="color: var(--emerald);">31.1%</strong></span>
-                            <span>Over 9.5: <strong style="color: var(--cyan);">20.1%</strong></span>
-                            <span>Under 12.5: <strong style="color: var(--gold);">96.4%</strong></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tarjetas & Disciplina Arbitral (Restaurado Integralmente) -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">🟨 Tarjetas & Disciplina Arbitral</div>
-                        <span class="badge-subtle">Árbitro: Árbitro FIFA Internacional</span>
-                    </div>
-
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1rem;">
-                        <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: 12px; padding: 0.85rem; text-align: center;">
-                            <div style="font-size: 0.75rem; color: #fbbf24; font-weight: 700;">Amarillas Coventry City</div>
-                            <div class="predicted-score" style="font-size: 1.75rem; color: #fbbf24; margin-top: 0.2rem;">2.2</div>
-                        </div>
-                        <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: 12px; padding: 0.85rem; text-align: center;">
-                            <div style="font-size: 0.75rem; color: #fbbf24; font-weight: 700;">Amarillas Newcastle</div>
-                            <div class="predicted-score" style="font-size: 1.75rem; color: #fbbf24; margin-top: 0.2rem;">1.6</div>
-                        </div>
-                    </div>
-
-                    <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(244, 63, 94, 0.1); border: 1px solid rgba(244, 63, 94, 0.3); border-radius: 10px; padding: 0.65rem 0.85rem; margin-bottom: 0.85rem;">
-                        <div>
-                            <div style="font-weight: 700; font-size: 0.82rem; color: #fda4af;">Riesgo de Tarjeta Roja</div>
-                            <div style="font-size: 0.72rem; color: var(--text-muted);">Prob. expulsión en 90 min</div>
-                        </div>
-                        <div class="badge-status" style="background: rgba(244, 63, 94, 0.25); color: #f43f5e; font-size: 0.85rem; padding: 0.25rem 0.6rem; font-weight: 800;">
-                            15.7%
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 0.85rem;">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.3rem;">LÍNEAS DE TARJETAS REGULARES:</div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                            <span>Total Estimado: <strong style="color: var(--gold);">4.0</strong></span>
-                            <span>Más de 3.5: <strong style="color: var(--cyan);">52.0%</strong></span>
-                            <span>Más de 4.5: <strong style="color: var(--emerald);">32.6%</strong></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Medical Bulletin & Sanity Audit Section -->
-            
-            <div class="card" style="margin-top: 1.5rem; border-color: rgba(16, 185, 129, 0.3);">
-                <div style="display: flex; align-items: center; justify-content: space-between;">
-                    <div style="display: flex; align-items: center; gap: 0.5rem; color: #10b981; font-size: 0.85rem; font-weight: 600;">
-                        <span>✅</span> <strong>Auditoría Médica:</strong> 100% de futbolistas estelares con aptitud física ratificada para el once titular.
-                    </div>
-                    <span class="tag-pill tag-emerald">Sanidad Ratificada</span>
-                </div>
-            </div>
-        
-
-            <!-- Player Props Section -->
-            <div class="card" style="margin-top: 1.5rem;">
-                <div class="card-header">
-                    <div class="card-title">⭐ Remates & Disparos a Puerta de Figuras Clave</div>
-                    <span class="badge-subtle">Regresión Poisson Individual (p90) &bull; Cerrojo Sanitario Activo</span>
-                </div>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Jugador / Rol</th>
-                                <th style="text-align: center;">Tiros Proy.</th>
-                                <th style="text-align: center;">SoT Proy.</th>
-                                <th style="text-align: center;">≥1 SoT (%)</th>
-                                <th style="text-align: center;">≥1 Tiro (%)</th>
-                                <th style="text-align: right;">Gol (%)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Haji Wright </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🩵 Coventry City &bull; Delantero / Extremo</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.7</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.8</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">53.2%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">51.5%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">35.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Ellis Simms </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🩵 Coventry City &bull; Delantero Centro</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.6</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.7</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">49.9%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">47.1%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">32.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Jack Rudoni </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🩵 Coventry City &bull; Mediapunta</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.2</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.4</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">33.9%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">32.8%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">18.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Milan van Ewijk </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🩵 Coventry City &bull; Carrilero Derecho</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">0.8</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.3</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">24.1%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">20.2%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">10.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Alexander Isak </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">⚪ Newcastle &bull; Delantero Centro</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">4.2</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">2.1</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">87.8%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-amber mono-bold">92.3%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">55.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Anthony Gordon </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">⚪ Newcastle &bull; Extremo Izquierdo</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">3.4</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">1.5</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">78.2%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-amber mono-bold">85.3%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">38.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Bruno Guimarães </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">⚪ Newcastle &bull; Pivote Creativo</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">2.1</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.8</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">55.9%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">62.2%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">20.0%</span></td>
-            </tr>
-        
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    
-        <!-- ==================== PARTIDO 3: Levante vs Sevilla ==================== -->
-        <div id="match-2" class="match-view " style="display: none;">
-            <!-- Hero Banner -->
-            <div class="hero-banner">
-                <div class="hero-context-badge">
-                    <span>🏆 Competición Internacional FIFA</span>
-                    <span>📍 Estadio Principal</span>
-                    <span>👥 45,000 espectadores</span>
-                </div>
-
-                <div class="hero-grid">
-                    <div class="team-col">
-                        <div class="team-flag">🐸</div>
-                        <div class="team-name">Levante</div>
-                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--cyan);">0.73</span></div>
-                    </div>
-
-                    <div class="center-score-col">
-                        <div class="score-pill-title">Marcador Exacto Más Probable</div>
-                        <div class="hero-score-val">0 - 1</div>
-                        <div class="hero-score-conf">Top Alternativas: 0 - 2 (12.03%) &bull; 0 - 0 (11.79%)</div>
-                    </div>
-
-                    <div class="team-col">
-                        <div class="team-flag">⚪</div>
-                        <div class="team-name">Sevilla</div>
-                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--amber);">1.69</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Glowing La Fija Card -->
-            
-        <div class="fija-gold-card">
-            <div class="fija-badge-glow">
-                <span class="fija-star">⭐</span> LA FIJA DEL PARTIDO &bull; Victoria Directa (1X2)
-            </div>
-            <div class="fija-content-grid">
-                <div class="fija-main">
-                    <div class="fija-market-label">Selección Cuantitativa Diversificada (Victoria Directa (1X2))</div>
-                    <div class="fija-market-title">Sevilla Gana el Partido (2)</div>
-                    <div class="fija-rationale">🔬 <em>Fundamento TimesFM & Monte Carlo:</em> Convicción visitante: Sevilla proyecta superioridad táctica con 57.8% de probabilidad de llevarse los 3 puntos.</div>
-                </div>
-                <div class="fija-stats">
-                    <div class="fija-stat-box">
-                        <div class="fija-stat-val">57.8%</div>
-                        <div class="fija-stat-lbl">Probabilidad</div>
-                    </div>
-                    <div class="fija-stat-box">
-                        <div class="fija-stat-val" style="color: var(--emerald);">1.83</div>
-                        <div class="fija-stat-lbl">Cuota Justa</div>
-                    </div>
-                    <div class="fija-stat-box">
-                        <div class="fija-stat-val" style="color: var(--cyan);">1.98</div>
-                        <div class="fija-stat-lbl">Cuota Mercado</div>
-                    </div>
-                </div>
-            </div>
-            
-        <div style="margin-top: 0.85rem; padding-top: 0.65rem; border-top: 1px dashed rgba(255,255,255,0.15);">
-            <div style="font-size: 0.74rem; color: var(--text-muted); margin-bottom: 0.4rem; font-weight: 700; letter-spacing: 0.5px;">
-                📊 OTROS MERCADOS DE SEGURIDAD ANALIZADOS EN ESTE PARTIDO:
-            </div>
-            <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
-                
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Victoria Sin Empate (DNB): Triunfo de Sevilla con devolución total en caso de empate (cobertura DNB: 78.66%).">
-                    🎯 <strong>Victoria Sin Empate (DNB):</strong> Sevilla Gana (Empate No Válido / DNB) <span style="color: #ffffff;">(78.66% | @1.35)</span>
-                </span>
-            
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Doble Oportunidad: El visitante Sevilla puntúa en el 84.3% de las simulaciones tácticas.">
-                    🎯 <strong>Doble Oportunidad:</strong> Empate o Sevilla (X2) <span style="color: #ffffff;">(84.3% | @1.25)</span>
-                </span>
-            
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Total Tarjetas: Fricción disciplinaria elevada: 4.2 tarjetas esperadas en el cotejo bajo rigor arbitral.">
-                    🎯 <strong>Total Tarjetas:</strong> Más de 3.5 tarjetas totales <span style="color: #ffffff;">(70.0% | @1.51)</span>
-                </span>
-            
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Total de Goles Fijo: Línea de cobertura mínima que descarta el 0-0.">
-                    🎯 <strong>Total de Goles Fijo:</strong> Más de 0.5 goles totales <span style="color: #ffffff;">(88.2% | @1.09)</span>
-                </span>
-            
-            </div>
-        </div>
-    
-        </div>
-    
-
-            <!-- Analytics Grid -->
-            <div class="analytics-grid-3">
-                <!-- 1X2 & Exact Score -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">🎯 Marcador & Probabilidad 1X2</div>
-                        <span class="badge-subtle">Dixon-Coles + Monte Carlo</span>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Victoria Levante (1)</span>
-                            <span class="mono-bold" style="color: var(--cyan);">15.69%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 15.69%; background: linear-gradient(90deg, #3b82f6, #06b6d4);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Empate (X)</span>
-                            <span class="mono-bold" style="color: var(--gold);">26.47%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 26.47%; background: linear-gradient(90deg, #f59e0b, #fbbf24);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Victoria Sevilla (2)</span>
-                            <span class="mono-bold" style="color: var(--rose);">57.84%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 57.84%; background: linear-gradient(90deg, #f43f5e, #e11d48);"></div>
-                        </div>
-                    </div>
-
-                    <div class="table-container" style="margin-top: 1.25rem;">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Marcador</th>
-                                    <th style="text-align: right;">Prob (%)</th>
-                                    <th style="text-align: right;">Rango</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                
-            <tr>
-                <td><strong style="color: #ffffff;">0 - 1</strong></td>
-                <td style="text-align: right;" class="mono-bold">14.16%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-emerald">Top 1</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">0 - 2</strong></td>
-                <td style="text-align: right;" class="mono-bold">12.03%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 2</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">0 - 0</strong></td>
-                <td style="text-align: right;" class="mono-bold">11.79%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 3</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">1 - 1</strong></td>
-                <td style="text-align: right;" class="mono-bold">11.19%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 4</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">1 - 2</strong></td>
-                <td style="text-align: right;" class="mono-bold">8.08%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 5</span></td>
-            </tr>
-        
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- Goals Distribution -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">⚽ Mercados de Goles</div>
-                        <span class="badge-subtle">Distribución Poisson Bivariada</span>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Más de 1.5 Goles</span>
-                            <span class="mono-bold" style="color: var(--emerald);">68.08%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 68.08%; background: linear-gradient(90deg, #10b981, #059669);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Más de 2.5 Goles</span>
-                            <span class="mono-bold" style="color: var(--cyan);">42.25%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 42.25%; background: linear-gradient(90deg, #06b6d4, #0284c7);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Ambos Equipos Anotan (BTTS)</span>
-                            <span class="mono-bold" style="color: var(--amber);">40.46%</span>
+            <!-- BANNER PRINCIPAL: PROTOCOLO SELLO DE ALTA CERTEZA (REGLA #119) -->
+            <div style="background: linear-gradient(135deg, rgba(30, 27, 75, 0.9), rgba(15, 23, 42, 0.98)); border: 2px solid rgba(245, 158, 11, 0.6); border-radius: 20px; padding: 1.75rem 2rem; margin-bottom: 2rem; backdrop-filter: blur(16px); box-shadow: 0 16px 36px -8px rgba(245, 158, 11, 0.35);">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.25rem;">
+                    <div>
+                        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem;">
+                            <span style="background: rgba(245, 158, 11, 0.25); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.7); padding: 0.25rem 0.85rem; border-radius: 9999px; font-size: 0.78rem; font-weight: 800; text-transform: uppercase;">
+                                📅 CARTELERA OFICIAL &bull; MARTES 27 DE OCTUBRE DE 2026
+                            </span>
+                            <span style="background: linear-gradient(135deg, #10b981, #059669); color: #ffffff; padding: 0.25rem 0.85rem; border-radius: 9999px; font-size: 0.78rem; font-weight: 800; box-shadow: 0 0 12px rgba(16, 185, 129, 0.5);">
+                                ⭐ SELLO DE ALTA CERTEZA (REGLA #119)
+                            </span>
                         </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 40.46%; background: linear-gradient(90deg, #f59e0b, #d97706);"></div>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 1rem; margin-top: 1rem;">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">PROMEDIO GOLES SIMULADOS:</div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                            <span>Levante: <strong style="color: var(--cyan);">0.73</strong></span>
-                            <span>Sevilla: <strong style="color: var(--amber);">1.69</strong></span>
-                            <span>Total: <strong style="color: var(--emerald);">2.41</strong></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Córners & Balón Parado -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">🚩 Córners & Balón Parado</div>
-                        <span class="badge-subtle">Volumen Total Proyectado</span>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Córners Proyectados (Levante)</span>
-                            <span class="mono-bold" style="color: var(--cyan);">3.8</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 65%; background: var(--cyan);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Córners Proyectados (Sevilla)</span>
-                            <span class="mono-bold" style="color: var(--amber);">4.6</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 45%; background: var(--amber);"></div>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 0.85rem; margin-top: 1rem;">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.3rem;">LÍNEAS DE CÓRNERS RECOMENDADAS:</div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                            <span>Over 8.5: <strong style="color: var(--emerald);">46.3%</strong></span>
-                            <span>Over 9.5: <strong style="color: var(--cyan);">33.4%</strong></span>
-                            <span>Under 12.5: <strong style="color: var(--gold);">91.5%</strong></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tarjetas & Disciplina Arbitral (Restaurado Integralmente) -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">🟨 Tarjetas & Disciplina Arbitral</div>
-                        <span class="badge-subtle">Árbitro: Árbitro FIFA Internacional</span>
-                    </div>
-
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1rem;">
-                        <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: 12px; padding: 0.85rem; text-align: center;">
-                            <div style="font-size: 0.75rem; color: #fbbf24; font-weight: 700;">Amarillas Levante</div>
-                            <div class="predicted-score" style="font-size: 1.75rem; color: #fbbf24; margin-top: 0.2rem;">2.0</div>
-                        </div>
-                        <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: 12px; padding: 0.85rem; text-align: center;">
-                            <div style="font-size: 0.75rem; color: #fbbf24; font-weight: 700;">Amarillas Sevilla</div>
-                            <div class="predicted-score" style="font-size: 1.75rem; color: #fbbf24; margin-top: 0.2rem;">2.0</div>
-                        </div>
-                    </div>
-
-                    <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(244, 63, 94, 0.1); border: 1px solid rgba(244, 63, 94, 0.3); border-radius: 10px; padding: 0.65rem 0.85rem; margin-bottom: 0.85rem;">
-                        <div>
-                            <div style="font-weight: 700; font-size: 0.82rem; color: #fda4af;">Riesgo de Tarjeta Roja</div>
-                            <div style="font-size: 0.72rem; color: var(--text-muted);">Prob. expulsión en 90 min</div>
-                        </div>
-                        <div class="badge-status" style="background: rgba(244, 63, 94, 0.25); color: #f43f5e; font-size: 0.85rem; padding: 0.25rem 0.6rem; font-weight: 800;">
-                            15.7%
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 0.85rem;">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.3rem;">LÍNEAS DE TARJETAS REGULARES:</div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                            <span>Total Estimado: <strong style="color: var(--gold);">4.2</strong></span>
-                            <span>Más de 3.5: <strong style="color: var(--cyan);">57.6%</strong></span>
-                            <span>Más de 4.5: <strong style="color: var(--emerald);">38.1%</strong></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Medical Bulletin & Sanity Audit Section -->
-            
-            <div class="card" style="margin-top: 1.5rem; border-color: rgba(16, 185, 129, 0.3);">
-                <div style="display: flex; align-items: center; justify-content: space-between;">
-                    <div style="display: flex; align-items: center; gap: 0.5rem; color: #10b981; font-size: 0.85rem; font-weight: 600;">
-                        <span>✅</span> <strong>Auditoría Médica:</strong> 100% de futbolistas estelares con aptitud física ratificada para el once titular.
-                    </div>
-                    <span class="tag-pill tag-emerald">Sanidad Ratificada</span>
-                </div>
-            </div>
-        
-
-            <!-- Player Props Section -->
-            <div class="card" style="margin-top: 1.5rem;">
-                <div class="card-header">
-                    <div class="card-title">⭐ Remates & Disparos a Puerta de Figuras Clave</div>
-                    <span class="badge-subtle">Regresión Poisson Individual (p90) &bull; Cerrojo Sanitario Activo</span>
-                </div>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Jugador / Rol</th>
-                                <th style="text-align: center;">Tiros Proy.</th>
-                                <th style="text-align: center;">SoT Proy.</th>
-                                <th style="text-align: center;">≥1 SoT (%)</th>
-                                <th style="text-align: center;">≥1 Tiro (%)</th>
-                                <th style="text-align: right;">Gol (%)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">José Luis Morales </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🐸 Levante &bull; Delantero Centro</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">2.0</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.9</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">59.8%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">58.6%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">38.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Carlos Álvarez </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🐸 Levante &bull; Mediapunta / Extremo</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.6</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.7</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">49.5%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">47.3%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">24.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Roger Brugué </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🐸 Levante &bull; Extremo Derecho</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.4</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.5</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">41.2%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">39.6%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">20.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Oriol Rey </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🐸 Levante &bull; Pivote Defensivo</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">0.6</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.2</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">18.1%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">12.4%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">5.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Dodi Lukébakio </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">⚪ Sevilla &bull; Extremo Derecho</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">2.8</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">1.3</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">72.1%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">77.3%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">42.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Isaac Romero </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">⚪ Sevilla &bull; Delantero Centro</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">2.5</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">1.1</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">66.5%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">70.5%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">36.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Peque Fernández </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">⚪ Sevilla &bull; Mediapunta</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.7</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.7</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">51.8%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">51.7%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">22.0%</span></td>
-            </tr>
-        
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    
-        <!-- ==================== PARTIDO 4: Torino vs Udinese ==================== -->
-        <div id="match-3" class="match-view " style="display: none;">
-            <!-- Hero Banner -->
-            <div class="hero-banner">
-                <div class="hero-context-badge">
-                    <span>🏆 Competición Internacional FIFA</span>
-                    <span>📍 Estadio Principal</span>
-                    <span>👥 45,000 espectadores</span>
-                </div>
-
-                <div class="hero-grid">
-                    <div class="team-col">
-                        <div class="team-flag">🐂</div>
-                        <div class="team-name">Torino</div>
-                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--cyan);">1.31</span></div>
-                    </div>
-
-                    <div class="center-score-col">
-                        <div class="score-pill-title">Marcador Exacto Más Probable</div>
-                        <div class="hero-score-val">0 - 0</div>
-                        <div class="hero-score-conf">Top Alternativas: 1 - 1 (13.13%) &bull; 1 - 0 (12.53%)</div>
-                    </div>
-
-                    <div class="team-col">
-                        <div class="team-flag">⚪</div>
-                        <div class="team-name">Udinese</div>
-                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--amber);">0.94</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Glowing La Fija Card -->
-            
-        <div class="fija-gold-card">
-            <div class="fija-badge-glow">
-                <span class="fija-star">⭐</span> LA FIJA DEL PARTIDO &bull; Doble Oportunidad
-            </div>
-            <div class="fija-content-grid">
-                <div class="fija-main">
-                    <div class="fija-market-label">Selección Cuantitativa Diversificada (Doble Oportunidad)</div>
-                    <div class="fija-market-title">Torino o Empate (1X)</div>
-                    <div class="fija-rationale">🔬 <em>Fundamento TimesFM & Monte Carlo:</em> Protección total ante el empate con 74.1% de cobertura matemática y factor local.</div>
-                </div>
-                <div class="fija-stats">
-                    <div class="fija-stat-box">
-                        <div class="fija-stat-val">74.1%</div>
-                        <div class="fija-stat-lbl">Probabilidad</div>
-                    </div>
-                    <div class="fija-stat-box">
-                        <div class="fija-stat-val" style="color: var(--emerald);">1.42</div>
-                        <div class="fija-stat-lbl">Cuota Justa</div>
-                    </div>
-                    <div class="fija-stat-box">
-                        <div class="fija-stat-val" style="color: var(--cyan);">1.53</div>
-                        <div class="fija-stat-lbl">Cuota Mercado</div>
-                    </div>
-                </div>
-            </div>
-            
-        <div style="margin-top: 0.85rem; padding-top: 0.65rem; border-top: 1px dashed rgba(255,255,255,0.15);">
-            <div style="font-size: 0.74rem; color: var(--text-muted); margin-bottom: 0.4rem; font-weight: 700; letter-spacing: 0.5px;">
-                📊 OTROS MERCADOS DE SEGURIDAD ANALIZADOS EN ESTE PARTIDO:
-            </div>
-            <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
-                
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Total Tarjetas: Fricción disciplinaria elevada: 4.1 tarjetas esperadas en el cotejo bajo rigor arbitral.">
-                    🎯 <strong>Total Tarjetas:</strong> Más de 3.5 tarjetas totales <span style="color: #ffffff;">(70.0% | @1.51)</span>
-                </span>
-            
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Total de Goles Fijo: Línea de cobertura mínima que descarta el 0-0.">
-                    🎯 <strong>Total de Goles Fijo:</strong> Más de 0.5 goles totales <span style="color: #ffffff;">(86.3% | @1.09)</span>
-                </span>
-            
-            </div>
-        </div>
-    
-        </div>
-    
-
-            <!-- Analytics Grid -->
-            <div class="analytics-grid-3">
-                <!-- 1X2 & Exact Score -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">🎯 Marcador & Probabilidad 1X2</div>
-                        <span class="badge-subtle">Dixon-Coles + Monte Carlo</span>
+                        <h1 style="font-size: 1.8rem; font-weight: 900; color: #ffffff; letter-spacing: -0.02em; margin: 0;">
+                            Copa del Rey, Carabao Cup, Serie A & DFB-Pokal: Operación Goliat
+                        </h1>
+                        <p style="color: #94a3b8; font-size: 0.92rem; margin-top: 0.35rem; margin-bottom: 0;">
+                            Los gigantes europeos (Arsenal, Girona, Villarreal, RB Leipzig y AS Roma) enfrentan eliminatorias desiguales para reconstruir la banca.
+                        </p>
                     </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Victoria Torino (1)</span>
-                            <span class="mono-bold" style="color: var(--cyan);">43.2%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 43.2%; background: linear-gradient(90deg, #3b82f6, #06b6d4);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Empate (X)</span>
-                            <span class="mono-bold" style="color: var(--gold);">30.94%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 30.94%; background: linear-gradient(90deg, #f59e0b, #fbbf24);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Victoria Udinese (2)</span>
-                            <span class="mono-bold" style="color: var(--rose);">25.86%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 25.86%; background: linear-gradient(90deg, #f43f5e, #e11d48);"></div>
-                        </div>
-                    </div>
-
-                    <div class="table-container" style="margin-top: 1.25rem;">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Marcador</th>
-                                    <th style="text-align: right;">Prob (%)</th>
-                                    <th style="text-align: right;">Rango</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                
-            <tr>
-                <td><strong style="color: #ffffff;">0 - 0</strong></td>
-                <td style="text-align: right;" class="mono-bold">13.69%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-emerald">Top 1</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">1 - 1</strong></td>
-                <td style="text-align: right;" class="mono-bold">13.13%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 2</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">1 - 0</strong></td>
-                <td style="text-align: right;" class="mono-bold">12.53%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 3</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">0 - 1</strong></td>
-                <td style="text-align: right;" class="mono-bold">8.86%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 4</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">2 - 0</strong></td>
-                <td style="text-align: right;" class="mono-bold">8.81%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 5</span></td>
-            </tr>
-        
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- Goals Distribution -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">⚽ Mercados de Goles</div>
-                        <span class="badge-subtle">Distribución Poisson Bivariada</span>
+                    <div style="background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.15); border-radius: 14px; padding: 1rem 1.5rem; text-align: right;">
+                        <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; font-weight: 700;">Saldo Activo Ecuabet</div>
+                        <div style="font-size: 1.6rem; font-weight: 900; color: #fbbf24;">$23.00 USD</div>
+                        <div style="font-size: 0.8rem; font-weight: 700; color: #34d399;">Stake Sugerido: $5.00 - $6.00 USD</div>
                     </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Más de 1.5 Goles</span>
-                            <span class="mono-bold" style="color: var(--emerald);">64.92%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 64.92%; background: linear-gradient(90deg, #10b981, #059669);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Más de 2.5 Goles</span>
-                            <span class="mono-bold" style="color: var(--cyan);">38.16%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 38.16%; background: linear-gradient(90deg, #06b6d4, #0284c7);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Ambos Equipos Anotan (BTTS)</span>
-                            <span class="mono-bold" style="color: var(--amber);">42.82%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 42.82%; background: linear-gradient(90deg, #f59e0b, #d97706);"></div>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 1rem; margin-top: 1rem;">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">PROMEDIO GOLES SIMULADOS:</div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                            <span>Torino: <strong style="color: var(--cyan);">1.31</strong></span>
-                            <span>Udinese: <strong style="color: var(--amber);">0.94</strong></span>
-                            <span>Total: <strong style="color: var(--emerald);">2.25</strong></span>
-                        </div>
-                    </div>
                 </div>
-
-                <!-- Córners & Balón Parado -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">🚩 Córners & Balón Parado</div>
-                        <span class="badge-subtle">Volumen Total Proyectado</span>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Córners Proyectados (Torino)</span>
-                            <span class="mono-bold" style="color: var(--cyan);">4.5</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 65%; background: var(--cyan);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Córners Proyectados (Udinese)</span>
-                            <span class="mono-bold" style="color: var(--amber);">3.6</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 45%; background: var(--amber);"></div>
-                        </div>
-                    </div>
 
-                    <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 0.85rem; margin-top: 1rem;">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.3rem;">LÍNEAS DE CÓRNERS RECOMENDADAS:</div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                            <span>Over 8.5: <strong style="color: var(--emerald);">42.1%</strong></span>
-                            <span>Over 9.5: <strong style="color: var(--cyan);">29.6%</strong></span>
-                            <span>Under 12.5: <strong style="color: var(--gold);">93.1%</strong></span>
+                <!-- SPOTLIGHT DE LAS DOS ESTRATEGIAS RECOMENDADAS -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1rem; margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid rgba(255,255,255,0.08);">
+                    <div style="background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.4); border-radius: 14px; padding: 1.1rem 1.25rem;">
+                        <div style="font-size: 0.78rem; font-weight: 800; color: #34d399; text-transform: uppercase; display: flex; align-items: center; gap: 0.4rem;">
+                            <span>👑</span> LA TRIPLETA DE HIERRO 'DAVID VS GOLIAT' (CUOTA 1.50)
                         </div>
-                    </div>
-                </div>
-
-                <!-- Tarjetas & Disciplina Arbitral (Restaurado Integralmente) -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">🟨 Tarjetas & Disciplina Arbitral</div>
-                        <span class="badge-subtle">Árbitro: Árbitro FIFA Internacional</span>
-                    </div>
-
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1rem;">
-                        <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: 12px; padding: 0.85rem; text-align: center;">
-                            <div style="font-size: 0.75rem; color: #fbbf24; font-weight: 700;">Amarillas Torino</div>
-                            <div class="predicted-score" style="font-size: 1.75rem; color: #fbbf24; margin-top: 0.2rem;">1.8</div>
+                        <div style="font-size: 1.1rem; font-weight: 800; color: #ffffff; margin-top: 0.35rem;">
+                            Fleetwood vs Arsenal (2) + Cuarte vs Girona (2) + Manacor vs Villarreal (2)
                         </div>
-                        <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: 12px; padding: 0.85rem; text-align: center;">
-                            <div style="font-size: 0.75rem; color: #fbbf24; font-weight: 700;">Amarillas Udinese</div>
-                            <div class="predicted-score" style="font-size: 1.75rem; color: #fbbf24; margin-top: 0.2rem;">2.1</div>
+                        <div style="font-size: 0.82rem; color: #cbd5e1; margin-top: 0.25rem;">
+                            Tres gigantes de élite visitando Tercera/Cuarta división. Con <strong>$5.00 USD</strong> cobras <strong>$7.50 USD</strong> (+$2.50 limpios con 93% prob).
                         </div>
                     </div>
-
-                    <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(244, 63, 94, 0.1); border: 1px solid rgba(244, 63, 94, 0.3); border-radius: 10px; padding: 0.65rem 0.85rem; margin-bottom: 0.85rem;">
-                        <div>
-                            <div style="font-weight: 700; font-size: 0.82rem; color: #fda4af;">Riesgo de Tarjeta Roja</div>
-                            <div style="font-size: 0.72rem; color: var(--text-muted);">Prob. expulsión en 90 min</div>
+                    <div style="background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.4); border-radius: 14px; padding: 1.1rem 1.25rem;">
+                        <div style="font-size: 0.78rem; font-weight: 800; color: #fbbf24; text-transform: uppercase; display: flex; align-items: center; gap: 0.4rem;">
+                            <span>🚀</span> LA COMBINADA QUIRÚRGICA DE RECONSTRUCCIÓN (CUOTA 1.95)
                         </div>
-                        <div class="badge-status" style="background: rgba(244, 63, 94, 0.25); color: #f43f5e; font-size: 0.85rem; padding: 0.25rem 0.6rem; font-weight: 800;">
-                            15.7%
+                        <div style="font-size: 1.1rem; font-weight: 800; color: #ffffff; margin-top: 0.35rem;">
+                            Arsenal Gana (1.10) + Girona Gana (1.14) + Villarreal Gana (1.16) + Roma 1X (1.10) + Leipzig Gana (1.22)
                         </div>
-                    </div>
-
-                    <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 0.85rem;">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.3rem;">LÍNEAS DE TARJETAS REGULARES:</div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                            <span>Total Estimado: <strong style="color: var(--gold);">4.1</strong></span>
-                            <span>Más de 3.5: <strong style="color: var(--cyan);">53.8%</strong></span>
-                            <span>Más de 4.5: <strong style="color: var(--emerald);">34.3%</strong></span>
+                        <div style="font-size: 0.82rem; color: #cbd5e1; margin-top: 0.25rem;">
+                            Cuota Total <strong>1.95</strong>. Con <strong>$5.00 USD</strong> cobras <strong>$9.75 USD</strong> (¡Llevas tu cuenta directo a casi $28.00 USD!).
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Medical Bulletin & Sanity Audit Section -->
-            
-            <div class="card" style="margin-top: 1.5rem; border-color: rgba(16, 185, 129, 0.3);">
-                <div style="display: flex; align-items: center; justify-content: space-between;">
-                    <div style="display: flex; align-items: center; gap: 0.5rem; color: #10b981; font-size: 0.85rem; font-weight: 600;">
-                        <span>✅</span> <strong>Auditoría Médica:</strong> 100% de futbolistas estelares con aptitud física ratificada para el once titular.
-                    </div>
-                    <span class="tag-pill tag-emerald">Sanidad Ratificada</span>
-                </div>
-            </div>
-        
-
-            <!-- Player Props Section -->
-            <div class="card" style="margin-top: 1.5rem;">
-                <div class="card-header">
-                    <div class="card-title">⭐ Remates & Disparos a Puerta de Figuras Clave</div>
-                    <span class="badge-subtle">Regresión Poisson Individual (p90) &bull; Cerrojo Sanitario Activo</span>
-                </div>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Jugador / Rol</th>
-                                <th style="text-align: center;">Tiros Proy.</th>
-                                <th style="text-align: center;">SoT Proy.</th>
-                                <th style="text-align: center;">≥1 SoT (%)</th>
-                                <th style="text-align: center;">≥1 Tiro (%)</th>
-                                <th style="text-align: right;">Gol (%)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Ché Adams </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🐂 Torino &bull; Delantero Centro</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">2.3</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">1.0</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">64.2%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">67.2%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">36.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Antonio Sanabria </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🐂 Torino &bull; Delantero Centro</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">2.0</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.9</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">57.5%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">58.5%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">32.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Samuele Ricci </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🐂 Torino &bull; Pivote Organizador</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.0</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.3</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">29.0%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">27.4%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">12.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Nikola Vlašić </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🐂 Torino &bull; Mediapunta</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.8</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.7</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">49.6%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">53.6%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">24.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Lorenzo Lucca </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">⚪ Udinese &bull; Delantero Referencia</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">2.0</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.8</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">56.8%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">58.2%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">38.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Florian Thauvin </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">⚪ Udinese &bull; Extremo / Segundo Delantero</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.8</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.8</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">53.6%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">54.2%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">34.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Sandi Lovrić </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">⚪ Udinese &bull; Centrocampista Llegador</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.1</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.4</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">34.2%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">30.7%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">18.0%</span></td>
-            </tr>
-        
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    
-        <!-- ==================== PARTIDO 5: Racing Club vs Belgrano ==================== -->
-        <div id="match-4" class="match-view " style="display: none;">
-            <!-- Hero Banner -->
-            <div class="hero-banner">
-                <div class="hero-context-badge">
-                    <span>🏆 Competición Internacional FIFA</span>
-                    <span>📍 Estadio Principal</span>
-                    <span>👥 45,000 espectadores</span>
-                </div>
-
-                <div class="hero-grid">
-                    <div class="team-col">
-                        <div class="team-flag">🩵</div>
-                        <div class="team-name">Racing Club</div>
-                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--cyan);">1.65</span></div>
-                    </div>
-
-                    <div class="center-score-col">
-                        <div class="score-pill-title">Marcador Exacto Más Probable</div>
-                        <div class="hero-score-val">1 - 0</div>
-                        <div class="hero-score-conf">Top Alternativas: 1 - 1 (11.44%) &bull; 0 - 0 (11.39%)</div>
                     </div>
-
-                    <div class="team-col">
-                        <div class="team-flag">🏴‍☠️</div>
-                        <div class="team-name">Belgrano</div>
-                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--amber);">0.79</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Glowing La Fija Card -->
-            
-        <div class="fija-gold-card">
-            <div class="fija-badge-glow">
-                <span class="fija-star">⭐</span> LA FIJA DEL PARTIDO &bull; Victoria Directa (1X2)
-            </div>
-            <div class="fija-content-grid">
-                <div class="fija-main">
-                    <div class="fija-market-label">Selección Cuantitativa Diversificada (Victoria Directa (1X2))</div>
-                    <div class="fija-market-title">Racing Club Gana el Partido (1)</div>
-                    <div class="fija-rationale">🔬 <em>Fundamento TimesFM & Monte Carlo:</em> Convicción directa: Racing Club domina la proyección con 55.9% de probabilidad de triunfo en los 90 minutos reglamentarios.</div>
-                </div>
-                <div class="fija-stats">
-                    <div class="fija-stat-box">
-                        <div class="fija-stat-val">55.9%</div>
-                        <div class="fija-stat-lbl">Probabilidad</div>
-                    </div>
-                    <div class="fija-stat-box">
-                        <div class="fija-stat-val" style="color: var(--emerald);">1.9</div>
-                        <div class="fija-stat-lbl">Cuota Justa</div>
-                    </div>
-                    <div class="fija-stat-box">
-                        <div class="fija-stat-val" style="color: var(--cyan);">2.05</div>
-                        <div class="fija-stat-lbl">Cuota Mercado</div>
-                    </div>
                 </div>
-            </div>
-            
-        <div style="margin-top: 0.85rem; padding-top: 0.65rem; border-top: 1px dashed rgba(255,255,255,0.15);">
-            <div style="font-size: 0.74rem; color: var(--text-muted); margin-bottom: 0.4rem; font-weight: 700; letter-spacing: 0.5px;">
-                📊 OTROS MERCADOS DE SEGURIDAD ANALIZADOS EN ESTE PARTIDO:
-            </div>
-            <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
-                
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Victoria Sin Empate (DNB): Triunfo de Racing Club con devolución íntegra del dinero si el partido termina igualado (cobertura DNB: 76.29%).">
-                    🎯 <strong>Victoria Sin Empate (DNB):</strong> Racing Club Gana (Empate No Válido / DNB) <span style="color: #ffffff;">(76.29% | @1.39)</span>
-                </span>
-            
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Doble Oportunidad: Protección total ante el empate con 82.6% de cobertura matemática y factor local.">
-                    🎯 <strong>Doble Oportunidad:</strong> Racing Club o Empate (1X) <span style="color: #ffffff;">(82.6% | @1.27)</span>
-                </span>
-            
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Total Tarjetas: Fricción disciplinaria elevada: 4.4 tarjetas esperadas en el cotejo bajo rigor arbitral.">
-                    🎯 <strong>Total Tarjetas:</strong> Más de 3.5 tarjetas totales <span style="color: #ffffff;">(70.0% | @1.51)</span>
-                </span>
-            
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Total de Goles Fijo: Línea de cobertura mínima que descarta el 0-0.">
-                    🎯 <strong>Total de Goles Fijo:</strong> Más de 0.5 goles totales <span style="color: #ffffff;">(88.6% | @1.09)</span>
-                </span>
-            
             </div>
-        </div>
-    
-        </div>
-    
-
-            <!-- Analytics Grid -->
-            <div class="analytics-grid-3">
-                <!-- 1X2 & Exact Score -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">🎯 Marcador & Probabilidad 1X2</div>
-                        <span class="badge-subtle">Dixon-Coles + Monte Carlo</span>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Victoria Racing Club (1)</span>
-                            <span class="mono-bold" style="color: var(--cyan);">55.92%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 55.92%; background: linear-gradient(90deg, #3b82f6, #06b6d4);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Empate (X)</span>
-                            <span class="mono-bold" style="color: var(--gold);">26.7%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 26.7%; background: linear-gradient(90deg, #f59e0b, #fbbf24);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Victoria Belgrano (2)</span>
-                            <span class="mono-bold" style="color: var(--rose);">17.38%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 17.38%; background: linear-gradient(90deg, #f43f5e, #e11d48);"></div>
-                        </div>
-                    </div>
-
-                    <div class="table-container" style="margin-top: 1.25rem;">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Marcador</th>
-                                    <th style="text-align: right;">Prob (%)</th>
-                                    <th style="text-align: right;">Rango</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                
-            <tr>
-                <td><strong style="color: #ffffff;">1 - 0</strong></td>
-                <td style="text-align: right;" class="mono-bold">13.43%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-emerald">Top 1</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">1 - 1</strong></td>
-                <td style="text-align: right;" class="mono-bold">11.44%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 2</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">0 - 0</strong></td>
-                <td style="text-align: right;" class="mono-bold">11.39%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 3</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">2 - 0</strong></td>
-                <td style="text-align: right;" class="mono-bold">11.34%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 4</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">2 - 1</strong></td>
-                <td style="text-align: right;" class="mono-bold">8.2%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 5</span></td>
-            </tr>
-        
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- Goals Distribution -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">⚽ Mercados de Goles</div>
-                        <span class="badge-subtle">Distribución Poisson Bivariada</span>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Más de 1.5 Goles</span>
-                            <span class="mono-bold" style="color: var(--emerald);">68.95%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 68.95%; background: linear-gradient(90deg, #10b981, #059669);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Más de 2.5 Goles</span>
-                            <span class="mono-bold" style="color: var(--cyan);">43.24%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 43.24%; background: linear-gradient(90deg, #06b6d4, #0284c7);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Ambos Equipos Anotan (BTTS)</span>
-                            <span class="mono-bold" style="color: var(--amber);">42.39%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 42.39%; background: linear-gradient(90deg, #f59e0b, #d97706);"></div>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 1rem; margin-top: 1rem;">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">PROMEDIO GOLES SIMULADOS:</div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                            <span>Racing Club: <strong style="color: var(--cyan);">1.65</strong></span>
-                            <span>Belgrano: <strong style="color: var(--amber);">0.79</strong></span>
-                            <span>Total: <strong style="color: var(--emerald);">2.45</strong></span>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Córners & Balón Parado -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">🚩 Córners & Balón Parado</div>
-                        <span class="badge-subtle">Volumen Total Proyectado</span>
-                    </div>
+            <!-- GRID CON LAS 8 TARJETAS DE PARTIDOS -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
 
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Córners Proyectados (Racing Club)</span>
-                            <span class="mono-bold" style="color: var(--cyan);">4.7</span>
+                <!-- PARTIDO 1: COPA DEL REY - GIRONA -->
+                <div style="background: var(--bg-card); border: 2px solid rgba(239, 68, 68, 0.4); border-radius: 18px; padding: 1.5rem; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem;">
+                            <span style="background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.4); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.72rem; font-weight: 800;">
+                                🇪🇸 COPA DEL REY &bull; 1ª RONDA
+                            </span>
+                            <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">⏰ 12:30 (ECU)</span>
                         </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 65%; background: var(--cyan);"></div>
-                        </div>
+                        <h3 style="font-size: 1.3rem; font-weight: 900; color: #ffffff; margin: 0 0 0.5rem 0;">
+                            CD Cuarte vs Girona FC
+                        </h3>
+                        <p style="font-size: 0.82rem; color: #94a3b8; line-height: 1.5; margin: 0 0 1rem 0;">
+                            📍 <strong>Estadio Juan Guerrero El Lobo (Zaragoza):</strong> Abismo de categorías. CD Cuarte compite en Tercera Federación; Girona llega con piezas de Champions como Donny van de Beek, Bryan Gil y Stuani. Dominio absoluto visitante.
+                        </p>
                     </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Córners Proyectados (Belgrano)</span>
-                            <span class="mono-bold" style="color: var(--amber);">3.9</span>
+                    <div style="background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 1rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                            <span style="font-size: 0.82rem; font-weight: 700; color: #94a3b8;">Fija de Acero:</span>
+                            <span style="font-size: 0.9rem; font-weight: 900; color: #10b981;">Girona FC Gana el Partido (2)</span>
                         </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 45%; background: var(--amber);"></div>
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 0.85rem; margin-top: 1rem;">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.3rem;">LÍNEAS DE CÓRNERS RECOMENDADAS:</div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                            <span>Over 8.5: <strong style="color: var(--emerald);">49.1%</strong></span>
-                            <span>Over 9.5: <strong style="color: var(--cyan);">36.0%</strong></span>
-                            <span>Under 12.5: <strong style="color: var(--gold);">90.3%</strong></span>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.78rem; color: var(--text-muted);">Cuota Estimada:</span>
+                            <span style="font-size: 0.95rem; font-weight: 800; color: #fbbf24;">@ 1.12 - 1.15</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- Tarjetas & Disciplina Arbitral (Restaurado Integralmente) -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">🟨 Tarjetas & Disciplina Arbitral</div>
-                        <span class="badge-subtle">Árbitro: Árbitro FIFA Internacional</span>
-                    </div>
 
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1rem;">
-                        <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: 12px; padding: 0.85rem; text-align: center;">
-                            <div style="font-size: 0.75rem; color: #fbbf24; font-weight: 700;">Amarillas Racing Club</div>
-                            <div class="predicted-score" style="font-size: 1.75rem; color: #fbbf24; margin-top: 0.2rem;">1.9</div>
-                        </div>
-                        <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: 12px; padding: 0.85rem; text-align: center;">
-                            <div style="font-size: 0.75rem; color: #fbbf24; font-weight: 700;">Amarillas Belgrano</div>
-                            <div class="predicted-score" style="font-size: 1.75rem; color: #fbbf24; margin-top: 0.2rem;">2.3</div>
+                <!-- PARTIDO 2: CARABAO CUP INGLATERRA - ARSENAL -->
+                <div style="background: var(--bg-card); border: 2px solid rgba(239, 68, 68, 0.4); border-radius: 18px; padding: 1.5rem; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem;">
+                            <span style="background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.4); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.72rem; font-weight: 800;">
+                                🏴󠁧󠁢󠁥󠁮󠁧󠁿 CARABAO CUP &bull; OCTAVOS
+                            </span>
+                            <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">⏰ 14:45 (ECU)</span>
                         </div>
+                        <h3 style="font-size: 1.3rem; font-weight: 900; color: #ffffff; margin: 0 0 0.5rem 0;">
+                            Fleetwood Town vs Arsenal FC
+                        </h3>
+                        <p style="font-size: 0.82rem; color: #94a3b8; line-height: 1.5; margin: 0 0 1rem 0;">
+                            📍 <strong>Highbury Stadium (Fleetwood):</strong> 60 puestos de diferencia en la pirámide inglesa. Fleetwood marcha 18º en 4ta división; Arsenal de Mikel Arteta, incluso con rotaciones y el tricolor Piero Hincapié, tiene una jerarquía estratosférica.
+                        </p>
                     </div>
-
-                    <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(244, 63, 94, 0.1); border: 1px solid rgba(244, 63, 94, 0.3); border-radius: 10px; padding: 0.65rem 0.85rem; margin-bottom: 0.85rem;">
-                        <div>
-                            <div style="font-weight: 700; font-size: 0.82rem; color: #fda4af;">Riesgo de Tarjeta Roja</div>
-                            <div style="font-size: 0.72rem; color: var(--text-muted);">Prob. expulsión en 90 min</div>
-                        </div>
-                        <div class="badge-status" style="background: rgba(244, 63, 94, 0.25); color: #f43f5e; font-size: 0.85rem; padding: 0.25rem 0.6rem; font-weight: 800;">
-                            15.7%
+                    <div style="background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 1rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                            <span style="font-size: 0.82rem; font-weight: 700; color: #94a3b8;">Fija de Acero:</span>
+                            <span style="font-size: 0.9rem; font-weight: 900; color: #10b981;">Arsenal FC Gana el Partido (2)</span>
                         </div>
-                    </div>
-
-                    <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 0.85rem;">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.3rem;">LÍNEAS DE TARJETAS REGULARES:</div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                            <span>Total Estimado: <strong style="color: var(--gold);">4.4</strong></span>
-                            <span>Más de 3.5: <strong style="color: var(--cyan);">59.8%</strong></span>
-                            <span>Más de 4.5: <strong style="color: var(--emerald);">40.3%</strong></span>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.78rem; color: var(--text-muted);">Cuota Estimada:</span>
+                            <span style="font-size: 0.95rem; font-weight: 800; color: #fbbf24;">@ 1.08 - 1.12</span>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Medical Bulletin & Sanity Audit Section -->
-            
-            <div class="card" style="margin-top: 1.5rem; border-color: rgba(16, 185, 129, 0.3);">
-                <div style="display: flex; align-items: center; justify-content: space-between;">
-                    <div style="display: flex; align-items: center; gap: 0.5rem; color: #10b981; font-size: 0.85rem; font-weight: 600;">
-                        <span>✅</span> <strong>Auditoría Médica:</strong> 100% de futbolistas estelares con aptitud física ratificada para el once titular.
+                    </div>
+                </div>
+
+                <!-- PARTIDO 3: COPA DEL REY - VILLARREAL -->
+                <div style="background: var(--bg-card); border: 2px solid rgba(234, 179, 8, 0.4); border-radius: 18px; padding: 1.5rem; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem;">
+                            <span style="background: rgba(234, 179, 8, 0.2); color: #fde047; border: 1px solid rgba(234, 179, 8, 0.4); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.72rem; font-weight: 800;">
+                                🇪🇸 COPA DEL REY &bull; 1ª RONDA
+                            </span>
+                            <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">⏰ 15:00 (ECU)</span>
+                        </div>
+                        <h3 style="font-size: 1.3rem; font-weight: 900; color: #ffffff; margin: 0 0 0.5rem 0;">
+                            CD Manacor vs Villarreal CF
+                        </h3>
+                        <p style="font-size: 0.82rem; color: #94a3b8; line-height: 1.5; margin: 0 0 1rem 0;">
+                            📍 <strong>Poliesportiu Na Capellera (Baleares):</strong> El Submarino Amarillo viene encendido tras ganar a domicilio en Mestalla (1-2) con Mikautadze. Manacor (Tercera Federación) compite con ilusión pero no tiene cómo frenar la maquinaria grogueta.
+                        </p>
                     </div>
-                    <span class="tag-pill tag-emerald">Sanidad Ratificada</span>
-                </div>
-            </div>
-        
-
-            <!-- Player Props Section -->
-            <div class="card" style="margin-top: 1.5rem;">
-                <div class="card-header">
-                    <div class="card-title">⭐ Remates & Disparos a Puerta de Figuras Clave</div>
-                    <span class="badge-subtle">Regresión Poisson Individual (p90) &bull; Cerrojo Sanitario Activo</span>
-                </div>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Jugador / Rol</th>
-                                <th style="text-align: center;">Tiros Proy.</th>
-                                <th style="text-align: center;">SoT Proy.</th>
-                                <th style="text-align: center;">≥1 SoT (%)</th>
-                                <th style="text-align: center;">≥1 Tiro (%)</th>
-                                <th style="text-align: right;">Gol (%)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Adrián Martínez </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🩵 Racing Club &bull; Maravilla / Goleador de Raza</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">3.2</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">1.7</td>
-                <td style="text-align: center;"><span class="tag-pill tag-emerald mono-bold">81.1%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">83.3%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">48.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Roger Martínez </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🩵 Racing Club &bull; Jerarquía en Ataque</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">2.6</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">1.3</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">72.1%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">74.2%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">40.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Juan Fernando Quintero </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🩵 Racing Club &bull; Mago de la Zurda</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">2.1</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.9</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">58.6%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">61.0%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">26.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Johan Carbonero </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🩵 Racing Club &bull; Extremo Eléctrico</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">2.2</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">1.0</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">62.5%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">63.5%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">28.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Franco Jara </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🏴‍☠️ Belgrano &bull; Goleador Pirata</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.9</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.9</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">59.3%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">58.0%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">36.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Nicolás Fernández </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🏴‍☠️ Belgrano &bull; Uvita / Delantero Rápido</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.8</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.8</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">52.7%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">53.7%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">30.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Francisco González Metilli </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🏴‍☠️ Belgrano &bull; Volante Creativo</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.3</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.5</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">36.2%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">36.4%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">18.0%</span></td>
-            </tr>
-        
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    
-        <!-- ==================== PARTIDO 6: Bahia vs Mirassol ==================== -->
-        <div id="match-5" class="match-view " style="display: none;">
-            <!-- Hero Banner -->
-            <div class="hero-banner">
-                <div class="hero-context-badge">
-                    <span>🏆 Competición Internacional FIFA</span>
-                    <span>📍 Estadio Principal</span>
-                    <span>👥 45,000 espectadores</span>
-                </div>
-
-                <div class="hero-grid">
-                    <div class="team-col">
-                        <div class="team-flag">🔵</div>
-                        <div class="team-name">Bahia</div>
-                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--cyan);">1.63</span></div>
-                    </div>
-
-                    <div class="center-score-col">
-                        <div class="score-pill-title">Marcador Exacto Más Probable</div>
-                        <div class="hero-score-val">1 - 0</div>
-                        <div class="hero-score-conf">Top Alternativas: 0 - 0 (13.3%) &bull; 2 - 0 (13.12%)</div>
-                    </div>
-
-                    <div class="team-col">
-                        <div class="team-flag">🟡</div>
-                        <div class="team-name">Mirassol</div>
-                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--amber);">0.63</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Glowing La Fija Card -->
-            
-        <div class="fija-gold-card">
-            <div class="fija-badge-glow">
-                <span class="fija-star">⭐</span> LA FIJA DEL PARTIDO &bull; Victoria Directa (1X2)
-            </div>
-            <div class="fija-content-grid">
-                <div class="fija-main">
-                    <div class="fija-market-label">Selección Cuantitativa Diversificada (Victoria Directa (1X2))</div>
-                    <div class="fija-market-title">Bahia Gana el Partido (1)</div>
-                    <div class="fija-rationale">🔬 <em>Fundamento TimesFM & Monte Carlo:</em> Convicción directa: Bahia domina la proyección con 59.4% de probabilidad de triunfo en los 90 minutos reglamentarios.</div>
-                </div>
-                <div class="fija-stats">
-                    <div class="fija-stat-box">
-                        <div class="fija-stat-val">59.4%</div>
-                        <div class="fija-stat-lbl">Probabilidad</div>
-                    </div>
-                    <div class="fija-stat-box">
-                        <div class="fija-stat-val" style="color: var(--emerald);">1.78</div>
-                        <div class="fija-stat-lbl">Cuota Justa</div>
-                    </div>
-                    <div class="fija-stat-box">
-                        <div class="fija-stat-val" style="color: var(--cyan);">1.92</div>
-                        <div class="fija-stat-lbl">Cuota Mercado</div>
-                    </div>
-                </div>
-            </div>
-            
-        <div style="margin-top: 0.85rem; padding-top: 0.65rem; border-top: 1px dashed rgba(255,255,255,0.15);">
-            <div style="font-size: 0.74rem; color: var(--text-muted); margin-bottom: 0.4rem; font-weight: 700; letter-spacing: 0.5px;">
-                📊 OTROS MERCADOS DE SEGURIDAD ANALIZADOS EN ESTE PARTIDO:
-            </div>
-            <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
-                
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Victoria Sin Empate (DNB): Triunfo de Bahia con devolución íntegra del dinero si el partido termina igualado (cobertura DNB: 81.41%).">
-                    🎯 <strong>Victoria Sin Empate (DNB):</strong> Bahia Gana (Empate No Válido / DNB) <span style="color: #ffffff;">(81.41% | @1.3)</span>
-                </span>
-            
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Total Tarjetas: Fricción disciplinaria elevada: 4.8 tarjetas esperadas en el cotejo bajo rigor arbitral.">
-                    🎯 <strong>Total Tarjetas:</strong> Más de 3.5 tarjetas totales <span style="color: #ffffff;">(70.0% | @1.51)</span>
-                </span>
-            
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Doble Oportunidad: Protección total ante el empate con 86.4% de cobertura matemática y factor local.">
-                    🎯 <strong>Doble Oportunidad:</strong> Bahia o Empate (1X) <span style="color: #ffffff;">(86.4% | @1.21)</span>
-                </span>
-            
-                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Total de Goles Fijo: Línea de cobertura mínima que descarta el 0-0.">
-                    🎯 <strong>Total de Goles Fijo:</strong> Más de 0.5 goles totales <span style="color: #ffffff;">(86.7% | @1.09)</span>
-                </span>
-            
-            </div>
-        </div>
-    
-        </div>
-    
-
-            <!-- Analytics Grid -->
-            <div class="analytics-grid-3">
-                <!-- 1X2 & Exact Score -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">🎯 Marcador & Probabilidad 1X2</div>
-                        <span class="badge-subtle">Dixon-Coles + Monte Carlo</span>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Victoria Bahia (1)</span>
-                            <span class="mono-bold" style="color: var(--cyan);">59.4%</span>
+                    <div style="background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 1rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                            <span style="font-size: 0.82rem; font-weight: 700; color: #94a3b8;">Fija de Acero:</span>
+                            <span style="font-size: 0.9rem; font-weight: 900; color: #10b981;">Villarreal CF Gana el Partido (2)</span>
                         </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 59.4%; background: linear-gradient(90deg, #3b82f6, #06b6d4);"></div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.78rem; color: var(--text-muted);">Cuota Estimada:</span>
+                            <span style="font-size: 0.95rem; font-weight: 800; color: #fbbf24;">@ 1.15 - 1.18</span>
                         </div>
+                    </div>
+                </div>
+
+                <!-- PARTIDO 4: SERIE A ITALIA - AS ROMA -->
+                <div style="background: var(--bg-card); border: 1px solid rgba(245, 158, 11, 0.35); border-radius: 18px; padding: 1.5rem; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem;">
+                            <span style="background: rgba(245, 158, 11, 0.2); color: #fde047; border: 1px solid rgba(245, 158, 11, 0.4); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.72rem; font-weight: 800;">
+                                🇮🇹 SERIE A &bull; STADIO OLIMPICO
+                            </span>
+                            <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">⏰ 14:45 (ECU)</span>
+                        </div>
+                        <h3 style="font-size: 1.3rem; font-weight: 900; color: #ffffff; margin: 0 0 0.5rem 0;">
+                            AS Roma vs Cagliari Calcio
+                        </h3>
+                        <p style="font-size: 0.82rem; color: #94a3b8; line-height: 1.5; margin: 0 0 1rem 0;">
+                            📍 <strong>Stadio Olimpico de Roma:</strong> La Roma de Gian Piero Gasperini está en zona Champions peleando el liderato con Donyell Malen. Cagliari es combativo pero sufre enormemente ante equipos con presión alta y ritmo asfixiante.
+                        </p>
                     </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Empate (X)</span>
-                            <span class="mono-bold" style="color: var(--gold);">27.04%</span>
+                    <div style="background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 1rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                            <span style="font-size: 0.82rem; font-weight: 700; color: #94a3b8;">Fija de Protección:</span>
+                            <span style="font-size: 0.9rem; font-weight: 900; color: #10b981;">AS Roma o Empate (1X)</span>
                         </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 27.04%; background: linear-gradient(90deg, #f59e0b, #fbbf24);"></div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.78rem; color: var(--text-muted);">Cuota Estimada:</span>
+                            <span style="font-size: 0.95rem; font-weight: 800; color: #fbbf24;">@ 1.10 - 1.15</span>
                         </div>
+                    </div>
+                </div>
+
+                <!-- PARTIDO 5: DFB-POKAL ALEMANIA - LEIPZIG -->
+                <div style="background: var(--bg-card); border: 1px solid rgba(59, 130, 246, 0.35); border-radius: 18px; padding: 1.5rem; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem;">
+                            <span style="background: rgba(59, 130, 246, 0.2); color: #93c5fd; border: 1px solid rgba(59, 130, 246, 0.4); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.72rem; font-weight: 800;">
+                                🇩🇪 DFB-POKAL &bull; 1/16 DE FINAL
+                            </span>
+                            <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">⏰ 13:00 (ECU)</span>
+                        </div>
+                        <h3 style="font-size: 1.3rem; font-weight: 900; color: #ffffff; margin: 0 0 0.5rem 0;">
+                            Rot Weiss Essen vs RB Leipzig
+                        </h3>
+                        <p style="font-size: 0.82rem; color: #94a3b8; line-height: 1.5; margin: 0 0 1rem 0;">
+                            📍 <strong>Stadion an der Hafenstraße:</strong> El modesto Rot Weiss Essen de 3ra división alemana recibe al potente RB Leipzig de Bundesliga. La velocidad y transición de los Toros Rojos será demoledora para la zaga local.
+                        </p>
                     </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Victoria Mirassol (2)</span>
-                            <span class="mono-bold" style="color: var(--rose);">13.56%</span>
+                    <div style="background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 1rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                            <span style="font-size: 0.82rem; font-weight: 700; color: #94a3b8;">Fija de Acero:</span>
+                            <span style="font-size: 0.9rem; font-weight: 900; color: #10b981;">RB Leipzig Gana el Partido (2)</span>
                         </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 13.56%; background: linear-gradient(90deg, #f43f5e, #e11d48);"></div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.78rem; color: var(--text-muted);">Cuota Estimada:</span>
+                            <span style="font-size: 0.95rem; font-weight: 800; color: #fbbf24;">@ 1.20 - 1.25</span>
                         </div>
-                    </div>
-
-                    <div class="table-container" style="margin-top: 1.25rem;">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Marcador</th>
-                                    <th style="text-align: right;">Prob (%)</th>
-                                    <th style="text-align: right;">Rango</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                
-            <tr>
-                <td><strong style="color: #ffffff;">1 - 0</strong></td>
-                <td style="text-align: right;" class="mono-bold">15.82%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-emerald">Top 1</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">0 - 0</strong></td>
-                <td style="text-align: right;" class="mono-bold">13.3%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 2</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">2 - 0</strong></td>
-                <td style="text-align: right;" class="mono-bold">13.12%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 3</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">1 - 1</strong></td>
-                <td style="text-align: right;" class="mono-bold">10.93%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 4</span></td>
-            </tr>
-        
-            <tr>
-                <td><strong style="color: #ffffff;">2 - 1</strong></td>
-                <td style="text-align: right;" class="mono-bold">7.66%</td>
-                <td style="text-align: right;"><span class="tag-pill tag-blue">Top 5</span></td>
-            </tr>
-        
-                            </tbody>
-                        </table>
                     </div>
                 </div>
 
-                <!-- Goals Distribution -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">⚽ Mercados de Goles</div>
-                        <span class="badge-subtle">Distribución Poisson Bivariada</span>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Más de 1.5 Goles</span>
-                            <span class="mono-bold" style="color: var(--emerald);">65.08%</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 65.08%; background: linear-gradient(90deg, #10b981, #059669);"></div>
-                        </div>
-                    </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Más de 2.5 Goles</span>
-                            <span class="mono-bold" style="color: var(--cyan);">38.79%</span>
+                <!-- PARTIDO 6: DFB-POKAL - BORUSSIA DORTMUND -->
+                <div style="background: var(--bg-card); border: 1px solid rgba(234, 179, 8, 0.35); border-radius: 18px; padding: 1.5rem; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem;">
+                            <span style="background: rgba(234, 179, 8, 0.2); color: #fde047; border: 1px solid rgba(234, 179, 8, 0.4); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.72rem; font-weight: 800;">
+                                🇩🇪 DFB-POKAL &bull; SIGNAL IDUNA
+                            </span>
+                            <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">⏰ 15:45 (ECU)</span>
                         </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 38.79%; background: linear-gradient(90deg, #06b6d4, #0284c7);"></div>
-                        </div>
+                        <h3 style="font-size: 1.3rem; font-weight: 900; color: #ffffff; margin: 0 0 0.5rem 0;">
+                            Borussia Dortmund vs Werder Bremen
+                        </h3>
+                        <p style="font-size: 0.82rem; color: #94a3b8; line-height: 1.5; margin: 0 0 1rem 0;">
+                            📍 <strong>Signal Iduna Park:</strong> Duelo estelar de copa alemana. El BVB de Niko Kovač es imponente en el Muro Amarillo; el Werder Bremen buscará el golpe pero en Dortmund suele haber festivales de goles.
+                        </p>
                     </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Ambos Equipos Anotan (BTTS)</span>
-                            <span class="mono-bold" style="color: var(--amber);">36.33%</span>
+                    <div style="background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 1rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                            <span style="font-size: 0.82rem; font-weight: 700; color: #94a3b8;">Fija de Protección:</span>
+                            <span style="font-size: 0.9rem; font-weight: 900; color: #10b981;">Dortmund 1X + Más de 1.5</span>
                         </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 36.33%; background: linear-gradient(90deg, #f59e0b, #d97706);"></div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.78rem; color: var(--text-muted);">Cuota Estimada:</span>
+                            <span style="font-size: 0.95rem; font-weight: 800; color: #fbbf24;">@ 1.25 - 1.30</span>
                         </div>
                     </div>
-
-                    <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 1rem; margin-top: 1rem;">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">PROMEDIO GOLES SIMULADOS:</div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                            <span>Bahia: <strong style="color: var(--cyan);">1.63</strong></span>
-                            <span>Mirassol: <strong style="color: var(--amber);">0.63</strong></span>
-                            <span>Total: <strong style="color: var(--emerald);">2.26</strong></span>
-                        </div>
-                    </div>
                 </div>
-
-                <!-- Córners & Balón Parado -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">🚩 Córners & Balón Parado</div>
-                        <span class="badge-subtle">Volumen Total Proyectado</span>
-                    </div>
 
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Córners Proyectados (Bahia)</span>
-                            <span class="mono-bold" style="color: var(--cyan);">3.9</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 65%; background: var(--cyan);"></div>
+                <!-- PARTIDO 7: SERIE A - SASSUOLO VS LAZIO -->
+                <div style="background: var(--bg-card); border: 1px solid rgba(16, 185, 129, 0.35); border-radius: 18px; padding: 1.5rem; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem;">
+                            <span style="background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border: 1px solid rgba(16, 185, 129, 0.4); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.72rem; font-weight: 800;">
+                                🇮🇹 SERIE A &bull; MAPEI STADIUM
+                            </span>
+                            <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">⏰ 12:30 (ECU)</span>
                         </div>
+                        <h3 style="font-size: 1.3rem; font-weight: 900; color: #ffffff; margin: 0 0 0.5rem 0;">
+                            US Sassuolo vs SS Lazio
+                        </h3>
+                        <p style="font-size: 0.82rem; color: #94a3b8; line-height: 1.5; margin: 0 0 1rem 0;">
+                            📍 <strong>Mapei Stadium:</strong> Partido matutino de Serie A. Sassuolo suele cerrarse bien en casa pero Lazio tiene mayor pegada colectiva. Choque de orden donde no se esperan excesos de goles.
+                        </p>
                     </div>
-
-                    <div class="prob-bar-row">
-                        <div class="prob-bar-label">
-                            <span>Córners Proyectados (Mirassol)</span>
-                            <span class="mono-bold" style="color: var(--amber);">3.9</span>
-                        </div>
-                        <div class="prob-bar-track">
-                            <div class="prob-bar-fill" style="width: 45%; background: var(--amber);"></div>
+                    <div style="background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 1rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                            <span style="font-size: 0.82rem; font-weight: 700; color: #94a3b8;">Fija de Control:</span>
+                            <span style="font-size: 0.9rem; font-weight: 900; color: #10b981;">Menos de 3.5 Goles Totales</span>
                         </div>
-                    </div>
-
-                    <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 0.85rem; margin-top: 1rem;">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.3rem;">LÍNEAS DE CÓRNERS RECOMENDADAS:</div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                            <span>Over 8.5: <strong style="color: var(--emerald);">38.0%</strong></span>
-                            <span>Over 9.5: <strong style="color: var(--cyan);">25.9%</strong></span>
-                            <span>Under 12.5: <strong style="color: var(--gold);">94.5%</strong></span>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.78rem; color: var(--text-muted);">Cuota Estimada:</span>
+                            <span style="font-size: 0.95rem; font-weight: 800; color: #fbbf24;">@ 1.25</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- Tarjetas & Disciplina Arbitral (Restaurado Integralmente) -->
-                <div class="card">
-                    <div class="card-header">
-                        <div class="card-title">🟨 Tarjetas & Disciplina Arbitral</div>
-                        <span class="badge-subtle">Árbitro: Árbitro FIFA Internacional</span>
-                    </div>
 
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 1rem;">
-                        <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: 12px; padding: 0.85rem; text-align: center;">
-                            <div style="font-size: 0.75rem; color: #fbbf24; font-weight: 700;">Amarillas Bahia</div>
-                            <div class="predicted-score" style="font-size: 1.75rem; color: #fbbf24; margin-top: 0.2rem;">2.2</div>
+                <!-- PARTIDO 8: COPA DEL REY - ESPANYOL -->
+                <div style="background: var(--bg-card); border: 1px solid rgba(59, 130, 246, 0.35); border-radius: 18px; padding: 1.5rem; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.85rem;">
+                            <span style="background: rgba(59, 130, 246, 0.2); color: #93c5fd; border: 1px solid rgba(59, 130, 246, 0.4); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.72rem; font-weight: 800;">
+                                🇪🇸 COPA DEL REY &bull; 1ª RONDA
+                            </span>
+                            <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">⏰ 13:00 (ECU)</span>
                         </div>
-                        <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: 12px; padding: 0.85rem; text-align: center;">
-                            <div style="font-size: 0.75rem; color: #fbbf24; font-weight: 700;">Amarillas Mirassol</div>
-                            <div class="predicted-score" style="font-size: 1.75rem; color: #fbbf24; margin-top: 0.2rem;">2.4</div>
-                        </div>
+                        <h3 style="font-size: 1.3rem; font-weight: 900; color: #ffffff; margin: 0 0 0.5rem 0;">
+                            Sestao River vs RCD Espanyol
+                        </h3>
+                        <p style="font-size: 0.82rem; color: #94a3b8; line-height: 1.5; margin: 0 0 1rem 0;">
+                            📍 <strong>Las Llanas (Vizcaya):</strong> El Sestao River de Primera RFEF recibe a un Espanyol de Primera que quiere evitar cualquier traspié copero. La cobertura de empate blinda la clasificación perica.
+                        </p>
                     </div>
-
-                    <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(244, 63, 94, 0.1); border: 1px solid rgba(244, 63, 94, 0.3); border-radius: 10px; padding: 0.65rem 0.85rem; margin-bottom: 0.85rem;">
-                        <div>
-                            <div style="font-weight: 700; font-size: 0.82rem; color: #fda4af;">Riesgo de Tarjeta Roja</div>
-                            <div style="font-size: 0.72rem; color: var(--text-muted);">Prob. expulsión en 90 min</div>
+                    <div style="background: rgba(0,0,0,0.35); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 1rem;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                            <span style="font-size: 0.82rem; font-weight: 700; color: #94a3b8;">Fija de Protección:</span>
+                            <span style="font-size: 0.9rem; font-weight: 900; color: #10b981;">RCD Espanyol o Empate (X2)</span>
                         </div>
-                        <div class="badge-status" style="background: rgba(244, 63, 94, 0.25); color: #f43f5e; font-size: 0.85rem; padding: 0.25rem 0.6rem; font-weight: 800;">
-                            15.7%
-                        </div>
-                    </div>
-
-                    <div style="background: rgba(0,0,0,0.25); border-radius: 12px; padding: 0.85rem;">
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.3rem;">LÍNEAS DE TARJETAS REGULARES:</div>
-                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
-                            <span>Total Estimado: <strong style="color: var(--gold);">4.8</strong></span>
-                            <span>Más de 3.5: <strong style="color: var(--cyan);">68.5%</strong></span>
-                            <span>Más de 4.5: <strong style="color: var(--emerald);">49.9%</strong></span>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.78rem; color: var(--text-muted);">Cuota Estimada:</span>
+                            <span style="font-size: 0.95rem; font-weight: 800; color: #fbbf24;">@ 1.15</span>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Medical Bulletin & Sanity Audit Section -->
-            
-            <div class="card" style="margin-top: 1.5rem; border-color: rgba(16, 185, 129, 0.3);">
-                <div style="display: flex; align-items: center; justify-content: space-between;">
-                    <div style="display: flex; align-items: center; gap: 0.5rem; color: #10b981; font-size: 0.85rem; font-weight: 600;">
-                        <span>✅</span> <strong>Auditoría Médica:</strong> 100% de futbolistas estelares con aptitud física ratificada para el once titular.
                     </div>
-                    <span class="tag-pill tag-emerald">Sanidad Ratificada</span>
                 </div>
-            </div>
-        
 
-            <!-- Player Props Section -->
-            <div class="card" style="margin-top: 1.5rem;">
-                <div class="card-header">
-                    <div class="card-title">⭐ Remates & Disparos a Puerta de Figuras Clave</div>
-                    <span class="badge-subtle">Regresión Poisson Individual (p90) &bull; Cerrojo Sanitario Activo</span>
-                </div>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Jugador / Rol</th>
-                                <th style="text-align: center;">Tiros Proy.</th>
-                                <th style="text-align: center;">SoT Proy.</th>
-                                <th style="text-align: center;">≥1 SoT (%)</th>
-                                <th style="text-align: center;">≥1 Tiro (%)</th>
-                                <th style="text-align: right;">Gol (%)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Cauly </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🔵 Bahia &bull; Generador de Juego</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.6</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.6</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">46.9%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">45.8%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">25.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Thaciano </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🔵 Bahia &bull; Llegador de Área</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.7</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.8</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">53.9%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">50.3%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">30.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Everaldo </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🔵 Bahia &bull; Referente de Ataque</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.8</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.7</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">50.5%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">52.5%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">32.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Jean Lucas </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🔵 Bahia &bull; Volante de Ida y Vuelta</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.1</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.4</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">34.4%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">31.0%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">18.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Dellatorre </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🟡 Mirassol &bull; Delantero Referente</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.7</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.8</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">52.6%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">50.6%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">36.0%</span></td>
-            </tr>
-        
-            <tr>
-                <td>
-                    <div style="font-weight: 700; color: #ffffff;">Fernandinho </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted);">🟡 Mirassol &bull; Extremo Rápido</div>
-                </td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--cyan);">1.4</td>
-                <td style="text-align: center;" class="mono-bold" style="color: var(--emerald);">0.5</td>
-                <td style="text-align: center;"><span class="tag-pill tag-cyan mono-bold">41.9%</span></td>
-                <td style="text-align: center;"><span class="tag-pill tag-blue mono-bold">39.3%</span></td>
-                <td style="text-align: right;"><span class="tag-pill tag-purple mono-bold">24.0%</span></td>
-            </tr>
-        
-                        </tbody>
-                    </table>
-                </div>
             </div>
-        </div>
-    
         </div> <!-- Fin de view-container-matches -->
 
 
