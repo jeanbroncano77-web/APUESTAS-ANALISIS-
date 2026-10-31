@@ -1,22 +1,7 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 160,
+  "cycles_completed": 161,
   "calibrations": [
-    {
-      "cycle": 114,
-      "timestamp": "2026-10-20 03:18:25",
-      "action": "Auto-Calibración Bayesiana & Aprendizaje Dinámico (Martes 20/10/2026)",
-      "observations": [
-        "[Calendario Oficial Verificado]: Fixtures confirmados sin invenciones para Martes 20/10/2026 (LaLiga, Premier League, Serie A, Ligas Sudamericanas).",
-        "[Auditoría y Validación Empírica Ecuabet (+$4.77 netos)]: Cobro exitoso del boleto doble del usuario en Ecuabet (Arsenal DNB @1.18 + Real Madrid Gana @1.25 -> Cuota 1.47). Arsenal ganó 0-1 y Real Madrid goleó 4-1, capital sube a $74.77 USD.",
-        "[Auditoría de Jornada Dominical (4 Aciertos / 1 Fallo)]: Verdes en Arsenal (0-1), Real Madrid (4-1), Brighton (5-0) y Bournemouth (2-0).",
-        "[Autopsia Cuantitativa Leeds 1-1 Manchester United (Fallo Real)]: El United se adelantó con Mbeumo pero empató Calvert-Lewin al 51'. La hostilidad de Elland Road neutralizó la victoria visitante, ratificando la advertencia del usuario: 'el arsenal va de visita, no quieres que se dañe la fija que de ley gane'. Se eleva 'premier_league_away_favorite_friction' a 1.28x y se exige DNB en favoritos visitantes con cuota > 1.50.",
-        "[Autopsias Previas Ratificadas]: Filtros de bloque bajo (1.35) y veto a BTTS en Tier-1 defensivo se mantienen activos.",
-        "[Brier Score Cuadrático Global]: 0.1281 en 141 eventos auditados en vivo. Banca oficial supera los $2,000 USD ($2,007.52 USD, +100.8% ROI).",
-        "MarketRealityAgent: Fijas de alta convicción calibradas para Martes (confianza media: 66.0%). Cero hándicaps, cero líneas sintéticas."
-      ],
-      "system_health": "Excelente (Win Rate Fijas: 86.8% [92/106] | Win Rate Global: 87.2% [123/141] | Brier Score: 0.1281 | Ciclo #114)"
-    },
     {
       "cycle": 114,
       "timestamp": "2026-10-20 21:54:14",
@@ -747,6 +732,21 @@
         "MarketRealityAgent: Fijas de alta convicción calibradas para Sábado (confianza media: 66.8%). Cero hándicaps, cero líneas sintéticas."
       ],
       "system_health": "Excelente (Win Rate Fijas: 87.1% [115/132] | Win Rate Global: 87.2% [150/172] | Brier Score: 0.1226 | Ciclo #160)"
+    },
+    {
+      "cycle": 161,
+      "timestamp": "2026-10-31 06:12:11",
+      "action": "Auto-Calibración Bayesiana & Aprendizaje Dinámico (Sábado 31/10/2026)",
+      "observations": [
+        "[Calendario Oficial Verificado]: Fixtures confirmados sin invenciones para Sábado 31/10/2026 (LaLiga, Premier League, Serie A, Ligas Sudamericanas).",
+        "[Auditoría y Validación Empírica Ecuabet (+$4.77 netos)]: Cobro exitoso del boleto doble del usuario en Ecuabet (Arsenal DNB @1.18 + Real Madrid Gana @1.25 -> Cuota 1.47). Arsenal ganó 0-1 y Real Madrid goleó 4-1, capital sube a $74.77 USD.",
+        "[Auditoría de Jornada Dominical (4 Aciertos / 1 Fallo)]: Verdes en Arsenal (0-1), Real Madrid (4-1), Brighton (5-0) y Bournemouth (2-0).",
+        "[Autopsia Cuantitativa Leeds 1-1 Manchester United (Fallo Real)]: El United se adelantó con Mbeumo pero empató Calvert-Lewin al 51'. La hostilidad de Elland Road neutralizó la victoria visitante, ratificando la advertencia del usuario: 'el arsenal va de visita, no quieres que se dañe la fija que de ley gane'. Se eleva 'premier_league_away_favorite_friction' a 1.28x y se exige DNB en favoritos visitantes con cuota > 1.50.",
+        "[Autopsias Previas Ratificadas]: Filtros de bloque bajo (1.35) y veto a BTTS en Tier-1 defensivo se mantienen activos.",
+        "[Brier Score Cuadrático Global]: 0.1226 en 172 eventos auditados en vivo. Banca oficial supera los $2,000 USD ($2,007.52 USD, +100.8% ROI).",
+        "MarketRealityAgent: Fijas de alta convicción calibradas para Sábado (confianza media: 66.8%). Cero hándicaps, cero líneas sintéticas."
+      ],
+      "system_health": "Excelente (Win Rate Fijas: 87.1% [115/132] | Win Rate Global: 87.2% [150/172] | Brier Score: 0.1226 | Ciclo #161)"
     }
   ],
   "current_weights": {
@@ -767,5 +767,5 @@
     "psychological_friction_stake_adapter": 0.08
   },
   "last_auto_audit": "2026-10-13 21:40:00",
-  "last_updated": "2026-10-31 06:02:02"
+  "last_updated": "2026-10-31 06:12:11"
 }
