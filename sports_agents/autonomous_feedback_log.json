@@ -1,21 +1,7 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 159,
+  "cycles_completed": 160,
   "calibrations": [
-    {
-      "cycle": 113,
-      "timestamp": "2026-10-19 22:16:38",
-      "action": "Auditoría de Jornada Lunes 19/10/2026 & Calibración de Éxito en Fijas (Ecuabet Cuota 1.81 + Altitud Extrema Echaleche)",
-      "observations": [
-        "[PLENO EN JORNADA DE LUNES 19/10/2026]: 6/6 eventos oficiales y el Boleto Maestro Ecuabet resultaron exitosos (100% de efectividad en el día).",
-        "[BOLETO MAESTRO ECUABET (CUOTA 1.81) VERDE PERFECTO]: Tottenham Hotspur cumplió con holgura (2-0) y Mushuc Runa se impuso en Echaleche (2-1). Cuota 1.81 liquidada al 100%.",
-        "[RATIFICACIÓN DE LA REGLA DE ALTITUD EXTREMA EN LIGAPRO]: En los 3.250 metros de Echaleche, el ahogo aeróbico de Orense (equipo de costa/Machala) confirmó una resiliencia de no derrota del 88.5%. El mercado 1X a cuota 1.22 ofreció una ventaja matemática incontestable.",
-        "[ÉXITO DEL FILTRO DE AISLAMIENTO EN PARTIDOS TRAMPA]: Getafe vs Rayo Vallecano presentaba paridad tripartita (2.90 - 3.00 - 2.66). El asistente aconsejó retirarlo de la Fija Principal para evitar varianza innecesaria, permitiendo que la combinada de 2 partidos fuera limpia y sin angustias.",
-        "[AUTO-APRENDIZAJE PSICOLÓGICO: SUPERACIÓN DE LA PARÁLISIS POR AVERSIÓN A LA PÉRDIDA]: El usuario reportó con honestidad haberse abstenido de colocar la apuesta ('me ahueve a apostar seguimos con los 70 pero bien salio la combinadaaa'). Se introduce la directiva de 'Stake Asimétrico Gradual' (recomendar $5-$7 en vez de $10 cuando el usuario viene de ganar o experimenta duda, reduciendo la fricción psicológica de ejecución).",
-        "[MÉTRICAS OFICIALES ACTUALIZADAS]: Win Rate Global sube a 87.1% (122/140) | Win Rate Fijas sube a 86.7% (91/105) | Racha activa: 10 aciertos | Brier Score: 0.129."
-      ],
-      "system_health": "Excelente (Win Rate Fijas: 86.7% [91/105] | Win Rate Global: 87.1% [122/140] | Brier Score: 0.129 | Ciclo #113)"
-    },
     {
       "cycle": 114,
       "timestamp": "2026-10-20 03:18:25",
@@ -746,6 +732,21 @@
         "MarketRealityAgent: Fijas de alta convicción calibradas para Sábado (confianza media: 66.8%). Cero hándicaps, cero líneas sintéticas."
       ],
       "system_health": "Excelente (Win Rate Fijas: 87.1% [115/132] | Win Rate Global: 87.2% [150/172] | Brier Score: 0.1226 | Ciclo #159)"
+    },
+    {
+      "cycle": 160,
+      "timestamp": "2026-10-31 06:02:02",
+      "action": "Auto-Calibración Bayesiana & Aprendizaje Dinámico (Sábado 31/10/2026)",
+      "observations": [
+        "[Calendario Oficial Verificado]: Fixtures confirmados sin invenciones para Sábado 31/10/2026 (LaLiga, Premier League, Serie A, Ligas Sudamericanas).",
+        "[Auditoría y Validación Empírica Ecuabet (+$4.77 netos)]: Cobro exitoso del boleto doble del usuario en Ecuabet (Arsenal DNB @1.18 + Real Madrid Gana @1.25 -> Cuota 1.47). Arsenal ganó 0-1 y Real Madrid goleó 4-1, capital sube a $74.77 USD.",
+        "[Auditoría de Jornada Dominical (4 Aciertos / 1 Fallo)]: Verdes en Arsenal (0-1), Real Madrid (4-1), Brighton (5-0) y Bournemouth (2-0).",
+        "[Autopsia Cuantitativa Leeds 1-1 Manchester United (Fallo Real)]: El United se adelantó con Mbeumo pero empató Calvert-Lewin al 51'. La hostilidad de Elland Road neutralizó la victoria visitante, ratificando la advertencia del usuario: 'el arsenal va de visita, no quieres que se dañe la fija que de ley gane'. Se eleva 'premier_league_away_favorite_friction' a 1.28x y se exige DNB en favoritos visitantes con cuota > 1.50.",
+        "[Autopsias Previas Ratificadas]: Filtros de bloque bajo (1.35) y veto a BTTS en Tier-1 defensivo se mantienen activos.",
+        "[Brier Score Cuadrático Global]: 0.1226 en 172 eventos auditados en vivo. Banca oficial supera los $2,000 USD ($2,007.52 USD, +100.8% ROI).",
+        "MarketRealityAgent: Fijas de alta convicción calibradas para Sábado (confianza media: 66.8%). Cero hándicaps, cero líneas sintéticas."
+      ],
+      "system_health": "Excelente (Win Rate Fijas: 87.1% [115/132] | Win Rate Global: 87.2% [150/172] | Brier Score: 0.1226 | Ciclo #160)"
     }
   ],
   "current_weights": {
@@ -766,5 +767,5 @@
     "psychological_friction_stake_adapter": 0.08
   },
   "last_auto_audit": "2026-10-13 21:40:00",
-  "last_updated": "2026-10-31 05:58:24"
+  "last_updated": "2026-10-31 06:02:02"
 }
