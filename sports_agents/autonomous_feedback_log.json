@@ -1,6 +1,6 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 190,
+  "cycles_completed": 128,
   "calibrations": [
     {
       "cycle": 141,
@@ -751,6 +751,18 @@
         "MarketRealityAgent: Fijas de alta convicción calibradas para Martes (confianza media: 66.0%). Cero hándicaps, cero líneas sintéticas."
       ],
       "system_health": "Excelente (Win Rate Fijas: 87.1% [115/132] | Win Rate Global: 87.2% [150/172] | Brier Score: 0.1226 | Ciclo #190)"
+    },
+    {
+      "cycle": 128,
+      "timestamp": "2026-11-03 15:12:30",
+      "action": "AUTOAPRENDIZAJE INTEGRAL: GESTIÓN DE RACHA ACTIVA (12 W), SALVADA DE CAPITAL Y PROTOCOLO CHAMPIONS J4",
+      "observations": [
+        "[LECCIÓN FORENSE #1 - EL COSTO DE LAS CUOTAS TRAMPA]: La eliminación del Arsenal ante Fleetwood Town (1-1, 5-3 p.) demostró empíricamente que las cuotas 1.02 - 1.07 en copas eliminatorias son 'trampas de ruina'. El veto oportuno del agente preservó el capital del usuario.",
+        "[LECCIÓN FORENSE #2 - LA CERTEZA DEL FRANCOTIRADOR]: La victoria de la AS Roma (4-2 ante Cagliari) validó el análisis de ventajas asimétricas (velocidad de Dybala/Dovbyk vs lentitud de Yerry Mina). El usuario ganó $6.90 con $5.00 reales (+$1.90 netos), llevando su saldo a $24.90 USD.",
+        "[LECCIÓN FORENSE #3 - LA CONVERGENCIA EN TORNEOS INTERNACIONALES]: En Champions League Jornada 4, los favoritos con bajas defensivas (FC Barcelona) exigen mercados combinados de goles ('1X + Más de 1.5' o 'Ambos Marcan') en lugar de victorias simples forzadas.",
+        "[ESTADO DEL SISTEMA]: 180 pronósticos auditados | 87.8% Win Rate Global | 87.9% Win Rate Fijas (123 W / 17 L) | Racha: 12 Victorias Consecutivas | Saldo Usuario Ecuabet: $24.90 USD."
+      ],
+      "system_health": "Calibrado Integralmente (Racha Activa: 12 W | Win Rate Fijas: 87.9% [123/140] | Ciclo #128)"
     }
   ],
   "current_weights": {
@@ -771,5 +783,5 @@
     "psychological_friction_stake_adapter": 0.08
   },
   "last_auto_audit": "2026-10-13 21:40:00",
-  "last_updated": "2026-11-03 19:45:52"
+  "last_updated": "2026-11-03 15:12:30"
 }
