@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-10-26 21:11:53",
+  "last_updated": "2026-11-03 15:06:43",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 2648.52,
-  "total_profit": 1648.52,
-  "roi_pct": 164.9,
+  "current_bankroll": 2864.52,
+  "total_profit": 1864.52,
+  "roi_pct": 186.5,
   "global_stats": {
-    "total": 172,
-    "wins": 150,
+    "total": 180,
+    "wins": 158,
     "losses": 22,
-    "win_rate": 87.2
+    "win_rate": 87.8
   },
   "fija_stats": {
-    "total": 132,
-    "wins": 115,
+    "total": 140,
+    "wins": 123,
     "losses": 17,
-    "win_rate": 87.1,
-    "active_streak": 4
+    "win_rate": 87.9,
+    "active_streak": 12
   },
   "history": [
     {
@@ -2253,13 +2253,125 @@
       "status": "win",
       "diagnostic": "REMONTADA EN LAS AZORES (1 - 2): Tras ir perdiendo 1-0 al descanso, las Águilas impusieron su jerarquía con dos goles en el complemento.",
       "pnl": 22.0
+    },
+    {
+      "id": 174,
+      "match": "AS Roma vs Cagliari Calcio",
+      "tournament": "Serie A Italia • Martes 27/10/2026 • Final: 4 - 2",
+      "category_tag": "👑 La Fija de Oro (Sello de Certeza #119)",
+      "is_fija": true,
+      "selection": "AS Roma Gana el Partido (1) [Cuota de Oro]",
+      "odds": 1.38,
+      "confidence": 88.0,
+      "status": "win",
+      "diagnostic": "FIESTA GOLEADORA EN EL OLÍMPICO (4 - 2): Dybala y Dovbyk destrozaron la lenta zaga de Cagliari. El usuario apostó $5.00 USD reales y cobró $6.90 USD (+$1.90 netos en Ecuabet).",
+      "pnl": 38.0
+    },
+    {
+      "id": 175,
+      "match": "CD Cuarte vs Girona FC",
+      "tournament": "Copa del Rey España • Martes 27/10/2026 • Final: 0 - 2",
+      "category_tag": "👑 La Fija (Copa del Rey)",
+      "is_fija": true,
+      "selection": "Girona FC Gana el Partido (2)",
+      "odds": 1.15,
+      "confidence": 90.0,
+      "status": "win",
+      "diagnostic": "JERARQUÍA EN ZARAGOZA (0 - 2): Abel Ruiz y Pyshchur resolvieron sin despeinarse ante un rival de 5ta categoría.",
+      "pnl": 15.0
+    },
+    {
+      "id": 176,
+      "match": "CD Manacor vs Villarreal CF",
+      "tournament": "Copa del Rey España • Martes 27/10/2026 • Final: 0 - 5",
+      "category_tag": "👑 La Fija (Copa del Rey)",
+      "is_fija": true,
+      "selection": "Villarreal CF Gana el Partido (2)",
+      "odds": 1.16,
+      "confidence": 92.0,
+      "status": "win",
+      "diagnostic": "FESTIVAL GROGUET EN BALEARES (0 - 5): Cinco goles (Diatta, Pépé, Cardona) para certificar el abismo de categorías.",
+      "pnl": 16.0
+    },
+    {
+      "id": 177,
+      "match": "Rot-Weiss Essen vs RB Leipzig",
+      "tournament": "DFB-Pokal Alemania • Martes 27/10/2026 • Final: 1 - 2",
+      "category_tag": "👑 La Fija (DFB-Pokal)",
+      "is_fija": true,
+      "selection": "RB Leipzig Gana el Partido (2)",
+      "odds": 1.22,
+      "confidence": 86.0,
+      "status": "win",
+      "diagnostic": "REMONTADA DE LOS TOROS ROJOS (1 - 2): Doblete salvador de Baumgartner (78' y 82') para avanzar a octavos y cobrar el verde.",
+      "pnl": 22.0
+    },
+    {
+      "id": 178,
+      "match": "Borussia Dortmund vs Werder Bremen",
+      "tournament": "DFB-Pokal Alemania • Martes 27/10/2026 • Final: 3 - 2",
+      "category_tag": "👑 La Fija (DFB-Pokal)",
+      "is_fija": true,
+      "selection": "Dortmund 1X + Más de 1.5 Goles",
+      "odds": 1.28,
+      "confidence": 85.0,
+      "status": "win",
+      "diagnostic": "PARTIDAZO EN EL SIGNAL IDUNA (3 - 2): Guirassy y Sabitzer sellaron la victoria en tiempo reglamentario cobrando el 1X y el over con creces.",
+      "pnl": 28.0
+    },
+    {
+      "id": 179,
+      "match": "Racing de Santander vs Real Madrid",
+      "tournament": "LaLiga EA Sports • Domingo 01/11/2026 • Final: 0 - 3",
+      "category_tag": "👑 La Fija (LaLiga EA Sports)",
+      "is_fija": true,
+      "selection": "Real Madrid Gana el Partido (2)",
+      "odds": 1.25,
+      "confidence": 88.0,
+      "status": "win",
+      "diagnostic": "AUTORIDAD EN EL SARDINERO (0 - 3): Goles de Mbappé, Bellingham y Diomandé para asegurar el triunfo con total solvencia.",
+      "pnl": 25.0
+    },
+    {
+      "id": 180,
+      "match": "Independiente del Valle vs Liga de Quito",
+      "tournament": "LigaPro Ecuador • Domingo 01/11/2026 • Final: 2 - 0",
+      "category_tag": "👑 La Fija (LigaPro Ecuador)",
+      "is_fija": true,
+      "selection": "Independiente del Valle o Empate (1X) [Victoria 2-0]",
+      "odds": 1.24,
+      "confidence": 87.0,
+      "status": "win",
+      "diagnostic": "CLÁSICO CAPITALINO EN CHILLO JIJÓN (2 - 0): IDV anuló por completo a Liga y se llevó el clásico asegurando el 1X con autoridad.",
+      "pnl": 24.0
+    },
+    {
+      "id": 181,
+      "match": "Macará vs Barcelona SC",
+      "tournament": "LigaPro Ecuador • Sábado 31/10/2026 • Final: 3 - 0",
+      "category_tag": "🛡️ Táctico / Doble Oportunidad",
+      "is_fija": true,
+      "selection": "Macará o Empate (1X) [Victoria 3-0]",
+      "odds": 1.48,
+      "confidence": 82.0,
+      "status": "win",
+      "diagnostic": "LECCIÓN EN AMBATO (3 - 0): Macará volvió a hacer pesar el Bellavista goleando a un Barcelona desarticulado.",
+      "pnl": 48.0
     }
   ],
   "bankroll": {
     "initial": 1000.0,
-    "current": 2648.52,
-    "profit": 1648.52,
-    "roi": 164.9
+    "current": 2864.52,
+    "profit": 1864.52,
+    "roi": 186.5
   },
-  "brier_score": 0.1226
+  "brier_score": 0.1179,
+  "user_bankroll": {
+    "active_ecuabet_usd": 24.9,
+    "previous_usd": 23.0,
+    "last_bet_amount": 5.0,
+    "last_payout": 6.9,
+    "net_gain": 1.9,
+    "winning_ticket": "AS Roma Gana @ 1.38 (AS Roma 4-2 Cagliari)"
+  }
 }
