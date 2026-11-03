@@ -49,3 +49,4 @@ with open(feedback_file, "w", encoding="utf-8") as f:
     json.dump(fb_db, f, ensure_ascii=False, indent=2)
 
 print("✓ autonomous_feedback_log.json actualizado con Ciclo #128.")
+

@@ -78,3 +78,4 @@ with open(sync_path, "w", encoding="utf-8") as f:
     f.write(new_content)
 
 print("✓ sports_agents/sync_complete_dashboard_3areas.py parchado con Caso de Éxito #15.")
+
