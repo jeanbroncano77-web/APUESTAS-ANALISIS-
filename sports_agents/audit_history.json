@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-11-03 15:06:43",
+  "last_updated": "2026-11-03 21:24:43",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 2864.52,
-  "total_profit": 1864.52,
-  "roi_pct": 186.5,
+  "current_bankroll": 2820.52,
+  "total_profit": 1820.52,
+  "roi_pct": 182.1,
   "global_stats": {
-    "total": 180,
-    "wins": 158,
-    "losses": 22,
-    "win_rate": 87.8
+    "total": 186,
+    "wins": 162,
+    "losses": 24,
+    "win_rate": 87.1
   },
   "fija_stats": {
-    "total": 140,
-    "wins": 123,
-    "losses": 17,
-    "win_rate": 87.9,
-    "active_streak": 12
+    "total": 146,
+    "wins": 127,
+    "losses": 19,
+    "win_rate": 87.0,
+    "active_streak": 0
   },
   "history": [
     {
@@ -2357,21 +2357,98 @@
       "status": "win",
       "diagnostic": "LECCIÓN EN AMBATO (3 - 0): Macará volvió a hacer pesar el Bellavista goleando a un Barcelona desarticulado.",
       "pnl": 48.0
+    },
+    {
+      "id": 182,
+      "match": "Villarreal CF vs Paris Saint-Germain",
+      "tournament": "UEFA Champions League • Martes 03/11/2026 • Final: 0 - 6",
+      "category_tag": "👑 La Fija (Doble Oportunidad X2)",
+      "is_fija": true,
+      "selection": "PSG o Empate (X2) [Victoria 0-6]",
+      "odds": 1.25,
+      "confidence": 88.0,
+      "status": "win",
+      "diagnostic": "PASEO MONUMENTAL EN LA CERÁMICA (0 - 6): El PSG de Luis Enrique arrolló sin piedad a un Villarreal diezmado, cobrando el X2 y la victoria con baile histórico.",
+      "pnl": 25.0
+    },
+    {
+      "id": 183,
+      "match": "Feyenoord vs Inter de Milán",
+      "tournament": "UEFA Champions League • Martes 03/11/2026 • Final: 0 - 3",
+      "category_tag": "👑 La Fija (Doble Oportunidad X2)",
+      "is_fija": true,
+      "selection": "Inter de Milán o Empate (X2) [Victoria 0-3]",
+      "odds": 1.28,
+      "confidence": 86.0,
+      "status": "win",
+      "diagnostic": "AUTORIDAD NERAZZURRA EN DE KUIP (0 - 3): Bisseck, Esposito y Zieliński liquidaron en Rotterdam para cobrar el X2 con holgura.",
+      "pnl": 28.0
+    },
+    {
+      "id": 184,
+      "match": "Deportivo Pasto vs Jaguares de Córdoba",
+      "tournament": "Liga BetPlay Colombia • Martes 03/11/2026 • Final: 2 - 0",
+      "category_tag": "👑 La Fija (Total Goles)",
+      "is_fija": true,
+      "selection": "Total Goles: Menos de 2.5 Goles",
+      "odds": 1.48,
+      "confidence": 85.0,
+      "status": "win",
+      "diagnostic": "CERROJO EN NARIÑO (2 - 0): Pasto impuso su localía con goles de Serje y Méndez, manteniendo el marcador por debajo de 2.5 goles como se proyectó.",
+      "pnl": 48.0
+    },
+    {
+      "id": 185,
+      "match": "Manchester United vs AS Roma",
+      "tournament": "UEFA Champions League • Martes 03/11/2026 • Final: 3 - 2",
+      "category_tag": "👑 La Fija (Ambos Marcan)",
+      "is_fija": true,
+      "selection": "Ambos Equipos Anotan: Sí (BTTS)",
+      "odds": 1.55,
+      "confidence": 84.0,
+      "status": "win",
+      "diagnostic": "FESTIVAL EN OLD TRAFFORD (3 - 2): Soulé y Malen marcaron para Roma; Bruno Fernandes y Cunha remontaron para el United. Ambos Marcan cobrado de sobra.",
+      "pnl": 55.0
+    },
+    {
+      "id": 186,
+      "match": "FC Barcelona vs Aston Villa",
+      "tournament": "UEFA Champions League • Martes 03/11/2026 • Final: 3 - 0",
+      "category_tag": "👑 La Fija (Ambos Marcan)",
+      "is_fija": true,
+      "selection": "Ambos Equipos Anotan: Sí (BTTS) [Aston Villa se fue en blanco]",
+      "odds": 1.5,
+      "confidence": 82.0,
+      "status": "loss",
+      "diagnostic": "AUTOPSIA #14: TRAMPA DE FUERA DE JUEGO CULÉ (3 - 0). Aston Villa venía con 12 goles en Champions pero cayó 7 veces en fuera de juego ante la línea de Flick y Joan García atajó todo. Villa no marcó y falló el BTTS (aunque el 1X + Más 1.5 sí se cumplió).",
+      "pnl": -100.0
+    },
+    {
+      "id": 187,
+      "match": "Mushuc Runa vs Manta FC",
+      "tournament": "LigaPro Ecuador • Martes 03/11/2026 • Final: 2 - 3",
+      "category_tag": "👑 La Fija (Doble Oportunidad 1X)",
+      "is_fija": true,
+      "selection": "Mushuc Runa o Empate (1X) [Penal rival en el 90+9']",
+      "odds": 1.25,
+      "confidence": 83.0,
+      "status": "loss",
+      "diagnostic": "DESENLACE AGÓNICO EN ECHALECHE (2 - 3): El Ponchito empataba 2-2 en el 95', pero un penal sancionado al minuto 90+9 convertido por Joaquín Vergés tumbó el 1X sobre la hora extrema.",
+      "pnl": -100.0
     }
   ],
   "bankroll": {
     "initial": 1000.0,
-    "current": 2864.52,
-    "profit": 1864.52,
-    "roi": 186.5
+    "current": 2820.52,
+    "profit": 1820.52,
+    "roi": 182.1
   },
-  "brier_score": 0.1179,
+  "brier_score": 0.1218,
   "user_bankroll": {
     "active_ecuabet_usd": 24.9,
-    "previous_usd": 23.0,
-    "last_bet_amount": 5.0,
-    "last_payout": 6.9,
-    "net_gain": 1.9,
-    "winning_ticket": "AS Roma Gana @ 1.38 (AS Roma 4-2 Cagliari)"
+    "previous_usd": 24.9,
+    "last_bet_amount": 0.0,
+    "user_action": "Usuario decidió no apostar preservando el 100% de su capital de $24.90 USD",
+    "saved_from_loss": true
   }
 }

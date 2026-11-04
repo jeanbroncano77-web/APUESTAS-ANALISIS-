@@ -1271,11 +1271,11 @@
             </button>
             <button class="btn-view-mode" id="btn-mode-winrate" onclick="switchMainView('winrate')">
                 📊 Win Rate & Auditoría (Aciertos vs Fallos)
-                <span class="badge-winrate-pill">87.8% WIN &bull; 87.9% FIJAS &bull; +$1,864.52 USD</span>
+                <span class="badge-winrate-pill">87.1% WIN &bull; 87.0% FIJAS &bull; +$1,820.52 USD</span>
             </button>
             <button class="btn-view-mode" id="btn-mode-autocorrect" onclick="switchMainView('autocorrect')">
                 🧠 Autoaprendizaje & Crítica Diaria
-                <span class="badge-winrate-pill" style="background: rgba(139, 92, 246, 0.2); border-color: rgba(139, 92, 246, 0.5); color: #c4b5fd;">Ciclo #128 &bull; Brier: 0.1179 &bull; 100% Mercados Reales</span>
+                <span class="badge-winrate-pill" style="background: rgba(139, 92, 246, 0.2); border-color: rgba(139, 92, 246, 0.5); color: #c4b5fd;">Ciclo #129 &bull; Brier: 0.1218 &bull; 100% Mercados Reales</span>
             </button>
         </div>
 
@@ -1616,6 +1616,7 @@
 
         </div> <!-- Fin de view-container-matches -->
 
+                <!-- VISTA 2: WIN RATE & AUDITORÍA EN VIVO -->
         <div id="view-container-winrate" style="display: none;">
             
             <!-- Resumen Ejecutivo Spotlight -->
@@ -1625,12 +1626,12 @@
                     <div>
                         <div class="spotlight-title">Auditoría Cuantitativa & Track Record Oficial en Vivo</div>
                         <div class="spotlight-desc" style="color: #fef3c7;">
-                            Registro transparente de <strong>180 pronósticos liquidados</strong> en 140 partidos estelares con modelos TimesFM + Dixon-Coles Monte Carlo. Efectividad en Las Fijas: <strong>87.9% (123 de 140 aciertos)</strong>.
+                            Registro transparente de <strong>186 pronósticos liquidados</strong> en 146 partidos estelares con modelos TimesFM + Dixon-Coles Monte Carlo. Efectividad en Las Fijas: <strong>87.0% (127 de 146 aciertos)</strong>.
                         </div>
                     </div>
                 </div>
                 <div class="spotlight-prob-badge" style="background: linear-gradient(135deg, #10b981, #059669); color: #ffffff;">
-                    <span>WIN RATE GLOBAL: 87.8% | FIJAS: 87.9% (123/140) | BRIER: 0.1179</span>
+                    <span>WIN RATE GLOBAL: 87.1% | FIJAS: 87.0% (127/146) | BRIER: 0.1218</span>
                 </div>
             </div>
 
@@ -1641,8 +1642,8 @@
                         <span>Win Rate Global</span>
                         <span>🎯</span>
                     </div>
-                    <div class="kpi-value" style="color: var(--emerald);">87.8%</div>
-                    <div class="kpi-subtext"><strong>158 Aciertos</strong> / 22 Fallos de 180 selecciones auditadas</div>
+                    <div class="kpi-value" style="color: var(--emerald);">87.1%</div>
+                    <div class="kpi-subtext"><strong>162 Aciertos</strong> / 24 Fallos de 186 selecciones auditadas</div>
                 </div>
 
                 <div class="kpi-card kpi-card-gold">
@@ -1650,8 +1651,8 @@
                         <span>"La Fija" (95% - 98%)</span>
                         <span>👑</span>
                     </div>
-                    <div class="kpi-value" style="color: var(--gold);">87.9%</div>
-                    <div class="kpi-subtext"><strong>123 de 140 aciertos</strong> &bull; Racha activa en Fijas</div>
+                    <div class="kpi-value" style="color: var(--gold);">87.0%</div>
+                    <div class="kpi-subtext"><strong>127 de 146 aciertos</strong> &bull; Racha activa en Fijas</div>
                 </div>
 
                 <div class="kpi-card kpi-card-cyan">
@@ -1659,8 +1660,8 @@
                         <span>Yield / ROI Financiero</span>
                         <span>📈</span>
                     </div>
-                    <div class="kpi-value" style="color: var(--cyan);">+186.5%</div>
-                    <div class="kpi-subtext"><strong>+$1,864.52 USD neto</strong> sobre banca inicial de $1,000 USD</div>
+                    <div class="kpi-value" style="color: var(--cyan);">+182.1%</div>
+                    <div class="kpi-subtext"><strong>+$1,820.52 USD neto</strong> sobre banca inicial de $1,000 USD</div>
                 </div>
 
                 <div class="kpi-card kpi-card-purple">
@@ -1668,8 +1669,8 @@
                         <span>Banca Total Liquidada</span>
                         <span>💰</span>
                     </div>
-                    <div class="kpi-value" style="color: #c084fc;">$2,864.52</div>
-                    <div class="kpi-subtext"><strong>+$1,864.52 USD neto</strong> (+186.5% ROI acumulado)</div>
+                    <div class="kpi-value" style="color: #c084fc;">$2,820.52</div>
+                    <div class="kpi-subtext"><strong>+$1,820.52 USD neto</strong> (+182.1% ROI acumulado)</div>
                 </div>
             </div>
 
@@ -1678,7 +1679,7 @@
                 <div class="chart-box">
                     <div class="chart-box-title">
                         <span>Curva de Capital (Banca Total $ USD)</span>
-                        <span style="font-size: 0.8rem; color: #10b981; font-weight: 700;">+$1,864.52 Ganancia Neta</span>
+                        <span style="font-size: 0.8rem; color: #10b981; font-weight: 700;">+$1,820.52 Ganancia Neta</span>
                     </div>
                     <div class="chart-canvas-wrap">
                         <canvas id="chart-equity-curve"></canvas>
@@ -1688,7 +1689,7 @@
                 <div class="chart-box">
                     <div class="chart-box-title">
                         <span>Win Rate por Mercado</span>
-                        <span style="font-size: 0.8rem; color: var(--gold); font-weight: 700;">La Fija: 87.9% (123/140)</span>
+                        <span style="font-size: 0.8rem; color: var(--gold); font-weight: 700;">La Fija: 87.0% (127/146)</span>
                     </div>
                     <div class="chart-canvas-wrap">
                         <canvas id="chart-category-winrate"></canvas>
@@ -1704,16 +1705,16 @@
                         <input type="text" id="audit-search-input" placeholder="Buscar por equipo, torneo o mercado (ej. Real Madrid, Leeds, Arsenal, Mushuc Runa)..." oninput="searchAuditTable(this.value)" style="width: 100%; padding: 0.75rem 1rem 0.75rem 2.8rem; background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 10px; color: #ffffff; font-family: 'Outfit', sans-serif; font-size: 0.95rem; outline: none; transition: border-color 0.2s;">
                     </div>
                     <span id="audit-count-badge" style="background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.4); color: #93c5fd; padding: 0.5rem 1rem; border-radius: 10px; font-weight: 700; font-size: 0.85rem;">
-                        Mostrando 180 de 180 picks
+                        Mostrando 186 de 186 picks
                     </span>
                 </div>
 
                 <div class="audit-filter-bar" style="margin: 0; padding: 0; border: none; background: transparent;">
                     <span class="filter-label">Filtros Rápidos:</span>
-                    <button class="btn-filter-audit active" onclick="filterAuditTable('all', this)">Todos (180)</button>
-                    <button class="btn-filter-audit" onclick="filterAuditTable('win', this)" style="border-color: rgba(16, 185, 129, 0.4); color: #34d399;">✅ SÓLO ACIERTOS (158)</button>
-                    <button class="btn-filter-audit" onclick="filterAuditTable('loss', this)" style="border-color: rgba(244, 63, 94, 0.4); color: #fb7185;">❌ SÓLO FALLOS (22)</button>
-                    <button class="btn-filter-audit" onclick="filterAuditTable('fija', this)">👑 La Fija (140)</button>
+                    <button class="btn-filter-audit active" onclick="filterAuditTable('all', this)">Todos (186)</button>
+                    <button class="btn-filter-audit" onclick="filterAuditTable('win', this)" style="border-color: rgba(16, 185, 129, 0.4); color: #34d399;">✅ SÓLO ACIERTOS (162)</button>
+                    <button class="btn-filter-audit" onclick="filterAuditTable('loss', this)" style="border-color: rgba(244, 63, 94, 0.4); color: #fb7185;">❌ SÓLO FALLOS (24)</button>
+                    <button class="btn-filter-audit" onclick="filterAuditTable('fija', this)">👑 La Fija (146)</button>
                     <button class="btn-filter-audit" onclick="filterAuditTable('goles', this)">⚽ Goles (10)</button>
                     <button class="btn-filter-audit" onclick="filterAuditTable('props', this)">👤 Player Props (10)</button>
                     <button class="btn-filter-audit" onclick="filterAuditTable('1x2', this)">⚖️ 1X2 (13)</button>
@@ -4976,6 +4977,114 @@
                             </td>
                             <td class="col-pnl pnl-win">+$48.00</td>
                         </tr>
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#182</td>
+                            <td>
+                                <div class="match-name">Villarreal CF vs Paris Saint-Germain</div>
+                                <div class="match-tourn">UEFA Champions League • Martes 03/11/2026 • Final: 0 - 6</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (Doble Oportunidad X2)</span>
+                                <div class="sel-text">PSG o Empate (X2) [Victoria 0-6]</div>
+                            </td>
+                            <td class="col-odds">@1.25</td>
+                            <td class="col-conf">88.0%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                <div class="diag-text">PASEO MONUMENTAL EN LA CERÁMICA (0 - 6): El PSG de Luis Enrique arrolló sin piedad a un Villarreal diezmado, cobrando el X2 y la victoria con baile histórico.</div>
+                            </td>
+                            <td class="col-pnl pnl-win">+$25.00</td>
+                        </tr>
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#183</td>
+                            <td>
+                                <div class="match-name">Feyenoord vs Inter de Milán</div>
+                                <div class="match-tourn">UEFA Champions League • Martes 03/11/2026 • Final: 0 - 3</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (Doble Oportunidad X2)</span>
+                                <div class="sel-text">Inter de Milán o Empate (X2) [Victoria 0-3]</div>
+                            </td>
+                            <td class="col-odds">@1.28</td>
+                            <td class="col-conf">86.0%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                <div class="diag-text">AUTORIDAD NERAZZURRA EN DE KUIP (0 - 3): Bisseck, Esposito y Zieliński liquidaron en Rotterdam para cobrar el X2 con holgura.</div>
+                            </td>
+                            <td class="col-pnl pnl-win">+$28.00</td>
+                        </tr>
+                        <tr class="audit-row row-win" data-category="goles" data-status="win">
+                            <td class="col-id">#184</td>
+                            <td>
+                                <div class="match-name">Deportivo Pasto vs Jaguares de Córdoba</div>
+                                <div class="match-tourn">Liga BetPlay Colombia • Martes 03/11/2026 • Final: 2 - 0</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-goles">👑 La Fija (Total Goles)</span>
+                                <div class="sel-text">Total Goles: Menos de 2.5 Goles</div>
+                            </td>
+                            <td class="col-odds">@1.48</td>
+                            <td class="col-conf">85.0%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                <div class="diag-text">CERROJO EN NARIÑO (2 - 0): Pasto impuso su localía con goles de Serje y Méndez, manteniendo el marcador por debajo de 2.5 goles como se proyectó.</div>
+                            </td>
+                            <td class="col-pnl pnl-win">+$48.00</td>
+                        </tr>
+                        <tr class="audit-row row-win" data-category="fija" data-status="win">
+                            <td class="col-id">#185</td>
+                            <td>
+                                <div class="match-name">Manchester United vs AS Roma</div>
+                                <div class="match-tourn">UEFA Champions League • Martes 03/11/2026 • Final: 3 - 2</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (Ambos Marcan)</span>
+                                <div class="sel-text">Ambos Equipos Anotan: Sí (BTTS)</div>
+                            </td>
+                            <td class="col-odds">@1.55</td>
+                            <td class="col-conf">84.0%</td>
+                            <td>
+                                <span class="badge-status badge-win">✅ ACERTADO</span>
+                                <div class="diag-text">FESTIVAL EN OLD TRAFFORD (3 - 2): Soulé y Malen marcaron para Roma; Bruno Fernandes y Cunha remontaron para el United. Ambos Marcan cobrado de sobra.</div>
+                            </td>
+                            <td class="col-pnl pnl-win">+$55.00</td>
+                        </tr>
+                        <tr class="audit-row row-loss" data-category="fija" data-status="loss">
+                            <td class="col-id">#186</td>
+                            <td>
+                                <div class="match-name">FC Barcelona vs Aston Villa</div>
+                                <div class="match-tourn">UEFA Champions League • Martes 03/11/2026 • Final: 3 - 0</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (Ambos Marcan)</span>
+                                <div class="sel-text">Ambos Equipos Anotan: Sí (BTTS) [Aston Villa se fue en blanco]</div>
+                            </td>
+                            <td class="col-odds">@1.50</td>
+                            <td class="col-conf">82.0%</td>
+                            <td>
+                                <span class="badge-status badge-loss">❌ FALLO REAL</span>
+                                <div class="diag-text">AUTOPSIA #14: TRAMPA DE FUERA DE JUEGO CULÉ (3 - 0). Aston Villa venía con 12 goles en Champions pero cayó 7 veces en fuera de juego ante la línea de Flick y Joan García atajó todo. Villa no marcó y falló el BTTS (aunque el 1X + Más 1.5 sí se cumplió).</div>
+                            </td>
+                            <td class="col-pnl pnl-loss">-$100.00</td>
+                        </tr>
+                        <tr class="audit-row row-loss" data-category="fija" data-status="loss">
+                            <td class="col-id">#187</td>
+                            <td>
+                                <div class="match-name">Mushuc Runa vs Manta FC</div>
+                                <div class="match-tourn">LigaPro Ecuador • Martes 03/11/2026 • Final: 2 - 3</div>
+                            </td>
+                            <td>
+                                <span class="badge-cat-tag cat-fija">👑 La Fija (Doble Oportunidad 1X)</span>
+                                <div class="sel-text">Mushuc Runa o Empate (1X) [Penal rival en el 90+9']</div>
+                            </td>
+                            <td class="col-odds">@1.25</td>
+                            <td class="col-conf">83.0%</td>
+                            <td>
+                                <span class="badge-status badge-loss">❌ FALLO REAL</span>
+                                <div class="diag-text">DESENLACE AGÓNICO EN ECHALECHE (2 - 3): El Ponchito empataba 2-2 en el 95', pero un penal sancionado al minuto 90+9 convertido por Joaquín Vergés tumbó el 1X sobre la hora extrema.</div>
+                            </td>
+                            <td class="col-pnl pnl-loss">-$100.00</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -4986,6 +5095,7 @@
 
 
         <!-- VISTA 3: AUTOAPRENDIZAJE & CRÍTICA DIARIA -->
+                <!-- VISTA 3: AUTOAPRENDIZAJE & CRÍTICA DIARIA -->
                 <!-- VISTA 3: AUTOAPRENDIZAJE & CRÍTICA DIARIA -->
                 <!-- VISTA 3: AUTOAPRENDIZAJE & CRÍTICA DIARIA -->
                 <!-- VISTA 3: AUTOAPRENDIZAJE & CRÍTICA DIARIA -->
@@ -5111,7 +5221,7 @@
                     </div>
                 </div>
                 <div style="background: rgba(139, 92, 246, 0.25); border: 1px solid rgba(139, 92, 246, 0.6); padding: 0.5rem 1.25rem; border-radius: 12px; color: #ddd6fe; font-weight: 800; font-size: 0.95rem;">
-                    <span>⚡ 11 Agentes Activos &bull; Brier: 0.1179</span>
+                    <span>⚡ 11 Agentes Activos &bull; Brier: 0.1218</span>
                 </div>
             </div>
 
@@ -5326,6 +5436,55 @@
                             <p><strong>1. El Pedido del Usuario:</strong> El usuario advirtió que tras una caída se siente desconfianza, pero en las fijas maestras el agente debe ser más firme: <em>"deberías incentivarme más cuando creas que deley deley ganamos"</em>.</p>
                             <p style="margin-top: 0.5rem;"><strong>2. Regla de Oro #119:</strong> Cuando la convergencia estadística y táctica supere el 88%, el modelo activará el distintivo <strong>'SELLO DE ALTA CERTEZA'</strong> y empujará proactivamente al usuario a ejecutar la entrada sin vacilaciones.</p>
                             <p style="margin-top: 0.5rem;"><strong>3. Estado Institucional:</strong> 172 picks auditados &bull; <strong>87.2% Win Rate Global</strong> (150 W / 22 L) &bull; <strong>87.1% Win Rate Fijas</strong> (115 W / 17 L) &bull; Racha activa: 4 W &bull; Saldo institucional: $2,648.52 USD.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AUTOPSIA DE FALLO #14: EL CERROJO DE HANSI FLICK (BARÇA 3-0 ASTON VILLA) Y EL PENAL AL 90+9' EN ECHALECHE -->
+            <div class="autopsy-card" style="border: 2px solid rgba(239, 68, 68, 0.6); background: rgba(127, 29, 29, 0.25); box-shadow: 0 16px 36px -8px rgba(239, 68, 68, 0.35); margin-bottom: 2rem;">
+                <div class="autopsy-header">
+                    <div>
+                        <div class="autopsy-match" style="color: #f87171; display: flex; align-items: center; gap: 0.5rem;">
+                            <span>⚠️ AUTOPSIA DE FALLO #14 &bull; MARTES 03/11 (CHAMPIONS & LIGAPRO):</span>
+                        </div>
+                        <div style="font-size: 1.25rem; font-weight: 800; color: #ffffff; margin-top: 0.25rem;">
+                            Barça 3-0 Aston Villa (Fallo BTTS) &bull; Mushuc Runa 2-3 Manta FC (Penal al 90+9') &bull; Banca de Usuario Salvada
+                        </div>
+                        <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.2rem;">
+                            Componente: OffsideTrapAuditor &bull; StoppageTimeAnomaly &bull; Ciclo de Autoaprendizaje #129 &bull; Saldo usuario: $24.90 USD INTACTOS
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 0.35rem;">
+                        <span class="badge-status badge-loss" style="background: rgba(239, 68, 68, 0.3); border: 1px solid rgba(239, 68, 68, 0.7); color: #fca5a5; font-size: 0.85rem;">
+                            ❌ 2 FALLOS EN CARTELERA (-$200 MODELO)
+                        </span>
+                        <span class="badge-status badge-win" style="background: rgba(16, 185, 129, 0.3); border: 1px solid rgba(16, 185, 129, 0.7); color: #6ee7b7; font-size: 0.85rem;">
+                            🛡️ USUARIO PRESERVÓ SUS $24.90 USD
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="autopsy-split">
+                    <div class="box-flaw" style="border-color: rgba(239, 68, 68, 0.4); background: rgba(127, 29, 29, 0.2);">
+                        <div class="box-title-flaw" style="color: #fca5a5;">
+                            <span>🔍 Diagnóstico del Error: ¿Por qué falló el 'Ambos Marcan' y el 1X en Ambato?</span>
+                        </div>
+                        <div class="box-text">
+                            <p><strong>1. La Trampa de Fuera de Juego de Hansi Flick:</strong> El modelo proyectó que Aston Villa anotaría basándose en sus 12 goles en Champions y las bajas de Koundé y Christensen. Sin embargo, Flick sincronizó su línea a 45m provocando 7 fueras de juego a los delanteros de Emery, mientras Joan García tapó las 2 opciones claras. Villa se fue en blanco (3-0).</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. La Anomalía del Minuto 99 en Echaleche:</strong> Mushuc Runa empataba 2-2 en el 95', pero un penal polémico sancionado al minuto 90+9 convertido por Joaquín Vergés le dio la victoria al Manta 2-3 en tiempo récord de descuento.</p>
+                            <p style="margin-top: 0.5rem;"><strong>3. La Visión del Usuario:</strong> El usuario advirtió en vivo: <em>"imagínate que ponía ambos marcan se jodía"</em>. Decidió no apostar y salvó el 100% de su capital de $24.90 USD.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="box-solution" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(6, 78, 59, 0.2);">
+                        <div class="box-title-solution">
+                            <span>🛡️ Calibración Matemática Implementada (Regla #121)</span>
+                        </div>
+                        <div class="box-text">
+                            <p><strong>1. Regla de Oro #121 (Filtro Anti-BTTS ante Línea de Fuera de Juego):</strong> Ante equipos con sistemas de fuera de juego asfixiantes (como el Barça de Flick), se prohíbe el 'Ambos Marcan' simple. La selección obligatoria debe ser <strong>'1X + Más de 1.5 Goles'</strong> (la cual sí se cumplió sobrado 3-0).</p>
+                            <p style="margin-top: 0.5rem;"><strong>2. Veto a Doble Oportunidad en Descenso Ecuatoriano:</strong> En partidos del hexagonal de permanencia con añadidos > 8 minutos, se prohíbe la doble oportunidad en cuotas menores a 1.30 debido a la volatilidad de penales tardíos.</p>
+                            <p style="margin-top: 0.5rem;"><strong>3. Estado Institucional Consolidado:</strong> 186 picks auditados &bull; <strong>87.1% Win Rate Global</strong> (162 W / 24 L) &bull; <strong>87.0% Win Rate Fijas</strong> (127 W / 19 L) &bull; Saldo real del usuario: <strong>$24.90 USD intactos</strong>.</p>
                         </div>
                     </div>
                 </div>
@@ -5785,7 +5944,7 @@
                     </div>
                 </div>
                 <div class="spotlight-prob-badge" style="background: rgba(139, 92, 246, 0.3); border: 1px solid rgba(139, 92, 246, 0.6); color: #ddd6fe;">
-                    <span>CICLO ACTIVO: #128</span>
+                    <span>CICLO ACTIVO: #129</span>
                 </div>
             </div>
 
@@ -5800,6 +5959,27 @@
                         </tr>
                     </thead>
                     <tbody>
+            <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05); transition: background 0.2s;">
+                <td style="padding: 1rem; vertical-align: top;">
+                    <div style="font-weight: 800; color: #ffffff; font-family: 'JetBrains Mono', monospace;">Ciclo #129</div>
+                    <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem;">2026-11-03 21:24:43</div>
+                </td>
+                <td style="padding: 1rem; vertical-align: top;">
+                    <span style="display: inline-block; background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.4); color: #60a5fa; padding: 0.25rem 0.6rem; border-radius: 6px; font-weight: 700; font-size: 0.78rem;">
+                        AUTOPSIA DE FALLO #14: EL CERROJO DE HANSI FLICK (BARÇA 3-0 ASTON VILLA) Y EL PENAL AL 90+9' EN ECHALECHE
+                    </span>
+                </td>
+                <td style="padding: 1rem; vertical-align: top; color: var(--text-body); line-height: 1.6;">
+                    <ul style="padding-left: 1.2rem; margin: 0; font-size: 0.82rem;">
+                        <li style="margin-bottom: 0.35rem;">[AUTOPSIA DE FALLO #14 - LA FALACIA DEL AMBOS MARCAN]: En Barça 3-0 Aston Villa, el modelo proyectó 'Ambos Marcan' basándose en los 12 goles previos del Villa y las bajas defensivas culés. Sin embargo, la sincronización milimétrica de la trampa de fuera de juego de Hansi Flick (7 offsides al Villa) y la soberbia actuación de Joan García dejaron a Unai Emery en cero. Lección crítica: En casa de gigantes con línea alta agresiva, el 'Ambos Marcan' es frágil si el rival cae repetidamente en fuera de juego. El mercado seguro era '1X + Más de 1.5' (cobrado 3-0).</li><li style="margin-bottom: 0.35rem;">[PRESERVACIÓN TOTAL DE BANCA DE USUARIO]: El usuario no ejecutó la apuesta de Ambos Marcan, evitando la pérdida y salvaguardando sus $24.90 USD intactos en Ecuabet. Se reconoce el acierto intuitivo del usuario al detectar el riesgo.</li><li style="margin-bottom: 0.35rem;">[ANÁLISIS DEL DESENLACE EN ECHALECHE (2-3)]: Mushuc Runa empataba 2-2 en el minuto 95, pero un penal sancionado en el minuto 90+9 liquidó el 1X. En el hexagonal de descenso de LigaPro con tiempos añadidos > 8 minutos, la volatilidad en el cierre exige cobertura DNB o mercado de goles en lugar de doble oportunidad ajustada.</li><li style="margin-bottom: 0.35rem;">[MÉTRICAS OFICIALES CONSOLIDADAS]: 186 pronósticos auditados | 162 Aciertos / 24 Fallos | Win Rate Global: 87.1% | Win Rate Fijas: 87.0% (127/146) | Brier Score: 0.1218.</li>
+                    </ul>
+                </td>
+                <td style="padding: 1rem; vertical-align: top;">
+                    <div style="display: flex; align-items: center; gap: 0.4rem; color: #10b981; font-weight: 700; font-size: 0.8rem;">
+                        <span>🟢</span> Calibrado Forense (Win Rate Fijas: 87.0% [127/146] | Ciclo #129)
+                    </div>
+                </td>
+            </tr>
             <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.05); transition: background 0.2s;">
                 <td style="padding: 1rem; vertical-align: top;">
                     <div style="font-weight: 800; color: #ffffff; font-family: 'JetBrains Mono', monospace;">Ciclo #128</div>
@@ -10082,7 +10262,7 @@
 
             var equityCtx = document.getElementById('chart-equity-curve');
             if (equityCtx) {
-                var rawPoints = [1000.0, 1012.0, 1039.5, 1070.5, 1088.5, 1228.5, 1238.5, 1291.0, 1312.0, 1335.85, 1348.35, 1360.35, 1415.35, 1449.35, 1475.35, 1440.35, 1448.35, 1408.35, 1430.35, 1442.35, 1458.1, 1470.1, 1420.1, 1442.6, 1470.6, 1488.6, 1503.6, 1541.1, 1573.5, 1591.0, 1627.0, 1665.25, 1625.25, 1677.75, 1697.75, 1730.75, 1840.75, 1868.75, 1887.75, 1897.75, 1797.75, 1805.75, 1817.75, 1829.75, 1839.75, 1848.75, 1860.75, 1874.75, 1883.75, 1892.75, 1906.75, 1915.75, 1924.75, 1933.75, 1942.75, 1951.75, 1960.75, 1974.75, 1989.75, 2004.75, 2018.75, 2033.75, 2047.75, 2061.75, 2076.75, 2090.75, 2105.75, 2119.75, 2133.75, 2148.75, 2163.75, 2177.75, 2192.75, 2207.75, 2221.75, 2235.75, 2250.75, 2264.75, 2279.75, 2179.75, 2193.75, 2207.75, 2107.75, 2121.75, 2135.75, 2149.75, 2163.75, 2177.75, 2191.75, 2205.75, 2219.75, 2233.75, 2133.75, 2147.75, 2161.75, 2175.75, 2075.75, 1975.75, 1989.75, 2003.75, 1903.75, 1917.75, 1931.75, 1945.75, 1960.75, 1970.75, 1997.75, 2006.75, 2020.75, 1920.75, 1820.75, 1835.75, 1735.75, 1635.75, 1647.75, 1659.75, 1674.75, 1692.75, 1702.75, 1738.75, 1793.75, 1849.75, 1903.75, 1803.75, 1703.75, 1754.75, 1802.75, 1822.75, 1880.75, 1948.75, 1848.75, 1923.75, 2002.75, 2007.52, 2055.52, 2077.52, 2119.52, 2119.52, 2187.52, 2227.52, 2308.52, 2322.52, 2344.52, 2358.52, 2369.52, 2383.52, 2411.52, 2436.52, 2512.52, 2526.52, 2553.52, 2453.52, 2473.52, 2481.52, 2539.52, 2439.52, 2469.52, 2494.52, 2559.52, 2459.52, 2473.52, 2487.52, 2501.52, 2515.52, 2529.52, 2543.52, 2591.52, 2603.52, 2553.52, 2583.52, 2601.52, 2626.52, 2648.52, 2686.52, 2701.52, 2717.52, 2739.52, 2767.52, 2792.52, 2816.52, 2864.52];
+                var rawPoints = [1000.0, 1012.0, 1039.5, 1070.5, 1088.5, 1228.5, 1238.5, 1291.0, 1312.0, 1335.85, 1348.35, 1360.35, 1415.35, 1449.35, 1475.35, 1440.35, 1448.35, 1408.35, 1430.35, 1442.35, 1458.1, 1470.1, 1420.1, 1442.6, 1470.6, 1488.6, 1503.6, 1541.1, 1573.5, 1591.0, 1627.0, 1665.25, 1625.25, 1677.75, 1697.75, 1730.75, 1840.75, 1868.75, 1887.75, 1897.75, 1797.75, 1805.75, 1817.75, 1829.75, 1839.75, 1848.75, 1860.75, 1874.75, 1883.75, 1892.75, 1906.75, 1915.75, 1924.75, 1933.75, 1942.75, 1951.75, 1960.75, 1974.75, 1989.75, 2004.75, 2018.75, 2033.75, 2047.75, 2061.75, 2076.75, 2090.75, 2105.75, 2119.75, 2133.75, 2148.75, 2163.75, 2177.75, 2192.75, 2207.75, 2221.75, 2235.75, 2250.75, 2264.75, 2279.75, 2179.75, 2193.75, 2207.75, 2107.75, 2121.75, 2135.75, 2149.75, 2163.75, 2177.75, 2191.75, 2205.75, 2219.75, 2233.75, 2133.75, 2147.75, 2161.75, 2175.75, 2075.75, 1975.75, 1989.75, 2003.75, 1903.75, 1917.75, 1931.75, 1945.75, 1960.75, 1970.75, 1997.75, 2006.75, 2020.75, 1920.75, 1820.75, 1835.75, 1735.75, 1635.75, 1647.75, 1659.75, 1674.75, 1692.75, 1702.75, 1738.75, 1793.75, 1849.75, 1903.75, 1803.75, 1703.75, 1754.75, 1802.75, 1822.75, 1880.75, 1948.75, 1848.75, 1923.75, 2002.75, 2007.52, 2055.52, 2077.52, 2119.52, 2119.52, 2187.52, 2227.52, 2308.52, 2322.52, 2344.52, 2358.52, 2369.52, 2383.52, 2411.52, 2436.52, 2512.52, 2526.52, 2553.52, 2453.52, 2473.52, 2481.52, 2539.52, 2439.52, 2469.52, 2494.52, 2559.52, 2459.52, 2473.52, 2487.52, 2501.52, 2515.52, 2529.52, 2543.52, 2591.52, 2603.52, 2553.52, 2583.52, 2601.52, 2626.52, 2648.52, 2686.52, 2701.52, 2717.52, 2739.52, 2767.52, 2792.52, 2816.52, 2864.52, 2889.52, 2917.52, 2965.52, 3020.52, 2920.52, 2820.52];
                 var labels = rawPoints.map(function(_, idx) { return idx === 0 ? 'Inicio' : 'Pick #' + idx; });
 
                 equityChartInstance = new Chart(equityCtx, {
@@ -10143,7 +10323,7 @@
                         labels: ["La Fija", "Goles", "Props", "1X2", "Córners"],
                         datasets: [{
                             label: 'Win Rate (%)',
-                            data: [87.9, 100.0, 90.0, 75.0, 75.0],
+                            data: [87.0, 100.0, 90.0, 75.0, 75.0],
                             backgroundColor: ['#fbbf24', '#3b82f6', '#8b5cf6', '#06b6d4', '#10b981'],
                             borderRadius: 8,
                             borderWidth: 0
