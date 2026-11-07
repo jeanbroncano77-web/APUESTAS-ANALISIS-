@@ -1,19 +1,22 @@
-import os
-import sys
+import re
 
-if hasattr(sys.stdout, "reconfigure"):
-    sys.stdout.reconfigure(encoding="utf-8")
+with open('index.html', 'r', encoding='utf-8') as f:
+    html = f.read()
 
-base_dir = r"c:\Users\jeanb\Documents\Antigravity Proyectos\Analisis deportivo"
-index_path = os.path.join(base_dir, "index.html")
+# Let's find "KPI Cards Grid"
+idx = html.find('KPI Cards Grid')
+if idx != -1:
+    print("=== KPI CARDS GRID ===")
+    print(html[idx:idx+2500])
 
-with open(index_path, "r", encoding="utf-8", errors="ignore") as f:
-    text = f.read()
-
-wr_start = text.find('id="view-container-winrate"')
-kpi_start = text.find('class="kpi-grid"', wr_start)
-if kpi_start == -1:
-    kpi_start = text.find('KPI Cards Grid', wr_start)
-
-if kpi_start != -1:
-    print(text[kpi_start:kpi_start+2000])
+# Let's find top nav / hero header
+idx_hero = html.find('<header')
+if idx_hero != -1:
+    print("\n=== HEADER ===")
+    print(html[idx_hero:idx_hero+1500])
+else:
+    # Look around first 2000 chars of body
+    body_idx = html.find('<body')
+    if body_idx != -1:
+        print("\n=== BODY START ===")
+        print(html[body_idx:body_idx+1500])

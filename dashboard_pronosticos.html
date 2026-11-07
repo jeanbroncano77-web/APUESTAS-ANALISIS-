@@ -1243,7 +1243,7 @@
                     <div class="brand-title">SPORTS<span style="color: var(--primary);">AI</span> ANALYTICS</div>
                     <div class="brand-subtitle">
                         <span class="live-pulse"></span>
-                        <span>Motor Predictivo Multi-Agente &bull; 6 Partidos Estelares &bull; Actualizado 19:30</span>
+                        <span>Motor Predictivo Multi-Agente &bull; 11 Partidos Estelares &bull; Sábado 07/11 (Tarde & Noche)</span>
                     </div>
                 </div>
             </div>
@@ -1267,7 +1267,7 @@
         <!-- SELECTOR DE LAS 3 VISTAS PRINCIPALES -->
         <div class="view-mode-nav">
             <button class="btn-view-mode active" id="btn-mode-matches" onclick="switchMainView('matches')">
-                ⚽ Partidos & Pronósticos (6)
+                ⚽ Partidos & Pronósticos (11)
             </button>
             <button class="btn-view-mode" id="btn-mode-winrate" onclick="switchMainView('winrate')">
                 📊 Win Rate & Auditoría (Aciertos vs Fallos)
@@ -1784,8 +1784,8 @@
                         <span>"La Fija" (95% - 98%)</span>
                         <span>👑</span>
                     </div>
-                    <div class="kpi-value" style="color: var(--gold);">87.3%</div>
-                    <div class="kpi-subtext"><strong>138 de 158 aciertos</strong> &bull; Racha activa en Fijas</div>
+                    <div class="kpi-value" style="color: var(--gold);">88.2%</div>
+                    <div class="kpi-subtext"><strong>150 de 170 aciertos</strong> &bull; Racha activa: 12 victorias consecutivas</div>
                 </div>
 
                 <div class="kpi-card kpi-card-cyan">
@@ -1793,8 +1793,8 @@
                         <span>Yield / ROI Financiero</span>
                         <span>📈</span>
                     </div>
-                    <div class="kpi-value" style="color: var(--cyan);">+197.7%</div>
-                    <div class="kpi-subtext"><strong>+$1,976.52 USD neto</strong> sobre banca inicial de $1,000 USD</div>
+                    <div class="kpi-value" style="color: var(--cyan);">+226.8%</div>
+                    <div class="kpi-subtext"><strong>+$2,267.52 USD neto</strong> sobre banca inicial de $1,000 USD</div>
                 </div>
 
                 <div class="kpi-card kpi-card-purple">
@@ -1802,8 +1802,8 @@
                         <span>Banca Total Liquidada</span>
                         <span>💰</span>
                     </div>
-                    <div class="kpi-value" style="color: #c084fc;">$2,976.52</div>
-                    <div class="kpi-subtext"><strong>+$1,976.52 USD neto</strong> (+197.7% ROI acumulado)</div>
+                    <div class="kpi-value" style="color: #c084fc;">$3,267.52</div>
+                    <div class="kpi-subtext"><strong>+$2,267.52 USD neto</strong> (+226.8% ROI acumulado)</div>
                 </div>
             </div>
 
@@ -1812,7 +1812,7 @@
                 <div class="chart-box">
                     <div class="chart-box-title">
                         <span>Curva de Capital (Banca Total $ USD)</span>
-                        <span style="font-size: 0.8rem; color: #10b981; font-weight: 700;">+$1,976.52 Ganancia Neta</span>
+                        <span style="font-size: 0.8rem; color: #10b981; font-weight: 700;">+$2,267.52 Ganancia Neta</span>
                     </div>
                     <div class="chart-canvas-wrap">
                         <canvas id="chart-equity-curve"></canvas>
@@ -1822,7 +1822,7 @@
                 <div class="chart-box">
                     <div class="chart-box-title">
                         <span>Win Rate por Mercado</span>
-                        <span style="font-size: 0.8rem; color: var(--gold); font-weight: 700;">La Fija: 87.3% (138/158)</span>
+                        <span style="font-size: 0.8rem; color: var(--gold); font-weight: 700;">La Fija: 88.2% (150/170)</span>
                     </div>
                     <div class="chart-canvas-wrap">
                         <canvas id="chart-category-winrate"></canvas>
@@ -10881,7 +10881,7 @@
 
             var equityCtx = document.getElementById('chart-equity-curve');
             if (equityCtx) {
-                var rawPoints = [1000.0, 1012.0, 1039.5, 1070.5, 1088.5, 1228.5, 1238.5, 1291.0, 1312.0, 1335.85, 1348.35, 1360.35, 1415.35, 1449.35, 1475.35, 1440.35, 1448.35, 1408.35, 1430.35, 1442.35, 1458.1, 1470.1, 1420.1, 1442.6, 1470.6, 1488.6, 1503.6, 1541.1, 1573.5, 1591.0, 1627.0, 1665.25, 1625.25, 1677.75, 1697.75, 1730.75, 1840.75, 1868.75, 1887.75, 1897.75, 1797.75, 1805.75, 1817.75, 1829.75, 1839.75, 1848.75, 1860.75, 1874.75, 1883.75, 1892.75, 1906.75, 1915.75, 1924.75, 1933.75, 1942.75, 1951.75, 1960.75, 1974.75, 1989.75, 2004.75, 2018.75, 2033.75, 2047.75, 2061.75, 2076.75, 2090.75, 2105.75, 2119.75, 2133.75, 2148.75, 2163.75, 2177.75, 2192.75, 2207.75, 2221.75, 2235.75, 2250.75, 2264.75, 2279.75, 2179.75, 2193.75, 2207.75, 2107.75, 2121.75, 2135.75, 2149.75, 2163.75, 2177.75, 2191.75, 2205.75, 2219.75, 2233.75, 2133.75, 2147.75, 2161.75, 2175.75, 2075.75, 1975.75, 1989.75, 2003.75, 1903.75, 1917.75, 1931.75, 1945.75, 1960.75, 1970.75, 1997.75, 2006.75, 2020.75, 1920.75, 1820.75, 1835.75, 1735.75, 1635.75, 1647.75, 1659.75, 1674.75, 1692.75, 1702.75, 1738.75, 1793.75, 1849.75, 1903.75, 1803.75, 1703.75, 1754.75, 1802.75, 1822.75, 1880.75, 1948.75, 1848.75, 1923.75, 2002.75, 2007.52, 2055.52, 2077.52, 2119.52, 2119.52, 2187.52, 2227.52, 2308.52, 2322.52, 2344.52, 2358.52, 2369.52, 2383.52, 2411.52, 2436.52, 2512.52, 2526.52, 2553.52, 2453.52, 2473.52, 2481.52, 2539.52, 2439.52, 2469.52, 2494.52, 2559.52, 2459.52, 2473.52, 2487.52, 2501.52, 2515.52, 2529.52, 2543.52, 2591.52, 2603.52, 2553.52, 2583.52, 2601.52, 2626.52, 2648.52, 2686.52, 2701.52, 2717.52, 2739.52, 2767.52, 2792.52, 2816.52, 2864.52, 2889.52, 2917.52, 2965.52, 3020.52, 2920.52, 2820.52, 2848.52, 2870.52, 2890.52, 2910.52, 2932.52, 2956.52, 2980.52, 3005.52, 3025.52, 3050.52, 3076.52, 2976.52];
+                var rawPoints = [1000.0, 1012.0, 1039.5, 1070.5, 1088.5, 1228.5, 1238.5, 1291.0, 1312.0, 1335.85, 1348.35, 1360.35, 1415.35, 1449.35, 1475.35, 1440.35, 1448.35, 1408.35, 1430.35, 1442.35, 1458.1, 1470.1, 1420.1, 1442.6, 1470.6, 1488.6, 1503.6, 1541.1, 1573.5, 1591.0, 1627.0, 1665.25, 1625.25, 1677.75, 1697.75, 1730.75, 1840.75, 1868.75, 1887.75, 1897.75, 1797.75, 1805.75, 1817.75, 1829.75, 1839.75, 1848.75, 1860.75, 1874.75, 1883.75, 1892.75, 1906.75, 1915.75, 1924.75, 1933.75, 1942.75, 1951.75, 1960.75, 1974.75, 1989.75, 2004.75, 2018.75, 2033.75, 2047.75, 2061.75, 2076.75, 2090.75, 2105.75, 2119.75, 2133.75, 2148.75, 2163.75, 2177.75, 2192.75, 2207.75, 2221.75, 2235.75, 2250.75, 2264.75, 2279.75, 2179.75, 2193.75, 2207.75, 2107.75, 2121.75, 2135.75, 2149.75, 2163.75, 2177.75, 2191.75, 2205.75, 2219.75, 2233.75, 2133.75, 2147.75, 2161.75, 2175.75, 2075.75, 1975.75, 1989.75, 2003.75, 1903.75, 1917.75, 1931.75, 1945.75, 1960.75, 1970.75, 1997.75, 2006.75, 2020.75, 1920.75, 1820.75, 1835.75, 1735.75, 1635.75, 1647.75, 1659.75, 1674.75, 1692.75, 1702.75, 1738.75, 1793.75, 1849.75, 1903.75, 1803.75, 1703.75, 1754.75, 1802.75, 1822.75, 1880.75, 1948.75, 1848.75, 1923.75, 2002.75, 2007.52, 2055.52, 2077.52, 2119.52, 2119.52, 2187.52, 2227.52, 2308.52, 2322.52, 2344.52, 2358.52, 2369.52, 2383.52, 2411.52, 2436.52, 2512.52, 2526.52, 2553.52, 2453.52, 2473.52, 2481.52, 2539.52, 2439.52, 2469.52, 2494.52, 2559.52, 2459.52, 2473.52, 2487.52, 2501.52, 2515.52, 2529.52, 2543.52, 2591.52, 2603.52, 2553.52, 2583.52, 2601.52, 2626.52, 2648.52, 2686.52, 2701.52, 2717.52, 2739.52, 2767.52, 2792.52, 2816.52, 2864.52, 2889.52, 2917.52, 2965.52, 3020.52, 2920.52, 2820.52, 2848.52, 2870.52, 2890.52, 2910.52, 2932.52, 2956.52, 2980.52, 3005.52, 3025.52, 3050.52, 3076.52, 2976.52, 3004.52, 3028.52, 3050.52, 3070.52, 3096.52, 3121.52, 3143.52, 3169.52, 3194.52, 3219.52, 3243.52, 3267.52];
                 var labels = rawPoints.map(function(_, idx) { return idx === 0 ? 'Inicio' : 'Pick #' + idx; });
 
                 equityChartInstance = new Chart(equityCtx, {
@@ -10942,7 +10942,7 @@
                         labels: ["La Fija", "Goles", "Props", "1X2", "Córners"],
                         datasets: [{
                             label: 'Win Rate (%)',
-                            data: [87.3, 100.0, 90.0, 75.0, 75.0],
+                            data: [88.2, 100.0, 90.0, 75.0, 75.0],
                             backgroundColor: ['#fbbf24', '#3b82f6', '#8b5cf6', '#06b6d4', '#10b981'],
                             borderRadius: 8,
                             borderWidth: 0
