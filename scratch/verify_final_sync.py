@@ -19,3 +19,4 @@ checks = [
 
 for label, passed in checks:
     print(f"[{'PASS' if passed else 'FAIL'}] {label}")
+

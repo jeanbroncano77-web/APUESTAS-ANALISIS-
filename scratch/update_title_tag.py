@@ -12,3 +12,4 @@ for path in ['index.html', 'dashboard_pronosticos.html', '../index.html']:
         print(f"Updated title in {path}")
     except Exception as e:
         print(f"Error {path}: {e}")
+

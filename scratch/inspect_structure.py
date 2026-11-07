@@ -22,3 +22,4 @@ print("\nHeadings found:", len(headings))
 for h in headings[:15]:
     clean_h = re.sub(r'<[^>]+>', ' ', h).strip()
     print("  H:", clean_h[:80])
+

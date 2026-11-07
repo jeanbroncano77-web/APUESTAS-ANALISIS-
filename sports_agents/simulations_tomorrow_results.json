@@ -1,18 +1,18 @@
 {
-  "GeneratedAt": "2026-11-07 11:45:00",
-  "TargetDay": "Sábado",
+  "GeneratedAt": "07/11/2026 12:00",
+  "TargetDay": "Sábado (Tarde & Noche)",
   "TargetDate": "07/11/2026",
-  "TemporalLabel": "HOY (TARDE & NOCHE)",
-  "ActiveBankroll": 24.9,
-  "Status": "CAPITAL BLINDADO E INTACTO - CORTE 12:00 PM",
+  "TemporalLabel": "Sábado 07/11 Tarde y Noche (6 Partidos Estelares)",
+  "ActiveBankroll": 3267.52,
+  "Status": "active",
   "Matches": [
     {
-      "match": "Valencia vs Real Madrid",
+      "match": "Valencia vs. Real Madrid",
       "home_team": "Valencia",
       "away_team": "Real Madrid",
-      "tournament": "LaLiga EA Sports 2026/27 - Jornada 12",
-      "time_ec": "15:00",
-      "stadium": "Estadio de Mestalla (Valencia, España)",
+      "tournament": "LaLiga EA Sports • Jornada 12 (Estelar)",
+      "time_ec": "15:00 (ECU)",
+      "stadium": "Estadio de Mestalla (Valencia)",
       "score_prediction": {
         "most_probable_score": "1 - 2",
         "home_goals": 0.85,
@@ -22,19 +22,17 @@
         "selection": "Real Madrid o Empate (Doble Oportunidad X2)",
         "odds": 1.24,
         "probability": 87.0,
-        "confidence": "MÁXIMA (La Fija de Oro de LaLiga)",
-        "recommended_stake_usd": 4.9,
-        "potential_return_usd": 6.08,
-        "argument": "Mestalla siempre genera tensión, pero el Real Madrid llega en plenitud tras golear 0-3 en Champions. Con Mbappé, Vinícius y Bellingham, la doble oportunidad X2 blinda ante cualquier empate en Valencia."
+        "confidence": "👑 LA FIJA DE ORO DE LALIGA 87.0%",
+        "argument": "Mestalla siempre genera un ambiente de alta fricción y hostilidad ante el Real Madrid. Sin embargo, la jerarquía en contragolpe con Vinícius, Mbappé y Bellingham es letal. La doble oportunidad X2 blinda completamente ante un empate 1-1 y garantiza el cobro."
       }
     },
     {
-      "match": "PSG vs Troyes",
-      "home_team": "PSG",
+      "match": "Paris Saint-Germain vs. Troyes",
+      "home_team": "Paris Saint-Germain",
       "away_team": "Troyes",
-      "tournament": "Ligue 1 McDonald's 2026/27",
-      "time_ec": "15:05",
-      "stadium": "Parc des Princes (París, Francia)",
+      "tournament": "Ligue 1 • Jornada de Fin de Semana (París)",
+      "time_ec": "15:05 (ECU)",
+      "stadium": "Parc des Princes (París)",
       "score_prediction": {
         "most_probable_score": "3 - 0",
         "home_goals": 3.1,
@@ -44,208 +42,88 @@
         "selection": "PSG Gana el Partido (1)",
         "odds": 1.2,
         "probability": 90.0,
-        "confidence": "MÁXIMA (La Fija de Oro Europea)",
-        "recommended_stake_usd": 4.9,
-        "potential_return_usd": 5.88,
-        "argument": "Luis Enrique en el Parque de los Príncipes con Dembélé y Barcola. La diferencia de nómina frente a Troyes es abrumadora. Victoria local indiscutible."
+        "confidence": "👑 LA FIJA DE ORO MUNDIAL 90.0%",
+        "argument": "El Parque de los Príncipes es un feudo inexpugnable. El equipo de Luis Enrique supera ampliamente en ritmo, posesión (>68%) y contundencia técnica al Troyes. Con Barcola, Dembélé y Vitinha en plenitud, el triunfo directo del PSG es el pilar de mayor certeza matemática de toda la jornada europea."
       }
     },
     {
-      "match": "Libertad FC vs Emelec",
+      "match": "Libertad FC vs. Emelec",
       "home_team": "Libertad FC",
       "away_team": "Emelec",
-      "tournament": "LigaPro Ecuador 2026 - Fase 2",
-      "time_ec": "14:00",
-      "stadium": "Estadio Reina del Cisne (Loja, Ecuador - 2,100 msnm)",
+      "tournament": "LigaPro Ecuabet • Fase 2 (Loja)",
+      "time_ec": "14:00 (ECU)",
+      "stadium": "Estadio Reina del Cisne (Loja, 2,100 msnm)",
       "score_prediction": {
         "most_probable_score": "1 - 1",
-        "home_goals": 1.15,
-        "away_goals": 0.95
+        "home_goals": 1.35,
+        "away_goals": 1.1
       },
       "la_fija_real": {
         "selection": "Libertad FC o Empate (Doble Oportunidad 1X)",
         "odds": 1.3,
         "probability": 84.5,
-        "confidence": "ALTA (Factor Loja & Crisis Eléctrica)",
-        "recommended_stake_usd": 4.0,
-        "potential_return_usd": 5.2,
-        "argument": "Libertad en Loja se juega la permanencia y presiona en la altura. Emelec llega con ausencias sensibles, desgaste y serios problemas de generación ofensiva fuera de Guayaquil."
+        "confidence": "👑 LA FIJA NACIONAL DE LIGAPRO 84.5%",
+        "argument": "En el Estadio Reina del Cisne a 2,100 metros de altitud, Libertad FC se juega la vida por la permanencia con intensidad física máxima. Emelec sufre en la generación ofensiva fuera de Guayaquil y sus transiciones en la sierra son lentas. La doble oportunidad 1X cubre el triunfo lojano y el empate."
       }
     },
     {
-      "match": "FBC Melgar vs Juan Pablo II",
+      "match": "FBC Melgar vs. Juan Pablo II",
       "home_team": "FBC Melgar",
       "away_team": "Juan Pablo II",
-      "tournament": "Liga 1 Te Apuesto (Perú) 2026 - Clausura",
-      "time_ec": "18:00",
-      "stadium": "Estadio Monumental de la UNSA (Arequipa - 2,335 msnm)",
+      "tournament": "Liga 1 Te Apuesto • Clausura (Arequipa)",
+      "time_ec": "18:00 (ECU)",
+      "stadium": "Estadio Monumental de la UNSA (Arequipa, 2,335 msnm)",
       "score_prediction": {
         "most_probable_score": "3 - 0",
-        "home_goals": 2.85,
+        "home_goals": 2.6,
         "away_goals": 0.4
       },
       "la_fija_real": {
         "selection": "FBC Melgar Gana el Partido (1)",
         "odds": 1.22,
         "probability": 89.0,
-        "confidence": "MÁXIMA (Fortaleza de Arequipa)",
-        "recommended_stake_usd": 4.9,
-        "potential_return_usd": 5.98,
-        "argument": "Bernardo Cuesta y Bordacahar en el volcán de la UNSA son letales ante Juan Pablo II, club recién ascendido de la costa norte peruana que no tiene ritmo en la altura."
+        "confidence": "👑 LA FIJA DE LA UNSA 89.0%",
+        "argument": "El 'Dominó' es una máquina casi perfecta en el Monumental de la UNSA. Juan Pablo II es un equipo recién ascendido del llano que sufre asfixia en el segundo tiempo en los 2,335 metros de Arequipa. Con Bernardo Cuesta y Bordacahar, Melgar resolverá el partido con autoridad."
       }
     },
     {
-      "match": "Nottingham Forest vs Manchester City",
+      "match": "Nottingham Forest vs. Manchester City",
       "home_team": "Nottingham Forest",
       "away_team": "Manchester City",
-      "tournament": "Premier League 2026/27",
-      "time_ec": "12:30",
-      "stadium": "The City Ground (Nottingham, Inglaterra)",
+      "tournament": "Premier League • Matchday 11 (Inglaterra)",
+      "time_ec": "12:30 (ECU)",
+      "stadium": "The City Ground (Nottingham)",
       "score_prediction": {
         "most_probable_score": "1 - 2",
-        "home_goals": 1.0,
-        "away_goals": 2.25
+        "home_goals": 0.95,
+        "away_goals": 2.2
       },
       "la_fija_real": {
-        "selection": "Manchester City o Empate (Doble Oportunidad X2)",
-        "odds": 1.22,
+        "selection": "Man City o Empate (X2) + Más de 1.5 goles",
+        "odds": 1.33,
         "probability": 86.5,
-        "confidence": "ALTA",
-        "recommended_stake_usd": 4.0,
-        "potential_return_usd": 4.88,
-        "argument": "Haaland y De Bruyne comandan la visita a The City Ground. Aunque Forest es combativo de local, el City con posesión dominante cubre con holgura el X2."
+        "confidence": "👑 LA FIJA DE PREMIER LEAGUE 86.5%",
+        "argument": "El City de Pep Guardiola necesita sumar de a tres para mantenerse en la cima de la Premier. Aunque The City Ground es una plaza combativa, la jerarquía de Haaland, Phil Foden y Kevin De Bruyne garantiza gol. La combinación X2 + Más de 1.5 goles cubre cualquier victoria 'citizen' o empate con goles."
       }
     },
     {
-      "match": "VfB Stuttgart vs Werder Bremen",
-      "home_team": "VfB Stuttgart",
-      "away_team": "Werder Bremen",
-      "tournament": "Bundesliga 2026/27",
-      "time_ec": "12:30",
-      "stadium": "MHPArena (Stuttgart, Alemania)",
-      "score_prediction": {
-        "most_probable_score": "2 - 1",
-        "home_goals": 2.3,
-        "away_goals": 1.05
-      },
-      "la_fija_real": {
-        "selection": "VfB Stuttgart o Empate (1X) + Más de 1.5 Goles",
-        "odds": 1.25,
-        "probability": 86.0,
-        "confidence": "ALTA",
-        "recommended_stake_usd": 4.0,
-        "potential_return_usd": 5.0,
-        "argument": "El Stuttgart de Sebastian Hoeneß en la MHPArena despliega un volumen de ataque temible con Undav y Demirović. Werder Bremen concede mucho fuera de casa."
-      }
-    },
-    {
-      "match": "Osasuna vs Athletic Club",
-      "home_team": "Osasuna",
-      "away_team": "Athletic Club",
-      "tournament": "LaLiga EA Sports 2026/27 - Jornada 12",
-      "time_ec": "12:30",
-      "stadium": "El Sadar (Pamplona, España)",
-      "score_prediction": {
-        "most_probable_score": "1 - 1",
-        "home_goals": 1.05,
-        "away_goals": 1.2
-      },
-      "la_fija_real": {
-        "selection": "Athletic Club o Empate (Doble Oportunidad X2)",
-        "odds": 1.26,
-        "probability": 83.5,
-        "confidence": "ALTA",
-        "recommended_stake_usd": 3.5,
-        "potential_return_usd": 4.41,
-        "argument": "Clásico del norte de alta fricción. Los hermanos Williams y Sancet generan peligro constante de contra; la doble chance X2 neutraliza la paridad en Pamplona."
-      }
-    },
-    {
-      "match": "Cienciano vs Sport Huancayo",
+      "match": "Cienciano vs. Sport Huancayo",
       "home_team": "Cienciano",
       "away_team": "Sport Huancayo",
-      "tournament": "Liga 1 Te Apuesto (Perú) 2026 - Clausura",
-      "time_ec": "20:30",
-      "stadium": "Estadio Inca Garcilaso de la Vega (Cusco - 3,400 msnm)",
+      "tournament": "Liga 1 Te Apuesto • Clausura (Cusco)",
+      "time_ec": "20:30 (ECU)",
+      "stadium": "Estadio Inca Garcilaso de la Vega (Cusco, 3,400 msnm)",
       "score_prediction": {
-        "most_probable_score": "2 - 1",
+        "most_probable_score": "2 - 0",
         "home_goals": 1.85,
-        "away_goals": 0.95
-      },
-      "la_fija_real": {
-        "selection": "Cienciano o Empate (Doble Oportunidad 1X)",
-        "odds": 1.24,
-        "probability": 84.0,
-        "confidence": "ALTA (Cusco a 3,400m)",
-        "recommended_stake_usd": 3.5,
-        "potential_return_usd": 4.34,
-        "argument": "El 'Papá' Cienciano con Christian Cueva en el Cusco se hace muy fuerte en la altura extrema. Huancayo pelea pero en el Garcilaso la iniciativa es imperial."
-      }
-    },
-    {
-      "match": "ADT vs Sporting Cristal",
-      "home_team": "ADT",
-      "away_team": "Sporting Cristal",
-      "tournament": "Liga 1 Te Apuesto (Perú) 2026 - Clausura",
-      "time_ec": "13:00",
-      "stadium": "Estadio Unión Tarma (Tarma - 3,050 msnm)",
-      "score_prediction": {
-        "most_probable_score": "1 - 1",
-        "home_goals": 1.2,
-        "away_goals": 1.15
-      },
-      "la_fija_real": {
-        "selection": "ADT o Empate (Doble Oportunidad 1X)",
-        "odds": 1.28,
-        "probability": 83.0,
-        "confidence": "ALTA",
-        "recommended_stake_usd": 3.5,
-        "potential_return_usd": 4.48,
-        "argument": "La temida 'Perla de los Andes' a más de 3,000 metros de altura siempre frena a los equipos limeños. Cristal sufrirá el desgaste físico ante un ADT muy ordenado."
-      }
-    },
-    {
-      "match": "Auxerre vs Paris FC",
-      "home_team": "Auxerre",
-      "away_team": "Paris FC",
-      "tournament": "Ligue 1 McDonald's 2026/27",
-      "time_ec": "13:00",
-      "stadium": "Stade de l'Abbé-Deschamps (Auxerre, Francia)",
-      "score_prediction": {
-        "most_probable_score": "1 - 0",
-        "home_goals": 1.35,
         "away_goals": 0.7
       },
       "la_fija_real": {
-        "selection": "Auxerre o Empate (Doble Oportunidad 1X)",
-        "odds": 1.26,
-        "probability": 82.5,
-        "confidence": "ALTA",
-        "recommended_stake_usd": 3.5,
-        "potential_return_usd": 4.41,
-        "argument": "Auxerre en el Abbé-Deschamps concede muy pocas libertades. Paris FC intenta asociarse pero en salidas complejas su producción ofensiva decae."
-      }
-    },
-    {
-      "match": "FC Cajamarca vs Alianza Atlético",
-      "home_team": "FC Cajamarca",
-      "away_team": "Alianza Atlético",
-      "tournament": "Liga 1 Te Apuesto (Perú) 2026 - Clausura",
-      "time_ec": "15:30",
-      "stadium": "Estadio Héroes de San Ramón (Cajamarca - 2,750 msnm)",
-      "score_prediction": {
-        "most_probable_score": "1 - 0",
-        "home_goals": 1.4,
-        "away_goals": 0.65
-      },
-      "la_fija_real": {
-        "selection": "FC Cajamarca o Empate (Doble Oportunidad 1X)",
-        "odds": 1.25,
+        "selection": "Cienciano o Empate (1X) + Menos de 3.5 goles",
+        "odds": 1.32,
         "probability": 83.0,
-        "confidence": "ALTA",
-        "recommended_stake_usd": 3.5,
-        "potential_return_usd": 4.38,
-        "argument": "Césped sintético y 2,750m de altitud en Cajamarca. Alianza Atlético viene de la calurosa Sullana y en la sierra norte siempre acusa la falta de oxígeno."
+        "confidence": "👑 LA FIJA IMPERIAL DEL CUSCO 83.0%",
+        "argument": "A 3,400 metros sobre el nivel del mar en el Garcilaso de la Vega, Cienciano maneja el ritmo con posesión paciente y una zaga férrea. Aunque Sport Huancayo está habituado a la altura, su rendimiento nocturno de visita baja considerablemente. La combinación 1X + Menos de 3.5 goles es casi impenetrable."
       }
     }
   ]

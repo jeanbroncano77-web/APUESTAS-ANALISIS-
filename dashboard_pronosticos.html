@@ -6,7 +6,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>SportsAI Analytics &middot; 11 Partidos Estelares &bull; Sábado 07/11 &bull; Win Rate & Autoaprendizaje</title>
+    <title>SportsAI Analytics &middot; 6 Partidos Estelares &bull; Sábado 07/11 &bull; Win Rate & Autoaprendizaje</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1243,7 +1243,7 @@
                     <div class="brand-title">SPORTS<span style="color: var(--primary);">AI</span> ANALYTICS</div>
                     <div class="brand-subtitle">
                         <span class="live-pulse"></span>
-                        <span>Motor Predictivo Multi-Agente &bull; 11 Partidos Estelares &bull; Sábado 07/11 (Tarde & Noche)</span>
+                        <span>Motor Predictivo Multi-Agente &bull; 6 Partidos Estelares &bull; Sábado 07/11 (Tarde & Noche)</span>
                     </div>
                 </div>
             </div>
@@ -1267,7 +1267,7 @@
         <!-- SELECTOR DE LAS 3 VISTAS PRINCIPALES -->
         <div class="view-mode-nav">
             <button class="btn-view-mode active" id="btn-mode-matches" onclick="switchMainView('matches')">
-                ⚽ Partidos & Pronósticos (11)
+                ⚽ Partidos & Pronósticos (6)
             </button>
             <button class="btn-view-mode" id="btn-mode-winrate" onclick="switchMainView('winrate')">
                 📊 Win Rate & Auditoría (Aciertos vs Fallos)
@@ -1287,469 +1287,1590 @@
                 <!-- VISTA 1: PARTIDOS & PRONÓSTICOS OFICIALES (MIÉRCOLES 4 DE NOVIEMBRE DE 2026) -->
                 <!-- VISTA 1: PARTIDOS & PRONÓSTICOS OFICIALES (JUEVES 5 DE NOVIEMBRE DE 2026) -->
                 <!-- VISTA 1: PARTIDOS & PRONÓSTICOS OFICIALES (SÁBADO 7 DE NOVIEMBRE DE 2026 - TARDE & NOCHE) -->
-        <div id="view-container-matches">
-            <!-- BANNER PRINCIPAL DE LA JORNADA: PARTIDOS EN VIVO Y POR JUGAR -->
+                <div id="view-container-matches">
+            <!-- BANNER PRINCIPAL DE LA JORNADA: LOS 6 PARTIDOS ESTELARES -->
             <div style="background: linear-gradient(135deg, rgba(30, 27, 75, 0.95), rgba(15, 23, 42, 0.98)); border: 2px solid rgba(59, 130, 246, 0.6); border-radius: 20px; padding: 1.75rem 2rem; margin-bottom: 2rem; backdrop-filter: blur(16px); box-shadow: 0 16px 36px -8px rgba(59, 130, 246, 0.35);">
-                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.25rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
                     <div>
-                        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem;">
-                            <span style="background: rgba(59, 130, 246, 0.25); color: #93c5fd; border: 1px solid rgba(59, 130, 246, 0.7); padding: 0.25rem 0.85rem; border-radius: 9999px; font-size: 0.78rem; font-weight: 800; text-transform: uppercase;">
-                                📅 CARTELERA OFICIAL &bull; SÁBADO 7 DE NOVIEMBRE DE 2026 (TARDE & NOCHE)
-                            </span>
-                            <span style="background: linear-gradient(135deg, #10b981, #059669); color: #ffffff; padding: 0.25rem 0.85rem; border-radius: 9999px; font-size: 0.78rem; font-weight: 800; box-shadow: 0 0 12px rgba(16, 185, 129, 0.5);">
-                                🔥 RACHA ACTIVA: 12 VICTORIAS CONSECUTIVAS &bull; WIN RATE: 88.1%
-                            </span>
+                        <span style="background: #3b82f6; color: #ffffff; padding: 0.35rem 0.85rem; border-radius: 9999px; font-weight: 800; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.8px;">
+                            JORNADA OFICIAL &bull; SÁBADO 7 DE NOVIEMBRE DE 2026
+                        </span>
+                        <h2 style="font-size: 1.75rem; font-weight: 900; color: #ffffff; margin: 0.6rem 0 0.2rem 0; letter-spacing: -0.5px;">
+                            Los 6 Partidos Estelares &bull; Tarde & Noche (12:30 a 20:30 ECU)
+                        </h2>
+                        <div style="color: #94a3b8; font-size: 0.92rem;">
+                            Haz clic en cada partido para abrir su análisis profundo multi-agente, xG, cuotas Ecuabet, props y La Fija de Oro.
                         </div>
-                        <h1 style="font-size: 1.85rem; font-weight: 900; color: #ffffff; letter-spacing: -0.02em; margin: 0;">
-                            LigaPro (Loja), LaLiga (Mestalla), Ligue 1 & Liga 1 Perú
-                        </h1>
-                        <p style="color: #94a3b8; font-size: 0.92rem; margin-top: 0.35rem; margin-bottom: 0;">
-                            Partidos pendientes por disputarse desde las 12:30 ECU: Libertad FC vs Emelec, Valencia vs Real Madrid, PSG vs Troyes, FBC Melgar y Cienciano.
-                        </p>
                     </div>
-                    <div style="background: rgba(0,0,0,0.55); border: 1px solid rgba(255,255,255,0.15); border-radius: 14px; padding: 1rem 1.5rem; text-align: right;">
-                        <div style="font-size: 0.75rem; color: #94a3b8; text-transform: uppercase; font-weight: 700;">Saldo Activo Ecuabet</div>
-                        <div style="font-size: 1.65rem; font-weight: 900; color: #34d399;">$24.90 USD</div>
-                        <div style="font-size: 0.8rem; font-weight: 700; color: #fbbf24;">100% Protegido con Muro de Seguridad</div>
+                    <div style="background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.4); border-radius: 14px; padding: 0.75rem 1.25rem; text-align: right;">
+                        <div style="font-size: 0.75rem; color: #6ee7b7; font-weight: 700; text-transform: uppercase;">Saldo Personal Ecuabet</div>
+                        <div style="font-size: 1.4rem; font-weight: 900; color: #ffffff;">$24.90 USD <span style="font-size: 0.8rem; color: #10b981;">(INTACTO)</span></div>
+                        <div style="font-size: 0.7rem; color: #94a3b8;">Muralla de $20 protegida &bull; $4.90 de colchón</div>
                     </div>
                 </div>
 
-                <!-- SPOTLIGHT DE LAS TRES ESTRATEGIAS RECOMENDADAS PARA LA TARDE DE HOY -->
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 1rem; margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid rgba(255,255,255,0.08);">
-                    
-                    <!-- ESTRATEGIA 1: EL FRANCOTIRADOR SOLITARIO (LA FIJA DE ORO) -->
-                    <div style="background: rgba(16, 185, 129, 0.12); border: 1px solid rgba(16, 185, 129, 0.4); border-radius: 14px; padding: 1.1rem 1.25rem;">
-                        <div style="font-size: 0.78rem; font-weight: 800; color: #34d399; text-transform: uppercase; display: flex; align-items: center; gap: 0.4rem;">
-                            <span>👑</span> OPCIÓN 1: EL FRANCOTIRADOR (CUOTA 1.22)
-                        </div>
-                        <div style="font-size: 1.05rem; font-weight: 800; color: #ffffff; margin-top: 0.35rem;">
-                            FBC Melgar vs Juan Pablo II: FBC Melgar Gana el Partido (1)
-                        </div>
-                        <div style="font-size: 0.82rem; color: #cbd5e1; margin-top: 0.25rem;">
-                            El volcán de la UNSA (2,335m) ante un rival recién ascendido de la costa. Con <strong>$4.90 USD</strong> cobras <strong>$5.98 USD</strong> (+$1.08 netos) con tus $20.00 blindados.
-                        </div>
+                <!-- Estrategias de Apuesta -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1.25rem;">
+                    <div style="background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 12px; padding: 1rem;">
+                        <div style="font-size: 0.75rem; color: #f59e0b; font-weight: 800; text-transform: uppercase;">Opción 1: El Francotirador Solitario</div>
+                        <div style="font-size: 1rem; font-weight: 800; color: #ffffff; margin: 0.25rem 0;">PSG Gana Directo @ 1.20</div>
+                        <div style="font-size: 0.8rem; color: #94a3b8;">Con $4.90 USD cobras <strong>$5.88 USD</strong> en el Parque de los Príncipes.</div>
                     </div>
-
-                    <!-- ESTRATEGIA 2: LA FIJA DOBLE DE HIERRO -->
-                    <div style="background: rgba(59, 130, 246, 0.12); border: 1px solid rgba(59, 130, 246, 0.4); border-radius: 14px; padding: 1.1rem 1.25rem;">
-                        <div style="font-size: 0.78rem; font-weight: 800; color: #60a5fa; text-transform: uppercase; display: flex; align-items: center; gap: 0.4rem;">
-                            <span>🛡️</span> OPCIÓN 2: FIJA DOBLE DE HIERRO (CUOTA 1.49)
-                        </div>
-                        <div style="font-size: 1.05rem; font-weight: 800; color: #ffffff; margin-top: 0.35rem;">
-                            PSG Gana (1.20) + Real Madrid o Empate (X2 @ 1.24)
-                        </div>
-                        <div style="font-size: 0.82rem; color: #cbd5e1; margin-top: 0.25rem;">
-                            Cuota Total <strong>1.49</strong>. Con <strong>$4.90 USD</strong> cobras <strong>$7.30 USD</strong> (+$2.40 netos, subiendo a <strong>$27.30 USD</strong>). Dos colosos europeos protegidos.
-                        </div>
+                    <div style="background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(16, 185, 129, 0.4); border-radius: 12px; padding: 1rem;">
+                        <div style="font-size: 0.75rem; color: #10b981; font-weight: 800; text-transform: uppercase;">Opción 2: La Fija Doble (Recomendada)</div>
+                        <div style="font-size: 1rem; font-weight: 800; color: #ffffff; margin: 0.25rem 0;">PSG Gana (1) + Real Madrid X2 @ 1.49</div>
+                        <div style="font-size: 0.8rem; color: #94a3b8;">Con $4.90 USD cobras <strong>$7.30 USD</strong> (+$2.40 netos, saldo a $27.30 USD).</div>
                     </div>
-
-                    <!-- ESTRATEGIA 3: LA TRIPLETA QUIRÚRGICA DE SÁBADO -->
-                    <div style="background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.4); border-radius: 14px; padding: 1.1rem 1.25rem;">
-                        <div style="font-size: 0.78rem; font-weight: 800; color: #fbbf24; text-transform: uppercase; display: flex; align-items: center; gap: 0.4rem;">
-                            <span>🚀</span> OPCIÓN 3: TRIPLETA QUIRÚRGICA (CUOTA 1.86)
-                        </div>
-                        <div style="font-size: 1.05rem; font-weight: 800; color: #ffffff; margin-top: 0.35rem;">
-                            PSG (1.20) + Real Madrid X2 (1.24) + Melgar (1.22)
-                        </div>
-                        <div style="font-size: 0.82rem; color: #cbd5e1; margin-top: 0.25rem;">
-                            ¡Casi duplicas tu inversión! Con <strong>$4.90 USD</strong> cobras <strong>$9.11 USD</strong> (+$4.21 netos, llevando tu saldo a <strong>$29.11 USD</strong>) sin tocar tu capital base.
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
-            <!-- SECCIÓN 1: FÚTBOL LOCAL EN ECUADOR (LIGAPRO) -->
-            <div style="margin-bottom: 2rem;">
-                <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1rem;">
-                    <span style="font-size: 1.2rem;">🇪🇨</span>
-                    <h2 style="font-size: 1.3rem; font-weight: 900; color: #ffffff; margin: 0;">LigaPro Ecuador &bull; Fase 2</h2>
+            <!-- Switcher Tabs (0 a 5) -->
+            <div class="switcher-container">
+                <div class="switcher-card active" onclick="setMatch(0)" id="tab-0">
+                    <div class="switcher-header">
+                        <span>Partido 1 &bull; LaLiga EA Sports • Jornada 12 (Estelar)</span>
+                        <span class="badge-fija-pill" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.3), rgba(5, 150, 105, 0.4)); border: 1px solid #10b981; color: #a7f3d0;">👑 LA FIJA DE ORO DE LALIGA 87.0%</span>
+                    </div>
+                    <div class="switcher-teams">
+                        <span>🦇 Valencia</span>
+                        <span class="vs-text">vs</span>
+                        <span>Real Madrid ⚪</span>
+                    </div>
+                    <div class="switcher-meta">
+                        <span>👑 Fija Oficial: <strong style="color: #fbbf24;">Real Madrid o Empate (Doble Oportunidad X2)</strong></span>
+                        <span class="mono-bold" style="color: var(--cyan);">@1.24 (87.0%)</span>
+                    </div>
                 </div>
-
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 1.25rem;">
-                    
-                    <!-- PARTIDO 1: LIBERTAD FC VS EMELEC -->
-                    <div style="background: var(--bg-card); border: 2px solid rgba(245, 158, 11, 0.6); border-radius: 16px; padding: 1.4rem; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 8px 24px -4px rgba(245, 158, 11, 0.2);">
-                        <div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-                                <span style="background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.5); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.72rem; font-weight: 800;">
-                                    🇪🇨 LIGAPRO &bull; REINA DEL CISNE (LOJA)
-                                </span>
-                                <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">⏰ 14:00 (ECU)</span>
-                            </div>
-                            <h3 style="font-size: 1.25rem; font-weight: 900; color: #ffffff; margin: 0 0 0.4rem 0;">
-                                Libertad FC vs. Emelec
-                            </h3>
-                            <div style="font-size: 0.8rem; color: #94a3b8; margin-bottom: 0.85rem;">
-                                📍 Loja (2,100 msnm) &bull; Transmisión: Zapping &bull; xG: 1.15 vs 0.95
-                            </div>
-                            <div style="background: rgba(255,255,255,0.04); border-radius: 10px; padding: 0.85rem; margin-bottom: 1rem; font-size: 0.84rem; color: #cbd5e1; line-height: 1.45;">
-                                Libertad se juega la permanencia y convierte el Reina del Cisne en un reducto muy áspero. Emelec de Leonel Álvarez sufre una crisis de juego y bajas notorias fuera del Capwell. La doble oportunidad 1X ofrece un valor sobresaliente.
-                            </div>
-                        </div>
-                        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 0.85rem; display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Pronóstico Clave</span>
-                                <div style="font-size: 0.95rem; font-weight: 800; color: #fbbf24;">Libertad FC o Empate (1X)</div>
-                                <span style="font-size: 0.7rem; color: #fde68a;">Probabilidad: 84.5% &bull; Score: 1 - 1</span>
-                            </div>
-                            <div style="text-align: right;">
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Cuota Ecuabet</span>
-                                <div style="font-size: 1.35rem; font-weight: 900; color: #fbbf24;">@ 1.30</div>
-                            </div>
-                        </div>
+                <div class="switcher-card" onclick="setMatch(1)" id="tab-1">
+                    <div class="switcher-header">
+                        <span>Partido 2 &bull; Ligue 1 • Jornada de Fin de Semana (París)</span>
+                        <span class="badge-fija-pill" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.3), rgba(217, 119, 6, 0.4)); border: 1px solid #fbbf24; color: #fef08a;">👑 LA FIJA DE ORO MUNDIAL 90.0%</span>
                     </div>
-
+                    <div class="switcher-teams">
+                        <span>🔴🔵 Paris Saint-Germain</span>
+                        <span class="vs-text">vs</span>
+                        <span>Troyes ⚪🔵</span>
+                    </div>
+                    <div class="switcher-meta">
+                        <span>👑 Fija Oficial: <strong style="color: #fbbf24;">PSG Gana el Partido (1)</strong></span>
+                        <span class="mono-bold" style="color: var(--cyan);">@1.2 (90.0%)</span>
+                    </div>
                 </div>
-            </div>
-
-            <!-- SECCIÓN 2: FÚTBOL INTERNACIONAL & LIGAS EUROPEAS (TARDE) -->
-            <div style="margin-bottom: 2rem;">
-                <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1rem;">
-                    <span style="font-size: 1.2rem;">⭐</span>
-                    <h2 style="font-size: 1.3rem; font-weight: 900; color: #ffffff; margin: 0;">Ligas Europeas de Élite (LaLiga, Ligue 1 & Premier)</h2>
+                <div class="switcher-card" onclick="setMatch(2)" id="tab-2">
+                    <div class="switcher-header">
+                        <span>Partido 3 &bull; LigaPro Ecuabet • Fase 2 (Loja)</span>
+                        <span class="badge-fija-pill" style="background: linear-gradient(135deg, rgba(234, 88, 12, 0.3), rgba(194, 65, 12, 0.4)); border: 1px solid #f97316; color: #ffedd5;">👑 LA FIJA NACIONAL DE LIGAPRO 84.5%</span>
+                    </div>
+                    <div class="switcher-teams">
+                        <span>🟠 Libertad FC</span>
+                        <span class="vs-text">vs</span>
+                        <span>Emelec 🔵</span>
+                    </div>
+                    <div class="switcher-meta">
+                        <span>👑 Fija Oficial: <strong style="color: #fbbf24;">Libertad FC o Empate (Doble Oportunidad 1X)</strong></span>
+                        <span class="mono-bold" style="color: var(--cyan);">@1.3 (84.5%)</span>
+                    </div>
                 </div>
-
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 1.25rem;">
-                    
-                    <!-- PARTIDO 2: VALENCIA VS REAL MADRID -->
-                    <div style="background: var(--bg-card); border: 2px solid rgba(16, 185, 129, 0.6); border-radius: 16px; padding: 1.4rem; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 8px 24px -4px rgba(16, 185, 129, 0.2);">
-                        <div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-                                <span style="background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border: 1px solid rgba(16, 185, 129, 0.5); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.72rem; font-weight: 800;">
-                                    👑 LA FIJA DE ORO DE LALIGA
-                                </span>
-                                <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">⏰ 15:00 (ECU)</span>
-                            </div>
-                            <h3 style="font-size: 1.25rem; font-weight: 900; color: #ffffff; margin: 0 0 0.4rem 0;">
-                                Valencia vs. Real Madrid
-                            </h3>
-                            <div style="font-size: 0.8rem; color: #94a3b8; margin-bottom: 0.85rem;">
-                                📍 Estadio de Mestalla (Valencia) &bull; xG: 0.85 vs 2.15
-                            </div>
-                            <div style="background: rgba(255,255,255,0.04); border-radius: 10px; padding: 0.85rem; margin-bottom: 1rem; font-size: 0.84rem; color: #cbd5e1; line-height: 1.45;">
-                                Mestalla siempre aprieta en ambiente caliente, pero la pegada de Mbappé, Vinícius y Bellingham en transición es demoledora. La doble oportunidad X2 protege completamente la inversión en suelo ché.
-                            </div>
-                        </div>
-                        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 0.85rem; display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Pronóstico Clave</span>
-                                <div style="font-size: 0.95rem; font-weight: 800; color: #34d399;">Real Madrid o Empate (X2)</div>
-                                <span style="font-size: 0.7rem; color: #6ee7b7;">Probabilidad: 87.0% &bull; Score: 1 - 2</span>
-                            </div>
-                            <div style="text-align: right;">
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Cuota Ecuabet</span>
-                                <div style="font-size: 1.35rem; font-weight: 900; color: #fbbf24;">@ 1.24</div>
-                            </div>
-                        </div>
+                <div class="switcher-card" onclick="setMatch(3)" id="tab-3">
+                    <div class="switcher-header">
+                        <span>Partido 4 &bull; Liga 1 Te Apuesto • Clausura (Arequipa)</span>
+                        <span class="badge-fija-pill" style="background: linear-gradient(135deg, rgba(220, 38, 38, 0.3), rgba(185, 28, 28, 0.4)); border: 1px solid #ef4444; color: #fee2e2;">👑 LA FIJA DE LA UNSA 89.0%</span>
                     </div>
-
-                    <!-- PARTIDO 3: PSG VS TROYES -->
-                    <div style="background: var(--bg-card); border: 2px solid rgba(59, 130, 246, 0.6); border-radius: 16px; padding: 1.4rem; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-                                <span style="background: rgba(59, 130, 246, 0.2); color: #93c5fd; border: 1px solid rgba(59, 130, 246, 0.5); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.72rem; font-weight: 800;">
-                                    👑 LA FIJA DE ORO FRANCESA
-                                </span>
-                                <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">⏰ 15:05 (ECU)</span>
-                            </div>
-                            <h3 style="font-size: 1.25rem; font-weight: 900; color: #ffffff; margin: 0 0 0.4rem 0;">
-                                Paris Saint-Germain vs. Troyes
-                            </h3>
-                            <div style="font-size: 0.8rem; color: #94a3b8; margin-bottom: 0.85rem;">
-                                📍 Parc des Princes (París) &bull; xG: 3.10 vs 0.35
-                            </div>
-                            <div style="background: rgba(255,255,255,0.04); border-radius: 10px; padding: 0.85rem; margin-bottom: 1rem; font-size: 0.84rem; color: #cbd5e1; line-height: 1.45;">
-                                Luis Enrique en su feudo parisino con Dembélé, Barcola y Vitinha. La distancia técnica ante Troyes es sideral; el PSG resolverá el triunfo sin sobresaltos.
-                            </div>
-                        </div>
-                        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 0.85rem; display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Pronóstico Clave</span>
-                                <div style="font-size: 0.95rem; font-weight: 800; color: #60a5fa;">PSG Gana el Partido (1)</div>
-                                <span style="font-size: 0.7rem; color: #93c5fd;">Probabilidad: 90.0% &bull; Score: 3 - 0</span>
-                            </div>
-                            <div style="text-align: right;">
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Cuota Ecuabet</span>
-                                <div style="font-size: 1.35rem; font-weight: 900; color: #fbbf24;">@ 1.20</div>
-                            </div>
-                        </div>
+                    <div class="switcher-teams">
+                        <span>🔴⚫ FBC Melgar</span>
+                        <span class="vs-text">vs</span>
+                        <span>Juan Pablo II 🟡⚪</span>
                     </div>
-
-                    <!-- PARTIDO 4: NOTTINGHAM FOREST VS MANCHESTER CITY -->
-                    <div style="background: var(--bg-card); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 1.4rem; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-                                <span style="background: rgba(14, 165, 233, 0.2); color: #7dd3fc; border: 1px solid rgba(14, 165, 233, 0.4); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.72rem; font-weight: 800;">
-                                    INGLATERRA &bull; THE CITY GROUND
-                                </span>
-                                <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">⏰ 12:30 (ECU)</span>
-                            </div>
-                            <h3 style="font-size: 1.25rem; font-weight: 900; color: #ffffff; margin: 0 0 0.4rem 0;">
-                                Nottingham Forest vs. Manchester City
-                            </h3>
-                            <div style="font-size: 0.8rem; color: #94a3b8; margin-bottom: 0.85rem;">
-                                📍 Nottingham &bull; Haaland y De Bruyne buscan la cima
-                            </div>
-                            <div style="background: rgba(255,255,255,0.04); border-radius: 10px; padding: 0.85rem; margin-bottom: 1rem; font-size: 0.84rem; color: #cbd5e1; line-height: 1.45;">
-                                El City de Pep Guardiola necesita sumar de a tres en Premier. Aunque el Forest pelea en The City Ground, la jerarquía 'Citizen' cubre la doble oportunidad con alta tranquilidad.
-                            </div>
-                        </div>
-                        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 0.85rem; display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Pronóstico Clave</span>
-                                <div style="font-size: 0.95rem; font-weight: 800; color: #38bdf8;">Man City o Empate (X2)</div>
-                                <span style="font-size: 0.7rem; color: #7dd3fc;">Probabilidad: 86.5% &bull; Score: 1 - 2</span>
-                            </div>
-                            <div style="text-align: right;">
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Cuota Ecuabet</span>
-                                <div style="font-size: 1.35rem; font-weight: 900; color: #fbbf24;">@ 1.22</div>
-                            </div>
-                        </div>
+                    <div class="switcher-meta">
+                        <span>👑 Fija Oficial: <strong style="color: #fbbf24;">FBC Melgar Gana el Partido (1)</strong></span>
+                        <span class="mono-bold" style="color: var(--cyan);">@1.22 (89.0%)</span>
                     </div>
-
-                    <!-- PARTIDO 5: VFB STUTTGART VS WERDER BREMEN -->
-                    <div style="background: var(--bg-card); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 1.4rem; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-                                <span style="background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.4); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.72rem; font-weight: 800;">
-                                    ALEMANIA &bull; MHPARENA
-                                </span>
-                                <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">⏰ 12:30 (ECU)</span>
-                            </div>
-                            <h3 style="font-size: 1.25rem; font-weight: 900; color: #ffffff; margin: 0 0 0.4rem 0;">
-                                VfB Stuttgart vs. Werder Bremen
-                            </h3>
-                            <div style="font-size: 0.8rem; color: #94a3b8; margin-bottom: 0.85rem;">
-                                📍 Stuttgart &bull; Undav y Demirović en ataque
-                            </div>
-                            <div style="background: rgba(255,255,255,0.04); border-radius: 10px; padding: 0.85rem; margin-bottom: 1rem; font-size: 0.84rem; color: #cbd5e1; line-height: 1.45;">
-                                El Stuttgart genera ocasiones constantes en la MHPArena. Werder Bremen concede espacios en transiciones rápidas; la línea 1X + Más de 1.5 es sólida como una roca.
-                            </div>
-                        </div>
-                        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 0.85rem; display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Pronóstico Clave</span>
-                                <div style="font-size: 0.95rem; font-weight: 800; color: #f87171;">Stuttgart 1X + Más 1.5</div>
-                                <span style="font-size: 0.7rem; color: #fca5a5;">Probabilidad: 86.0% &bull; Score: 2 - 1</span>
-                            </div>
-                            <div style="text-align: right;">
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Cuota Ecuabet</span>
-                                <div style="font-size: 1.35rem; font-weight: 900; color: #fbbf24;">@ 1.25</div>
-                            </div>
-                        </div>
+                </div>
+                <div class="switcher-card" onclick="setMatch(4)" id="tab-4">
+                    <div class="switcher-header">
+                        <span>Partido 5 &bull; Premier League • Matchday 11 (Inglaterra)</span>
+                        <span class="badge-fija-pill" style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.3), rgba(8, 145, 178, 0.4)); border: 1px solid #06b6d4; color: #cffafe;">👑 LA FIJA DE PREMIER LEAGUE 86.5%</span>
                     </div>
-
-                    <!-- PARTIDO 6: OSASUNA VS ATHLETIC CLUB -->
-                    <div style="background: var(--bg-card); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 1.4rem; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-                                <span style="background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.4); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.72rem; font-weight: 800;">
-                                    ESPAÑA &bull; EL SADAR
-                                </span>
-                                <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">⏰ 12:30 (ECU)</span>
-                            </div>
-                            <h3 style="font-size: 1.25rem; font-weight: 900; color: #ffffff; margin: 0 0 0.4rem 0;">
-                                Osasuna vs. Athletic Club
-                            </h3>
-                            <div style="font-size: 0.8rem; color: #94a3b8; margin-bottom: 0.85rem;">
-                                📍 Pamplona &bull; Clásico del norte con Nico e Iñaki Williams
-                            </div>
-                            <div style="background: rgba(255,255,255,0.04); border-radius: 10px; padding: 0.85rem; margin-bottom: 1rem; font-size: 0.84rem; color: #cbd5e1; line-height: 1.45;">
-                                Duelo muy trabado y físico. El Athletic tiene mejor recambio y velocidad de contragolpe con los Williams para sostener el X2 ante el empuje rojillo en El Sadar.
-                            </div>
-                        </div>
-                        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 0.85rem; display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Pronóstico Clave</span>
-                                <div style="font-size: 0.95rem; font-weight: 800; color: #f87171;">Athletic o Empate (X2)</div>
-                                <span style="font-size: 0.7rem; color: #fca5a5;">Probabilidad: 83.5% &bull; Score: 1 - 1</span>
-                            </div>
-                            <div style="text-align: right;">
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Cuota Ecuabet</span>
-                                <div style="font-size: 1.35rem; font-weight: 900; color: #fbbf24;">@ 1.26</div>
-                            </div>
-                        </div>
+                    <div class="switcher-teams">
+                        <span>🔴🌲 Nottingham Forest</span>
+                        <span class="vs-text">vs</span>
+                        <span>Manchester City 🔵⚪</span>
                     </div>
-
-                    <!-- PARTIDO 7: AUXERRE VS PARIS FC -->
-                    <div style="background: var(--bg-card); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 1.4rem; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-                                <span style="background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border: 1px solid rgba(16, 185, 129, 0.4); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.72rem; font-weight: 800;">
-                                    FRANCIA &bull; ABBÉ-DESCHAMPS
-                                </span>
-                                <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">⏰ 13:00 (ECU)</span>
-                            </div>
-                            <h3 style="font-size: 1.25rem; font-weight: 900; color: #ffffff; margin: 0 0 0.4rem 0;">
-                                Auxerre vs. Paris FC
-                            </h3>
-                            <div style="font-size: 0.8rem; color: #94a3b8; margin-bottom: 0.85rem;">
-                                📍 Auxerre &bull; Solidez del cuadro borgoñón de local
-                            </div>
-                            <div style="background: rgba(255,255,255,0.04); border-radius: 10px; padding: 0.85rem; margin-bottom: 1rem; font-size: 0.84rem; color: #cbd5e1; line-height: 1.45;">
-                                Auxerre se planta con bloque medio compacto que concede pocos remates al arco. Paris FC fuera de casa reduce drásticamente su volumen de gol.
-                            </div>
-                        </div>
-                        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 0.85rem; display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Pronóstico Clave</span>
-                                <div style="font-size: 0.95rem; font-weight: 800; color: #34d399;">Auxerre o Empate (1X)</div>
-                                <span style="font-size: 0.7rem; color: #6ee7b7;">Probabilidad: 82.5% &bull; Score: 1 - 0</span>
-                            </div>
-                            <div style="text-align: right;">
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Cuota Ecuabet</span>
-                                <div style="font-size: 1.35rem; font-weight: 900; color: #fbbf24;">@ 1.26</div>
-                            </div>
-                        </div>
+                    <div class="switcher-meta">
+                        <span>👑 Fija Oficial: <strong style="color: #fbbf24;">Man City o Empate (X2) + Más de 1.5 goles</strong></span>
+                        <span class="mono-bold" style="color: var(--cyan);">@1.33 (86.5%)</span>
                     </div>
-
+                </div>
+                <div class="switcher-card" onclick="setMatch(5)" id="tab-5">
+                    <div class="switcher-header">
+                        <span>Partido 6 &bull; Liga 1 Te Apuesto • Clausura (Cusco)</span>
+                        <span class="badge-fija-pill" style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.3), rgba(126, 34, 206, 0.4)); border: 1px solid #a855f7; color: #f3e8ff;">👑 LA FIJA IMPERIAL DEL CUSCO 83.0%</span>
+                    </div>
+                    <div class="switcher-teams">
+                        <span>🔴👑 Cienciano</span>
+                        <span class="vs-text">vs</span>
+                        <span>Sport Huancayo 🔴🟢</span>
+                    </div>
+                    <div class="switcher-meta">
+                        <span>👑 Fija Oficial: <strong style="color: #fbbf24;">Cienciano o Empate (1X) + Menos de 3.5 goles</strong></span>
+                        <span class="mono-bold" style="color: var(--cyan);">@1.32 (83.0%)</span>
+                    </div>
                 </div>
             </div>
 
-            <!-- SECCIÓN 3: LIGA 1 TE APUESTO (PERÚ) -->
-            <div style="margin-bottom: 2rem;">
-                <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1rem;">
-                    <span style="font-size: 1.2rem;">🇵🇪</span>
-                    <h2 style="font-size: 1.3rem; font-weight: 900; color: #ffffff; margin: 0;">Liga 1 Te Apuesto &bull; Clausura</h2>
+            <!-- Match Views (0 a 5) -->
+        <!-- ==================== PARTIDO 1: Valencia vs. Real Madrid ==================== -->
+        <div id="match-0" class="match-view active" style="display: block;">
+            <!-- Hero Banner -->
+            <div class="hero-banner">
+                <div class="hero-context-badge">
+                    <span>🏆 LaLiga EA Sports • Jornada 12 (Estelar)</span>
+                    <span>📍 Estadio de Mestalla (Valencia) &bull; ⏰ 15:00 (ECU)</span>
+                    <span>👥 49,430 en estadio (~50M audiencia global)</span>
                 </div>
 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 1.25rem;">
-                    
-                    <!-- PARTIDO 8: FBC MELGAR VS JUAN PABLO II -->
-                    <div style="background: var(--bg-card); border: 2px solid rgba(239, 68, 68, 0.6); border-radius: 16px; padding: 1.4rem; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 8px 24px -4px rgba(239, 68, 68, 0.2);">
-                        <div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-                                <span style="background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.5); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.72rem; font-weight: 800;">
-                                    👑 LA FIJA DE ORO PERUANA
-                                </span>
-                                <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">⏰ 18:00 (ECU)</span>
-                            </div>
-                            <h3 style="font-size: 1.25rem; font-weight: 900; color: #ffffff; margin: 0 0 0.4rem 0;">
-                                FBC Melgar vs. Juan Pablo II
-                            </h3>
-                            <div style="font-size: 0.8rem; color: #94a3b8; margin-bottom: 0.85rem;">
-                                📍 Monumental de la UNSA (Arequipa &bull; 2,335 msnm) &bull; xG: 2.85 vs 0.40
-                            </div>
-                            <div style="background: rgba(255,255,255,0.04); border-radius: 10px; padding: 0.85rem; margin-bottom: 1rem; font-size: 0.84rem; color: #cbd5e1; line-height: 1.45;">
-                                Bernardo Cuesta y Bordacahar comandan a un Melgar temible en Arequipa. Juan Pablo II es un cuadro recién ascendido de la costa que sufre un abismo técnico y físico en la altura volcánica.
-                            </div>
-                        </div>
-                        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 0.85rem; display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Pronóstico Clave</span>
-                                <div style="font-size: 0.95rem; font-weight: 800; color: #f87171;">FBC Melgar Gana (1)</div>
-                                <span style="font-size: 0.7rem; color: #fca5a5;">Probabilidad: 89.0% &bull; Score: 3 - 0</span>
-                            </div>
-                            <div style="text-align: right;">
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Cuota Ecuabet</span>
-                                <div style="font-size: 1.35rem; font-weight: 900; color: #fbbf24;">@ 1.22</div>
-                            </div>
-                        </div>
+                <div class="hero-grid">
+                    <div class="team-col">
+                        <div class="team-flag">🦇</div>
+                        <div class="team-name">Valencia</div>
+                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--cyan);">0.85</span></div>
                     </div>
 
-                    <!-- PARTIDO 9: CIENCIANO VS SPORT HUANCAYO -->
-                    <div style="background: var(--bg-card); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 1.4rem; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-                                <span style="background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.4); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.72rem; font-weight: 800;">
-                                    PERÚ &bull; GARCILASO DE LA VEGA (CUSCO)
-                                </span>
-                                <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">⏰ 20:30 (ECU)</span>
-                            </div>
-                            <h3 style="font-size: 1.25rem; font-weight: 900; color: #ffffff; margin: 0 0 0.4rem 0;">
-                                Cienciano vs. Sport Huancayo
-                            </h3>
-                            <div style="font-size: 0.8rem; color: #94a3b8; margin-bottom: 0.85rem;">
-                                📍 Cusco (3,400 msnm) &bull; El 'Papá' con Christian Cueva
-                            </div>
-                            <div style="background: rgba(255,255,255,0.04); border-radius: 10px; padding: 0.85rem; margin-bottom: 1rem; font-size: 0.84rem; color: #cbd5e1; line-height: 1.45;">
-                                En los 3,400 metros de Cusco, Cienciano impone un ritmo implacable de local. Huancayo también juega en altura pero en el Garcilaso Cienciano manda históricamente.
-                            </div>
-                        </div>
-                        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 0.85rem; display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Pronóstico Clave</span>
-                                <div style="font-size: 0.95rem; font-weight: 800; color: #f87171;">Cienciano o Empate (1X)</div>
-                                <span style="font-size: 0.7rem; color: #fca5a5;">Probabilidad: 84.0% &bull; Score: 2 - 1</span>
-                            </div>
-                            <div style="text-align: right;">
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Cuota Ecuabet</span>
-                                <div style="font-size: 1.35rem; font-weight: 900; color: #fbbf24;">@ 1.24</div>
-                            </div>
-                        </div>
+                    <div class="center-score-col">
+                        <div class="score-pill-title">Marcador Exacto Más Probable</div>
+                        <div class="hero-score-val">1 - 2</div>
+                        <div class="hero-score-conf">Top Alternativas: 0 - 2 (11.4%) • 1 - 1 (10.8%) • 0 - 1 (9.2%)</div>
                     </div>
 
-                    <!-- PARTIDO 10: ADT VS SPORTING CRISTAL -->
-                    <div style="background: var(--bg-card); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 1.4rem; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-                                <span style="background: rgba(59, 130, 246, 0.2); color: #93c5fd; border: 1px solid rgba(59, 130, 246, 0.4); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.72rem; font-weight: 800;">
-                                    PERÚ &bull; UNIÓN TARMA (3,050m)
-                                </span>
-                                <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">⏰ 13:00 (ECU)</span>
-                            </div>
-                            <h3 style="font-size: 1.25rem; font-weight: 900; color: #ffffff; margin: 0 0 0.4rem 0;">
-                                ADT vs. Sporting Cristal
-                            </h3>
-                            <div style="font-size: 0.8rem; color: #94a3b8; margin-bottom: 0.85rem;">
-                                📍 Tarma &bull; Cristal visita la altura de Junín
-                            </div>
-                            <div style="background: rgba(255,255,255,0.04); border-radius: 10px; padding: 0.85rem; margin-bottom: 1rem; font-size: 0.84rem; color: #cbd5e1; line-height: 1.45;">
-                                Tarma es una de las canchas más difíciles del torneo. Cristal suele sufrir el ahogo en salidas a la sierra y ADT se hace muy rocoso con la doble chance 1X.
-                            </div>
-                        </div>
-                        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 0.85rem; display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Pronóstico Clave</span>
-                                <div style="font-size: 0.95rem; font-weight: 800; color: #60a5fa;">ADT o Empate (1X)</div>
-                                <span style="font-size: 0.7rem; color: #93c5fd;">Probabilidad: 83.0% &bull; Score: 1 - 1</span>
-                            </div>
-                            <div style="text-align: right;">
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Cuota Ecuabet</span>
-                                <div style="font-size: 1.35rem; font-weight: 900; color: #fbbf24;">@ 1.28</div>
-                            </div>
-                        </div>
+                    <div class="team-col">
+                        <div class="team-flag">⚪</div>
+                        <div class="team-name">Real Madrid</div>
+                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--amber);">2.15</span></div>
                     </div>
-
-                    <!-- PARTIDO 11: FC CAJAMARCA VS ALIANZA ATLÉTICO -->
-                    <div style="background: var(--bg-card); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; padding: 1.4rem; backdrop-filter: blur(16px); display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
-                                <span style="background: rgba(14, 165, 233, 0.2); color: #7dd3fc; border: 1px solid rgba(14, 165, 233, 0.4); padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.72rem; font-weight: 800;">
-                                    PERÚ &bull; HÉROES DE SAN RAMÓN
-                                </span>
-                                <span style="font-size: 0.85rem; font-weight: 700; color: #cbd5e1;">⏰ 15:30 (ECU)</span>
-                            </div>
-                            <h3 style="font-size: 1.25rem; font-weight: 900; color: #ffffff; margin: 0 0 0.4rem 0;">
-                                FC Cajamarca vs. Alianza Atlético
-                            </h3>
-                            <div style="font-size: 0.8rem; color: #94a3b8; margin-bottom: 0.85rem;">
-                                📍 Cajamarca (2,750 msnm) &bull; Cancha sintética
-                            </div>
-                            <div style="background: rgba(255,255,255,0.04); border-radius: 10px; padding: 0.85rem; margin-bottom: 1rem; font-size: 0.84rem; color: #cbd5e1; line-height: 1.45;">
-                                El sintético cajamarquino y la altura incomodan a los sullanenses de Alianza Atlético, que vienen de la costa norte. Cajamarca suma al menos un punto.
-                            </div>
-                        </div>
-                        <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 0.85rem; display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Pronóstico Clave</span>
-                                <div style="font-size: 0.95rem; font-weight: 800; color: #38bdf8;">FC Cajamarca o Empate (1X)</div>
-                                <span style="font-size: 0.7rem; color: #7dd3fc;">Probabilidad: 83.0% &bull; Score: 1 - 0</span>
-                            </div>
-                            <div style="text-align: right;">
-                                <span style="font-size: 0.72rem; text-transform: uppercase; color: #94a3b8; font-weight: 700;">Cuota Ecuabet</span>
-                                <div style="font-size: 1.35rem; font-weight: 900; color: #fbbf24;">@ 1.25</div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
+
+            <!-- Glowing La Fija Card -->
+            <div class="fija-gold-card">
+                <div class="fija-badge-glow">
+                    <span class="fija-star">⭐</span> LA FIJA DEL PARTIDO &bull; Máxima Certidumbre Matemática
+                </div>
+                <div class="fija-content-grid">
+                    <div class="fija-main">
+                        <div class="fija-market-label">Selección Cuantitativa Principal</div>
+                        <div class="fija-market-title">Real Madrid o Empate (Doble Oportunidad X2)</div>
+                        <div class="fija-rationale">🔬 <em>Fundamento TimesFM & Monte Carlo:</em> Mestalla siempre genera un ambiente de alta fricción y hostilidad ante el Real Madrid. Sin embargo, la jerarquía en contragolpe con Vinícius, Mbappé y Bellingham es letal. La doble oportunidad X2 blinda completamente ante un empate 1-1 y garantiza el cobro.</div>
+                    </div>
+                    <div class="fija-stats">
+                        <div class="fija-stat-box">
+                            <div class="fija-stat-val">87.0%</div>
+                            <div class="fija-stat-lbl">Probabilidad</div>
+                        </div>
+                        <div class="fija-stat-box">
+                            <div class="fija-stat-val" style="color: var(--emerald);">@1.15</div>
+                            <div class="fija-stat-lbl">Cuota Justa</div>
+                        </div>
+                        <div class="fija-stat-box">
+                            <div class="fija-stat-val" style="color: var(--cyan);">@1.24</div>
+                            <div class="fija-stat-lbl">Cuota Ecuabet</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 0.85rem; padding-top: 0.65rem; border-top: 1px dashed rgba(255,255,255,0.15);">
+                    <div style="font-size: 0.74rem; color: var(--text-muted); margin-bottom: 0.4rem; font-weight: 700; letter-spacing: 0.5px;">
+                        📊 OTROS MERCADOS DE SEGURIDAD ANALIZADOS EN ESTE PARTIDO:
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Doble Oportunidad: Real Madrid o Empate (X2) (87.0% | @1.24)">
+                    🎯 <strong>Doble Oportunidad:</strong> Real Madrid o Empate (X2) <span style="color: #ffffff;">(87.0% | @1.24)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Total de Goles: Más de 1.5 goles totales (82.5% | @1.25)">
+                    🎯 <strong>Total de Goles:</strong> Más de 1.5 goles totales <span style="color: #ffffff;">(82.5% | @1.25)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Córners Totales: Más de 8.5 córners en Mestalla (76.0% | @1.48)">
+                    🎯 <strong>Córners Totales:</strong> Más de 8.5 córners en Mestalla <span style="color: #ffffff;">(76.0% | @1.48)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Fricción Arbitral: Más de 4.5 tarjetas amarillas (81.0% | @1.55)">
+                    🎯 <strong>Fricción Arbitral:</strong> Más de 4.5 tarjetas amarillas <span style="color: #ffffff;">(81.0% | @1.55)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Ambos Anotan (BTTS): Ambos Equipos Anotan - SÍ (62.0% | @1.78)">
+                    🎯 <strong>Ambos Anotan (BTTS):</strong> Ambos Equipos Anotan - SÍ <span style="color: #ffffff;">(62.0% | @1.78)</span>
+                </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analytics Grid -->
+            <div class="analytics-grid-3">
+                <!-- 1X2 & Exact Score -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">🎯 Marcador & Probabilidad 1X2</div>
+                        <span class="badge-subtle">Dixon-Coles + Monte Carlo</span>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Victoria Valencia (1)</span>
+                            <span class="mono-bold" style="color: var(--cyan);">13.0%</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 13.0%; background: linear-gradient(90deg, #3b82f6, #06b6d4);"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Empate (X)</span>
+                            <span class="mono-bold" style="color: var(--gold);">26.0%</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 26.0%; background: linear-gradient(90deg, #f59e0b, #fbbf24);"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Victoria Real Madrid (2)</span>
+                            <span class="mono-bold" style="color: var(--emerald);">61.0%</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 61.0%; background: linear-gradient(90deg, #10b981, #34d399);"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 1.25rem; height: 180px; position: relative;">
+                        <canvas id="chart1X2-0"></canvas>
+                    </div>
+                </div>
+
+                <!-- Mercados de Goles -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">⚽ Mercados de Goles</div>
+                        <span class="badge-subtle">Poisson Multi-Línea</span>
+                    </div>
+                    
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Más de 1.5 Goles</span>
+                            <span class="mono-bold" style="color: #38bdf8;">82.5% &bull; @1.25</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 82.5%; background: #38bdf8;"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Más de 2.5 Goles</span>
+                            <span class="mono-bold" style="color: #818cf8;">58.0% &bull; @1.72</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 58.0%; background: #818cf8;"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Ambos Equipos Anotan (BTTS)</span>
+                            <span class="mono-bold" style="color: #f472b6;">62.0% &bull; @1.78</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 62.0%; background: #f472b6;"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 1rem; padding: 0.75rem; background: rgba(255,255,255,0.02); border-radius: 8px; font-size: 0.8rem; color: #94a3b8;">
+                        💡 <strong>Lectura Táctica:</strong> xG Combinado de 3.0 goles esperados en el cotejo.
+                    </div>
+                </div>
+
+                <!-- Córners & Balón Parado -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">🚩 Córners & Balón Parado</div>
+                        <span class="badge-subtle">SetPieceModel</span>
+                    </div>
+
+                    <div style="margin-bottom: 0.75rem;">
+                        <div style="font-size: 1.1rem; font-weight: 800; color: #38bdf8;">9.8 córners esperados</div>
+                        <div style="font-size: 0.85rem; color: #cbd5e1; margin-top: 0.2rem;">Línea Óptima: <strong>Más de 8.5 córners</strong> (76.0% | @1.48)</div>
+                    </div>
+
+                    <div style="font-size: 0.8rem; color: #94a3b8; line-height: 1.45; margin-bottom: 1rem;">
+                        Valencia fuerza desbordes por bandas con Diego López y Gayà, mientras el Madrid promedia 6.2 córners a favor en salidas ligueras.
+                    </div>
+
+                    <div class="card-header" style="padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.08);">
+                        <div class="card-title" style="font-size: 0.9rem;">🟨 Tarjetas & Rigor Arbitral</div>
+                    </div>
+                    <div style="font-size: 0.82rem; color: #fde047; font-weight: 700;">5.4 tarjetas esperadas &bull; Más de 4.5 tarjetas amarillas (@1.55)</div>
+                    <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.25rem;">Clásico de altísima tensión en Mestalla. Rigor arbitral estricto; historial reciente de roces constantes entre defensas 'chés' y atacantes blancos.</div>
+                </div>
+            </div>
+
+            <!-- Props & Figuras Clave -->
+            <div class="card" style="margin-top: 1.5rem;">
+                <div class="card-header">
+                    <div class="card-title">⭐ Remates & Disparos a Puerta de Figuras Clave</div>
+                    <span class="badge-subtle">PlayerProps Engine</span>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.75rem; margin-top: 0.5rem;">
+                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 0.75rem 0.9rem; margin-bottom: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.84rem; margin-bottom: 0.2rem;">
+                        <strong style="color: #67e8f9;">Vinícius Júnior</strong>
+                        <span style="color: #10b981; font-weight: 700;">78.0% &bull; @1.45</span>
+                    </div>
+                    <div style="font-size: 0.78rem; color: #cbd5e1;">Más de 1.5 tiros a puerta</div>
+                    <div style="font-size: 0.72rem; color: #94a3b8; margin-top: 0.2rem;">Extrema verticalidad atacando el carril de Thierry Correia.</div>
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 0.75rem 0.9rem; margin-bottom: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.84rem; margin-bottom: 0.2rem;">
+                        <strong style="color: #67e8f9;">Kylian Mbappé</strong>
+                        <span style="color: #10b981; font-weight: 700;">84.0% &bull; @1.35</span>
+                    </div>
+                    <div style="font-size: 0.78rem; color: #cbd5e1;">Más de 2.5 tiros totales</div>
+                    <div style="font-size: 0.72rem; color: #94a3b8; margin-top: 0.2rem;">Promedia 3.8 remates por partido buscando el arco rival.</div>
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 0.75rem 0.9rem; margin-bottom: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.84rem; margin-bottom: 0.2rem;">
+                        <strong style="color: #67e8f9;">Hugo Duro</strong>
+                        <span style="color: #10b981; font-weight: 700;">65.0% &bull; @1.62</span>
+                    </div>
+                    <div style="font-size: 0.78rem; color: #cbd5e1;">Más de 0.5 tiros a puerta</div>
+                    <div style="font-size: 0.72rem; color: #94a3b8; margin-top: 0.2rem;">Referencia ofensiva local que busca balones aéreos en el área.</div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Medical Bulletin & Sanity Audit Section -->
+            <div class="card" style="margin-top: 1.5rem; border-color: rgba(239, 68, 68, 0.35);">
+                <div class="card-header">
+                    <div class="card-title" style="color: #f87171;">🏥 Auditoría Sanitaria & Boletín Médico Oficial (SquadInjuryAgent)</div>
+                    <span class="tag-pill tag-rose">Veto Sanitario Verificado</span>
+                </div>
+                <div style="background: rgba(239, 68, 68, 0.12); border: 1px solid rgba(239, 68, 68, 0.35); border-radius: 10px; padding: 0.85rem 1rem; margin-top: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                        <span style="font-weight: 700; color: #f87171; font-size: 0.9rem;">🚫 Thibaut Courtois / Dani Carvajal &bull; BAJAS MÉDICAS CONFIRMADAS</span>
+                        <span class="tag-pill tag-rose" style="font-size: 0.7rem;">INFORME OFICIAL</span>
+                    </div>
+                    <div style="font-size: 0.8rem; color: #fca5a5;">
+                        <strong>Parte Médico:</strong> Recuperación de rotura de ligamentos en Carvajal. Lunin titular bajo los tres palos.
+                    </div>
+                </div>
+                <div style="background: rgba(239, 68, 68, 0.12); border: 1px solid rgba(239, 68, 68, 0.35); border-radius: 10px; padding: 0.85rem 1rem; margin-top: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                        <span style="font-weight: 700; color: #f87171; font-size: 0.9rem;">🚫 Mouctar Diakhaby (Valencia) &bull; BAJA EN DEFENSA CENTRAL</span>
+                        <span class="tag-pill tag-rose" style="font-size: 0.7rem;">INFORME OFICIAL</span>
+                    </div>
+                    <div style="font-size: 0.8rem; color: #fca5a5;">
+                        <strong>Parte Médico:</strong> Ausencia prolongada que obliga a Baraja a improvisar en la zaga.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== PARTIDO 2: Paris Saint-Germain vs. Troyes ==================== -->
+        <div id="match-1" class="match-view" style="display: none;">
+            <!-- Hero Banner -->
+            <div class="hero-banner">
+                <div class="hero-context-badge">
+                    <span>🏆 Ligue 1 • Jornada de Fin de Semana (París)</span>
+                    <span>📍 Parc des Princes (París) &bull; ⏰ 15:05 (ECU)</span>
+                    <span>👥 47,926 en estadio (~30M audiencia global)</span>
+                </div>
+
+                <div class="hero-grid">
+                    <div class="team-col">
+                        <div class="team-flag">🔴🔵</div>
+                        <div class="team-name">Paris Saint-Germain</div>
+                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--cyan);">3.1</span></div>
+                    </div>
+
+                    <div class="center-score-col">
+                        <div class="score-pill-title">Marcador Exacto Más Probable</div>
+                        <div class="hero-score-val">3 - 0</div>
+                        <div class="hero-score-conf">Top Alternativas: 2 - 0 (14.2%) • 3 - 1 (10.5%) • 4 - 0 (8.9%)</div>
+                    </div>
+
+                    <div class="team-col">
+                        <div class="team-flag">⚪🔵</div>
+                        <div class="team-name">Troyes</div>
+                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--amber);">0.35</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Glowing La Fija Card -->
+            <div class="fija-gold-card">
+                <div class="fija-badge-glow">
+                    <span class="fija-star">⭐</span> LA FIJA DEL PARTIDO &bull; Máxima Certidumbre Matemática
+                </div>
+                <div class="fija-content-grid">
+                    <div class="fija-main">
+                        <div class="fija-market-label">Selección Cuantitativa Principal</div>
+                        <div class="fija-market-title">PSG Gana el Partido (1)</div>
+                        <div class="fija-rationale">🔬 <em>Fundamento TimesFM & Monte Carlo:</em> El Parque de los Príncipes es un feudo inexpugnable. El equipo de Luis Enrique supera ampliamente en ritmo, posesión (>68%) y contundencia técnica al Troyes. Con Barcola, Dembélé y Vitinha en plenitud, el triunfo directo del PSG es el pilar de mayor certeza matemática de toda la jornada europea.</div>
+                    </div>
+                    <div class="fija-stats">
+                        <div class="fija-stat-box">
+                            <div class="fija-stat-val">90.0%</div>
+                            <div class="fija-stat-lbl">Probabilidad</div>
+                        </div>
+                        <div class="fija-stat-box">
+                            <div class="fija-stat-val" style="color: var(--emerald);">@1.11</div>
+                            <div class="fija-stat-lbl">Cuota Justa</div>
+                        </div>
+                        <div class="fija-stat-box">
+                            <div class="fija-stat-val" style="color: var(--cyan);">@1.2</div>
+                            <div class="fija-stat-lbl">Cuota Ecuabet</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 0.85rem; padding-top: 0.65rem; border-top: 1px dashed rgba(255,255,255,0.15);">
+                    <div style="font-size: 0.74rem; color: var(--text-muted); margin-bottom: 0.4rem; font-weight: 700; letter-spacing: 0.5px;">
+                        📊 OTROS MERCADOS DE SEGURIDAD ANALIZADOS EN ESTE PARTIDO:
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Victoria Directa (1X2): PSG Gana el Partido (1) (90.0% | @1.20)">
+                    🎯 <strong>Victoria Directa (1X2):</strong> PSG Gana el Partido (1) <span style="color: #ffffff;">(90.0% | @1.20)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Total de Goles Fijo: Más de 2.5 goles totales (81.0% | @1.42)">
+                    🎯 <strong>Total de Goles Fijo:</strong> Más de 2.5 goles totales <span style="color: #ffffff;">(81.0% | @1.42)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="PSG Anota Primero: Primer gol del cotejo anotado por PSG (88.0% | @1.22)">
+                    🎯 <strong>PSG Anota Primero:</strong> Primer gol del cotejo anotado por PSG <span style="color: #ffffff;">(88.0% | @1.22)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Córners París: PSG Más de 5.5 córners a favor (79.0% | @1.40)">
+                    🎯 <strong>Córners París:</strong> PSG Más de 5.5 córners a favor <span style="color: #ffffff;">(79.0% | @1.40)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Hándicap Asiático: PSG -1.5 Goles (74.0% | @1.58)">
+                    🎯 <strong>Hándicap Asiático:</strong> PSG -1.5 Goles <span style="color: #ffffff;">(74.0% | @1.58)</span>
+                </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analytics Grid -->
+            <div class="analytics-grid-3">
+                <!-- 1X2 & Exact Score -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">🎯 Marcador & Probabilidad 1X2</div>
+                        <span class="badge-subtle">Dixon-Coles + Monte Carlo</span>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Victoria Paris Saint-Germain (1)</span>
+                            <span class="mono-bold" style="color: var(--cyan);">82.0%</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 82.0%; background: linear-gradient(90deg, #3b82f6, #06b6d4);"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Empate (X)</span>
+                            <span class="mono-bold" style="color: var(--gold);">12.0%</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 12.0%; background: linear-gradient(90deg, #f59e0b, #fbbf24);"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Victoria Troyes (2)</span>
+                            <span class="mono-bold" style="color: var(--emerald);">6.0%</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 6.0%; background: linear-gradient(90deg, #10b981, #34d399);"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 1.25rem; height: 180px; position: relative;">
+                        <canvas id="chart1X2-1"></canvas>
+                    </div>
+                </div>
+
+                <!-- Mercados de Goles -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">⚽ Mercados de Goles</div>
+                        <span class="badge-subtle">Poisson Multi-Línea</span>
+                    </div>
+                    
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Más de 1.5 Goles</span>
+                            <span class="mono-bold" style="color: #38bdf8;">89.0% &bull; @1.15</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 89.0%; background: #38bdf8;"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Más de 2.5 Goles</span>
+                            <span class="mono-bold" style="color: #818cf8;">81.0% &bull; @1.42</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 81.0%; background: #818cf8;"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Ambos Equipos Anotan (BTTS)</span>
+                            <span class="mono-bold" style="color: #f472b6;">44.0% &bull; @2.1</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 44.0%; background: #f472b6;"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 1rem; padding: 0.75rem; background: rgba(255,255,255,0.02); border-radius: 8px; font-size: 0.8rem; color: #94a3b8;">
+                        💡 <strong>Lectura Táctica:</strong> xG Combinado de 3.45 goles esperados en el cotejo.
+                    </div>
+                </div>
+
+                <!-- Córners & Balón Parado -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">🚩 Córners & Balón Parado</div>
+                        <span class="badge-subtle">SetPieceModel</span>
+                    </div>
+
+                    <div style="margin-bottom: 0.75rem;">
+                        <div style="font-size: 1.1rem; font-weight: 800; color: #38bdf8;">9.2 córners esperados</div>
+                        <div style="font-size: 0.85rem; color: #cbd5e1; margin-top: 0.2rem;">Línea Óptima: <strong>PSG Más de 5.5 córners a favor</strong> (79.0% | @1.4)</div>
+                    </div>
+
+                    <div style="font-size: 0.8rem; color: #94a3b8; line-height: 1.45; margin-bottom: 1rem;">
+                        El asedio territorial constante del PSG en campo contrario fuerza numerosos rechaces sobre la línea de fondo visitante.
+                    </div>
+
+                    <div class="card-header" style="padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.08);">
+                        <div class="card-title" style="font-size: 0.9rem;">🟨 Tarjetas & Rigor Arbitral</div>
+                    </div>
+                    <div style="font-size: 0.82rem; color: #fde047; font-weight: 700;">3.2 tarjetas esperadas &bull; Menos de 4.5 tarjetas totales (@1.42)</div>
+                    <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.25rem;">Partido de posesión hegemónica parisina con escasa fricción violenta y trámite fluido.</div>
+                </div>
+            </div>
+
+            <!-- Props & Figuras Clave -->
+            <div class="card" style="margin-top: 1.5rem;">
+                <div class="card-header">
+                    <div class="card-title">⭐ Remates & Disparos a Puerta de Figuras Clave</div>
+                    <span class="badge-subtle">PlayerProps Engine</span>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.75rem; margin-top: 0.5rem;">
+                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 0.75rem 0.9rem; margin-bottom: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.84rem; margin-bottom: 0.2rem;">
+                        <strong style="color: #67e8f9;">Bradley Barcola</strong>
+                        <span style="color: #10b981; font-weight: 700;">82.0% &bull; @1.48</span>
+                    </div>
+                    <div style="font-size: 0.78rem; color: #cbd5e1;">Más de 1.5 tiros al arco</div>
+                    <div style="font-size: 0.72rem; color: #94a3b8; margin-top: 0.2rem;">Desequilibrio puro en el uno contra uno por banda izquierda.</div>
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 0.75rem 0.9rem; margin-bottom: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.84rem; margin-bottom: 0.2rem;">
+                        <strong style="color: #67e8f9;">Ousmane Dembélé</strong>
+                        <span style="color: #10b981; font-weight: 700;">86.0% &bull; @1.38</span>
+                    </div>
+                    <div style="font-size: 0.78rem; color: #cbd5e1;">Más de 2.5 tiros totales</div>
+                    <div style="font-size: 0.72rem; color: #94a3b8; margin-top: 0.2rem;">Engancha hacia adentro con perfil ambidiestro buscando disparar.</div>
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 0.75rem 0.9rem; margin-bottom: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.84rem; margin-bottom: 0.2rem;">
+                        <strong style="color: #67e8f9;">Vitinha</strong>
+                        <span style="color: #10b981; font-weight: 700;">70.0% &bull; @1.65</span>
+                    </div>
+                    <div style="font-size: 0.78rem; color: #cbd5e1;">Más de 0.5 tiros al arco</div>
+                    <div style="font-size: 0.72rem; color: #94a3b8; margin-top: 0.2rem;">Llegada desde segunda línea y remate de media distancia.</div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Medical Bulletin & Sanity Audit Section -->
+            <div class="card" style="margin-top: 1.5rem; border-color: rgba(239, 68, 68, 0.35);">
+                <div class="card-header">
+                    <div class="card-title" style="color: #f87171;">🏥 Auditoría Sanitaria & Boletín Médico Oficial (SquadInjuryAgent)</div>
+                    <span class="tag-pill tag-rose">Veto Sanitario Verificado</span>
+                </div>
+                <div style="background: rgba(239, 68, 68, 0.12); border: 1px solid rgba(239, 68, 68, 0.35); border-radius: 10px; padding: 0.85rem 1rem; margin-top: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                        <span style="font-weight: 700; color: #f87171; font-size: 0.9rem;">🚫 Lucas Hernández / Presnel Kimpembe &bull; FASE FINAL DE READAPTACIÓN</span>
+                        <span class="tag-pill tag-rose" style="font-size: 0.7rem;">INFORME OFICIAL</span>
+                    </div>
+                    <div style="font-size: 0.8rem; color: #fca5a5;">
+                        <strong>Parte Médico:</strong> Plantilla profunda con Pacho y Marquinhos garantizando solidez en la zaga.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== PARTIDO 3: Libertad FC vs. Emelec ==================== -->
+        <div id="match-2" class="match-view" style="display: none;">
+            <!-- Hero Banner -->
+            <div class="hero-banner">
+                <div class="hero-context-badge">
+                    <span>🏆 LigaPro Ecuabet • Fase 2 (Loja)</span>
+                    <span>📍 Estadio Reina del Cisne (Loja, 2,100 msnm) &bull; ⏰ 14:00 (ECU)</span>
+                    <span>👥 8,500 en estadio (~12M audiencia nacional)</span>
+                </div>
+
+                <div class="hero-grid">
+                    <div class="team-col">
+                        <div class="team-flag">🟠</div>
+                        <div class="team-name">Libertad FC</div>
+                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--cyan);">1.35</span></div>
+                    </div>
+
+                    <div class="center-score-col">
+                        <div class="score-pill-title">Marcador Exacto Más Probable</div>
+                        <div class="hero-score-val">1 - 1</div>
+                        <div class="hero-score-conf">Top Alternativas: 1 - 0 (12.8%) • 2 - 1 (9.6%) • 0 - 0 (8.5%)</div>
+                    </div>
+
+                    <div class="team-col">
+                        <div class="team-flag">🔵</div>
+                        <div class="team-name">Emelec</div>
+                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--amber);">1.1</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Glowing La Fija Card -->
+            <div class="fija-gold-card">
+                <div class="fija-badge-glow">
+                    <span class="fija-star">⭐</span> LA FIJA DEL PARTIDO &bull; Máxima Certidumbre Matemática
+                </div>
+                <div class="fija-content-grid">
+                    <div class="fija-main">
+                        <div class="fija-market-label">Selección Cuantitativa Principal</div>
+                        <div class="fija-market-title">Libertad FC o Empate (Doble Oportunidad 1X)</div>
+                        <div class="fija-rationale">🔬 <em>Fundamento TimesFM & Monte Carlo:</em> En el Estadio Reina del Cisne a 2,100 metros de altitud, Libertad FC se juega la vida por la permanencia con intensidad física máxima. Emelec sufre en la generación ofensiva fuera de Guayaquil y sus transiciones en la sierra son lentas. La doble oportunidad 1X cubre el triunfo lojano y el empate.</div>
+                    </div>
+                    <div class="fija-stats">
+                        <div class="fija-stat-box">
+                            <div class="fija-stat-val">84.5%</div>
+                            <div class="fija-stat-lbl">Probabilidad</div>
+                        </div>
+                        <div class="fija-stat-box">
+                            <div class="fija-stat-val" style="color: var(--emerald);">@1.18</div>
+                            <div class="fija-stat-lbl">Cuota Justa</div>
+                        </div>
+                        <div class="fija-stat-box">
+                            <div class="fija-stat-val" style="color: var(--cyan);">@1.3</div>
+                            <div class="fija-stat-lbl">Cuota Ecuabet</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 0.85rem; padding-top: 0.65rem; border-top: 1px dashed rgba(255,255,255,0.15);">
+                    <div style="font-size: 0.74rem; color: var(--text-muted); margin-bottom: 0.4rem; font-weight: 700; letter-spacing: 0.5px;">
+                        📊 OTROS MERCADOS DE SEGURIDAD ANALIZADOS EN ESTE PARTIDO:
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Doble Oportunidad: Libertad FC o Empate (1X) (84.5% | @1.30)">
+                    🎯 <strong>Doble Oportunidad:</strong> Libertad FC o Empate (1X) <span style="color: #ffffff;">(84.5% | @1.30)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Total de Goles: Menos de 2.5 goles totales (72.0% | @1.55)">
+                    🎯 <strong>Total de Goles:</strong> Menos de 2.5 goles totales <span style="color: #ffffff;">(72.0% | @1.55)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Ambos Anotan: NO Ambos Equipos Anotan (64.0% | @1.68)">
+                    🎯 <strong>Ambos Anotan:</strong> NO Ambos Equipos Anotan <span style="color: #ffffff;">(64.0% | @1.68)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Córners Totales: Más de 7.5 córners en Loja (75.0% | @1.42)">
+                    🎯 <strong>Córners Totales:</strong> Más de 7.5 córners en Loja <span style="color: #ffffff;">(75.0% | @1.42)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Primer Tiempo: Empate al Descanso (X) (68.0% | @1.85)">
+                    🎯 <strong>Primer Tiempo:</strong> Empate al Descanso (X) <span style="color: #ffffff;">(68.0% | @1.85)</span>
+                </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analytics Grid -->
+            <div class="analytics-grid-3">
+                <!-- 1X2 & Exact Score -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">🎯 Marcador & Probabilidad 1X2</div>
+                        <span class="badge-subtle">Dixon-Coles + Monte Carlo</span>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Victoria Libertad FC (1)</span>
+                            <span class="mono-bold" style="color: var(--cyan);">42.0%</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 42.0%; background: linear-gradient(90deg, #3b82f6, #06b6d4);"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Empate (X)</span>
+                            <span class="mono-bold" style="color: var(--gold);">42.5%</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 42.5%; background: linear-gradient(90deg, #f59e0b, #fbbf24);"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Victoria Emelec (2)</span>
+                            <span class="mono-bold" style="color: var(--emerald);">15.5%</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 15.5%; background: linear-gradient(90deg, #10b981, #34d399);"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 1.25rem; height: 180px; position: relative;">
+                        <canvas id="chart1X2-2"></canvas>
+                    </div>
+                </div>
+
+                <!-- Mercados de Goles -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">⚽ Mercados de Goles</div>
+                        <span class="badge-subtle">Poisson Multi-Línea</span>
+                    </div>
+                    
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Más de 1.5 Goles</span>
+                            <span class="mono-bold" style="color: #38bdf8;">68.0% &bull; @1.45</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 68.0%; background: #38bdf8;"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Más de 2.5 Goles</span>
+                            <span class="mono-bold" style="color: #818cf8;">38.0% &bull; @2.3</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 38.0%; background: #818cf8;"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Ambos Equipos Anotan (BTTS)</span>
+                            <span class="mono-bold" style="color: #f472b6;">46.0% &bull; @2.05</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 46.0%; background: #f472b6;"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 1rem; padding: 0.75rem; background: rgba(255,255,255,0.02); border-radius: 8px; font-size: 0.8rem; color: #94a3b8;">
+                        💡 <strong>Lectura Táctica:</strong> xG Combinado de 2.45 goles esperados en el cotejo.
+                    </div>
+                </div>
+
+                <!-- Córners & Balón Parado -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">🚩 Córners & Balón Parado</div>
+                        <span class="badge-subtle">SetPieceModel</span>
+                    </div>
+
+                    <div style="margin-bottom: 0.75rem;">
+                        <div style="font-size: 1.1rem; font-weight: 800; color: #38bdf8;">8.4 córners esperados</div>
+                        <div style="font-size: 0.85rem; color: #cbd5e1; margin-top: 0.2rem;">Línea Óptima: <strong>Más de 7.5 córners totales</strong> (75.0% | @1.42)</div>
+                    </div>
+
+                    <div style="font-size: 0.8rem; color: #94a3b8; line-height: 1.45; margin-bottom: 1rem;">
+                        El balón rápido en la altura de Loja genera rebotes y tiros de esquina por despejes de los zagueros.
+                    </div>
+
+                    <div class="card-header" style="padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.08);">
+                        <div class="card-title" style="font-size: 0.9rem;">🟨 Tarjetas & Rigor Arbitral</div>
+                    </div>
+                    <div style="font-size: 0.82rem; color: #fde047; font-weight: 700;">5.6 tarjetas esperadas &bull; Más de 4.5 tarjetas amarillas (@1.5)</div>
+                    <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.25rem;">Partido de pierna fuerte en el mediocampo por la urgencia de puntos de ambos equipos.</div>
+                </div>
+            </div>
+
+            <!-- Props & Figuras Clave -->
+            <div class="card" style="margin-top: 1.5rem;">
+                <div class="card-header">
+                    <div class="card-title">⭐ Remates & Disparos a Puerta de Figuras Clave</div>
+                    <span class="badge-subtle">PlayerProps Engine</span>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.75rem; margin-top: 0.5rem;">
+                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 0.75rem 0.9rem; margin-bottom: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.84rem; margin-bottom: 0.2rem;">
+                        <strong style="color: #67e8f9;">Diego Ávila (Libertad)</strong>
+                        <span style="color: #10b981; font-weight: 700;">75.0% &bull; @1.52</span>
+                    </div>
+                    <div style="font-size: 0.78rem; color: #cbd5e1;">Más de 1.5 tiros totales</div>
+                    <div style="font-size: 0.72rem; color: #94a3b8; margin-top: 0.2rem;">Principal ariete de Libertad buscando el arco en balones divididos.</div>
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 0.75rem 0.9rem; margin-bottom: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.84rem; margin-bottom: 0.2rem;">
+                        <strong style="color: #67e8f9;">Jaime Ayoví (Emelec)</strong>
+                        <span style="color: #10b981; font-weight: 700;">68.0% &bull; @1.65</span>
+                    </div>
+                    <div style="font-size: 0.78rem; color: #cbd5e1;">Más de 0.5 tiros a puerta</div>
+                    <div style="font-size: 0.72rem; color: #94a3b8; margin-top: 0.2rem;">Pivoteo constante y remate aéreo en balones detenidos.</div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Medical Bulletin & Sanity Audit Section -->
+            <div class="card" style="margin-top: 1.5rem; border-color: rgba(239, 68, 68, 0.35);">
+                <div class="card-header">
+                    <div class="card-title" style="color: #f87171;">🏥 Auditoría Sanitaria & Boletín Médico Oficial (SquadInjuryAgent)</div>
+                    <span class="tag-pill tag-rose">Veto Sanitario Verificado</span>
+                </div>
+                <div style="background: rgba(239, 68, 68, 0.12); border: 1px solid rgba(239, 68, 68, 0.35); border-radius: 10px; padding: 0.85rem 1rem; margin-top: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                        <span style="font-weight: 700; color: #f87171; font-size: 0.9rem;">🚫 Emelec &bull; DESGASTE FÍSICO POR VIAJE A LOJA</span>
+                        <span class="tag-pill tag-rose" style="font-size: 0.7rem;">INFORME OFICIAL</span>
+                    </div>
+                    <div style="font-size: 0.8rem; color: #fca5a5;">
+                        <strong>Parte Médico:</strong> Rotaciones tácticas de Leonel Álvarez en bandas para dosificar piernas.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== PARTIDO 4: FBC Melgar vs. Juan Pablo II ==================== -->
+        <div id="match-3" class="match-view" style="display: none;">
+            <!-- Hero Banner -->
+            <div class="hero-banner">
+                <div class="hero-context-badge">
+                    <span>🏆 Liga 1 Te Apuesto • Clausura (Arequipa)</span>
+                    <span>📍 Estadio Monumental de la UNSA (Arequipa, 2,335 msnm) &bull; ⏰ 18:00 (ECU)</span>
+                    <span>👥 18,200 en estadio (~10M audiencia nacional)</span>
+                </div>
+
+                <div class="hero-grid">
+                    <div class="team-col">
+                        <div class="team-flag">🔴⚫</div>
+                        <div class="team-name">FBC Melgar</div>
+                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--cyan);">2.6</span></div>
+                    </div>
+
+                    <div class="center-score-col">
+                        <div class="score-pill-title">Marcador Exacto Más Probable</div>
+                        <div class="hero-score-val">3 - 0</div>
+                        <div class="hero-score-conf">Top Alternativas: 2 - 0 (15.5%) • 3 - 1 (11.0%) • 4 - 0 (9.2%)</div>
+                    </div>
+
+                    <div class="team-col">
+                        <div class="team-flag">🟡⚪</div>
+                        <div class="team-name">Juan Pablo II</div>
+                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--amber);">0.4</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Glowing La Fija Card -->
+            <div class="fija-gold-card">
+                <div class="fija-badge-glow">
+                    <span class="fija-star">⭐</span> LA FIJA DEL PARTIDO &bull; Máxima Certidumbre Matemática
+                </div>
+                <div class="fija-content-grid">
+                    <div class="fija-main">
+                        <div class="fija-market-label">Selección Cuantitativa Principal</div>
+                        <div class="fija-market-title">FBC Melgar Gana el Partido (1)</div>
+                        <div class="fija-rationale">🔬 <em>Fundamento TimesFM & Monte Carlo:</em> El 'Dominó' es una máquina casi perfecta en el Monumental de la UNSA. Juan Pablo II es un equipo recién ascendido del llano que sufre asfixia en el segundo tiempo en los 2,335 metros de Arequipa. Con Bernardo Cuesta y Bordacahar, Melgar resolverá el partido con autoridad.</div>
+                    </div>
+                    <div class="fija-stats">
+                        <div class="fija-stat-box">
+                            <div class="fija-stat-val">89.0%</div>
+                            <div class="fija-stat-lbl">Probabilidad</div>
+                        </div>
+                        <div class="fija-stat-box">
+                            <div class="fija-stat-val" style="color: var(--emerald);">@1.12</div>
+                            <div class="fija-stat-lbl">Cuota Justa</div>
+                        </div>
+                        <div class="fija-stat-box">
+                            <div class="fija-stat-val" style="color: var(--cyan);">@1.22</div>
+                            <div class="fija-stat-lbl">Cuota Ecuabet</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 0.85rem; padding-top: 0.65rem; border-top: 1px dashed rgba(255,255,255,0.15);">
+                    <div style="font-size: 0.74rem; color: var(--text-muted); margin-bottom: 0.4rem; font-weight: 700; letter-spacing: 0.5px;">
+                        📊 OTROS MERCADOS DE SEGURIDAD ANALIZADOS EN ESTE PARTIDO:
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Victoria Directa (1X2): FBC Melgar Gana el Partido (1) (89.0% | @1.22)">
+                    🎯 <strong>Victoria Directa (1X2):</strong> FBC Melgar Gana el Partido (1) <span style="color: #ffffff;">(89.0% | @1.22)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Total de Goles Fijo: Más de 1.5 goles totales (85.0% | @1.24)">
+                    🎯 <strong>Total de Goles Fijo:</strong> Más de 1.5 goles totales <span style="color: #ffffff;">(85.0% | @1.24)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Melgar Anota Primero: FBC Melgar marca el primer gol (86.0% | @1.25)">
+                    🎯 <strong>Melgar Anota Primero:</strong> FBC Melgar marca el primer gol <span style="color: #ffffff;">(86.0% | @1.25)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Hándicap Arequipa: FBC Melgar -1.5 Goles (71.0% | @1.65)">
+                    🎯 <strong>Hándicap Arequipa:</strong> FBC Melgar -1.5 Goles <span style="color: #ffffff;">(71.0% | @1.65)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Córners Melgar: Melgar Más de 5.5 córners (80.0% | @1.38)">
+                    🎯 <strong>Córners Melgar:</strong> Melgar Más de 5.5 córners <span style="color: #ffffff;">(80.0% | @1.38)</span>
+                </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analytics Grid -->
+            <div class="analytics-grid-3">
+                <!-- 1X2 & Exact Score -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">🎯 Marcador & Probabilidad 1X2</div>
+                        <span class="badge-subtle">Dixon-Coles + Monte Carlo</span>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Victoria FBC Melgar (1)</span>
+                            <span class="mono-bold" style="color: var(--cyan);">78.0%</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 78.0%; background: linear-gradient(90deg, #3b82f6, #06b6d4);"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Empate (X)</span>
+                            <span class="mono-bold" style="color: var(--gold);">16.0%</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 16.0%; background: linear-gradient(90deg, #f59e0b, #fbbf24);"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Victoria Juan Pablo II (2)</span>
+                            <span class="mono-bold" style="color: var(--emerald);">6.0%</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 6.0%; background: linear-gradient(90deg, #10b981, #34d399);"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 1.25rem; height: 180px; position: relative;">
+                        <canvas id="chart1X2-3"></canvas>
+                    </div>
+                </div>
+
+                <!-- Mercados de Goles -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">⚽ Mercados de Goles</div>
+                        <span class="badge-subtle">Poisson Multi-Línea</span>
+                    </div>
+                    
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Más de 1.5 Goles</span>
+                            <span class="mono-bold" style="color: #38bdf8;">85.0% &bull; @1.24</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 85.0%; background: #38bdf8;"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Más de 2.5 Goles</span>
+                            <span class="mono-bold" style="color: #818cf8;">66.0% &bull; @1.62</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 66.0%; background: #818cf8;"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Ambos Equipos Anotan (BTTS)</span>
+                            <span class="mono-bold" style="color: #f472b6;">40.0% &bull; @2.15</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 40.0%; background: #f472b6;"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 1rem; padding: 0.75rem; background: rgba(255,255,255,0.02); border-radius: 8px; font-size: 0.8rem; color: #94a3b8;">
+                        💡 <strong>Lectura Táctica:</strong> xG Combinado de 3.0 goles esperados en el cotejo.
+                    </div>
+                </div>
+
+                <!-- Córners & Balón Parado -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">🚩 Córners & Balón Parado</div>
+                        <span class="badge-subtle">SetPieceModel</span>
+                    </div>
+
+                    <div style="margin-bottom: 0.75rem;">
+                        <div style="font-size: 1.1rem; font-weight: 800; color: #38bdf8;">9.5 córners esperados</div>
+                        <div style="font-size: 0.85rem; color: #cbd5e1; margin-top: 0.2rem;">Línea Óptima: <strong>Melgar Más de 5.5 córners</strong> (80.0% | @1.38)</div>
+                    </div>
+
+                    <div style="font-size: 0.8rem; color: #94a3b8; line-height: 1.45; margin-bottom: 1rem;">
+                        El asedio arequipeño por las bandas genera una avalancha de tiros de esquina locales.
+                    </div>
+
+                    <div class="card-header" style="padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.08);">
+                        <div class="card-title" style="font-size: 0.9rem;">🟨 Tarjetas & Rigor Arbitral</div>
+                    </div>
+                    <div style="font-size: 0.82rem; color: #fde047; font-weight: 700;">4.2 tarjetas esperadas &bull; Menos de 5.5 tarjetas totales (@1.48)</div>
+                    <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.25rem;">Juan Pablo II se replegará cerca de su arco sin entrar en juego brusco deliberado.</div>
+                </div>
+            </div>
+
+            <!-- Props & Figuras Clave -->
+            <div class="card" style="margin-top: 1.5rem;">
+                <div class="card-header">
+                    <div class="card-title">⭐ Remates & Disparos a Puerta de Figuras Clave</div>
+                    <span class="badge-subtle">PlayerProps Engine</span>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.75rem; margin-top: 0.5rem;">
+                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 0.75rem 0.9rem; margin-bottom: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.84rem; margin-bottom: 0.2rem;">
+                        <strong style="color: #67e8f9;">Bernardo Cuesta</strong>
+                        <span style="color: #10b981; font-weight: 700;">80.0% &bull; @1.5</span>
+                    </div>
+                    <div style="font-size: 0.78rem; color: #cbd5e1;">Más de 1.5 tiros al arco</div>
+                    <div style="font-size: 0.72rem; color: #94a3b8; margin-top: 0.2rem;">Goleador histórico y emblema indiscutido de Melgar en la UNSA.</div>
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 0.75rem 0.9rem; margin-bottom: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.84rem; margin-bottom: 0.2rem;">
+                        <strong style="color: #67e8f9;">Cristian Bordacahar</strong>
+                        <span style="color: #10b981; font-weight: 700;">78.0% &bull; @1.42</span>
+                    </div>
+                    <div style="font-size: 0.78rem; color: #cbd5e1;">Más de 2.0 tiros totales</div>
+                    <div style="font-size: 0.72rem; color: #94a3b8; margin-top: 0.2rem;">Llegada constante por carril interior.</div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Medical Bulletin & Sanity Audit Section -->
+            <div class="card" style="margin-top: 1.5rem; border-color: rgba(239, 68, 68, 0.35);">
+                <div class="card-header">
+                    <div class="card-title" style="color: #f87171;">🏥 Auditoría Sanitaria & Boletín Médico Oficial (SquadInjuryAgent)</div>
+                    <span class="tag-pill tag-rose">Veto Sanitario Verificado</span>
+                </div>
+                <div style="background: rgba(239, 68, 68, 0.12); border: 1px solid rgba(239, 68, 68, 0.35); border-radius: 10px; padding: 0.85rem 1rem; margin-top: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                        <span style="font-weight: 700; color: #f87171; font-size: 0.9rem;">🚫 FBC Melgar &bull; PLANTEL COMPLETO SIN BAJAS DE PESO</span>
+                        <span class="tag-pill tag-rose" style="font-size: 0.7rem;">INFORME OFICIAL</span>
+                    </div>
+                    <div style="font-size: 0.8rem; color: #fca5a5;">
+                        <strong>Parte Médico:</strong> Marco Valencia dispone de su oncena estelar para consolidar el liderato.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== PARTIDO 5: Nottingham Forest vs. Manchester City ==================== -->
+        <div id="match-4" class="match-view" style="display: none;">
+            <!-- Hero Banner -->
+            <div class="hero-banner">
+                <div class="hero-context-badge">
+                    <span>🏆 Premier League • Matchday 11 (Inglaterra)</span>
+                    <span>📍 The City Ground (Nottingham) &bull; ⏰ 12:30 (ECU)</span>
+                    <span>👥 30,445 en estadio (~75M audiencia global)</span>
+                </div>
+
+                <div class="hero-grid">
+                    <div class="team-col">
+                        <div class="team-flag">🔴🌲</div>
+                        <div class="team-name">Nottingham Forest</div>
+                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--cyan);">0.95</span></div>
+                    </div>
+
+                    <div class="center-score-col">
+                        <div class="score-pill-title">Marcador Exacto Más Probable</div>
+                        <div class="hero-score-val">1 - 2</div>
+                        <div class="hero-score-conf">Top Alternativas: 0 - 2 (12.0%) • 1 - 3 (9.5%) • 1 - 1 (8.5%)</div>
+                    </div>
+
+                    <div class="team-col">
+                        <div class="team-flag">🔵⚪</div>
+                        <div class="team-name">Manchester City</div>
+                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--amber);">2.2</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Glowing La Fija Card -->
+            <div class="fija-gold-card">
+                <div class="fija-badge-glow">
+                    <span class="fija-star">⭐</span> LA FIJA DEL PARTIDO &bull; Máxima Certidumbre Matemática
+                </div>
+                <div class="fija-content-grid">
+                    <div class="fija-main">
+                        <div class="fija-market-label">Selección Cuantitativa Principal</div>
+                        <div class="fija-market-title">Man City o Empate (X2) + Más de 1.5 goles</div>
+                        <div class="fija-rationale">🔬 <em>Fundamento TimesFM & Monte Carlo:</em> El City de Pep Guardiola necesita sumar de a tres para mantenerse en la cima de la Premier. Aunque The City Ground es una plaza combativa, la jerarquía de Haaland, Phil Foden y Kevin De Bruyne garantiza gol. La combinación X2 + Más de 1.5 goles cubre cualquier victoria 'citizen' o empate con goles.</div>
+                    </div>
+                    <div class="fija-stats">
+                        <div class="fija-stat-box">
+                            <div class="fija-stat-val">86.5%</div>
+                            <div class="fija-stat-lbl">Probabilidad</div>
+                        </div>
+                        <div class="fija-stat-box">
+                            <div class="fija-stat-val" style="color: var(--emerald);">@1.16</div>
+                            <div class="fija-stat-lbl">Cuota Justa</div>
+                        </div>
+                        <div class="fija-stat-box">
+                            <div class="fija-stat-val" style="color: var(--cyan);">@1.33</div>
+                            <div class="fija-stat-lbl">Cuota Ecuabet</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 0.85rem; padding-top: 0.65rem; border-top: 1px dashed rgba(255,255,255,0.15);">
+                    <div style="font-size: 0.74rem; color: var(--text-muted); margin-bottom: 0.4rem; font-weight: 700; letter-spacing: 0.5px;">
+                        📊 OTROS MERCADOS DE SEGURIDAD ANALIZADOS EN ESTE PARTIDO:
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Doble Oportunidad Blindada: Man City o Empate (X2) (88.0% | @1.22)">
+                    🎯 <strong>Doble Oportunidad Blindada:</strong> Man City o Empate (X2) <span style="color: #ffffff;">(88.0% | @1.22)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Total de Goles: Más de 1.5 goles totales (84.0% | @1.26)">
+                    🎯 <strong>Total de Goles:</strong> Más de 1.5 goles totales <span style="color: #ffffff;">(84.0% | @1.26)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Córners Totales: Más de 9.5 córners en Nottingham (75.0% | @1.52)">
+                    🎯 <strong>Córners Totales:</strong> Más de 9.5 córners en Nottingham <span style="color: #ffffff;">(75.0% | @1.52)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Haaland al Marcador: Erling Haaland anota en cualquier momento (70.0% | @1.65)">
+                    🎯 <strong>Haaland al Marcador:</strong> Erling Haaland anota en cualquier momento <span style="color: #ffffff;">(70.0% | @1.65)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Man City Córners: City Más de 5.5 córners (78.0% | @1.42)">
+                    🎯 <strong>Man City Córners:</strong> City Más de 5.5 córners <span style="color: #ffffff;">(78.0% | @1.42)</span>
+                </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analytics Grid -->
+            <div class="analytics-grid-3">
+                <!-- 1X2 & Exact Score -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">🎯 Marcador & Probabilidad 1X2</div>
+                        <span class="badge-subtle">Dixon-Coles + Monte Carlo</span>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Victoria Nottingham Forest (1)</span>
+                            <span class="mono-bold" style="color: var(--cyan);">14.0%</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 14.0%; background: linear-gradient(90deg, #3b82f6, #06b6d4);"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Empate (X)</span>
+                            <span class="mono-bold" style="color: var(--gold);">24.5%</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 24.5%; background: linear-gradient(90deg, #f59e0b, #fbbf24);"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Victoria Manchester City (2)</span>
+                            <span class="mono-bold" style="color: var(--emerald);">61.5%</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 61.5%; background: linear-gradient(90deg, #10b981, #34d399);"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 1.25rem; height: 180px; position: relative;">
+                        <canvas id="chart1X2-4"></canvas>
+                    </div>
+                </div>
+
+                <!-- Mercados de Goles -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">⚽ Mercados de Goles</div>
+                        <span class="badge-subtle">Poisson Multi-Línea</span>
+                    </div>
+                    
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Más de 1.5 Goles</span>
+                            <span class="mono-bold" style="color: #38bdf8;">84.0% &bull; @1.26</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 84.0%; background: #38bdf8;"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Más de 2.5 Goles</span>
+                            <span class="mono-bold" style="color: #818cf8;">62.0% &bull; @1.68</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 62.0%; background: #818cf8;"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Ambos Equipos Anotan (BTTS)</span>
+                            <span class="mono-bold" style="color: #f472b6;">58.0% &bull; @1.82</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 58.0%; background: #f472b6;"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 1rem; padding: 0.75rem; background: rgba(255,255,255,0.02); border-radius: 8px; font-size: 0.8rem; color: #94a3b8;">
+                        💡 <strong>Lectura Táctica:</strong> xG Combinado de 3.15 goles esperados en el cotejo.
+                    </div>
+                </div>
+
+                <!-- Córners & Balón Parado -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">🚩 Córners & Balón Parado</div>
+                        <span class="badge-subtle">SetPieceModel</span>
+                    </div>
+
+                    <div style="margin-bottom: 0.75rem;">
+                        <div style="font-size: 1.1rem; font-weight: 800; color: #38bdf8;">10.2 córners esperados</div>
+                        <div style="font-size: 0.85rem; color: #cbd5e1; margin-top: 0.2rem;">Línea Óptima: <strong>Más de 9.5 córners totales</strong> (75.0% | @1.52)</div>
+                    </div>
+
+                    <div style="font-size: 0.8rem; color: #94a3b8; line-height: 1.45; margin-bottom: 1rem;">
+                        El City genera permanente desborde por los costados con Doku y Savinho, elevando el conteo de tiros de esquina.
+                    </div>
+
+                    <div class="card-header" style="padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.08);">
+                        <div class="card-title" style="font-size: 0.9rem;">🟨 Tarjetas & Rigor Arbitral</div>
+                    </div>
+                    <div style="font-size: 0.82rem; color: #fde047; font-weight: 700;">4.4 tarjetas esperadas &bull; Más de 3.5 tarjetas amarillas (@1.5)</div>
+                    <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.25rem;">El Forest apelará a cortar el circuito de pases de Rodri y Foden con faltas tácticas.</div>
+                </div>
+            </div>
+
+            <!-- Props & Figuras Clave -->
+            <div class="card" style="margin-top: 1.5rem;">
+                <div class="card-header">
+                    <div class="card-title">⭐ Remates & Disparos a Puerta de Figuras Clave</div>
+                    <span class="badge-subtle">PlayerProps Engine</span>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.75rem; margin-top: 0.5rem;">
+                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 0.75rem 0.9rem; margin-bottom: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.84rem; margin-bottom: 0.2rem;">
+                        <strong style="color: #67e8f9;">Erling Haaland</strong>
+                        <span style="color: #10b981; font-weight: 700;">84.0% &bull; @1.42</span>
+                    </div>
+                    <div style="font-size: 0.78rem; color: #cbd5e1;">Más de 1.5 tiros al arco</div>
+                    <div style="font-size: 0.72rem; color: #94a3b8; margin-top: 0.2rem;">Líder de goleo de la Premier League con hambre insaciable.</div>
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 0.75rem 0.9rem; margin-bottom: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.84rem; margin-bottom: 0.2rem;">
+                        <strong style="color: #67e8f9;">Chris Wood (Forest)</strong>
+                        <span style="color: #10b981; font-weight: 700;">65.0% &bull; @1.68</span>
+                    </div>
+                    <div style="font-size: 0.78rem; color: #cbd5e1;">Más de 0.5 tiros a puerta</div>
+                    <div style="font-size: 0.72rem; color: #94a3b8; margin-top: 0.2rem;">Juego aéreo letal en centros laterales.</div>
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 0.75rem 0.9rem; margin-bottom: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.84rem; margin-bottom: 0.2rem;">
+                        <strong style="color: #67e8f9;">Phil Foden</strong>
+                        <span style="color: #10b981; font-weight: 700;">76.0% &bull; @1.48</span>
+                    </div>
+                    <div style="font-size: 0.78rem; color: #cbd5e1;">Más de 2.0 tiros totales</div>
+                    <div style="font-size: 0.72rem; color: #94a3b8; margin-top: 0.2rem;">Remate de media distancia ante bloques bajos.</div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Medical Bulletin & Sanity Audit Section -->
+            <div class="card" style="margin-top: 1.5rem; border-color: rgba(239, 68, 68, 0.35);">
+                <div class="card-header">
+                    <div class="card-title" style="color: #f87171;">🏥 Auditoría Sanitaria & Boletín Médico Oficial (SquadInjuryAgent)</div>
+                    <span class="tag-pill tag-rose">Veto Sanitario Verificado</span>
+                </div>
+                <div style="background: rgba(239, 68, 68, 0.12); border: 1px solid rgba(239, 68, 68, 0.35); border-radius: 10px; padding: 0.85rem 1rem; margin-top: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                        <span style="font-weight: 700; color: #f87171; font-size: 0.9rem;">🚫 Rodri / Kevin De Bruyne &bull; GESTIÓN DE MINUTOS</span>
+                        <span class="tag-pill tag-rose" style="font-size: 0.7rem;">INFORME OFICIAL</span>
+                    </div>
+                    <div style="font-size: 0.8rem; color: #fca5a5;">
+                        <strong>Parte Médico:</strong> Guardiola dosifica cargas pero mantiene a sus mejores armas en el once de salida.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== PARTIDO 6: Cienciano vs. Sport Huancayo ==================== -->
+        <div id="match-5" class="match-view" style="display: none;">
+            <!-- Hero Banner -->
+            <div class="hero-banner">
+                <div class="hero-context-badge">
+                    <span>🏆 Liga 1 Te Apuesto • Clausura (Cusco)</span>
+                    <span>📍 Estadio Inca Garcilaso de la Vega (Cusco, 3,400 msnm) &bull; ⏰ 20:30 (ECU)</span>
+                    <span>👥 22,000 en estadio (~11M audiencia nacional)</span>
+                </div>
+
+                <div class="hero-grid">
+                    <div class="team-col">
+                        <div class="team-flag">🔴👑</div>
+                        <div class="team-name">Cienciano</div>
+                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--cyan);">1.85</span></div>
+                    </div>
+
+                    <div class="center-score-col">
+                        <div class="score-pill-title">Marcador Exacto Más Probable</div>
+                        <div class="hero-score-val">2 - 0</div>
+                        <div class="hero-score-conf">Top Alternativas: 1 - 0 (14.0%) • 2 - 1 (10.2%) • 1 - 1 (9.0%)</div>
+                    </div>
+
+                    <div class="team-col">
+                        <div class="team-flag">🔴🟢</div>
+                        <div class="team-name">Sport Huancayo</div>
+                        <div class="team-xg-chip">xG Proyectado: <span class="mono-bold" style="color: var(--amber);">0.7</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Glowing La Fija Card -->
+            <div class="fija-gold-card">
+                <div class="fija-badge-glow">
+                    <span class="fija-star">⭐</span> LA FIJA DEL PARTIDO &bull; Máxima Certidumbre Matemática
+                </div>
+                <div class="fija-content-grid">
+                    <div class="fija-main">
+                        <div class="fija-market-label">Selección Cuantitativa Principal</div>
+                        <div class="fija-market-title">Cienciano o Empate (1X) + Menos de 3.5 goles</div>
+                        <div class="fija-rationale">🔬 <em>Fundamento TimesFM & Monte Carlo:</em> A 3,400 metros sobre el nivel del mar en el Garcilaso de la Vega, Cienciano maneja el ritmo con posesión paciente y una zaga férrea. Aunque Sport Huancayo está habituado a la altura, su rendimiento nocturno de visita baja considerablemente. La combinación 1X + Menos de 3.5 goles es casi impenetrable.</div>
+                    </div>
+                    <div class="fija-stats">
+                        <div class="fija-stat-box">
+                            <div class="fija-stat-val">83.0%</div>
+                            <div class="fija-stat-lbl">Probabilidad</div>
+                        </div>
+                        <div class="fija-stat-box">
+                            <div class="fija-stat-val" style="color: var(--emerald);">@1.2</div>
+                            <div class="fija-stat-lbl">Cuota Justa</div>
+                        </div>
+                        <div class="fija-stat-box">
+                            <div class="fija-stat-val" style="color: var(--cyan);">@1.32</div>
+                            <div class="fija-stat-lbl">Cuota Ecuabet</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 0.85rem; padding-top: 0.65rem; border-top: 1px dashed rgba(255,255,255,0.15);">
+                    <div style="font-size: 0.74rem; color: var(--text-muted); margin-bottom: 0.4rem; font-weight: 700; letter-spacing: 0.5px;">
+                        📊 OTROS MERCADOS DE SEGURIDAD ANALIZADOS EN ESTE PARTIDO:
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.35rem;">
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Doble Oportunidad: Cienciano o Empate (1X) (86.0% | @1.24)">
+                    🎯 <strong>Doble Oportunidad:</strong> Cienciano o Empate (1X) <span style="color: #ffffff;">(86.0% | @1.24)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Total de Goles: Menos de 3.5 goles totales (78.0% | @1.35)">
+                    🎯 <strong>Total de Goles:</strong> Menos de 3.5 goles totales <span style="color: #ffffff;">(78.0% | @1.35)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Córners Cusco: Más de 8.5 córners totales (76.0% | @1.45)">
+                    🎯 <strong>Córners Cusco:</strong> Más de 8.5 córners totales <span style="color: #ffffff;">(76.0% | @1.45)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Cienciano Gana Directo: Victoria de Cienciano (1) (62.0% | @1.62)">
+                    🎯 <strong>Cienciano Gana Directo:</strong> Victoria de Cienciano (1) <span style="color: #ffffff;">(62.0% | @1.62)</span>
+                </span>
+                <span class="tag-pill tag-cyan" style="cursor: pointer; margin: 0.2rem; font-size: 0.76rem;" title="Ambos Anotan: NO Ambos Equipos Anotan (65.0% | @1.65)">
+                    🎯 <strong>Ambos Anotan:</strong> NO Ambos Equipos Anotan <span style="color: #ffffff;">(65.0% | @1.65)</span>
+                </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analytics Grid -->
+            <div class="analytics-grid-3">
+                <!-- 1X2 & Exact Score -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">🎯 Marcador & Probabilidad 1X2</div>
+                        <span class="badge-subtle">Dixon-Coles + Monte Carlo</span>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Victoria Cienciano (1)</span>
+                            <span class="mono-bold" style="color: var(--cyan);">62.0%</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 62.0%; background: linear-gradient(90deg, #3b82f6, #06b6d4);"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Empate (X)</span>
+                            <span class="mono-bold" style="color: var(--gold);">26.0%</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 26.0%; background: linear-gradient(90deg, #f59e0b, #fbbf24);"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Victoria Sport Huancayo (2)</span>
+                            <span class="mono-bold" style="color: var(--emerald);">12.0%</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 12.0%; background: linear-gradient(90deg, #10b981, #34d399);"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 1.25rem; height: 180px; position: relative;">
+                        <canvas id="chart1X2-5"></canvas>
+                    </div>
+                </div>
+
+                <!-- Mercados de Goles -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">⚽ Mercados de Goles</div>
+                        <span class="badge-subtle">Poisson Multi-Línea</span>
+                    </div>
+                    
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Más de 1.5 Goles</span>
+                            <span class="mono-bold" style="color: #38bdf8;">72.0% &bull; @1.4</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 72.0%; background: #38bdf8;"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Más de 2.5 Goles</span>
+                            <span class="mono-bold" style="color: #818cf8;">45.0% &bull; @2.05</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 45.0%; background: #818cf8;"></div>
+                        </div>
+                    </div>
+
+                    <div class="prob-bar-row">
+                        <div class="prob-bar-label">
+                            <span>Ambos Equipos Anotan (BTTS)</span>
+                            <span class="mono-bold" style="color: #f472b6;">44.0% &bull; @2.0</span>
+                        </div>
+                        <div class="prob-bar-track">
+                            <div class="prob-bar-fill" style="width: 44.0%; background: #f472b6;"></div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 1rem; padding: 0.75rem; background: rgba(255,255,255,0.02); border-radius: 8px; font-size: 0.8rem; color: #94a3b8;">
+                        💡 <strong>Lectura Táctica:</strong> xG Combinado de 2.55 goles esperados en el cotejo.
+                    </div>
+                </div>
+
+                <!-- Córners & Balón Parado -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">🚩 Córners & Balón Parado</div>
+                        <span class="badge-subtle">SetPieceModel</span>
+                    </div>
+
+                    <div style="margin-bottom: 0.75rem;">
+                        <div style="font-size: 1.1rem; font-weight: 800; color: #38bdf8;">9.4 córners esperados</div>
+                        <div style="font-size: 0.85rem; color: #cbd5e1; margin-top: 0.2rem;">Línea Óptima: <strong>Más de 8.5 córners totales</strong> (76.0% | @1.45)</div>
+                    </div>
+
+                    <div style="font-size: 0.8rem; color: #94a3b8; line-height: 1.45; margin-bottom: 1rem;">
+                        El balón vuela veloz en el Cusco; los disparos lejanos son desviados al córner por los guardametas.
+                    </div>
+
+                    <div class="card-header" style="padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.08);">
+                        <div class="card-title" style="font-size: 0.9rem;">🟨 Tarjetas & Rigor Arbitral</div>
+                    </div>
+                    <div style="font-size: 0.82rem; color: #fde047; font-weight: 700;">5.0 tarjetas esperadas &bull; Más de 4.5 tarjetas amarillas (@1.52)</div>
+                    <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.25rem;">Fricción tradicional entre clubes del sur y centro andino del Perú.</div>
+                </div>
+            </div>
+
+            <!-- Props & Figuras Clave -->
+            <div class="card" style="margin-top: 1.5rem;">
+                <div class="card-header">
+                    <div class="card-title">⭐ Remates & Disparos a Puerta de Figuras Clave</div>
+                    <span class="badge-subtle">PlayerProps Engine</span>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.75rem; margin-top: 0.5rem;">
+                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 0.75rem 0.9rem; margin-bottom: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.84rem; margin-bottom: 0.2rem;">
+                        <strong style="color: #67e8f9;">Carlos Garcés (Cienciano)</strong>
+                        <span style="color: #10b981; font-weight: 700;">76.0% &bull; @1.55</span>
+                    </div>
+                    <div style="font-size: 0.78rem; color: #cbd5e1;">Más de 1.5 tiros al arco</div>
+                    <div style="font-size: 0.72rem; color: #94a3b8; margin-top: 0.2rem;">Goleador del 'Papá' con gran capacidad de definición aérea.</div>
+                </div>
+                <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 0.75rem 0.9rem; margin-bottom: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.84rem; margin-bottom: 0.2rem;">
+                        <strong style="color: #67e8f9;">Christian Cueva (Cienciano)</strong>
+                        <span style="color: #10b981; font-weight: 700;">70.0% &bull; @1.68</span>
+                    </div>
+                    <div style="font-size: 0.78rem; color: #cbd5e1;">Más de 0.5 tiros al arco</div>
+                    <div style="font-size: 0.72rem; color: #94a3b8; margin-top: 0.2rem;">Tiros libres y disparos colocados al borde del área.</div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Medical Bulletin & Sanity Audit Section -->
+            <div class="card" style="margin-top: 1.5rem; border-color: rgba(239, 68, 68, 0.35);">
+                <div class="card-header">
+                    <div class="card-title" style="color: #f87171;">🏥 Auditoría Sanitaria & Boletín Médico Oficial (SquadInjuryAgent)</div>
+                    <span class="tag-pill tag-rose">Veto Sanitario Verificado</span>
+                </div>
+                <div style="background: rgba(239, 68, 68, 0.12); border: 1px solid rgba(239, 68, 68, 0.35); border-radius: 10px; padding: 0.85rem 1rem; margin-top: 0.5rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.25rem;">
+                        <span style="font-weight: 700; color: #f87171; font-size: 0.9rem;">🚫 Cienciano &bull; PLANTEL COMPLETO MOTIVADO</span>
+                        <span class="tag-pill tag-rose" style="font-size: 0.7rem;">INFORME OFICIAL</span>
+                    </div>
+                    <div style="font-size: 0.8rem; color: #fca5a5;">
+                        <strong>Parte Médico:</strong> El 'Papá' busca asegurar cupo internacional ante su hinchada en el Cusco.
+                    </div>
+                </div>
+            </div>
+        </div>
 
         </div> <!-- Fin de view-container-matches -->
 
-        <!-- VISTA 2: WIN RATE & AUDITORÍA EN VIVO -->
+<!-- VISTA 2: WIN RATE & AUDITORÍA EN VIVO -->
         <div id="view-container-winrate" style="display: none;">
             
             <!-- Resumen Ejecutivo Spotlight -->
@@ -10744,12 +11865,12 @@
         var selectedSlipItems = [];
 
         var chartConfigs = [
-            { id: 'chart1X2-0', labels: ['Real Madrid (1)', 'Empate (X)', 'Villarreal (2)'], data: [62.5, 26.0, 11.5] },
-            { id: 'chart1X2-1', labels: ['Barcelona (1)', 'Empate (X)', 'Getafe (2)'], data: [70.2, 25.9, 4.0] },
-            { id: 'chart1X2-2', labels: ['Arsenal (1)', 'Empate (X)', 'Leeds United (2)'], data: [66.3, 26.0, 7.7] },
-            { id: 'chart1X2-3', labels: ['FC Augsburg (1)', 'Empate (X)', 'Bayern Munich (2)'], data: [5.3, 27.6, 67.1] },
-            { id: 'chart1X2-4', labels: ['Inter Milan (1)', 'Empate (X)', 'Parma (2)'], data: [66.8, 26.0, 7.2] },
-            { id: 'chart1X2-5', labels: ['Borussia Dortmund (1)', 'Empate (X)', 'Werder Bremen (2)'], data: [67.6, 26.0, 6.4] }
+            { id: 'chart1X2-0', labels: ['Real Madrid (2)', 'Empate (X)', 'Valencia (1)'], data: [61.0, 26.0, 13.0] },
+            { id: 'chart1X2-1', labels: ['PSG (1)', 'Empate (X)', 'Troyes (2)'], data: [82.0, 12.0, 6.0] },
+            { id: 'chart1X2-2', labels: ['Libertad FC (1)', 'Empate (X)', 'Emelec (2)'], data: [42.0, 42.5, 15.5] },
+            { id: 'chart1X2-3', labels: ['FBC Melgar (1)', 'Empate (X)', 'Juan Pablo II (2)'], data: [78.0, 16.0, 6.0] },
+            { id: 'chart1X2-4', labels: ['Man City (2)', 'Empate (X)', 'Nottingham Forest (1)'], data: [61.5, 24.5, 14.0] },
+            { id: 'chart1X2-5', labels: ['Cienciano (1)', 'Empate (X)', 'Sport Huancayo (2)'], data: [62.0, 26.0, 12.0] }
         ];
 
         // 2. Conmutador de Partidos (Tabs 0 a 5)

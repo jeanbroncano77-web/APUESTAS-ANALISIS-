@@ -6,3 +6,4 @@ with open('sports_agents/audit_history.json', 'r', encoding='utf-8') as f:
 for k, v in d.items():
     if k != 'history':
         print(f"{k}: {v}")
+

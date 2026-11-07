@@ -29,3 +29,4 @@ print(f"Computed Final Bankroll: {bankroll:.2f}")
 print(f"Wins: {wins}, Losses: {losses}, Total: {len(history)}, Win Rate: {wins/len(history)*100:.1f}%")
 print(f"Fija Wins: {fija_wins}, Fija Losses: {fija_losses}, Fija Win Rate: {fija_wins/(fija_wins+fija_losses)*100:.1f}%")
 print("Last 15 points:", points[-15:])
+

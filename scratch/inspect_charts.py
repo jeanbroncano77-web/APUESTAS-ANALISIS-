@@ -14,3 +14,4 @@ idx_script = html.find('new Chart')
 if idx_script != -1:
     print("\nFound new Chart at", idx_script)
     print(html[idx_script:idx_script+2000])
+
