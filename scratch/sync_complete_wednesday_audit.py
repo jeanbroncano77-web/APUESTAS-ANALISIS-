@@ -440,3 +440,4 @@ for p in [index_path, dashboard_path, root_index_path]:
         print(f"El archivo {p} no existe.")
 
 print("¡SINCRONIZACIÓN COMPLETA FINALIZADA!")
+

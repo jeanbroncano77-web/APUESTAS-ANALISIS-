@@ -379,3 +379,4 @@ if s_pos != -1 and e_pos != -1:
         print("✓ ../index.html (raíz) reconstruido y limpiado con éxito.")
 else:
     print(f"❌ Error buscando delimitadores: s_pos={s_pos}, e_pos={e_pos}")
+

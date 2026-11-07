@@ -15,3 +15,4 @@ print('Has Autopsia 15:', 'AUTOPSIA DE FALLO #15' in text)
 print('Has Regla 122:', 'Regla de Oro #122' in text or 'REGLA DE ORO #122' in text)
 print('Win rate badge:', '87.4% WIN' in text)
 print('Total file size:', len(text))
+
