@@ -15,3 +15,4 @@ for i, m in enumerate(d.get('Matches', [])):
     odds = fija.get('odds')
     prob = fija.get('probability')
     print(f"{i+1}. {h} vs {a} | Score: {score} | Fija: {sel} @{odds} ({prob}%)")
+
