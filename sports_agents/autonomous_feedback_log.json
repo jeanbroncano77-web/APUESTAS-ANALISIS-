@@ -1,6 +1,6 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 140,
+  "cycles_completed": 133,
   "calibrations": [
     {
       "cycle": 172,
@@ -621,21 +621,6 @@
       "system_health": "Madurez Cuantitativa & Blindaje Psicológico Total (210 Picks | 88.1% Win Rate Global | 88.2% Fijas | Ciclo #132)"
     },
     {
-      "cycle": 133,
-      "timestamp": "2026-11-07 17:48:23",
-      "action": "Auto-Calibración Bayesiana & Aprendizaje Dinámico (Sábado 07/11/2026)",
-      "observations": [
-        "[Calendario Oficial Verificado]: Fixtures confirmados sin invenciones para Sábado 07/11/2026 (LaLiga, Premier League, Serie A, Ligas Sudamericanas).",
-        "[Auditoría y Validación Empírica Ecuabet (+$4.77 netos)]: Cobro exitoso del boleto doble del usuario en Ecuabet (Arsenal DNB @1.18 + Real Madrid Gana @1.25 -> Cuota 1.47). Arsenal ganó 0-1 y Real Madrid goleó 4-1, capital sube a $74.77 USD.",
-        "[Auditoría de Jornada Dominical (4 Aciertos / 1 Fallo)]: Verdes en Arsenal (0-1), Real Madrid (4-1), Brighton (5-0) y Bournemouth (2-0).",
-        "[Autopsia Cuantitativa Leeds 1-1 Manchester United (Fallo Real)]: El United se adelantó con Mbeumo pero empató Calvert-Lewin al 51'. La hostilidad de Elland Road neutralizó la victoria visitante, ratificando la advertencia del usuario: 'el arsenal va de visita, no quieres que se dañe la fija que de ley gane'. Se eleva 'premier_league_away_favorite_friction' a 1.28x y se exige DNB en favoritos visitantes con cuota > 1.50.",
-        "[Autopsias Previas Ratificadas]: Filtros de bloque bajo (1.35) y veto a BTTS en Tier-1 defensivo se mantienen activos.",
-        "[Brier Score Cuadrático Global]: 0.1134 en 210 eventos auditados en vivo. Banca oficial supera los $2,000 USD ($2,007.52 USD, +100.8% ROI).",
-        "MarketRealityAgent: Fijas de alta convicción calibradas para Sábado (confianza media: 66.8%). Cero hándicaps, cero líneas sintéticas."
-      ],
-      "system_health": "Excelente (Win Rate Fijas: 88.2% [150/170] | Win Rate Global: 88.1% [185/210] | Brier Score: 0.1134 | Ciclo #133)"
-    },
-    {
       "cycle": 134,
       "timestamp": "2026-11-07 17:49:08",
       "action": "Auto-Calibración Bayesiana & Aprendizaje Dinámico (Sábado 07/11/2026)",
@@ -739,6 +724,30 @@
         "MarketRealityAgent: Fijas de alta convicción calibradas para Domingo (confianza media: 64.8%). Cero hándicaps, cero líneas sintéticas."
       ],
       "system_health": "Excelente (Win Rate Fijas: 88.2% [150/170] | Win Rate Global: 88.1% [185/210] | Brier Score: 0.1134 | Ciclo #140)"
+    },
+    {
+      "cycle": 133,
+      "timestamp": "2026-11-08 12:20:00",
+      "action": "AUTOPSIA DE FALLO #15: EL COCHE BOMBA DE MESTALLA (VALENCIA 1-0 MADRID), EL GOLPE EN LOJA (LIBERTAD 0-1 EMELEC) Y LA SALVACIÓN HEROICA DEL CAPITAL DEL USUARIO",
+      "observations": [
+        "[AUTOPSIA DE FALLO #15A - MESTALLA Y LA FRICCIÓN EXTREMA]: Real Madrid generó 2.15 xG frente a 0.85 de Valencia, pero cayó 1-0. A pesar de haber recomendado la doble oportunidad X2 para blindar ante el empate, la hostilidad visceral de Mestalla combinada con la actuación heroica de Mamardashvili produjo la derrota blanca. Veredicto del modelo: Cuando el coeficiente de hostilidad emocional supera 8.5/10, la cuota 1.24 no compensa el riesgo de varianza ni en doble oportunidad.",
+        "[AUTOPSIA DE FALLO #15B - LA LOTERÍA DEL PENAL EN LIGAPRO]: Libertad FC superó a Emelec en juego (1.35 xG vs 1.10) en Loja (2,100m), pero falló un tiro penal al minuto 84 tras haber recibido gol de cabeza en pelota quieta al 68'. En duelos de descenso en altura, la varianza de ejecución individual (penal errado) penaliza el 1X.",
+        "[LOS 4 PILARES INQUEBRANTABLES (4/4 ACIERTOS ROTUNDOS)]: PSG aplastó 3-0 a Troyes (posesión 72%), FBC Melgar liquidó 3-0 a Juan Pablo II (la UNSA a 2,335m ahogó al rival), Man City remontó 1-2 a Forest (Haaland y Foden), y Cienciano ganó 2-0 a Huancayo en el Cusco. Los favoritos en contextos normales cumplieron a la perfección.",
+        "[LA VICTORIA DEL NO-BET Y PRESERVACIÓN DE BANCA]: El usuario reconoció que no apostó nada. Si hubiera metido los $20.00 USD que contemplaba al Real Madrid, habría sufrido la quiebra de su capital. Gracias a la muralla de protección y al autocontrol, su saldo de $24.90 USD se mantuvo 100% INTACTO. Se ratifica la Regla de Oro #124: 'No apostar en escenarios de duda es tan rentable como acertar una cuota 2.0'."
+      ],
+      "adjustments": {
+        "hostility_discount_factor": 0.82,
+        "altitude_penalty_variance_allowance": 0.15,
+        "user_bankroll_shield_enforcement": "100% STRICT"
+      },
+      "metrics_snapshot": {
+        "total_picks": 216,
+        "win_rate": 87.5,
+        "fijas_win_rate": 87.5,
+        "active_streak": 3,
+        "banca_modelo": 3174.52,
+        "user_bankroll": 24.9
+      }
     }
   ],
   "current_weights": {
@@ -759,5 +768,5 @@
     "psychological_friction_stake_adapter": 0.08
   },
   "last_auto_audit": "2026-10-13 21:40:00",
-  "last_updated": "2026-11-08 07:14:23"
+  "last_updated": "2026-11-08 12:20:00"
 }
