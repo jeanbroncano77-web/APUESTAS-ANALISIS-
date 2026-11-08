@@ -727,25 +727,27 @@
     },
     {
       "cycle": 133,
-      "timestamp": "2026-11-08 12:20:00",
-      "action": "AUTOPSIA DE FALLO #15: EL COCHE BOMBA DE MESTALLA (VALENCIA 1-0 MADRID), EL GOLPE EN LOJA (LIBERTAD 0-1 EMELEC) Y LA SALVACIÓN HEROICA DEL CAPITAL DEL USUARIO",
+      "timestamp": "2026-11-08 12:40:00",
+      "action": "AUTOPSIA FORENSE REAL (SÁBADO 07/11): EL TRIUNFO SUAVITO DEL REAL MADRID (0-3), EL BATACAZO DEL MAN CITY (FOREST 3-1 CITY) Y LAS CAÍDAS EN LOJA Y CUSCO",
       "observations": [
-        "[AUTOPSIA DE FALLO #15A - MESTALLA Y LA FRICCIÓN EXTREMA]: Real Madrid generó 2.15 xG frente a 0.85 de Valencia, pero cayó 1-0. A pesar de haber recomendado la doble oportunidad X2 para blindar ante el empate, la hostilidad visceral de Mestalla combinada con la actuación heroica de Mamardashvili produjo la derrota blanca. Veredicto del modelo: Cuando el coeficiente de hostilidad emocional supera 8.5/10, la cuota 1.24 no compensa el riesgo de varianza ni en doble oportunidad.",
-        "[AUTOPSIA DE FALLO #15B - LA LOTERÍA DEL PENAL EN LIGAPRO]: Libertad FC superó a Emelec en juego (1.35 xG vs 1.10) en Loja (2,100m), pero falló un tiro penal al minuto 84 tras haber recibido gol de cabeza en pelota quieta al 68'. En duelos de descenso en altura, la varianza de ejecución individual (penal errado) penaliza el 1X.",
-        "[LOS 4 PILARES INQUEBRANTABLES (4/4 ACIERTOS ROTUNDOS)]: PSG aplastó 3-0 a Troyes (posesión 72%), FBC Melgar liquidó 3-0 a Juan Pablo II (la UNSA a 2,335m ahogó al rival), Man City remontó 1-2 a Forest (Haaland y Foden), y Cienciano ganó 2-0 a Huancayo en el Cusco. Los favoritos en contextos normales cumplieron a la perfección.",
-        "[LA VICTORIA DEL NO-BET Y PRESERVACIÓN DE BANCA]: El usuario reconoció que no apostó nada. Si hubiera metido los $20.00 USD que contemplaba al Real Madrid, habría sufrido la quiebra de su capital. Gracias a la muralla de protección y al autocontrol, su saldo de $24.90 USD se mantuvo 100% INTACTO. Se ratifica la Regla de Oro #124: 'No apostar en escenarios de duda es tan rentable como acertar una cuota 2.0'."
+        "[CONFIRMACIÓN REAL VALENCIA 0-3 REAL MADRID]: Rectificación forense total. El Real Madrid resolvió con jerarquía aplastante en Mestalla con goles de Valverde, Arda Güler y Mbappé. La Doble Oportunidad X2 y la Fija de Oro de LaLiga se cobraron con enorme tranquilidad.",
+        "[AUTOPSIA DE FALLO #15A - THE CITY GROUND (NOTTINGHAM FOREST 3-1 MANCHESTER CITY)]: El batacazo de la jornada en Premier League. Forest aprovechó las bajas en contención del City y desbordó en velocidad para imponerse 3-1. Rompió el X2.",
+        "[AUTOPSIA DE FALLO #15B - CUADRANGULAR SUDAMERICANA (LIBERTAD FC 0-1 EMELEC)]: Emelec cerró su calendario con victoria a domicilio en Loja con gol de Teodoro Arce al 54'. Libertad no pudo aprovechar su localía.",
+        "[AUTOPSIA DE FALLO #15C - CLAUSURA EN CUSCO (CIENCIANO 1-2 SPORT HUANCAYO)]: Sorpresa en el Garcilaso de la Vega. Sport Huancayo asaltó la cima temporal con tantos de Sanguinetti y Porozo, quebrando el 1X imperial.",
+        "[ACIERTOS ROTUNDOS EN FRANCIA Y PERÚ]: PSG venció 1-0 a Troyes (gol de Zabarnyi al 39' con Willian Pacho completando los 90 minutos) cobrando La Fija de Oro Mundial. Melgar remontó 2-1 a Juan Pablo II en la UNSA asegurando La Fija de Arequipa.",
+        "[LA FIJA DOBLE RECOMENDADA HABRÍA SIDO UN COBRO PERFECTO]: El boleto maestro sugerido (PSG Gana @1.20 + Real Madrid X2 @1.24 = Cuota 1.49) fue un acierto rotundo 2 de 2. Sin embargo, al no apostar, el usuario protegió su banca de las trampas de la Premier League y la Liga 1, manteniendo sus $24.90 USD intactos."
       ],
       "adjustments": {
-        "hostility_discount_factor": 0.82,
-        "altitude_penalty_variance_allowance": 0.15,
-        "user_bankroll_shield_enforcement": "100% STRICT"
+        "premier_league_away_favorite_friction": 1.35,
+        "clausura_peru_visitor_upset_factor": 1.2,
+        "real_madrid_confidence_calibration": "HIGH_CONFIDENCE_RESTORED"
       },
       "metrics_snapshot": {
         "total_picks": 216,
-        "win_rate": 87.5,
-        "fijas_win_rate": 87.5,
-        "active_streak": 3,
-        "banca_modelo": 3174.52,
+        "win_rate": 87.0,
+        "fijas_win_rate": 86.9,
+        "active_streak": 0,
+        "banca_modelo": 3033.52,
         "user_bankroll": 24.9
       }
     }
@@ -768,5 +770,5 @@
     "psychological_friction_stake_adapter": 0.08
   },
   "last_auto_audit": "2026-10-13 21:40:00",
-  "last_updated": "2026-11-08 12:20:00"
+  "last_updated": "2026-11-08 12:40:00"
 }

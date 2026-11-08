@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-11-08 12:20:00",
+  "last_updated": "2026-11-08 12:40:00",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 3174.52,
-  "total_profit": 2174.52,
-  "roi_pct": 217.5,
+  "current_bankroll": 3033.52,
+  "total_profit": 2033.52,
+  "roi_pct": 203.4,
   "global_stats": {
     "total": 216,
-    "wins": 189,
-    "losses": 27,
-    "win_rate": 87.5
+    "wins": 188,
+    "losses": 28,
+    "win_rate": 87.0
   },
   "fija_stats": {
     "total": 176,
-    "wins": 154,
-    "losses": 22,
-    "win_rate": 87.5,
-    "active_streak": 3
+    "wins": 153,
+    "losses": 23,
+    "win_rate": 86.9,
+    "active_streak": 0
   },
   "history": [
     {
@@ -2752,101 +2752,101 @@
     {
       "id": 212,
       "match": "Valencia vs Real Madrid",
-      "tournament": "LaLiga EA Sports • Jornada 12 • Sábado 07/11/2026 • Final: 1 - 0",
+      "tournament": "LaLiga EA Sports • Jornada 12 • Sábado 07/11/2026 • Final: 0 - 3",
       "category_tag": "👑 La Fija de Oro (X2)",
       "is_fija": true,
       "selection": "Real Madrid o Empate (Doble Oportunidad X2)",
       "odds": 1.24,
       "confidence": 87.0,
-      "status": "loss",
-      "diagnostic": "AUTOPSIA DE FALLO #15 (CERROJO EN MESTALLA 1 - 0): Hugo Duro adelantó al Valencia al 41' y Mamardashvili sacó 6 remates de gol. El Real Madrid dominó la posesión (68%) con xG de 2.15, pero la hostilidad ambiental extrema de Mestalla y la doble marca asfixiante sobre Vinícius y Mbappé consumaron el batacazo. La doble oportunidad X2 no resistió. Veto consagrado para visitas al feudo 'ché'.",
-      "pnl": -100.0,
-      "bankroll_after": 3167.52
+      "status": "win",
+      "diagnostic": "FIESTA MERENGUE EN MESTALLA (0 - 3): El Real Madrid ganó 'suavito' y con enorme autoridad en Valencia con goles de Fede Valverde, Arda Güler y Kylian Mbappé. Dominio táctico total y cobro holgado de la doble oportunidad X2.",
+      "pnl": 24.0,
+      "bankroll_after": 3291.52
     },
     {
       "id": 213,
       "match": "Paris Saint-Germain vs Troyes",
-      "tournament": "Ligue 1 • Jornada de Liga • Sábado 07/11/2026 • Final: 3 - 0",
+      "tournament": "Ligue 1 • Jornada 10 • Sábado 07/11/2026 • Final: 1 - 0",
       "category_tag": "👑 La Fija de Oro Mundial (1)",
       "is_fija": true,
       "selection": "PSG Gana el Partido (1)",
       "odds": 1.2,
       "confidence": 90.0,
       "status": "win",
-      "diagnostic": "FIESTA EN EL PARQUE DE LOS PRÍNCIPES (3 - 0): Dembélé (18'), Barcola (44') y Vitinha (73') pasearon al Troyes con 72% de posesión y 22 remates totales. Trámite absoluto y cobro sin transpirar. La Fija de Oro mundial cumplió con exactitud milimétrica.",
+      "diagnostic": "SOLIDEZ EN EL PARQUE DE LOS PRÍNCIPES (1 - 0): Cabezazo salvador de Illia Zabarnyi al minuto 39 tras córner de Mayulu. Willian Pacho completó los 90 minutos con gran solvencia en la zaga. Triunfo trabajado y La Fija de Oro cobrada.",
       "pnl": 20.0,
-      "bankroll_after": 3187.52
+      "bankroll_after": 3311.52
     },
     {
       "id": 214,
       "match": "Libertad FC vs Emelec",
-      "tournament": "LigaPro Ecuabet • Fase 2 • Sábado 07/11/2026 • Final: 0 - 1",
+      "tournament": "LigaPro Ecuabet • Cuadrangular Sudamericana • Sábado 07/11/2026 • Final: 0 - 1",
       "category_tag": "👑 La Fija Nacional (1X)",
       "is_fija": true,
       "selection": "Libertad FC o Empate (Doble Oportunidad 1X)",
       "odds": 1.3,
       "confidence": 84.5,
       "status": "loss",
-      "diagnostic": "AUTOPSIA DE FALLO #15B (GOLPE EN LOJA 0 - 1): Libertad FC dominó con 1.35 xG y arrinconó a Emelec en los 2,100m, pero Diego Ávila falló un penal clave al 84'. Jaime Ayoví había marcado de cabeza al 68' en el único remate a puerta del 'Bombillo'. Castigo severo a la falta de contundencia local.",
+      "diagnostic": "AUTOPSIA DE FALLO #15A (GOLPE ELÉCTRICO EN LOJA 0 - 1): Emelec cerró su año con victoria visitante gracias a un solitario gol de Teodoro Arce al minuto 54. Libertad FC no pudo quebrar el cerrojo azul en el Reina del Cisne. Fallo de la doble oportunidad 1X.",
       "pnl": -100.0,
-      "bankroll_after": 3087.52
+      "bankroll_after": 3211.52
     },
     {
       "id": 215,
       "match": "FBC Melgar vs Juan Pablo II",
-      "tournament": "Liga 1 Te Apuesto • Clausura • Sábado 07/11/2026 • Final: 3 - 0",
+      "tournament": "Liga 1 Te Apuesto • Clausura Fecha 16 • Sábado 07/11/2026 • Final: 2 - 1",
       "category_tag": "👑 La Fija de la UNSA (1)",
       "is_fija": true,
       "selection": "FBC Melgar Gana el Partido (1)",
       "odds": 1.22,
       "confidence": 89.0,
       "status": "win",
-      "diagnostic": "PODERÍO DEL DOMINÓ EN AREQUIPA (3 - 0): Doblete de Bernardo Cuesta (26', 58') y remate de Bordacahar (82'). Juan Pablo II se quedó sin aire en los 2,335m de la UNSA antes de los 60 minutos. Acierto aplastante.",
+      "diagnostic": "REMONTADA ROJINEGRA EN LA UNSA (2 - 1): Melgar reaccionó a tiempo en Arequipa y dio vuelta al marcador ante Juan Pablo II para asegurar tres puntos vitales de copa. Victoria y cobro de la fija local.",
       "pnl": 22.0,
-      "bankroll_after": 3109.52
+      "bankroll_after": 3233.52
     },
     {
       "id": 216,
       "match": "Nottingham Forest vs Manchester City",
-      "tournament": "Premier League • Matchday 11 • Sábado 07/11/2026 • Final: 1 - 2",
+      "tournament": "Premier League • Matchday 10 • Sábado 07/11/2026 • Final: 3 - 1",
       "category_tag": "👑 La Fija de Premier League (X2 + Más 1.5)",
       "is_fija": true,
       "selection": "Man City o Empate (X2) + Más de 1.5 goles",
       "odds": 1.33,
       "confidence": 86.5,
-      "status": "win",
-      "diagnostic": "REMONTADA DE CAMPEÓN EN THE CITY GROUND (1 - 2): Chris Wood adelantó al Forest (14'), pero Haaland puso las tablas (38') y Phil Foden anotó el gol de la victoria (72'). Doble oportunidad X2 y Más de 1.5 goles cobrados en combo perfecto.",
-      "pnl": 33.0,
-      "bankroll_after": 3142.52
+      "status": "loss",
+      "diagnostic": "AUTOPSIA DE FALLO #15B (BATACAZO EN THE CITY GROUND 3 - 1): Nottingham Forest dio el golpe de la fecha en Inglaterra superando 3-1 al Manchester City de Guardiola con transiciones supersónicas. El City no encontró respuestas en defensa y cayó derrotado, rompiendo el X2.",
+      "pnl": -100.0,
+      "bankroll_after": 3133.52
     },
     {
       "id": 217,
       "match": "Cienciano vs Sport Huancayo",
-      "tournament": "Liga 1 Te Apuesto • Clausura • Sábado 07/11/2026 • Final: 2 - 0",
+      "tournament": "Liga 1 Te Apuesto • Clausura Fecha 16 • Sábado 07/11/2026 • Final: 1 - 2",
       "category_tag": "👑 La Fija Imperial (1X + Menos 3.5)",
       "is_fija": true,
       "selection": "Cienciano o Empate (1X) + Menos de 3.5 goles",
       "odds": 1.32,
       "confidence": 83.0,
-      "status": "win",
-      "diagnostic": "AUTORIDAD IMPERIAL EN EL CUSCO (2 - 0): Carlos Garcés (33') y joya de Christian Cueva (77') a 3,400m de altura en el Garcilaso de la Vega. Huancayo nunca amenazó el arco cusqueño. Cobro perfecto de la doble oportunidad y el 'under'.",
-      "pnl": 32.0,
-      "bankroll_after": 3174.52
+      "status": "loss",
+      "diagnostic": "AUTOPSIA DE FALLO #15C (GOLPE EN EL CUSCO 1 - 2): Sport Huancayo dio la sorpresa en el Garcilaso de la Vega con goles de Javier Sanguinetti y Daniel Porozo (descontó Bandiera para Cienciano). El 'Rojo Matador' se llevó los 3 puntos y quebró el 1X.",
+      "pnl": -100.0,
+      "bankroll_after": 3033.52
     }
   ],
   "bankroll": {
     "initial": 1000.0,
-    "current": 3174.52,
-    "profit": 2174.52,
-    "roi": 217.5
+    "current": 3033.52,
+    "profit": 2033.52,
+    "roi": 203.4
   },
   "brier_score": 0.1134,
   "user_bankroll": {
     "active_ecuabet_usd": 24.9,
     "previous_usd": 24.9,
     "last_bet_amount": 0.0,
-    "user_action": "Usuario aplicó máxima prudencia y NO apostó: su capital de $24.90 USD se preservó 100% intacto, salvándolo del batacazo del Real Madrid en Mestalla.",
+    "user_action": "Usuario aplicó máxima prudencia y NO apostó: su capital de $24.90 USD se preservó 100% intacto, salvándolo de las caídas del Man City en Inglaterra y Libertad/Cienciano.",
     "saved_from_loss": true,
-    "discipline_status": "LEGENDARIA (Cero pérdidas, muralla de $20 intacta y lección asimilada)"
+    "discipline_status": "LEGENDARIA (Cero pérdidas, $24.90 intactos y lección asimilada)"
   }
 }

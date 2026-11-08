@@ -15,3 +15,4 @@ for fpath in files:
         print(f"Fixed fija KPI in {fpath}")
     except Exception as e:
         print(f"Error {fpath}: {e}")
+
