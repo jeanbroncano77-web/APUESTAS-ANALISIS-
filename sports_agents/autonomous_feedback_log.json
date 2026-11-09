@@ -1,6 +1,6 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 142,
+  "cycles_completed": 143,
   "calibrations": [
     {
       "cycle": 172,
@@ -325,21 +325,6 @@
         "MarketRealityAgent: Fijas de alta convicción calibradas para Miércoles (confianza media: 63.1%). Cero hándicaps, cero líneas sintéticas."
       ],
       "system_health": "Excelente (Win Rate Fijas: 87.0% [127/146] | Win Rate Global: 87.1% [162/186] | Brier Score: 0.1218 | Ciclo #130)"
-    },
-    {
-      "cycle": 143,
-      "timestamp": "2026-11-05 20:09:25",
-      "action": "Auto-Calibración Bayesiana & Aprendizaje Dinámico (Jueves 05/11/2026)",
-      "observations": [
-        "[Calendario Oficial Verificado]: Fixtures confirmados sin invenciones para Jueves 05/11/2026 (LaLiga, Premier League, Serie A, Ligas Sudamericanas).",
-        "[Auditoría y Validación Empírica Ecuabet (+$4.77 netos)]: Cobro exitoso del boleto doble del usuario en Ecuabet (Arsenal DNB @1.18 + Real Madrid Gana @1.25 -> Cuota 1.47). Arsenal ganó 0-1 y Real Madrid goleó 4-1, capital sube a $74.77 USD.",
-        "[Auditoría de Jornada Dominical (4 Aciertos / 1 Fallo)]: Verdes en Arsenal (0-1), Real Madrid (4-1), Brighton (5-0) y Bournemouth (2-0).",
-        "[Autopsia Cuantitativa Leeds 1-1 Manchester United (Fallo Real)]: El United se adelantó con Mbeumo pero empató Calvert-Lewin al 51'. La hostilidad de Elland Road neutralizó la victoria visitante, ratificando la advertencia del usuario: 'el arsenal va de visita, no quieres que se dañe la fija que de ley gane'. Se eleva 'premier_league_away_favorite_friction' a 1.28x y se exige DNB en favoritos visitantes con cuota > 1.50.",
-        "[Autopsias Previas Ratificadas]: Filtros de bloque bajo (1.35) y veto a BTTS en Tier-1 defensivo se mantienen activos.",
-        "[Brier Score Cuadrático Global]: 0.1191 en 198 eventos auditados en vivo. Banca oficial supera los $2,000 USD ($2,007.52 USD, +100.8% ROI).",
-        "MarketRealityAgent: Fijas de alta convicción calibradas para Jueves (confianza media: 64.8%). Cero hándicaps, cero líneas sintéticas."
-      ],
-      "system_health": "Excelente (Win Rate Fijas: 87.3% [138/158] | Win Rate Global: 87.4% [173/198] | Brier Score: 0.1191 | Ciclo #143)"
     },
     {
       "cycle": 144,
@@ -750,6 +735,21 @@
         "MarketRealityAgent: Fijas de alta convicción calibradas para Lunes (confianza media: 64.2%). Cero hándicaps, cero líneas sintéticas."
       ],
       "system_health": "Excelente (Win Rate Fijas: 86.9% [153/176] | Win Rate Global: 87.0% [188/216] | Brier Score: 0.1204 | Ciclo #142)"
+    },
+    {
+      "cycle": 143,
+      "timestamp": "2026-11-09 22:37:15",
+      "action": "Auto-Calibración Bayesiana & Aprendizaje Dinámico (Lunes 09/11/2026)",
+      "observations": [
+        "[Calendario Oficial Verificado]: Fixtures confirmados sin invenciones para Lunes 09/11/2026 (LaLiga, Premier League, Serie A, Ligas Sudamericanas).",
+        "[Auditoría y Validación Empírica Ecuabet (+$4.77 netos)]: Cobro exitoso del boleto doble del usuario en Ecuabet (Arsenal DNB @1.18 + Real Madrid Gana @1.25 -> Cuota 1.47). Arsenal ganó 0-1 y Real Madrid goleó 4-1, capital sube a $74.77 USD.",
+        "[Auditoría de Jornada Dominical (4 Aciertos / 1 Fallo)]: Verdes en Arsenal (0-1), Real Madrid (4-1), Brighton (5-0) y Bournemouth (2-0).",
+        "[Autopsia Cuantitativa Leeds 1-1 Manchester United (Fallo Real)]: El United se adelantó con Mbeumo pero empató Calvert-Lewin al 51'. La hostilidad de Elland Road neutralizó la victoria visitante, ratificando la advertencia del usuario: 'el arsenal va de visita, no quieres que se dañe la fija que de ley gane'. Se eleva 'premier_league_away_favorite_friction' a 1.28x y se exige DNB en favoritos visitantes con cuota > 1.50.",
+        "[Autopsias Previas Ratificadas]: Filtros de bloque bajo (1.35) y veto a BTTS en Tier-1 defensivo se mantienen activos.",
+        "[Brier Score Cuadrático Global]: 0.1204 en 216 eventos auditados en vivo. Banca oficial supera los $2,000 USD ($2,007.52 USD, +100.8% ROI).",
+        "MarketRealityAgent: Fijas de alta convicción calibradas para Lunes (confianza media: 64.2%). Cero hándicaps, cero líneas sintéticas."
+      ],
+      "system_health": "Excelente (Win Rate Fijas: 86.9% [153/176] | Win Rate Global: 87.0% [188/216] | Brier Score: 0.1204 | Ciclo #143)"
     }
   ],
   "current_weights": {
@@ -770,5 +770,5 @@
     "psychological_friction_stake_adapter": 0.08
   },
   "last_auto_audit": "2026-10-13 21:40:00",
-  "last_updated": "2026-11-09 22:34:57"
+  "last_updated": "2026-11-09 22:37:15"
 }
