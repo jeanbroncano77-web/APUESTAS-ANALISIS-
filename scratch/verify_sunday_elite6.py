@@ -21,3 +21,4 @@ checks = [
 
 for name, res in checks:
     print(f"[{'PASS' if res else 'FAIL'}] {name}")
+
