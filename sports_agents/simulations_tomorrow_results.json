@@ -1,129 +1,129 @@
 {
-  "GeneratedAt": "15/11/2026 21:55",
-  "TargetDay": "Lunes (Fecha FIFA)",
-  "TargetDate": "16/11/2026",
-  "TemporalLabel": "Lunes 16/11 (6 Partidos Estelares • UEFA Nations League & AFCON)",
-  "ActiveBankroll": 3199.52,
+  "GeneratedAt": "16/11/2026 21:35",
+  "TargetDay": "Martes (Fecha FIFA)",
+  "TargetDate": "17/11/2026",
+  "TemporalLabel": "Martes 17/11 (6 Partidos Estelares • Conmebol & Nations League)",
+  "ActiveBankroll": 3348.52,
   "Status": "active",
   "Matches": [
     {
-      "match": "Alemania vs. Países Bajos",
-      "home_team": "Alemania",
-      "away_team": "Países Bajos",
-      "tournament": "UEFA Nations League • Liga A Grupo A2 • Jornada 6 (Definición 4tos de Final)",
-      "time_ec": "14:45 (ECU) / 20:45 (CET)",
-      "stadium": "Olympiastadion (Berlín, Alemania)",
+      "match": "Ecuador vs. Bolivia",
+      "home_team": "Ecuador",
+      "away_team": "Bolivia",
+      "tournament": "Fecha FIFA • Amistoso Internacional • Cierre de Año 2026",
+      "time_ec": "18:30 (ECU)",
+      "stadium": "Estadio Monumental Banco Pichincha (Guayaquil, Ecuador)",
       "score_prediction": {
-        "most_probable_score": "2 - 2",
-        "home_goals": 2.1,
-        "away_goals": 1.65
+        "most_probable_score": "2 - 0",
+        "home_goals": 2.45,
+        "away_goals": 0.4
       },
       "la_fija_real": {
-        "selection": "Más de 2.0 Goles Totales (Línea Asiática / Over 1.5)",
+        "selection": "Ecuador Gana el Partido (Victoria Local 1)",
         "odds": 1.25,
-        "probability": 85.5,
-        "confidence": "👑 EL CLÁSICO DE EUROPA 85.5%",
-        "argument": "Duelo directo por el liderato del grupo con dos de las delanteras más letales de Europa (Musiala, Wirtz y Havertz frente a Gakpo, Simons y Reijnders). En los últimos 5 enfrentamientos directos entre ambas potencias siempre se marcaron 3 o más goles (2-2 en Ámsterdam, 2-1, 1-1, 2-4, 2-3). La propuesta ofensiva de Julian Nagelsmann y Ronald Koeman garantiza ocasiones continuas; la línea de Más de 1.5/2.0 goles es de altísima certidumbre."
+        "probability": 89.0,
+        "confidence": "👑 LA FIJA DE ORO NACIONAL 89.0%",
+        "argument": "La Tri bajo la dirección de Marcelo Gallardo llega con la moral a tope tras batir 2-0 a Costa Rica y cuenta con todas sus estrellas europeas de gala: Moisés Caicedo comandando la medular, Willian Pacho y Piero Hincapié en la zaga, y Enner Valencia junto a Kendry Páez en ofensiva. En el calor y humedad de Guayaquil (31°C), Bolivia sufre históricamente un calvario en el llano y carece de recambio físico. Ecuador es amplio dominador y cerrará el 2026 con un triunfo contundente ante su hinchada."
       }
     },
     {
-      "match": "Suiza vs. Escocia",
-      "home_team": "Suiza",
-      "away_team": "Escocia",
-      "tournament": "UEFA Nations League • Liga B Grupo B1 • Jornada 6",
-      "time_ec": "14:45 (ECU) / 20:45 (CET)",
-      "stadium": "Kybunpark (San Galo, Suiza)",
+      "match": "Singapur vs. Brasil",
+      "home_team": "Singapur",
+      "away_team": "Brasil",
+      "tournament": "Gira Asiática Fecha FIFA • Amistoso Internacional",
+      "time_ec": "07:00 (ECU) / 20:00 (SGT)",
+      "stadium": "National Stadium (Kallang, Singapur)",
       "score_prediction": {
-        "most_probable_score": "2 - 0",
-        "home_goals": 1.85,
-        "away_goals": 0.7
+        "most_probable_score": "0 - 3",
+        "home_goals": 0.3,
+        "away_goals": 3.2
       },
       "la_fija_real": {
-        "selection": "Suiza o Empate (Doble Oportunidad 1X) + Menos de 4.5 goles",
+        "selection": "Brasil Gana el Partido (2) o Brasil Más de 2.0 Goles Totales",
+        "odds": 1.2,
+        "probability": 90.0,
+        "confidence": "👑 LA FIJA DE ORO MUNDIAL 90.0%",
+        "argument": "La Canarinha de Carlo Ancelotti llega herida tras el tropiezo 3-2 ante Japón y buscará redimirse con una goleada categórica para cerrar su gira asiática. Con Vinícius Júnior, Rodrygo, Endrick y Bruno Guimarães en el once, la diferencia de velocidad, técnica y jerarquía frente a Singapur (puesto 156 del ranking FIFA) es sideral. Brasil generará ocasiones desde el pitazo inicial sin opción a sorpresas."
+      }
+    },
+    {
+      "match": "Gales vs. Portugal",
+      "home_team": "Gales",
+      "away_team": "Portugal",
+      "tournament": "UEFA Nations League • Liga A Grupo A4 • Jornada 6 (Definición Grupo)",
+      "time_ec": "14:45 (ECU) / 19:45 (GMT)",
+      "stadium": "Cardiff City Stadium (Cardiff, Gales)",
+      "score_prediction": {
+        "most_probable_score": "1 - 2",
+        "home_goals": 0.85,
+        "away_goals": 2.05
+      },
+      "la_fija_real": {
+        "selection": "Portugal o Empate (Doble Oportunidad X2) + Menos de 4.5 goles",
         "odds": 1.25,
         "probability": 87.0,
-        "confidence": "👑 LA FIJA HELVÉTICA 87.0%",
-        "argument": "Suiza llega como líder invicto del grupo con el ascenso en el bolsillo y una defensa imperial liderada por Manuel Akanji y Granit Xhaka en el mediocampo. Escocia a domicilio carece de profundidad (promedia menos de 0.8 goles por juego fuera de Glasgow). En casa, la 'Nati' no concede facilidades; la doble oportunidad 1X protegida con el tope de 4.5 goles es un cerrojo matemático."
+        "confidence": "👑 LA FIJA LUSITANA 87.0%",
+        "argument": "Portugal comanda el grupo con 12 puntos y le basta un empate en Cardiff para sellar el liderato definitivo hacia los cuartos de final. Con Bruno Fernandes, Rafael Leão, João Félix y Vitinha manejando el ritmo en el mediocampo, la selección lusa posee enorme superioridad de recursos frente a un Gales que llega último con apenas 3 puntos y sin su suspendido Ampadu. La doble oportunidad X2 con resguardo de 4.5 goles es una muralla matemática."
       }
     },
     {
-      "match": "Sudán vs. Senegal",
-      "home_team": "Sudán",
-      "away_team": "Senegal",
-      "tournament": "Eliminatorias Copa Africana AFCON 2027 • Jornada 4 (Grupo J)",
-      "time_ec": "08:00 (ECU) / 13:00 (UTC)",
-      "stadium": "Juba National Stadium (Juba, Sudán del Sur - Sede Neutral)",
-      "score_prediction": {
-        "most_probable_score": "0 - 2",
-        "home_goals": 0.45,
-        "away_goals": 2.3
-      },
-      "la_fija_real": {
-        "selection": "Senegal Gana el Partido (Victoria Visitante 2)",
-        "odds": 1.28,
-        "probability": 89.5,
-        "confidence": "👑 LA FIJA DE ORO MUNDIAL 89.5%",
-        "argument": "La distancia técnica, física y de figuras es abismal. Senegal viene de destrozar 4-1 a Sudán hace apenas 4 días en Dakar. La plantilla de Patrick Vieira cuenta con figuras estelares de Premier League y ligas top: Sadio Mané, Nicolas Jackson (Chelsea), Pape Matar Sarr (Tottenham) e Idrissa Gueye. Además, Sudán no juega en su país, sino en Juba en campo neutral, eliminando cualquier presión ambiental local. Senegal sumará de a tres con autoridad."
-      }
-    },
-    {
-      "match": "Namibia vs. Camerún",
-      "home_team": "Namibia",
-      "away_team": "Camerún",
-      "tournament": "Eliminatorias Copa Africana AFCON 2027 • Jornada 4 (Grupo G)",
-      "time_ec": "08:00 (ECU) / 13:00 (UTC)",
-      "stadium": "Botswana National Stadium (Gaborone - Sede Neutral)",
-      "score_prediction": {
-        "most_probable_score": "0 - 1",
-        "home_goals": 0.55,
-        "away_goals": 1.75
-      },
-      "la_fija_real": {
-        "selection": "Camerún o Empate (Doble Oportunidad X2)",
-        "odds": 1.22,
-        "probability": 87.5,
-        "confidence": "👑 LA FIJA DE LOS LEONES 87.5%",
-        "argument": "Los 'Leones Indomables' de Camerún ya demostraron su superioridad ganando 2-0 el pasado 12 de noviembre. Con Frank Zambo Anguissa imponiendo la ley en el centro del campo y Bryan Mbeumo (Brentford) y Vincent Aboubakar liderando el frente de ataque, Camerún domina los ritmos. Jugando en terreno neutral en Botsuana, Namibia carece de peso ofensivo para quebrar el doble chance X2 camerunés."
-      }
-    },
-    {
-      "match": "Lituania vs. Liechtenstein",
-      "home_team": "Lituania",
-      "away_team": "Liechtenstein",
-      "tournament": "UEFA Nations League • Liga D Grupo 2 • Jornada 6",
-      "time_ec": "12:00 (ECU) / 18:00 (EET)",
-      "stadium": "Estadio S. Dariaus ir S. Girėno (Kaunas, Lituania)",
-      "score_prediction": {
-        "most_probable_score": "2 - 0",
-        "home_goals": 1.95,
-        "away_goals": 0.3
-      },
-      "la_fija_real": {
-        "selection": "Lituania Gana el Partido (Victoria Local 1)",
-        "odds": 1.24,
-        "probability": 88.0,
-        "confidence": "👑 CERROJO BÁLTICO 88.0%",
-        "argument": "Liechtenstein acumula más de 35 partidos oficiales consecutivos sin conocer la victoria y promedia apenas 0.2 goles por partido a domicilio. Lituania en Kaunas cuenta con mayor rigor físico, ritmo competitivo y posesión superior al 65%. La victoria local directa es una de las opciones más confiables para construir banca sin riesgos extravagantes."
-      }
-    },
-    {
-      "match": "Islandia vs. Luxemburgo",
-      "home_team": "Islandia",
-      "away_team": "Luxemburgo",
-      "tournament": "UEFA Nations League • Liga C Grupo 4 • Jornada 6",
-      "time_ec": "14:45 (ECU) / 19:45 (GMT)",
-      "stadium": "Laugardalsvöllur (Reikiavik, Islandia)",
+      "match": "Chile vs. Colombia",
+      "home_team": "Chile",
+      "away_team": "Colombia",
+      "tournament": "Fecha FIFA • Amistoso Internacional • Duelo de Conmebol",
+      "time_ec": "18:00 (ECU / COL) / 20:00 (CHI)",
+      "stadium": "Estadio Monumental David Arellano (Santiago de Chile)",
       "score_prediction": {
         "most_probable_score": "1 - 1",
-        "home_goals": 1.7,
-        "away_goals": 0.85
+        "home_goals": 0.95,
+        "away_goals": 1.8
       },
       "la_fija_real": {
-        "selection": "Islandia o Empate (Doble Oportunidad 1X)",
+        "selection": "Colombia o Empate (Doble Oportunidad X2) + Menos de 4.5 goles",
         "odds": 1.25,
-        "probability": 86.0,
-        "confidence": "👑 FORTALEZA VIKINGA 86.0%",
-        "argument": "El factor climático gélido de Reikiavik en noviembre es una muralla natural para los visitantes. Islandia cuenta con gran potencia física y juego aéreo en pelota parada. Luxemburgo ha crecido tácticamente pero fuera de su feudo sufre para mantener el orden los 90 minutos. La doble oportunidad 1X en el Laugardalsvöllur tiene un respaldo estadístico contundente."
+        "probability": 86.5,
+        "confidence": "👑 LA FIJA CAFETERA 86.5%",
+        "argument": "La Colombia de Néstor Lorenzo llega en un momento de madurez táctica y confianza plena (Luis Díaz, Richard Ríos, James Rodríguez y Jhon Arias), habiendo superado 1-0 a Chile hace solo 4 días en Cali. Chile se encuentra en plena transición con bajas en su columna vertebral y un cambio de estadio forzado hacia el Monumental de Colo-Colo por el mal estado del pasto del Nacional. Colombia no pierde la compostura y el X2 con tope de 4.5 goles garantiza el cobro."
+      }
+    },
+    {
+      "match": "Dinamarca vs. Noruega",
+      "home_team": "Dinamarca",
+      "away_team": "Noruega",
+      "tournament": "UEFA Nations League • Liga A Grupo A4 • Jornada 6 (Duelo Nórdico a Muerte)",
+      "time_ec": "14:45 (ECU) / 20:45 (CET)",
+      "stadium": "Parken Stadium (Copenhague, Dinamarca)",
+      "score_prediction": {
+        "most_probable_score": "2 - 1",
+        "home_goals": 1.85,
+        "away_goals": 1.55
+      },
+      "la_fija_real": {
+        "selection": "Más de 1.5 Goles Totales en el Parken",
+        "odds": 1.25,
+        "probability": 85.5,
+        "confidence": "👑 DUELO NÓRDICO DE FUEGO 85.5%",
+        "argument": "Duelo directo entre potencias escandinavas con clasificación en juego: Dinamarca (9 pts) defiende el segundo puesto ante Noruega (6 pts), que necesita ganar obligatoriamente. Con Erling Haaland (en estado de gracia) y Martin Ødegaard liderando a Noruega, y Rasmus Højlund y Christian Eriksen en Dinamarca, ambos equipos atacarán sin especular. La línea de Más de 1.5 goles es un seguro estadístico infalible."
+      }
+    },
+    {
+      "match": "Argentina vs. Costa Rica",
+      "home_team": "Argentina",
+      "away_team": "Costa Rica",
+      "tournament": "Fecha FIFA • Amistoso Internacional • Cierre de Año Albiceleste",
+      "time_ec": "18:00 (ECU) / 20:00 (ARG)",
+      "stadium": "Estadio Mario Alberto Kempes (Córdoba, Argentina)",
+      "score_prediction": {
+        "most_probable_score": "2 - 0",
+        "home_goals": 2.6,
+        "away_goals": 0.5
+      },
+      "la_fija_real": {
+        "selection": "Argentina Gana el Partido (1) o Argentina 1X + Más 1.5 goles",
+        "odds": 1.25,
+        "probability": 88.5,
+        "confidence": "👑 LA FIJA DE LA CAMPEONA 88.5%",
+        "argument": "La Albiceleste de Lionel Scaloni despide el 2026 ante una multitud en Córdoba con Lautaro Martínez, Julián Álvarez, Alexis Mac Allister y Rodrigo De Paul. Tras un cierre exigente de eliminatorias, el choque ante Costa Rica es ideal para desplegar juego asociado y volumen de remates. Costa Rica ya fue superada 2-0 por Ecuador hace días; en suelo cordobés, la jerarquía de los campeones del mundo garantizará el triunfo."
       }
     }
   ]
