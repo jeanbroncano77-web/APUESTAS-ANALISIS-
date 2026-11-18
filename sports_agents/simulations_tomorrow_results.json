@@ -1,129 +1,129 @@
 {
-  "GeneratedAt": "16/11/2026 21:35",
-  "TargetDay": "Martes (Fecha FIFA)",
-  "TargetDate": "17/11/2026",
-  "TemporalLabel": "Martes 17/11 (6 Partidos Estelares • Conmebol & Nations League)",
-  "ActiveBankroll": 3348.52,
+  "GeneratedAt": "17/11/2026 21:35",
+  "TargetDay": "Miércoles (ATP Finals & Copas)",
+  "TargetDate": "18/11/2026",
+  "TemporalLabel": "Miércoles 18/11 (6 Eventos Estelares • ATP Finals & Copa del Rey)",
+  "ActiveBankroll": 3368.52,
   "Status": "active",
   "Matches": [
     {
-      "match": "Ecuador vs. Bolivia",
-      "home_team": "Ecuador",
-      "away_team": "Bolivia",
-      "tournament": "Fecha FIFA • Amistoso Internacional • Cierre de Año 2026",
-      "time_ec": "18:30 (ECU)",
-      "stadium": "Estadio Monumental Banco Pichincha (Guayaquil, Ecuador)",
+      "match": "Carlos Alcaraz vs. Daniil Medvedev",
+      "home_team": "Carlos Alcaraz",
+      "away_team": "Daniil Medvedev",
+      "tournament": "Nitto ATP Finals 2026 • Grupo Ivan Lendl • Round Robin 2",
+      "time_ec": "08:00 (ECU) / 14:00 (CET)",
+      "stadium": "Inalpi Arena (Turín, Italia - Pista Rápida Indoor)",
       "score_prediction": {
-        "most_probable_score": "2 - 0",
-        "home_goals": 2.45,
-        "away_goals": 0.4
+        "most_probable_score": "2 - 0 Sets",
+        "home_goals": 2.0,
+        "away_goals": 0.6
       },
       "la_fija_real": {
-        "selection": "Ecuador Gana el Partido (Victoria Local 1)",
+        "selection": "Carlos Alcaraz Gana el Partido (Victoria 1)",
+        "odds": 1.28,
+        "probability": 88.5,
+        "confidence": "👑 LA FIJA DE ORO DE TURÍN 88.5%",
+        "argument": "Carlos Alcaraz llega en plenitud física tras superar con autoridad a Frances Tiafoe en su debut en Turín. Carlitos le tiene tomada la medida táctica a Daniil Medvedev (victorias categóricas en Wimbledon, Indian Wells y Pekín), desarmando la posición ultrarretrasada del ruso con cambios de ritmo letales, potencia con el drive y dejadas quirúrgicas. En pista rápida indoor, la agresividad y primer saque de Alcaraz marcarán el camino hacia las semifinales."
+      }
+    },
+    {
+      "match": "Alcoyano vs. RCD Mallorca",
+      "home_team": "CD Alcoyano",
+      "away_team": "RCD Mallorca",
+      "tournament": "Copa del Rey • Primera Ronda Eliminatoria a Partido Único",
+      "time_ec": "14:00 (ECU) / 20:00 (ESP)",
+      "stadium": "Campo Municipal El Collao (Alcoy, Alicante)",
+      "score_prediction": {
+        "most_probable_score": "0 - 2",
+        "home_goals": 0.6,
+        "away_goals": 2.1
+      },
+      "la_fija_real": {
+        "selection": "RCD Mallorca o Empate (Doble Oportunidad X2) + Menos de 4.5 goles",
         "odds": 1.25,
-        "probability": 89.0,
-        "confidence": "👑 LA FIJA DE ORO NACIONAL 89.0%",
-        "argument": "La Tri bajo la dirección de Marcelo Gallardo llega con la moral a tope tras batir 2-0 a Costa Rica y cuenta con todas sus estrellas europeas de gala: Moisés Caicedo comandando la medular, Willian Pacho y Piero Hincapié en la zaga, y Enner Valencia junto a Kendry Páez en ofensiva. En el calor y humedad de Guayaquil (31°C), Bolivia sufre históricamente un calvario en el llano y carece de recambio físico. Ecuador es amplio dominador y cerrará el 2026 con un triunfo contundente ante su hinchada."
+        "probability": 88.0,
+        "confidence": "👑 LA FIJA DE ORO COPERA 88.0%",
+        "argument": "Jagoba Arrasate es uno de los entrenadores con mayor oficio copero del fútbol español (llevó a Osasuna a la gran final). Frente a la mítica 'moral del Alcoyano' en El Collao, el conjunto bermellón de Primera División impondrá su superioridad física, orden táctico y oficio defensivo con Raíllo y Muriqi. La doble oportunidad X2 con un margen holgado de Menos de 4.5 goles blinda la clasificación balear."
       }
     },
     {
-      "match": "Singapur vs. Brasil",
-      "home_team": "Singapur",
-      "away_team": "Brasil",
-      "tournament": "Gira Asiática Fecha FIFA • Amistoso Internacional",
-      "time_ec": "07:00 (ECU) / 20:00 (SGT)",
-      "stadium": "National Stadium (Kallang, Singapur)",
+      "match": "CD Badajoz vs. CD Tenerife",
+      "home_team": "CD Badajoz",
+      "away_team": "CD Tenerife",
+      "tournament": "Copa del Rey • Primera Ronda Eliminatoria",
+      "time_ec": "14:00 (ECU) / 20:00 (ESP)",
+      "stadium": "Estadio Nuevo Vivero (Badajoz, Extremadura)",
       "score_prediction": {
-        "most_probable_score": "0 - 3",
-        "home_goals": 0.3,
-        "away_goals": 3.2
+        "most_probable_score": "0 - 1",
+        "home_goals": 0.7,
+        "away_goals": 1.85
       },
       "la_fija_real": {
-        "selection": "Brasil Gana el Partido (2) o Brasil Más de 2.0 Goles Totales",
-        "odds": 1.2,
-        "probability": 90.0,
-        "confidence": "👑 LA FIJA DE ORO MUNDIAL 90.0%",
-        "argument": "La Canarinha de Carlo Ancelotti llega herida tras el tropiezo 3-2 ante Japón y buscará redimirse con una goleada categórica para cerrar su gira asiática. Con Vinícius Júnior, Rodrygo, Endrick y Bruno Guimarães en el once, la diferencia de velocidad, técnica y jerarquía frente a Singapur (puesto 156 del ranking FIFA) es sideral. Brasil generará ocasiones desde el pitazo inicial sin opción a sorpresas."
-      }
-    },
-    {
-      "match": "Gales vs. Portugal",
-      "home_team": "Gales",
-      "away_team": "Portugal",
-      "tournament": "UEFA Nations League • Liga A Grupo A4 • Jornada 6 (Definición Grupo)",
-      "time_ec": "14:45 (ECU) / 19:45 (GMT)",
-      "stadium": "Cardiff City Stadium (Cardiff, Gales)",
-      "score_prediction": {
-        "most_probable_score": "1 - 2",
-        "home_goals": 0.85,
-        "away_goals": 2.05
-      },
-      "la_fija_real": {
-        "selection": "Portugal o Empate (Doble Oportunidad X2) + Menos de 4.5 goles",
-        "odds": 1.25,
-        "probability": 87.0,
-        "confidence": "👑 LA FIJA LUSITANA 87.0%",
-        "argument": "Portugal comanda el grupo con 12 puntos y le basta un empate en Cardiff para sellar el liderato definitivo hacia los cuartos de final. Con Bruno Fernandes, Rafael Leão, João Félix y Vitinha manejando el ritmo en el mediocampo, la selección lusa posee enorme superioridad de recursos frente a un Gales que llega último con apenas 3 puntos y sin su suspendido Ampadu. La doble oportunidad X2 con resguardo de 4.5 goles es una muralla matemática."
-      }
-    },
-    {
-      "match": "Chile vs. Colombia",
-      "home_team": "Chile",
-      "away_team": "Colombia",
-      "tournament": "Fecha FIFA • Amistoso Internacional • Duelo de Conmebol",
-      "time_ec": "18:00 (ECU / COL) / 20:00 (CHI)",
-      "stadium": "Estadio Monumental David Arellano (Santiago de Chile)",
-      "score_prediction": {
-        "most_probable_score": "1 - 1",
-        "home_goals": 0.95,
-        "away_goals": 1.8
-      },
-      "la_fija_real": {
-        "selection": "Colombia o Empate (Doble Oportunidad X2) + Menos de 4.5 goles",
+        "selection": "CD Tenerife o Empate (Doble Oportunidad X2)",
         "odds": 1.25,
         "probability": 86.5,
-        "confidence": "👑 LA FIJA CAFETERA 86.5%",
-        "argument": "La Colombia de Néstor Lorenzo llega en un momento de madurez táctica y confianza plena (Luis Díaz, Richard Ríos, James Rodríguez y Jhon Arias), habiendo superado 1-0 a Chile hace solo 4 días en Cali. Chile se encuentra en plena transición con bajas en su columna vertebral y un cambio de estadio forzado hacia el Monumental de Colo-Colo por el mal estado del pasto del Nacional. Colombia no pierde la compostura y el X2 con tope de 4.5 goles garantiza el cobro."
+        "confidence": "👑 LA FIJA CHICHARRERA 86.5%",
+        "argument": "El CD Tenerife de LaLiga Hypermotion llega con un bloque profesional curtido frente a un Badajoz en proceso de reconstrucción en categorías inferiores. El oficio del equipo canario y su rigor táctico fuera de casa le permitirán manejar el ritmo del encuentro en el Nuevo Vivero. La doble oportunidad X2 ofrece una garantía estadística de alto valor."
       }
     },
     {
-      "match": "Dinamarca vs. Noruega",
-      "home_team": "Dinamarca",
-      "away_team": "Noruega",
-      "tournament": "UEFA Nations League • Liga A Grupo A4 • Jornada 6 (Duelo Nórdico a Muerte)",
-      "time_ec": "14:45 (ECU) / 20:45 (CET)",
-      "stadium": "Parken Stadium (Copenhague, Dinamarca)",
+      "match": "Flavio Cobolli vs. Frances Tiafoe",
+      "home_team": "Flavio Cobolli",
+      "away_team": "Frances Tiafoe",
+      "tournament": "Nitto ATP Finals 2026 • Grupo Ivan Lendl • Round Robin 2",
+      "time_ec": "14:30 (ECU) / 20:30 (CET)",
+      "stadium": "Inalpi Arena (Turín, Italia - Pista Rápida Indoor)",
       "score_prediction": {
-        "most_probable_score": "2 - 1",
-        "home_goals": 1.85,
-        "away_goals": 1.55
+        "most_probable_score": "1 - 2 Sets",
+        "home_goals": 11.5,
+        "away_goals": 12.5
       },
       "la_fija_real": {
-        "selection": "Más de 1.5 Goles Totales en el Parken",
-        "odds": 1.25,
-        "probability": 85.5,
-        "confidence": "👑 DUELO NÓRDICO DE FUEGO 85.5%",
-        "argument": "Duelo directo entre potencias escandinavas con clasificación en juego: Dinamarca (9 pts) defiende el segundo puesto ante Noruega (6 pts), que necesita ganar obligatoriamente. Con Erling Haaland (en estado de gracia) y Martin Ødegaard liderando a Noruega, y Rasmus Højlund y Christian Eriksen en Dinamarca, ambos equipos atacarán sin especular. La línea de Más de 1.5 goles es un seguro estadístico infalible."
+        "selection": "Más de 20.5 Games Totales en el Partido",
+        "odds": 1.26,
+        "probability": 86.0,
+        "confidence": "👑 DUELO DE TURÍN 86.0%",
+        "argument": "Ambos tenistas se juegan la supervivencia en las ATP Finals tras caer en la jornada inaugural. En la pista rápida del Inalpi Arena, la potencia del servicio de Frances Tiafoe y el empuje incansable del italiano Flavio Cobolli arropado por la afición local anticipan un duelo de máxima tensión con sets muy parejos y alta probabilidad de tie-break. La línea de Más de 20.5 games se cubre habitualmente en dos sets disputados (ej. 7-6, 6-4)."
       }
     },
     {
-      "match": "Argentina vs. Costa Rica",
-      "home_team": "Argentina",
-      "away_team": "Costa Rica",
-      "tournament": "Fecha FIFA • Amistoso Internacional • Cierre de Año Albiceleste",
-      "time_ec": "18:00 (ECU) / 20:00 (ARG)",
-      "stadium": "Estadio Mario Alberto Kempes (Córdoba, Argentina)",
+      "match": "Nicaragua vs. Montserrat",
+      "home_team": "Nicaragua",
+      "away_team": "Montserrat",
+      "tournament": "Concacaf Nations League • Play-In Vuelta (Pase a Copa Oro 2027)",
+      "time_ec": "20:00 (ECU) / 19:00 (MGA)",
+      "stadium": "Estadio Nacional de Fútbol (Managua, Nicaragua)",
       "score_prediction": {
         "most_probable_score": "2 - 0",
-        "home_goals": 2.6,
+        "home_goals": 2.2,
         "away_goals": 0.5
       },
       "la_fija_real": {
-        "selection": "Argentina Gana el Partido (1) o Argentina 1X + Más 1.5 goles",
+        "selection": "Nicaragua Gana el Partido (Victoria Local 1)",
         "odds": 1.25,
-        "probability": 88.5,
-        "confidence": "👑 LA FIJA DE LA CAMPEONA 88.5%",
-        "argument": "La Albiceleste de Lionel Scaloni despide el 2026 ante una multitud en Córdoba con Lautaro Martínez, Julián Álvarez, Alexis Mac Allister y Rodrigo De Paul. Tras un cierre exigente de eliminatorias, el choque ante Costa Rica es ideal para desplegar juego asociado y volumen de remates. Costa Rica ya fue superada 2-0 por Ecuador hace días; en suelo cordobés, la jerarquía de los campeones del mundo garantizará el triunfo."
+        "probability": 87.5,
+        "confidence": "👑 LA FIJA PINOLERA 87.5%",
+        "argument": "La selección pinolera del 'Fantasma' Figueroa llega con ventaja tras imponerse 1-2 en el duelo de ida como visitante. En su fortaleza sintética de Managua con más de 18,000 hinchas, Nicaragua es un vendaval de presión alta y velocidad. Montserrat sufre un desgaste extremo en desplazamientos continentales y carece de profundidad de banquillo para remontar la serie."
+      }
+    },
+    {
+      "match": "Utebo FC vs. CE Sabadell",
+      "home_team": "Utebo FC",
+      "away_team": "CE Sabadell",
+      "tournament": "Copa del Rey • Primera Ronda Eliminatoria",
+      "time_ec": "13:00 (ECU) / 19:00 (ESP)",
+      "stadium": "Campo Santa Ana (Utebo, Zaragoza)",
+      "score_prediction": {
+        "most_probable_score": "0 - 1",
+        "home_goals": 0.75,
+        "away_goals": 1.15
+      },
+      "la_fija_real": {
+        "selection": "Menos de 3.5 Goles Totales en Santa Ana",
+        "odds": 1.26,
+        "probability": 86.0,
+        "confidence": "👑 CERROJO EN SANTA ANA 86.0%",
+        "argument": "Eliminatoria típica de Copa del Rey entre equipos de Segunda Federación: campo de reducidas dimensiones en Santa Ana donde los locales plantean un bloque ultracompacto con juego directo y balones aéreos. El Sabadell dosificará esfuerzos y buscará no conceder contragolpes. La línea de Menos de 3.5 goles es un candado seguro ante el escaso volumen de ocasiones claras."
       }
     }
   ]

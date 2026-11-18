@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-11-16 21:30:00",
+  "last_updated": "2026-11-17 21:30:00",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 3348.52,
-  "total_profit": 2348.52,
-  "roi_pct": 234.9,
+  "current_bankroll": 3368.52,
+  "total_profit": 2368.52,
+  "roi_pct": 236.9,
   "global_stats": {
-    "total": 228,
-    "wins": 200,
-    "losses": 28,
-    "win_rate": 87.7
+    "total": 234,
+    "wins": 205,
+    "losses": 29,
+    "win_rate": 87.6
   },
   "fija_stats": {
-    "total": 188,
-    "wins": 165,
-    "losses": 23,
-    "win_rate": 87.8,
-    "active_streak": 15
+    "total": 194,
+    "wins": 170,
+    "losses": 24,
+    "win_rate": 87.6,
+    "active_streak": 3
   },
   "history": [
     {
@@ -3012,21 +3012,111 @@
       "diagnostic": "ACIERTO EN EL HIELO DE REIKIAVIK (3 - 0): Goleada vikinga con tantos de Willumsson (25'), Guðjohnsen (37' penal) y Ellertsson (50'). Solvencia defensiva absoluta para cobrar el 1X sin despeinarse.",
       "pnl": 25.0,
       "bankroll_after": 3348.52
+    },
+    {
+      "id": 230,
+      "date": "17/11/2026",
+      "match": "Ecuador vs Bolivia",
+      "tournament": "Fecha FIFA • Amistoso Internacional • Martes 17/11/2026 • Final: 2 - 0",
+      "category_tag": "👑 LA FIJA DE ORO NACIONAL (Victoria Ecuador 1)",
+      "is_fija": true,
+      "selection": "Ecuador Gana el Partido (1)",
+      "odds": 1.25,
+      "confidence": 89.0,
+      "status": "win",
+      "diagnostic": "ACIERTO CLAVADO Y MARCADOR EXACTO (2 - 0): La Tri de Marcelo Gallardo cerró el 2026 con fiesta en el Monumental de Guayaquil con goles de John Mercado (21') y Jordy Caicedo (45+3'). Superioridad física y futbolística absoluta ante Bolivia.",
+      "pnl": 25.0,
+      "bankroll_after": 3373.52
+    },
+    {
+      "id": 231,
+      "date": "17/11/2026",
+      "match": "Singapur vs Brasil",
+      "tournament": "Gira Asiática Fecha FIFA • Martes 17/11/2026 • Final: 0 - 7",
+      "category_tag": "👑 LA FIJA DE ORO MUNDIAL (Victoria Brasil 2)",
+      "is_fija": true,
+      "selection": "Brasil Gana el Partido (2)",
+      "odds": 1.2,
+      "confidence": 90.0,
+      "status": "win",
+      "diagnostic": "FESTIVAL HISTÓRICO EN ASIA (0 - 7): La Canarinha arrolló a Singapur con triplete relámpago de Vinícius Júnior (8', 14', 20'), goles de Endrick (30'), Estêvão (49'), Rayan (65') y autogol. Cobro sobrado en apenas 20 minutos de juego.",
+      "pnl": 20.0,
+      "bankroll_after": 3393.52
+    },
+    {
+      "id": 232,
+      "date": "17/11/2026",
+      "match": "Gales vs Portugal",
+      "tournament": "UEFA Nations League • Liga A Grupo A4 • Martes 17/11/2026 • Final: 2 - 3",
+      "category_tag": "👑 La Fija Lusitana (X2 + Menos 4.5)",
+      "is_fija": true,
+      "selection": "Portugal o Empate (X2) + Menos de 4.5 goles",
+      "odds": 1.25,
+      "confidence": 87.0,
+      "status": "loss",
+      "diagnostic": "AUTOPSIA DE FALLO #16 (TIROTEO EN CARDIFF 2 - 3): Portugal ganó el partido y selló el liderato con tantos de Bruno Fernandes, Pedro Neto y Carlos Forbs, cumpliendo el X2; sin embargo, Gales recortó distancias y el duelo terminó con 5 goles totales (2-3), quebrando por un solo gol la barrera de Menos de 4.5.",
+      "pnl": -100.0,
+      "bankroll_after": 3293.52
+    },
+    {
+      "id": 233,
+      "date": "17/11/2026",
+      "match": "Chile vs Colombia",
+      "tournament": "Fecha FIFA • Amistoso Internacional • Martes 17/11/2026 • Final: 0 - 0",
+      "category_tag": "👑 La Fija Cafetera (X2 + Menos 4.5)",
+      "is_fija": true,
+      "selection": "Colombia o Empate (X2) + Menos de 4.5 goles",
+      "odds": 1.25,
+      "confidence": 86.5,
+      "status": "win",
+      "diagnostic": "ACIERTO Y CERROJO EN SANTIAGO (0 - 0): Duelo trabado y físico en el Monumental David Arellano. Colombia sostuvo el orden táctico defensivo con Lucumí y Camilo Vargas, blindando el X2 y el Menos de 4.5 sin sobresaltos.",
+      "pnl": 25.0,
+      "bankroll_after": 3318.52
+    },
+    {
+      "id": 234,
+      "date": "17/11/2026",
+      "match": "Dinamarca vs Noruega",
+      "tournament": "UEFA Nations League • Liga A Grupo A4 • Martes 17/11/2026 • Final: 2 - 3",
+      "category_tag": "👑 Duelo Nórdico de Fuego (Más de 1.5 Goles)",
+      "is_fija": true,
+      "selection": "Más de 1.5 Goles Totales en el Parken",
+      "odds": 1.25,
+      "confidence": 85.5,
+      "status": "win",
+      "diagnostic": "ACIERTO Y ÉPICA NÓRDICA (2 - 3): Partidazo vibrante en Copenhague. Højlund y Højbjerg adelantaron a Dinamarca en 14 minutos, pero Erling Haaland firmó un doblete estelar (incluyendo penal al 90+6') junto a Ødegaard para 5 goles totales. Cobro sobrado del Más de 1.5.",
+      "pnl": 25.0,
+      "bankroll_after": 3343.52
+    },
+    {
+      "id": 235,
+      "date": "17/11/2026",
+      "match": "Argentina vs Costa Rica",
+      "tournament": "Fecha FIFA • Amistoso Internacional • Martes 17/11/2026 • Final: 7 - 0",
+      "category_tag": "👑 La Fija de la Campeona (Victoria Argentina 1)",
+      "is_fija": true,
+      "selection": "Argentina Gana el Partido (1)",
+      "odds": 1.25,
+      "confidence": 88.5,
+      "status": "win",
+      "diagnostic": "ACIERTO Y PALIZA EN CÓRDOBA (7 - 0): Fiesta total de los campeones del mundo en el Mario Kempes con dobletes de Julián Álvarez y Nicolás Paz, tantos de Mastantuono y Mac Allister. Cobro resuelto con aplastante superioridad.",
+      "pnl": 25.0,
+      "bankroll_after": 3368.52
     }
   ],
   "bankroll": {
     "initial": 1000.0,
-    "current": 3348.52,
-    "profit": 2348.52,
-    "roi": 234.9
+    "current": 3368.52,
+    "profit": 2368.52,
+    "roi": 236.9
   },
   "brier_score": 0.1134,
   "user_bankroll": {
     "active_ecuabet_usd": 24.9,
     "previous_usd": 24.9,
     "last_bet_amount": 0.0,
-    "user_action": "El usuario no apostó el lunes: su saldo en Ecuabet se preserva 100% intacto en $24.90 USD, blindado por el muro innegociable de $20.00 USD, con $4.90 USD de colchón listos para disparar el martes.",
+    "user_action": "El usuario no apostó el martes por ocupaciones: su saldo en Ecuabet se preserva 100% intacto en $24.90 USD, protegido por el muro inviolable de $20.00 USD, con $4.90 USD listos para ser operados el miércoles.",
     "saved_from_loss": false,
-    "discipline_status": "DISCIPLINA NIVEL DIOS ($24.90 USD intactos, esperando la oportunidad precisa)"
+    "discipline_status": "DISCIPLINA NIVEL DIOS ($24.90 USD intactos, sin fugas de capital)"
   }
 }
