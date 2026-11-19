@@ -1,129 +1,129 @@
 {
-  "GeneratedAt": "17/11/2026 21:35",
-  "TargetDay": "Miércoles (ATP Finals & Copas)",
-  "TargetDate": "18/11/2026",
-  "TemporalLabel": "Miércoles 18/11 (6 Eventos Estelares • ATP Finals & Copa del Rey)",
-  "ActiveBankroll": 3368.52,
+  "GeneratedAt": "18/11/2026 21:30",
+  "TargetDay": "Jueves 19 de Noviembre de 2026",
+  "TargetDate": "19/11/2026",
+  "TemporalLabel": "Jueves 19/11 (6 Eventos Estelares • Mundial Sub-17 & Champions Femenina)",
+  "ActiveBankroll": 3523.52,
   "Status": "active",
   "Matches": [
     {
-      "match": "Carlos Alcaraz vs. Daniil Medvedev",
-      "home_team": "Carlos Alcaraz",
-      "away_team": "Daniil Medvedev",
-      "tournament": "Nitto ATP Finals 2026 • Grupo Ivan Lendl • Round Robin 2",
-      "time_ec": "08:00 (ECU) / 14:00 (CET)",
-      "stadium": "Inalpi Arena (Turín, Italia - Pista Rápida Indoor)",
+      "match": "Nueva Caledonia vs. Ecuador",
+      "home_team": "Nueva Caledonia Sub-17",
+      "away_team": "Ecuador Sub-17",
+      "tournament": "Mundial Sub-17 Catar 2026 • Fase de Grupos • Grupo C",
+      "time_ec": "08:00 (ECU) / 16:00 (Catar)",
+      "stadium": "Aspire Zone Pitch 1 (Doha, Catar)",
       "score_prediction": {
-        "most_probable_score": "2 - 0 Sets",
-        "home_goals": 2.0,
-        "away_goals": 0.6
+        "most_probable_score": "0 - 4",
+        "home_goals": 0.25,
+        "away_goals": 3.4
       },
       "la_fija_real": {
-        "selection": "Carlos Alcaraz Gana el Partido (Victoria 1)",
-        "odds": 1.28,
-        "probability": 88.5,
-        "confidence": "👑 LA FIJA DE ORO DE TURÍN 88.5%",
-        "argument": "Carlos Alcaraz llega en plenitud física tras superar con autoridad a Frances Tiafoe en su debut en Turín. Carlitos le tiene tomada la medida táctica a Daniil Medvedev (victorias categóricas en Wimbledon, Indian Wells y Pekín), desarmando la posición ultrarretrasada del ruso con cambios de ritmo letales, potencia con el drive y dejadas quirúrgicas. En pista rápida indoor, la agresividad y primer saque de Alcaraz marcarán el camino hacia las semifinales."
+        "selection": "Ecuador Sub-17 Gana el Partido (Victoria 2)",
+        "odds": 1.22,
+        "probability": 89.5,
+        "confidence": "👑 LA FIJA DE ORO TRICOLOR 89.5%",
+        "argument": "La Mini-Tri Sub-17 llega con una camada formidable en potencia física, técnica y aceleración por bandas. Nueva Caledonia es la selección con menor coeficiente competitivo del torneo, arrastrando una media de más de 4 goles encajados ante selecciones sudamericanas. Ecuador monopolizará la posesión (>70%), ahogará la salida del rival y liquidará el trámite con holgura en Doha."
       }
     },
     {
-      "match": "Alcoyano vs. RCD Mallorca",
-      "home_team": "CD Alcoyano",
-      "away_team": "RCD Mallorca",
-      "tournament": "Copa del Rey • Primera Ronda Eliminatoria a Partido Único",
-      "time_ec": "14:00 (ECU) / 20:00 (ESP)",
-      "stadium": "Campo Municipal El Collao (Alcoy, Alicante)",
+      "match": "FC Barcelona Femení vs. Servette FCCF",
+      "home_team": "FC Barcelona Femení",
+      "away_team": "Servette FCCF",
+      "tournament": "UEFA Women's Champions League • Fase de Grupos • Jornada 5",
+      "time_ec": "15:00 (ECU) / 21:00 (CET)",
+      "stadium": "Estadi Johan Cruyff (Sant Joan Despí, Barcelona)",
       "score_prediction": {
-        "most_probable_score": "0 - 2",
-        "home_goals": 0.6,
-        "away_goals": 2.1
+        "most_probable_score": "5 - 0",
+        "home_goals": 4.1,
+        "away_goals": 0.2
       },
       "la_fija_real": {
-        "selection": "RCD Mallorca o Empate (Doble Oportunidad X2) + Menos de 4.5 goles",
-        "odds": 1.25,
-        "probability": 88.0,
-        "confidence": "👑 LA FIJA DE ORO COPERA 88.0%",
-        "argument": "Jagoba Arrasate es uno de los entrenadores con mayor oficio copero del fútbol español (llevó a Osasuna a la gran final). Frente a la mítica 'moral del Alcoyano' en El Collao, el conjunto bermellón de Primera División impondrá su superioridad física, orden táctico y oficio defensivo con Raíllo y Muriqi. La doble oportunidad X2 con un margen holgado de Menos de 4.5 goles blinda la clasificación balear."
+        "selection": "FC Barcelona Femení Gana (1) + Más de 2.5 goles totales",
+        "odds": 1.2,
+        "probability": 91.0,
+        "confidence": "👑 LA FIJA DE ORO DE CHAMPIONS 91.0%",
+        "argument": "El FC Barcelona Femení es la mayor potencia del fútbol mundial. En el Estadi Johan Cruyff promedia más de 4.5 goles por partido en Champions League. El Servette suizo es un equipo con abismal diferencia de ritmo y presupuesto; ante rivales de élite suele conceder múltiples ocasiones por tiempo. La victoria blaugrana combinada con el over de 2.5 goles es una de las cuotas más seguras de la jornada europea."
       }
     },
     {
-      "match": "CD Badajoz vs. CD Tenerife",
-      "home_team": "CD Badajoz",
-      "away_team": "CD Tenerife",
-      "tournament": "Copa del Rey • Primera Ronda Eliminatoria",
-      "time_ec": "14:00 (ECU) / 20:00 (ESP)",
-      "stadium": "Estadio Nuevo Vivero (Badajoz, Extremadura)",
-      "score_prediction": {
-        "most_probable_score": "0 - 1",
-        "home_goals": 0.7,
-        "away_goals": 1.85
-      },
-      "la_fija_real": {
-        "selection": "CD Tenerife o Empate (Doble Oportunidad X2)",
-        "odds": 1.25,
-        "probability": 86.5,
-        "confidence": "👑 LA FIJA CHICHARRERA 86.5%",
-        "argument": "El CD Tenerife de LaLiga Hypermotion llega con un bloque profesional curtido frente a un Badajoz en proceso de reconstrucción en categorías inferiores. El oficio del equipo canario y su rigor táctico fuera de casa le permitirán manejar el ritmo del encuentro en el Nuevo Vivero. La doble oportunidad X2 ofrece una garantía estadística de alto valor."
-      }
-    },
-    {
-      "match": "Flavio Cobolli vs. Frances Tiafoe",
-      "home_team": "Flavio Cobolli",
-      "away_team": "Frances Tiafoe",
-      "tournament": "Nitto ATP Finals 2026 • Grupo Ivan Lendl • Round Robin 2",
-      "time_ec": "14:30 (ECU) / 20:30 (CET)",
-      "stadium": "Inalpi Arena (Turín, Italia - Pista Rápida Indoor)",
-      "score_prediction": {
-        "most_probable_score": "1 - 2 Sets",
-        "home_goals": 11.5,
-        "away_goals": 12.5
-      },
-      "la_fija_real": {
-        "selection": "Más de 20.5 Games Totales en el Partido",
-        "odds": 1.26,
-        "probability": 86.0,
-        "confidence": "👑 DUELO DE TURÍN 86.0%",
-        "argument": "Ambos tenistas se juegan la supervivencia en las ATP Finals tras caer en la jornada inaugural. En la pista rápida del Inalpi Arena, la potencia del servicio de Frances Tiafoe y el empuje incansable del italiano Flavio Cobolli arropado por la afición local anticipan un duelo de máxima tensión con sets muy parejos y alta probabilidad de tie-break. La línea de Más de 20.5 games se cubre habitualmente en dos sets disputados (ej. 7-6, 6-4)."
-      }
-    },
-    {
-      "match": "Nicaragua vs. Montserrat",
-      "home_team": "Nicaragua",
-      "away_team": "Montserrat",
-      "tournament": "Concacaf Nations League • Play-In Vuelta (Pase a Copa Oro 2027)",
-      "time_ec": "20:00 (ECU) / 19:00 (MGA)",
-      "stadium": "Estadio Nacional de Fútbol (Managua, Nicaragua)",
+      "match": "Argentina vs. Australia",
+      "home_team": "Argentina Sub-17",
+      "away_team": "Australia Sub-17",
+      "tournament": "Mundial Sub-17 Catar 2026 • Fase de Grupos • Grupo B",
+      "time_ec": "11:00 (ECU) / 19:00 (Catar)",
+      "stadium": "Al Janoub Stadium (Al Wakrah, Catar)",
       "score_prediction": {
         "most_probable_score": "2 - 0",
-        "home_goals": 2.2,
-        "away_goals": 0.5
+        "home_goals": 2.1,
+        "away_goals": 0.7
       },
       "la_fija_real": {
-        "selection": "Nicaragua Gana el Partido (Victoria Local 1)",
+        "selection": "Argentina o Empate (1X) + Menos de 4.5 goles",
         "odds": 1.25,
         "probability": 87.5,
-        "confidence": "👑 LA FIJA PINOLERA 87.5%",
-        "argument": "La selección pinolera del 'Fantasma' Figueroa llega con ventaja tras imponerse 1-2 en el duelo de ida como visitante. En su fortaleza sintética de Managua con más de 18,000 hinchas, Nicaragua es un vendaval de presión alta y velocidad. Montserrat sufre un desgaste extremo en desplazamientos continentales y carece de profundidad de banquillo para remontar la serie."
+        "confidence": "ARGENTINA CONTROL • SUB-17",
+        "argument": "Los juveniles de la 'Albiceleste' manejan una técnica asociativa muy superior frente a un combinado australiano que basa su juego en el choque físico y la pelota quieta. La doble oportunidad 1X combinada con un techo generoso de Menos 4.5 goles blinda el pronóstico ante cualquier planteamiento cerrado de los 'Socceroos'."
       }
     },
     {
-      "match": "Utebo FC vs. CE Sabadell",
-      "home_team": "Utebo FC",
-      "away_team": "CE Sabadell",
-      "tournament": "Copa del Rey • Primera Ronda Eliminatoria",
-      "time_ec": "13:00 (ECU) / 19:00 (ESP)",
-      "stadium": "Campo Santa Ana (Utebo, Zaragoza)",
+      "match": "Austria Viena vs. Bayern Múnich Femenino",
+      "home_team": "FK Austria Viena",
+      "away_team": "FC Bayern Múnich",
+      "tournament": "UEFA Women's Champions League • Fase de Grupos • Jornada 5",
+      "time_ec": "12:45 (ECU) / 18:45 (CET)",
+      "stadium": "Generali Arena (Viena, Austria)",
       "score_prediction": {
-        "most_probable_score": "0 - 1",
-        "home_goals": 0.75,
-        "away_goals": 1.15
+        "most_probable_score": "0 - 3",
+        "home_goals": 0.5,
+        "away_goals": 2.8
       },
       "la_fija_real": {
-        "selection": "Menos de 3.5 Goles Totales en Santa Ana",
+        "selection": "FC Bayern Múnich Gana el Partido (Victoria 2)",
+        "odds": 1.24,
+        "probability": 87.0,
+        "confidence": "BAYERN CHAMPIONS • ÉLITE",
+        "argument": "El Bayern Múnich de la Frauen-Bundesliga necesita asegurar la primera plaza del grupo. Su despliegue ofensivo comandado por Klara Bühl, Pernille Harder y Lea Schüller desborda con facilidad las líneas defensivas del Austria Viena. En duelos entre clubes alemanes y austríacos la disparidad física y de ritmo de competición inclina la balanza para las bávaras."
+      }
+    },
+    {
+      "match": "Peñarol vs. Cerro Largo",
+      "home_team": "CA Peñarol",
+      "away_team": "Cerro Largo FC",
+      "tournament": "Liga AUF Uruguaya • Torneo Clausura • Jornada Decisiva",
+      "time_ec": "14:30 (ECU) / 16:30 (URU)",
+      "stadium": "Estadio Campeón del Siglo (Montevideo, Uruguay)",
+      "score_prediction": {
+        "most_probable_score": "2 - 0",
+        "home_goals": 2.1,
+        "away_goals": 0.4
+      },
+      "la_fija_real": {
+        "selection": "CA Peñarol Gana el Partido (Victoria 1)",
+        "odds": 1.25,
+        "probability": 87.0,
+        "confidence": "PEÑAROL EN CASA • CLAUSURA",
+        "argument": "El 'Manya' en el Campeón del Siglo se juega el liderato absoluto de la tabla anual y el Clausura. Cerro Largo llega como uno de los equipos con menor volumen goleador del campeonato charrúa (apenas 0.7 goles por partido fuera de Melo). Con el empuje de su hinchada y la jerarquía de sus atacantes, Peñarol destrabará el cerrojo defensivo y se quedará con los 3 puntos."
+      }
+    },
+    {
+      "match": "São Paulo vs. Fluminense",
+      "home_team": "São Paulo FC",
+      "away_team": "Fluminense FC",
+      "tournament": "Brasileirão Serie A • Jornada 34",
+      "time_ec": "19:30 (ECU) / 21:30 (BRA)",
+      "stadium": "Estádio do MorumBIS (São Paulo, Brasil)",
+      "score_prediction": {
+        "most_probable_score": "1 - 0",
+        "home_goals": 1.65,
+        "away_goals": 0.75
+      },
+      "la_fija_real": {
+        "selection": "São Paulo o Empate (Doble Oportunidad 1X)",
         "odds": 1.26,
-        "probability": 86.0,
-        "confidence": "👑 CERROJO EN SANTA ANA 86.0%",
-        "argument": "Eliminatoria típica de Copa del Rey entre equipos de Segunda Federación: campo de reducidas dimensiones en Santa Ana donde los locales plantean un bloque ultracompacto con juego directo y balones aéreos. El Sabadell dosificará esfuerzos y buscará no conceder contragolpes. La línea de Menos de 3.5 goles es un candado seguro ante el escaso volumen de ocasiones claras."
+        "probability": 86.5,
+        "confidence": "MORUMBIS CLÁSICO • BRASILEIRÃO",
+        "argument": "El MorumBIS es una fortaleza para el Tricolor Paulista. Fluminense fuera del Maracaná reduce drásticamente su rendimiento ofensivo, promediando apenas 0.8 goles por partido como visitante y acusando el desgaste de la seguidilla de fechas. Con Lucas Moura, Calleri y el orden defensivo de Zubeldía, el São Paulo asegura la doble oportunidad 1X con total fiabilidad."
       }
     }
   ]
