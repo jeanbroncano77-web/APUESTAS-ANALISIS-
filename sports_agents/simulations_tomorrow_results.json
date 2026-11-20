@@ -1,129 +1,129 @@
 {
-  "GeneratedAt": "18/11/2026 21:30",
-  "TargetDay": "Jueves 19 de Noviembre de 2026",
-  "TargetDate": "19/11/2026",
-  "TemporalLabel": "Jueves 19/11 (6 Eventos Estelares • Mundial Sub-17 & Champions Femenina)",
-  "ActiveBankroll": 3523.52,
+  "GeneratedAt": "19/11/2026 21:15",
+  "TargetDay": "Viernes 20 de Noviembre de 2026",
+  "TargetDate": "20/11/2026",
+  "TemporalLabel": "Viernes 20/11 (6 Eventos Estelares • LigaPro, Bundesliga, LaLiga & Sub-17)",
+  "ActiveBankroll": 3665.52,
   "Status": "active",
   "Matches": [
     {
-      "match": "Nueva Caledonia vs. Ecuador",
-      "home_team": "Nueva Caledonia Sub-17",
-      "away_team": "Ecuador Sub-17",
-      "tournament": "Mundial Sub-17 Catar 2026 • Fase de Grupos • Grupo C",
-      "time_ec": "08:00 (ECU) / 16:00 (Catar)",
-      "stadium": "Aspire Zone Pitch 1 (Doha, Catar)",
-      "score_prediction": {
-        "most_probable_score": "0 - 4",
-        "home_goals": 0.25,
-        "away_goals": 3.4
-      },
-      "la_fija_real": {
-        "selection": "Ecuador Sub-17 Gana el Partido (Victoria 2)",
-        "odds": 1.22,
-        "probability": 89.5,
-        "confidence": "👑 LA FIJA DE ORO TRICOLOR 89.5%",
-        "argument": "La Mini-Tri Sub-17 llega con una camada formidable en potencia física, técnica y aceleración por bandas. Nueva Caledonia es la selección con menor coeficiente competitivo del torneo, arrastrando una media de más de 4 goles encajados ante selecciones sudamericanas. Ecuador monopolizará la posesión (>70%), ahogará la salida del rival y liquidará el trámite con holgura en Doha."
-      }
-    },
-    {
-      "match": "FC Barcelona Femení vs. Servette FCCF",
-      "home_team": "FC Barcelona Femení",
-      "away_team": "Servette FCCF",
-      "tournament": "UEFA Women's Champions League • Fase de Grupos • Jornada 5",
-      "time_ec": "15:00 (ECU) / 21:00 (CET)",
-      "stadium": "Estadi Johan Cruyff (Sant Joan Despí, Barcelona)",
-      "score_prediction": {
-        "most_probable_score": "5 - 0",
-        "home_goals": 4.1,
-        "away_goals": 0.2
-      },
-      "la_fija_real": {
-        "selection": "FC Barcelona Femení Gana (1) + Más de 2.5 goles totales",
-        "odds": 1.2,
-        "probability": 91.0,
-        "confidence": "👑 LA FIJA DE ORO DE CHAMPIONS 91.0%",
-        "argument": "El FC Barcelona Femení es la mayor potencia del fútbol mundial. En el Estadi Johan Cruyff promedia más de 4.5 goles por partido en Champions League. El Servette suizo es un equipo con abismal diferencia de ritmo y presupuesto; ante rivales de élite suele conceder múltiples ocasiones por tiempo. La victoria blaugrana combinada con el over de 2.5 goles es una de las cuotas más seguras de la jornada europea."
-      }
-    },
-    {
-      "match": "Argentina vs. Australia",
-      "home_team": "Argentina Sub-17",
-      "away_team": "Australia Sub-17",
-      "tournament": "Mundial Sub-17 Catar 2026 • Fase de Grupos • Grupo B",
-      "time_ec": "11:00 (ECU) / 19:00 (Catar)",
-      "stadium": "Al Janoub Stadium (Al Wakrah, Catar)",
+      "match": "Independiente del Valle vs. Macará",
+      "home_team": "Independiente del Valle",
+      "away_team": "Club Deportivo Macará",
+      "tournament": "LigaPro Ecuabet 2026 • Segunda Etapa • Fecha Decisiva",
+      "time_ec": "12:00 (ECU) / 13:00 (MIA)",
+      "stadium": "Estadio Banco Guayaquil (Amaguaña / Sangolquí)",
       "score_prediction": {
         "most_probable_score": "2 - 0",
-        "home_goals": 2.1,
-        "away_goals": 0.7
-      },
-      "la_fija_real": {
-        "selection": "Argentina o Empate (1X) + Menos de 4.5 goles",
-        "odds": 1.25,
-        "probability": 87.5,
-        "confidence": "ARGENTINA CONTROL • SUB-17",
-        "argument": "Los juveniles de la 'Albiceleste' manejan una técnica asociativa muy superior frente a un combinado australiano que basa su juego en el choque físico y la pelota quieta. La doble oportunidad 1X combinada con un techo generoso de Menos 4.5 goles blinda el pronóstico ante cualquier planteamiento cerrado de los 'Socceroos'."
-      }
-    },
-    {
-      "match": "Austria Viena vs. Bayern Múnich Femenino",
-      "home_team": "FK Austria Viena",
-      "away_team": "FC Bayern Múnich",
-      "tournament": "UEFA Women's Champions League • Fase de Grupos • Jornada 5",
-      "time_ec": "12:45 (ECU) / 18:45 (CET)",
-      "stadium": "Generali Arena (Viena, Austria)",
-      "score_prediction": {
-        "most_probable_score": "0 - 3",
-        "home_goals": 0.5,
-        "away_goals": 2.8
-      },
-      "la_fija_real": {
-        "selection": "FC Bayern Múnich Gana el Partido (Victoria 2)",
-        "odds": 1.24,
-        "probability": 87.0,
-        "confidence": "BAYERN CHAMPIONS • ÉLITE",
-        "argument": "El Bayern Múnich de la Frauen-Bundesliga necesita asegurar la primera plaza del grupo. Su despliegue ofensivo comandado por Klara Bühl, Pernille Harder y Lea Schüller desborda con facilidad las líneas defensivas del Austria Viena. En duelos entre clubes alemanes y austríacos la disparidad física y de ritmo de competición inclina la balanza para las bávaras."
-      }
-    },
-    {
-      "match": "Peñarol vs. Cerro Largo",
-      "home_team": "CA Peñarol",
-      "away_team": "Cerro Largo FC",
-      "tournament": "Liga AUF Uruguaya • Torneo Clausura • Jornada Decisiva",
-      "time_ec": "14:30 (ECU) / 16:30 (URU)",
-      "stadium": "Estadio Campeón del Siglo (Montevideo, Uruguay)",
-      "score_prediction": {
-        "most_probable_score": "2 - 0",
-        "home_goals": 2.1,
+        "home_goals": 2.45,
         "away_goals": 0.4
       },
       "la_fija_real": {
-        "selection": "CA Peñarol Gana el Partido (Victoria 1)",
+        "selection": "Independiente del Valle Gana el Partido (Victoria 1)",
         "odds": 1.25,
-        "probability": 87.0,
-        "confidence": "PEÑAROL EN CASA • CLAUSURA",
-        "argument": "El 'Manya' en el Campeón del Siglo se juega el liderato absoluto de la tabla anual y el Clausura. Cerro Largo llega como uno de los equipos con menor volumen goleador del campeonato charrúa (apenas 0.7 goles por partido fuera de Melo). Con el empuje de su hinchada y la jerarquía de sus atacantes, Peñarol destrabará el cerrojo defensivo y se quedará con los 3 puntos."
+        "probability": 89.0,
+        "confidence": "👑 LA FIJA DE ORO NACIONAL 89.0%",
+        "argument": "Los 'Rayados del Valle' son una máquina de generar peligro en su reducto de Amaguaña, donde dominan la posesión con más del 68% y ahogan a los rivales con presión posicional tras pérdida. Macará baja notablemente su producción cuando sale del Bellavista de Ambato y acumula 4 derrotas consecutivas visitando a IDV. La necesidad de ganar para amarrar la etapa convierte el triunfo negriazul en la mejor selección del fútbol ecuatoriano."
       }
     },
     {
-      "match": "São Paulo vs. Fluminense",
-      "home_team": "São Paulo FC",
-      "away_team": "Fluminense FC",
-      "tournament": "Brasileirão Serie A • Jornada 34",
-      "time_ec": "19:30 (ECU) / 21:30 (BRA)",
-      "stadium": "Estádio do MorumBIS (São Paulo, Brasil)",
+      "match": "Bayern Múnich vs. FC Köln",
+      "home_team": "FC Bayern Múnich",
+      "away_team": "FC Köln",
+      "tournament": "Bundesliga Alemana • Jornada 11",
+      "time_ec": "14:30 (ECU) / 20:30 (CET)",
+      "stadium": "Allianz Arena (Múnich, Alemania)",
       "score_prediction": {
-        "most_probable_score": "1 - 0",
-        "home_goals": 1.65,
-        "away_goals": 0.75
+        "most_probable_score": "3 - 1",
+        "home_goals": 3.2,
+        "away_goals": 0.6
       },
       "la_fija_real": {
-        "selection": "São Paulo o Empate (Doble Oportunidad 1X)",
-        "odds": 1.26,
+        "selection": "FC Bayern Múnich Gana (1) + Más de 2.5 goles totales",
+        "odds": 1.22,
+        "probability": 90.5,
+        "confidence": "👑 LA FIJA DE ORO EUROPEA 90.5%",
+        "argument": "El Bayern en el Allianz Arena despliega una voracidad ofensiva aplastante con Harry Kane, Jamal Musiala y Michael Olise, promediando más de 3.2 goles por partido en casa. El FC Köln sufre horrores en transición defensiva, concediendo más de 2 goles de media cuando visita campos de primer nivel. La combinación de la victoria bávara con el Over de goles es un cheque al portador respaldado por los modelos cuantitativos."
+      }
+    },
+    {
+      "match": "Athletic Club vs. RCD Espanyol",
+      "home_team": "Athletic Club",
+      "away_team": "RCD Espanyol",
+      "tournament": "LaLiga EA Sports • Jornada 14",
+      "time_ec": "15:00 (ECU) / 21:00 (CET)",
+      "stadium": "Estadio San Mamés (Bilbao, España)",
+      "score_prediction": {
+        "most_probable_score": "2 - 0",
+        "home_goals": 2.15,
+        "away_goals": 0.55
+      },
+      "la_fija_real": {
+        "selection": "Athletic Club o Empate (1X) + Menos de 4.5 goles",
+        "odds": 1.25,
+        "probability": 88.0,
+        "confidence": "SAN MAMÉS FORTALEZA • LALIGA",
+        "argument": "La 'Catedral' de San Mamés es una caldera donde el Athletic impone un ritmo físico agobiante comandado por los hermanos Williams, Sancet y Guruzeta. El Espanyol fuera de Cornellà se atrinchera con línea de 5 pero carece de pegada (xG inferior a 0.65 como visitante). La doble oportunidad 1X combinada con el techo generoso de Menos 4.5 goles blinda completamente el pronóstico ante cualquier resistencia perica."
+      }
+    },
+    {
+      "match": "España Sub-17 vs. China Sub-17",
+      "home_team": "España Sub-17",
+      "away_team": "China Sub-17",
+      "tournament": "Mundial Sub-17 Catar 2026 • Fase de Grupos • Grupo D",
+      "time_ec": "08:00 (ECU) / 16:00 (Catar)",
+      "stadium": "Al Thumama Stadium (Doha, Catar)",
+      "score_prediction": {
+        "most_probable_score": "3 - 0",
+        "home_goals": 2.9,
+        "away_goals": 0.35
+      },
+      "la_fija_real": {
+        "selection": "España Sub-17 Gana el Partido (Victoria 1)",
+        "odds": 1.22,
+        "probability": 89.0,
+        "confidence": "ESPAÑA SUB-17 • FASE DE GRUPOS",
+        "argument": "'La Rojita' es una de las grandes favoritas para levantar el trofeo en Catar gracias a su dominio asociativo, paciencia y verticalidad entre líneas. El combinado asiático muestra graves problemas de posicionamiento defensivo ante selecciones con circulación rápida de balón. España monopolizará la pelota y abrirá brecha en el marcador con relativa comodidad."
+      }
+    },
+    {
+      "match": "Deportivo Cali vs. Millonarios FC",
+      "home_team": "Deportivo Cali",
+      "away_team": "Millonarios FC",
+      "tournament": "Liga BetPlay Dimayor 2026 • Cuadrangulares / Fecha Decisiva",
+      "time_ec": "20:40 (ECU) / 20:40 (COL)",
+      "stadium": "Estadio Deportivo Cali (Palmaseca, Palmira)",
+      "score_prediction": {
+        "most_probable_score": "1 - 1",
+        "home_goals": 1.05,
+        "away_goals": 0.85
+      },
+      "la_fija_real": {
+        "selection": "Menos de 2.5 goles totales (Under 2.5)",
+        "odds": 1.28,
         "probability": 86.5,
-        "confidence": "MORUMBIS CLÁSICO • BRASILEIRÃO",
-        "argument": "El MorumBIS es una fortaleza para el Tricolor Paulista. Fluminense fuera del Maracaná reduce drásticamente su rendimiento ofensivo, promediando apenas 0.8 goles por partido como visitante y acusando el desgaste de la seguidilla de fechas. Con Lucas Moura, Calleri y el orden defensivo de Zubeldía, el São Paulo asegura la doble oportunidad 1X con total fiabilidad."
+        "confidence": "CLÁSICO CAFETERO • UNDER SEGURO",
+        "argument": "Clásico histórico de dientes apretados en Palmaseca donde el margen de error es mínimo. El Deportivo Cali prioriza la solidez defensiva para no conceder contragolpes, mientras que Millonarios maneja el partido con repliegue medio y pausa en la mitad de la cancha. En 5 de los últimos 6 cruces directos entre azucareros y embajadores se marcaron menos de 2.5 goles totales."
+      }
+    },
+    {
+      "match": "FC Metz vs. US Boulogne",
+      "home_team": "FC Metz",
+      "away_team": "US Boulogne",
+      "tournament": "Ligue 2 de Francia • Jornada 14",
+      "time_ec": "14:00 (ECU) / 20:00 (CET)",
+      "stadium": "Stade Saint-Symphorien (Metz, Francia)",
+      "score_prediction": {
+        "most_probable_score": "1 - 0",
+        "home_goals": 1.7,
+        "away_goals": 0.45
+      },
+      "la_fija_real": {
+        "selection": "FC Metz o Empate (Doble Oportunidad 1X)",
+        "odds": 1.25,
+        "probability": 87.0,
+        "confidence": "METZ EN CASA • LIGUE 2",
+        "argument": "El FC Metz en el Stade Saint-Symphorien pelea en los puestos de ascenso directo y ostenta la mejor defensa como local de la Ligue 2 (apenas 0.5 goles concedidos por partido). Boulogne, cuadro recién ascendido, sufre para generar peligro fuera de su feudo y acumula 3 partidos consecutivos sin marcar como visitante. La doble oportunidad 1X ofrece una estabilidad sobresaliente."
       }
     }
   ]

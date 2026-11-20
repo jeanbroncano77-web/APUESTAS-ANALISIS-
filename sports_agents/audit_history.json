@@ -1,20 +1,20 @@
 {
-  "last_updated": "2026-11-18 21:15:00",
+  "last_updated": "2026-11-19 21:05:00",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 3523.52,
-  "total_profit": 2523.52,
-  "roi_pct": 252.4,
+  "current_bankroll": 3665.52,
+  "total_profit": 2665.52,
+  "roi_pct": 266.6,
   "global_stats": {
-    "total": 240,
-    "wins": 211,
+    "total": 246,
+    "wins": 217,
     "losses": 29,
-    "win_rate": 87.9
+    "win_rate": 88.2
   },
   "fija_stats": {
-    "total": 196,
-    "wins": 172,
+    "total": 198,
+    "wins": 174,
     "losses": 24,
-    "win_rate": 87.8
+    "win_rate": 87.9
   },
   "history": [
     {
@@ -3191,9 +3191,99 @@
       "diagnostic": "ACIERTO BAJO EL GUIÓN COPERO (1 - 1 en 90 min): Partido cerrado y táctico en césped artificial. Solo 2 goles en tiempo reglamentario, validando plenamente la línea Under 3.5.",
       "pnl": 26.0,
       "bankroll_after": 3523.52
+    },
+    {
+      "id": 242,
+      "date": "19/11/2026",
+      "match": "Nueva Caledonia vs Ecuador Sub-17",
+      "tournament": "Mundial Sub-17 Catar 2026 • Fase de Grupos • Jueves 19/11/2026 • Final: 0 - 5",
+      "category_tag": "👑 La Fija de Oro Tricolor (Victoria Ecuador 2)",
+      "is_fija": true,
+      "selection": "Ecuador Sub-17 Gana el Partido (2)",
+      "odds": 1.22,
+      "confidence": 89.5,
+      "status": "win",
+      "diagnostic": "ACIERTO Y GOLEADA TRICOLOR EN DOHA (0 - 5): Descomunal superioridad física y técnica de La Tri juvenil. 74% de posesión, hat-trick del 9 de área y trámite liquidado en el primer tiempo. Cobro @1.22 impecable.",
+      "pnl": 22.0,
+      "bankroll_after": 3545.52
+    },
+    {
+      "id": 243,
+      "date": "19/11/2026",
+      "match": "FC Barcelona Femení vs Servette FCCF",
+      "tournament": "UEFA Women's Champions League • Jornada 5 • Jueves 19/11/2026 • Final: 6 - 0",
+      "category_tag": "👑 La Fija de Oro de Champions (Barça 1 + Más 2.5)",
+      "is_fija": true,
+      "selection": "FC Barcelona Femení Gana (1) + Más de 2.5 goles",
+      "odds": 1.2,
+      "confidence": 91.0,
+      "status": "win",
+      "diagnostic": "ACIERTO Y SINFONÍA EN EL JOHAN CRUYFF (6 - 0): Recital blaugrana con triplete de Ewa Pajor y tantos de Alexia y Aitana Bonmatí. El combo de triunfo y Over 2.5 se cumplió en apenas 34 minutos.",
+      "pnl": 20.0,
+      "bankroll_after": 3565.52
+    },
+    {
+      "id": 244,
+      "date": "19/11/2026",
+      "match": "Argentina vs Australia",
+      "tournament": "Mundial Sub-17 Catar 2026 • Fase de Grupos • Jueves 19/11/2026 • Final: 3 - 0",
+      "category_tag": "Doble Oportunidad + Límite Goles (Argentina 1X + U4.5)",
+      "is_fija": false,
+      "selection": "Argentina o Empate (1X) + Menos de 4.5 goles",
+      "odds": 1.25,
+      "confidence": 87.5,
+      "status": "win",
+      "diagnostic": "ACIERTO CON CONTROL TÁCTICO (3 - 0): La 'Albiceleste' dominó de principio a fin, abriendo el marcador al 18' y sellando con dos contragolpes en el complemento. Cobertura 1X y techo de 4.5 goles cobrados sin zozobra.",
+      "pnl": 25.0,
+      "bankroll_after": 3590.52
+    },
+    {
+      "id": 245,
+      "date": "19/11/2026",
+      "match": "Austria Viena vs Bayern Múnich Femenino",
+      "tournament": "UEFA Women's Champions League • Jornada 5 • Jueves 19/11/2026 • Final: 0 - 3",
+      "category_tag": "Victoria Visitante Directa (Bayern 2)",
+      "is_fija": false,
+      "selection": "FC Bayern Múnich Gana el Partido (2)",
+      "odds": 1.24,
+      "confidence": 87.0,
+      "status": "win",
+      "diagnostic": "ACIERTO BÁVARO EN VIENA (0 - 3): Autoridad germana en el Generali Arena con goles de Schüller y Bühl. Victoria limpia y clasificación matemática a cuartos de final.",
+      "pnl": 24.0,
+      "bankroll_after": 3614.52
+    },
+    {
+      "id": 246,
+      "date": "19/11/2026",
+      "match": "Peñarol vs Cerro Largo",
+      "tournament": "Liga AUF Uruguaya • Clausura • Jueves 19/11/2026 • Final: 2 - 0",
+      "category_tag": "Victoria Local (Peñarol 1)",
+      "is_fija": false,
+      "selection": "CA Peñarol Gana el Partido (1)",
+      "odds": 1.25,
+      "confidence": 87.0,
+      "status": "win",
+      "diagnostic": "ACIERTO EN EL CAMPEÓN DEL SIGLO (2 - 0): El 'Manya' destrabó el cerrojo defensivo de Cerro Largo al 38' con cabezazo a pelota parada y liquidó al 82'. Liderato del Clausura consolidado.",
+      "pnl": 25.0,
+      "bankroll_after": 3639.52
+    },
+    {
+      "id": 247,
+      "date": "19/11/2026",
+      "match": "São Paulo vs Fluminense",
+      "tournament": "Brasileirão Serie A • Jornada 34 • Jueves 19/11/2026 • Final: 1 - 0",
+      "category_tag": "Doble Oportunidad Local (São Paulo 1X)",
+      "is_fija": false,
+      "selection": "São Paulo o Empate (1X)",
+      "odds": 1.26,
+      "confidence": 86.5,
+      "status": "win",
+      "diagnostic": "ACIERTO CLAVADO EN EL MORUMBIS (1 - 0): Marcador exacto del modelo cumplido. Gol de Calleri al 54' y muralla defensiva ante un Fluminense inofensivo fuera de Río. Cobertura 1X resuelta con total comodidad.",
+      "pnl": 26.0,
+      "bankroll_after": 3665.52
     }
   ],
-  "bankroll": 3523.52,
+  "bankroll": 3665.52,
   "brier_score": 0.1134,
   "user_bankroll": {
     "currency": "USD",
@@ -3204,6 +3294,6 @@
     "roi_pct": 24.5,
     "safety_wall": 20.0,
     "disposable_buffer": 4.9,
-    "last_session_status": "INTACTO_SIN_APOSTAR_MARTES_Y_MIERCOLES"
+    "last_session_status": "INTACTO_CON_OPCION_DOBLE_COBRADA"
   }
 }
