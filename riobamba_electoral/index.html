@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Observatorio Electoral Riobamba | Preferencias y Dinámica Parroquial</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Leaflet CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    #map { height: 560px; width: 100%; border-radius: 1rem; z-index: 10; }
+    .custom-popup .leaflet-popup-content-wrapper {
+      background: #0f172a;
+      color: #f8fafc;
+      border: 1px solid #334155;
+      border-radius: 0.75rem;
+      padding: 0.5rem;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+    }
+    .custom-popup .leaflet-popup-tip { background: #0f172a; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen antialiased flex flex-col">
+
+  <!-- Header -->
+  <header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">
+            Monitor de Preferencias Electorales
+          </span>
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+            Cantón Riobamba
+          </span>
+          <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20">
+            Corte Post-Debate CNE
+          </span>
+        </div>
+        <h1 class="text-xl sm:text-2xl font-bold tracking-tight text-white mt-1">
+          Termómetro de Preferencias Ciudadanas en Riobamba
+        </h1>
+        <p class="text-xs text-slate-400">
+          Distribución de intención, clima de opinión, indecisión y peso parroquial urbano-rural.
+        </p>
+      </div>
+
+      <!-- Quick Metrics -->
+      <div class="flex items-center gap-3">
+        <div class="bg-slate-800/80 border border-slate-700/60 rounded-xl px-3 py-2 text-right">
+          <p class="text-[10px] text-slate-400 uppercase font-semibold">Padrón Estimado</p>
+          <p class="text-sm font-bold text-slate-100">~215.000 Votantes</p>
+        </div>
+        <div class="bg-slate-800/80 border border-slate-700/60 rounded-xl px-3 py-2 text-right">
+          <p class="text-[10px] text-slate-400 uppercase font-semibold">Indecisión Cantonal</p>
+          <p class="text-sm font-bold text-amber-400">~36% - 42%</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 w-full space-y-6">
+
+    <!-- 1. TABLERO CANTONAL DE PREFERENCIAS (NIVEL GLOBAL) -->
+    <section class="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-xl space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-b border-slate-800/80 pb-3">
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-blue-400">Clima de Opinión Cantonal</span>
+          <h2 class="text-lg font-extrabold text-white">¿Cómo se Dividen las Preferencias de los Riobambeños Hoy?</h2>
+          <p class="text-xs text-slate-400 mt-0.5">
+            Estructura calculada a partir de antecedentes CNE (victoria 2023 con 22%), encuestas de opinión pública local y monitoreo post-debate.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center gap-1.5 text-xs">
+          <span class="text-slate-400 mr-1 text-[11px]">Simular Escenario:</span>
+          <button onclick="setScenario('current')" id="btnScenCurrent" class="px-2.5 py-1 rounded-lg bg-blue-600 text-white font-medium text-xs shadow transition">Post-Debate Actual</button>
+          <button onclick="setScenario('rural')" id="btnScenRural" class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 font-medium text-xs hover:bg-slate-700 transition">Bloque Rural Fuerte</button>
+          <button onclick="setScenario('urban')" id="btnScenUrban" class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 font-medium text-xs hover:bg-slate-700 transition">Polarización Urbana</button>
+        </div>
+      </div>
+
+      <!-- Macro Distribution Progress Bar -->
+      <div class="space-y-1.5">
+        <div class="flex items-center justify-between text-xs font-semibold">
+          <span class="text-slate-300 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span> Voto Definido en Disputa (<span id="txtVotoDefinido">62%</span>)
+          </span>
+          <span class="text-amber-400 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span> Indecisos / No Define / Nulo (<span id="txtIndecisos">38%</span>)
+          </span>
+        </div>
+        <div class="w-full h-3.5 bg-slate-800 rounded-full overflow-hidden flex shadow-inner">
+          <div id="barDefinido" class="h-full bg-gradient-to-r from-blue-500 via-emerald-500 to-purple-500 transition-all duration-500" style="width: 62%;"></div>
+          <div id="barIndeciso" class="h-full bg-amber-400/90 transition-all duration-500" style="width: 38%;"></div>
+        </div>
+        <p class="text-[11px] text-slate-400 text-right">
+          * La alta tasa de indecisión ciudadana a la fecha hace que el resultado final permanezca abierto.
+        </p>
+      </div>
+
+      <!-- 4 Bloques de Preferencia Cantonal -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3.5 pt-2" id="blocksContainer">
+        <!-- Bloque 1: Gestión / Continuidad -->
+        <div class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-3.5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">Continuidad</span>
+              <span id="pctBloque1" class="text-base font-extrabold text-blue-400">21.5%</span>
+            </div>
+            <h4 class="text-xs font-bold text-white mt-2">John Vinueza</h4>
+            <p class="text-[11px] text-slate-400">Centro Democrático / CREO</p>
+            <div class="w-full bg-slate-700 h-1.5 rounded-full mt-2.5 overflow-hidden">
+              <div id="progBloque1" class="bg-blue-500 h-full rounded-full transition-all duration-500" style="width: 65%;"></div>
+            </div>
+          </div>
+          <p class="text-[10px] text-slate-400 mt-2.5 pt-2 border-t border-slate-700/50">
+            Base: Voto institucional urbano, obras de vialidad y continuidad administrativa.
+          </p>
+        </div>
+
+        <!-- Bloque 2: Comunitario e Indígena Rural -->
+        <div class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-3.5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Rural / Comunitario</span>
+              <span id="pctBloque2" class="text-base font-extrabold text-emerald-400">20.0%</span>
+            </div>
+            <h4 class="text-xs font-bold text-white mt-2">Santiago Abarca & César Daqui</h4>
+            <p class="text-[11px] text-slate-400">Pachakutik / Movimiento MINGA</p>
+            <div class="w-full bg-slate-700 h-1.5 rounded-full mt-2.5 overflow-hidden">
+              <div id="progBloque2" class="bg-emerald-500 h-full rounded-full transition-all duration-500" style="width: 62%;"></div>
+            </div>
+          </div>
+          <p class="text-[10px] text-slate-400 mt-2.5 pt-2 border-t border-slate-700/50">
+            Base: Cabildos de las 11 parroquias rurales, juntas de regantes y sector campesino.
+          </p>
+        </div>
+
+        <!-- Bloque 3: Alternativa Urbana & Juventud -->
+        <div class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-3.5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-purple-500/10 text-purple-400 border border-purple-500/20">Juventud & ADN</span>
+              <span id="pctBloque3" class="text-base font-extrabold text-purple-400">19.0%</span>
+            </div>
+            <h4 class="text-xs font-bold text-white mt-2">Doryan Jara & Maximiliano Núñez</h4>
+            <p class="text-[11px] text-slate-400">Futuro 20 (PSE) / ADN</p>
+            <div class="w-full bg-slate-700 h-1.5 rounded-full mt-2.5 overflow-hidden">
+              <div id="progBloque3" class="bg-purple-500 h-full rounded-full transition-all duration-500" style="width: 58%;"></div>
+            </div>
+          </div>
+          <p class="text-[10px] text-slate-400 mt-2.5 pt-2 border-t border-slate-700/50">
+            Base: Voto universitario (ESPOCH/UNACH), clases medias jóvenes y tracción digital.
+          </p>
+        </div>
+
+        <!-- Bloque 4: Institucional, Gremial & Popular -->
+        <div class="bg-slate-800/60 border border-slate-700/60 rounded-xl p-3.5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">Gremial / Popular</span>
+              <span id="pctBloque4" class="text-base font-extrabold text-amber-400">19.5%</span>
+            </div>
+            <h4 class="text-xs font-bold text-white mt-2">Aldás, Falconí, Sinaluisa, Di Donato</h4>
+            <p class="text-[11px] text-slate-400">Avanza / Cambio / PSP-UP / PID</p>
+            <div class="w-full bg-slate-700 h-1.5 rounded-full mt-2.5 overflow-hidden">
+              <div id="progBloque4" class="bg-amber-500 h-full rounded-full transition-all duration-500" style="width: 60%;"></div>
+            </div>
+          </div>
+          <p class="text-[10px] text-slate-400 mt-2.5 pt-2 border-t border-slate-700/50">
+            Base: Comerciantes formales, gremios profesionales, barrios céntricos y populares.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. TABLA CONSOLIDADA: TOTAL CANTONAL, SUBTOTAL URBANO Y SUBTOTAL RURAL POR CANDIDATO -->
+    <section class="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-xl space-y-4">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-b border-slate-800/80 pb-3">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-500/10 text-blue-400 border border-blue-500/20">Matriz Consolidada</span>
+            <span class="text-xs text-slate-400">Padrón: 76% Urbano | 24% Rural</span>
+          </div>
+          <h3 class="text-base sm:text-lg font-bold text-white mt-1">
+            Intención de Voto por Candidato: Urbano, Rural y Total Cantonal
+          </h3>
+          <p class="text-xs text-slate-400">
+            Comparativa de los 9 candidatos oficiales (ordenados por Lista CNE) más el bloque de indecisos.
+          </p>
+        </div>
+
+        <!-- Mode Toggle -->
+        <div class="flex items-center gap-1.5 bg-slate-800/80 p-1 rounded-xl border border-slate-700/60 shrink-0">
+          <button onclick="setTableMode('total')" id="btnTableModeTotal" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white shadow transition">
+            Padrón Total (Con Indecisos)
+          </button>
+          <button onclick="setTableMode('validos')" id="btnTableModeValidos" class="px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white transition">
+            Votos Válidos (Sin Indecisos)
+          </button>
+        </div>
+      </div>
+
+      <!-- Table Container -->
+      <div class="overflow-x-auto">
+        <table class="w-full text-xs text-left text-slate-300">
+          <thead class="text-[11px] uppercase bg-slate-800/70 text-slate-300 border-b border-slate-700/80">
+            <tr>
+              <th scope="col" class="py-3 px-3.5 font-bold">Candidato / Organización</th>
+              <th scope="col" class="py-3 px-3.5 font-bold text-center">Subtotal Urbano (76%)</th>
+              <th scope="col" class="py-3 px-3.5 font-bold text-center">Subtotal Rural (24%)</th>
+              <th scope="col" class="py-3 px-3.5 font-bold text-center">Total Cantonal Ponderado</th>
+              <th scope="col" class="py-3 px-3.5 font-bold">Bastión Territorial</th>
+            </tr>
+          </thead>
+          <tbody id="consolidatedTableBody" class="divide-y divide-slate-800/80">
+            <!-- Injected via JavaScript -->
+          </tbody>
+          <tfoot id="consolidatedTableFoot" class="bg-slate-800/50 font-bold border-t-2 border-slate-700 text-slate-200">
+            <!-- Injected via JavaScript -->
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="text-[11px] text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-2 pt-1 border-t border-slate-800/60">
+        <span>* El Total Cantonal pondera el 76% del voto urbano (5 parroquias) y el 24% del voto rural (11 parroquias).</span>
+        <span class="text-amber-400/90 font-medium">Fuentes: CNE Chimborazo, Diario La Prensa y monitoreo post-debate.</span>
+      </div>
+    </section>
+
+    <!-- 3. MAPA PARROQUIAL Y DESGLOSE EN TIEMPO REAL -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+      <!-- Map Column -->
+      <div class="lg:col-span-7 space-y-3">
+        <div class="bg-slate-900 border border-slate-800 p-2 sm:p-3 rounded-2xl shadow-xl">
+          <div class="flex items-center justify-between px-2 py-1 mb-2">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse"></span>
+              <span class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Mapa Territorial por Parroquia</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <button onclick="filterMap('all')" id="btnFilterAll" class="px-2.5 py-1 text-[11px] font-medium rounded-lg bg-blue-600 text-white">Todas (16)</button>
+              <button onclick="filterMap('urban')" id="btnFilterUrban" class="px-2.5 py-1 text-[11px] font-medium rounded-lg bg-slate-800 text-slate-300 border border-slate-700">Urbanas (5)</button>
+              <button onclick="filterMap('rural')" id="btnFilterRural" class="px-2.5 py-1 text-[11px] font-medium rounded-lg bg-slate-800 text-slate-300 border border-slate-700">Rurales (11)</button>
+            </div>
+          </div>
+          <div id="map"></div>
+        </div>
+        <p class="text-[11px] text-slate-500 px-1">
+          📍 <strong>Haz clic en cualquier punto del mapa</strong> para cargar en el panel derecho cómo se dividen exactamente las preferencias en esa parroquia.
+        </p>
+      </div>
+
+      <!-- Parish Preferences Breakdown Column -->
+      <div class="lg:col-span-5 space-y-4">
+        <div id="parishCard" class="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-xl flex flex-col justify-between h-[560px] overflow-y-auto">
+          <div>
+            <!-- Header of Selected Parish -->
+            <div class="flex items-center justify-between">
+              <span id="parishBadge" class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-blue-500/20 text-blue-400 border border-blue-500/30">
+                Parroquia Urbana
+              </span>
+              <span id="parishWeight" class="text-xs font-bold text-amber-400">
+                ~28% del Padrón
+              </span>
+            </div>
+            <h3 id="parishTitle" class="text-2xl font-extrabold text-white mt-1.5">
+              Lizarzaburu
+            </h3>
+            <p id="parishSubtitle" class="text-xs text-slate-400 mt-0.5">
+              Sector Norte, residencial y comercial. UNACH Campus Norte y Terminal.
+            </p>
+
+            <!-- DYNAMIC PREFERENCES BREAKDOWN FOR THIS PARISH -->
+            <div class="mt-4 pt-3 border-t border-slate-800">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-200">
+                  Preferencias en esta Parroquia
+                </span>
+                <span class="text-[10px] text-slate-400">Estimación Territorial</span>
+              </div>
+              <div id="parishPrefBars" class="space-y-2">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+
+            <!-- Priority Demands in Selected Parish -->
+            <div class="mt-4 pt-3 border-t border-slate-800">
+              <p class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Demandas Locales Clave:</p>
+              <div id="parishDemands" class="space-y-1.5">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+
+            <!-- Territorial Dynamics -->
+            <div class="mt-4 pt-3 border-t border-slate-800">
+              <p class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">Análisis Territorial:</p>
+              <p id="parishDynamics" class="text-xs text-slate-300 leading-relaxed bg-slate-800/50 p-2.5 rounded-xl border border-slate-700/40">
+                Zona de alta competencia entre clases medias y jóvenes. Voto fragmentado entre la continuidad de obras urbanas (Vinueza) y fuerzas de renovación (Jara, Núñez, Aldás).
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-3 border-t border-slate-800 text-[10px] text-slate-500">
+            Fuente: Registros electorales CNE Chimborazo y análisis de medios locales.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. EL EFECTO BISAGRA RURAL VS DISPERSIÓN URBANA -->
+    <section class="bg-gradient-to-r from-amber-950/40 via-slate-900 to-slate-900 border border-amber-500/30 rounded-2xl p-5 shadow-xl">
+      <div class="flex items-start gap-3.5">
+        <div class="p-2.5 bg-amber-500/10 text-amber-400 rounded-xl border border-amber-500/30 shrink-0">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+          </svg>
+        </div>
+        <div class="space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-300 uppercase tracking-wide border border-amber-500/30">Análisis Clave</span>
+            <h3 class="text-sm sm:text-base font-bold text-white">Por Qué el Voto Rural Es Decisivo Frente a la Dispersión Urbana</h3>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            En Riobamba, aunque el 76% del padrón nominal reside en las 5 parroquias urbanas, <strong class="text-amber-300">las 11 parroquias rurales tienen un peso desproporcionadamente determinante</strong>. En la ciudad, el voto se divide y atomiza entre las 9 candidaturas. Por el contrario, en comunidades rurales el voto se articula orgánicamente mediante cabildos y asambleas. Quien logre consolidar el voto rural puede alcanzar el 20%-25% necesario para ganar la Alcaldía.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. RESUMEN DE LOS 9 CANDIDATOS -->
+    <section class="space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+        <div>
+          <h2 class="text-base font-bold text-white">Las 9 Candidaturas y sus Segmentos de Preferencia</h2>
+          <p class="text-xs text-slate-400">Aspirantes calificados por el CNE que participaron en el debate oficial.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5" id="candidatesList">
+        <!-- Vinueza -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">Centro Dem. / CREO</span>
+            <span class="text-[10px] text-slate-400">Alcalde Actual</span>
+          </div>
+          <h4 class="text-sm font-bold text-white">John Vinueza</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">Defiende la continuidad de obras viales, alcantarillado y estabilización financiera del Municipio.</p>
+          <div class="text-[11px] text-blue-400 font-semibold pt-1 border-t border-slate-800">Foco: Sectores urbanos con obra pública ejecutada.</div>
+        </div>
+
+        <!-- Jara -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-pink-500/10 text-pink-400 border border-pink-500/20">Futuro 20 / PSE</span>
+            <span class="text-[10px] text-slate-400">2º Lugar en 2023</span>
+          </div>
+          <h4 class="text-sm font-bold text-white">Doryan Jara</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">Discurso de innovación, juventud y reactivación económica para jóvenes profesionales y universitarios.</p>
+          <div class="text-[11px] text-pink-400 font-semibold pt-1 border-t border-slate-800">Foco: Parroquias Lizarzaburu, Veloz y universidades.</div>
+        </div>
+
+        <!-- Abarca -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-lime-500/10 text-lime-400 border border-lime-500/20">Pachakutik</span>
+            <span class="text-[10px] text-slate-400">Fuerza Rural</span>
+          </div>
+          <h4 class="text-sm font-bold text-white">Santiago Abarca</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">Exdirector de Movilidad; propone defensa de páramos, agua de riego y apoyo a la economía campesina.</p>
+          <div class="text-[11px] text-lime-400 font-semibold pt-1 border-t border-slate-800">Foco: Parroquias rurales, cabildos y sector transporte.</div>
+        </div>
+
+        <!-- Núñez -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-purple-500/10 text-purple-400 border border-purple-500/20">ADN</span>
+            <span class="text-[10px] text-slate-400">Oficialismo Nacional</span>
+          </div>
+          <h4 class="text-sm font-bold text-white">Maximiliano Núñez</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">Articulación con el Gobierno Nacional, seguridad preventiva, planes de vivienda y ordenamiento territorial.</p>
+          <div class="text-[11px] text-purple-400 font-semibold pt-1 border-t border-slate-800">Foco: Sectores urbanos de clase media y expansión.</div>
+        </div>
+
+        <!-- Daqui -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">MINGA</span>
+            <span class="text-[10px] text-slate-400">Intercultural</span>
+          </div>
+          <h4 class="text-sm font-bold text-white">César Daqui</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">Enfoque intercultural, rescate de la producción agropecuaria y defensa de puestos del Mercado Mayorista.</p>
+          <div class="text-[11px] text-emerald-400 font-semibold pt-1 border-t border-slate-800">Foco: Productores del campo y comerciantes populares.</div>
+        </div>
+
+        <!-- Aldás -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">Avanza (Lista 8)</span>
+            <span class="text-[10px] text-slate-400">Gremial / Jurídico</span>
+          </div>
+          <h4 class="text-sm font-bold text-white">Stalin Aldás</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">Fiscalización estricta de contratos de servicios básicos, transparencia y seguridad jurídica comercial.</p>
+          <div class="text-[11px] text-amber-400 font-semibold pt-1 border-t border-slate-800">Foco: Casco comercial, gremios profesionales y Maldonado.</div>
+        </div>
+
+        <!-- Falconí -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-orange-500/10 text-orange-400 border border-orange-500/20">Cambio 62</span>
+            <span class="text-[10px] text-slate-400">Estructura Provincial</span>
+          </div>
+          <h4 class="text-sm font-bold text-white">Galo Falconí</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">Estructura provincial tradicional de Cambio; propone reordenamiento administrativo y viabilidad rural.</p>
+          <div class="text-[11px] text-orange-400 font-semibold pt-1 border-t border-slate-800">Foco: Red de parroquias y sectores tradicionales.</div>
+        </div>
+
+        <!-- Sinaluisa -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-red-500/10 text-red-400 border border-red-500/20">PSP / UP</span>
+            <span class="text-[10px] text-slate-400">Popular</span>
+          </div>
+          <h4 class="text-sm font-bold text-white">Marco Sinaluisa</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">Propuestas populares, austeridad municipal, defensa de vendedores autónomos y servicios accesibles.</p>
+          <div class="text-[11px] text-red-400 font-semibold pt-1 border-t border-slate-800">Foco: Barrios periféricos y comerciantes autónomos.</div>
+        </div>
+
+        <!-- Di Donato -->
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-3.5 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">PID / Amauta</span>
+            <span class="text-[10px] text-slate-400">Empresarial</span>
+          </div>
+          <h4 class="text-sm font-bold text-white">Héctor Di Donato</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">Gestión técnica, tecnificación de servicios públicos y fomento al dinamismo comercial y turístico.</p>
+          <div class="text-[11px] text-cyan-400 font-semibold pt-1 border-t border-slate-800">Foco: Sector empresarial, turismo y cámaras de producción.</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 bg-slate-950 py-5 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <p>Observatorio de Prospectiva Electoral - Cantón Riobamba (Provincia de Chimborazo)</p>
+      <p>Servidor local en ejecución en <strong>http://localhost:8085</strong></p>
+    </div>
+  </footer>
+
+  <!-- DATA & JAVASCRIPT LOGIC -->
+  <script>
+    // Scenario definitions
+    const scenarios = {
+      current: {
+        definido: 62,
+        indeciso: 38,
+        b1: 21.5, // Vinueza
+        b2: 20.0, // Abarca / Daqui
+        b3: 19.0, // Jara / Núñez
+        b4: 19.5  // Aldás, Falconí, Sinaluisa, Di Donato
+      },
+      rural: {
+        definido: 68,
+        indeciso: 32,
+        b1: 18.0,
+        b2: 26.5, // Sube fuerte el bloque rural
+        b3: 16.5,
+        b4: 17.0
+      },
+      urban: {
+        definido: 66,
+        indeciso: 34,
+        b1: 24.0, // Sube gestión
+        b2: 15.0,
+        b3: 22.0, // Sube juventud/ADN
+        b4: 19.0
+      }
+    };
+
+    function setScenario(scenKey) {
+      const s = scenarios[scenKey];
+      if (!s) return;
+
+      document.getElementById('txtVotoDefinido').textContent = s.definido + '%';
+      document.getElementById('txtIndecisos').textContent = s.indeciso + '%';
+      document.getElementById('barDefinido').style.width = s.definido + '%';
+      document.getElementById('barIndeciso').style.width = s.indeciso + '%';
+
+      document.getElementById('pctBloque1').textContent = s.b1.toFixed(1) + '%';
+      document.getElementById('pctBloque2').textContent = s.b2.toFixed(1) + '%';
+      document.getElementById('pctBloque3').textContent = s.b3.toFixed(1) + '%';
+      document.getElementById('pctBloque4').textContent = s.b4.toFixed(1) + '%';
+
+      document.getElementById('progBloque1').style.width = (s.b1 * 3) + '%';
+      document.getElementById('progBloque2').style.width = (s.b2 * 3) + '%';
+      document.getElementById('progBloque3').style.width = (s.b3 * 3) + '%';
+      document.getElementById('progBloque4').style.width = (s.b4 * 3) + '%';
+
+      // Update button styling
+      ['current', 'rural', 'urban'].forEach(k => {
+        const btn = document.getElementById('btnScen' + k.charAt(0).toUpperCase() + k.slice(1));
+        if (btn) {
+          if (k === scenKey) {
+            btn.className = 'px-2.5 py-1 rounded-lg bg-blue-600 text-white font-medium text-xs shadow transition';
+          } else {
+            btn.className = 'px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 font-medium text-xs hover:bg-slate-700 transition';
+          }
+        }
+      });
+    }
+
+    // 16 Parishes Data with Detailed Preferences Breakdown
+    const parishesData = [
+      // 5 Urban Parishes
+      {
+        id: "lizarzaburu",
+        name: "Lizarzaburu",
+        type: "urban",
+        lat: -1.648,
+        lng: -78.642,
+        weight: "~28% del Padrón Cantonal",
+        pop: "~60.000 hab.",
+        desc: "Sector Norte de alta densidad. UNACH Campus Norte, Terminal Terrestre y principales corredores comerciales.",
+        demands: [
+          "Seguridad en ejes comerciales y paradas de buses.",
+          "Mantenimiento vial y presión de agua potable en ciudadelas altas."
+        ],
+        dynamics: "Disputa cerrada en clases medias y jóvenes. Fuerte tracción de candidaturas de renovación (Jara, Núñez) frente a la aprobación de obra pública de Vinueza.",
+        prefs: [
+          { name: "Alternativa Joven / ADN (Jara / Núñez)", pct: 26, color: "bg-purple-500" },
+          { name: "Gestión / Continuidad (Vinueza)", pct: 24, color: "bg-blue-500" },
+          { name: "Gremial / Institucional (Aldás / Falconí)", pct: 16, color: "bg-amber-500" },
+          { name: "Rural / Popular (Abarca / Daqui / Sinaluisa)", pct: 8, color: "bg-emerald-500" },
+          { name: "Indecisos / Voto No Definido", pct: 26, color: "bg-slate-600" }
+        ]
+      },
+      {
+        id: "maldonado",
+        name: "Maldonado",
+        type: "urban",
+        lat: -1.662,
+        lng: -78.647,
+        weight: "~18% del Padrón Cantonal",
+        pop: "~42.000 hab.",
+        desc: "Centro neurálgico, sector bancario, entidades públicas y colegios tradicionales.",
+        demands: [
+          "Seguridad contra extorsiones y control del comercio informal.",
+          "Transparencia en el cobro de tasas e impuestos municipales."
+        ],
+        dynamics: "Voto conservador y exigente. Fuerte receptividad a discursos de fiscalización jurídica y orden (Aldás, Di Donato, Falconí) junto a la gestión municipal.",
+        prefs: [
+          { name: "Gremial / Jurídico (Aldás / Di Donato)", pct: 25, color: "bg-amber-500" },
+          { name: "Gestión / Continuidad (Vinueza)", pct: 23, color: "bg-blue-500" },
+          { name: "ADN / Renovación (Núñez / Jara)", pct: 18, color: "bg-purple-500" },
+          { name: "Cambio / Popular (Falconí / Sinaluisa)", pct: 10, color: "bg-orange-500" },
+          { name: "Indecisos / No Define", pct: 24, color: "bg-slate-600" }
+        ]
+      },
+      {
+        id: "velasco",
+        name: "Velasco",
+        type: "urban",
+        lat: -1.671,
+        lng: -78.651,
+        weight: "~15% del Padrón Cantonal",
+        pop: "~34.000 hab.",
+        desc: "Centro histórico patrimonial, mercados San Alfonso y La Merced, comercio tradicional.",
+        demands: [
+          "Plan integral de regeneración patrimonial y seguridad nocturna.",
+          "Regulación y apoyo al comercio en mercados tradicionales."
+        ],
+        dynamics: "Electorado comercial y patrimonial. Receptivo a propuestas de orden y seguridad, con fuerte debate sobre la gestión de mercados.",
+        prefs: [
+          { name: "Gestión / Continuidad (Vinueza)", pct: 24, color: "bg-blue-500" },
+          { name: "Gremial / Avanza / Cambio (Aldás / Falconí)", pct: 22, color: "bg-amber-500" },
+          { name: "Alternativa / ADN (Jara / Núñez)", pct: 17, color: "bg-purple-500" },
+          { name: "Popular / Indígena (Sinaluisa / Daqui)", pct: 12, color: "bg-emerald-500" },
+          { name: "Indecisos / En Disputa", pct: 25, color: "bg-slate-600" }
+        ]
+      },
+      {
+        id: "veloz",
+        name: "Veloz",
+        type: "urban",
+        lat: -1.660,
+        lng: -78.667,
+        weight: "~11% del Padrón Cantonal",
+        pop: "~26.000 hab.",
+        desc: "Sector Oeste; alberga el campus matriz de la ESPOCH y ciudadelas residenciales.",
+        demands: [
+          "Seguridad perimetral y transporte nocturno para estudiantes.",
+          "Regulación de arriendos y espacios de recreación juvenil."
+        ],
+        dynamics: "Fuerte peso del voto politécnico y universitario. Ventaja para discursos de juventud, modernización y tecnología (Doryan Jara, Maximiliano Núñez).",
+        prefs: [
+          { name: "Juventud / Futuro 20 (Doryan Jara)", pct: 28, color: "bg-pink-500" },
+          { name: "Gestión / Politécnico (Vinueza)", pct: 23, color: "bg-blue-500" },
+          { name: "ADN / Avanza (Núñez / Aldás)", pct: 19, color: "bg-purple-500" },
+          { name: "Popular / Rural (Abarca / Sinaluisa)", pct: 8, color: "bg-emerald-500" },
+          { name: "Indecisos / Estudiantes", pct: 22, color: "bg-slate-600" }
+        ]
+      },
+      {
+        id: "yaruquies",
+        name: "Yaruquíes",
+        type: "urban",
+        lat: -1.693,
+        lng: -78.665,
+        weight: "~4% del Padrón Cantonal",
+        pop: "~12.000 hab.",
+        desc: "Parroquia de transición histórico-periurbana. Barrios populares y tradición artesanal.",
+        demands: [
+          "Extensión de alcantarillado sanitario y obras de mitigación en quebradas.",
+          "Mantenimiento de vías de desfogue y agua permanente."
+        ],
+        dynamics: "Sensible a propuestas populares y de base comunitaria. Disputa directa entre obras municipales y el voto de izquierda y popular.",
+        prefs: [
+          { name: "Popular / Comunitario (Sinaluisa / Daqui)", pct: 27, color: "bg-red-500" },
+          { name: "Gestión / Obras (Vinueza)", pct: 24, color: "bg-blue-500" },
+          { name: "Pachakutik / Cambio (Abarca / Falconí)", pct: 18, color: "bg-lime-500" },
+          { name: "Opciones Urbanas (Jara / Aldás / Núñez)", pct: 13, color: "bg-purple-500" },
+          { name: "Indecisos", pct: 18, color: "bg-slate-600" }
+        ]
+      },
+
+      // 11 Rural Parishes
+      {
+        id: "cacha",
+        name: "Cacha",
+        type: "rural",
+        lat: -1.708,
+        lng: -78.682,
+        weight: "~2.2% del Padrón Cantonal",
+        pop: "~4.500 hab.",
+        desc: "Cuna de la nacionalidad Puruhá. Primera parroquia indígena del país con fuerte cohesión comunitaria.",
+        demands: [
+          "Defensa del agua y mantenimiento de canales de riego.",
+          "Fortalecimiento de proyectos de turismo comunitario y vialidad."
+        ],
+        dynamics: "Votación orgánica decidida en asambleas y cabildos. Clara hegemonía de movimientos indígenas y de interculturalidad.",
+        prefs: [
+          { name: "Pachakutik (Santiago Abarca)", pct: 36, color: "bg-lime-500" },
+          { name: "Movimiento MINGA (César Daqui)", pct: 26, color: "bg-emerald-500" },
+          { name: "Popular / Cambio (Sinaluisa / Falconí)", pct: 14, color: "bg-orange-500" },
+          { name: "Gestión Municipal (Vinueza)", pct: 10, color: "bg-blue-500" },
+          { name: "Indecisos / En Asamblea", pct: 14, color: "bg-slate-600" }
+        ]
+      },
+      {
+        id: "calpi",
+        name: "Calpi",
+        type: "rural",
+        lat: -1.632,
+        lng: -78.718,
+        weight: "~3.1% del Padrón Cantonal",
+        pop: "~7.000 hab.",
+        desc: "Zona agrícola clave en el corredor al Chimborazo. Gran productora de legumbres y hortalizas.",
+        demands: [
+          "Precios y espacios dignos en el Mercado Mayorista.",
+          "Conservación de páramos y agua para riego agrícola."
+        ],
+        dynamics: "Compromiso campesino. Fuerte respaldo a quienes defienden a los productores frente a intermediarios.",
+        prefs: [
+          { name: "Pachakutik / Minga (Abarca / Daqui)", pct: 35, color: "bg-emerald-500" },
+          { name: "Cambio 62 / Avanza (Falconí / Aldás)", pct: 21, color: "bg-orange-500" },
+          { name: "Gestión / Obras (Vinueza)", pct: 18, color: "bg-blue-500" },
+          { name: "Renovación / ADN (Jara / Núñez)", pct: 11, color: "bg-purple-500" },
+          { name: "Indecisos", pct: 15, color: "bg-slate-600" }
+        ]
+      },
+      {
+        id: "cubijies",
+        name: "Cubijíes",
+        type: "rural",
+        lat: -1.648,
+        lng: -78.583,
+        weight: "~1.5% del Padrón Cantonal",
+        pop: "~3.200 hab.",
+        desc: "Valle templado hacia el río Chambo. Producción frutícola y artesanías de carrizo.",
+        demands: [
+          "Vialidad de conexión con Guano y Penipe.",
+          "Fomento comercial para artesanos."
+        ],
+        dynamics: "Voto pragmático basado en compromisos de infraestructura vial y apoyo productivo.",
+        prefs: [
+          { name: "Gestión / Obras (Vinueza)", pct: 26, color: "bg-blue-500" },
+          { name: "Cambio 62 / Minga (Falconí / Daqui)", pct: 24, color: "bg-orange-500" },
+          { name: "Pachakutik (Abarca)", pct: 18, color: "bg-lime-500" },
+          { name: "Opciones Urbanas (Aldás / Jara)", pct: 14, color: "bg-purple-500" },
+          { name: "Indecisos", pct: 18, color: "bg-slate-600" }
+        ]
+      },
+      {
+        id: "flores",
+        name: "Flores",
+        type: "rural",
+        lat: -1.818,
+        lng: -78.641,
+        weight: "~2.5% del Padrón Cantonal",
+        pop: "~5.500 hab.",
+        desc: "Sur del cantón; comunidades dispersas de altura dedicadas a la producción agropecuaria.",
+        demands: [
+          "Agua de consumo permanente y micro-riego.",
+          "Vialidad para sacar la producción lechera."
+        ],
+        dynamics: "Sólida articulación comunitaria. Respaldo directo a organizaciones indígenas y rurales.",
+        prefs: [
+          { name: "Pachakutik (Santiago Abarca)", pct: 38, color: "bg-lime-500" },
+          { name: "Movimiento MINGA (César Daqui)", pct: 28, color: "bg-emerald-500" },
+          { name: "Popular / Cambio (Sinaluisa / Falconí)", pct: 13, color: "bg-orange-500" },
+          { name: "Gestión (Vinueza)", pct: 9, color: "bg-blue-500" },
+          { name: "Indecisos", pct: 12, color: "bg-slate-600" }
+        ]
+      },
+      {
+        id: "lican",
+        name: "Licán",
+        type: "rural",
+        lat: -1.641,
+        lng: -78.681,
+        weight: "~3.8% del Padrón Cantonal",
+        pop: "~8.500 hab.",
+        desc: "Parroquia periurbana y gastronómica sobre la Panamericana Norte hacia Ambato.",
+        demands: [
+          "Paso peatonal y seguridad vial en la Panamericana.",
+          "Saneamiento ambiental y agua potable continua."
+        ],
+        dynamics: "Comportamiento mixto entre comerciantes y agricultores. Disputa reñida entre gestión urbana y oposición.",
+        prefs: [
+          { name: "Gestión / Continuidad (Vinueza)", pct: 25, color: "bg-blue-500" },
+          { name: "Avanza / Cambio (Aldás / Falconí)", pct: 22, color: "bg-amber-500" },
+          { name: "Futuro 20 / ADN (Jara / Núñez)", pct: 19, color: "bg-purple-500" },
+          { name: "Minga / Pachakutik (Daqui / Abarca)", pct: 16, color: "bg-emerald-500" },
+          { name: "Indecisos", pct: 18, color: "bg-slate-600" }
+        ]
+      },
+      {
+        id: "licto",
+        name: "Licto",
+        type: "rural",
+        lat: -1.798,
+        lng: -78.601,
+        weight: "~3.4% del Padrón Cantonal",
+        pop: "~7.800 hab.",
+        desc: "Emblemática por su organización comunitaria en torno al Sistema de Riego Chambo-Guano/Licto.",
+        demands: [
+          "Mantenimiento de canales de riego y dotación técnica.",
+          "Crédito agrícola para pequeños productores."
+        ],
+        dynamics: "Voto con alto componente ideológico y de defensa del agua. Histórico bastión campesino.",
+        prefs: [
+          { name: "Pachakutik (Santiago Abarca)", pct: 37, color: "bg-lime-500" },
+          { name: "Movimiento MINGA (César Daqui)", pct: 26, color: "bg-emerald-500" },
+          { name: "Popular / Cambio (Sinaluisa / Falconí)", pct: 15, color: "bg-orange-500" },
+          { name: "Gestión (Vinueza)", pct: 10, color: "bg-blue-500" },
+          { name: "Indecisos", pct: 12, color: "bg-slate-600" }
+        ]
+      },
+      {
+        id: "pungala",
+        name: "Pungalá",
+        type: "rural",
+        lat: -1.879,
+        lng: -78.562,
+        weight: "~2.6% del Padrón Cantonal",
+        pop: "~6.000 hab.",
+        desc: "Zona alta y montañosa, lechera y puerta al Parque Nacional Sangay.",
+        demands: [
+          "Vialidad de penetración para zonas ganaderas.",
+          "Incentivos para la protección de páramos."
+        ],
+        dynamics: "Preferencia por liderazgos con presencia rural constante y apoyo a la ganadería de altura.",
+        prefs: [
+          { name: "Pachakutik / Minga (Abarca / Daqui)", pct: 39, color: "bg-emerald-500" },
+          { name: "Cambio 62 (Galo Falconí)", pct: 22, color: "bg-orange-500" },
+          { name: "Gestión / Obras (Vinueza)", pct: 15, color: "bg-blue-500" },
+          { name: "Opciones Urbanas (Aldás / Jara)", pct: 10, color: "bg-purple-500" },
+          { name: "Indecisos", pct: 14, color: "bg-slate-600" }
+        ]
+      },
+      {
+        id: "punin",
+        name: "Punín",
+        type: "rural",
+        lat: -1.751,
+        lng: -78.641,
+        weight: "~3.0% del Padrón Cantonal",
+        pop: "~6.800 hab.",
+        desc: "Cuenca sur, tradicional productora de maíz, arveja y lácteos.",
+        demands: [
+          "Mitigación de riesgos en quebradas y agua potable rural.",
+          "Asistencia técnica agropecuaria."
+        ],
+        dynamics: "Equilibrio entre organizaciones comunitarias indígenas y la tradición política cantonal.",
+        prefs: [
+          { name: "Pachakutik / Minga (Abarca / Daqui)", pct: 33, color: "bg-emerald-500" },
+          { name: "Cambio 62 / Avanza (Falconí / Aldás)", pct: 23, color: "bg-orange-500" },
+          { name: "Gestión / Continuidad (Vinueza)", pct: 18, color: "bg-blue-500" },
+          { name: "Popular (Marco Sinaluisa)", pct: 12, color: "bg-red-500" },
+          { name: "Indecisos", pct: 14, color: "bg-slate-600" }
+        ]
+      },
+      {
+        id: "quimiag",
+        name: "Quimiag",
+        type: "rural",
+        lat: -1.672,
+        lng: -78.541,
+        weight: "~2.4% del Padrón Cantonal",
+        pop: "~5.300 hab.",
+        desc: "Faldas del nevado El Altar. Riqueza agrícola, frutícola y ganadera.",
+        demands: [
+          "Asfaltado de vías hacia Riobamba y puentes sobre el río Chambo.",
+          "Desarrollo de rutas turísticas seguras hacia El Altar."
+        ],
+        dynamics: "Voto sensible a obras públicas viales y articulación entre junta parroquial y Municipio.",
+        prefs: [
+          { name: "Gestión / Obras (Vinueza)", pct: 28, color: "bg-blue-500" },
+          { name: "Cambio 62 / Minga (Falconí / Daqui)", pct: 26, color: "bg-orange-500" },
+          { name: "Pachakutik (Santiago Abarca)", pct: 20, color: "bg-lime-500" },
+          { name: "ADN / Avanza (Núñez / Aldás)", pct: 12, color: "bg-purple-500" },
+          { name: "Indecisos", pct: 14, color: "bg-slate-600" }
+        ]
+      },
+      {
+        id: "san_juan",
+        name: "San Juan",
+        type: "rural",
+        lat: -1.602,
+        lng: -78.781,
+        weight: "~3.2% del Padrón Cantonal",
+        pop: "~7.200 hab.",
+        desc: "Puerta de entrada a la Reserva Chimborazo. Comunidades de altura, papa, turismo y vicuñas.",
+        demands: [
+          "Defensa del páramo frente a la frontera agrícola.",
+          "Turismo comunitario regulado e ingresos para cabildos."
+        ],
+        dynamics: "Gran disciplina comunitaria. Los cabildos y asambleas concentran el apoyo hacia movimientos indígenas.",
+        prefs: [
+          { name: "Pachakutik (Santiago Abarca)", pct: 40, color: "bg-lime-500" },
+          { name: "Movimiento MINGA (César Daqui)", pct: 27, color: "bg-emerald-500" },
+          { name: "Popular / Cambio (Sinaluisa / Falconí)", pct: 12, color: "bg-orange-500" },
+          { name: "Gestión Municipal (Vinueza)", pct: 9, color: "bg-blue-500" },
+          { name: "Indecisos", pct: 12, color: "bg-slate-600" }
+        ]
+      },
+      {
+        id: "san_luis",
+        name: "San Luis",
+        type: "rural",
+        lat: -1.712,
+        lng: -78.621,
+        weight: "~3.9% del Padrón Cantonal",
+        pop: "~9.000 hab.",
+        desc: "Periurbana inmediata al sur. Gran crecimiento poblacional, ladrilleras y horticultura.",
+        demands: [
+          "Alcantarillado sanitario integral y agua potable de calidad.",
+          "Regularización de asentamientos y vías colectoras."
+        ],
+        dynamics: "Electorado dividido entre vecinos periurbanos que exigen obras municipales y productores artesanales.",
+        prefs: [
+          { name: "Gestión / Obras (Vinueza)", pct: 27, color: "bg-blue-500" },
+          { name: "Popular / PSP-UP (Marco Sinaluisa)", pct: 23, color: "bg-red-500" },
+          { name: "Pachakutik / Minga (Abarca / Daqui)", pct: 19, color: "bg-emerald-500" },
+          { name: "Avanza / Cambio (Aldás / Falconí)", pct: 15, color: "bg-amber-500" },
+          { name: "Indecisos", pct: 16, color: "bg-slate-600" }
+        ]
+      }
+    ];
+
+    // Initialize Map
+    const map = L.map('map', {
+      center: [-1.68, -78.65],
+      zoom: 11.4,
+      scrollWheelZoom: true
+    });
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+      subdomains: 'abcd',
+      maxZoom: 19
+    }).addTo(map);
+
+    let markersLayer = L.layerGroup().addTo(map);
+
+    function renderMarkers(filterType = 'all') {
+      markersLayer.clearLayers();
+
+      parishesData.forEach(p => {
+        if (filterType !== 'all' && p.type !== filterType) return;
+
+        const isUrban = p.type === 'urban';
+        const color = isUrban ? '#3b82f6' : '#10b981';
+        const radius = isUrban ? 10 : 8;
+
+        const circle = L.circleMarker([p.lat, p.lng], {
+          radius: radius,
+          fillColor: color,
+          color: '#ffffff',
+          weight: 2,
+          opacity: 1,
+          fillOpacity: 0.85
+        });
+
+        const popupContent = `
+          <div class="custom-popup p-1 text-slate-100">
+            <span class="text-[10px] font-bold px-2 py-0.5 rounded ${isUrban ? 'bg-blue-900 text-blue-200' : 'bg-emerald-900 text-emerald-200'}">
+              ${isUrban ? 'Parroquia Urbana' : 'Parroquia Rural'}
+            </span>
+            <h4 class="text-sm font-bold mt-1 text-white">${p.name}</h4>
+            <p class="text-[11px] text-amber-300 font-semibold">${p.weight}</p>
+            <button onclick="selectParish('${p.id}')" class="mt-2 w-full text-center text-[10px] bg-blue-600 hover:bg-blue-500 text-white font-medium py-1 rounded transition">
+              Cargar Preferencias
+            </button>
+          </div>
+        `;
+
+        circle.bindPopup(popupContent);
+        circle.on('click', () => { selectParish(p.id); });
+        markersLayer.addLayer(circle);
+      });
+    }
+
+    // Select Parish & Render its Specific Preferences
+    function selectParish(parishId) {
+      const p = parishesData.find(item => item.id === parishId);
+      if (!p) return;
+
+      const isUrban = p.type === 'urban';
+
+      const badge = document.getElementById('parishBadge');
+      badge.textContent = isUrban ? 'Parroquia Urbana' : 'Parroquia Rural';
+      badge.className = isUrban 
+        ? 'text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-blue-500/20 text-blue-400 border border-blue-500/30'
+        : 'text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30';
+
+      document.getElementById('parishWeight').textContent = p.weight;
+      document.getElementById('parishTitle').textContent = p.name;
+      document.getElementById('parishSubtitle').textContent = p.desc;
+      document.getElementById('parishDynamics').textContent = p.dynamics;
+
+      // Render Preferences Bars for this parish
+      const prefContainer = document.getElementById('parishPrefBars');
+      prefContainer.innerHTML = '';
+      if (p.prefs && p.prefs.length > 0) {
+        p.prefs.forEach(item => {
+          const row = document.createElement('div');
+          row.className = 'space-y-1';
+          row.innerHTML = `
+            <div class="flex items-center justify-between text-[11px]">
+              <span class="text-slate-300 font-medium truncate max-w-[210px]">${item.name}</span>
+              <span class="font-bold text-slate-100">${item.pct}%</span>
+            </div>
+            <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+              <div class="${item.color} h-full rounded-full transition-all duration-500" style="width: ${item.pct}%;"></div>
+            </div>
+          `;
+          prefContainer.appendChild(row);
+        });
+      }
+
+      // Render Demands
+      const demandsContainer = document.getElementById('parishDemands');
+      demandsContainer.innerHTML = '';
+      p.demands.forEach(d => {
+        const div = document.createElement('div');
+        div.className = 'text-xs bg-slate-800/40 border border-slate-700/50 rounded-lg p-2 text-slate-300 flex items-start gap-2';
+        div.innerHTML = `<span class="${isUrban ? 'text-blue-400' : 'text-emerald-400'}">▸</span><span>${d}</span>`;
+        demandsContainer.appendChild(div);
+      });
+
+      map.flyTo([p.lat, p.lng], 13, { duration: 1 });
+    }
+
+    function filterMap(type) {
+      renderMarkers(type);
+
+      const btnAll = document.getElementById('btnFilterAll');
+      const btnUrban = document.getElementById('btnFilterUrban');
+      const btnRural = document.getElementById('btnFilterRural');
+
+      btnAll.className = type === 'all' 
+        ? 'px-2.5 py-1 text-[11px] font-medium rounded-lg bg-blue-600 text-white'
+        : 'px-2.5 py-1 text-[11px] font-medium rounded-lg bg-slate-800 text-slate-300 border border-slate-700';
+
+      btnUrban.className = type === 'urban'
+        ? 'px-2.5 py-1 text-[11px] font-medium rounded-lg bg-blue-600 text-white'
+        : 'px-2.5 py-1 text-[11px] font-medium rounded-lg bg-slate-800 text-slate-300 border border-slate-700';
+
+      btnRural.className = type === 'rural'
+        ? 'px-2.5 py-1 text-[11px] font-medium rounded-lg bg-emerald-600 text-white'
+        : 'px-2.5 py-1 text-[11px] font-medium rounded-lg bg-slate-800 text-slate-300 border border-slate-700';
+    }
+
+    // Consolidated Data for the 9 candidates + Indecisos
+    const candidatesConsolidated = [
+      {
+        name: "John Vinueza",
+        party: "Alianza Centro Democrático / CREO",
+        list: "Listas 1-21",
+        tagColor: "bg-blue-500/15 text-blue-400 border border-blue-500/30",
+        barColor: "bg-blue-500",
+        badge: "Gestión / Obras",
+        bastion: "Lizarzaburu, Velasco, Maldonado (Casco Urbano)",
+        total: { urban: 14.5, rural: 5.0, cantonal: 12.2 },
+        valid: { urban: 22.7, rural: 7.5, cantonal: 18.9 }
+      },
+      {
+        name: "Marco Sinaluisa",
+        party: "Sociedad Patriótica / Unidad Popular",
+        list: "Listas 3-2",
+        tagColor: "bg-red-500/15 text-red-400 border border-red-500/30",
+        barColor: "bg-red-500",
+        badge: "Popular / Periferia",
+        bastion: "Yaruquíes, San Luis y barrios periféricos",
+        total: { urban: 4.0, rural: 6.0, cantonal: 4.5 },
+        valid: { urban: 6.3, rural: 9.0, cantonal: 7.0 }
+      },
+      {
+        name: "Héctor Di Donato",
+        party: "Alianza PID / Amauta Yuyay",
+        list: "Listas 4-66",
+        tagColor: "bg-cyan-500/15 text-cyan-400 border border-cyan-500/30",
+        barColor: "bg-cyan-500",
+        badge: "Técnico / Comercial",
+        bastion: "Maldonado, sector comercial y turismo",
+        total: { urban: 3.0, rural: 2.0, cantonal: 2.8 },
+        valid: { urban: 4.7, rural: 3.0, cantonal: 4.3 }
+      },
+      {
+        name: "Stalin Aldás",
+        party: "Partido Avanza",
+        list: "Lista 8",
+        tagColor: "bg-amber-500/15 text-amber-400 border border-amber-500/30",
+        barColor: "bg-amber-500",
+        badge: "Gremial / Jurídico",
+        bastion: "Maldonado, Velasco y comerciantes formales",
+        total: { urban: 7.5, rural: 3.5, cantonal: 6.5 },
+        valid: { urban: 11.7, rural: 5.3, cantonal: 10.1 }
+      },
+      {
+        name: "Santiago Abarca",
+        party: "Alianza Pachakutik – Merecemos Más",
+        list: "Lista 18",
+        tagColor: "bg-lime-500/15 text-lime-400 border border-lime-500/30",
+        barColor: "bg-lime-500",
+        badge: "Indígena / Rural",
+        bastion: "Cacha, Flores, Licto, San Juan, Pungalá",
+        total: { urban: 4.0, rural: 18.5, cantonal: 7.5 },
+        valid: { urban: 6.3, rural: 27.8, cantonal: 11.6 }
+      },
+      {
+        name: "Doryan Jara",
+        party: "Alianza Futuro 20 / Partido Socialista",
+        list: "Listas 20-17",
+        tagColor: "bg-pink-500/15 text-pink-400 border border-pink-500/30",
+        barColor: "bg-pink-500",
+        badge: "Juventud / Politécnico",
+        bastion: "Veloz (ESPOCH), Lizarzaburu (UNACH), jóvenes",
+        total: { urban: 13.5, rural: 4.0, cantonal: 11.2 },
+        valid: { urban: 21.1, rural: 6.0, cantonal: 17.3 }
+      },
+      {
+        name: "Galo Falconí",
+        party: "Movimiento Cambio",
+        list: "Lista 62",
+        tagColor: "bg-orange-500/15 text-orange-400 border border-orange-500/30",
+        barColor: "bg-orange-500",
+        badge: "Provincial Tradicional",
+        bastion: "Calpi, Punín, Cubijíes y sectores tradicionales",
+        total: { urban: 4.5, rural: 9.0, cantonal: 5.6 },
+        valid: { urban: 7.0, rural: 13.5, cantonal: 8.7 }
+      },
+      {
+        name: "Maximiliano Núñez",
+        party: "Acción Democrática Nacional (ADN)",
+        list: "Lista 77",
+        tagColor: "bg-purple-500/15 text-purple-400 border border-purple-500/30",
+        barColor: "bg-purple-500",
+        badge: "Oficialismo Nacional",
+        bastion: "Lizarzaburu, ciudadelas nuevas y clases medias",
+        total: { urban: 8.5, rural: 3.5, cantonal: 7.3 },
+        valid: { urban: 13.3, rural: 5.3, cantonal: 11.3 }
+      },
+      {
+        name: "César Daqui",
+        party: "Movimiento MINGA",
+        list: "Lista 100",
+        tagColor: "bg-emerald-500/15 text-emerald-400 border border-emerald-500/30",
+        barColor: "bg-emerald-500",
+        badge: "Intercultural / Agro",
+        bastion: "Calpi, Cacha, Flores y Mercado Mayorista",
+        total: { urban: 4.5, rural: 15.0, cantonal: 7.0 },
+        valid: { urban: 7.0, rural: 22.6, cantonal: 10.8 }
+      }
+    ];
+
+    let currentTableMode = 'total';
+
+    function setTableMode(mode) {
+      currentTableMode = mode;
+      const btnTotal = document.getElementById('btnTableModeTotal');
+      const btnValidos = document.getElementById('btnTableModeValidos');
+
+      if (mode === 'total') {
+        btnTotal.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white shadow transition';
+        btnValidos.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white transition';
+      } else {
+        btnTotal.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white transition';
+        btnValidos.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white shadow transition';
+      }
+      renderConsolidatedTable();
+    }
+
+    function renderConsolidatedTable() {
+      const tbody = document.getElementById('consolidatedTableBody');
+      const tfoot = document.getElementById('consolidatedTableFoot');
+      if (!tbody || !tfoot) return;
+
+      tbody.innerHTML = '';
+      tfoot.innerHTML = '';
+
+      const isTotalMode = (currentTableMode === 'total');
+
+      candidatesConsolidated.forEach(c => {
+        const val = isTotalMode ? c.total : c.valid;
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-800/40 transition';
+
+        tr.innerHTML = `
+          <td class="py-3 px-3.5">
+            <div class="flex items-center gap-2">
+              <span class="px-1.5 py-0.5 rounded text-[10px] font-bold ${c.tagColor}">${c.list}</span>
+              <div>
+                <p class="font-bold text-white text-xs">${c.name}</p>
+                <p class="text-[10px] text-slate-400">${c.party}</p>
+              </div>
+            </div>
+          </td>
+          <td class="py-3 px-3.5 text-center">
+            <div class="flex flex-col items-center">
+              <span class="font-extrabold text-xs text-blue-300">${val.urban.toFixed(1)}%</span>
+              <div class="w-16 bg-slate-800 h-1.5 rounded-full mt-1 overflow-hidden">
+                <div class="${c.barColor} h-full" style="width: ${Math.min(100, val.urban * (isTotalMode ? 4 : 2.5))}%;"></div>
+              </div>
+            </div>
+          </td>
+          <td class="py-3 px-3.5 text-center">
+            <div class="flex flex-col items-center">
+              <span class="font-extrabold text-xs text-emerald-300">${val.rural.toFixed(1)}%</span>
+              <div class="w-16 bg-slate-800 h-1.5 rounded-full mt-1 overflow-hidden">
+                <div class="${c.barColor} h-full" style="width: ${Math.min(100, val.rural * (isTotalMode ? 4 : 2.5))}%;"></div>
+              </div>
+            </div>
+          </td>
+          <td class="py-3 px-3.5 text-center">
+            <span class="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-black bg-slate-800 text-white border border-slate-700 shadow-sm">
+              ${val.cantonal.toFixed(1)}%
+            </span>
+          </td>
+          <td class="py-3 px-3.5 text-slate-300 text-[11px]">
+            <span class="text-slate-400 font-medium">${c.bastion}</span>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      // If in Total Mode, append Indecision row
+      if (isTotalMode) {
+        const trInd = document.createElement('tr');
+        trInd.className = 'bg-amber-950/20 text-amber-200 border-t border-amber-500/30';
+        trInd.innerHTML = `
+          <td class="py-3 px-3.5 font-bold">
+            <div class="flex items-center gap-2">
+              <span class="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40">INDECISIÓN</span>
+              <div>
+                <p class="font-bold text-amber-200 text-xs">Indecisos / No Define / Nulo / Blanco</p>
+                <p class="text-[10px] text-amber-400/80">Segmento que definirá la elección en la recta final</p>
+              </div>
+            </div>
+          </td>
+          <td class="py-3 px-3.5 text-center font-extrabold text-amber-300 text-xs">36.0%</td>
+          <td class="py-3 px-3.5 text-center font-extrabold text-amber-300 text-xs">33.5%</td>
+          <td class="py-3 px-3.5 text-center">
+            <span class="inline-flex items-center px-2 py-0.5 rounded-md text-xs font-black bg-amber-500/20 text-amber-300 border border-amber-500/40">
+              35.4%
+            </span>
+          </td>
+          <td class="py-3 px-3.5 text-[11px] text-amber-300/80">
+            Disperso en todo el cantón (mayor en jóvenes urbanos y asambleas rurales)
+          </td>
+        `;
+        tbody.appendChild(trInd);
+      }
+
+      // Foot Row (Totals)
+      const trFoot = document.createElement('tr');
+      trFoot.innerHTML = `
+        <td class="py-2.5 px-3.5 uppercase tracking-wider text-[11px]">Total Consolidado</td>
+        <td class="py-2.5 px-3.5 text-center text-xs text-blue-400 font-black">100.0%</td>
+        <td class="py-2.5 px-3.5 text-center text-xs text-emerald-400 font-black">100.0%</td>
+        <td class="py-2.5 px-3.5 text-center text-xs text-white font-black">100.0%</td>
+        <td class="py-2.5 px-3.5 text-[10px] text-slate-400">Ponderación: 76% Urbano + 24% Rural</td>
+      `;
+      tfoot.appendChild(trFoot);
+    }
+
+    // Default Initialization
+    renderMarkers('all');
+    selectParish('lizarzaburu');
+    renderConsolidatedTable();
+  </script>
+</body>
+</html>

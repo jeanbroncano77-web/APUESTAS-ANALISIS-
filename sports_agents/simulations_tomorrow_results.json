@@ -1,129 +1,129 @@
 {
-  "GeneratedAt": "19/11/2026 21:15",
-  "TargetDay": "Viernes 20 de Noviembre de 2026",
-  "TargetDate": "20/11/2026",
-  "TemporalLabel": "Viernes 20/11 (6 Eventos Estelares • LigaPro, Bundesliga, LaLiga & Sub-17)",
-  "ActiveBankroll": 3665.52,
+  "GeneratedAt": "20/11/2026 22:15",
+  "TargetDay": "Sábado 21 de Noviembre de 2026",
+  "TargetDate": "21/11/2026",
+  "TemporalLabel": "Sábado 21/11 (6 Eventos Estelares • Final Sudamericana, Real Madrid, Man City & LigaPro)",
+  "ActiveBankroll": 3437.52,
   "Status": "active",
   "Matches": [
     {
-      "match": "Independiente del Valle vs. Macará",
-      "home_team": "Independiente del Valle",
-      "away_team": "Club Deportivo Macará",
-      "tournament": "LigaPro Ecuabet 2026 • Segunda Etapa • Fecha Decisiva",
-      "time_ec": "12:00 (ECU) / 13:00 (MIA)",
-      "stadium": "Estadio Banco Guayaquil (Amaguaña / Sangolquí)",
+      "match": "Atlético Mineiro vs. Boca Juniors",
+      "home_team": "Atlético Mineiro",
+      "away_team": "Boca Juniors",
+      "tournament": "CONMEBOL Sudamericana 2026 • Gran Final Única",
+      "time_ec": "15:00 (ECU) / 17:00 (ARG/BRA)",
+      "stadium": "Estadio General Pablo Rojas 'La Nueva Olla' (Asunción, Paraguay)",
       "score_prediction": {
-        "most_probable_score": "2 - 0",
-        "home_goals": 2.45,
-        "away_goals": 0.4
-      },
-      "la_fija_real": {
-        "selection": "Independiente del Valle Gana el Partido (Victoria 1)",
-        "odds": 1.25,
-        "probability": 89.0,
-        "confidence": "👑 LA FIJA DE ORO NACIONAL 89.0%",
-        "argument": "Los 'Rayados del Valle' son una máquina de generar peligro en su reducto de Amaguaña, donde dominan la posesión con más del 68% y ahogan a los rivales con presión posicional tras pérdida. Macará baja notablemente su producción cuando sale del Bellavista de Ambato y acumula 4 derrotas consecutivas visitando a IDV. La necesidad de ganar para amarrar la etapa convierte el triunfo negriazul en la mejor selección del fútbol ecuatoriano."
-      }
-    },
-    {
-      "match": "Bayern Múnich vs. FC Köln",
-      "home_team": "FC Bayern Múnich",
-      "away_team": "FC Köln",
-      "tournament": "Bundesliga Alemana • Jornada 11",
-      "time_ec": "14:30 (ECU) / 20:30 (CET)",
-      "stadium": "Allianz Arena (Múnich, Alemania)",
-      "score_prediction": {
-        "most_probable_score": "3 - 1",
-        "home_goals": 3.2,
-        "away_goals": 0.6
-      },
-      "la_fija_real": {
-        "selection": "FC Bayern Múnich Gana (1) + Más de 2.5 goles totales",
-        "odds": 1.22,
-        "probability": 90.5,
-        "confidence": "👑 LA FIJA DE ORO EUROPEA 90.5%",
-        "argument": "El Bayern en el Allianz Arena despliega una voracidad ofensiva aplastante con Harry Kane, Jamal Musiala y Michael Olise, promediando más de 3.2 goles por partido en casa. El FC Köln sufre horrores en transición defensiva, concediendo más de 2 goles de media cuando visita campos de primer nivel. La combinación de la victoria bávara con el Over de goles es un cheque al portador respaldado por los modelos cuantitativos."
-      }
-    },
-    {
-      "match": "Athletic Club vs. RCD Espanyol",
-      "home_team": "Athletic Club",
-      "away_team": "RCD Espanyol",
-      "tournament": "LaLiga EA Sports • Jornada 14",
-      "time_ec": "15:00 (ECU) / 21:00 (CET)",
-      "stadium": "Estadio San Mamés (Bilbao, España)",
-      "score_prediction": {
-        "most_probable_score": "2 - 0",
-        "home_goals": 2.15,
-        "away_goals": 0.55
-      },
-      "la_fija_real": {
-        "selection": "Athletic Club o Empate (1X) + Menos de 4.5 goles",
-        "odds": 1.25,
-        "probability": 88.0,
-        "confidence": "SAN MAMÉS FORTALEZA • LALIGA",
-        "argument": "La 'Catedral' de San Mamés es una caldera donde el Athletic impone un ritmo físico agobiante comandado por los hermanos Williams, Sancet y Guruzeta. El Espanyol fuera de Cornellà se atrinchera con línea de 5 pero carece de pegada (xG inferior a 0.65 como visitante). La doble oportunidad 1X combinada con el techo generoso de Menos 4.5 goles blinda completamente el pronóstico ante cualquier resistencia perica."
-      }
-    },
-    {
-      "match": "España Sub-17 vs. China Sub-17",
-      "home_team": "España Sub-17",
-      "away_team": "China Sub-17",
-      "tournament": "Mundial Sub-17 Catar 2026 • Fase de Grupos • Grupo D",
-      "time_ec": "08:00 (ECU) / 16:00 (Catar)",
-      "stadium": "Al Thumama Stadium (Doha, Catar)",
-      "score_prediction": {
-        "most_probable_score": "3 - 0",
-        "home_goals": 2.9,
-        "away_goals": 0.35
-      },
-      "la_fija_real": {
-        "selection": "España Sub-17 Gana el Partido (Victoria 1)",
-        "odds": 1.22,
-        "probability": 89.0,
-        "confidence": "ESPAÑA SUB-17 • FASE DE GRUPOS",
-        "argument": "'La Rojita' es una de las grandes favoritas para levantar el trofeo en Catar gracias a su dominio asociativo, paciencia y verticalidad entre líneas. El combinado asiático muestra graves problemas de posicionamiento defensivo ante selecciones con circulación rápida de balón. España monopolizará la pelota y abrirá brecha en el marcador con relativa comodidad."
-      }
-    },
-    {
-      "match": "Deportivo Cali vs. Millonarios FC",
-      "home_team": "Deportivo Cali",
-      "away_team": "Millonarios FC",
-      "tournament": "Liga BetPlay Dimayor 2026 • Cuadrangulares / Fecha Decisiva",
-      "time_ec": "20:40 (ECU) / 20:40 (COL)",
-      "stadium": "Estadio Deportivo Cali (Palmaseca, Palmira)",
-      "score_prediction": {
-        "most_probable_score": "1 - 1",
-        "home_goals": 1.05,
-        "away_goals": 0.85
+        "most_probable_score": "1 - 0",
+        "home_goals": 0.95,
+        "away_goals": 0.8
       },
       "la_fija_real": {
         "selection": "Menos de 2.5 goles totales (Under 2.5)",
         "odds": 1.28,
-        "probability": 86.5,
-        "confidence": "CLÁSICO CAFETERO • UNDER SEGURO",
-        "argument": "Clásico histórico de dientes apretados en Palmaseca donde el margen de error es mínimo. El Deportivo Cali prioriza la solidez defensiva para no conceder contragolpes, mientras que Millonarios maneja el partido con repliegue medio y pausa en la mitad de la cancha. En 5 de los últimos 6 cruces directos entre azucareros y embajadores se marcaron menos de 2.5 goles totales."
+        "probability": 88.5,
+        "confidence": "👑 LA FIJA DE ORO SUDAMERICANA 88.5%",
+        "argument": "La Gran Final continental a partido único en Asunción. Boca Juniors saca a relucir su ADN copero con orden defensivo ultra riguroso, corte táctico y la jerarquía de Cavani y Merentiel para enfriar las transiciones rivales. El Atlético Mineiro de Gabriel Milito con Hulk y Paulinho sabe que un error en 90 minutos cuesta el título. En las últimas 4 finales únicas de CONMEBOL el promedio fue de apenas 1.2 goles por encuentro. El Under es la muralla matemática del sábado."
       }
     },
     {
-      "match": "FC Metz vs. US Boulogne",
-      "home_team": "FC Metz",
-      "away_team": "US Boulogne",
-      "tournament": "Ligue 2 de Francia • Jornada 14",
-      "time_ec": "14:00 (ECU) / 20:00 (CET)",
-      "stadium": "Stade Saint-Symphorien (Metz, Francia)",
+      "match": "Real Madrid vs. Celta de Vigo",
+      "home_team": "Real Madrid",
+      "away_team": "Celta de Vigo",
+      "tournament": "LaLiga EA Sports • Jornada 14",
+      "time_ec": "15:00 (ECU) / 21:00 (CET)",
+      "stadium": "Estadio Santiago Bernabéu (Madrid, España)",
       "score_prediction": {
-        "most_probable_score": "1 - 0",
-        "home_goals": 1.7,
+        "most_probable_score": "3 - 1",
+        "home_goals": 2.85,
+        "away_goals": 0.65
+      },
+      "la_fija_real": {
+        "selection": "Real Madrid Gana el Partido (Victoria 1)",
+        "odds": 1.24,
+        "probability": 90.0,
+        "confidence": "👑 LA FIJA DE ORO DE LALIGA 90.0%",
+        "argument": "El conjunto de Carlo Ancelotti no puede ceder un solo punto en el Bernabéu en su carrera por la cima de LaLiga. Kylian Mbappé, Vinícius Júnior y Jude Bellingham forman un tridente incontrolable en velocidad para un Celta que acostumbra sufrir defensivamente en Chamartín (ha encajado al menos 2 goles en sus últimas 6 visitas a la capital). El peso de la camiseta y la pegada blanca decantarán el triunfo."
+      }
+    },
+    {
+      "match": "Manchester City vs. Fulham",
+      "home_team": "Manchester City",
+      "away_team": "Fulham FC",
+      "tournament": "Premier League • Jornada 12",
+      "time_ec": "07:30 (ECU) / 12:30 (UK)",
+      "stadium": "Etihad Stadium (Manchester, Inglaterra)",
+      "score_prediction": {
+        "most_probable_score": "3 - 0",
+        "home_goals": 2.7,
+        "away_goals": 0.5
+      },
+      "la_fija_real": {
+        "selection": "Manchester City Gana el Partido (Victoria 1)",
+        "odds": 1.22,
+        "probability": 89.0,
+        "confidence": "CITY EN EL ETIHAD • PREMIER",
+        "argument": "Erling Haaland y los dirigidos por Pep Guardiola abren la jornada sabatina en el Etihad. El City domina el historial directo ante Fulham de manera abrumadora, sumando 16 victorias consecutivas en todas las competiciones. La asfixiante presión tras pérdida y el caudal ofensivo de los 'Sky Blues' liquidarán el trámite ante un Fulham que sufre horrores cuando no tiene la pelota."
+      }
+    },
+    {
+      "match": "Universidad Católica vs. Barcelona SC",
+      "home_team": "Universidad Católica",
+      "away_team": "Barcelona SC",
+      "tournament": "LigaPro Ecuabet 2026 • Segunda Etapa • Fecha Clave",
+      "time_ec": "16:30 (ECU) / 17:30 (MIA)",
+      "stadium": "Estadio Olímpico Atahualpa (Quito, Ecuador)",
+      "score_prediction": {
+        "most_probable_score": "2 - 1",
+        "home_goals": 1.85,
+        "away_goals": 1.3
+      },
+      "la_fija_real": {
+        "selection": "Más de 1.5 goles totales (Over 1.5)",
+        "odds": 1.25,
+        "probability": 87.5,
+        "confidence": "CLÁSICO EN EL ATAHUALPA • LIGAPRO",
+        "argument": "Partidazo cumbre en la altura de Quito. La 'Chatoleí' de Jorge Célico propone transiciones a máxima velocidad y remate continuo, pero suele conceder espacios en el fondo. Barcelona SC necesita imperiosamente los tres puntos y tiene pólvora arriba para golpear de contraataque. En 8 de los últimos 9 enfrentamientos directos entre ambos en el Atahualpa se marcaron 2 o más goles con holgura."
+      }
+    },
+    {
+      "match": "Lazio vs. Lecce",
+      "home_team": "SS Lazio",
+      "away_team": "US Lecce",
+      "tournament": "Serie A de Italia • Jornada 13",
+      "time_ec": "09:00 (ECU) / 15:00 (CET)",
+      "stadium": "Stadio Olimpico (Roma, Italia)",
+      "score_prediction": {
+        "most_probable_score": "2 - 0",
+        "home_goals": 1.9,
         "away_goals": 0.45
       },
       "la_fija_real": {
-        "selection": "FC Metz o Empate (Doble Oportunidad 1X)",
+        "selection": "SS Lazio o Empate (1X) + Menos de 4.5 goles",
         "odds": 1.25,
-        "probability": 87.0,
-        "confidence": "METZ EN CASA • LIGUE 2",
-        "argument": "El FC Metz en el Stade Saint-Symphorien pelea en los puestos de ascenso directo y ostenta la mejor defensa como local de la Ligue 2 (apenas 0.5 goles concedidos por partido). Boulogne, cuadro recién ascendido, sufre para generar peligro fuera de su feudo y acumula 3 partidos consecutivos sin marcar como visitante. La doble oportunidad 1X ofrece una estabilidad sobresaliente."
+        "probability": 88.0,
+        "confidence": "LAZIO EN EL OLÍMPICO • SERIE A",
+        "argument": "La Lazio de Marco Baroni en el Stadio Olimpico maneja un fútbol de posesión y presión en tres cuartos con Castellanos, Zaccagni y Boulaye Dia. El Lecce es uno de los conjuntos con peor producción ofensiva como visitante en toda la Serie A (apenas 0.5 goles por juego fuera de casa). La doble oportunidad 1X combinada con un techo generoso de Menos 4.5 goles blinda la jugada con altísima fiabilidad."
+      }
+    },
+    {
+      "match": "OGC Niza vs. Paris Saint-Germain",
+      "home_team": "OGC Niza",
+      "away_team": "Paris Saint-Germain",
+      "tournament": "Ligue 1 de Francia • Jornada 12",
+      "time_ec": "09:15 (ECU) / 15:15 (CET)",
+      "stadium": "Allianz Riviera (Niza, Francia)",
+      "score_prediction": {
+        "most_probable_score": "1 - 2",
+        "home_goals": 0.85,
+        "away_goals": 2.1
+      },
+      "la_fija_real": {
+        "selection": "Paris Saint-Germain o Empate (Doble Oportunidad X2)",
+        "odds": 1.24,
+        "probability": 87.5,
+        "confidence": "PSG EN LA RIVIERA • LIGUE 1",
+        "argument": "El PSG de Luis Enrique marcha con paso firme y condición de invicto a domicilio en la Ligue 1. Con Bradley Barcola, Ousmane Dembélé y Vitinha manejando los hilos, los parisinos castigan cualquier despiste rival. Pese a que el Niza es un equipo ordenado en el Allianz Riviera, la jerarquía individual y el recambio de banquillo del PSG aseguran que la visita rescatará puntos."
       }
     }
   ]

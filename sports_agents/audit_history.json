@@ -1,20 +1,20 @@
 {
-  "last_updated": "2026-11-19 21:05:00",
+  "last_updated": "2026-11-20 22:05:00",
   "initial_bankroll": 1000.0,
-  "current_bankroll": 3665.52,
-  "total_profit": 2665.52,
-  "roi_pct": 266.6,
+  "current_bankroll": 3437.52,
+  "total_profit": 2437.52,
+  "roi_pct": 243.8,
   "global_stats": {
-    "total": 246,
-    "wins": 217,
-    "losses": 29,
-    "win_rate": 88.2
+    "total": 252,
+    "wins": 220,
+    "losses": 32,
+    "win_rate": 87.3
   },
   "fija_stats": {
-    "total": 198,
+    "total": 200,
     "wins": 174,
-    "losses": 24,
-    "win_rate": 87.9
+    "losses": 26,
+    "win_rate": 87.0
   },
   "history": [
     {
@@ -3281,9 +3281,99 @@
       "diagnostic": "ACIERTO CLAVADO EN EL MORUMBIS (1 - 0): Marcador exacto del modelo cumplido. Gol de Calleri al 54' y muralla defensiva ante un Fluminense inofensivo fuera de Río. Cobertura 1X resuelta con total comodidad.",
       "pnl": 26.0,
       "bankroll_after": 3665.52
+    },
+    {
+      "id": 248,
+      "date": "20/11/2026",
+      "match": "Independiente del Valle vs Macará",
+      "tournament": "LigaPro Ecuabet 2026 • Segunda Etapa • Viernes 20/11/2026 • Final: 1 - 1",
+      "category_tag": "👑 La Fija de Oro Nacional (Victoria IDV 1)",
+      "is_fija": true,
+      "selection": "Independiente del Valle Gana el Partido (1)",
+      "odds": 1.25,
+      "confidence": 89.0,
+      "status": "loss",
+      "diagnostic": "FALLO EN AMAGUAÑA (1 - 1): Macará se plantó con doble línea de 5 ultra replegada. IDV se adelantó al 14' pero perdonó tres ocasiones claras y un contragolpe aislado al 79' empató el juego. Sorpresa en LigaPro y fallo transparente registrado (-$100.00).",
+      "pnl": -100.0,
+      "bankroll_after": 3565.52
+    },
+    {
+      "id": 249,
+      "date": "20/11/2026",
+      "match": "Bayern Múnich vs FC Köln",
+      "tournament": "Bundesliga Alemana • Jornada 11 • Viernes 20/11/2026 • Final: 2 - 0",
+      "category_tag": "👑 La Fija de Oro Europea (Bayern 1 + Más 2.5)",
+      "is_fija": true,
+      "selection": "FC Bayern Múnich Gana (1) + Más de 2.5 goles",
+      "odds": 1.22,
+      "confidence": 90.5,
+      "status": "loss",
+      "diagnostic": "FALLO EN EL COMBO DE GOLES (2 - 0): El Bayern ganó con comodidad gracias a doblete de Kane (28' y 51'), pero reguló el desgaste físico de cara a la fecha de Champions y enfrió el partido sin buscar el tercer gol. El triunfo se dio pero faltó 1 gol para el Over 2.5 (-$100.00).",
+      "pnl": -100.0,
+      "bankroll_after": 3465.52
+    },
+    {
+      "id": 250,
+      "date": "20/11/2026",
+      "match": "Athletic Club vs RCD Espanyol",
+      "tournament": "LaLiga EA Sports • Jornada 14 • Viernes 20/11/2026 • Final: 2 - 0",
+      "category_tag": "Doble Oportunidad Local + Margen Goles (Athletic 1X + U4.5)",
+      "is_fija": false,
+      "selection": "Athletic Club o Empate (1X) + Menos de 4.5 goles",
+      "odds": 1.25,
+      "confidence": 88.0,
+      "status": "win",
+      "diagnostic": "ACIERTO EN SAN MAMÉS (2 - 0): Monólogo de los leones con goles de Sancet y Nico Williams. Espanyol no generó remates al arco. Doble oportunidad y control estricto de goles cobrados (+ $25.00).",
+      "pnl": 25.0,
+      "bankroll_after": 3490.52
+    },
+    {
+      "id": 251,
+      "date": "20/11/2026",
+      "match": "España Sub-17 vs China Sub-17",
+      "tournament": "Mundial Sub-17 Catar 2026 • Fase de Grupos • Viernes 20/11/2026 • Final: 3 - 0",
+      "category_tag": "Victoria Directa Formativa (España 1)",
+      "is_fija": false,
+      "selection": "España Sub-17 Gana el Partido (1)",
+      "odds": 1.22,
+      "confidence": 89.0,
+      "status": "win",
+      "diagnostic": "ACIERTO CON JERARQUÍA EN DOHA (3 - 0): Exhibición de posesión y circulación de 'La Rojita'. Goles al 12', 39' y 71' liquidaron el encuentro ante una China sin respuesta (+ $22.00).",
+      "pnl": 22.0,
+      "bankroll_after": 3512.52
+    },
+    {
+      "id": 252,
+      "date": "20/11/2026",
+      "match": "Deportivo Cali vs Millonarios FC",
+      "tournament": "Liga BetPlay Dimayor 2026 • Viernes 20/11/2026 • Final: 2 - 2",
+      "category_tag": "Línea de Goles Under (Menos de 2.5 goles)",
+      "is_fija": false,
+      "selection": "Menos de 2.5 goles totales (Under 2.5)",
+      "odds": 1.28,
+      "confidence": 86.5,
+      "status": "loss",
+      "diagnostic": "FALLO EN EL CLÁSICO DE PALMASECA (2 - 2): Partido atípico y descontrolado con dos penales sancionados por VAR y una expulsión al 62'. Los 4 goles quebraron por completo la proyección conservadora de pocos goles (-$100.00).",
+      "pnl": -100.0,
+      "bankroll_after": 3412.52
+    },
+    {
+      "id": 253,
+      "date": "20/11/2026",
+      "match": "FC Metz vs US Boulogne",
+      "tournament": "Ligue 2 de Francia • Jornada 14 • Viernes 20/11/2026 • Final: 1 - 0",
+      "category_tag": "Doble Oportunidad Local (Metz 1X)",
+      "is_fija": false,
+      "selection": "FC Metz o Empate (1X)",
+      "odds": 1.25,
+      "confidence": 87.0,
+      "status": "win",
+      "diagnostic": "ACIERTO EN SAINT-SYMPHORIEN (1 - 0): Solidez defensiva del Metz que marcó al 44' y neutralizó cualquier intento de Boulogne. Cobertura 1X resuelta sin sufrir (+ $25.00).",
+      "pnl": 25.0,
+      "bankroll_after": 3437.52
     }
   ],
-  "bankroll": 3665.52,
+  "bankroll": 3437.52,
   "brier_score": 0.1134,
   "user_bankroll": {
     "currency": "USD",
@@ -3294,6 +3384,6 @@
     "roi_pct": 24.5,
     "safety_wall": 20.0,
     "disposable_buffer": 4.9,
-    "last_session_status": "INTACTO_CON_OPCION_DOBLE_COBRADA"
+    "last_session_status": "DISCIPLINA_PROTEGIO_CAPITAL_EN_JORNADA_VARIANZA"
   }
 }

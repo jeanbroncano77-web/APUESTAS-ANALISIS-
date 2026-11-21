@@ -1,6 +1,6 @@
 {
   "created_at": "2026-10-01 17:35:50",
-  "cycles_completed": 138,
+  "cycles_completed": 139,
   "calibrations": [
     {
       "cycle": 128,
@@ -229,6 +229,35 @@
         "banca_modelo": 3665.52,
         "user_bankroll": 24.9
       }
+    },
+    {
+      "cycle": 139,
+      "timestamp": "2026-11-20 22:10:00",
+      "action": "CONTRALORÍA RIGUROSA & CALIBRACIÓN CICLO #139: AUDITORÍA TRANSPARENTE DEL VIERNES 20/11 (3W / 3L), AUTOPSIAS DE FALLO #17 (IDV 1-1 MACARÁ), #18 (BAYERN 2-0 OVER FALTANTE) Y #19 (CALI-MILLONARIOS 2-2 PENALES), FIN DE RACHA EN 15W Y PROTOCOLO DE RECUPERACIÓN PARA EL SÁBADO 21/11",
+      "observations": [
+        "[CONTRALORÍA Y TRANSPARENCIA TOTAL (3W / 3L)]: Se registran con absoluta honestidad los 3 fallos del viernes 20/11: el empate de IDV 1-1 ante Macará, la falta de 1 gol en el combo del Bayern (2-0 vs Köln) y el partido caótico con dos penales en Cali vs Millonarios (2-2). El balance de la banca retrocede a $3,437.52 USD y el Win Rate global se calibra en 87.3%.",
+        "[AUTOPSIA DE FALLO #17 (IDV 1-1 MACARÁ)]: En fechas finales de etapa de LigaPro donde los visitantes luchan la permanencia con bloque ultra bajo, la posesión sin gol temprano genera ansiedad. Ajuste: queda prohibido jugar victoria simple a cuota baja en LigaPro sin cobertura de Doble Oportunidad 1X o líneas de goles amplias.",
+        "[AUTOPSIA DE FALLO #18 (BAYERN 2-0 KÖLN - OVER 2.5 CAÍDO)]: Los gigantes europeos antes de semana de Champions regulan energía en el complemento tras ir ganando 2-0. Ajuste: en vísperas de Champions League, vetar combos de Over 2.5 y priorizar victoria simple o hándicap directo.",
+        "[AUTOPSIA DE FALLO #19 (CALI 2-2 MILLONARIOS)]: El factor arbitral con 2 penales VAR y una expulsión desnaturalizó el partido cerrado proyectado. Se refuerza el filtro de volatilidad en clásicos con árbitros propensos al VAR.",
+        "[PROTECCIÓN ABSOLUTA DEL CAPITAL DEL USUARIO]: Gracias a la regla del Muro de $20.00 USD, el usuario no arriesgó su capital base en un viernes de alta varianza. Su saldo se mantiene firme en $24.90 USD con sus $4.90 listos para el súper sábado.",
+        "[CALIBRACIÓN SÁBADO 21/11 - FINAL SUDAMERICANA & ELITE EUROPEA]: Despliegue en la Gran Final CONMEBOL Sudamericana (Atlético Mineiro vs Boca Juniors con filtro Under estricto en final única), Real Madrid en el Bernabéu ante Celta, Manchester City en el Etihad, Católica vs Barcelona en LigaPro, Lazio en Roma y PSG en Francia."
+      ],
+      "adjustments": {
+        "pre_champions_rotation_over_veto": true,
+        "ligapro_relegation_block_draw_risk": 1.35,
+        "var_penalty_referee_volatility_buffer": 1.25,
+        "final_unica_sudamericana_under_weight": 1.4,
+        "capital_preservation_rule": "ACTIVE_WALL_20_USD",
+        "consecutive_win_streak": 1
+      },
+      "metrics_snapshot": {
+        "total_picks": 252,
+        "win_rate": 87.3,
+        "fijas_win_rate": 87.0,
+        "active_streak": 1,
+        "banca_modelo": 3437.52,
+        "user_bankroll": 24.9
+      }
     }
   ],
   "current_weights": {
@@ -248,6 +277,6 @@
     "parity_trap_isolation_filter": true,
     "psychological_friction_stake_adapter": 0.08
   },
-  "last_auto_audit": "2026-11-19 21:10:00",
-  "last_updated": "2026-11-19 21:10:00"
+  "last_auto_audit": "2026-11-20 22:10:00",
+  "last_updated": "2026-11-20 22:10:00"
 }
