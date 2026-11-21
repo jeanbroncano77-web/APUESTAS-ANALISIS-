@@ -15,7 +15,7 @@ def main():
     # Verify feedback log
     with open('sports_agents/autonomous_feedback_log.json', 'r', encoding='utf-8') as f:
         fb = json.load(f)
-    assert any(c.get('cycle_id') == 139 for c in fb), 'Cycle 139 missing'
+    assert any(c.get('cycle') == 139 for c in fb['calibrations']), 'Cycle 139 missing in calibrations'
 
     # Verify simulations
     with open('sports_agents/simulations_tomorrow_results.json', 'r', encoding='utf-8') as f:
